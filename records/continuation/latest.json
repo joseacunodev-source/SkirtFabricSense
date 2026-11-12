@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-12T11:12:02.795673+08:00",
+  "updated_at": "2026-11-12T11:17:19.540026+08:00",
   "status": "stable_desktop_research_checkpoint",
   "project_complete": false,
   "supervised_demo_accepted": false,
@@ -140,6 +140,15 @@
         "path": "records/validation/2026-11-11-four-task-completion.json",
         "sha256": "d75f243e2400d7bd76786c26b02be5fb07e504ae9296fc3896bf367e93c28465"
       }
+    },
+    "github_clone": {
+      "run": 145,
+      "passed": 145,
+      "skipped": 0,
+      "source": {
+        "path": "records/validation/2026-11-12-github-clone-software-tests.json",
+        "sha256": "b0b961180cfab2cc44a854873af12d48e45967d7b6c9ce8f5381de00a243fcfd"
+      }
     }
   },
   "pending_operations": [],
@@ -201,8 +210,8 @@
     "Completed thesis figures and November 4 partition audits; preserve existing outputs"
   ],
   "previous_checkpoint": {
-    "path": "records/continuation/2026-11-12-before-migration-fix.json",
-    "sha256": "7c0a8a4c3dde8b12a05cec6f40e30190993b71f65bbec6b51a1752d578447ec2"
+    "path": "records/continuation/2026-11-12-before-hosted-provenance.json",
+    "sha256": "6730d753f6cb322209aef8dbbae27db5ffbfe1bc59ca06d7945d5a2c7ad2d27e"
   },
   "references": [
     {
@@ -1375,11 +1384,11 @@
     },
     {
       "path": ".gitignore",
-      "sha256": "1311794035ca560b091c0f1077a63f2207fedf3678fcc17bd729070b24fdf316"
+      "sha256": "38360b7dcd0e4f0212ee0c17cd49b13be2e41864c05cafc5305e34005b215463"
     },
     {
       "path": "docs/GITHUB_WORKFLOW.md",
-      "sha256": "6376e768936127f088369975e3e29fb3c46adfeda46575ea095e6f4729a82db2"
+      "sha256": "383b9b118fdae486da39767b9c4ccbc4edc39361f66ed0e4db1fbdee47aab96e"
     },
     {
       "path": "docs/ASSET_TRANSFER.md",
@@ -1395,7 +1404,7 @@
     },
     {
       "path": ".github/workflows/software-checks.yml",
-      "sha256": "345fa3951e963921b68cb451c196b93b947e4e620acfb9eb7cec04287c8a7e23"
+      "sha256": "bc4a336b4aa2aee1fe91c0d26017715d3d795676e3dbda2309ab53cd0ac2b1fc"
     },
     {
       "path": "tools/project_assets.py",
@@ -1412,6 +1421,18 @@
     {
       "path": "config/project-assets-v2.json",
       "sha256": "9f315c1c7a0dfaf6091c36145b6492500c728bae0dcec97cf2e1b8f213552d10"
+    },
+    {
+      "path": "tools/record_ci_environment.py",
+      "sha256": "4047cf2311b8737f1e85bd79bbabaec1c487995ee0099bec3bae4d00d9b4e32c"
+    },
+    {
+      "path": "records/validation/2026-11-12-github-clone-bytes.json",
+      "sha256": "58504f17c45c960d62bdc36281bae0e72306684545aaad49b10095d08d1e1ef9"
+    },
+    {
+      "path": "records/validation/2026-11-12-github-clone-software-tests.json",
+      "sha256": "b0b961180cfab2cc44a854873af12d48e45967d7b6c9ce8f5381de00a243fcfd"
     }
   ],
   "latest_batch": {
@@ -1472,7 +1493,7 @@
     "remote": "origin",
     "branch": "main",
     "visibility_observed": "public",
-    "upload_status": "first_import_pushed_migration_verification_pending",
+    "upload_status": "pushed_clone_and_asset_restore_verified_final_record_check_pending",
     "asset_manifest": {
       "path": "config/project-assets-v2.json",
       "sha256": "9f315c1c7a0dfaf6091c36145b6492500c728bae0dcec97cf2e1b8f213552d10"
@@ -1483,6 +1504,8 @@
     "metadata_verified": {
       "path": "records/validation/2026-11-12-github-initial-publication.json",
       "sha256": "56228bfb13565186bf8967e13de47a7445656730b1e0ad75ed5f89af8b34bb99"
-    }
+    },
+    "bundle_restored_files": 2804,
+    "bundle_uncompressed_bytes": 1800977570
   }
 }

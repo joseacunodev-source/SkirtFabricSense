@@ -1,0 +1,16 @@
+{
+  "recorded_at": "2026-11-12T11:14:31.855981+08:00",
+  "status": "failed",
+  "local_links_checked": 932,
+  "json_records_parsed": 4900,
+  "raw_http_failure_bodies_verified": 21,
+  "acquired_artifacts_verified": 33,
+  "expansion_image_hashes_verified": 1920,
+  "continuation_record_present": true,
+  "continuation_evidence_references_verified": 320,
+  "skill_copy_matches": true,
+  "errors": [
+    "Evidence reference mismatch: output/SkirtFabricSense_Progress_Screenshots_2026-11-11.zip"
+  ],
+  "limits": "Documentation/integrity checks only; not model training or Raspberry Pi verification."
+}

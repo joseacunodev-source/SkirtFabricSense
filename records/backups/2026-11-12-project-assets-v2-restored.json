@@ -1,0 +1,22 @@
+{
+  "recorded_at": "2026-11-12T11:17:19.540026+08:00",
+  "status": "restored",
+  "manifest": {
+    "path": "config/project-assets-v2.json",
+    "sha256": "9f315c1c7a0dfaf6091c36145b6492500c728bae0dcec97cf2e1b8f213552d10"
+  },
+  "archive_filename": "SkirtFabricSense-assets-v2.zip",
+  "archive_bytes": 1177033067,
+  "archive_sha256": "ccbc61ee115f0a9196aa2b92ef7d050c5e48bc2122ea1c9b20e5b56dfdc81444",
+  "files_copied": 2804,
+  "already_matched": 0,
+  "verification": {
+    "status": "passed",
+    "files_expected": 2804,
+    "bytes_expected": 1800977570,
+    "missing": [],
+    "mismatched": []
+  },
+  "destination": "Temporary fresh GitHub clone on source computer; separate-machine environment not rebuilt",
+  "limits": "Private asset integrity/restore only, not physical or Pi acceptance."
+}

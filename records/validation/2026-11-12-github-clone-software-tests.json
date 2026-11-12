@@ -1,0 +1,22 @@
+{
+  "status": "passed",
+  "tests_run": 145,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "python": "3.12.14",
+  "Pillow": "13.0.0",
+  "modules": [
+    "tests.test_live_state",
+    "tests.test_hemline",
+    "tests.test_dataset_partitions",
+    "tests.test_continuation_records",
+    "tests.test_raw_http_records",
+    "tests.test_fabric_evidence_review",
+    "tests.test_geometry_annotation",
+    "tests.test_training_contract",
+    "tests.test_worn_geometry_evaluation",
+    "tests.test_project_assets"
+  ],
+  "scope": "Fresh GitHub clone, existing source-machine Python; no new-machine environment recreation or hardware acceptance."
+}

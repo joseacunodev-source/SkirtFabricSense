@@ -47,6 +47,8 @@ records/acquisitions/**/*
 !records/acquisitions/**/*.md
 output/geometry-review/
 output/**/*.zip
+# Curated report archive contains only the project's own UI/code screenshots.
+!output/SkirtFabricSense_Progress_Screenshots_2026-11-11.zip
 docs/references/*.jpg
 
 # Local credentials must never enter the repository or asset bundles.
