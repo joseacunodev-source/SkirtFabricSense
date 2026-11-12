@@ -48,10 +48,10 @@ The selected tests cover stale-frame handling, hemline uncertainty, split auditi
 
 ## Restore training and station assets
 
-Use the [asset transfer instructions](ASSET_TRANSFER.md) and the committed `config/project-assets-v1.json`. Keep the archive in private storage you control; dataset and pretrained-weight terms still apply. Do not add the asset bundle or restricted photographs to this public repository or a public release.
+Use the [asset transfer instructions](ASSET_TRANSFER.md) and the committed `config/project-assets-v2.json`. Version 2 includes the required DTD annotations archive omitted from the original v1 manifest/private ZIP. The published v1 manifest is preserved as history; a passing v1 verification does not restore that missing input. Keep the matching v2 archive in private storage you control; dataset and pretrained-weight terms still apply. Do not add the asset bundle or restricted photographs to this public repository or a public release.
 
 ```powershell
-python tools/project_assets.py verify --manifest config/project-assets-v1.json
+python tools/project_assets.py verify --manifest config/project-assets-v2.json
 ```
 
 On a fresh clone this reports missing excluded files until an authorized asset bundle is restored. After restoration, run verification again. A manifest is an inventory and integrity contract, not an automatic downloader or a grant to redistribute its contents. Preserve the matching code commit and asset manifest together.

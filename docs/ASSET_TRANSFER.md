@@ -5,12 +5,20 @@ records. Large model files, acquired images and raw acquisition snapshots stay o
 Git. A clone alone therefore does not reproduce the current trained application or a
 complete dataset. This guide covers their separate, private transfer.
 
-`config/project-assets-v1.json` records relative paths, byte sizes and SHA-256 hashes
-of the eligible local assets at the initial Git handoff. Its file count describes files,
+`config/project-assets-v2.json` records relative paths, byte sizes and SHA-256 hashes
+of the current eligible local assets. Its file count describes files,
 not independent garments or newly acquired images. The manifest does not grant rights
 to publish the underlying files. Preserve the actual source terms recorded in
 `data/registry.json` and `docs/DATASETS.md`; use an authorized private transfer location.
 Do not upload this asset bundle to a public release or repository.
+
+Version 2 supersedes the initial v1 migration inventory. The v1 manifest and private
+ZIP omitted `data/external/dtd/dtd-r1.0.1-labels.tar.gz`, a required annotations archive
+referenced by `data/external/seed/acquisition_manifest.json`. Passing verification
+against v1 checks its listed files only and does not close this missing-input gap.
+The published v1 manifest remains unchanged for historical integrity. Use a v2 bundle
+for a complete transfer of the currently inventoried project inputs; a v1 ZIP cannot
+be restored against the v2 manifest because exact membership is required.
 
 ## Check the source computer
 
@@ -19,7 +27,7 @@ Python standard library; inventory additionally requires Git. No package install
 or internet access is needed for these commands.
 
 ```powershell
-python tools/project_assets.py verify --manifest config/project-assets-v1.json
+python tools/project_assets.py verify --manifest config/project-assets-v2.json
 ```
 
 Continue only when verification reports `"status": "passed"`. Missing or mismatched
@@ -33,7 +41,7 @@ Choose a location outside the repository with enough free space for the archive.
 The following command is an example; replace the drive/path for your computer.
 
 ```powershell
-python tools/project_assets.py pack --manifest config/project-assets-v1.json --output D:/Backups/SkirtFabricSense-assets-v1.zip
+python tools/project_assets.py pack --manifest config/project-assets-v2.json --output D:/Backups/SkirtFabricSense-assets-v2.zip
 ```
 
 Packing verifies the source first, streams each file with a size/hash check, and reports
@@ -41,8 +49,8 @@ the finished archive's byte size and SHA-256. Save that output alongside the pri
 backup so its recipient can also check the archive itself. An existing archive is
 never overwritten. Copy the manifest from the same Git revision with the archive.
 Packing does not upload anything or encrypt the ZIP; use a trusted private storage or
-transfer service appropriate for these files. No full-size bundle was created merely
-by adding this tooling.
+transfer service appropriate for these files. A v1 private bundle exists as historical
+transfer evidence; its successful packaging does not establish a complete v2 restore.
 
 ## Restore on the other computer
 
@@ -50,8 +58,8 @@ Clone the repository, check out the source revision that supplied the manifest, 
 place the private ZIP somewhere accessible. From the cloned repository root run:
 
 ```powershell
-python tools/project_assets.py restore D:/Backups/SkirtFabricSense-assets-v1.zip --manifest config/project-assets-v1.json --destination .
-python tools/project_assets.py verify --manifest config/project-assets-v1.json
+python tools/project_assets.py restore D:/Backups/SkirtFabricSense-assets-v2.zip --manifest config/project-assets-v2.json --destination .
+python tools/project_assets.py verify --manifest config/project-assets-v2.json
 ```
 
 Restore checks exact archive membership, sizes and hashes before copying any files
@@ -87,8 +95,12 @@ Project metadata retained by Git is not copied again into the asset bundle. The 
 excludes symlinks/junctions, virtual environments, `node_modules`, Python caches,
 temporary directories, known credential filenames/key extensions, and archive
 extensions (`.zip`, `.7z`, `.rar`, `.tar`, `.gz`, `.bz2`, `.xz`) to prevent recursive
-backup inclusion. If a future licensed dataset requires an original source archive,
-review and document a separate transfer policy before relying on this manifest.
+backup inclusion. The only archive exception is the exact required source path
+`data/external/dtd/dtd-r1.0.1-labels.tar.gz` (188,651 bytes; SHA-256
+`d95422715cd7a0d76cc34235b85b4b14002d6c1687e68d5aa3b3517651da57e1`).
+The transfer copies its frozen bytes without extracting them. Other source archives
+and generated ZIPs remain excluded. Review and document any future exception before
+relying on a newer manifest.
 Path filtering is not a scan of arbitrary file contents for secrets; review new
 acquisition material before choosing to transfer it.
 
@@ -100,8 +112,8 @@ After intentional asset changes, create a new manifest filename, review its coun
 scope, verify it, and commit that new manifest with the matching project records:
 
 ```powershell
-python tools/project_assets.py inventory --output config/project-assets-v2.json
-python tools/project_assets.py verify --manifest config/project-assets-v2.json
+python tools/project_assets.py inventory --output config/project-assets-v3.json
+python tools/project_assets.py verify --manifest config/project-assets-v3.json
 ```
 
 Inventory refuses to overwrite an existing manifest. Keep older versions for matching

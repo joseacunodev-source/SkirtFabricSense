@@ -1,0 +1,25 @@
+{
+  "repository": {
+    "html_url": "https://github.com/joseacunodev-source/SkirtFabricSense",
+    "private": false,
+    "description": "Single-camera skirt classification research: pleating, body-relative hemline estimates, optional fabric appearance, and Raspberry Pi deployment preparation.",
+    "topics": [
+      "capstone-project",
+      "computer-vision",
+      "image-classification",
+      "python",
+      "raspberry-pi",
+      "tensorflow-lite"
+    ],
+    "default_branch": "main"
+  },
+  "runs": [
+    {
+      "id": 43146007095,
+      "status": "completed",
+      "conclusion": "success",
+      "html_url": "https://github.com/joseacunodev-source/SkirtFabricSense/actions/runs/43146007095",
+      "head_sha": "d383443f1d5eec4afc50e57cc195732bc69f174d"
+    }
+  ]
+}

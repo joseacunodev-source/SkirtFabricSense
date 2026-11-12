@@ -19,7 +19,7 @@ import tempfile
 import zipfile
 
 ROOT = Path(__file__).resolve().parents[1]
-DEFAULT_MANIFEST = ROOT/'config/project-assets-v1.json'
+DEFAULT_MANIFEST = ROOT/'config/project-assets-v2.json'
 FAMILIES = ('data/external', 'data/raw', 'data/processed', 'data/cache',
             'data/candidates', 'artifacts', 'output/geometry-review', 'docs/references', 'records')
 RECORD_SUFFIXES = {'.jpg', '.jpeg', '.png', '.gif', '.webp', '.bmp', '.bin',
@@ -28,6 +28,9 @@ BLOCKED_PARTS = {'.git', 'node_modules', '__pycache__', '.ipynb_checkpoints', 't
                  '.venv', '.venv-tools', 'venv', 'env'}
 SECRET_SUFFIXES = {'.pem', '.key', '.pfx', '.p12'}
 ARCHIVE_SUFFIXES = {'.zip', '.7z', '.rar', '.tar', '.gz', '.bz2', '.xz'}
+# Required by data/external/seed/acquisition_manifest.json. Other archives stay
+# excluded so a transfer bundle cannot recursively inventory earlier bundles.
+SOURCE_ARCHIVE_ALLOWLIST = {'data/external/dtd/dtd-r1.0.1-labels.tar.gz'}
 CHUNK = 1024*1024
 
 
@@ -71,7 +74,9 @@ def permitted(relative):
         return False
     name = path.name.lower()
     if (name.startswith(('.env', 'credentials', 'id_rsa', 'id_ed25519'))
-            or path.suffix.lower() in SECRET_SUFFIXES | ARCHIVE_SUFFIXES):
+            or path.suffix.lower() in SECRET_SUFFIXES):
+        return False
+    if path.suffix.lower() in ARCHIVE_SUFFIXES and relative not in SOURCE_ARCHIVE_ALLOWLIST:
         return False
     if any(relative.startswith(family+'/') for family in FAMILIES[:-1]):
         return True

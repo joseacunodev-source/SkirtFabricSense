@@ -1,0 +1,17 @@
+{
+  "recorded_at": "2026-11-12T11:12:02.795673+08:00",
+  "kind": "private_project_asset_transfer",
+  "manifest": {
+    "path": "config/project-assets-v2.json",
+    "sha256": "9f315c1c7a0dfaf6091c36145b6492500c728bae0dcec97cf2e1b8f213552d10"
+  },
+  "status": "packed_not_yet_restore_verified",
+  "archive_filename": "SkirtFabricSense-assets-v2.zip",
+  "archive_bytes": 1177033067,
+  "archive_sha256": "ccbc61ee115f0a9196aa2b92ef7d050c5e48bc2122ea1c9b20e5b56dfdc81444",
+  "files": 2804,
+  "uncompressed_bytes": 1800977570,
+  "private_location": "Downloads/SkirtFabricSense-private-transfer on source computer; not uploaded to GitHub",
+  "environments_or_external_wsl_runs_included": false,
+  "v1_status": "superseded_missing_required_DTD_annotation_archive"
+}

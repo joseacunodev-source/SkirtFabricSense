@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-11T23:39:11.696966+08:00",
+  "updated_at": "2026-11-12T11:12:02.795673+08:00",
   "status": "stable_desktop_research_checkpoint",
   "project_complete": false,
   "supervised_demo_accepted": false,
@@ -201,8 +201,8 @@
     "Completed thesis figures and November 4 partition audits; preserve existing outputs"
   ],
   "previous_checkpoint": {
-    "path": "records/continuation/2026-11-11-before-github-setup.json",
-    "sha256": "1229adff7defeaba8b577549ad3a6b2b270b8f4080b463d81f46b098430a069e"
+    "path": "records/continuation/2026-11-12-before-migration-fix.json",
+    "sha256": "7c0a8a4c3dde8b12a05cec6f40e30190993b71f65bbec6b51a1752d578447ec2"
   },
   "references": [
     {
@@ -1379,11 +1379,11 @@
     },
     {
       "path": "docs/GITHUB_WORKFLOW.md",
-      "sha256": "115a4ed8481bd2c48000488df2db1641f6283dbdd2ac5d18bdb319f5f5d66bcc"
+      "sha256": "6376e768936127f088369975e3e29fb3c46adfeda46575ea095e6f4729a82db2"
     },
     {
       "path": "docs/ASSET_TRANSFER.md",
-      "sha256": "ecf724bdc0adbbb4bd1529c3988aa918b9316e07e8ddd41340f7a3b291716155"
+      "sha256": "1de3baecc3a2eabafe293001115a4f5aba558baa37fbf070b1211efc5004e429"
     },
     {
       "path": "CONTRIBUTING.md",
@@ -1399,15 +1399,19 @@
     },
     {
       "path": "tools/project_assets.py",
-      "sha256": "bcbcc573254d0daa6d03c36c779faf5ba311d042876b617bcc04fa3d00977aee"
+      "sha256": "f7ed02f091660edc6403f730d4dde662604e1b39c2b89c2a4b870247c58cb9cd"
     },
     {
       "path": "tests/test_project_assets.py",
-      "sha256": "63c3e79d923c8d591975c382145d760af4f5b718fa8e5b8572a054e590a4076d"
+      "sha256": "961d5fe430960f050d6e57ae62c404b5307135006d357b3760ec22a8a74821d5"
     },
     {
       "path": "config/project-assets-v1.json",
       "sha256": "42120c82a4c5604c71e579519d04e8d835ef476f4ecdeb4adad2aedb3b929b43"
+    },
+    {
+      "path": "config/project-assets-v2.json",
+      "sha256": "9f315c1c7a0dfaf6091c36145b6492500c728bae0dcec97cf2e1b8f213552d10"
     }
   ],
   "latest_batch": {
@@ -1468,12 +1472,17 @@
     "remote": "origin",
     "branch": "main",
     "visibility_observed": "public",
-    "upload_status": "prepared_not_yet_pushed",
+    "upload_status": "first_import_pushed_migration_verification_pending",
     "asset_manifest": {
-      "path": "config/project-assets-v1.json",
-      "sha256": "42120c82a4c5604c71e579519d04e8d835ef476f4ecdeb4adad2aedb3b929b43"
+      "path": "config/project-assets-v2.json",
+      "sha256": "9f315c1c7a0dfaf6091c36145b6492500c728bae0dcec97cf2e1b8f213552d10"
     },
     "assets_in_public_git": false,
-    "environment_transfer": "recreate separately; no virtual environments or external WSL runs are included"
+    "environment_transfer": "recreate separately; no virtual environments or external WSL runs are included",
+    "initial_import_commit": "d383443f1d5eec4afc50e57cc195732bc69f174d",
+    "metadata_verified": {
+      "path": "records/validation/2026-11-12-github-initial-publication.json",
+      "sha256": "56228bfb13565186bf8967e13de47a7445656730b1e0ad75ed5f89af8b34bb99"
+    }
   }
 }

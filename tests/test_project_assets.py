@@ -75,6 +75,32 @@ class ProjectAssetTests(unittest.TestCase):
         for name, body in self.content.items():
             self.assertEqual((self.destination/name).read_bytes(), body)
 
+    def test_only_required_dtd_source_archive_is_inventoried_and_transferred(self):
+        if not shutil.which('git'):
+            self.skipTest('Git unavailable')
+        subprocess.run(['git', 'init', '-q', str(self.source)], check=True)
+        (self.source/'.gitignore').write_text('data/external/\n', encoding='utf-8')
+        allowed = 'data/external/dtd/dtd-r1.0.1-labels.tar.gz'
+        self.assertEqual(assets.SOURCE_ARCHIVE_ALLOWLIST, {allowed})
+        archives = {allowed: b'synthetic annotations archive',
+                    'data/external/dtd/other-labels.tar.gz': b'other source archive',
+                    'data/external/dtd/dtd-r1.0.1-labels.tar.gz.zip': b'wrapped source',
+                    'artifacts/transfer-backup.zip': b'generated archive',
+                    'records/acquisitions/backup.tar': b'backup'}
+        for name, body in archives.items():
+            target = self.source/name
+            target.parent.mkdir(parents=True, exist_ok=True)
+            target.write_bytes(body)
+            self.assertEqual(assets.permitted(name), name == allowed)
+        inventory = assets.inventory(self.source)
+        self.assertEqual({r['path'] for r in inventory['files']},
+                         {allowed, 'data/external/source/image.jpg'})
+        assets.pack(self.source, inventory, self.archive)
+        restored = assets.restore(self.archive, inventory, self.destination)
+        self.assertEqual(restored['verification']['status'], 'passed')
+        self.assertEqual((self.destination/allowed).read_bytes(), archives[allowed])
+        self.assertFalse((self.destination/'artifacts/transfer-backup.zip').exists())
+
     def test_verify_reports_missing_and_mismatched(self):
         (self.source/'artifacts/model.tflite').write_bytes(b'changed')
         (self.source/'data/external/source/image.jpg').unlink()
