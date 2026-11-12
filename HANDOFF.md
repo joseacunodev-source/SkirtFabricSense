@@ -1,5 +1,7 @@
 # Continue SkirtFabricSense
 
+November 12: [GitHub setup and complete migration verification](docs/GITHUB_SETUP_NOV12.md) are finished. The public main branch contains code and progress records; private asset manifest v2 and its prepared ZIP restore all2,804 listed files. Fresh-clone145 tests, exact checkout bytes, restored-record integrity and hosted CI pass. Use the actual checkout root on another computer; recreate environments separately. Station-v9/research-v14 remains research-only; human review, geometry/calibration and physical/Pi acceptance remain open.
+
 November 11 repository preparation: [cross-computer GitHub workflow](docs/GITHUB_WORKFLOW.md) and [private asset transfer](docs/ASSET_TRANSFER.md) are prepared. Public Git carries source, manifests and progress evidence; acquired photos/models/source snapshots and environments stay excluded. Use the current asset manifest and restore privately before model/data checks. Publication status is recorded separately in the current checkpoint.
 
 November 11 implementation: **R01–R04 software tasks are complete**. [Recovery and tool instructions](docs/RECOVERY_IMPLEMENTATION_NOV11.md). Station-v9/research-v14 is selected, with v8 rollback. The 21 raw HTTP failures are preserved and verified as transport evidence; fabric/geometry reviewer tools are tested and documented; essential controls/results fit800 ×480. Human labels, automatic wearer geometry/calibration and physical camera/Pi acceptance remain open.

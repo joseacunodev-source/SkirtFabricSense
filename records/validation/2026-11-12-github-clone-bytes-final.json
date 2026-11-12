@@ -1,0 +1,7 @@
+{
+  "status": "passed",
+  "commit": "780120fb82976e35adfa83f2250cecb61b18f369",
+  "tracked_files_byte_verified": 960,
+  "mismatches": [],
+  "scope": "Fresh GitHub clone plus fast-forward pulls; exact checkout bytes checked against Git blob OIDs."
+}

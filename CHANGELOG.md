@@ -1,5 +1,13 @@
 # Engineering changelog
 
+## 2026-11-12 - Publish and verify cross-computer workflow
+
+- Publish public main and configure repository description/topics, current README, contribution guidance, issue templates and hosted software checks.
+- Verify fresh-clone145 tests, all960 tracked checkout bytes, a full2,804-file private restore and complete restored-record integrity. No local dependencies installed.
+- Fix migration omissions: retain v1 history, add the exact required DTD source archive in v2, and track the curated report ZIP containing only existing project screenshots/code/captions.
+- Add actual hosted CI installation/environment logging; hosted execution passes. Prepare the private1.177GB ZIP with checksum and restore instructions; no asset payload uploaded publicly.
+- [Setup results and continuation instructions](docs/GITHUB_SETUP_NOV12.md). Project model-quality and hardware acceptance gates remain open.
+
 ## 2026-11-11 - Prepare GitHub and cross-computer continuation
 
 - Add concise current README, actual UI image, contribution instructions, notices and issue templates; preserve earlier README history.

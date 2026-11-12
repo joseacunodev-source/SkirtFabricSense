@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-12T11:17:19.540026+08:00",
+  "updated_at": "2026-11-12T11:19:37.535771+08:00",
   "status": "stable_desktop_research_checkpoint",
   "project_complete": false,
   "supervised_demo_accepted": false,
@@ -210,8 +210,8 @@
     "Completed thesis figures and November 4 partition audits; preserve existing outputs"
   ],
   "previous_checkpoint": {
-    "path": "records/continuation/2026-11-12-before-hosted-provenance.json",
-    "sha256": "6730d753f6cb322209aef8dbbae27db5ffbfe1bc59ca06d7945d5a2c7ad2d27e"
+    "path": "records/continuation/2026-11-12-before-github-closeout.json",
+    "sha256": "5ebcd8ac4d4d07fe90f2fcdd742440541a5759e5577677cff5192bfe41423de6"
   },
   "references": [
     {
@@ -224,19 +224,19 @@
     },
     {
       "path": "HANDOFF.md",
-      "sha256": "72dc6ea3566f5611f88621941be071712f966fac3d5cb4c6c69e42285ca28a7d"
+      "sha256": "b4cfbd84e2c12b54108e95f3b674329a2e70b1bc42cc015a864c8e5121758f13"
     },
     {
       "path": "docs/AGENT_HANDOFF.md",
-      "sha256": "f68cbdc6881b8568c88590a19a34bcfca4e20438640e668e0acfdc84d6e040d5"
+      "sha256": "27433f7c5b6e50c57adedb85479cd3bf69f1a5d6779a289e38cbe5e973918963"
     },
     {
       "path": "docs/DOCUMENTATION_INDEX.md",
-      "sha256": "a292e973129911cd6c07828104730a7079a55edaf35607a2044c903d4a1ddc9e"
+      "sha256": "4af1dc61ccc8ea5935ae4b5f0c3691d28060dec731bc066cef9787c27677804d"
     },
     {
       "path": "docs/TASK_BOARD.md",
-      "sha256": "306f6ce474b5ffa0581f72b3aa0bb69abd462fb6be09a813233016d58960844f"
+      "sha256": "09b37878a638607531729614daa7c15c7f2c24e937447b38badbaef99b4bab3d"
     },
     {
       "path": "docs/OCT22_INTEGRATION.md",
@@ -444,7 +444,7 @@
     },
     {
       "path": "CHANGELOG.md",
-      "sha256": "a221315fd928ea8971c572e025d464c3f09e45ae830fc927b9bf6d3ce956d032"
+      "sha256": "dd575458d1f9f96dcd9102974c0082bcb040a313fcd78fc5bdbf686d806aa042"
     },
     {
       "path": "docs/REQUIREMENTS.md",
@@ -1433,6 +1433,26 @@
     {
       "path": "records/validation/2026-11-12-github-clone-software-tests.json",
       "sha256": "b0b961180cfab2cc44a854873af12d48e45967d7b6c9ce8f5381de00a243fcfd"
+    },
+    {
+      "path": "docs/GITHUB_SETUP_NOV12.md",
+      "sha256": "a5ee46ece998feb4b6067b0d225df7d007a9ace5e083906f142d64b519cfccbd"
+    },
+    {
+      "path": "records/validation/2026-11-12-github-clone-bytes-final.json",
+      "sha256": "d098b683aeaa63ddb8feef83b61be48724b77942d232f96247d465401ffe41ee"
+    },
+    {
+      "path": "records/validation/2026-11-12-github-restored-clone-records-final.json",
+      "sha256": "130b9433a198cc630a47e4f70bafb2cda485c19ff5737e985b270a3d856dbc2a"
+    },
+    {
+      "path": "records/backups/2026-11-12-project-assets-v2-restored.json",
+      "sha256": "f21ce97bf32e381c565e554a91282eaa48ab7804a0aff490be634f4559099f09"
+    },
+    {
+      "path": "records/validation/2026-11-12-github-hosted-checks.json",
+      "sha256": "a2bccfc7a579119a0050718e03c83a26a6b30d587c3e4e4a118e6f8b9ce702ac"
     }
   ],
   "latest_batch": {
@@ -1493,7 +1513,7 @@
     "remote": "origin",
     "branch": "main",
     "visibility_observed": "public",
-    "upload_status": "pushed_clone_and_asset_restore_verified_final_record_check_pending",
+    "upload_status": "published_verified",
     "asset_manifest": {
       "path": "config/project-assets-v2.json",
       "sha256": "9f315c1c7a0dfaf6091c36145b6492500c728bae0dcec97cf2e1b8f213552d10"
@@ -1506,6 +1526,19 @@
       "sha256": "56228bfb13565186bf8967e13de47a7445656730b1e0ad75ed5f89af8b34bb99"
     },
     "bundle_restored_files": 2804,
-    "bundle_uncompressed_bytes": 1800977570
+    "bundle_uncompressed_bytes": 1800977570,
+    "migration_verified_source_commit": "780120fb82976e35adfa83f2250cecb61b18f369",
+    "guide": "docs/GITHUB_SETUP_NOV12.md",
+    "private_bundle": "Downloads/SkirtFabricSense-private-transfer/SkirtFabricSense-assets-v2.zip",
+    "bundle_uploaded_to_github": false,
+    "full_restored_record_validation": {
+      "path": "records/validation/2026-11-12-github-restored-clone-records-final.json",
+      "sha256": "130b9433a198cc630a47e4f70bafb2cda485c19ff5737e985b270a3d856dbc2a"
+    },
+    "hosted_checks": {
+      "path": "records/validation/2026-11-12-github-hosted-checks.json",
+      "sha256": "a2bccfc7a579119a0050718e03c83a26a6b30d587c3e4e4a118e6f8b9ce702ac"
+    },
+    "private_transfer_still_required_on_other_computers": true
   }
 }

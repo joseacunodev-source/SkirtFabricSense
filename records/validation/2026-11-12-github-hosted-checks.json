@@ -1,0 +1,146 @@
+{
+  "workflow_runs": [
+    {
+      "id": 43147191365,
+      "head_sha": "780120fb82976e35adfa83f2250cecb61b18f369",
+      "conclusion": "success",
+      "status": "completed",
+      "html_url": "https://github.com/joseacunodev-source/SkirtFabricSense/actions/runs/43147191365",
+      "jobs": [
+        {
+          "name": "Asset-free Python contracts",
+          "conclusion": "success",
+          "steps": [
+            {
+              "name": "Set up job",
+              "conclusion": "success"
+            },
+            {
+              "name": "Check out source",
+              "conclusion": "success"
+            },
+            {
+              "name": "Select test Python",
+              "conclusion": "success"
+            },
+            {
+              "name": "Install test dependency and record hosted environment",
+              "conclusion": "success"
+            },
+            {
+              "name": "Run contracts using synthetic fixtures",
+              "conclusion": "success"
+            },
+            {
+              "name": "Post Select test Python",
+              "conclusion": "success"
+            },
+            {
+              "name": "Post Check out source",
+              "conclusion": "success"
+            },
+            {
+              "name": "Complete job",
+              "conclusion": "success"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 43146578893,
+      "head_sha": "b85d437ddc9054a6167d8082853a01264b9f5068",
+      "conclusion": "success",
+      "status": "completed",
+      "html_url": "https://github.com/joseacunodev-source/SkirtFabricSense/actions/runs/43146578893",
+      "jobs": [
+        {
+          "name": "Asset-free Python contracts",
+          "conclusion": "success",
+          "steps": [
+            {
+              "name": "Set up job",
+              "conclusion": "success"
+            },
+            {
+              "name": "Check out source",
+              "conclusion": "success"
+            },
+            {
+              "name": "Select test Python",
+              "conclusion": "success"
+            },
+            {
+              "name": "Install test-only image dependency",
+              "conclusion": "success"
+            },
+            {
+              "name": "Run contracts using synthetic fixtures",
+              "conclusion": "success"
+            },
+            {
+              "name": "Post Select test Python",
+              "conclusion": "success"
+            },
+            {
+              "name": "Post Check out source",
+              "conclusion": "success"
+            },
+            {
+              "name": "Complete job",
+              "conclusion": "success"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 43146007095,
+      "head_sha": "d383443f1d5eec4afc50e57cc195732bc69f174d",
+      "conclusion": "success",
+      "status": "completed",
+      "html_url": "https://github.com/joseacunodev-source/SkirtFabricSense/actions/runs/43146007095",
+      "jobs": [
+        {
+          "name": "Asset-free Python contracts",
+          "conclusion": "success",
+          "steps": [
+            {
+              "name": "Set up job",
+              "conclusion": "success"
+            },
+            {
+              "name": "Check out source",
+              "conclusion": "success"
+            },
+            {
+              "name": "Select test Python",
+              "conclusion": "success"
+            },
+            {
+              "name": "Install test-only image dependency",
+              "conclusion": "success"
+            },
+            {
+              "name": "Run contracts using synthetic fixtures",
+              "conclusion": "success"
+            },
+            {
+              "name": "Post Select test Python",
+              "conclusion": "success"
+            },
+            {
+              "name": "Post Check out source",
+              "conclusion": "success"
+            },
+            {
+              "name": "Complete job",
+              "conclusion": "success"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "scope": "Public GitHub Actions REST job/step conclusions; not hardware or model-quality acceptance."
+}
