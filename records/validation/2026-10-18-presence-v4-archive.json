@@ -1,0 +1,80 @@
+{
+  "status": "passed",
+  "source_run_directory": "\\\\wsl.localhost\\Ubuntu-24.04\\home\\skirttrain\\skirt-fabric-sense\\runs\\20261018-presence-v4",
+  "source_script_sha256": "a3642719106c3b5f747f7ca8cd7e3f210cd0e8a70e174caf8a144513fb5348d6",
+  "copied_files": [
+    {
+      "path": "records/experiments/20261018-presence-v4/environment.json",
+      "sha256": "27b550783675624f53a4ae374c34d15d2fb22d02a3cfc45eec9e280a6ba32870",
+      "bytes": 4088
+    },
+    {
+      "path": "records/experiments/20261018-presence-v4/history.json",
+      "sha256": "cbb6777467482ab581f2207402734b5b660fa6b5eb6eed6cbaf9810077d7d3fa",
+      "bytes": 7429
+    },
+    {
+      "path": "records/experiments/20261018-presence-v4/inputs.json",
+      "sha256": "5fd31356dad9333efaa82cb0e2a312533fe695b5c565278cd00136c9e693a1f7",
+      "bytes": 3493197
+    },
+    {
+      "path": "records/experiments/20261018-presence-v4/joint-comparison-cache.json",
+      "sha256": "483d849ecdefa86b7701b6f2892f9b545f4214391055620f608ef176467917c1",
+      "bytes": 188931
+    },
+    {
+      "path": "records/experiments/20261018-presence-v4/run.json",
+      "sha256": "10def7351036cb5bfb860190ca05fd64d08c3abf82f17ea93fb9c17a72b29e20",
+      "bytes": 15544
+    },
+    {
+      "path": "records/experiments/20261018-presence-v4/train_presence.py",
+      "sha256": "c4623ad184858584b10b126175547d89f144a72447edae154c6284efd618549e",
+      "bytes": 9921
+    },
+    {
+      "path": "records/experiments/20261018-presence-v4/train_presence_finetune.py",
+      "sha256": "241488599bb48d31af20fb75c8cd295011b277b29275510de0a7a09d1bfae2f1",
+      "bytes": 24740
+    },
+    {
+      "path": "records/experiments/20261018-presence-v4/train_skirt_baseline.py",
+      "sha256": "9c00a33d4d7e7fb6fdf5d9b988395293d648d5c4e01a067e0ab4acc74bcfe8d6",
+      "bytes": 16814
+    },
+    {
+      "path": "records/experiments/20261018-presence-v4/validation-predictions.json",
+      "sha256": "179c0b350501fdd199273c1eab36759f7bc87608ccb66e703cd1c8bb540d9a5f",
+      "bytes": 33688
+    },
+    {
+      "path": "records/experiments/20261018-presence-v4/early_export/model.tflite",
+      "sha256": "6c378913f41c91ce6fe376c5df42f434f506b54980fae061d3eb7df0cc2b6026",
+      "bytes": 9186664
+    },
+    {
+      "path": "artifacts/models/skirt-presence-v4/model.keras",
+      "sha256": "124368b0dd22465df4d711c1dc982e1851828beba002c59df700aa26c2d1fd25",
+      "bytes": 23934446
+    },
+    {
+      "path": "artifacts/models/skirt-presence-v4/model.tflite",
+      "sha256": "7bf9df9b1bacc757956c069f688345ff154ee480a65198ee5948fbe80bbcdb87",
+      "bytes": 9186664
+    },
+    {
+      "path": "artifacts/models/skirt-presence-v4/run.json",
+      "sha256": "10def7351036cb5bfb860190ca05fd64d08c3abf82f17ea93fb9c17a72b29e20",
+      "bytes": 15544
+    },
+    {
+      "path": "records/experiments/20261018-presence-v4/check_detection_candidate.py",
+      "sha256": "592c246d44234c14aec60e55e06052986e02facbe53a0a8d2b8fa6f95b61061f",
+      "bytes": 5581
+    }
+  ],
+  "packages_installed": 0,
+  "pi_verified": false,
+  "training_command": "wsl -d Ubuntu-24.04 -u skirttrain -- /home/skirttrain/skirt-fabric-sense/.venv-training/bin/python /mnt/c/Users/Administrator/OneDrive/Documents/ChatGPT/SkirtFabricSense/tools/training/train_presence_finetune.py --negative-manifest /mnt/c/Users/Administrator/OneDrive/Documents/ChatGPT/SkirtFabricSense/data/labels/negative-reviewed-v3.jsonl --joint-comparison-cache /mnt/c/Users/Administrator/OneDrive/Documents/ChatGPT/SkirtFabricSense/records/validation/2026-10-18-detection-candidate.json --output /home/skirttrain/skirt-fabric-sense/runs/20261018-presence-v4"
+}

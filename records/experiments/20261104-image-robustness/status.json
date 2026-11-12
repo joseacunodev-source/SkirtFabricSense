@@ -1,0 +1,10 @@
+{
+  "state": "completed",
+  "completion": {
+    "status": "completed",
+    "results_sha256": "633b7636c975e14a74122013dd4b1533dd4555bb8161db352201d8edb97656ca",
+    "protocol_sha256": "045b6491ddc4479fb24bc00b36acfd001d2003ea785cc25c8279cf15331682c0",
+    "source_sha256": "dd8086055a4bd99d864ac5edd173deb2511f51423572d54ba2c83cc2a4b4e97b",
+    "original_reference_match": true
+  }
+}

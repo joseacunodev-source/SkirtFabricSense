@@ -1,0 +1,43 @@
+{
+  "date_asia_manila": "2026-10-09",
+  "artifacts": [
+    {
+      "path": "records/acquisitions/2026-10-09-deepfashion-multimodal/commit.json",
+      "source_url": "https://api.github.com/repos/yumingj/DeepFashion-MultiModal/commits/main",
+      "bytes": 5096,
+      "sha256": "ff2cc625295dcc620a6b983c4032daaf69b94a91063adf4bf49f6f9fed4032a9",
+      "content_type": "application/json; charset=utf-8"
+    },
+    {
+      "path": "records/acquisitions/2026-10-09-deepfashion-multimodal/README.md",
+      "source_url": "https://raw.githubusercontent.com/yumingj/DeepFashion-MultiModal/4265495d8fc672af3a3c134d823b28b34eb5eb2d/README.md",
+      "bytes": 9590,
+      "sha256": "08bf449399e1b58507c5bb052954a2e31cbe105552523bec686d48cdabc1d51d",
+      "content_type": "text/plain; charset=utf-8"
+    },
+    {
+      "path": "records/acquisitions/2026-10-09-deepfashion-multimodal/LICENSE",
+      "source_url": "https://raw.githubusercontent.com/yumingj/DeepFashion-MultiModal/4265495d8fc672af3a3c134d823b28b34eb5eb2d/LICENSE",
+      "bytes": 475,
+      "sha256": "383efc1e19406703d591d32fa73b64f44914550456ecff4c0764b451e871b641",
+      "content_type": "text/plain; charset=utf-8"
+    },
+    {
+      "path": "records/acquisitions/2026-10-09-deepfashion-multimodal/tree.json",
+      "source_url": "https://api.github.com/repos/yumingj/DeepFashion-MultiModal/git/trees/4265495d8fc672af3a3c134d823b28b34eb5eb2d?recursive=1",
+      "bytes": 1617,
+      "sha256": "dc47dc541c16bfef97dcf17efa496a64114ab9a4b9129ad09a9594fb0c0de4d0",
+      "content_type": "application/json; charset=utf-8"
+    },
+    {
+      "path": "records/acquisitions/2026-10-09-deepfashion-multimodal/labels-response.bin",
+      "source_url": "https://drive.google.com/uc?export=download&id=11WoM5ZFwWpVjrIvZajW0g8EmQCNKMAWH",
+      "bytes": 588902,
+      "sha256": "aa911ac1753f906df292a5a7a77aa32c029d3e5c09414772c64fff6a643d59b9",
+      "content_type": "application/octet-stream"
+    }
+  ],
+  "failures": [],
+  "images_downloaded": 0,
+  "source_revision": "4265495d8fc672af3a3c134d823b28b34eb5eb2d"
+}

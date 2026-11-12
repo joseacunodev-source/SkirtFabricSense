@@ -1,0 +1,55 @@
+{
+  "release_id": "skirt-presence-v2",
+  "status": "development_candidate_not_promoted",
+  "model_files_and_sha256": [
+    {
+      "path": "artifacts/models/skirt-presence-v2/model.keras",
+      "sha256": "6edc71a86df3b6dbc2ec1ef6fc8a10fc5ebeb3b6650e85f227f68e6536fabeaf"
+    },
+    {
+      "path": "artifacts/models/skirt-presence-v2/model.tflite",
+      "sha256": "e027531ec7e0f92b1e0cc330b9410199386b4b5e6f63d58f082efccfcc9f960b"
+    }
+  ],
+  "run": {
+    "path": "records/experiments/20261017-presence-v2/run.json",
+    "sha256": "40184e4f8d6ac358e15030bac700154331ad3c58b5b12fdea6dcbc9179019087"
+  },
+  "executed_source": {
+    "path": "records/experiments/20261017-presence-v2/training_source.py",
+    "sha256": "c4623ad184858584b10b126175547d89f144a72447edae154c6284efd618549e"
+  },
+  "inputs": {
+    "path": "records/experiments/20261017-presence-v2/inputs.json",
+    "sha256": "8967e6aeb7f4f55ba2a31c7122ef0dddc3dd544245abdbdf3686b41b8ccca420"
+  },
+  "environment": {
+    "path": "records/experiments/20261017-presence-v2/environment.json",
+    "sha256": "30714a38fa1913c781d20f68f2dbcf6e834035d988683bdf2e5271a7322a8b15"
+  },
+  "comparison": {
+    "path": "records/validation/2026-10-17-presence-v2-comparison.json",
+    "sha256": "d1e0404a54179af96a6bdfc1fd31a1467c7e7ac4b3bfd57462372503113558e5"
+  },
+  "input": {
+    "shape": [
+      1,
+      224,
+      224,
+      3
+    ],
+    "dtype": "float32",
+    "preprocessing": "Full RGB resize224 Pillow bilinear; float32 0..255; normalization inside model"
+  },
+  "output": {
+    "shape": [
+      1,
+      1
+    ],
+    "meaning": "uncalibrated skirt presence score",
+    "threshold": 0.5
+  },
+  "promotion_reason": "Rejection rises 10/19 to15/19 but acceptedskirts fall48/80 to27/80; do not enable by default",
+  "pi_verified": false,
+  "camera_accuracy_verified": false
+}

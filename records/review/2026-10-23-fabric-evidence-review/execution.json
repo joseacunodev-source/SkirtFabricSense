@@ -1,0 +1,94 @@
+{
+  "schema_version": 1,
+  "recorded_at": "2026-10-23T19:14:49.564712+08:00",
+  "scope": "Offline preparation and synthetic tests only; zero actual review submissions",
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "commands": [
+    {
+      "argv": [
+        "C:\\Users\\Administrator\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-B",
+        "-m",
+        "unittest",
+        "tests.test_fabric_evidence_review",
+        "-v"
+      ],
+      "exit_code": 0,
+      "output": "records/review/2026-10-23-fabric-evidence-review/tests.log",
+      "sha256": "54a13c809c7c1a0de276d4eae79dd8d188cf9019fdddb5b3d6ad7724475fb061"
+    },
+    {
+      "argv": [
+        "C:\\Users\\Administrator\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-B",
+        "tools/datasets/fabric_evidence_review.py",
+        "verify",
+        "--directory",
+        "records/review/2026-10-23-fabric-evidence-review",
+        "--output",
+        "records/review/2026-10-23-fabric-evidence-review/verification-final.json"
+      ],
+      "exit_code": 0,
+      "output": "records/review/2026-10-23-fabric-evidence-review/verification-final.log",
+      "sha256": "82833bacc71ade77b72ca3877d92e02c669910e09dd69a8eff03ad2aa9621a02"
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "tools/datasets/fabric_evidence_review.py",
+      "sha256": "e9f0faec9272af02e98388b340b224e17b5e7f1c525ba8b94284a1d2530704fe",
+      "size_bytes": 20431
+    },
+    {
+      "path": "tests/test_fabric_evidence_review.py",
+      "sha256": "cc6d1615bd36f7b27675322b783b0f12d9d51888613930bd5319d60434c63757",
+      "size_bytes": 17479
+    },
+    {
+      "path": "docs/FABRIC_EVIDENCE_REVIEW.md",
+      "sha256": "6af7cb0edaa894aeb4eaf1560bebd633e421de5bd02859fcb16679ed3e2e45e5",
+      "size_bytes": 9114
+    },
+    {
+      "path": "records/review/2026-10-23-fabric-evidence-review/bindings.private.json",
+      "sha256": "1d5ad3ae5b28027cb6f92ddebc4a2c57a72be40ba498961fde416c37215b5f6d",
+      "size_bytes": 28609
+    },
+    {
+      "path": "records/review/2026-10-23-fabric-evidence-review/blind-queue.json",
+      "sha256": "b06d3e2185d96c26ca482ecf8b37aa77066dc96073cf7d382091dc423c179207",
+      "size_bytes": 6335
+    },
+    {
+      "path": "records/review/2026-10-23-fabric-evidence-review/events.jsonl",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "records/review/2026-10-23-fabric-evidence-review/tests.log",
+      "sha256": "54a13c809c7c1a0de276d4eae79dd8d188cf9019fdddb5b3d6ad7724475fb061",
+      "size_bytes": 5027
+    },
+    {
+      "path": "records/review/2026-10-23-fabric-evidence-review/verification-final.json",
+      "sha256": "82833bacc71ade77b72ca3877d92e02c669910e09dd69a8eff03ad2aa9621a02",
+      "size_bytes": 1223
+    },
+    {
+      "path": "records/review/2026-10-23-fabric-evidence-review/verification-final.log",
+      "sha256": "82833bacc71ade77b72ca3877d92e02c669910e09dd69a8eff03ad2aa9621a02",
+      "size_bytes": 1223
+    },
+    {
+      "path": "records/review/2026-10-23-fabric-evidence-review/verification.json",
+      "sha256": "483e5051411f1634f9aa579adbe7146772e6d5b024eb25aadf65a7b1c284703d",
+      "size_bytes": 1114
+    }
+  ],
+  "downloads": 0,
+  "installations": 0,
+  "training_runs": 0,
+  "images_added": 0,
+  "actual_observations_submitted": 0,
+  "training_approved": false
+}

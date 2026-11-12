@@ -1,0 +1,9 @@
+{
+  "date": "2026-10-15",
+  "environment": "WSL training Python; CUDA_VISIBLE_DEVICES=-1 for unit test only",
+  "command": "python -m unittest tests.test_localizer_scene_balance -v",
+  "passed": 3,
+  "skipped": 0,
+  "exit_code": 0,
+  "source_sha256": "88378014df220da549c623f923d898a59d15bdecf77a4c01b5f7b92fc553fc16"
+}

@@ -1,0 +1,95 @@
+{
+  "integrity_errors": [],
+  "images": 17,
+  "source_groups": 17,
+  "verified_independent_specimens": null,
+  "per_class": {
+    "source_cotton_appearance": {
+      "development_train": {
+        "images": 6,
+        "source_groups": 6
+      },
+      "development_validation": {
+        "images": 2,
+        "source_groups": 2
+      }
+    },
+    "source_denim_appearance": {
+      "development_train": {
+        "images": 4,
+        "source_groups": 4
+      },
+      "development_validation": {
+        "images": 1,
+        "source_groups": 1
+      }
+    },
+    "source_leather_appearance": {
+      "development_train": {
+        "images": 1,
+        "source_groups": 1
+      },
+      "development_validation": {
+        "images": 1,
+        "source_groups": 1
+      }
+    },
+    "source_chiffon_appearance": {
+      "development_train": {
+        "images": 1,
+        "source_groups": 1
+      },
+      "development_validation": {
+        "images": 1,
+        "source_groups": 1
+      }
+    }
+  },
+  "evidence_counts": {
+    "independent_human_review": 0,
+    "composition_verified": 0,
+    "explicit_worn_presentation": 0
+  },
+  "validation_single_group_classes": [
+    "source_denim_appearance",
+    "source_leather_appearance",
+    "source_chiffon_appearance"
+  ],
+  "live_approved": false,
+  "approval_note": "This audit cannot approve a model or replace independent evaluation.",
+  "schema_version": 1,
+  "inputs": [
+    {
+      "path": "data/labels/fabric-pilot-v1.jsonl",
+      "sha256": "92a80e4f974b9730f4631da75fed99b3f628751c882bfe179b39322d20247523",
+      "expected_sha256": "92a80e4f974b9730f4631da75fed99b3f628751c882bfe179b39322d20247523"
+    },
+    {
+      "path": "data/labels/fabric-pilot-v1-splits.json",
+      "sha256": "e076033aa293ebad2058cec0ed2395292202f87bec9a78bfe2d350fa38e06c57",
+      "expected_sha256": "e076033aa293ebad2058cec0ed2395292202f87bec9a78bfe2d350fa38e06c57"
+    },
+    {
+      "path": "records/acquisitions/2026-10-09-deepfashion-multimodal/LICENSE",
+      "sha256": "383efc1e19406703d591d32fa73b64f44914550456ecff4c0764b451e871b641",
+      "expected_sha256": "383efc1e19406703d591d32fa73b64f44914550456ecff4c0764b451e871b641"
+    },
+    {
+      "path": "records/acquisitions/2026-10-09-deepfashion-multimodal/LICENSE",
+      "sha256": "383efc1e19406703d591d32fa73b64f44914550456ecff4c0764b451e871b641",
+      "legal_revalidation": false
+    }
+  ],
+  "tool_sha256": "f4548fff130a024d8322bc0ff20ed4c6dd22c675bffce9d74438f7347e98504e",
+  "integrity_passed": true,
+  "status": "smoke_only_not_live_ready",
+  "scope": "Offline input audit; no new labels, images, training or camera evaluation",
+  "blocking_evidence_gaps": [
+    "Operational appearance taxonomy and independent label confirmation remain unresolved.",
+    "Source item groups are not verified physical garments.",
+    "Explicit presentation annotations are absent; no worn-specific result can be derived.",
+    "Only five development validation groups; three classes have one each.",
+    "Manual ROI smoke does not evaluate automatic localization-to-fabric crops.",
+    "No target-camera garment evaluation, unknown-input calibration or Pi verification."
+  ]
+}

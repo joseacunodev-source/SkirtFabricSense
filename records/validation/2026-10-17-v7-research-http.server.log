@@ -1,0 +1,30 @@
+2026-10-17 10:32:51.998135: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2026-10-17 10:32:52.676227: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F AVX512_VNNI FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2026-10-17 10:32:56.804100: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+/home/skirttrain/skirt-fabric-sense/.venv-training/lib/python3.12/site-packages/tensorflow/lite/python/interpreter.py:457: UserWarning:     Warning: tf.lite.Interpreter is deprecated and is scheduled for deletion in
+    TF 2.20. Please use the LiteRT interpreter from the ai_edge_litert package.
+    See the [migration guide](https://ai.google.dev/edge/litert/migration)
+    for details.
+    
+  warnings.warn(_INTERPRETER_DELETION_WARNING)
+INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+SkirtFabricSense camera workspace: http://127.0.0.1:18767
+127.0.0.1 "GET /api/status HTTP/1.1" 200 -
+127.0.0.1 "POST /api/live HTTP/1.1" 202 -
+127.0.0.1 "GET /api/jobs?id=97cb9dfa822a4281bbb46ee320d765f1 HTTP/1.1" 200 -
+127.0.0.1 "GET /api/jobs?id=97cb9dfa822a4281bbb46ee320d765f1 HTTP/1.1" 200 -
+127.0.0.1 "POST /api/live HTTP/1.1" 202 -
+127.0.0.1 "GET /api/jobs?id=c467a96f2a92476fa9a1dc14a0946833 HTTP/1.1" 200 -
+127.0.0.1 "GET /api/jobs?id=c467a96f2a92476fa9a1dc14a0946833 HTTP/1.1" 200 -
+127.0.0.1 "GET /api/jobs?id=c467a96f2a92476fa9a1dc14a0946833 HTTP/1.1" 200 -
+127.0.0.1 "POST /api/live HTTP/1.1" 202 -
+127.0.0.1 "GET /api/jobs?id=b2d7a16e62bf4f01961641a0c497e3e5 HTTP/1.1" 200 -
+127.0.0.1 "GET /api/jobs?id=b2d7a16e62bf4f01961641a0c497e3e5 HTTP/1.1" 200 -
+127.0.0.1 "POST /api/live HTTP/1.1" 202 -
+127.0.0.1 "GET /api/jobs?id=c3d7672a38784b82b0692bc6ea6cbdca HTTP/1.1" 200 -
+127.0.0.1 "GET /api/jobs?id=c3d7672a38784b82b0692bc6ea6cbdca HTTP/1.1" 200 -
+127.0.0.1 "GET /api/jobs?id=c3d7672a38784b82b0692bc6ea6cbdca HTTP/1.1" 200 -
+127.0.0.1 "POST /api/live HTTP/1.1" 202 -
+127.0.0.1 "GET /api/jobs?id=a79d6d5c767f4093a2e5acdb24878277 HTTP/1.1" 200 -
+127.0.0.1 "GET /api/jobs?id=a79d6d5c767f4093a2e5acdb24878277 HTTP/1.1" 200 -

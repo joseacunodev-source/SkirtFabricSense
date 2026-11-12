@@ -1,0 +1,16 @@
+{
+  "recorded_at_utc": "2026-10-09T14:20:23.400726+00:00",
+  "status": "passed",
+  "tests_run": 8,
+  "test_command": "python -m unittest tests.test_hemline -q",
+  "source_hashes": {
+    "app/hemline.py": "8c27a8b5b54ba1bebb0bfc8829e66e19351823d85b2cc24ef330990ec18a261c",
+    "tests/test_hemline.py": "a21845497f2433f6c553bfc26ff4cb78619e5a311634bbf617d34a80914bfc6b",
+    "config/hemline-guide-v1.json": "313c733412943cd4fd987b7557bd8de85b0a5b14b20032b39ebc4540642e5fcf",
+    "app/static/index.html": "f67d320a1a715c42caae981f70e691440b69666fdd614caf6fae17382ab05d0c"
+  },
+  "camera_verified": false,
+  "live_detection_connected": false,
+  "production_boundaries_defined": false,
+  "limitations": "Synthetic geometry tests only; user non-worn reference policy and localization remain pending."
+}

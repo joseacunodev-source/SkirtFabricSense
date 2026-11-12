@@ -1,0 +1,84 @@
+{
+  "schema_version": 1,
+  "taxonomy_id": "hemline-guide-v1",
+  "requested_on": "2026-10-09",
+  "semantics": "body_relative_hemline_category_not_centimetres",
+  "classes": [
+    {
+      "id": "micro",
+      "display_name": "Micro"
+    },
+    {
+      "id": "mini",
+      "display_name": "Mini"
+    },
+    {
+      "id": "above_knee",
+      "display_name": "Above knee"
+    },
+    {
+      "id": "on_knee",
+      "display_name": "On knee"
+    },
+    {
+      "id": "below_knee",
+      "display_name": "Below knee"
+    },
+    {
+      "id": "midi",
+      "display_name": "Midi"
+    },
+    {
+      "id": "tea",
+      "display_name": "Tea"
+    },
+    {
+      "id": "maxi",
+      "display_name": "Maxi"
+    },
+    {
+      "id": "full",
+      "display_name": "Full"
+    }
+  ],
+  "pleating_classes": [
+    {
+      "id": "non_pleated",
+      "display_name": "Non-pleated"
+    },
+    {
+      "id": "pleated",
+      "display_name": "Pleated"
+    }
+  ],
+  "reference": {
+    "path": "docs/references/skirt-length-guide.jpg",
+    "sha256": "9907381f0b95733347c6c894efc9e647dba11160bb82a5f54fdaa99157345d2b",
+    "provenance": "User supplied reference; original author and reuse terms not supplied",
+    "role": "Taxonomy illustration, not training sample or calibrated anatomical measurement"
+  },
+  "geometry_mode": [
+    "worn",
+    "hanging",
+    "mannequin",
+    "held"
+  ],
+  "class_boundaries": null,
+  "boundary_status": "Requires agreed presentation geometry and annotated validation evidence",
+  "abstention_states": [
+    "no_skirt",
+    "insufficient_body_reference",
+    "hem_occluded",
+    "multiple_skirts",
+    "borderline",
+    "unsupported_view"
+  ],
+  "live_implementation_status": "not_connected",
+  "non_worn_reference_policy": "calibrated_standard_body_or_mannequin_estimate",
+  "fabric_feature": {
+    "retained": true,
+    "operator_toggle": true,
+    "default_enabled": true,
+    "model_available": false
+  }
+}

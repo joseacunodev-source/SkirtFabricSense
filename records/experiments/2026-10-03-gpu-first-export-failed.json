@@ -1,0 +1,39 @@
+{
+  "status": "failed",
+  "seed": 42,
+  "data": "synthetic stateless normal, 4x32x32x3",
+  "dataset_manifest": null,
+  "split_hash": null,
+  "purpose": "infrastructure only; no project accuracy or Pi verification",
+  "python": "3.12.3",
+  "source_sha256": "d822c2a9fcc86a6667c32eee81223ca489d30ac8c8df2e9eb80ff5bf53712875",
+  "versions": {
+    "tensorflow": "2.20.0",
+    "numpy": "2.5.3"
+  },
+  "gpu_devices": [
+    "PhysicalDevice(name='/physical_device:GPU:0', device_type='GPU')"
+  ],
+  "loss": 0.8526039719581604,
+  "gradient_norm": 0.5379453897476196,
+  "elapsed_training_step_seconds": 0.820960389999982,
+  "tensor_device": "/job:localhost/replica:0/task:0/device:GPU:0",
+  "prediction_device": "/job:localhost/replica:0/task:0/device:GPU:0",
+  "weights_changed": true,
+  "optimizer": {
+    "name": "SGD",
+    "learning_rate": 0.01,
+    "steps": 1
+  },
+  "export": {
+    "sha256": "1c5bbd8a57216bf5eb5e21b48299a3112ee55c8f03886c994a0cb88b4a4fa471",
+    "bytes": 3292,
+    "maximum_absolute_error": null,
+    "atol": 1e-05,
+    "rtol": 0.0001,
+    "hardware": "desktop CPU, not Raspberry Pi"
+  },
+  "error": "\nNot equal to tolerance rtol=0.0001, atol=1e-05\n\ninf location mismatch:\n ACTUAL: array([[inf,  0.]], dtype=float32)\n DESIRED: array([[ 0.959127, -0.068373]], dtype=float32)",
+  "traceback": "Traceback (most recent call last):\n  File \"/mnt/c/Users/Administrator/OneDrive/Documents/ChatGPT/SkirtFabricSense/tools/training/gpu_smoke.py\", line 83, in main\n    np.testing.assert_allclose(actual, expected, atol=1e-5, rtol=1e-4)\n  File \"/home/skirttrain/skirt-fabric-sense/.venv-training/lib/python3.12/site-packages/numpy/testing/_private/utils.py\", line 1780, in assert_allclose\n    assert_array_compare(compare, actual, desired, err_msg=str(err_msg),\n  File \"/home/skirttrain/skirt-fabric-sense/.venv-training/lib/python3.12/site-packages/numpy/testing/_private/utils.py\", line 858, in assert_array_compare\n    infs_mask = func_assert_same_pos(\n                ^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/skirttrain/skirt-fabric-sense/.venv-training/lib/python3.12/site-packages/numpy/testing/_private/utils.py\", line 795, in func_assert_same_pos\n    raise AssertionError(msg)\nAssertionError: \nNot equal to tolerance rtol=0.0001, atol=1e-05\n\ninf location mismatch:\n ACTUAL: array([[inf,  0.]], dtype=float32)\n DESIRED: array([[ 0.959127, -0.068373]], dtype=float32)\n",
+  "report_normalization": "Original nonstandard Infinity encoded as null; nonfinite failure and raw transcript retained."
+}

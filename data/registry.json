@@ -1,0 +1,880 @@
+{
+  "schema_version": 1,
+  "updated_date_asia_manila": "2026-11-11",
+  "status": "research_station_v9_desktop_verified_product_acceptance_open",
+  "scope": "One full-skirt camera view supplies skirt, length and fabric predictions.",
+  "acquisition_manifest": {
+    "path": "data/external/acquisition_manifest.json",
+    "sha256": "a9db7b065b21004ab576de471f85fd623475d51fbcb937d223ccbcec4455aa7d"
+  },
+  "verification_audit": {
+    "path": "data/provenance/seed_audit.json",
+    "sha256": "7052606f101c3f192fdac922952fa596329b580a62e54e9f6569ce0974d38df9"
+  },
+  "downloaded_totals": {
+    "photographs": 1932,
+    "unique_file_hashes": 1932,
+    "unique_decoded_pixel_hashes": 1932,
+    "skirt_train_source_images": 1000,
+    "fabric_source_candidates": 500,
+    "protected_seed_images": 12,
+    "source_skirt_auxiliary_development_admitted": 1000,
+    "full_project_training_release_images": 0,
+    "verified_project_fabric_labels": 0,
+    "verified_independent_garments": null,
+    "note": "Original images only; five NPCGI originals include one dress/category conflict and two visibility exclusions; no verified physical specimen count.",
+    "negative_source_candidates": 390,
+    "fullview_fabric_source_candidates": 25,
+    "negative_development_admitted": 207,
+    "composition_source_pilot_originals": 5
+  },
+  "split_policy": {
+    "group_by": [
+      "physical_garment_or_specimen",
+      "source_listing",
+      "parent_frame",
+      "video_and_capture_session",
+      "near_duplicate_connected_components"
+    ],
+    "unresolved_garment_identity": "Quarantine from final evaluation until reviewed. Source-page IDs do not prove unique garments.",
+    "original_validation_and_test_data": "Never move into training or tune final thresholds on them.",
+    "crop_and_augmentation_policy": "Inherit parent garment split; never count as independent garments.",
+    "source_revision_and_manifest_hashes_required": true
+  },
+  "sources": [
+    {
+      "source_id": "fashionpedia-val2020-seed",
+      "name": "Fashionpedia validation metadata and attributed Flickr seed",
+      "status": "metadata_and_12_images_downloaded",
+      "primary_urls": [
+        "https://github.com/cvdfoundation/fashionpedia",
+        "https://fashionpedia.github.io/home/data_license.html"
+      ],
+      "source_documentation_revision": "d291e52663ecfb17bba9b953b2f8e1f2bf3fbd1e",
+      "local_artifact_paths": [
+        "data/external/fashionpedia/instances_attributes_val2020.json",
+        "data/external/fashionpedia/source_README.md",
+        "data/external/fashionpedia/terms_snapshot.html",
+        "data/external/fashionpedia/sample_metadata/9656_oembed.json",
+        "data/external/fashionpedia/sample_images/9656.jpg",
+        "data/external/fashionpedia/sample_metadata/16212_oembed.json",
+        "data/external/fashionpedia/sample_images/16212.jpg",
+        "data/external/fashionpedia/sample_metadata/9425_oembed.json",
+        "data/external/fashionpedia/sample_images/9425.jpg",
+        "data/external/fashionpedia/sample_metadata/10727_oembed.json",
+        "data/external/fashionpedia/sample_images/10727.jpg",
+        "data/external/fashionpedia/sample_metadata/11803_oembed.json",
+        "data/external/fashionpedia/sample_images/11803.jpg",
+        "data/external/fashionpedia/sample_metadata/13049_oembed.json",
+        "data/external/fashionpedia/sample_images/13049.jpg",
+        "data/external/fashionpedia/sample_metadata/13283_oembed.json",
+        "data/external/fashionpedia/sample_images/13283.jpg",
+        "data/external/fashionpedia/sample_metadata/13339_oembed.json",
+        "data/external/fashionpedia/sample_images/13339.jpg",
+        "data/external/fashionpedia/sample_metadata/14794_oembed.json",
+        "data/external/fashionpedia/sample_images/14794.jpg",
+        "data/external/fashionpedia/sample_metadata/14983_oembed.json",
+        "data/external/fashionpedia/sample_images/14983.jpg",
+        "data/external/fashionpedia/sample_metadata/15619_oembed.json",
+        "data/external/fashionpedia/sample_images/15619.jpg",
+        "data/external/fashionpedia/sample_metadata/15687_oembed.json",
+        "data/external/fashionpedia/sample_images/15687.jpg"
+      ],
+      "acquired_counts": {
+        "metadata_images": 1158,
+        "metadata_annotations": 8781,
+        "metadata_skirt_instances": 162,
+        "metadata_skirt_images": 162,
+        "photos": 12,
+        "photos_with_source_pleat_attribute": 2,
+        "verified_independent_garments": null,
+        "verified_project_fabric_labels": 0
+      },
+      "annotation_terms": {
+        "license": "CC BY 4.0",
+        "url": "https://fashionpedia.github.io/home/data_license.html",
+        "local_evidence": "data/external/fashionpedia/terms_snapshot.html"
+      },
+      "image_terms": {
+        "license": "CC BY 2.0 for the 12 acquired Flickr images",
+        "evidence": "Per-image saved oEmbed records and acquisition manifest",
+        "attribution": "data/external/fashionpedia/ATTRIBUTION.md",
+        "image_license_is_distinct_from_annotation_license": true
+      },
+      "sample_manifest": "data/provenance/external_holdout_samples.jsonl",
+      "original_split": "val2020",
+      "project_use": "external_holdout_sanity_only",
+      "training_admission": "prohibited_original_validation_split",
+      "limitations": [
+        "Native dimensions differ from annotations for 10 of 12 images; all need visual registration before mask use.",
+        "Image identity is not verified physical garment identity.",
+        "Source attributes require reviewed project mappings; missing pleat is not automatically non-pleated.",
+        "No project fabric ground truth."
+      ]
+    },
+    {
+      "source_id": "textilenet-reference",
+      "name": "TextileNet taxonomy reference",
+      "status": "taxonomy_documentation_and_training_url_metadata_only",
+      "primary_urls": [
+        "https://github.com/hahashu/TextileNet"
+      ],
+      "source_documentation_revision": "6b4f0579b2abc18422192afea07882f84dcb83e4",
+      "local_artifact_paths": [
+        "data/external/textilenet/fabric_label.txt",
+        "data/external/textilenet/fibre_label.txt",
+        "data/external/textilenet/source_README.md",
+        "data/external/textilenet/LICENSE",
+        "data/external/fabric_expansion/metadata/fabric_train.json"
+      ],
+      "acquired_counts": {
+        "photos": 0,
+        "fabric_category_names": 27,
+        "fibre_category_names": 33
+      },
+      "terms": {
+        "code_license": "MIT",
+        "image_license": "unresolved",
+        "reason": "README CC BY sentence concerns Author Accepted Manuscripts; does not clearly license underlying images.",
+        "local_evidence": [
+          "data/external/textilenet/source_README.md",
+          "data/external/textilenet/LICENSE"
+        ]
+      },
+      "candidate_download_links": {
+        "fabric": "https://drive.google.com/file/d/1G_g3NEcluW9iKbWY6BiCMcSo0eLxCG0z/view",
+        "fibre": "https://drive.google.com/file/d/1e_E9NeTs7qSuUzWszSkmK09jTHPQwdd6/view"
+      },
+      "download_links_are_completion_evidence": false,
+      "training_admission": "pending_image_terms_label_review_and_images",
+      "relevance": "Separate fibre and fabric taxonomy; investigate suitable appearance labels after scope approval."
+    },
+    {
+      "source_id": "dtd-labels-reference",
+      "name": "Describable Textures Dataset labels",
+      "status": "readme_and_labels_archive_only",
+      "primary_urls": [
+        "https://www.robots.ox.ac.uk/~vgg/data/dtd/"
+      ],
+      "local_artifact_paths": [
+        "data/external/dtd/source_README.txt",
+        "data/external/dtd/dtd-r1.0.1-labels.tar.gz"
+      ],
+      "acquired_counts": {
+        "photos": 0,
+        "label_archive_members": 31,
+        "image_references": 5640,
+        "texture_categories": 47
+      },
+      "terms": {
+        "observed_statement": "Made available to the computer vision community for research purposes.",
+        "url": "https://www.robots.ox.ac.uk/~vgg/data/dtd/",
+        "review_date_asia_manila": "2026-10-02",
+        "blanket_commercial_or_redistribution_permission_inferred": false
+      },
+      "split_policy": "Preserve each of the ten original train/validation/test definitions. Do not combine different split indices into one partition.",
+      "training_admission": "not_admitted_no_images",
+      "relevance": "Optional texture pretraining only; perceptual descriptors are not project fibre or fabric ground truth."
+    },
+    {
+      "source_id": "deepfashion-candidate",
+      "name": "DeepFashion category and attribute benchmark",
+      "status": "researched_not_downloaded",
+      "primary_urls": [
+        "https://mmlab.ie.cuhk.edu.hk/projects/DeepFashion/AttributePrediction.html",
+        "https://mmlab.ie.cuhk.edu.hk/projects/DeepFashion.html"
+      ],
+      "local_artifact_paths": [],
+      "acquired_counts": {
+        "photos": 0,
+        "annotations": 0
+      },
+      "terms": {
+        "scope": "non-commercial research",
+        "redistribution": "restricted; internal copies at a single site in the same organization allowed by official agreement",
+        "url": "https://mmlab.ie.cuhk.edu.hk/projects/DeepFashion.html",
+        "review_date_asia_manila": "2026-10-02"
+      },
+      "training_admission": "pending_subset_acquisition_terms_review_and_grouping",
+      "relevance": "Secondary style/clothing candidate; fabric ground truth suitability not yet verified."
+    },
+    {
+      "source_id": "project-camera-pilot",
+      "name": "Local single-view full-skirt pilot",
+      "status": "planned_not_collected",
+      "primary_urls": [],
+      "local_artifact_paths": [],
+      "acquired_counts": {
+        "photos": 0,
+        "verified_garments": 0
+      },
+      "training_admission": "not_collected",
+      "capture_contract": "One camera view contains full skirt; software fabric crops inherit frame and garment grouping.",
+      "terms": {
+        "status": "Record capture permission and permitted research/release use for each collection."
+      },
+      "label_evidence_required": [
+        "garment tag or supplier/material evidence",
+        "reviewed style and pleating definitions",
+        "measured physical length and calibration reference"
+      ],
+      "relevance": "Required for deployment-domain training and unseen-garment device evaluation."
+    },
+    {
+      "source_id": "fashionpedia-train2020",
+      "name": "fashionpedia-train2020",
+      "status": "acquired_decoded_audited",
+      "sample_manifest": "data/manifests/skirt_candidates.jsonl",
+      "acquired_counts": {
+        "photos": 1000,
+        "verified_project_fabric_labels": 0,
+        "verified_physical_garments": null
+      },
+      "source_partition": "train2020",
+      "terms": {
+        "image_license_counts": {
+          "Attribution-NonCommercial-NoDerivatives License": 444,
+          "Attribution License": 135,
+          "Attribution-NonCommercial-ShareAlike License": 118,
+          "Attribution-ShareAlike License": 70,
+          "Attribution-NonCommercial License": 128,
+          "Attribution-NoDerivatives License": 105
+        },
+        "annotations": "CC BY 4.0",
+        "image_rights_separate": true
+      },
+      "training_admission": "source_skirt_presence auxiliary only; project style/fabric/physical-length labels not approved",
+      "details": "docs/SKIRT_ACQUISITION.md",
+      "acquisition_report": "records/acquisitions/skirt_expansion.json"
+    },
+    {
+      "source_id": "fabnet3k-1.0.0",
+      "name": "fabnet3k-1.0.0",
+      "status": "acquired_decoded_audited",
+      "sample_manifest": "data/manifests/fabric_candidates.jsonl",
+      "acquired_counts": {
+        "photos": 500,
+        "verified_project_fabric_labels": 0,
+        "verified_physical_garments": null
+      },
+      "source_partition": "unspecified_in_archive",
+      "terms": {
+        "publisher_declared_license": "CC BY 4.0",
+        "individual_photo_provenance": "not supplied"
+      },
+      "training_admission": "pending explicit partition, label and source review",
+      "details": "docs/FABRIC_ACQUISITION.md",
+      "acquisition_report": "records/acquisitions/fabric_expansion.json"
+    }
+  ],
+  "training_releases": [],
+  "notes": [
+    "Acquisition downloads and agent skills are not Raspberry Pi runtime dependencies.",
+    "No model training, measured accuracy, or complete dataset download is claimed.",
+    "Image titles and source descriptors remain untrusted metadata and are not automatically class labels.",
+    "Expansion 2026-10-02: 1512 unique decoded images; 11 perceptual candidate pairs; 48 sample images inspected. See docs/DATASET_REVIEW.md."
+  ],
+  "seed_downloaded_totals": {
+    "artifacts": 33,
+    "bytes": 16863279,
+    "photographs": 12,
+    "photographs_admitted_to_training": 0,
+    "verified_project_fabric_labels": 0,
+    "verified_independent_garments": null
+  },
+  "expansion_acquisitions": [
+    {
+      "source_id": "fashionpedia-train2020",
+      "manifest": {
+        "path": "data/manifests/skirt_candidates.jsonl",
+        "sha256": "3eb0038cf41995135b03895d6845a9a287fff7462a8e7e9449597a4353c54f24"
+      },
+      "report": {
+        "path": "records/acquisitions/skirt_expansion.json",
+        "sha256": "e1e9a52723eea52978041cbb892c60fafe52cc8bb74b69d25d78a98057b5d579"
+      }
+    },
+    {
+      "source_id": "fabnet3k-1.0.0",
+      "manifest": {
+        "path": "data/manifests/fabric_candidates.jsonl",
+        "sha256": "c66cca912ec79b70e8eaf5b11700962e4cdc6a7d71451534a3d27c91fba1d782"
+      },
+      "report": {
+        "path": "records/acquisitions/fabric_expansion.json",
+        "sha256": "51f55cbf780b8cee5a4571989f4d4ebd1f63733003cedcd5e3c682300141d87a"
+      }
+    },
+    {
+      "source_id": "fashionpedia-train2020-negative-candidates",
+      "manifest": {
+        "path": "data/manifests/negative-candidates-v1.jsonl",
+        "sha256": "c4306ef7afacfde2e35daf1c6d5144c026075e5944180e2f38d46b9730470d02"
+      },
+      "report": {
+        "path": "records/acquisitions/2026-10-11-negatives.json",
+        "sha256": "2a5114c63dcc317a676ac3fc6f1b9c05af17362fc69e252a7eff2f86c185dea0"
+      },
+      "training_admitted": false
+    },
+    {
+      "source_id": "deepfashion-multimodal",
+      "manifest": {
+        "path": "data/manifests/fullview-fabric-candidates-v1.jsonl",
+        "sha256": "65653c0b1cdcb26a5be5eaec3f5c4414eda208ca18439858304261fec60c34aa"
+      },
+      "report": {
+        "path": "records/acquisitions/2026-10-11-fullview-fabric/report.json",
+        "sha256": "bd913831033cd73c61dc0af34738488a5fdde387acbf6065966628fdb77ac6cc"
+      },
+      "training_admitted": false
+    },
+    {
+      "source_id": "fashionpedia-train2020-negative-candidates-v2",
+      "manifest": {
+        "path": "data/manifests/negative-candidates-v2.jsonl",
+        "sha256": "12328ba062b158a7c238c4bc6c1b57252f0a16e82001b37911c3c57839f50e3d"
+      },
+      "report": {
+        "path": "records/acquisitions/2026-10-13-negatives-v2/report.json",
+        "sha256": "ae9eaab3d120576846cf089c6b48c15980d487c5411717b68afb18e435059d4d"
+      },
+      "training_admitted": false
+    },
+    {
+      "source_id": "fashionpedia-train2020-negative-candidates-v3",
+      "manifest": {
+        "path": "data/manifests/negative-candidates-v3.jsonl",
+        "sha256": "45c69c3db6697ca5b82eed9856d12c3cfde92ce85467f67be75c8e4f1f7209d7"
+      },
+      "report": {
+        "path": "records/acquisitions/2026-10-17-negatives-v3/report.json",
+        "sha256": "489ad6f849fc48b43c5f3e2989dd6648d952cc6330e13108f6d8b70f407fc511"
+      },
+      "training_admitted": false,
+      "note": "Raw180candidate manifest stays unadmitted;132newcurated admissions recorded separately."
+    },
+    {
+      "source_id": "ntnu-npcgi-1.1-five-image-pilot",
+      "manifest": {
+        "path": "data/manifests/npcgi-pilot-candidates.jsonl",
+        "sha256": "a0d52850ba7a749dd8d7aa33225eaceed8710b2f21c63ff3bf246c892c59d5ed"
+      },
+      "report": {
+        "path": "records/acquisitions/2026-10-18-npcgi-pilot/report.json",
+        "sha256": "bc5d796a5bd313ad4724e9631e40ec1f4e16bd6429acf6b06b5b237b2e9df2ba"
+      },
+      "training_admitted": false,
+      "originals": 5,
+      "fullview_skirt_candidates": 2,
+      "quarantined_visual_examples": 3,
+      "worn_examples": 0,
+      "note": "Source composition transcription retained separately from visual appearance; all candidates unadmitted with null splits."
+    }
+  ],
+  "expansion_audit": {
+    "path": "records/validation/2026-10-18-combined-intake-audit.json",
+    "sha256": "f7090db9b38dffed1cd460492e2943872da895f420a4922f91efb1546ed7fbfe"
+  },
+  "development_splits": [
+    {
+      "path": "data/manifests/source-skirt-development-splits.json",
+      "sha256": "df3b096e4d131db55852b20de075d811c95520d23766648928555d755fe8812c",
+      "task": "source_skirt_presence",
+      "development_train": 810,
+      "development_validation": 190,
+      "qualification": "Single positive source category; not a complete classifier or full-project label release"
+    }
+  ],
+  "label_preparation": {
+    "skirt_report": {
+      "path": "data/labels/skirt-preparation-v2/report.json",
+      "sha256": "04fc308452502f04ffef8cf426d657134f8f20907f0fc03f0a7b29017559430d"
+    },
+    "skirt_visual_reviews": {
+      "path": "data/labels/skirt-visual-reviews-v2.jsonl",
+      "sha256": "8608cdd71c471f8f505c11745378cdea0f3f62d1eb55d962701a3fbb25f973fc"
+    },
+    "merge_report": {
+      "path": "data/labels/skirt-visual-reviews-v2.report.json",
+      "sha256": "7b8351772324abf67bcf25e03d6105e80a9135a3cd6b5a843859bc8feca4b8fc"
+    },
+    "fabric_report": {
+      "path": "records/review/fabric-label-review-2026-10-03.json",
+      "sha256": "da1acb84a680117e7287583b30d687e80ad5e87e2b82c004e46e85975b0a3a67"
+    },
+    "skirt_images_visually_reviewed": 1000,
+    "skirt_images_pending_visual_review": 0,
+    "independent_human_review_complete": false,
+    "appearance_candidates_before_garment_quarantine": 375,
+    "baseline_manifest": {
+      "path": "data/labels/skirt-baseline-v1.jsonl",
+      "sha256": "9160998b5ab0f65251c53cefd783e1c6351887bec8c655074be64dd2717dc2eb"
+    },
+    "baseline_report": {
+      "path": "data/labels/skirt-baseline-v1.report.json",
+      "sha256": "b1745b124d750ce591052f63ac21d7fd742cd3a5f00a95ff79a5514b9507cc20"
+    },
+    "baseline_images": 372,
+    "baseline_train": 292,
+    "baseline_validation": 80,
+    "review_conflicts_quarantined": 8,
+    "full_project_training_release": false,
+    "negative_pilot": {
+      "manifest": {
+        "path": "data/labels/negative-reviewed-v1.jsonl",
+        "sha256": "f5f42fb2dbc3bd5ab53e2ee1ededa01ca1e49a5ce0d656c900447cacfa89ebc2"
+      },
+      "report": {
+        "path": "data/labels/negative-reviewed-v1.report.json",
+        "sha256": "95de590c3e394e2baa0c97c3aacfe4a1f3feec0984951b5d700bde207c48c6de"
+      },
+      "admitted": 12,
+      "quarantined": 78,
+      "train": 9,
+      "validation": 3,
+      "independent_human_review_complete": false
+    },
+    "fabric_smoke": {
+      "manifest": {
+        "path": "data/labels/fabric-pilot-v1.jsonl",
+        "sha256": "92a80e4f974b9730f4631da75fed99b3f628751c882bfe179b39322d20247523"
+      },
+      "split": {
+        "path": "data/labels/fabric-pilot-v1-splits.json",
+        "sha256": "e076033aa293ebad2058cec0ed2395292202f87bec9a78bfe2d350fa38e06c57"
+      },
+      "review": {
+        "path": "records/review/2026-10-11-fabric-pilot.json",
+        "sha256": "aa420be7f2b09bfbdb01f456fc85577071412a95d23f06a8d1fe1c087714d377"
+      },
+      "admitted": 17,
+      "train": 12,
+      "validation": 5,
+      "scope": "internal_source_appearance_pipeline_smoke_only",
+      "verified_fiber_composition": false,
+      "live_approved": false
+    },
+    "negative_extension": {
+      "manifest": {
+        "path": "data/labels/negative-reviewed-v2.jsonl",
+        "sha256": "016e45e38d695b9bb62c480497c02af08845b83f4831d8ca91365e2eabc067b8"
+      },
+      "report": {
+        "path": "data/labels/negative-reviewed-v2.report.json",
+        "sha256": "d9b09547f51ea463130a69e682e173214cebe8db53ea595fd3732d908f65af86"
+      },
+      "admitted": 75,
+      "train": 56,
+      "validation": 19,
+      "new_admitted": 63,
+      "independent_human_review_complete": false
+    },
+    "negative_extension_v3": {
+      "manifest": {
+        "path": "data/labels/negative-reviewed-v3.jsonl",
+        "sha256": "82009d40445a9091f7998ab8479cec10b5086826001b7b9f513862bd11da52d1"
+      },
+      "report": {
+        "path": "data/labels/negative-reviewed-v3.report.json",
+        "sha256": "da7aecc23b76e851049b7829299ac4c19b53ee20bb7674ade4ef7685f2ab3e87"
+      },
+      "admission_audit": {
+        "path": "records/validation/2026-10-18-negative-v3-admission-audit.json",
+        "sha256": "2364f594f2e0df8ebd53ce9bab10f1059bd770aa6ca98509fcc9305bcd64e353"
+      },
+      "counts": {
+        "rows": 390,
+        "admitted": 207,
+        "training": 155,
+        "validation": 52,
+        "new_admitted": 132
+      },
+      "prior_assignments_preserved": true,
+      "independent_human_truth": false
+    }
+  },
+  "label_preparation_history": [
+    {
+      "skirt_report": {
+        "path": "data/labels/skirt-preparation-v1/report.json",
+        "sha256": "862e0973678242fad65f16ba7ffd6359059d2926bf9dc9071e6637c3a688a7de"
+      },
+      "fabric_report": {
+        "path": "records/review/fabric-label-review-2026-10-03.json",
+        "sha256": "da1acb84a680117e7287583b30d687e80ad5e87e2b82c004e46e85975b0a3a67"
+      },
+      "skirt_visual_reviews": {
+        "path": "data/labels/skirt-visual-reviews-v1.jsonl",
+        "sha256": "95ea81f84429e41f1ee8ed47922901453cf693ae66250177ccdf887a0618b62d"
+      },
+      "source_auxiliary_images": 612,
+      "single_agent_reviewed_appearance_images": 13,
+      "skirt_images_visually_reviewed": 48,
+      "skirt_images_pending_visual_review": 952,
+      "fabric_descriptions_triaged": 500,
+      "verified_fabric_composition_labels": 0,
+      "full_project_training_release": false
+    }
+  ],
+  "development_experiments": [
+    {
+      "path": "records/models/2026-10-04-skirt-baseline-v1.json",
+      "sha256": "dcee09e863f3603d91da487db9bf6539d63a55dfce63d8b561e5bb56152c8091"
+    },
+    {
+      "path": "records/models/2026-10-04-skirt-finetune-v1.json",
+      "sha256": "37164f69742917302719434a1d87b506bb3bdfd1e6e003bb5fdf29aa7824a8d5"
+    },
+    {
+      "path": "records/models/2026-10-10-skirt-localizer-v1.json",
+      "sha256": "44f4d6b9ec148b49829894b4334778264e30cb94a49aff15170030ff3be01595"
+    },
+    {
+      "path": "records/models/2026-10-12-skirt-presence-v1.json",
+      "sha256": "79b8fe3a6c2839cb941bfd453e28994f493938a9ff2da3f345896615dd04d9d3"
+    },
+    {
+      "path": "records/models/2026-10-12-fabric-smoke-v1.json",
+      "sha256": "f23934b4bd8bce33347b2f9a7d41c57fe7744d8c7e201c734e928393f4ad68bf"
+    },
+    {
+      "path": "records/models/2026-10-14-skirt-localizer-v2.json",
+      "sha256": "1c96413add7763a03be7f72ace73df96cc0b0be14e3a7ebe4d0a2a96fb1ecf6c"
+    },
+    {
+      "path": "records/models/2026-10-15-skirt-localizer-v3.json",
+      "sha256": "05b83ece7a5577d479b0f92a62754c2ac85739f65ef4fbd5242b2e58a8d119d3"
+    },
+    {
+      "path": "records/models/2026-10-17-skirt-presence-v2.json",
+      "sha256": "a48d6b4ef6a8f388f8d59155126527fef38ce5161582c9ae169c9ff1cd09ce2a"
+    },
+    {
+      "path": "records/models/2026-10-18-skirt-presence-v3.json",
+      "sha256": "15b52e879ae5e3e3e97b20ae7acbd90e31753a44288b273592f9698604030a23"
+    },
+    {
+      "path": "records/models/2026-10-18-skirt-presence-v4.json",
+      "sha256": "fa5cf36f35cb8c9e59411a679106c9e5959bad166a81e07570c436abc5716fd6"
+    },
+    {
+      "path": "records/models/2026-10-21-skirt-category-presence-v1.json",
+      "sha256": "56e197d0af86f1802d892d3f52bf21d23256c21a14de8781b6b91e7e92d06184"
+    }
+  ],
+  "pretrained_assets": [
+    {
+      "path": "records/acquisitions/2026-10-04-mobilenetv2-weights.json",
+      "sha256": "61afa7cd452eaff79e6c151cf35c738a22d3ff379e68832e4c3ea950d424b5b7"
+    },
+    {
+      "path": "records/models/2026-10-17-movenet-candidates.json",
+      "sha256": "0d7ccb222b89725d5b22a2738ffbe667c4300e087ecd059d8deb64e68813bf5c"
+    }
+  ],
+  "physical_garment_access": {
+    "date": "2026-10-20",
+    "source": "user_reconfirmation",
+    "status": "neither_skirts_nor_raspberry_pi_available"
+  },
+  "supplementary_metadata": [
+    {
+      "source": "DeepFashion-MultiModal",
+      "source_commit": "4265495d8fc672af3a3c134d823b28b34eb5eb2d",
+      "evidence": [
+        {
+          "path": "records/acquisitions/2026-10-09-deepfashion-multimodal/acquisition.json",
+          "sha256": "07e206bb3346c779ecb4333364f46fd9ae2ad8cc19cbed1250534843c4c271ab"
+        },
+        {
+          "path": "records/review/2026-10-10-fabric-followup.json",
+          "sha256": "d781743e269bf5538bda4916f44644735a92aeb51c8d609a01546529b22a73da"
+        },
+        {
+          "path": "records/review/2026-10-11-fabric-partition.json",
+          "sha256": "df662be550b36778caa22a0f4fcc9e8834112aa3496f2761beb4176a829e0877"
+        }
+      ],
+      "complete_images_added": 25,
+      "skirt_filename_candidates": 848,
+      "source_item_tokens": 288,
+      "training_admitted": true,
+      "partition_status": "all_848_exactly_joined_367_train_224_query_257_gallery",
+      "terms": "Non-commercial research; internal copying; redistribution restricted",
+      "training_admission_scope": "17 source items for internal pipeline smoke only; not verified composition or live release",
+      "new_v2_candidates_training_admitted": false
+    },
+    {
+      "source": "DeepFashion CategoryAttribute Anno_fine",
+      "evidence": [
+        {
+          "path": "records/acquisitions/2026-10-14-attribute-metadata/report.json",
+          "sha256": "bb2c729b879a7b60dc1e31407583f2807638b4c8a93e8afd9949e6ec9ce651b4"
+        },
+        {
+          "path": "records/acquisitions/2026-10-14-attribute-metadata/feasibility.json",
+          "sha256": "ff934e8b3bc75a515eacd637e99bd1b4645713acd2def07f7f8a5fef7c41660a"
+        },
+        {
+          "path": "records/acquisitions/2026-10-14-attribute-metadata/partition-feasibility.json",
+          "sha256": "1b7b56ff0b80b56eed00db0ce4baf6fa1127b50a9dc30b5d9ef46396113b2885"
+        }
+      ],
+      "metadata_skirt_references": 680,
+      "original_partitions": {
+        "train": 422,
+        "validation": 66,
+        "test": 192
+      },
+      "broader_holdout_attribute_rows_exposed_during_metadata_inspection": 258,
+      "complete_images_added": 0,
+      "training_admitted": false,
+      "eligible_after_conservative_folder_group_check": 0,
+      "limitation": "Descriptive folder tokens are not verified garment identities; unresolved overlap with original holdouts"
+    },
+    {
+      "source": "NTNU Norway post-consumer garment data and images v1.1",
+      "source_url": "https://zenodo.org/records/20440761",
+      "license": "CC BY-SA4.0",
+      "evidence": [
+        {
+          "path": "records/acquisitions/2026-10-17-fabric-source-resolution/acquisition.json",
+          "sha256": "78c5da46b13a2c72bb8c7b54023173721dd97d37aab1ad4532007f4ace415f51"
+        },
+        {
+          "path": "records/acquisitions/2026-10-17-fabric-source-resolution/feasibility.json",
+          "sha256": "aa46f709b4b1c975d53d661be4685266e5da4761ecfe20c9260fb4754c477e12"
+        },
+        {
+          "path": "records/acquisitions/2026-10-18-fabric-archive-probe/report.json",
+          "sha256": "ac2f9b7a873a922457b4382c0881b15cd97ed3ddd0faf155a9854755fb7dda54"
+        },
+        {
+          "path": "records/acquisitions/2026-10-18-fabric-archive-index/parsed/report.json",
+          "sha256": "4847838dd9a9334ca242a10c3fd5c7dbf7f9d9c5fa34642f3faa5833ce249e2f"
+        },
+        {
+          "path": "records/acquisitions/2026-10-18-npcgi-pilot/selection.json",
+          "sha256": "b13602fbc9a2a0a0602851a8fa99fe51a9d3173139b66d45c15d1bbf639362d7"
+        },
+        {
+          "path": "records/acquisitions/2026-10-18-npcgi-pilot/report.json",
+          "sha256": "bc5d796a5bd313ad4724e9631e40ec1f4e16bd6429acf6b06b5b237b2e9df2ba"
+        },
+        {
+          "path": "records/acquisitions/2026-10-18-npcgi-pilot/photo-review.json",
+          "sha256": "6e384b5c8efeda0a978d037dac87c53f3fc8cb466b9950ea15865bcc9e9037a5"
+        },
+        {
+          "path": "records/validation/2026-10-19-npcgi-pilot-independent-review.json",
+          "sha256": "3fc6c705f1958b3e6f22c55fa517e3194a45632fccc284e5651684da7dda7264"
+        }
+      ],
+      "source_item_ids": 16464,
+      "skirt_metadata_rows": 227,
+      "skirts_readable_label_and_first_fibre": 172,
+      "complete_images_added": 5,
+      "training_admitted": false,
+      "image_item_join_verified": true,
+      "worn_presentation_verified": false,
+      "image_item_join_scope": "Five filename/source-ID cards match; one image conflicts with publisher skirt category",
+      "archive_index_exact_skirt_metadata_joins": 25,
+      "fullview_skirt_candidates": 2,
+      "quarantined_visual_examples": 3
+    }
+  ],
+  "expansion_audit_history": [
+    {
+      "path": "records/validation/dataset-expansion-combined-audit.json",
+      "sha256": "2b2b9ed340729d71ba081b279e4ee0b2a43e8cd03ab6e8ecf5f7ba1540b68d0f"
+    },
+    {
+      "path": "records/validation/2026-10-11-combined-intake-audit.json",
+      "sha256": "b8b75b1d5e897e9b4ce831c483e3dff71724f8157c81e9d48182d75144947901"
+    },
+    {
+      "path": "records/validation/2026-10-13-expansion-v2-audit.json",
+      "sha256": "187b6fe93e7f3264150ecb556d83abef038cb9d279131fb2882845a2ebaf7ece"
+    },
+    {
+      "path": "records/validation/2026-10-17-expansion-v3-audit.json",
+      "sha256": "2e33a763425fd8110185aa28238d5a39951779e338f463b8bf4738cebbd1f060"
+    }
+  ],
+  "diagnostic_evaluations": [
+    {
+      "path": "records/validation/2026-10-11-negative-diagnostic.json",
+      "sha256": "4b5c077884a89412b26016362bd06084cacae6c069612706a547279285053ca6"
+    }
+  ],
+  "acquisition_attempts": [
+    {
+      "path": "records/acquisitions/2026-10-13-fabric-v2/report.json",
+      "sha256": "23b6d41d2c81a78eca86357b22e7bbeac9f22255df8d3a9a863d0c39eea042a0",
+      "status": "interrupted_no_images",
+      "complete_images": 0
+    }
+  ],
+  "presentation_review_oct17": {
+    "status": "supplemental_agent_observations_not_new_admission",
+    "worn_pleating_reviewed": 12,
+    "pleating_presentation_unknown": 360,
+    "worn_fabric_reviewed": 17,
+    "new_images": 0,
+    "frozen_splits_changed": false,
+    "physical_geometry_verified": false,
+    "evidence": [
+      {
+        "path": "records/review/2026-10-16-worn-readiness-observations.jsonl",
+        "sha256": "e9716680b4d926636b0f4659cd81bc6c281b03e011892ef324ff80b4d4f7ab21"
+      },
+      {
+        "path": "records/review/2026-10-17-worn-readiness.json",
+        "sha256": "4e25477ec0c82ac359dc0971b6ae9f304e640cba5a97694c34319283c7caa56c"
+      },
+      {
+        "path": "records/review/2026-10-16-fabric-presentation.json",
+        "sha256": "eb26bc391724a5509ee6864edc4c3a375c1ae23963013d2766cf0f6e275faa3a"
+      },
+      {
+        "path": "records/validation/2026-10-17-fabric-readiness.json",
+        "sha256": "18bb161080deeb1767d8cc9503bb2b20d5d546a81caa49fd679dc1ae70e6efbb"
+      }
+    ]
+  },
+  "presentation_review_completed_oct17": {
+    "date": "2026-10-17",
+    "status": "all372reviewed_single_agent_supplement_no_new_training_release",
+    "counts": {
+      "worn": 331,
+      "hanging": 27,
+      "mannequin": 8,
+      "unknown": 6
+    },
+    "direct_original_review": 22,
+    "sheet_review": 350,
+    "pending_unreviewed": 0,
+    "worn_subset": {
+      "development_train": 265,
+      "development_validation": 66
+    },
+    "verified_physical_garments": null,
+    "new_images": 0,
+    "split_assignments_changed": false,
+    "evidence": [
+      {
+        "path": "records/review/2026-10-17-presentation-complete.jsonl",
+        "sha256": "9114d08343d96c994444788d1ff4deb574c27f6b22faadef360db7bff2836bf9"
+      },
+      {
+        "path": "records/review/2026-10-17-presentation-complete-audit.json",
+        "sha256": "bd677d313855edc81c049806b763cd191b0f580275078f0fe74a3b4b47e16d14"
+      },
+      {
+        "path": "data/manifests/worn-pleating-development-v1.jsonl",
+        "sha256": "876bb315009592fdbcf0a646703b21d99801756f4e37b1807a66675bdbd98ec2"
+      },
+      {
+        "path": "data/manifests/worn-pleating-development-v1.json",
+        "sha256": "f4bb784eaa808f5ae3a87a05a958ee7bd9926125cfaa30f03d92a398cafa5b9b"
+      },
+      {
+        "path": "records/validation/2026-10-17-worn-subset-reproduced.json",
+        "sha256": "06aceaf46c5537ad73e2d48dfe5d53bffc732d382379d1b20f8aa9cede37d276"
+      }
+    ]
+  },
+  "source_label_followup_oct17": {
+    "review": {
+      "path": "records/review/2026-10-17-source-label-followup.json",
+      "sha256": "e88eda8afc564ceee1f428ed69d59cbd3f68ee101a3390d4b2424c54893c4709"
+    },
+    "status": "six_originals_and_exact_source_annotations_checked_independent_confirmation_pending",
+    "frozen_labels_changed": false
+  },
+  "selected_research_station": {
+    "inventory": {
+      "path": "artifacts/stations/skirt-research-station-v9/station-inventory.json",
+      "sha256": "ae18db22793ff0aa576cec1130d9f8c06e3987dbdebe03528b7dd890f162998d"
+    },
+    "configuration": {
+      "path": "artifacts/stations/skirt-research-station-v9/station.json",
+      "sha256": "953d17494b579c751ba046c5e6c48e73975ea9b5d82b7e2f419bca35da833b22"
+    },
+    "scope": "Desktop research only; full-feature demonstration and Pi acceptance remain open",
+    "rollback": "artifacts/stations/skirt-research-station-v8",
+    "deployment_approved": false
+  },
+  "research_updates_oct22": {
+    "category_targets": {
+      "path": "records/experiments/20261021-category-presence-v1/source-category-targets.json",
+      "sha256": "8f520b63482cf802bb70f47c9db57e0d0ce746eadc0e58d9dc18c7707eda07f2"
+    },
+    "category_labels_status": "Publisher-supervised hierarchical scene targets; independent human truth unverified",
+    "existing_fabric_source_audit": {
+      "path": "records/review/2026-10-20-fabric-source-attribute-audit.json",
+      "sha256": "398b0eaba6c35e9eb54698be1217aa13c78f6485eadf977e7f4a7bc1d44bfe2b"
+    },
+    "fabric_source_search": {
+      "path": "records/review/2026-10-21-fabric-source-search.json",
+      "sha256": "3bd92799cd34a0e03830bace607a70a3add0fdec2095fce8a93af5ddfb1857b1"
+    },
+    "fabric_source_acquisition": {
+      "path": "records/acquisitions/2026-10-21-fabric-source-research/acquisition.json",
+      "sha256": "c1d9d91690fbd6f8d0e765e61bf41ae21a3e09da298bfe8c0f0fe9d13aa163d7"
+    },
+    "geometry_inventory_map": {
+      "path": "records/geometry/2026-10-21-readiness/mapping.json",
+      "sha256": "4b80f7f376649e995a6352ab911ad243b6fe2593c3f61cdb5c6230469747ef15"
+    },
+    "geometry_readiness": {
+      "path": "records/validation/2026-10-21-geometry-readiness.json",
+      "sha256": "1835b0b6a41c511bad3fddd292ada1ae2403f70a6910909ad95b6c4f2ba64151"
+    },
+    "observed_geometry_examples": 0,
+    "new_original_images": 0,
+    "new_training_admissions": 0,
+    "source_splits_changed": false,
+    "verified_fabric_labels_added": 0,
+    "fabric_source_gate": {
+      "path": "records/review/2026-10-22-imaterialist2018-terms.json",
+      "sha256": "df73ecfca07eda774bf2f75e7f7cd772c0ba4ba6d2c0980b1a5ea5ad71004595"
+    },
+    "textilenet_metadata_audit": {
+      "path": "records/review/2026-10-22-textilenet-gate-agent.json",
+      "sha256": "d844e6adff0907f6ba9cedf19bb67f23da3b3d2c1c9a2a0bb115fb8cc8a64d35"
+    },
+    "textilenet_cached_metadata": {
+      "path": "data/external/fabric_expansion/metadata/fabric_train.json",
+      "sha256": "46ebd83abc7bfbd319c4677a5fcd5693db6fed09a52859c95a5d3505fa94b73f"
+    },
+    "textilenet_rows_audited": 155393,
+    "source_gate_scope": "Observed source conditions and cached URL identities; not image permissions, garment truth or admissions",
+    "reference_ui": {
+      "path": "records/validation/2026-10-22-reference-ui.json",
+      "sha256": "29aeb793d365ca919a6f859d96196b4c506598eb2693edfa2726e883d13ee71a"
+    },
+    "ui_motion": {
+      "path": "records/validation/2026-10-22-ui-motion.json",
+      "sha256": "03f9574805833b2060207bdd70bad02457da3ede253e835106cd27ecbb93b8c4"
+    },
+    "nov04_interrupted_work_reconciliation": {
+      "path": "records/validation/2026-11-04-project-review/review.json",
+      "sha256": "9a430df36169c78f4c77508567c668a15bdd957f88db3b519063ca687db2f7e4"
+    }
+  },
+  "evidence_recoveries": {
+    "failed_background_acquisition": {
+      "path": "records/acquisitions/2026-11-04-backgrounds/acquisition.json",
+      "sha256": "0990fc89370ec7009dda92ff8f0ed0725c2a5bdfab27e93eaffb27c325310364"
+    },
+    "raw_http_index": {
+      "path": "records/recoveries/raw-http-responses-v1.json",
+      "sha256": "31ed38fb0ffdc4d064ee3dc93a1791ca1cf16677b8a2b2e44064d367df2ae6eb"
+    },
+    "photos_added": 0,
+    "admissions_added": 0,
+    "historical_files_changed": false
+  }
+}

@@ -1,0 +1,186 @@
+{
+  "date_asia_manila": "2026-10-21",
+  "status": "bounded_primary_metadata_research",
+  "total_body_bytes_read": 497928,
+  "body_budget_bytes": 2097152,
+  "per_response_body_limit_bytes": 524288,
+  "requests": [
+    {
+      "url": "https://api.github.com/repos/visipedia/imat_fashion_comp",
+      "path": "imaterialist2018-repo.json",
+      "requested_at": "2026-10-21T22:57:25.556296+08:00",
+      "http_status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "body_bytes": 6505,
+      "sha256": "0ad39ffc03f379e3de712ad358a0532fb5ad4232e5d96cdc89535401e81d7657",
+      "outcome": "saved"
+    },
+    {
+      "url": "https://api.github.com/repos/visipedia/imat_fashion_comp/commits/master",
+      "path": "imaterialist2018-commit.json",
+      "requested_at": "2026-10-21T22:57:26.132367+08:00",
+      "http_status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "body_bytes": 5161,
+      "sha256": "659e471c092828d936942665c79b02f8eacdd2307b6f6c218d83eb7968f77d53",
+      "outcome": "saved"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/visipedia/imat_fashion_comp/ed94853da2c830667b1f8d67a26d7f782eb2e6b2/README.md",
+      "path": "imaterialist2018-README.md",
+      "requested_at": "2026-10-21T22:57:26.675322+08:00",
+      "http_status": 200,
+      "content_type": "text/plain; charset=utf-8",
+      "body_bytes": 3995,
+      "sha256": "5b47db9e1cc13f1f80026c6b2c4b5d7d099466674f4d6231b1d5a64b6569cc13",
+      "outcome": "saved"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/visipedia/imat_fashion_comp/ed94853da2c830667b1f8d67a26d7f782eb2e6b2/iMat_fashion_2018_label_map_228.csv",
+      "path": "imaterialist2018-label-map.csv",
+      "requested_at": "2026-10-21T22:57:27.103026+08:00",
+      "http_status": 200,
+      "content_type": "text/plain; charset=utf-8",
+      "body_bytes": 5740,
+      "sha256": "75892e7708bb464be14a35fb141a0d0c8ef9b69d0b8d1127bedff0d35a8ae678",
+      "outcome": "saved"
+    },
+    {
+      "url": "https://api.github.com/repos/visipedia/imat_comp",
+      "path": "imaterialist2020-repo.json",
+      "requested_at": "2026-10-21T22:57:27.446463+08:00",
+      "http_status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "body_bytes": 6273,
+      "sha256": "d1a8b8c5ebb0bcc57b27d16776ca728003becade9e78d06b0f22c870cd2bd168",
+      "outcome": "saved"
+    },
+    {
+      "url": "https://api.github.com/repos/visipedia/imat_comp/commits/master",
+      "path": "imaterialist2020-commit.json",
+      "requested_at": "2026-10-21T22:57:27.885292+08:00",
+      "http_status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "body_bytes": 7153,
+      "sha256": "268566096c6e117f61440dd2f6591b136ed8f0986f67cfaf2431862d4fc510c9",
+      "outcome": "saved"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/visipedia/imat_comp/f0f93fccc80c343ca187d30090a6eb2cf1099c14/README.md",
+      "path": "imaterialist2020-README.md",
+      "requested_at": "2026-10-21T22:57:28.508113+08:00",
+      "http_status": 200,
+      "content_type": "text/plain; charset=utf-8",
+      "body_bytes": 5135,
+      "sha256": "e7800e00c56fa36b18493fe4163e7a68784340bb0fd1d6d0292435b7c6781b4e",
+      "outcome": "saved"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/visipedia/imat_comp/f0f93fccc80c343ca187d30090a6eb2cf1099c14/LICENSE",
+      "path": "imaterialist2020-LICENSE.txt",
+      "requested_at": "2026-10-21T22:57:28.883112+08:00",
+      "http_status": 200,
+      "content_type": "text/plain; charset=utf-8",
+      "body_bytes": 1066,
+      "sha256": "62dfb52303aaf78bd3cfd9ca829236766191b85e90c813c92cc1adcebb4f35a7",
+      "outcome": "saved"
+    },
+    {
+      "url": "https://api.github.com/repos/hahashu/TextileNet",
+      "path": "textilenet-repo.json",
+      "requested_at": "2026-10-21T22:57:29.276112+08:00",
+      "http_status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "body_bytes": 5226,
+      "sha256": "d628dc3f268cfd5b518dffec031ff9c10331887cee4cbfe0bc630ecc9389c620",
+      "outcome": "saved"
+    },
+    {
+      "url": "https://api.github.com/repos/hahashu/TextileNet/commits/main",
+      "path": "textilenet-commit.json",
+      "requested_at": "2026-10-21T22:57:29.742824+08:00",
+      "http_status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "body_bytes": 5310,
+      "sha256": "561b811af800b1fe6d8a9024f324144f1704a27f16f47b97d5273f1b6d4e7120",
+      "outcome": "saved"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/hahashu/TextileNet/6b4f0579b2abc18422192afea07882f84dcb83e4/README.md",
+      "path": "textilenet-README.md",
+      "requested_at": "2026-10-21T22:57:30.259096+08:00",
+      "http_status": 200,
+      "content_type": "text/plain; charset=utf-8",
+      "body_bytes": 4474,
+      "sha256": "98f9eee8e0c743220740120442588b0697e3462fe517eb64dbcf19e1ce0b544a",
+      "outcome": "saved"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/hahashu/TextileNet/6b4f0579b2abc18422192afea07882f84dcb83e4/LICENSE",
+      "path": "textilenet-LICENSE.txt",
+      "requested_at": "2026-10-21T22:57:30.705667+08:00",
+      "http_status": 200,
+      "content_type": "text/plain; charset=utf-8",
+      "body_bytes": 1064,
+      "sha256": "fc3169d9179c2995cf9b5f07e06f79235b1e2c969e9f0702bd3baf42d3db1e97",
+      "outcome": "saved"
+    },
+    {
+      "url": "https://arxiv.org/html/2301.06160v1",
+      "path": "textilenet-paper.html",
+      "requested_at": "2026-10-21T22:57:31.058560+08:00",
+      "http_status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "body_bytes": 222568,
+      "sha256": "1f97138e2b09affe50d654f7df5747c931d757ae4f8c320766e9d76c3657d9db",
+      "outcome": "saved"
+    },
+    {
+      "url": "https://arxiv.org/html/1806.08317v2",
+      "path": "fashiongen-paper.html",
+      "requested_at": "2026-10-21T22:57:31.212560+08:00",
+      "http_status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "body_bytes": 217955,
+      "sha256": "38e0c6335648dc6b7b75ce120698b365819dd3ee66807228e6dc7734341c2e16",
+      "outcome": "saved"
+    },
+    {
+      "url": "https://fashion-gen.com/",
+      "path": "fashiongen-homepage.html",
+      "requested_at": "2026-10-21T22:57:31.538560+08:00",
+      "http_status": 403,
+      "content_type": "text/html; charset=utf-8",
+      "body_bytes": 303,
+      "sha256": "a24456cd92f1c058eb9e813000af140d6b963f04e57cfe0611a92eb2d325b0ed",
+      "outcome": "saved_http_error_body"
+    }
+  ],
+  "resolved_repository_revisions": {
+    "imaterialist2018": {
+      "repository": "visipedia/imat_fashion_comp",
+      "revision": "ed94853da2c830667b1f8d67a26d7f782eb2e6b2",
+      "default_branch": "master"
+    },
+    "imaterialist2020": {
+      "repository": "visipedia/imat_comp",
+      "revision": "f0f93fccc80c343ca187d30090a6eb2cf1099c14",
+      "default_branch": "master"
+    },
+    "textilenet": {
+      "repository": "hahashu/TextileNet",
+      "revision": "6b4f0579b2abc18422192afea07882f84dcb83e4",
+      "default_branch": "main"
+    }
+  },
+  "garment_photos_requested": 0,
+  "garment_photos_acquired": 0,
+  "training_admissions": 0,
+  "packages_installed": 0,
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "python_executable": "C:\\Users\\Administrator\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "source_sha256": "89e2c249b787e0976a0658b7c14c37f260824fc5ec125f431f0b4e632253cf08",
+  "command": "python records/acquisitions/2026-10-21-fabric-source-research/acquire_metadata.py",
+  "limits": "Metadata availability and publisher claims only; no verified image rights, garment identity or model quality."
+}

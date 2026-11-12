@@ -1,0 +1,20 @@
+{
+  "status": "passed",
+  "checks": [
+    {
+      "sample_id": "fashionpedia-train2020-12679",
+      "exact_match": true
+    },
+    {
+      "sample_id": "fashionpedia-train2020-16838",
+      "exact_match": true
+    },
+    {
+      "sample_id": "fashionpedia-train2020-16912",
+      "exact_match": true
+    }
+  ],
+  "source_sha256": "d35555ae81aae6d09de7b5e47c62a9b14a486429b06bb4bc644bc3c7516cbd62",
+  "reference_sha256": "0ab40f8d3f0e2d9baa94e34434467693db1cba6e75eb9f14e06ee0fc104d47ff",
+  "limits": "Three saved development images; HTTP integration only, not new accuracy or camera/Pi performance evidence"
+}

@@ -1,0 +1,314 @@
+{
+  "recorded_at": "2026-11-04T20:43:54.341052+08:00",
+  "status": "passed_root_review",
+  "tests_passed": 19,
+  "commands": [
+    {
+      "name": "partition-tests",
+      "command": [
+        "C:\\Users\\Administrator\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-B",
+        "-m",
+        "unittest",
+        "tests.test_dataset_partitions",
+        "-v"
+      ],
+      "exit_code": 0,
+      "log": {
+        "path": "records/validation/2026-11-04-dataset-diagrams/partition-tests.log",
+        "sha256": "d011ed02caaac98855c1edf57eb9ee9394e42110d87103685503e4a99c2a5fa2"
+      }
+    },
+    {
+      "name": "category",
+      "command": [
+        "C:\\Users\\Administrator\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-B",
+        "tools/audit_dataset_partitions.py",
+        "--manifest",
+        "records/experiments/20261021-category-presence-v1/inputs.json",
+        "--catalog",
+        "data/manifests/worn-pleating-development-v1.jsonl",
+        "--catalog",
+        "data/labels/negative-reviewed-v3.jsonl",
+        "--catalog",
+        "data/manifests/skirt_candidates.jsonl",
+        "--catalog",
+        "data/manifests/negative-candidates-v1.jsonl",
+        "--catalog",
+        "data/manifests/negative-candidates-v2.jsonl",
+        "--catalog",
+        "data/manifests/negative-candidates-v3.jsonl",
+        "--catalog",
+        "data/provenance/external_holdout_samples.jsonl",
+        "--output",
+        "records/validation/2026-11-04-dataset-diagrams/category-partitions.json"
+      ],
+      "exit_code": 0,
+      "log": {
+        "path": "records/validation/2026-11-04-dataset-diagrams/category.log",
+        "sha256": "277c6974aadace74df18668bc9efc652a0545ef83c7121d48ac791d64d413fc0"
+      }
+    },
+    {
+      "name": "pleating",
+      "command": [
+        "C:\\Users\\Administrator\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-B",
+        "tools/audit_dataset_partitions.py",
+        "--manifest",
+        "data/labels/skirt-baseline-v1.jsonl",
+        "--catalog",
+        "data/manifests/worn-pleating-development-v1.jsonl",
+        "--catalog",
+        "data/labels/negative-reviewed-v3.jsonl",
+        "--catalog",
+        "data/manifests/skirt_candidates.jsonl",
+        "--catalog",
+        "data/manifests/negative-candidates-v1.jsonl",
+        "--catalog",
+        "data/manifests/negative-candidates-v2.jsonl",
+        "--catalog",
+        "data/manifests/negative-candidates-v3.jsonl",
+        "--catalog",
+        "data/provenance/external_holdout_samples.jsonl",
+        "--output",
+        "records/validation/2026-11-04-dataset-diagrams/pleating-partitions.json"
+      ],
+      "exit_code": 0,
+      "log": {
+        "path": "records/validation/2026-11-04-dataset-diagrams/pleating.log",
+        "sha256": "d04d7a9fcdbf672819b6654eaf7a3fd1da72856f060a221395ba67b40f5f12e6"
+      }
+    },
+    {
+      "name": "localizer",
+      "command": [
+        "C:\\Users\\Administrator\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-B",
+        "tools/audit_dataset_partitions.py",
+        "--manifest",
+        "records/experiments/20261014-localizer-v2/labelled-inputs.json",
+        "--catalog",
+        "data/manifests/worn-pleating-development-v1.jsonl",
+        "--catalog",
+        "data/labels/negative-reviewed-v3.jsonl",
+        "--catalog",
+        "data/manifests/skirt_candidates.jsonl",
+        "--catalog",
+        "data/manifests/negative-candidates-v1.jsonl",
+        "--catalog",
+        "data/manifests/negative-candidates-v2.jsonl",
+        "--catalog",
+        "data/manifests/negative-candidates-v3.jsonl",
+        "--catalog",
+        "data/provenance/external_holdout_samples.jsonl",
+        "--output",
+        "records/validation/2026-11-04-dataset-diagrams/localizer-partitions.json"
+      ],
+      "exit_code": 0,
+      "log": {
+        "path": "records/validation/2026-11-04-dataset-diagrams/localizer.log",
+        "sha256": "23ff5659842fb6e3b78f27a685dcf87450e0fc8ec2a46cb5592ccad4fa6a53b1"
+      }
+    },
+    {
+      "name": "worn",
+      "command": [
+        "C:\\Users\\Administrator\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-B",
+        "tools/audit_dataset_partitions.py",
+        "--manifest",
+        "data/manifests/worn-pleating-development-v1.jsonl",
+        "--catalog",
+        "data/manifests/worn-pleating-development-v1.jsonl",
+        "--catalog",
+        "data/labels/negative-reviewed-v3.jsonl",
+        "--catalog",
+        "data/manifests/skirt_candidates.jsonl",
+        "--catalog",
+        "data/manifests/negative-candidates-v1.jsonl",
+        "--catalog",
+        "data/manifests/negative-candidates-v2.jsonl",
+        "--catalog",
+        "data/manifests/negative-candidates-v3.jsonl",
+        "--catalog",
+        "data/provenance/external_holdout_samples.jsonl",
+        "--output",
+        "records/validation/2026-11-04-dataset-diagrams/worn-partitions.json"
+      ],
+      "exit_code": 0,
+      "log": {
+        "path": "records/validation/2026-11-04-dataset-diagrams/worn.log",
+        "sha256": "c008322f954aba29cbbdeb6a45bc3ecf582f1b1abe0e2ad747af0fc0447596cb"
+      }
+    },
+    {
+      "name": "fabric",
+      "command": [
+        "C:\\Users\\Administrator\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-B",
+        "tools/audit_dataset_partitions.py",
+        "--manifest",
+        "data/labels/fabric-pilot-v1-splits.json",
+        "--catalog",
+        "data/labels/fabric-pilot-v1.jsonl",
+        "--output",
+        "records/validation/2026-11-04-dataset-diagrams/fabric-partitions.json"
+      ],
+      "exit_code": 0,
+      "log": {
+        "path": "records/validation/2026-11-04-dataset-diagrams/fabric.log",
+        "sha256": "9a49e28330a75bed8850e035fe03ee761088281b0b605d277d2f65c0f32e4a0d"
+      }
+    }
+  ],
+  "metadata_audits": [
+    {
+      "path": "records/validation/2026-11-04-dataset-diagrams/category-partitions.json",
+      "sha256": "277c6974aadace74df18668bc9efc652a0545ef83c7121d48ac791d64d413fc0"
+    },
+    {
+      "path": "records/validation/2026-11-04-dataset-diagrams/pleating-partitions.json",
+      "sha256": "d04d7a9fcdbf672819b6654eaf7a3fd1da72856f060a221395ba67b40f5f12e6"
+    },
+    {
+      "path": "records/validation/2026-11-04-dataset-diagrams/localizer-partitions.json",
+      "sha256": "23ff5659842fb6e3b78f27a685dcf87450e0fc8ec2a46cb5592ccad4fa6a53b1"
+    },
+    {
+      "path": "records/validation/2026-11-04-dataset-diagrams/worn-partitions.json",
+      "sha256": "c008322f954aba29cbbdeb6a45bc3ecf582f1b1abe0e2ad747af0fc0447596cb"
+    },
+    {
+      "path": "records/validation/2026-11-04-dataset-diagrams/fabric-partitions.json",
+      "sha256": "9a49e28330a75bed8850e035fe03ee761088281b0b605d277d2f65c0f32e4a0d"
+    }
+  ],
+  "source_audit": {
+    "path": "records/validation/2026-11-04-dataset-partitions-audit.json",
+    "sha256": "f1cd02cee2dab22070531d62e8401c74e9a0108003c296486759d8cf546e1833"
+  },
+  "pdf_pages": {
+    "06_training_validation_test.pdf": 1,
+    "07_datasets_by_model.pdf": 1,
+    "08_planned_train_validation_test_workflow.pdf": 1,
+    "09_grouping_prevents_data_leakage.pdf": 1,
+    "Training_Validation_Test_Diagrams.pdf": 4
+  },
+  "pngs": {
+    "06_training_validation_test.png": {
+      "size": [
+        3300,
+        2250
+      ],
+      "dpi": [
+        299.9994,
+        299.9994
+      ]
+    },
+    "07_datasets_by_model.png": {
+      "size": [
+        3300,
+        2250
+      ],
+      "dpi": [
+        299.9994,
+        299.9994
+      ]
+    },
+    "08_planned_train_validation_test_workflow.png": {
+      "size": [
+        3300,
+        2250
+      ],
+      "dpi": [
+        299.9994,
+        299.9994
+      ]
+    },
+    "09_grouping_prevents_data_leakage.png": {
+      "size": [
+        3300,
+        2250
+      ],
+      "dpi": [
+        299.9994,
+        299.9994
+      ]
+    }
+  },
+  "visual_review": {
+    "reviewers": [
+      "root",
+      "split_evidence"
+    ],
+    "figures_reviewed": 4,
+    "outcome": "No clipping, overlap or material factual discrepancy found"
+  },
+  "fixes_after_review": [
+    "Inspect both source-partition aliases",
+    "Preserve recognized catalog partition declarations",
+    "Normalize model-validation aliases consistently"
+  ],
+  "figure_artifacts": [
+    {
+      "path": "output/thesis_dataset_diagrams/06_training_validation_test.pdf",
+      "sha256": "e7d42933b599f83009cceca6659285649b5937ed3ba0576f414c8da04b5ea018"
+    },
+    {
+      "path": "output/thesis_dataset_diagrams/06_training_validation_test.png",
+      "sha256": "40e35b92a6cee98fef6c3835c24ef49c4eec12d7bd731a5a526df1d510781829"
+    },
+    {
+      "path": "output/thesis_dataset_diagrams/07_datasets_by_model.pdf",
+      "sha256": "9232a9339e90e6a2591fe8da8db7abd4aa5a8fade74fb4fc767a91124c285b11"
+    },
+    {
+      "path": "output/thesis_dataset_diagrams/07_datasets_by_model.png",
+      "sha256": "a45c60f78836a84011b4e8f861c58d64a2d29e0276354fd73da6721b59abf77d"
+    },
+    {
+      "path": "output/thesis_dataset_diagrams/08_planned_train_validation_test_workflow.pdf",
+      "sha256": "6caa8dced16795064b73bd5a90c82f75a6141e9859a927cccb2bd1df6970f6ce"
+    },
+    {
+      "path": "output/thesis_dataset_diagrams/08_planned_train_validation_test_workflow.png",
+      "sha256": "e218d8339de52ac8c6ea2b98624e49820e858db9f2ca23914474d6db606117d5"
+    },
+    {
+      "path": "output/thesis_dataset_diagrams/09_grouping_prevents_data_leakage.pdf",
+      "sha256": "6d59f369fa18883db7fd004ab0d02a4317e454ea569212422f4973e0204f0c4c"
+    },
+    {
+      "path": "output/thesis_dataset_diagrams/09_grouping_prevents_data_leakage.png",
+      "sha256": "a536199b874ad11e5295a0fe924736925ed5e1123f4456b4f6478d28b93e0467"
+    },
+    {
+      "path": "output/thesis_dataset_diagrams/source-data.json",
+      "sha256": "feab9c111785f327645a15350825be30ebb8f6ed7997fe60f436ea7730f7bb64"
+    },
+    {
+      "path": "output/thesis_dataset_diagrams/Training_Validation_Test_Diagrams.pdf",
+      "sha256": "65e4af0015ac017c5057860725afe1b78e03de0d1f17e2468950ade900565b8f"
+    }
+  ],
+  "source_files": [
+    {
+      "path": "tools/create_dataset_diagrams.py",
+      "sha256": "e01fa03ea421de97afb22b9f4ba8f4eb1a7101b1e2e3d2d9a03b679e013a7314"
+    },
+    {
+      "path": "tools/audit_dataset_partitions.py",
+      "sha256": "dcaa300b68818deb5ec04b5cb888ea0d2d2a7886f37b869ddfd575c0c221da4e"
+    },
+    {
+      "path": "tests/test_dataset_partitions.py",
+      "sha256": "bf0877c3f0bc48ce7bb02ba9b8e65fdfd1cb04c7f9552161af02e9de38f25789"
+    }
+  ],
+  "dependencies_installed": [],
+  "training_or_inference_performed": false,
+  "original_images_or_split_changes": false,
+  "limits": "Recorded connections only; no independent labels, final garment test, accuracy gain or Pi acceptance."
+}

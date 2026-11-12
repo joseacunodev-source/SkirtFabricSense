@@ -1,0 +1,243 @@
+{
+  "purpose": "development diagnostic; no labels or thresholds changed",
+  "errors": [
+    {
+      "sample_id": "fashionpedia-train2020-2689",
+      "group_hash": "886460abc91e0c44deb708735bb90f0890bea9c10f322c4964d82aa04d2660b0",
+      "actual": "pleated",
+      "probabilities": [
+        0.5600553750991821,
+        0.4399445950984955
+      ],
+      "tflite_probabilities": [
+        0.5592083930969238,
+        0.44079160690307617
+      ],
+      "predicted": "non_pleated"
+    },
+    {
+      "sample_id": "fashionpedia-train2020-29403",
+      "group_hash": "d9cfd2708c9a1b16ba9ab48dbef934ee147f0785614c93d9507af04a0f90ee3a",
+      "actual": "non_pleated",
+      "probabilities": [
+        0.457770973443985,
+        0.5422290563583374
+      ],
+      "tflite_probabilities": [
+        0.45741450786590576,
+        0.5425854921340942
+      ],
+      "predicted": "pleated"
+    },
+    {
+      "sample_id": "fashionpedia-train2020-30563",
+      "group_hash": "45e00fc2051d35eb658f794dc2161a9daa6f3a56d969f31be2967b3c12579c7b",
+      "actual": "pleated",
+      "probabilities": [
+        0.6213385462760925,
+        0.37866145372390747
+      ],
+      "tflite_probabilities": [
+        0.6227145791053772,
+        0.3772854506969452
+      ],
+      "predicted": "non_pleated"
+    },
+    {
+      "sample_id": "fashionpedia-train2020-34216",
+      "group_hash": "e038b53c40c5f9d1fc2822d9315ec4d4d6881cb79f8d42355891683d36926d8e",
+      "actual": "non_pleated",
+      "probabilities": [
+        0.3449776768684387,
+        0.655022382736206
+      ],
+      "tflite_probabilities": [
+        0.34570059180259705,
+        0.6542994379997253
+      ],
+      "predicted": "pleated"
+    },
+    {
+      "sample_id": "fashionpedia-train2020-34508",
+      "group_hash": "49c752a9a17ad9911b8c71beda53d2309740d7ca99fbfc19302e49533b42e647",
+      "actual": "pleated",
+      "probabilities": [
+        0.5476861000061035,
+        0.4523138701915741
+      ],
+      "tflite_probabilities": [
+        0.5465397834777832,
+        0.4534602165222168
+      ],
+      "predicted": "non_pleated"
+    },
+    {
+      "sample_id": "fashionpedia-train2020-37357",
+      "group_hash": "46e9e3d05f3c3fe622536e1b34d57fff90d9a48b4931cf6f9b19cde48ac5c3be",
+      "actual": "non_pleated",
+      "probabilities": [
+        0.46947652101516724,
+        0.5305234789848328
+      ],
+      "tflite_probabilities": [
+        0.46705204248428345,
+        0.5329480171203613
+      ],
+      "predicted": "pleated"
+    },
+    {
+      "sample_id": "fashionpedia-train2020-40276",
+      "group_hash": "8dd1e34e665056f74381ca5f361daa842cbd636cf33e57d7e38982c60c79f318",
+      "actual": "non_pleated",
+      "probabilities": [
+        0.2326139509677887,
+        0.7673860192298889
+      ],
+      "tflite_probabilities": [
+        0.2326841801404953,
+        0.7673158049583435
+      ],
+      "predicted": "pleated"
+    },
+    {
+      "sample_id": "fashionpedia-train2020-43394",
+      "group_hash": "dff91a12955e25daf2ea52a009fb8ca2423faada60013a1650116e734788baa9",
+      "actual": "non_pleated",
+      "probabilities": [
+        0.41550812125205994,
+        0.5844919085502625
+      ],
+      "tflite_probabilities": [
+        0.4152485132217407,
+        0.5847514271736145
+      ],
+      "predicted": "pleated"
+    },
+    {
+      "sample_id": "fashionpedia-train2020-44571",
+      "group_hash": "b80e4b6460572a0e5356c8c270d2a5304a9ea03a6dc1dea352ba05674255241d",
+      "actual": "pleated",
+      "probabilities": [
+        0.6525161266326904,
+        0.34748387336730957
+      ],
+      "tflite_probabilities": [
+        0.6520634293556213,
+        0.34793660044670105
+      ],
+      "predicted": "non_pleated"
+    },
+    {
+      "sample_id": "fashionpedia-train2020-45807",
+      "group_hash": "1bb202bce974ce2a7b80eb32969aa00c60a7c624f1fc1ecc2add42cb5843c1a9",
+      "actual": "non_pleated",
+      "probabilities": [
+        0.29989317059516907,
+        0.7001068592071533
+      ],
+      "tflite_probabilities": [
+        0.2994631826877594,
+        0.700536847114563
+      ],
+      "predicted": "pleated"
+    },
+    {
+      "sample_id": "fashionpedia-train2020-45873",
+      "group_hash": "116da65b450269f4ab417201049807bde8e9d9e9b8e5f95c74e0baac9e127696",
+      "actual": "pleated",
+      "probabilities": [
+        0.6424745917320251,
+        0.35752537846565247
+      ],
+      "tflite_probabilities": [
+        0.6416168808937073,
+        0.3583831489086151
+      ],
+      "predicted": "non_pleated"
+    },
+    {
+      "sample_id": "fashionpedia-train2020-4713",
+      "group_hash": "5dbbf08723e7108120c922b88cb296d548cacb0223485c334da51b24da335bf4",
+      "actual": "non_pleated",
+      "probabilities": [
+        0.19646413624286652,
+        0.8035358190536499
+      ],
+      "tflite_probabilities": [
+        0.19702394306659698,
+        0.8029760122299194
+      ],
+      "predicted": "pleated"
+    },
+    {
+      "sample_id": "fashionpedia-train2020-47497",
+      "group_hash": "0b63dda792977de5a665f44c55486296b74e8d71b32aff7056ac345d3f0e1a68",
+      "actual": "non_pleated",
+      "probabilities": [
+        0.20201390981674194,
+        0.7979860305786133
+      ],
+      "tflite_probabilities": [
+        0.20176884531974792,
+        0.7982311248779297
+      ],
+      "predicted": "pleated"
+    },
+    {
+      "sample_id": "fashionpedia-train2020-50372",
+      "group_hash": "51f6526672b36f6ad8c01d091d90666da76b44c76bbc37f7751726343f70aff2",
+      "actual": "pleated",
+      "probabilities": [
+        0.5382465124130249,
+        0.4617534875869751
+      ],
+      "tflite_probabilities": [
+        0.536103367805481,
+        0.46389657258987427
+      ],
+      "predicted": "non_pleated"
+    },
+    {
+      "sample_id": "fashionpedia-train2020-5573",
+      "group_hash": "5b766d060fc07af27745c4d83445b693a1379aa05921539fe19a1960f3f43202",
+      "actual": "pleated",
+      "probabilities": [
+        0.8689954876899719,
+        0.13100452721118927
+      ],
+      "tflite_probabilities": [
+        0.8690175414085388,
+        0.13098248839378357
+      ],
+      "predicted": "non_pleated"
+    },
+    {
+      "sample_id": "fashionpedia-train2020-6021",
+      "group_hash": "81ccd53408a59df43f98d2da740fe229cda49639a7deefedc7b8f1dc620c9f9f",
+      "actual": "non_pleated",
+      "probabilities": [
+        0.16335178911685944,
+        0.8366482257843018
+      ],
+      "tflite_probabilities": [
+        0.16370244324207306,
+        0.8362975716590881
+      ],
+      "predicted": "pleated"
+    },
+    {
+      "sample_id": "fashionpedia-train2020-9732",
+      "group_hash": "2e686a0d56615b9081ab0f9b3d30473c29a401e08660d6bb6a4ca0b70dca2be4",
+      "actual": "pleated",
+      "probabilities": [
+        0.9020934104919434,
+        0.09790655225515366
+      ],
+      "tflite_probabilities": [
+        0.9013274908065796,
+        0.09867247194051743
+      ],
+      "predicted": "non_pleated"
+    }
+  ]
+}

@@ -1,0 +1,91 @@
+{
+  "seed": 42,
+  "purpose": "pipeline smoke only; not reliable validation",
+  "assignments": [
+    {
+      "sample_id": "deepfashion-multimodal-WOMEN-Skirts-id_00000003-02_1_front",
+      "group_id": "deepfashion-inshop-WOMEN-Skirts-id_00000003",
+      "split": "development_validation"
+    },
+    {
+      "sample_id": "deepfashion-multimodal-WOMEN-Skirts-id_00000111-02_1_front",
+      "group_id": "deepfashion-inshop-WOMEN-Skirts-id_00000111",
+      "split": "development_train"
+    },
+    {
+      "sample_id": "deepfashion-multimodal-WOMEN-Skirts-id_00000200-02_1_front",
+      "group_id": "deepfashion-inshop-WOMEN-Skirts-id_00000200",
+      "split": "development_train"
+    },
+    {
+      "sample_id": "deepfashion-multimodal-WOMEN-Skirts-id_00000334-02_1_front",
+      "group_id": "deepfashion-inshop-WOMEN-Skirts-id_00000334",
+      "split": "development_validation"
+    },
+    {
+      "sample_id": "deepfashion-multimodal-WOMEN-Skirts-id_00000467-02_1_front",
+      "group_id": "deepfashion-inshop-WOMEN-Skirts-id_00000467",
+      "split": "development_train"
+    },
+    {
+      "sample_id": "deepfashion-multimodal-WOMEN-Skirts-id_00000545-02_1_front",
+      "group_id": "deepfashion-inshop-WOMEN-Skirts-id_00000545",
+      "split": "development_train"
+    },
+    {
+      "sample_id": "deepfashion-multimodal-WOMEN-Skirts-id_00000644-03_1_front",
+      "group_id": "deepfashion-inshop-WOMEN-Skirts-id_00000644",
+      "split": "development_train"
+    },
+    {
+      "sample_id": "deepfashion-multimodal-WOMEN-Skirts-id_00000670-01_1_front",
+      "group_id": "deepfashion-inshop-WOMEN-Skirts-id_00000670",
+      "split": "development_train"
+    },
+    {
+      "sample_id": "deepfashion-multimodal-WOMEN-Skirts-id_00000699-03_1_front",
+      "group_id": "deepfashion-inshop-WOMEN-Skirts-id_00000699",
+      "split": "development_train"
+    },
+    {
+      "sample_id": "deepfashion-multimodal-WOMEN-Skirts-id_00002711-01_1_front",
+      "group_id": "deepfashion-inshop-WOMEN-Skirts-id_00002711",
+      "split": "development_validation"
+    },
+    {
+      "sample_id": "deepfashion-multimodal-WOMEN-Skirts-id_00004182-01_1_front",
+      "group_id": "deepfashion-inshop-WOMEN-Skirts-id_00004182",
+      "split": "development_validation"
+    },
+    {
+      "sample_id": "deepfashion-multimodal-WOMEN-Skirts-id_00004335-02_1_front",
+      "group_id": "deepfashion-inshop-WOMEN-Skirts-id_00004335",
+      "split": "development_train"
+    },
+    {
+      "sample_id": "deepfashion-multimodal-WOMEN-Skirts-id_00004513-04_1_front",
+      "group_id": "deepfashion-inshop-WOMEN-Skirts-id_00004513",
+      "split": "development_validation"
+    },
+    {
+      "sample_id": "deepfashion-multimodal-WOMEN-Skirts-id_00005519-03_1_front",
+      "group_id": "deepfashion-inshop-WOMEN-Skirts-id_00005519",
+      "split": "development_train"
+    },
+    {
+      "sample_id": "deepfashion-multimodal-WOMEN-Skirts-id_00005894-03_1_front",
+      "group_id": "deepfashion-inshop-WOMEN-Skirts-id_00005894",
+      "split": "development_train"
+    },
+    {
+      "sample_id": "deepfashion-multimodal-WOMEN-Skirts-id_00006184-01_1_front",
+      "group_id": "deepfashion-inshop-WOMEN-Skirts-id_00006184",
+      "split": "development_train"
+    },
+    {
+      "sample_id": "deepfashion-multimodal-WOMEN-Skirts-id_00007127-02_1_front",
+      "group_id": "deepfashion-inshop-WOMEN-Skirts-id_00007127",
+      "split": "development_train"
+    }
+  ]
+}

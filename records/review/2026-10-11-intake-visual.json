@@ -1,0 +1,38 @@
+{
+  "date_asia_manila": "2026-10-11",
+  "reviewer": "codex_root_visual_review",
+  "independent_human_review": false,
+  "training_admitted": false,
+  "negative_sheet_review": {
+    "images_seen": 90,
+    "sheet_manifest": {
+      "path": "records/acquisitions/2026-10-11-negatives/contact-sheets.json",
+      "sha256": "5ef06ef6aa8a30a956326172c9549d811a69e39dca3d00f075811780faae9ea2"
+    },
+    "observations": [
+      "Pants, shorts and dresses are visible in sampled subjects",
+      "Some figures are cropped, occluded by coats, seated or surrounded by other people",
+      "Thumbnails cannot certify skirt absence or garment identity; no hard-negative truth assigned"
+    ]
+  },
+  "fabric_sheet_review": {
+    "images_seen": 25,
+    "sheet": {
+      "path": "records/acquisitions/2026-10-11-fullview-fabric/contact-sheet.jpg",
+      "sha256": "dc936ab73d0f0a8042b899a7d4d713cbb5702850da1a2dc0e0b5c2c1b60ecf77"
+    },
+    "position_map": {
+      "path": "records/acquisitions/2026-10-11-fullview-fabric/contact-sheet.json",
+      "sha256": "6068b898d88270df3be76d67084525aaf82da888e57d21983aa6988dc0db1b30"
+    },
+    "observations": [
+      "Source lower-clothing appearance is not fiber composition",
+      "Some waistbands are hidden by tops; a seated example changes visible garment geometry",
+      "Source worn images do not validate held/hanging/mannequin modes"
+    ],
+    "full_resolution_followup": {
+      "sample_id": "deepfashion-multimodal-WOMEN-Skirts-id_00004335-02_1_front",
+      "finding": "Thumbnail suggested shorts; full-resolution image shows a continuous denim skirt hem. Initial suspicion corrected; no exclusion applied."
+    }
+  }
+}

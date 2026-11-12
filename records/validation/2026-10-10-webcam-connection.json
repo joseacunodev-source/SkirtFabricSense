@@ -1,0 +1,16 @@
+{
+  "date_asia_manila": "2026-10-10",
+  "method": "Actual browser UI Start camera, observe status/resolution/automatic response, Stop",
+  "url": "http://127.0.0.1:8766/",
+  "selected_browser_device_label": "Integrated Camera (0c45:64ab)",
+  "observed_resolution": [640, 480],
+  "camera_on_observed": true,
+  "live_response_reason": "multiple_regions",
+  "camera_off_after_stop": true,
+  "frames_recorded": false,
+  "other_browser_video_labels": ["LSVCam", "Camera (NVIDIA Broadcast)", "OBS Virtual Camera"],
+  "physical_camera_identity": "Unverified; user reports external webcam and no integrated camera; device label alone is not physical identity",
+  "classification_accuracy_verified": false,
+  "pi_verified": false,
+  "new_packages_installed": false
+}

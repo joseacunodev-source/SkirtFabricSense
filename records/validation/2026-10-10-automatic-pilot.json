@@ -1,0 +1,3433 @@
+{
+  "date_utc": "2026-10-10T07:52:05.341280+00:00",
+  "source_sha256": "ebb65c29b8076f2beabd4dac2e20c0dd3ae66b0d2cab13d34146b26deebd5b8b",
+  "manifest_sha256": "9160998b5ab0f65251c53cefd783e1c6351887bec8c655074be64dd2717dc2eb",
+  "localizer_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2",
+  "validation_images": 80,
+  "accepted": 48,
+  "correct_accepted": 38,
+  "coverage": 0.6,
+  "accepted_accuracy": 0.7916666666666666,
+  "correct_over_all_eligible": 0.475,
+  "mean_bbox_iou_accepted": 0.680924502343608,
+  "reasons": {
+    "experimental_mask_not_verified_presence_or_full_view": 48,
+    "multiple_regions": 23,
+    "region_touches_frame_edge": 9
+  },
+  "results": [
+    {
+      "sample_id": "fashionpedia-train2020-12679",
+      "expected": "non_pleated",
+      "bbox_iou": 0.8144081671963787,
+      "prediction": {
+        "style": {
+          "status": "provisional",
+          "label": "non_pleated",
+          "score": 0.9984594583511353,
+          "reason": "Experimental automatic ROI; full-skirt validity and empty-scene rejection are unverified."
+        },
+        "fabric": {
+          "status": "disabled",
+          "reason": "Fabric recognition is off."
+        },
+        "length": {
+          "status": "unavailable",
+          "reason": "Calibrated body reference and hem geometry are required."
+        },
+        "metadata": {
+          "presentation": "worn",
+          "automatic": true,
+          "experimental": true,
+          "pi_verified": false,
+          "localization": {
+            "status": "provisional",
+            "roi": [
+              243,
+              457,
+              536,
+              970
+            ],
+            "reason": "experimental_mask_not_verified_presence_or_full_view",
+            "mask_pixels": 546,
+            "threshold": 0.5,
+            "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+          },
+          "pleating_model_sha256": "c1d8f49e221a2672c20adb87fe4ae5d2f6966f125ee99cb212ff2eb56fffdbf0",
+          "roi_xyxy": [
+            228,
+            431,
+            551,
+            996
+          ]
+        }
+      }
+    },
+    {
+      "sample_id": "fashionpedia-train2020-16838",
+      "expected": "non_pleated",
+      "bbox_iou": null,
+      "prediction": {
+        "style": {
+          "status": "unavailable",
+          "label": null,
+          "score": null,
+          "reason": "multiple_regions"
+        },
+        "fabric": {
+          "status": "disabled",
+          "reason": "Fabric recognition is off."
+        },
+        "length": {
+          "status": "unavailable",
+          "reason": "Calibrated body reference and hem geometry are required."
+        },
+        "metadata": {
+          "presentation": "worn",
+          "automatic": true,
+          "experimental": true,
+          "pi_verified": false,
+          "localization": {
+            "status": "unavailable",
+            "roi": null,
+            "reason": "multiple_regions",
+            "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+          }
+        }
+      }
+    },
+    {
+      "sample_id": "fashionpedia-train2020-16912",
+      "expected": "non_pleated",
+      "bbox_iou": 0.8143648383062355,
+      "prediction": {
+        "style": {
+          "status": "provisional",
+          "label": "non_pleated",
+          "score": 0.9971519708633423,
+          "reason": "Experimental automatic ROI; full-skirt validity and empty-scene rejection are unverified."
+        },
+        "fabric": {
+          "status": "disabled",
+          "reason": "Fabric recognition is off."
+        },
+        "length": {
+          "status": "unavailable",
+          "reason": "Calibrated body reference and hem geometry are required."
+        },
+        "metadata": {
+          "presentation": "worn",
+          "automatic": true,
+          "experimental": true,
+          "pi_verified": false,
+          "localization": {
+            "status": "provisional",
+            "roi": [
+              271,
+              384,
+              464,
+              732
+            ],
+            "reason": "experimental_mask_not_verified_presence_or_full_view",
+            "mask_pixels": 271,
+            "threshold": 0.5,
+            "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+          },
+          "pleating_model_sha256": "c1d8f49e221a2672c20adb87fe4ae5d2f6966f125ee99cb212ff2eb56fffdbf0",
+          "roi_xyxy": [
+            261,
+            366,
+            474,
+            750
+          ]
+        }
+      }
+    },
+    {
+      "sample_id": "fashionpedia-train2020-17761",
+      "expected": "pleated",
+      "bbox_iou": 0.8681006493506493,
+      "prediction": {
+        "style": {
+          "status": "provisional",
+          "label": "pleated",
+          "score": 0.9420112371444702,
+          "reason": "Experimental automatic ROI; full-skirt validity and empty-scene rejection are unverified."
+        },
+        "fabric": {
+          "status": "disabled",
+          "reason": "Fabric recognition is off."
+        },
+        "length": {
+          "status": "unavailable",
+          "reason": "Calibrated body reference and hem geometry are required."
+        },
+        "metadata": {
+          "presentation": "worn",
+          "automatic": true,
+          "experimental": true,
+          "pi_verified": false,
+          "localization": {
+            "status": "provisional",
+            "roi": [
+              280,
+              384,
+              464,
+              586
+            ],
+            "reason": "experimental_mask_not_verified_presence_or_full_view",
+            "mask_pixels": 144,
+            "threshold": 0.5,
+            "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+          },
+          "pleating_model_sha256": "c1d8f49e221a2672c20adb87fe4ae5d2f6966f125ee99cb212ff2eb56fffdbf0",
+          "roi_xyxy": [
+            270,
+            373,
+            474,
+            597
+          ]
+        }
+      }
+    },
+    {
+      "sample_id": "fashionpedia-train2020-21255",
+      "expected": "non_pleated",
+      "bbox_iou": null,
+      "prediction": {
+        "style": {
+          "status": "unavailable",
+          "label": null,
+          "score": null,
+          "reason": "multiple_regions"
+        },
+        "fabric": {
+          "status": "disabled",
+          "reason": "Fabric recognition is off."
+        },
+        "length": {
+          "status": "unavailable",
+          "reason": "Calibrated body reference and hem geometry are required."
+        },
+        "metadata": {
+          "presentation": "worn",
+          "automatic": true,
+          "experimental": true,
+          "pi_verified": false,
+          "localization": {
+            "status": "unavailable",
+            "roi": null,
+            "reason": "multiple_regions",
+            "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+          }
+        }
+      }
+    },
+    {
+      "sample_id": "fashionpedia-train2020-21441",
+      "expected": "non_pleated",
+      "bbox_iou": 0.4826264194894691,
+      "prediction": {
+        "style": {
+          "status": "provisional",
+          "label": "non_pleated",
+          "score": 0.999975323677063,
+          "reason": "Experimental automatic ROI; full-skirt validity and empty-scene rejection are unverified."
+        },
+        "fabric": {
+          "status": "disabled",
+          "reason": "Fabric recognition is off."
+        },
+        "length": {
+          "status": "unavailable",
+          "reason": "Calibrated body reference and hem geometry are required."
+        },
+        "metadata": {
+          "presentation": "worn",
+          "automatic": true,
+          "experimental": true,
+          "pi_verified": false,
+          "localization": {
+            "status": "provisional",
+            "roi": [
+              420,
+              364,
+              604,
+              462
+            ],
+            "reason": "experimental_mask_not_verified_presence_or_full_view",
+            "mask_pixels": 61,
+            "threshold": 0.5,
+            "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+          },
+          "pleating_model_sha256": "c1d8f49e221a2672c20adb87fe4ae5d2f6966f125ee99cb212ff2eb56fffdbf0",
+          "roi_xyxy": [
+            410,
+            359,
+            614,
+            467
+          ]
+        }
+      }
+    },
+    {
+      "sample_id": "fashionpedia-train2020-21757",
+      "expected": "non_pleated",
+      "bbox_iou": 0.76007326007326,
+      "prediction": {
+        "style": {
+          "status": "provisional",
+          "label": "non_pleated",
+          "score": 0.926002562046051,
+          "reason": "Experimental automatic ROI; full-skirt validity and empty-scene rejection are unverified."
+        },
+        "fabric": {
+          "status": "disabled",
+          "reason": "Fabric recognition is off."
+        },
+        "length": {
+          "status": "unavailable",
+          "reason": "Calibrated body reference and hem geometry are required."
+        },
+        "metadata": {
+          "presentation": "worn",
+          "automatic": true,
+          "experimental": true,
+          "pi_verified": false,
+          "localization": {
+            "status": "provisional",
+            "roi": [
+              219,
+              402,
+              415,
+              714
+            ],
+            "reason": "experimental_mask_not_verified_presence_or_full_view",
+            "mask_pixels": 210,
+            "threshold": 0.5,
+            "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+          },
+          "pleating_model_sha256": "c1d8f49e221a2672c20adb87fe4ae5d2f6966f125ee99cb212ff2eb56fffdbf0",
+          "roi_xyxy": [
+            209,
+            386,
+            425,
+            730
+          ]
+        }
+      }
+    },
+    {
+      "sample_id": "fashionpedia-train2020-2208",
+      "expected": "non_pleated",
+      "bbox_iou": 0.24310171198388722,
+      "prediction": {
+        "style": {
+          "status": "provisional",
+          "label": "non_pleated",
+          "score": 0.9217665195465088,
+          "reason": "Experimental automatic ROI; full-skirt validity and empty-scene rejection are unverified."
+        },
+        "fabric": {
+          "status": "disabled",
+          "reason": "Fabric recognition is off."
+        },
+        "length": {
+          "status": "unavailable",
+          "reason": "Calibrated body reference and hem geometry are required."
+        },
+        "metadata": {
+          "presentation": "worn",
+          "automatic": true,
+          "experimental": true,
+          "pi_verified": false,
+          "localization": {
+            "status": "provisional",
+            "roi": [
+              243,
+              475,
+              574,
+              970
+            ],
+            "reason": "experimental_mask_not_verified_presence_or_full_view",
+            "mask_pixels": 319,
+            "threshold": 0.5,
+            "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+          },
+          "pleating_model_sha256": "c1d8f49e221a2672c20adb87fe4ae5d2f6966f125ee99cb212ff2eb56fffdbf0",
+          "roi_xyxy": [
+            226,
+            450,
+            591,
+            995
+          ]
+        }
+      }
+    },
+    {
+      "sample_id": "fashionpedia-train2020-22772",
+      "expected": "non_pleated",
+      "bbox_iou": null,
+      "prediction": {
+        "style": {
+          "status": "unavailable",
+          "label": null,
+          "score": null,
+          "reason": "multiple_regions"
+        },
+        "fabric": {
+          "status": "disabled",
+          "reason": "Fabric recognition is off."
+        },
+        "length": {
+          "status": "unavailable",
+          "reason": "Calibrated body reference and hem geometry are required."
+        },
+        "metadata": {
+          "presentation": "worn",
+          "automatic": true,
+          "experimental": true,
+          "pi_verified": false,
+          "localization": {
+            "status": "unavailable",
+            "roi": null,
+            "reason": "multiple_regions",
+            "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+          }
+        }
+      }
+    },
+    {
+      "sample_id": "fashionpedia-train2020-23671",
+      "expected": "non_pleated",
+      "bbox_iou": 0.32347397419167756,
+      "prediction": {
+        "style": {
+          "status": "provisional",
+          "label": "non_pleated",
+          "score": 0.9784440398216248,
+          "reason": "Experimental automatic ROI; full-skirt validity and empty-scene rejection are unverified."
+        },
+        "fabric": {
+          "status": "disabled",
+          "reason": "Fabric recognition is off."
+        },
+        "length": {
+          "status": "unavailable",
+          "reason": "Calibrated body reference and hem geometry are required."
+        },
+        "metadata": {
+          "presentation": "worn",
+          "automatic": true,
+          "experimental": true,
+          "pi_verified": false,
+          "localization": {
+            "status": "provisional",
+            "roi": [
+              512,
+              243,
+              677,
+              452
+            ],
+            "reason": "experimental_mask_not_verified_presence_or_full_view",
+            "mask_pixels": 119,
+            "threshold": 0.5,
+            "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+          },
+          "pleating_model_sha256": "c1d8f49e221a2672c20adb87fe4ae5d2f6966f125ee99cb212ff2eb56fffdbf0",
+          "roi_xyxy": [
+            503,
+            232,
+            686,
+            463
+          ]
+        }
+      }
+    },
+    {
+      "sample_id": "fashionpedia-train2020-23874",
+      "expected": "non_pleated",
+      "bbox_iou": 0.8468010315070664,
+      "prediction": {
+        "style": {
+          "status": "provisional",
+          "label": "non_pleated",
+          "score": 0.9974067807197571,
+          "reason": "Experimental automatic ROI; full-skirt validity and empty-scene rejection are unverified."
+        },
+        "fabric": {
+          "status": "disabled",
+          "reason": "Fabric recognition is off."
+        },
+        "length": {
+          "status": "unavailable",
+          "reason": "Calibrated body reference and hem geometry are required."
+        },
+        "metadata": {
+          "presentation": "worn",
+          "automatic": true,
+          "experimental": true,
+          "pi_verified": false,
+          "localization": {
+            "status": "provisional",
+            "roi": [
+              256,
+              384,
+              464,
+              695
+            ],
+            "reason": "experimental_mask_not_verified_presence_or_full_view",
+            "mask_pixels": 241,
+            "threshold": 0.5,
+            "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+          },
+          "pleating_model_sha256": "c1d8f49e221a2672c20adb87fe4ae5d2f6966f125ee99cb212ff2eb56fffdbf0",
+          "roi_xyxy": [
+            245,
+            368,
+            475,
+            711
+          ]
+        }
+      }
+    },
+    {
+      "sample_id": "fashionpedia-train2020-24110",
+      "expected": "non_pleated",
+      "bbox_iou": 0.6712638136442646,
+      "prediction": {
+        "style": {
+          "status": "provisional",
+          "label": "non_pleated",
+          "score": 0.9968051910400391,
+          "reason": "Experimental automatic ROI; full-skirt validity and empty-scene rejection are unverified."
+        },
+        "fabric": {
+          "status": "disabled",
+          "reason": "Fabric recognition is off."
+        },
+        "length": {
+          "status": "unavailable",
+          "reason": "Calibrated body reference and hem geometry are required."
+        },
+        "metadata": {
+          "presentation": "worn",
+          "automatic": true,
+          "experimental": true,
+          "pi_verified": false,
+          "localization": {
+            "status": "provisional",
+            "roi": [
+              146,
+              329,
+              415,
+              622
+            ],
+            "reason": "experimental_mask_not_verified_presence_or_full_view",
+            "mask_pixels": 270,
+            "threshold": 0.5,
+            "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+          },
+          "pleating_model_sha256": "c1d8f49e221a2672c20adb87fe4ae5d2f6966f125ee99cb212ff2eb56fffdbf0",
+          "roi_xyxy": [
+            132,
+            314,
+            429,
+            637
+          ]
+        }
+      }
+    },
+    {
+      "sample_id": "fashionpedia-train2020-24284",
+      "expected": "non_pleated",
+      "bbox_iou": 0.2811422777965529,
+      "prediction": {
+        "style": {
+          "status": "provisional",
+          "label": "non_pleated",
+          "score": 0.9748850464820862,
+          "reason": "Experimental automatic ROI; full-skirt validity and empty-scene rejection are unverified."
+        },
+        "fabric": {
+          "status": "disabled",
+          "reason": "Fabric recognition is off."
+        },
+        "length": {
+          "status": "unavailable",
+          "reason": "Calibrated body reference and hem geometry are required."
+        },
+        "metadata": {
+          "presentation": "worn",
+          "automatic": true,
+          "experimental": true,
+          "pi_verified": false,
+          "localization": {
+            "status": "provisional",
+            "roi": [
+              274,
+              219,
+              714,
+              488
+            ],
+            "reason": "experimental_mask_not_verified_presence_or_full_view",
+            "mask_pixels": 257,
+            "threshold": 0.5,
+            "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+          },
+          "pleating_model_sha256": "c1d8f49e221a2672c20adb87fe4ae5d2f6966f125ee99cb212ff2eb56fffdbf0",
+          "roi_xyxy": [
+            252,
+            205,
+            736,
+            502
+          ]
+        }
+      }
+    },
+    {
+      "sample_id": "fashionpedia-train2020-24325",
+      "expected": "non_pleated",
+      "bbox_iou": 0.8265921989009999,
+      "prediction": {
+        "style": {
+          "status": "provisional",
+          "label": "non_pleated",
+          "score": 0.9993842840194702,
+          "reason": "Experimental automatic ROI; full-skirt validity and empty-scene rejection are unverified."
+        },
+        "fabric": {
+          "status": "disabled",
+          "reason": "Fabric recognition is off."
+        },
+        "length": {
+          "status": "unavailable",
+          "reason": "Calibrated body reference and hem geometry are required."
+        },
+        "metadata": {
+          "presentation": "worn",
+          "automatic": true,
+          "experimental": true,
+          "pi_verified": false,
+          "localization": {
+            "status": "provisional",
+            "roi": [
+              203,
+              384,
+              407,
+              695
+            ],
+            "reason": "experimental_mask_not_verified_presence_or_full_view",
+            "mask_pixels": 280,
+            "threshold": 0.5,
+            "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+          },
+          "pleating_model_sha256": "c1d8f49e221a2672c20adb87fe4ae5d2f6966f125ee99cb212ff2eb56fffdbf0",
+          "roi_xyxy": [
+            192,
+            368,
+            418,
+            711
+          ]
+        }
+      }
+    },
+    {
+      "sample_id": "fashionpedia-train2020-24650",
+      "expected": "non_pleated",
+      "bbox_iou": null,
+      "prediction": {
+        "style": {
+          "status": "unavailable",
+          "label": null,
+          "score": null,
+          "reason": "region_touches_frame_edge"
+        },
+        "fabric": {
+          "status": "disabled",
+          "reason": "Fabric recognition is off."
+        },
+        "length": {
+          "status": "unavailable",
+          "reason": "Calibrated body reference and hem geometry are required."
+        },
+        "metadata": {
+          "presentation": "worn",
+          "automatic": true,
+          "experimental": true,
+          "pi_verified": false,
+          "localization": {
+            "status": "unavailable",
+            "roi": null,
+            "reason": "region_touches_frame_edge",
+            "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+          }
+        }
+      }
+    },
+    {
+      "sample_id": "fashionpedia-train2020-24708",
+      "expected": "pleated",
+      "bbox_iou": null,
+      "prediction": {
+        "style": {
+          "status": "unavailable",
+          "label": null,
+          "score": null,
+          "reason": "multiple_regions"
+        },
+        "fabric": {
+          "status": "disabled",
+          "reason": "Fabric recognition is off."
+        },
+        "length": {
+          "status": "unavailable",
+          "reason": "Calibrated body reference and hem geometry are required."
+        },
+        "metadata": {
+          "presentation": "worn",
+          "automatic": true,
+          "experimental": true,
+          "pi_verified": false,
+          "localization": {
+            "status": "unavailable",
+            "roi": null,
+            "reason": "multiple_regions",
+            "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+          }
+        }
+      }
+    },
+    {
+      "sample_id": "fashionpedia-train2020-26590",
+      "expected": "non_pleated",
+      "bbox_iou": null,
+      "prediction": {
+        "style": {
+          "status": "unavailable",
+          "label": null,
+          "score": null,
+          "reason": "multiple_regions"
+        },
+        "fabric": {
+          "status": "disabled",
+          "reason": "Fabric recognition is off."
+        },
+        "length": {
+          "status": "unavailable",
+          "reason": "Calibrated body reference and hem geometry are required."
+        },
+        "metadata": {
+          "presentation": "worn",
+          "automatic": true,
+          "experimental": true,
+          "pi_verified": false,
+          "localization": {
+            "status": "unavailable",
+            "roi": null,
+            "reason": "multiple_regions",
+            "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+          }
+        }
+      }
+    },
+    {
+      "sample_id": "fashionpedia-train2020-2689",
+      "expected": "pleated",
+      "bbox_iou": 0.5116959064327485,
+      "prediction": {
+        "style": {
+          "status": "provisional",
+          "label": "non_pleated",
+          "score": 0.7672404646873474,
+          "reason": "Experimental automatic ROI; full-skirt validity and empty-scene rejection are unverified."
+        },
+        "fabric": {
+          "status": "disabled",
+          "reason": "Fabric recognition is off."
+        },
+        "length": {
+          "status": "unavailable",
+          "reason": "Calibrated body reference and hem geometry are required."
+        },
+        "metadata": {
+          "presentation": "worn",
+          "automatic": true,
+          "experimental": true,
+          "pi_verified": false,
+          "localization": {
+            "status": "provisional",
+            "roi": [
+              146,
+              219,
+              622,
+              951
+            ],
+            "reason": "experimental_mask_not_verified_presence_or_full_view",
+            "mask_pixels": 1035,
+            "threshold": 0.5,
+            "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+          },
+          "pleating_model_sha256": "c1d8f49e221a2672c20adb87fe4ae5d2f6966f125ee99cb212ff2eb56fffdbf0",
+          "roi_xyxy": [
+            122,
+            182,
+            646,
+            988
+          ]
+        }
+      }
+    },
+    {
+      "sample_id": "fashionpedia-train2020-26955",
+      "expected": "non_pleated",
+      "bbox_iou": null,
+      "prediction": {
+        "style": {
+          "status": "unavailable",
+          "label": null,
+          "score": null,
+          "reason": "region_touches_frame_edge"
+        },
+        "fabric": {
+          "status": "disabled",
+          "reason": "Fabric recognition is off."
+        },
+        "length": {
+          "status": "unavailable",
+          "reason": "Calibrated body reference and hem geometry are required."
+        },
+        "metadata": {
+          "presentation": "worn",
+          "automatic": true,
+          "experimental": true,
+          "pi_verified": false,
+          "localization": {
+            "status": "unavailable",
+            "roi": null,
+            "reason": "region_touches_frame_edge",
+            "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+          }
+        }
+      }
+    },
+    {
+      "sample_id": "fashionpedia-train2020-27922",
+      "expected": "non_pleated",
+      "bbox_iou": null,
+      "prediction": {
+        "style": {
+          "status": "unavailable",
+          "label": null,
+          "score": null,
+          "reason": "multiple_regions"
+        },
+        "fabric": {
+          "status": "disabled",
+          "reason": "Fabric recognition is off."
+        },
+        "length": {
+          "status": "unavailable",
+          "reason": "Calibrated body reference and hem geometry are required."
+        },
+        "metadata": {
+          "presentation": "worn",
+          "automatic": true,
+          "experimental": true,
+          "pi_verified": false,
+          "localization": {
+            "status": "unavailable",
+            "roi": null,
+            "reason": "multiple_regions",
+            "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+          }
+        }
+      }
+    },
+    {
+      "sample_id": "fashionpedia-train2020-29142",
+      "expected": "pleated",
+      "bbox_iou": null,
+      "prediction": {
+        "style": {
+          "status": "unavailable",
+          "label": null,
+          "score": null,
+          "reason": "multiple_regions"
+        },
+        "fabric": {
+          "status": "disabled",
+          "reason": "Fabric recognition is off."
+        },
+        "length": {
+          "status": "unavailable",
+          "reason": "Calibrated body reference and hem geometry are required."
+        },
+        "metadata": {
+          "presentation": "worn",
+          "automatic": true,
+          "experimental": true,
+          "pi_verified": false,
+          "localization": {
+            "status": "unavailable",
+            "roi": null,
+            "reason": "multiple_regions",
+            "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+          }
+        }
+      }
+    },
+    {
+      "sample_id": "fashionpedia-train2020-29403",
+      "expected": "non_pleated",
+      "bbox_iou": 0.8742953841228461,
+      "prediction": {
+        "style": {
+          "status": "provisional",
+          "label": "pleated",
+          "score": 0.5609009265899658,
+          "reason": "Experimental automatic ROI; full-skirt validity and empty-scene rejection are unverified."
+        },
+        "fabric": {
+          "status": "disabled",
+          "reason": "Fabric recognition is off."
+        },
+        "length": {
+          "status": "unavailable",
+          "reason": "Calibrated body reference and hem geometry are required."
+        },
+        "metadata": {
+          "presentation": "worn",
+          "automatic": true,
+          "experimental": true,
+          "pi_verified": false,
+          "localization": {
+            "status": "provisional",
+            "roi": [
+              54,
+              128,
+              686,
+              896
+            ],
+            "reason": "experimental_mask_not_verified_presence_or_full_view",
+            "mask_pixels": 1422,
+            "threshold": 0.5,
+            "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+          },
+          "pleating_model_sha256": "c1d8f49e221a2672c20adb87fe4ae5d2f6966f125ee99cb212ff2eb56fffdbf0",
+          "roi_xyxy": [
+            22,
+            89,
+            718,
+            935
+          ]
+        }
+      }
+    },
+    {
+      "sample_id": "fashionpedia-train2020-29964",
+      "expected": "non_pleated",
+      "bbox_iou": 0.7599531615925058,
+      "prediction": {
+        "style": {
+          "status": "provisional",
+          "label": "non_pleated",
+          "score": 0.997494101524353,
+          "reason": "Experimental automatic ROI; full-skirt validity and empty-scene rejection are unverified."
+        },
+        "fabric": {
+          "status": "disabled",
+          "reason": "Fabric recognition is off."
+        },
+        "length": {
+          "status": "unavailable",
+          "reason": "Calibrated body reference and hem geometry are required."
+        },
+        "metadata": {
+          "presentation": "worn",
+          "automatic": true,
+          "experimental": true,
+          "pi_verified": false,
+          "localization": {
+            "status": "provisional",
+            "roi": [
+              52,
+              347,
+              640,
+              896
+            ],
+            "reason": "experimental_mask_not_verified_presence_or_full_view",
+            "mask_pixels": 1138,
+            "threshold": 0.5,
+            "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+          },
+          "pleating_model_sha256": "c1d8f49e221a2672c20adb87fe4ae5d2f6966f125ee99cb212ff2eb56fffdbf0",
+          "roi_xyxy": [
+            22,
+            319,
+            670,
+            924
+          ]
+        }
+      }
+    },
+    {
+      "sample_id": "fashionpedia-train2020-30563",
+      "expected": "pleated",
+      "bbox_iou": 0.9003704024353434,
+      "prediction": {
+        "style": {
+          "status": "provisional",
+          "label": "pleated",
+          "score": 0.5235879421234131,
+          "reason": "Experimental automatic ROI; full-skirt validity and empty-scene rejection are unverified."
+        },
+        "fabric": {
+          "status": "disabled",
+          "reason": "Fabric recognition is off."
+        },
+        "length": {
+          "status": "unavailable",
+          "reason": "Calibrated body reference and hem geometry are required."
+        },
+        "metadata": {
+          "presentation": "worn",
+          "automatic": true,
+          "experimental": true,
+          "pi_verified": false,
+          "localization": {
+            "status": "provisional",
+            "roi": [
+              256,
+              128,
+              750,
+              970
+            ],
+            "reason": "experimental_mask_not_verified_presence_or_full_view",
+            "mask_pixels": 1154,
+            "threshold": 0.5,
+            "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+          },
+          "pleating_model_sha256": "c1d8f49e221a2672c20adb87fe4ae5d2f6966f125ee99cb212ff2eb56fffdbf0",
+          "roi_xyxy": [
+            231,
+            85,
+            775,
+            1013
+          ]
+        }
+      }
+    },
+    {
+      "sample_id": "fashionpedia-train2020-3166",
+      "expected": "non_pleated",
+      "bbox_iou": 0.3825863678804855,
+      "prediction": {
+        "style": {
+          "status": "provisional",
+          "label": "non_pleated",
+          "score": 0.979077160358429,
+          "reason": "Experimental automatic ROI; full-skirt validity and empty-scene rejection are unverified."
+        },
+        "fabric": {
+          "status": "disabled",
+          "reason": "Fabric recognition is off."
+        },
+        "length": {
+          "status": "unavailable",
+          "reason": "Calibrated body reference and hem geometry are required."
+        },
+        "metadata": {
+          "presentation": "worn",
+          "automatic": true,
+          "experimental": true,
+          "pi_verified": false,
+          "localization": {
+            "status": "provisional",
+            "roi": [
+              316,
+              438,
+              622,
+              970
+            ],
+            "reason": "experimental_mask_not_verified_presence_or_full_view",
+            "mask_pixels": 402,
+            "threshold": 0.5,
+            "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+          },
+          "pleating_model_sha256": "c1d8f49e221a2672c20adb87fe4ae5d2f6966f125ee99cb212ff2eb56fffdbf0",
+          "roi_xyxy": [
+            300,
+            411,
+            638,
+            997
+          ]
+        }
+      }
+    },
+    {
+      "sample_id": "fashionpedia-train2020-31762",
+      "expected": "non_pleated",
+      "bbox_iou": 0.8433236874741629,
+      "prediction": {
+        "style": {
+          "status": "provisional",
+          "label": "non_pleated",
+          "score": 0.9909542202949524,
+          "reason": "Experimental automatic ROI; full-skirt validity and empty-scene rejection are unverified."
+        },
+        "fabric": {
+          "status": "disabled",
+          "reason": "Fabric recognition is off."
+        },
+        "length": {
+          "status": "unavailable",
+          "reason": "Calibrated body reference and hem geometry are required."
+        },
+        "metadata": {
+          "presentation": "worn",
+          "automatic": true,
+          "experimental": true,
+          "pi_verified": false,
+          "localization": {
+            "status": "provisional",
+            "roi": [
+              384,
+              60,
+              787,
+              582
+            ],
+            "reason": "experimental_mask_not_verified_presence_or_full_view",
+            "mask_pixels": 655,
+            "threshold": 0.5,
+            "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+          },
+          "pleating_model_sha256": "c1d8f49e221a2672c20adb87fe4ae5d2f6966f125ee99cb212ff2eb56fffdbf0",
+          "roi_xyxy": [
+            363,
+            33,
+            808,
+            609
+          ]
+        }
+      }
+    },
+    {
+      "sample_id": "fashionpedia-train2020-31853",
+      "expected": "non_pleated",
+      "bbox_iou": null,
+      "prediction": {
+        "style": {
+          "status": "unavailable",
+          "label": null,
+          "score": null,
+          "reason": "region_touches_frame_edge"
+        },
+        "fabric": {
+          "status": "disabled",
+          "reason": "Fabric recognition is off."
+        },
+        "length": {
+          "status": "unavailable",
+          "reason": "Calibrated body reference and hem geometry are required."
+        },
+        "metadata": {
+          "presentation": "worn",
+          "automatic": true,
+          "experimental": true,
+          "pi_verified": false,
+          "localization": {
+            "status": "unavailable",
+            "roi": null,
+            "reason": "region_touches_frame_edge",
+            "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+          }
+        }
+      }
+    },
+    {
+      "sample_id": "fashionpedia-train2020-31939",
+      "expected": "non_pleated",
+      "bbox_iou": null,
+      "prediction": {
+        "style": {
+          "status": "unavailable",
+          "label": null,
+          "score": null,
+          "reason": "multiple_regions"
+        },
+        "fabric": {
+          "status": "disabled",
+          "reason": "Fabric recognition is off."
+        },
+        "length": {
+          "status": "unavailable",
+          "reason": "Calibrated body reference and hem geometry are required."
+        },
+        "metadata": {
+          "presentation": "worn",
+          "automatic": true,
+          "experimental": true,
+          "pi_verified": false,
+          "localization": {
+            "status": "unavailable",
+            "roi": null,
+            "reason": "multiple_regions",
+            "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+          }
+        }
+      }
+    },
+    {
+      "sample_id": "fashionpedia-train2020-3337",
+      "expected": "non_pleated",
+      "bbox_iou": 0.4010361968774067,
+      "prediction": {
+        "style": {
+          "status": "provisional",
+          "label": "non_pleated",
+          "score": 0.809455394744873,
+          "reason": "Experimental automatic ROI; full-skirt validity and empty-scene rejection are unverified."
+        },
+        "fabric": {
+          "status": "disabled",
+          "reason": "Fabric recognition is off."
+        },
+        "length": {
+          "status": "unavailable",
+          "reason": "Calibrated body reference and hem geometry are required."
+        },
+        "metadata": {
+          "presentation": "worn",
+          "automatic": true,
+          "experimental": true,
+          "pi_verified": false,
+          "localization": {
+            "status": "provisional",
+            "roi": [
+              124,
+              347,
+              565,
+              732
+            ],
+            "reason": "experimental_mask_not_verified_presence_or_full_view",
+            "mask_pixels": 423,
+            "threshold": 0.5,
+            "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+          },
+          "pleating_model_sha256": "c1d8f49e221a2672c20adb87fe4ae5d2f6966f125ee99cb212ff2eb56fffdbf0",
+          "roi_xyxy": [
+            101,
+            327,
+            588,
+            752
+          ]
+        }
+      }
+    },
+    {
+      "sample_id": "fashionpedia-train2020-33951",
+      "expected": "non_pleated",
+      "bbox_iou": 0.763052706048815,
+      "prediction": {
+        "style": {
+          "status": "provisional",
+          "label": "non_pleated",
+          "score": 0.9981797933578491,
+          "reason": "Experimental automatic ROI; full-skirt validity and empty-scene rejection are unverified."
+        },
+        "fabric": {
+          "status": "disabled",
+          "reason": "Fabric recognition is off."
+        },
+        "length": {
+          "status": "unavailable",
+          "reason": "Calibrated body reference and hem geometry are required."
+        },
+        "metadata": {
+          "presentation": "worn",
+          "automatic": true,
+          "experimental": true,
+          "pi_verified": false,
+          "localization": {
+            "status": "provisional",
+            "roi": [
+              327,
+              420,
+              547,
+              677
+            ],
+            "reason": "experimental_mask_not_verified_presence_or_full_view",
+            "mask_pixels": 213,
+            "threshold": 0.5,
+            "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+          },
+          "pleating_model_sha256": "c1d8f49e221a2672c20adb87fe4ae5d2f6966f125ee99cb212ff2eb56fffdbf0",
+          "roi_xyxy": [
+            316,
+            407,
+            558,
+            690
+          ]
+        }
+      }
+    },
+    {
+      "sample_id": "fashionpedia-train2020-34108",
+      "expected": "pleated",
+      "bbox_iou": 0.9136988366197569,
+      "prediction": {
+        "style": {
+          "status": "provisional",
+          "label": "pleated",
+          "score": 0.6456341743469238,
+          "reason": "Experimental automatic ROI; full-skirt validity and empty-scene rejection are unverified."
+        },
+        "fabric": {
+          "status": "disabled",
+          "reason": "Fabric recognition is off."
+        },
+        "length": {
+          "status": "unavailable",
+          "reason": "Calibrated body reference and hem geometry are required."
+        },
+        "metadata": {
+          "presentation": "worn",
+          "automatic": true,
+          "experimental": true,
+          "pi_verified": false,
+          "localization": {
+            "status": "provisional",
+            "roi": [
+              110,
+              365,
+              626,
+              787
+            ],
+            "reason": "experimental_mask_not_verified_presence_or_full_view",
+            "mask_pixels": 703,
+            "threshold": 0.5,
+            "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+          },
+          "pleating_model_sha256": "c1d8f49e221a2672c20adb87fe4ae5d2f6966f125ee99cb212ff2eb56fffdbf0",
+          "roi_xyxy": [
+            84,
+            343,
+            652,
+            809
+          ]
+        }
+      }
+    },
+    {
+      "sample_id": "fashionpedia-train2020-34216",
+      "expected": "non_pleated",
+      "bbox_iou": 0.8401787605371288,
+      "prediction": {
+        "style": {
+          "status": "provisional",
+          "label": "non_pleated",
+          "score": 0.7487065196037292,
+          "reason": "Experimental automatic ROI; full-skirt validity and empty-scene rejection are unverified."
+        },
+        "fabric": {
+          "status": "disabled",
+          "reason": "Fabric recognition is off."
+        },
+        "length": {
+          "status": "unavailable",
+          "reason": "Calibrated body reference and hem geometry are required."
+        },
+        "metadata": {
+          "presentation": "worn",
+          "automatic": true,
+          "experimental": true,
+          "pi_verified": false,
+          "localization": {
+            "status": "provisional",
+            "roi": [
+              274,
+              128,
+              823,
+              988
+            ],
+            "reason": "experimental_mask_not_verified_presence_or_full_view",
+            "mask_pixels": 1241,
+            "threshold": 0.5,
+            "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+          },
+          "pleating_model_sha256": "c1d8f49e221a2672c20adb87fe4ae5d2f6966f125ee99cb212ff2eb56fffdbf0",
+          "roi_xyxy": [
+            246,
+            85,
+            851,
+            1024
+          ]
+        }
+      }
+    },
+    {
+      "sample_id": "fashionpedia-train2020-34508",
+      "expected": "pleated",
+      "bbox_iou": 0.2938338182076208,
+      "prediction": {
+        "style": {
+          "status": "provisional",
+          "label": "non_pleated",
+          "score": 0.5616174340248108,
+          "reason": "Experimental automatic ROI; full-skirt validity and empty-scene rejection are unverified."
+        },
+        "fabric": {
+          "status": "disabled",
+          "reason": "Fabric recognition is off."
+        },
+        "length": {
+          "status": "unavailable",
+          "reason": "Calibrated body reference and hem geometry are required."
+        },
+        "metadata": {
+          "presentation": "worn",
+          "automatic": true,
+          "experimental": true,
+          "pi_verified": false,
+          "localization": {
+            "status": "provisional",
+            "roi": [
+              126,
+              493,
+              634,
+              823
+            ],
+            "reason": "experimental_mask_not_verified_presence_or_full_view",
+            "mask_pixels": 450,
+            "threshold": 0.5,
+            "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+          },
+          "pleating_model_sha256": "c1d8f49e221a2672c20adb87fe4ae5d2f6966f125ee99cb212ff2eb56fffdbf0",
+          "roi_xyxy": [
+            100,
+            476,
+            660,
+            840
+          ]
+        }
+      }
+    },
+    {
+      "sample_id": "fashionpedia-train2020-35294",
+      "expected": "pleated",
+      "bbox_iou": 0.8439753583836969,
+      "prediction": {
+        "style": {
+          "status": "provisional",
+          "label": "pleated",
+          "score": 0.9467573165893555,
+          "reason": "Experimental automatic ROI; full-skirt validity and empty-scene rejection are unverified."
+        },
+        "fabric": {
+          "status": "disabled",
+          "reason": "Fabric recognition is off."
+        },
+        "length": {
+          "status": "unavailable",
+          "reason": "Calibrated body reference and hem geometry are required."
+        },
+        "metadata": {
+          "presentation": "worn",
+          "automatic": true,
+          "experimental": true,
+          "pi_verified": false,
+          "localization": {
+            "status": "provisional",
+            "roi": [
+              243,
+              438,
+              476,
+              732
+            ],
+            "reason": "experimental_mask_not_verified_presence_or_full_view",
+            "mask_pixels": 253,
+            "threshold": 0.5,
+            "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+          },
+          "pleating_model_sha256": "c1d8f49e221a2672c20adb87fe4ae5d2f6966f125ee99cb212ff2eb56fffdbf0",
+          "roi_xyxy": [
+            231,
+            423,
+            488,
+            747
+          ]
+        }
+      }
+    },
+    {
+      "sample_id": "fashionpedia-train2020-3554",
+      "expected": "non_pleated",
+      "bbox_iou": 0.7122016598793752,
+      "prediction": {
+        "style": {
+          "status": "provisional",
+          "label": "non_pleated",
+          "score": 0.9874130487442017,
+          "reason": "Experimental automatic ROI; full-skirt validity and empty-scene rejection are unverified."
+        },
+        "fabric": {
+          "status": "disabled",
+          "reason": "Fabric recognition is off."
+        },
+        "length": {
+          "status": "unavailable",
+          "reason": "Calibrated body reference and hem geometry are required."
+        },
+        "metadata": {
+          "presentation": "worn",
+          "automatic": true,
+          "experimental": true,
+          "pi_verified": false,
+          "localization": {
+            "status": "provisional",
+            "roi": [
+              243,
+              420,
+              464,
+              586
+            ],
+            "reason": "experimental_mask_not_verified_presence_or_full_view",
+            "mask_pixels": 142,
+            "threshold": 0.5,
+            "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+          },
+          "pleating_model_sha256": "c1d8f49e221a2672c20adb87fe4ae5d2f6966f125ee99cb212ff2eb56fffdbf0",
+          "roi_xyxy": [
+            231,
+            411,
+            476,
+            595
+          ]
+        }
+      }
+    },
+    {
+      "sample_id": "fashionpedia-train2020-36049",
+      "expected": "non_pleated",
+      "bbox_iou": null,
+      "prediction": {
+        "style": {
+          "status": "unavailable",
+          "label": null,
+          "score": null,
+          "reason": "multiple_regions"
+        },
+        "fabric": {
+          "status": "disabled",
+          "reason": "Fabric recognition is off."
+        },
+        "length": {
+          "status": "unavailable",
+          "reason": "Calibrated body reference and hem geometry are required."
+        },
+        "metadata": {
+          "presentation": "worn",
+          "automatic": true,
+          "experimental": true,
+          "pi_verified": false,
+          "localization": {
+            "status": "unavailable",
+            "roi": null,
+            "reason": "multiple_regions",
+            "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+          }
+        }
+      }
+    },
+    {
+      "sample_id": "fashionpedia-train2020-37302",
+      "expected": "pleated",
+      "bbox_iou": 0.8358326411052333,
+      "prediction": {
+        "style": {
+          "status": "provisional",
+          "label": "pleated",
+          "score": 0.7665049433708191,
+          "reason": "Experimental automatic ROI; full-skirt validity and empty-scene rejection are unverified."
+        },
+        "fabric": {
+          "status": "disabled",
+          "reason": "Fabric recognition is off."
+        },
+        "length": {
+          "status": "unavailable",
+          "reason": "Calibrated body reference and hem geometry are required."
+        },
+        "metadata": {
+          "presentation": "worn",
+          "automatic": true,
+          "experimental": true,
+          "pi_verified": false,
+          "localization": {
+            "status": "provisional",
+            "roi": [
+              202,
+              420,
+              469,
+              677
+            ],
+            "reason": "experimental_mask_not_verified_presence_or_full_view",
+            "mask_pixels": 245,
+            "threshold": 0.5,
+            "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+          },
+          "pleating_model_sha256": "c1d8f49e221a2672c20adb87fe4ae5d2f6966f125ee99cb212ff2eb56fffdbf0",
+          "roi_xyxy": [
+            188,
+            407,
+            483,
+            690
+          ]
+        }
+      }
+    },
+    {
+      "sample_id": "fashionpedia-train2020-37357",
+      "expected": "non_pleated",
+      "bbox_iou": 0.9088598767543066,
+      "prediction": {
+        "style": {
+          "status": "provisional",
+          "label": "pleated",
+          "score": 0.629395067691803,
+          "reason": "Experimental automatic ROI; full-skirt validity and empty-scene rejection are unverified."
+        },
+        "fabric": {
+          "status": "disabled",
+          "reason": "Fabric recognition is off."
+        },
+        "length": {
+          "status": "unavailable",
+          "reason": "Calibrated body reference and hem geometry are required."
+        },
+        "metadata": {
+          "presentation": "worn",
+          "automatic": true,
+          "experimental": true,
+          "pi_verified": false,
+          "localization": {
+            "status": "provisional",
+            "roi": [
+              98,
+              310,
+              581,
+              604
+            ],
+            "reason": "experimental_mask_not_verified_presence_or_full_view",
+            "mask_pixels": 522,
+            "threshold": 0.5,
+            "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+          },
+          "pleating_model_sha256": "c1d8f49e221a2672c20adb87fe4ae5d2f6966f125ee99cb212ff2eb56fffdbf0",
+          "roi_xyxy": [
+            73,
+            295,
+            606,
+            619
+          ]
+        }
+      }
+    },
+    {
+      "sample_id": "fashionpedia-train2020-37613",
+      "expected": "non_pleated",
+      "bbox_iou": null,
+      "prediction": {
+        "style": {
+          "status": "unavailable",
+          "label": null,
+          "score": null,
+          "reason": "multiple_regions"
+        },
+        "fabric": {
+          "status": "disabled",
+          "reason": "Fabric recognition is off."
+        },
+        "length": {
+          "status": "unavailable",
+          "reason": "Calibrated body reference and hem geometry are required."
+        },
+        "metadata": {
+          "presentation": "worn",
+          "automatic": true,
+          "experimental": true,
+          "pi_verified": false,
+          "localization": {
+            "status": "unavailable",
+            "roi": null,
+            "reason": "multiple_regions",
+            "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+          }
+        }
+      }
+    },
+    {
+      "sample_id": "fashionpedia-train2020-38701",
+      "expected": "non_pleated",
+      "bbox_iou": null,
+      "prediction": {
+        "style": {
+          "status": "unavailable",
+          "label": null,
+          "score": null,
+          "reason": "region_touches_frame_edge"
+        },
+        "fabric": {
+          "status": "disabled",
+          "reason": "Fabric recognition is off."
+        },
+        "length": {
+          "status": "unavailable",
+          "reason": "Calibrated body reference and hem geometry are required."
+        },
+        "metadata": {
+          "presentation": "worn",
+          "automatic": true,
+          "experimental": true,
+          "pi_verified": false,
+          "localization": {
+            "status": "unavailable",
+            "roi": null,
+            "reason": "region_touches_frame_edge",
+            "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+          }
+        }
+      }
+    },
+    {
+      "sample_id": "fashionpedia-train2020-39103",
+      "expected": "non_pleated",
+      "bbox_iou": 0.8331368290412658,
+      "prediction": {
+        "style": {
+          "status": "provisional",
+          "label": "non_pleated",
+          "score": 0.9973758459091187,
+          "reason": "Experimental automatic ROI; full-skirt validity and empty-scene rejection are unverified."
+        },
+        "fabric": {
+          "status": "disabled",
+          "reason": "Fabric recognition is off."
+        },
+        "length": {
+          "status": "unavailable",
+          "reason": "Calibrated body reference and hem geometry are required."
+        },
+        "metadata": {
+          "presentation": "worn",
+          "automatic": true,
+          "experimental": true,
+          "pi_verified": false,
+          "localization": {
+            "status": "provisional",
+            "roi": [
+              243,
+              402,
+              536,
+              732
+            ],
+            "reason": "experimental_mask_not_verified_presence_or_full_view",
+            "mask_pixels": 346,
+            "threshold": 0.5,
+            "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+          },
+          "pleating_model_sha256": "c1d8f49e221a2672c20adb87fe4ae5d2f6966f125ee99cb212ff2eb56fffdbf0",
+          "roi_xyxy": [
+            228,
+            385,
+            551,
+            749
+          ]
+        }
+      }
+    },
+    {
+      "sample_id": "fashionpedia-train2020-39412",
+      "expected": "non_pleated",
+      "bbox_iou": null,
+      "prediction": {
+        "style": {
+          "status": "unavailable",
+          "label": null,
+          "score": null,
+          "reason": "multiple_regions"
+        },
+        "fabric": {
+          "status": "disabled",
+          "reason": "Fabric recognition is off."
+        },
+        "length": {
+          "status": "unavailable",
+          "reason": "Calibrated body reference and hem geometry are required."
+        },
+        "metadata": {
+          "presentation": "worn",
+          "automatic": true,
+          "experimental": true,
+          "pi_verified": false,
+          "localization": {
+            "status": "unavailable",
+            "roi": null,
+            "reason": "multiple_regions",
+            "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+          }
+        }
+      }
+    },
+    {
+      "sample_id": "fashionpedia-train2020-40276",
+      "expected": "non_pleated",
+      "bbox_iou": 0.8271009892330428,
+      "prediction": {
+        "style": {
+          "status": "provisional",
+          "label": "pleated",
+          "score": 0.7014915943145752,
+          "reason": "Experimental automatic ROI; full-skirt validity and empty-scene rejection are unverified."
+        },
+        "fabric": {
+          "status": "disabled",
+          "reason": "Fabric recognition is off."
+        },
+        "length": {
+          "status": "unavailable",
+          "reason": "Calibrated body reference and hem geometry are required."
+        },
+        "metadata": {
+          "presentation": "worn",
+          "automatic": true,
+          "experimental": true,
+          "pi_verified": false,
+          "localization": {
+            "status": "provisional",
+            "roi": [
+              237,
+              54,
+              805,
+              988
+            ],
+            "reason": "experimental_mask_not_verified_presence_or_full_view",
+            "mask_pixels": 1221,
+            "threshold": 0.5,
+            "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+          },
+          "pleating_model_sha256": "c1d8f49e221a2672c20adb87fe4ae5d2f6966f125ee99cb212ff2eb56fffdbf0",
+          "roi_xyxy": [
+            208,
+            7,
+            834,
+            1024
+          ]
+        }
+      }
+    },
+    {
+      "sample_id": "fashionpedia-train2020-41170",
+      "expected": "non_pleated",
+      "bbox_iou": null,
+      "prediction": {
+        "style": {
+          "status": "unavailable",
+          "label": null,
+          "score": null,
+          "reason": "multiple_regions"
+        },
+        "fabric": {
+          "status": "disabled",
+          "reason": "Fabric recognition is off."
+        },
+        "length": {
+          "status": "unavailable",
+          "reason": "Calibrated body reference and hem geometry are required."
+        },
+        "metadata": {
+          "presentation": "worn",
+          "automatic": true,
+          "experimental": true,
+          "pi_verified": false,
+          "localization": {
+            "status": "unavailable",
+            "roi": null,
+            "reason": "multiple_regions",
+            "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+          }
+        }
+      }
+    },
+    {
+      "sample_id": "fashionpedia-train2020-41961",
+      "expected": "pleated",
+      "bbox_iou": 0.744359890848995,
+      "prediction": {
+        "style": {
+          "status": "provisional",
+          "label": "pleated",
+          "score": 0.6631619334220886,
+          "reason": "Experimental automatic ROI; full-skirt validity and empty-scene rejection are unverified."
+        },
+        "fabric": {
+          "status": "disabled",
+          "reason": "Fabric recognition is off."
+        },
+        "length": {
+          "status": "unavailable",
+          "reason": "Calibrated body reference and hem geometry are required."
+        },
+        "metadata": {
+          "presentation": "worn",
+          "automatic": true,
+          "experimental": true,
+          "pi_verified": false,
+          "localization": {
+            "status": "provisional",
+            "roi": [
+              158,
+              365,
+              512,
+              659
+            ],
+            "reason": "experimental_mask_not_verified_presence_or_full_view",
+            "mask_pixels": 361,
+            "threshold": 0.5,
+            "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+          },
+          "pleating_model_sha256": "c1d8f49e221a2672c20adb87fe4ae5d2f6966f125ee99cb212ff2eb56fffdbf0",
+          "roi_xyxy": [
+            140,
+            350,
+            530,
+            674
+          ]
+        }
+      }
+    },
+    {
+      "sample_id": "fashionpedia-train2020-43005",
+      "expected": "non_pleated",
+      "bbox_iou": null,
+      "prediction": {
+        "style": {
+          "status": "unavailable",
+          "label": null,
+          "score": null,
+          "reason": "multiple_regions"
+        },
+        "fabric": {
+          "status": "disabled",
+          "reason": "Fabric recognition is off."
+        },
+        "length": {
+          "status": "unavailable",
+          "reason": "Calibrated body reference and hem geometry are required."
+        },
+        "metadata": {
+          "presentation": "worn",
+          "automatic": true,
+          "experimental": true,
+          "pi_verified": false,
+          "localization": {
+            "status": "unavailable",
+            "roi": null,
+            "reason": "multiple_regions",
+            "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+          }
+        }
+      }
+    },
+    {
+      "sample_id": "fashionpedia-train2020-43076",
+      "expected": "non_pleated",
+      "bbox_iou": 0.7533069110725786,
+      "prediction": {
+        "style": {
+          "status": "provisional",
+          "label": "non_pleated",
+          "score": 0.9990893602371216,
+          "reason": "Experimental automatic ROI; full-skirt validity and empty-scene rejection are unverified."
+        },
+        "fabric": {
+          "status": "disabled",
+          "reason": "Fabric recognition is off."
+        },
+        "length": {
+          "status": "unavailable",
+          "reason": "Calibrated body reference and hem geometry are required."
+        },
+        "metadata": {
+          "presentation": "worn",
+          "automatic": true,
+          "experimental": true,
+          "pi_verified": false,
+          "localization": {
+            "status": "provisional",
+            "roi": [
+              146,
+              365,
+              366,
+              732
+            ],
+            "reason": "experimental_mask_not_verified_presence_or_full_view",
+            "mask_pixels": 284,
+            "threshold": 0.5,
+            "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+          },
+          "pleating_model_sha256": "c1d8f49e221a2672c20adb87fe4ae5d2f6966f125ee99cb212ff2eb56fffdbf0",
+          "roi_xyxy": [
+            135,
+            346,
+            377,
+            751
+          ]
+        }
+      }
+    },
+    {
+      "sample_id": "fashionpedia-train2020-43360",
+      "expected": "non_pleated",
+      "bbox_iou": null,
+      "prediction": {
+        "style": {
+          "status": "unavailable",
+          "label": null,
+          "score": null,
+          "reason": "region_touches_frame_edge"
+        },
+        "fabric": {
+          "status": "disabled",
+          "reason": "Fabric recognition is off."
+        },
+        "length": {
+          "status": "unavailable",
+          "reason": "Calibrated body reference and hem geometry are required."
+        },
+        "metadata": {
+          "presentation": "worn",
+          "automatic": true,
+          "experimental": true,
+          "pi_verified": false,
+          "localization": {
+            "status": "unavailable",
+            "roi": null,
+            "reason": "region_touches_frame_edge",
+            "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+          }
+        }
+      }
+    },
+    {
+      "sample_id": "fashionpedia-train2020-43394",
+      "expected": "non_pleated",
+      "bbox_iou": 0.9033707322375334,
+      "prediction": {
+        "style": {
+          "status": "provisional",
+          "label": "non_pleated",
+          "score": 0.7483934760093689,
+          "reason": "Experimental automatic ROI; full-skirt validity and empty-scene rejection are unverified."
+        },
+        "fabric": {
+          "status": "disabled",
+          "reason": "Fabric recognition is off."
+        },
+        "length": {
+          "status": "unavailable",
+          "reason": "Calibrated body reference and hem geometry are required."
+        },
+        "metadata": {
+          "presentation": "worn",
+          "automatic": true,
+          "experimental": true,
+          "pi_verified": false,
+          "localization": {
+            "status": "provisional",
+            "roi": [
+              41,
+              457,
+              590,
+              896
+            ],
+            "reason": "experimental_mask_not_verified_presence_or_full_view",
+            "mask_pixels": 687,
+            "threshold": 0.5,
+            "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+          },
+          "pleating_model_sha256": "c1d8f49e221a2672c20adb87fe4ae5d2f6966f125ee99cb212ff2eb56fffdbf0",
+          "roi_xyxy": [
+            13,
+            435,
+            618,
+            918
+          ]
+        }
+      }
+    },
+    {
+      "sample_id": "fashionpedia-train2020-43660",
+      "expected": "non_pleated",
+      "bbox_iou": 0.5298752228163993,
+      "prediction": {
+        "style": {
+          "status": "provisional",
+          "label": "non_pleated",
+          "score": 0.9560707807540894,
+          "reason": "Experimental automatic ROI; full-skirt validity and empty-scene rejection are unverified."
+        },
+        "fabric": {
+          "status": "disabled",
+          "reason": "Fabric recognition is off."
+        },
+        "length": {
+          "status": "unavailable",
+          "reason": "Calibrated body reference and hem geometry are required."
+        },
+        "metadata": {
+          "presentation": "worn",
+          "automatic": true,
+          "experimental": true,
+          "pi_verified": false,
+          "localization": {
+            "status": "provisional",
+            "roi": [
+              97,
+              475,
+              427,
+              896
+            ],
+            "reason": "experimental_mask_not_verified_presence_or_full_view",
+            "mask_pixels": 399,
+            "threshold": 0.5,
+            "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+          },
+          "pleating_model_sha256": "c1d8f49e221a2672c20adb87fe4ae5d2f6966f125ee99cb212ff2eb56fffdbf0",
+          "roi_xyxy": [
+            80,
+            453,
+            444,
+            918
+          ]
+        }
+      }
+    },
+    {
+      "sample_id": "fashionpedia-train2020-44234",
+      "expected": "non_pleated",
+      "bbox_iou": 0.8080421599768987,
+      "prediction": {
+        "style": {
+          "status": "provisional",
+          "label": "non_pleated",
+          "score": 0.9994725584983826,
+          "reason": "Experimental automatic ROI; full-skirt validity and empty-scene rejection are unverified."
+        },
+        "fabric": {
+          "status": "disabled",
+          "reason": "Fabric recognition is off."
+        },
+        "length": {
+          "status": "unavailable",
+          "reason": "Calibrated body reference and hem geometry are required."
+        },
+        "metadata": {
+          "presentation": "worn",
+          "automatic": true,
+          "experimental": true,
+          "pi_verified": false,
+          "localization": {
+            "status": "provisional",
+            "roi": [
+              316,
+              438,
+              463,
+              714
+            ],
+            "reason": "experimental_mask_not_verified_presence_or_full_view",
+            "mask_pixels": 138,
+            "threshold": 0.5,
+            "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+          },
+          "pleating_model_sha256": "c1d8f49e221a2672c20adb87fe4ae5d2f6966f125ee99cb212ff2eb56fffdbf0",
+          "roi_xyxy": [
+            308,
+            424,
+            471,
+            728
+          ]
+        }
+      }
+    },
+    {
+      "sample_id": "fashionpedia-train2020-44450",
+      "expected": "non_pleated",
+      "bbox_iou": null,
+      "prediction": {
+        "style": {
+          "status": "unavailable",
+          "label": null,
+          "score": null,
+          "reason": "multiple_regions"
+        },
+        "fabric": {
+          "status": "disabled",
+          "reason": "Fabric recognition is off."
+        },
+        "length": {
+          "status": "unavailable",
+          "reason": "Calibrated body reference and hem geometry are required."
+        },
+        "metadata": {
+          "presentation": "worn",
+          "automatic": true,
+          "experimental": true,
+          "pi_verified": false,
+          "localization": {
+            "status": "unavailable",
+            "roi": null,
+            "reason": "multiple_regions",
+            "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+          }
+        }
+      }
+    },
+    {
+      "sample_id": "fashionpedia-train2020-44571",
+      "expected": "pleated",
+      "bbox_iou": 0.8640864086408641,
+      "prediction": {
+        "style": {
+          "status": "provisional",
+          "label": "non_pleated",
+          "score": 0.642993152141571,
+          "reason": "Experimental automatic ROI; full-skirt validity and empty-scene rejection are unverified."
+        },
+        "fabric": {
+          "status": "disabled",
+          "reason": "Fabric recognition is off."
+        },
+        "length": {
+          "status": "unavailable",
+          "reason": "Calibrated body reference and hem geometry are required."
+        },
+        "metadata": {
+          "presentation": "worn",
+          "automatic": true,
+          "experimental": true,
+          "pi_verified": false,
+          "localization": {
+            "status": "provisional",
+            "roi": [
+              207,
+              438,
+              427,
+              842
+            ],
+            "reason": "experimental_mask_not_verified_presence_or_full_view",
+            "mask_pixels": 310,
+            "threshold": 0.5,
+            "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+          },
+          "pleating_model_sha256": "c1d8f49e221a2672c20adb87fe4ae5d2f6966f125ee99cb212ff2eb56fffdbf0",
+          "roi_xyxy": [
+            196,
+            417,
+            438,
+            863
+          ]
+        }
+      }
+    },
+    {
+      "sample_id": "fashionpedia-train2020-44832",
+      "expected": "non_pleated",
+      "bbox_iou": 0.27791040025463515,
+      "prediction": {
+        "style": {
+          "status": "provisional",
+          "label": "non_pleated",
+          "score": 0.8359469175338745,
+          "reason": "Experimental automatic ROI; full-skirt validity and empty-scene rejection are unverified."
+        },
+        "fabric": {
+          "status": "disabled",
+          "reason": "Fabric recognition is off."
+        },
+        "length": {
+          "status": "unavailable",
+          "reason": "Calibrated body reference and hem geometry are required."
+        },
+        "metadata": {
+          "presentation": "worn",
+          "automatic": true,
+          "experimental": true,
+          "pi_verified": false,
+          "localization": {
+            "status": "provisional",
+            "roi": [
+              237,
+              457,
+              805,
+              988
+            ],
+            "reason": "experimental_mask_not_verified_presence_or_full_view",
+            "mask_pixels": 527,
+            "threshold": 0.5,
+            "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+          },
+          "pleating_model_sha256": "c1d8f49e221a2672c20adb87fe4ae5d2f6966f125ee99cb212ff2eb56fffdbf0",
+          "roi_xyxy": [
+            208,
+            430,
+            834,
+            1015
+          ]
+        }
+      }
+    },
+    {
+      "sample_id": "fashionpedia-train2020-45807",
+      "expected": "non_pleated",
+      "bbox_iou": null,
+      "prediction": {
+        "style": {
+          "status": "unavailable",
+          "label": null,
+          "score": null,
+          "reason": "region_touches_frame_edge"
+        },
+        "fabric": {
+          "status": "disabled",
+          "reason": "Fabric recognition is off."
+        },
+        "length": {
+          "status": "unavailable",
+          "reason": "Calibrated body reference and hem geometry are required."
+        },
+        "metadata": {
+          "presentation": "worn",
+          "automatic": true,
+          "experimental": true,
+          "pi_verified": false,
+          "localization": {
+            "status": "unavailable",
+            "roi": null,
+            "reason": "region_touches_frame_edge",
+            "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+          }
+        }
+      }
+    },
+    {
+      "sample_id": "fashionpedia-train2020-45873",
+      "expected": "pleated",
+      "bbox_iou": 0.6448819743375773,
+      "prediction": {
+        "style": {
+          "status": "provisional",
+          "label": "non_pleated",
+          "score": 0.8195215463638306,
+          "reason": "Experimental automatic ROI; full-skirt validity and empty-scene rejection are unverified."
+        },
+        "fabric": {
+          "status": "disabled",
+          "reason": "Fabric recognition is off."
+        },
+        "length": {
+          "status": "unavailable",
+          "reason": "Calibrated body reference and hem geometry are required."
+        },
+        "metadata": {
+          "presentation": "worn",
+          "automatic": true,
+          "experimental": true,
+          "pi_verified": false,
+          "localization": {
+            "status": "provisional",
+            "roi": [
+              146,
+              603,
+              488,
+              951
+            ],
+            "reason": "experimental_mask_not_verified_presence_or_full_view",
+            "mask_pixels": 411,
+            "threshold": 0.5,
+            "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+          },
+          "pleating_model_sha256": "c1d8f49e221a2672c20adb87fe4ae5d2f6966f125ee99cb212ff2eb56fffdbf0",
+          "roi_xyxy": [
+            128,
+            585,
+            506,
+            969
+          ]
+        }
+      }
+    },
+    {
+      "sample_id": "fashionpedia-train2020-4713",
+      "expected": "non_pleated",
+      "bbox_iou": 0.6006889997624139,
+      "prediction": {
+        "style": {
+          "status": "provisional",
+          "label": "non_pleated",
+          "score": 0.6070253252983093,
+          "reason": "Experimental automatic ROI; full-skirt validity and empty-scene rejection are unverified."
+        },
+        "fabric": {
+          "status": "disabled",
+          "reason": "Fabric recognition is off."
+        },
+        "length": {
+          "status": "unavailable",
+          "reason": "Calibrated body reference and hem geometry are required."
+        },
+        "metadata": {
+          "presentation": "worn",
+          "automatic": true,
+          "experimental": true,
+          "pi_verified": false,
+          "localization": {
+            "status": "provisional",
+            "roi": [
+              207,
+              310,
+              512,
+              586
+            ],
+            "reason": "experimental_mask_not_verified_presence_or_full_view",
+            "mask_pixels": 301,
+            "threshold": 0.5,
+            "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+          },
+          "pleating_model_sha256": "c1d8f49e221a2672c20adb87fe4ae5d2f6966f125ee99cb212ff2eb56fffdbf0",
+          "roi_xyxy": [
+            191,
+            296,
+            528,
+            600
+          ]
+        }
+      }
+    },
+    {
+      "sample_id": "fashionpedia-train2020-47349",
+      "expected": "pleated",
+      "bbox_iou": 0.8495557206006049,
+      "prediction": {
+        "style": {
+          "status": "provisional",
+          "label": "pleated",
+          "score": 0.852272093296051,
+          "reason": "Experimental automatic ROI; full-skirt validity and empty-scene rejection are unverified."
+        },
+        "fabric": {
+          "status": "disabled",
+          "reason": "Fabric recognition is off."
+        },
+        "length": {
+          "status": "unavailable",
+          "reason": "Calibrated body reference and hem geometry are required."
+        },
+        "metadata": {
+          "presentation": "worn",
+          "automatic": true,
+          "experimental": true,
+          "pi_verified": false,
+          "localization": {
+            "status": "provisional",
+            "roi": [
+              237,
+              201,
+              805,
+              988
+            ],
+            "reason": "experimental_mask_not_verified_presence_or_full_view",
+            "mask_pixels": 1033,
+            "threshold": 0.5,
+            "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+          },
+          "pleating_model_sha256": "c1d8f49e221a2672c20adb87fe4ae5d2f6966f125ee99cb212ff2eb56fffdbf0",
+          "roi_xyxy": [
+            208,
+            161,
+            834,
+            1024
+          ]
+        }
+      }
+    },
+    {
+      "sample_id": "fashionpedia-train2020-47376",
+      "expected": "pleated",
+      "bbox_iou": 0.8687097502596758,
+      "prediction": {
+        "style": {
+          "status": "provisional",
+          "label": "pleated",
+          "score": 0.6573089957237244,
+          "reason": "Experimental automatic ROI; full-skirt validity and empty-scene rejection are unverified."
+        },
+        "fabric": {
+          "status": "disabled",
+          "reason": "Fabric recognition is off."
+        },
+        "length": {
+          "status": "unavailable",
+          "reason": "Calibrated body reference and hem geometry are required."
+        },
+        "metadata": {
+          "presentation": "worn",
+          "automatic": true,
+          "experimental": true,
+          "pi_verified": false,
+          "localization": {
+            "status": "provisional",
+            "roi": [
+              237,
+              73,
+              842,
+              988
+            ],
+            "reason": "experimental_mask_not_verified_presence_or_full_view",
+            "mask_pixels": 1329,
+            "threshold": 0.5,
+            "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+          },
+          "pleating_model_sha256": "c1d8f49e221a2672c20adb87fe4ae5d2f6966f125ee99cb212ff2eb56fffdbf0",
+          "roi_xyxy": [
+            206,
+            27,
+            873,
+            1024
+          ]
+        }
+      }
+    },
+    {
+      "sample_id": "fashionpedia-train2020-47497",
+      "expected": "non_pleated",
+      "bbox_iou": null,
+      "prediction": {
+        "style": {
+          "status": "unavailable",
+          "label": null,
+          "score": null,
+          "reason": "region_touches_frame_edge"
+        },
+        "fabric": {
+          "status": "disabled",
+          "reason": "Fabric recognition is off."
+        },
+        "length": {
+          "status": "unavailable",
+          "reason": "Calibrated body reference and hem geometry are required."
+        },
+        "metadata": {
+          "presentation": "worn",
+          "automatic": true,
+          "experimental": true,
+          "pi_verified": false,
+          "localization": {
+            "status": "unavailable",
+            "roi": null,
+            "reason": "region_touches_frame_edge",
+            "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+          }
+        }
+      }
+    },
+    {
+      "sample_id": "fashionpedia-train2020-48845",
+      "expected": "non_pleated",
+      "bbox_iou": null,
+      "prediction": {
+        "style": {
+          "status": "unavailable",
+          "label": null,
+          "score": null,
+          "reason": "multiple_regions"
+        },
+        "fabric": {
+          "status": "disabled",
+          "reason": "Fabric recognition is off."
+        },
+        "length": {
+          "status": "unavailable",
+          "reason": "Calibrated body reference and hem geometry are required."
+        },
+        "metadata": {
+          "presentation": "worn",
+          "automatic": true,
+          "experimental": true,
+          "pi_verified": false,
+          "localization": {
+            "status": "unavailable",
+            "roi": null,
+            "reason": "multiple_regions",
+            "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+          }
+        }
+      }
+    },
+    {
+      "sample_id": "fashionpedia-train2020-4925",
+      "expected": "non_pleated",
+      "bbox_iou": 0.70784317247077,
+      "prediction": {
+        "style": {
+          "status": "provisional",
+          "label": "non_pleated",
+          "score": 0.9945507645606995,
+          "reason": "Experimental automatic ROI; full-skirt validity and empty-scene rejection are unverified."
+        },
+        "fabric": {
+          "status": "disabled",
+          "reason": "Fabric recognition is off."
+        },
+        "length": {
+          "status": "unavailable",
+          "reason": "Calibrated body reference and hem geometry are required."
+        },
+        "metadata": {
+          "presentation": "worn",
+          "automatic": true,
+          "experimental": true,
+          "pi_verified": false,
+          "localization": {
+            "status": "provisional",
+            "roi": [
+              158,
+              402,
+              374,
+              659
+            ],
+            "reason": "experimental_mask_not_verified_presence_or_full_view",
+            "mask_pixels": 234,
+            "threshold": 0.5,
+            "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+          },
+          "pleating_model_sha256": "c1d8f49e221a2672c20adb87fe4ae5d2f6966f125ee99cb212ff2eb56fffdbf0",
+          "roi_xyxy": [
+            147,
+            389,
+            385,
+            672
+          ]
+        }
+      }
+    },
+    {
+      "sample_id": "fashionpedia-train2020-49537",
+      "expected": "pleated",
+      "bbox_iou": 0.31688169840944774,
+      "prediction": {
+        "style": {
+          "status": "provisional",
+          "label": "non_pleated",
+          "score": 0.970221757888794,
+          "reason": "Experimental automatic ROI; full-skirt validity and empty-scene rejection are unverified."
+        },
+        "fabric": {
+          "status": "disabled",
+          "reason": "Fabric recognition is off."
+        },
+        "length": {
+          "status": "unavailable",
+          "reason": "Calibrated body reference and hem geometry are required."
+        },
+        "metadata": {
+          "presentation": "worn",
+          "automatic": true,
+          "experimental": true,
+          "pi_verified": false,
+          "localization": {
+            "status": "provisional",
+            "roi": [
+              206,
+              420,
+              463,
+              933
+            ],
+            "reason": "experimental_mask_not_verified_presence_or_full_view",
+            "mask_pixels": 274,
+            "threshold": 0.5,
+            "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+          },
+          "pleating_model_sha256": "c1d8f49e221a2672c20adb87fe4ae5d2f6966f125ee99cb212ff2eb56fffdbf0",
+          "roi_xyxy": [
+            193,
+            394,
+            476,
+            959
+          ]
+        }
+      }
+    },
+    {
+      "sample_id": "fashionpedia-train2020-49555",
+      "expected": "non_pleated",
+      "bbox_iou": 0.9093355622676874,
+      "prediction": {
+        "style": {
+          "status": "provisional",
+          "label": "non_pleated",
+          "score": 0.9144968390464783,
+          "reason": "Experimental automatic ROI; full-skirt validity and empty-scene rejection are unverified."
+        },
+        "fabric": {
+          "status": "disabled",
+          "reason": "Fabric recognition is off."
+        },
+        "length": {
+          "status": "unavailable",
+          "reason": "Calibrated body reference and hem geometry are required."
+        },
+        "metadata": {
+          "presentation": "worn",
+          "automatic": true,
+          "experimental": true,
+          "pi_verified": false,
+          "localization": {
+            "status": "provisional",
+            "roi": [
+              310,
+              438,
+              695,
+              823
+            ],
+            "reason": "experimental_mask_not_verified_presence_or_full_view",
+            "mask_pixels": 360,
+            "threshold": 0.5,
+            "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+          },
+          "pleating_model_sha256": "c1d8f49e221a2672c20adb87fe4ae5d2f6966f125ee99cb212ff2eb56fffdbf0",
+          "roi_xyxy": [
+            290,
+            418,
+            715,
+            843
+          ]
+        }
+      }
+    },
+    {
+      "sample_id": "fashionpedia-train2020-49867",
+      "expected": "non_pleated",
+      "bbox_iou": null,
+      "prediction": {
+        "style": {
+          "status": "unavailable",
+          "label": null,
+          "score": null,
+          "reason": "region_touches_frame_edge"
+        },
+        "fabric": {
+          "status": "disabled",
+          "reason": "Fabric recognition is off."
+        },
+        "length": {
+          "status": "unavailable",
+          "reason": "Calibrated body reference and hem geometry are required."
+        },
+        "metadata": {
+          "presentation": "worn",
+          "automatic": true,
+          "experimental": true,
+          "pi_verified": false,
+          "localization": {
+            "status": "unavailable",
+            "roi": null,
+            "reason": "region_touches_frame_edge",
+            "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+          }
+        }
+      }
+    },
+    {
+      "sample_id": "fashionpedia-train2020-50372",
+      "expected": "pleated",
+      "bbox_iou": null,
+      "prediction": {
+        "style": {
+          "status": "unavailable",
+          "label": null,
+          "score": null,
+          "reason": "multiple_regions"
+        },
+        "fabric": {
+          "status": "disabled",
+          "reason": "Fabric recognition is off."
+        },
+        "length": {
+          "status": "unavailable",
+          "reason": "Calibrated body reference and hem geometry are required."
+        },
+        "metadata": {
+          "presentation": "worn",
+          "automatic": true,
+          "experimental": true,
+          "pi_verified": false,
+          "localization": {
+            "status": "unavailable",
+            "roi": null,
+            "reason": "multiple_regions",
+            "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+          }
+        }
+      }
+    },
+    {
+      "sample_id": "fashionpedia-train2020-5127",
+      "expected": "pleated",
+      "bbox_iou": null,
+      "prediction": {
+        "style": {
+          "status": "unavailable",
+          "label": null,
+          "score": null,
+          "reason": "multiple_regions"
+        },
+        "fabric": {
+          "status": "disabled",
+          "reason": "Fabric recognition is off."
+        },
+        "length": {
+          "status": "unavailable",
+          "reason": "Calibrated body reference and hem geometry are required."
+        },
+        "metadata": {
+          "presentation": "worn",
+          "automatic": true,
+          "experimental": true,
+          "pi_verified": false,
+          "localization": {
+            "status": "unavailable",
+            "roi": null,
+            "reason": "multiple_regions",
+            "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+          }
+        }
+      }
+    },
+    {
+      "sample_id": "fashionpedia-train2020-5360",
+      "expected": "non_pleated",
+      "bbox_iou": null,
+      "prediction": {
+        "style": {
+          "status": "unavailable",
+          "label": null,
+          "score": null,
+          "reason": "multiple_regions"
+        },
+        "fabric": {
+          "status": "disabled",
+          "reason": "Fabric recognition is off."
+        },
+        "length": {
+          "status": "unavailable",
+          "reason": "Calibrated body reference and hem geometry are required."
+        },
+        "metadata": {
+          "presentation": "worn",
+          "automatic": true,
+          "experimental": true,
+          "pi_verified": false,
+          "localization": {
+            "status": "unavailable",
+            "roi": null,
+            "reason": "multiple_regions",
+            "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+          }
+        }
+      }
+    },
+    {
+      "sample_id": "fashionpedia-train2020-5478",
+      "expected": "non_pleated",
+      "bbox_iou": 0.2963718135897565,
+      "prediction": {
+        "style": {
+          "status": "provisional",
+          "label": "non_pleated",
+          "score": 0.9700760245323181,
+          "reason": "Experimental automatic ROI; full-skirt validity and empty-scene rejection are unverified."
+        },
+        "fabric": {
+          "status": "disabled",
+          "reason": "Fabric recognition is off."
+        },
+        "length": {
+          "status": "unavailable",
+          "reason": "Calibrated body reference and hem geometry are required."
+        },
+        "metadata": {
+          "presentation": "worn",
+          "automatic": true,
+          "experimental": true,
+          "pi_verified": false,
+          "localization": {
+            "status": "provisional",
+            "roi": [
+              60,
+              384,
+              415,
+              714
+            ],
+            "reason": "experimental_mask_not_verified_presence_or_full_view",
+            "mask_pixels": 232,
+            "threshold": 0.5,
+            "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+          },
+          "pleating_model_sha256": "c1d8f49e221a2672c20adb87fe4ae5d2f6966f125ee99cb212ff2eb56fffdbf0",
+          "roi_xyxy": [
+            42,
+            367,
+            433,
+            731
+          ]
+        }
+      }
+    },
+    {
+      "sample_id": "fashionpedia-train2020-5573",
+      "expected": "pleated",
+      "bbox_iou": 0.4422712850080734,
+      "prediction": {
+        "style": {
+          "status": "provisional",
+          "label": "non_pleated",
+          "score": 0.9233919978141785,
+          "reason": "Experimental automatic ROI; full-skirt validity and empty-scene rejection are unverified."
+        },
+        "fabric": {
+          "status": "disabled",
+          "reason": "Fabric recognition is off."
+        },
+        "length": {
+          "status": "unavailable",
+          "reason": "Calibrated body reference and hem geometry are required."
+        },
+        "metadata": {
+          "presentation": "worn",
+          "automatic": true,
+          "experimental": true,
+          "pi_verified": false,
+          "localization": {
+            "status": "provisional",
+            "roi": [
+              170,
+              329,
+              646,
+              933
+            ],
+            "reason": "experimental_mask_not_verified_presence_or_full_view",
+            "mask_pixels": 733,
+            "threshold": 0.5,
+            "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+          },
+          "pleating_model_sha256": "c1d8f49e221a2672c20adb87fe4ae5d2f6966f125ee99cb212ff2eb56fffdbf0",
+          "roi_xyxy": [
+            146,
+            298,
+            670,
+            964
+          ]
+        }
+      }
+    },
+    {
+      "sample_id": "fashionpedia-train2020-5601",
+      "expected": "non_pleated",
+      "bbox_iou": 0.4013128480266634,
+      "prediction": {
+        "style": {
+          "status": "provisional",
+          "label": "non_pleated",
+          "score": 0.725710928440094,
+          "reason": "Experimental automatic ROI; full-skirt validity and empty-scene rejection are unverified."
+        },
+        "fabric": {
+          "status": "disabled",
+          "reason": "Fabric recognition is off."
+        },
+        "length": {
+          "status": "unavailable",
+          "reason": "Calibrated body reference and hem geometry are required."
+        },
+        "metadata": {
+          "presentation": "worn",
+          "automatic": true,
+          "experimental": true,
+          "pi_verified": false,
+          "localization": {
+            "status": "provisional",
+            "roi": [
+              117,
+              365,
+              673,
+              896
+            ],
+            "reason": "experimental_mask_not_verified_presence_or_full_view",
+            "mask_pixels": 609,
+            "threshold": 0.5,
+            "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+          },
+          "pleating_model_sha256": "c1d8f49e221a2672c20adb87fe4ae5d2f6966f125ee99cb212ff2eb56fffdbf0",
+          "roi_xyxy": [
+            89,
+            338,
+            701,
+            923
+          ]
+        }
+      }
+    },
+    {
+      "sample_id": "fashionpedia-train2020-6020",
+      "expected": "non_pleated",
+      "bbox_iou": 0.8636698088323083,
+      "prediction": {
+        "style": {
+          "status": "provisional",
+          "label": "non_pleated",
+          "score": 0.9370200037956238,
+          "reason": "Experimental automatic ROI; full-skirt validity and empty-scene rejection are unverified."
+        },
+        "fabric": {
+          "status": "disabled",
+          "reason": "Fabric recognition is off."
+        },
+        "length": {
+          "status": "unavailable",
+          "reason": "Calibrated body reference and hem geometry are required."
+        },
+        "metadata": {
+          "presentation": "worn",
+          "automatic": true,
+          "experimental": true,
+          "pi_verified": false,
+          "localization": {
+            "status": "provisional",
+            "roi": [
+              230,
+              384,
+              486,
+              659
+            ],
+            "reason": "experimental_mask_not_verified_presence_or_full_view",
+            "mask_pixels": 266,
+            "threshold": 0.5,
+            "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+          },
+          "pleating_model_sha256": "c1d8f49e221a2672c20adb87fe4ae5d2f6966f125ee99cb212ff2eb56fffdbf0",
+          "roi_xyxy": [
+            217,
+            370,
+            499,
+            673
+          ]
+        }
+      }
+    },
+    {
+      "sample_id": "fashionpedia-train2020-6021",
+      "expected": "non_pleated",
+      "bbox_iou": 0.8559633962648787,
+      "prediction": {
+        "style": {
+          "status": "provisional",
+          "label": "pleated",
+          "score": 0.9881304502487183,
+          "reason": "Experimental automatic ROI; full-skirt validity and empty-scene rejection are unverified."
+        },
+        "fabric": {
+          "status": "disabled",
+          "reason": "Fabric recognition is off."
+        },
+        "length": {
+          "status": "unavailable",
+          "reason": "Calibrated body reference and hem geometry are required."
+        },
+        "metadata": {
+          "presentation": "worn",
+          "automatic": true,
+          "experimental": true,
+          "pi_verified": false,
+          "localization": {
+            "status": "provisional",
+            "roi": [
+              158,
+              493,
+              513,
+              970
+            ],
+            "reason": "experimental_mask_not_verified_presence_or_full_view",
+            "mask_pixels": 589,
+            "threshold": 0.5,
+            "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+          },
+          "pleating_model_sha256": "c1d8f49e221a2672c20adb87fe4ae5d2f6966f125ee99cb212ff2eb56fffdbf0",
+          "roi_xyxy": [
+            140,
+            469,
+            531,
+            994
+          ]
+        }
+      }
+    },
+    {
+      "sample_id": "fashionpedia-train2020-6359",
+      "expected": "non_pleated",
+      "bbox_iou": null,
+      "prediction": {
+        "style": {
+          "status": "unavailable",
+          "label": null,
+          "score": null,
+          "reason": "multiple_regions"
+        },
+        "fabric": {
+          "status": "disabled",
+          "reason": "Fabric recognition is off."
+        },
+        "length": {
+          "status": "unavailable",
+          "reason": "Calibrated body reference and hem geometry are required."
+        },
+        "metadata": {
+          "presentation": "worn",
+          "automatic": true,
+          "experimental": true,
+          "pi_verified": false,
+          "localization": {
+            "status": "unavailable",
+            "roi": null,
+            "reason": "multiple_regions",
+            "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+          }
+        }
+      }
+    },
+    {
+      "sample_id": "fashionpedia-train2020-6986",
+      "expected": "non_pleated",
+      "bbox_iou": null,
+      "prediction": {
+        "style": {
+          "status": "unavailable",
+          "label": null,
+          "score": null,
+          "reason": "region_touches_frame_edge"
+        },
+        "fabric": {
+          "status": "disabled",
+          "reason": "Fabric recognition is off."
+        },
+        "length": {
+          "status": "unavailable",
+          "reason": "Calibrated body reference and hem geometry are required."
+        },
+        "metadata": {
+          "presentation": "worn",
+          "automatic": true,
+          "experimental": true,
+          "pi_verified": false,
+          "localization": {
+            "status": "unavailable",
+            "roi": null,
+            "reason": "region_touches_frame_edge",
+            "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+          }
+        }
+      }
+    },
+    {
+      "sample_id": "fashionpedia-train2020-830",
+      "expected": "non_pleated",
+      "bbox_iou": 0.6688574317492416,
+      "prediction": {
+        "style": {
+          "status": "provisional",
+          "label": "non_pleated",
+          "score": 0.992265522480011,
+          "reason": "Experimental automatic ROI; full-skirt validity and empty-scene rejection are unverified."
+        },
+        "fabric": {
+          "status": "disabled",
+          "reason": "Fabric recognition is off."
+        },
+        "length": {
+          "status": "unavailable",
+          "reason": "Calibrated body reference and hem geometry are required."
+        },
+        "metadata": {
+          "presentation": "worn",
+          "automatic": true,
+          "experimental": true,
+          "pi_verified": false,
+          "localization": {
+            "status": "provisional",
+            "roi": [
+              243,
+              347,
+              438,
+              677
+            ],
+            "reason": "experimental_mask_not_verified_presence_or_full_view",
+            "mask_pixels": 245,
+            "threshold": 0.5,
+            "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+          },
+          "pleating_model_sha256": "c1d8f49e221a2672c20adb87fe4ae5d2f6966f125ee99cb212ff2eb56fffdbf0",
+          "roi_xyxy": [
+            233,
+            330,
+            448,
+            694
+          ]
+        }
+      }
+    },
+    {
+      "sample_id": "fashionpedia-train2020-8732",
+      "expected": "pleated",
+      "bbox_iou": null,
+      "prediction": {
+        "style": {
+          "status": "unavailable",
+          "label": null,
+          "score": null,
+          "reason": "multiple_regions"
+        },
+        "fabric": {
+          "status": "disabled",
+          "reason": "Fabric recognition is off."
+        },
+        "length": {
+          "status": "unavailable",
+          "reason": "Calibrated body reference and hem geometry are required."
+        },
+        "metadata": {
+          "presentation": "worn",
+          "automatic": true,
+          "experimental": true,
+          "pi_verified": false,
+          "localization": {
+            "status": "unavailable",
+            "roi": null,
+            "reason": "multiple_regions",
+            "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+          }
+        }
+      }
+    },
+    {
+      "sample_id": "fashionpedia-train2020-8880",
+      "expected": "non_pleated",
+      "bbox_iou": null,
+      "prediction": {
+        "style": {
+          "status": "unavailable",
+          "label": null,
+          "score": null,
+          "reason": "multiple_regions"
+        },
+        "fabric": {
+          "status": "disabled",
+          "reason": "Fabric recognition is off."
+        },
+        "length": {
+          "status": "unavailable",
+          "reason": "Calibrated body reference and hem geometry are required."
+        },
+        "metadata": {
+          "presentation": "worn",
+          "automatic": true,
+          "experimental": true,
+          "pi_verified": false,
+          "localization": {
+            "status": "unavailable",
+            "roi": null,
+            "reason": "multiple_regions",
+            "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+          }
+        }
+      }
+    },
+    {
+      "sample_id": "fashionpedia-train2020-9473",
+      "expected": "non_pleated",
+      "bbox_iou": null,
+      "prediction": {
+        "style": {
+          "status": "unavailable",
+          "label": null,
+          "score": null,
+          "reason": "multiple_regions"
+        },
+        "fabric": {
+          "status": "disabled",
+          "reason": "Fabric recognition is off."
+        },
+        "length": {
+          "status": "unavailable",
+          "reason": "Calibrated body reference and hem geometry are required."
+        },
+        "metadata": {
+          "presentation": "worn",
+          "automatic": true,
+          "experimental": true,
+          "pi_verified": false,
+          "localization": {
+            "status": "unavailable",
+            "roi": null,
+            "reason": "multiple_regions",
+            "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+          }
+        }
+      }
+    },
+    {
+      "sample_id": "fashionpedia-train2020-9732",
+      "expected": "pleated",
+      "bbox_iou": null,
+      "prediction": {
+        "style": {
+          "status": "unavailable",
+          "label": null,
+          "score": null,
+          "reason": "multiple_regions"
+        },
+        "fabric": {
+          "status": "disabled",
+          "reason": "Fabric recognition is off."
+        },
+        "length": {
+          "status": "unavailable",
+          "reason": "Calibrated body reference and hem geometry are required."
+        },
+        "metadata": {
+          "presentation": "worn",
+          "automatic": true,
+          "experimental": true,
+          "pi_verified": false,
+          "localization": {
+            "status": "unavailable",
+            "roi": null,
+            "reason": "multiple_regions",
+            "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+          }
+        }
+      }
+    }
+  ],
+  "synthetic_diagnostics": [
+    {
+      "synthetic_uniform_rgb": 0,
+      "prediction": {
+        "style": {
+          "status": "unavailable",
+          "label": null,
+          "score": null,
+          "reason": "multiple_regions"
+        },
+        "fabric": {
+          "status": "disabled",
+          "reason": "Fabric recognition is off."
+        },
+        "length": {
+          "status": "unavailable",
+          "reason": "Calibrated body reference and hem geometry are required."
+        },
+        "metadata": {
+          "presentation": "hanging",
+          "automatic": true,
+          "experimental": true,
+          "pi_verified": false,
+          "localization": {
+            "status": "unavailable",
+            "roi": null,
+            "reason": "multiple_regions",
+            "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+          }
+        }
+      }
+    },
+    {
+      "synthetic_uniform_rgb": 128,
+      "prediction": {
+        "style": {
+          "status": "unavailable",
+          "label": null,
+          "score": null,
+          "reason": "multiple_regions"
+        },
+        "fabric": {
+          "status": "disabled",
+          "reason": "Fabric recognition is off."
+        },
+        "length": {
+          "status": "unavailable",
+          "reason": "Calibrated body reference and hem geometry are required."
+        },
+        "metadata": {
+          "presentation": "hanging",
+          "automatic": true,
+          "experimental": true,
+          "pi_verified": false,
+          "localization": {
+            "status": "unavailable",
+            "roi": null,
+            "reason": "multiple_regions",
+            "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+          }
+        }
+      }
+    },
+    {
+      "synthetic_uniform_rgb": 255,
+      "prediction": {
+        "style": {
+          "status": "unavailable",
+          "label": null,
+          "score": null,
+          "reason": "no_supported_skirt_region"
+        },
+        "fabric": {
+          "status": "disabled",
+          "reason": "Fabric recognition is off."
+        },
+        "length": {
+          "status": "unavailable",
+          "reason": "Calibrated body reference and hem geometry are required."
+        },
+        "metadata": {
+          "presentation": "hanging",
+          "automatic": true,
+          "experimental": true,
+          "pi_verified": false,
+          "localization": {
+            "status": "unavailable",
+            "roi": null,
+            "reason": "no_supported_skirt_region",
+            "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+          }
+        }
+      }
+    }
+  ],
+  "limitations": [
+    "Development evaluation; labels await independent human review",
+    "No real negative scenes evaluated; uniform images are diagnostics only",
+    "No camera, geometry, fabric or Raspberry Pi verification",
+    "Decoder thresholds uncalibrated; no final test data accessed"
+  ]
+}

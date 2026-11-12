@@ -1,0 +1,25 @@
+2026-10-03 16:22:45.810577: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2026-10-03 16:22:46.300223: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F AVX512_VNNI FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2026-10-03 16:22:49.579134: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1791015771.762645     293 gpu_device.cc:2020] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 3584 MB memory:  -> device: 0, name: NVIDIA GeForce RTX 3060 Laptop GPU, pci bus id: 0000:01:00.0, compute capability: 8.6
+2026-10-03 16:22:52.495435: I external/local_xla/xla/stream_executor/cuda/cuda_dnn.cc:473] Loaded cuDNN version 92700
+/home/skirttrain/skirt-fabric-sense/.venv-training/lib/python3.12/site-packages/tensorflow/lite/python/interpreter.py:457: UserWarning:     Warning: tf.lite.Interpreter is deprecated and is scheduled for deletion in
+    TF 2.20. Please use the LiteRT interpreter from the ai_edge_litert package.
+    See the [migration guide](https://ai.google.dev/edge/litert/migration)
+    for details.
+    
+  warnings.warn(_INTERPRETER_DELETION_WARNING)
+INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+Traceback (most recent call last):
+  File "/mnt/c/Users/Administrator/OneDrive/Documents/ChatGPT/SkirtFabricSense/tools/training/diagnose_export.py", line 12, in <module>
+SavedModel {'output_0': <tf.Tensor: shape=(1, 2), dtype=float32, numpy=array([[0.2466566, 0.1942426]], dtype=float32)>}
+OpResolverType.AUTO [[1.6140938e+21 0.0000000e+00]]
+arith.constant (4,) True 0 3
+arith.constant1 (4,) True 0.0 0.0
+arith.constant2 (2,) True 1 2
+    interpreter.invoke()
+  File "/home/skirttrain/skirt-fabric-sense/.venv-training/lib/python3.12/site-packages/tensorflow/lite/python/interpreter.py", line 985, in invoke
+    self._interpreter.Invoke()
+RuntimeError: tensorflow/lite/kernels/read_variable.cc:67 variable != nullptr was not true.Node number 4 (READ_VARIABLE) failed to invoke.

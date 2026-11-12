@@ -1,0 +1,27 @@
+{
+  "date": "2026-10-17",
+  "source": "https://zenodo.org/api/records/20440761",
+  "license": {
+    "id": "cc-by-sa-4.0"
+  },
+  "original_images_downloaded": 0,
+  "training_admissions": 0,
+  "metadata": [
+    {
+      "path": "records/acquisitions/2026-10-17-fabric-source-resolution/NPCGA_datatable_1.1.csv",
+      "source_url": "https://zenodo.org/api/records/20440761/files/NPCGA_datatable_1.1.csv/content",
+      "bytes": 5021278,
+      "sha256": "127235b40fcbbd7f26053006cdbb3d6fa2c69f736393fdbb1d346a25e7c99d28",
+      "publisher_checksum_verified": "md5:114edd7b536dd700ea3e92be69fb3c8c"
+    },
+    {
+      "path": "records/acquisitions/2026-10-17-fabric-source-resolution/README_for_datatable.pdf",
+      "source_url": "https://zenodo.org/api/records/20440761/files/README_for_datatable.pdf/content",
+      "bytes": 354716,
+      "sha256": "8bb82e02358b7460247402137905c8ff9e9edf6783174264859a5b630ecd8785",
+      "publisher_checksum_verified": "md5:c26f9fc37f612bae732e16b9c6b4cf12"
+    }
+  ],
+  "record_sha256": "04b9115ec9704c5b091fbc4d7209d34847b8a7ee8c010bc4f3a8baced7a6361a",
+  "no_archives_requested": true
+}

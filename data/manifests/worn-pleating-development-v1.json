@@ -1,0 +1,270 @@
+{
+  "date_asia_manila": "2026-10-17",
+  "source_manifest": {
+    "path": "data/labels/skirt-baseline-v1.jsonl",
+    "sha256": "9160998b5ab0f65251c53cefd783e1c6351887bec8c655074be64dd2717dc2eb"
+  },
+  "review_audit": {
+    "path": "records/review/2026-10-17-presentation-complete-audit.json",
+    "sha256": "bd677d313855edc81c049806b763cd191b0f580275078f0fe74a3b4b47e16d14"
+  },
+  "manifest": {
+    "path": "data/manifests/worn-pleating-development-v1.jsonl",
+    "sha256": "876bb315009592fdbcf0a646703b21d99801756f4e37b1807a66675bdbd98ec2"
+  },
+  "counts_by_split": {
+    "development_train": 265,
+    "development_validation": 66
+  },
+  "excluded": [
+    {
+      "sample_id": "fashionpedia-train2020-25453",
+      "split": "development_train",
+      "presentation": "hanging",
+      "reason": "not_explicitly_reviewed_worn"
+    },
+    {
+      "sample_id": "fashionpedia-train2020-26590",
+      "split": "development_validation",
+      "presentation": "mannequin",
+      "reason": "not_explicitly_reviewed_worn"
+    },
+    {
+      "sample_id": "fashionpedia-train2020-26955",
+      "split": "development_validation",
+      "presentation": "unknown",
+      "reason": "not_explicitly_reviewed_worn"
+    },
+    {
+      "sample_id": "fashionpedia-train2020-27922",
+      "split": "development_validation",
+      "presentation": "mannequin",
+      "reason": "not_explicitly_reviewed_worn"
+    },
+    {
+      "sample_id": "fashionpedia-train2020-28310",
+      "split": "development_train",
+      "presentation": "hanging",
+      "reason": "not_explicitly_reviewed_worn"
+    },
+    {
+      "sample_id": "fashionpedia-train2020-28673",
+      "split": "development_train",
+      "presentation": "hanging",
+      "reason": "not_explicitly_reviewed_worn"
+    },
+    {
+      "sample_id": "fashionpedia-train2020-29141",
+      "split": "development_train",
+      "presentation": "unknown",
+      "reason": "not_explicitly_reviewed_worn"
+    },
+    {
+      "sample_id": "fashionpedia-train2020-29403",
+      "split": "development_validation",
+      "presentation": "hanging",
+      "reason": "not_explicitly_reviewed_worn"
+    },
+    {
+      "sample_id": "fashionpedia-train2020-29612",
+      "split": "development_train",
+      "presentation": "mannequin",
+      "reason": "not_explicitly_reviewed_worn"
+    },
+    {
+      "sample_id": "fashionpedia-train2020-29961",
+      "split": "development_train",
+      "presentation": "hanging",
+      "reason": "not_explicitly_reviewed_worn"
+    },
+    {
+      "sample_id": "fashionpedia-train2020-29964",
+      "split": "development_validation",
+      "presentation": "hanging",
+      "reason": "not_explicitly_reviewed_worn"
+    },
+    {
+      "sample_id": "fashionpedia-train2020-30563",
+      "split": "development_validation",
+      "presentation": "hanging",
+      "reason": "not_explicitly_reviewed_worn"
+    },
+    {
+      "sample_id": "fashionpedia-train2020-30690",
+      "split": "development_train",
+      "presentation": "hanging",
+      "reason": "not_explicitly_reviewed_worn"
+    },
+    {
+      "sample_id": "fashionpedia-train2020-31261",
+      "split": "development_train",
+      "presentation": "hanging",
+      "reason": "not_explicitly_reviewed_worn"
+    },
+    {
+      "sample_id": "fashionpedia-train2020-31939",
+      "split": "development_validation",
+      "presentation": "mannequin",
+      "reason": "not_explicitly_reviewed_worn"
+    },
+    {
+      "sample_id": "fashionpedia-train2020-32039",
+      "split": "development_train",
+      "presentation": "hanging",
+      "reason": "not_explicitly_reviewed_worn"
+    },
+    {
+      "sample_id": "fashionpedia-train2020-34026",
+      "split": "development_train",
+      "presentation": "mannequin",
+      "reason": "not_explicitly_reviewed_worn"
+    },
+    {
+      "sample_id": "fashionpedia-train2020-34099",
+      "split": "development_train",
+      "presentation": "unknown",
+      "reason": "not_explicitly_reviewed_worn"
+    },
+    {
+      "sample_id": "fashionpedia-train2020-34134",
+      "split": "development_train",
+      "presentation": "hanging",
+      "reason": "not_explicitly_reviewed_worn"
+    },
+    {
+      "sample_id": "fashionpedia-train2020-34216",
+      "split": "development_validation",
+      "presentation": "hanging",
+      "reason": "not_explicitly_reviewed_worn"
+    },
+    {
+      "sample_id": "fashionpedia-train2020-34374",
+      "split": "development_train",
+      "presentation": "hanging",
+      "reason": "not_explicitly_reviewed_worn"
+    },
+    {
+      "sample_id": "fashionpedia-train2020-34680",
+      "split": "development_train",
+      "presentation": "hanging",
+      "reason": "not_explicitly_reviewed_worn"
+    },
+    {
+      "sample_id": "fashionpedia-train2020-34782",
+      "split": "development_train",
+      "presentation": "hanging",
+      "reason": "not_explicitly_reviewed_worn"
+    },
+    {
+      "sample_id": "fashionpedia-train2020-36216",
+      "split": "development_train",
+      "presentation": "hanging",
+      "reason": "not_explicitly_reviewed_worn"
+    },
+    {
+      "sample_id": "fashionpedia-train2020-36403",
+      "split": "development_train",
+      "presentation": "mannequin",
+      "reason": "not_explicitly_reviewed_worn"
+    },
+    {
+      "sample_id": "fashionpedia-train2020-37541",
+      "split": "development_train",
+      "presentation": "hanging",
+      "reason": "not_explicitly_reviewed_worn"
+    },
+    {
+      "sample_id": "fashionpedia-train2020-37542",
+      "split": "development_train",
+      "presentation": "hanging",
+      "reason": "not_explicitly_reviewed_worn"
+    },
+    {
+      "sample_id": "fashionpedia-train2020-38941",
+      "split": "development_train",
+      "presentation": "hanging",
+      "reason": "not_explicitly_reviewed_worn"
+    },
+    {
+      "sample_id": "fashionpedia-train2020-40212",
+      "split": "development_train",
+      "presentation": "hanging",
+      "reason": "not_explicitly_reviewed_worn"
+    },
+    {
+      "sample_id": "fashionpedia-train2020-40276",
+      "split": "development_validation",
+      "presentation": "hanging",
+      "reason": "not_explicitly_reviewed_worn"
+    },
+    {
+      "sample_id": "fashionpedia-train2020-40834",
+      "split": "development_train",
+      "presentation": "hanging",
+      "reason": "not_explicitly_reviewed_worn"
+    },
+    {
+      "sample_id": "fashionpedia-train2020-41816",
+      "split": "development_train",
+      "presentation": "hanging",
+      "reason": "not_explicitly_reviewed_worn"
+    },
+    {
+      "sample_id": "fashionpedia-train2020-43278",
+      "split": "development_train",
+      "presentation": "hanging",
+      "reason": "not_explicitly_reviewed_worn"
+    },
+    {
+      "sample_id": "fashionpedia-train2020-43360",
+      "split": "development_validation",
+      "presentation": "mannequin",
+      "reason": "not_explicitly_reviewed_worn"
+    },
+    {
+      "sample_id": "fashionpedia-train2020-44922",
+      "split": "development_train",
+      "presentation": "mannequin",
+      "reason": "not_explicitly_reviewed_worn"
+    },
+    {
+      "sample_id": "fashionpedia-train2020-46766",
+      "split": "development_train",
+      "presentation": "unknown",
+      "reason": "not_explicitly_reviewed_worn"
+    },
+    {
+      "sample_id": "fashionpedia-train2020-47349",
+      "split": "development_validation",
+      "presentation": "hanging",
+      "reason": "not_explicitly_reviewed_worn"
+    },
+    {
+      "sample_id": "fashionpedia-train2020-47376",
+      "split": "development_validation",
+      "presentation": "hanging",
+      "reason": "not_explicitly_reviewed_worn"
+    },
+    {
+      "sample_id": "fashionpedia-train2020-47497",
+      "split": "development_validation",
+      "presentation": "hanging",
+      "reason": "not_explicitly_reviewed_worn"
+    },
+    {
+      "sample_id": "fashionpedia-train2020-49867",
+      "split": "development_validation",
+      "presentation": "unknown",
+      "reason": "not_explicitly_reviewed_worn"
+    },
+    {
+      "sample_id": "fashionpedia-train2020-50322",
+      "split": "development_train",
+      "presentation": "unknown",
+      "reason": "not_explicitly_reviewed_worn"
+    }
+  ],
+  "new_training_admissions": 0,
+  "split_assignments_changed": false,
+  "scope": "Versioned development subset; single-agent observations, no independent specimen truth"
+}

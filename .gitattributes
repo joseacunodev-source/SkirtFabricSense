@@ -1,0 +1,3 @@
+# Evidence hashes depend on exact bytes, including JSON/JSONL line endings.
+# Disable automatic LF/CRLF conversion on every platform.
+* -text

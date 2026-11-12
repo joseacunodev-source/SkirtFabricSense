@@ -1,0 +1,22 @@
+{
+  "date_asia_manila": "2026-10-18",
+  "reviewer": "root",
+  "method": "contact_sheet_visual_inspection",
+  "inspection_sheet": "records/review/2026-10-18-negative-v3-root-session.jpg",
+  "sheet_sha256": "bbc60b6610821095ff5ec655f0e1f2311a14a5719eea20607ab5a14ea224f2e1",
+  "flags": [
+    {
+      "sample_ids": [
+        "fashionpedia-negative-v3-49075",
+        "fashionpedia-negative-v3-33346",
+        "fashionpedia-negative-v3-39080",
+        "fashionpedia-negative-v3-35976",
+        "fashionpedia-negative-v3-37053",
+        "fashionpedia-negative-v3-36304",
+        "fashionpedia-negative-v3-44943"
+      ],
+      "reason": "Recurring OFF-PRICE hanger, white wall, label and product setup across batches B/C; unresolved catalog/session relation. Garments appear different; no physical same-garment identity asserted. Conservatively exclude all seven."
+    }
+  ],
+  "scope": "Additional grouping quarantine only; no prior assignments changed"
+}

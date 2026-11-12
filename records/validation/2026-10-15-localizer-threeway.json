@@ -1,0 +1,4866 @@
+{
+  "date": "2026-10-15",
+  "method": "Exact sample-id join of saved exported-runtime evaluations; inputs hashes and each baseline output verified identical",
+  "sources": [
+    {
+      "path": "records/validation/2026-10-14-localizer-v2-comparison.json",
+      "sha256": "c8084b1b61f7fea10ad1a39ce336d666c4760ea4cd292af5e8eabd9af07c92c8"
+    },
+    {
+      "path": "records/validation/2026-10-15-localizer-v3-comparison.json",
+      "sha256": "e16f6cb072f274d11c28b111436c20551337272e5fd8ea66501fe8ffc2feca7a"
+    }
+  ],
+  "models": {
+    "v1": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2",
+    "v2": "f2f5f73d34cd99c3fb46502cb806ddbc347c6664e8ce24b8fe06a548c70090de",
+    "v3": "ca2c135ede7ee760ac205db0e404fb7246739d1741f8fb43b6296ef3a5c7cc26"
+  },
+  "metrics": {
+    "v1": {
+      "positive_count": 80,
+      "accepted_skirts": 48,
+      "coverage": 0.6,
+      "correct_pleating": 38,
+      "accepted_accuracy": 0.7916666666666666,
+      "negative_count": 19,
+      "rejected_negatives": 10
+    },
+    "v2": {
+      "positive_count": 80,
+      "accepted_skirts": 59,
+      "coverage": 0.7375,
+      "correct_pleating": 52,
+      "accepted_accuracy": 0.8813559322033898,
+      "negative_count": 19,
+      "rejected_negatives": 8
+    },
+    "v3": {
+      "positive_count": 80,
+      "accepted_skirts": 51,
+      "coverage": 0.6375,
+      "correct_pleating": 42,
+      "accepted_accuracy": 0.8235294117647058,
+      "negative_count": 19,
+      "rejected_negatives": 5
+    }
+  },
+  "results": [
+    {
+      "sample_id": "fashionpedia-train2020-12679",
+      "expected": "non_pleated",
+      "positive": true,
+      "v1": {
+        "accepted": true,
+        "prediction": "non_pleated",
+        "region": {
+          "status": "provisional",
+          "roi": [
+            243,
+            457,
+            536,
+            970
+          ],
+          "reason": "experimental_mask_not_verified_presence_or_full_view",
+          "mask_pixels": 546,
+          "threshold": 0.5,
+          "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+        }
+      },
+      "v2": {
+        "accepted": true,
+        "prediction": "non_pleated",
+        "region": {
+          "status": "provisional",
+          "roi": [
+            255,
+            493,
+            524,
+            970
+          ],
+          "reason": "experimental_mask_not_verified_presence_or_full_view",
+          "mask_pixels": 481,
+          "threshold": 0.5,
+          "model_sha256": "f2f5f73d34cd99c3fb46502cb806ddbc347c6664e8ce24b8fe06a548c70090de"
+        }
+      },
+      "v3": {
+        "accepted": true,
+        "prediction": "non_pleated",
+        "region": {
+          "status": "provisional",
+          "roi": [
+            267,
+            475,
+            512,
+            933
+          ],
+          "reason": "experimental_mask_not_verified_presence_or_full_view",
+          "mask_pixels": 448,
+          "threshold": 0.5,
+          "model_sha256": "ca2c135ede7ee760ac205db0e404fb7246739d1741f8fb43b6296ef3a5c7cc26"
+        }
+      }
+    },
+    {
+      "sample_id": "fashionpedia-train2020-16838",
+      "expected": "non_pleated",
+      "positive": true,
+      "v1": {
+        "accepted": false,
+        "prediction": null,
+        "region": {
+          "status": "unavailable",
+          "roi": null,
+          "reason": "multiple_regions",
+          "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+        }
+      },
+      "v2": {
+        "accepted": true,
+        "prediction": "non_pleated",
+        "region": {
+          "status": "provisional",
+          "roi": [
+            368,
+            530,
+            501,
+            659
+          ],
+          "reason": "experimental_mask_not_verified_presence_or_full_view",
+          "mask_pixels": 62,
+          "threshold": 0.5,
+          "model_sha256": "f2f5f73d34cd99c3fb46502cb806ddbc347c6664e8ce24b8fe06a548c70090de"
+        }
+      },
+      "v3": {
+        "accepted": true,
+        "prediction": "non_pleated",
+        "region": {
+          "status": "provisional",
+          "roi": [
+            355,
+            530,
+            501,
+            640
+          ],
+          "reason": "experimental_mask_not_verified_presence_or_full_view",
+          "mask_pixels": 43,
+          "threshold": 0.5,
+          "model_sha256": "ca2c135ede7ee760ac205db0e404fb7246739d1741f8fb43b6296ef3a5c7cc26"
+        }
+      }
+    },
+    {
+      "sample_id": "fashionpedia-train2020-16912",
+      "expected": "non_pleated",
+      "positive": true,
+      "v1": {
+        "accepted": true,
+        "prediction": "non_pleated",
+        "region": {
+          "status": "provisional",
+          "roi": [
+            271,
+            384,
+            464,
+            732
+          ],
+          "reason": "experimental_mask_not_verified_presence_or_full_view",
+          "mask_pixels": 271,
+          "threshold": 0.5,
+          "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+        }
+      },
+      "v2": {
+        "accepted": true,
+        "prediction": "non_pleated",
+        "region": {
+          "status": "provisional",
+          "roi": [
+            282,
+            402,
+            453,
+            714
+          ],
+          "reason": "experimental_mask_not_verified_presence_or_full_view",
+          "mask_pixels": 225,
+          "threshold": 0.5,
+          "model_sha256": "f2f5f73d34cd99c3fb46502cb806ddbc347c6664e8ce24b8fe06a548c70090de"
+        }
+      },
+      "v3": {
+        "accepted": true,
+        "prediction": "non_pleated",
+        "region": {
+          "status": "provisional",
+          "roi": [
+            282,
+            402,
+            441,
+            714
+          ],
+          "reason": "experimental_mask_not_verified_presence_or_full_view",
+          "mask_pixels": 206,
+          "threshold": 0.5,
+          "model_sha256": "ca2c135ede7ee760ac205db0e404fb7246739d1741f8fb43b6296ef3a5c7cc26"
+        }
+      }
+    },
+    {
+      "sample_id": "fashionpedia-train2020-17761",
+      "expected": "pleated",
+      "positive": true,
+      "v1": {
+        "accepted": true,
+        "prediction": "pleated",
+        "region": {
+          "status": "provisional",
+          "roi": [
+            280,
+            384,
+            464,
+            586
+          ],
+          "reason": "experimental_mask_not_verified_presence_or_full_view",
+          "mask_pixels": 144,
+          "threshold": 0.5,
+          "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+        }
+      },
+      "v2": {
+        "accepted": true,
+        "prediction": "pleated",
+        "region": {
+          "status": "provisional",
+          "roi": [
+            292,
+            384,
+            464,
+            586
+          ],
+          "reason": "experimental_mask_not_verified_presence_or_full_view",
+          "mask_pixels": 120,
+          "threshold": 0.5,
+          "model_sha256": "f2f5f73d34cd99c3fb46502cb806ddbc347c6664e8ce24b8fe06a548c70090de"
+        }
+      },
+      "v3": {
+        "accepted": true,
+        "prediction": "pleated",
+        "region": {
+          "status": "provisional",
+          "roi": [
+            304,
+            402,
+            464,
+            622
+          ],
+          "reason": "experimental_mask_not_verified_presence_or_full_view",
+          "mask_pixels": 115,
+          "threshold": 0.5,
+          "model_sha256": "ca2c135ede7ee760ac205db0e404fb7246739d1741f8fb43b6296ef3a5c7cc26"
+        }
+      }
+    },
+    {
+      "sample_id": "fashionpedia-train2020-21255",
+      "expected": "non_pleated",
+      "positive": true,
+      "v1": {
+        "accepted": false,
+        "prediction": null,
+        "region": {
+          "status": "unavailable",
+          "roi": null,
+          "reason": "multiple_regions",
+          "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+        }
+      },
+      "v2": {
+        "accepted": false,
+        "prediction": null,
+        "region": {
+          "status": "unavailable",
+          "roi": null,
+          "reason": "multiple_regions",
+          "model_sha256": "f2f5f73d34cd99c3fb46502cb806ddbc347c6664e8ce24b8fe06a548c70090de"
+        }
+      },
+      "v3": {
+        "accepted": false,
+        "prediction": null,
+        "region": {
+          "status": "unavailable",
+          "roi": null,
+          "reason": "multiple_regions",
+          "model_sha256": "ca2c135ede7ee760ac205db0e404fb7246739d1741f8fb43b6296ef3a5c7cc26"
+        }
+      }
+    },
+    {
+      "sample_id": "fashionpedia-train2020-21441",
+      "expected": "non_pleated",
+      "positive": true,
+      "v1": {
+        "accepted": true,
+        "prediction": "non_pleated",
+        "region": {
+          "status": "provisional",
+          "roi": [
+            420,
+            364,
+            604,
+            462
+          ],
+          "reason": "experimental_mask_not_verified_presence_or_full_view",
+          "mask_pixels": 61,
+          "threshold": 0.5,
+          "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+        }
+      },
+      "v2": {
+        "accepted": true,
+        "prediction": "non_pleated",
+        "region": {
+          "status": "provisional",
+          "roi": [
+            457,
+            388,
+            586,
+            450
+          ],
+          "reason": "experimental_mask_not_verified_presence_or_full_view",
+          "mask_pixels": 25,
+          "threshold": 0.5,
+          "model_sha256": "f2f5f73d34cd99c3fb46502cb806ddbc347c6664e8ce24b8fe06a548c70090de"
+        }
+      },
+      "v3": {
+        "accepted": false,
+        "prediction": null,
+        "region": {
+          "status": "unavailable",
+          "roi": null,
+          "reason": "no_supported_skirt_region",
+          "model_sha256": "ca2c135ede7ee760ac205db0e404fb7246739d1741f8fb43b6296ef3a5c7cc26"
+        }
+      }
+    },
+    {
+      "sample_id": "fashionpedia-train2020-21757",
+      "expected": "non_pleated",
+      "positive": true,
+      "v1": {
+        "accepted": true,
+        "prediction": "non_pleated",
+        "region": {
+          "status": "provisional",
+          "roi": [
+            219,
+            402,
+            415,
+            714
+          ],
+          "reason": "experimental_mask_not_verified_presence_or_full_view",
+          "mask_pixels": 210,
+          "threshold": 0.5,
+          "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+        }
+      },
+      "v2": {
+        "accepted": true,
+        "prediction": "non_pleated",
+        "region": {
+          "status": "provisional",
+          "roi": [
+            231,
+            420,
+            402,
+            695
+          ],
+          "reason": "experimental_mask_not_verified_presence_or_full_view",
+          "mask_pixels": 175,
+          "threshold": 0.5,
+          "model_sha256": "f2f5f73d34cd99c3fb46502cb806ddbc347c6664e8ce24b8fe06a548c70090de"
+        }
+      },
+      "v3": {
+        "accepted": true,
+        "prediction": "non_pleated",
+        "region": {
+          "status": "provisional",
+          "roi": [
+            219,
+            402,
+            415,
+            695
+          ],
+          "reason": "experimental_mask_not_verified_presence_or_full_view",
+          "mask_pixels": 172,
+          "threshold": 0.5,
+          "model_sha256": "ca2c135ede7ee760ac205db0e404fb7246739d1741f8fb43b6296ef3a5c7cc26"
+        }
+      }
+    },
+    {
+      "sample_id": "fashionpedia-train2020-2208",
+      "expected": "non_pleated",
+      "positive": true,
+      "v1": {
+        "accepted": true,
+        "prediction": "non_pleated",
+        "region": {
+          "status": "provisional",
+          "roi": [
+            243,
+            475,
+            574,
+            970
+          ],
+          "reason": "experimental_mask_not_verified_presence_or_full_view",
+          "mask_pixels": 319,
+          "threshold": 0.5,
+          "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+        }
+      },
+      "v2": {
+        "accepted": true,
+        "prediction": "non_pleated",
+        "region": {
+          "status": "provisional",
+          "roi": [
+            256,
+            493,
+            476,
+            787
+          ],
+          "reason": "experimental_mask_not_verified_presence_or_full_view",
+          "mask_pixels": 195,
+          "threshold": 0.5,
+          "model_sha256": "f2f5f73d34cd99c3fb46502cb806ddbc347c6664e8ce24b8fe06a548c70090de"
+        }
+      },
+      "v3": {
+        "accepted": true,
+        "prediction": "non_pleated",
+        "region": {
+          "status": "provisional",
+          "roi": [
+            268,
+            493,
+            476,
+            787
+          ],
+          "reason": "experimental_mask_not_verified_presence_or_full_view",
+          "mask_pixels": 178,
+          "threshold": 0.5,
+          "model_sha256": "ca2c135ede7ee760ac205db0e404fb7246739d1741f8fb43b6296ef3a5c7cc26"
+        }
+      }
+    },
+    {
+      "sample_id": "fashionpedia-train2020-22772",
+      "expected": "non_pleated",
+      "positive": true,
+      "v1": {
+        "accepted": false,
+        "prediction": null,
+        "region": {
+          "status": "unavailable",
+          "roi": null,
+          "reason": "multiple_regions",
+          "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+        }
+      },
+      "v2": {
+        "accepted": true,
+        "prediction": "non_pleated",
+        "region": {
+          "status": "provisional",
+          "roi": [
+            164,
+            583,
+            293,
+            633
+          ],
+          "reason": "experimental_mask_not_verified_presence_or_full_view",
+          "mask_pixels": 23,
+          "threshold": 0.5,
+          "model_sha256": "f2f5f73d34cd99c3fb46502cb806ddbc347c6664e8ce24b8fe06a548c70090de"
+        }
+      },
+      "v3": {
+        "accepted": true,
+        "prediction": "non_pleated",
+        "region": {
+          "status": "provisional",
+          "roi": [
+            164,
+            547,
+            293,
+            621
+          ],
+          "reason": "experimental_mask_not_verified_presence_or_full_view",
+          "mask_pixels": 31,
+          "threshold": 0.5,
+          "model_sha256": "ca2c135ede7ee760ac205db0e404fb7246739d1741f8fb43b6296ef3a5c7cc26"
+        }
+      }
+    },
+    {
+      "sample_id": "fashionpedia-train2020-23671",
+      "expected": "non_pleated",
+      "positive": true,
+      "v1": {
+        "accepted": true,
+        "prediction": "non_pleated",
+        "region": {
+          "status": "provisional",
+          "roi": [
+            512,
+            243,
+            677,
+            452
+          ],
+          "reason": "experimental_mask_not_verified_presence_or_full_view",
+          "mask_pixels": 119,
+          "threshold": 0.5,
+          "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+        }
+      },
+      "v2": {
+        "accepted": true,
+        "prediction": "non_pleated",
+        "region": {
+          "status": "provisional",
+          "roi": [
+            530,
+            292,
+            659,
+            440
+          ],
+          "reason": "experimental_mask_not_verified_presence_or_full_view",
+          "mask_pixels": 68,
+          "threshold": 0.5,
+          "model_sha256": "f2f5f73d34cd99c3fb46502cb806ddbc347c6664e8ce24b8fe06a548c70090de"
+        }
+      },
+      "v3": {
+        "accepted": true,
+        "prediction": "non_pleated",
+        "region": {
+          "status": "provisional",
+          "roi": [
+            548,
+            304,
+            695,
+            427
+          ],
+          "reason": "experimental_mask_not_verified_presence_or_full_view",
+          "mask_pixels": 63,
+          "threshold": 0.5,
+          "model_sha256": "ca2c135ede7ee760ac205db0e404fb7246739d1741f8fb43b6296ef3a5c7cc26"
+        }
+      }
+    },
+    {
+      "sample_id": "fashionpedia-train2020-23874",
+      "expected": "non_pleated",
+      "positive": true,
+      "v1": {
+        "accepted": true,
+        "prediction": "non_pleated",
+        "region": {
+          "status": "provisional",
+          "roi": [
+            256,
+            384,
+            464,
+            695
+          ],
+          "reason": "experimental_mask_not_verified_presence_or_full_view",
+          "mask_pixels": 241,
+          "threshold": 0.5,
+          "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+        }
+      },
+      "v2": {
+        "accepted": true,
+        "prediction": "non_pleated",
+        "region": {
+          "status": "provisional",
+          "roi": [
+            268,
+            402,
+            464,
+            695
+          ],
+          "reason": "experimental_mask_not_verified_presence_or_full_view",
+          "mask_pixels": 191,
+          "threshold": 0.5,
+          "model_sha256": "f2f5f73d34cd99c3fb46502cb806ddbc347c6664e8ce24b8fe06a548c70090de"
+        }
+      },
+      "v3": {
+        "accepted": true,
+        "prediction": "non_pleated",
+        "region": {
+          "status": "provisional",
+          "roi": [
+            292,
+            402,
+            464,
+            695
+          ],
+          "reason": "experimental_mask_not_verified_presence_or_full_view",
+          "mask_pixels": 193,
+          "threshold": 0.5,
+          "model_sha256": "ca2c135ede7ee760ac205db0e404fb7246739d1741f8fb43b6296ef3a5c7cc26"
+        }
+      }
+    },
+    {
+      "sample_id": "fashionpedia-train2020-24110",
+      "expected": "non_pleated",
+      "positive": true,
+      "v1": {
+        "accepted": true,
+        "prediction": "non_pleated",
+        "region": {
+          "status": "provisional",
+          "roi": [
+            146,
+            329,
+            415,
+            622
+          ],
+          "reason": "experimental_mask_not_verified_presence_or_full_view",
+          "mask_pixels": 270,
+          "threshold": 0.5,
+          "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+        }
+      },
+      "v2": {
+        "accepted": true,
+        "prediction": "non_pleated",
+        "region": {
+          "status": "provisional",
+          "roi": [
+            182,
+            347,
+            415,
+            622
+          ],
+          "reason": "experimental_mask_not_verified_presence_or_full_view",
+          "mask_pixels": 234,
+          "threshold": 0.5,
+          "model_sha256": "f2f5f73d34cd99c3fb46502cb806ddbc347c6664e8ce24b8fe06a548c70090de"
+        }
+      },
+      "v3": {
+        "accepted": true,
+        "prediction": "non_pleated",
+        "region": {
+          "status": "provisional",
+          "roi": [
+            182,
+            329,
+            415,
+            622
+          ],
+          "reason": "experimental_mask_not_verified_presence_or_full_view",
+          "mask_pixels": 239,
+          "threshold": 0.5,
+          "model_sha256": "ca2c135ede7ee760ac205db0e404fb7246739d1741f8fb43b6296ef3a5c7cc26"
+        }
+      }
+    },
+    {
+      "sample_id": "fashionpedia-train2020-24284",
+      "expected": "non_pleated",
+      "positive": true,
+      "v1": {
+        "accepted": true,
+        "prediction": "non_pleated",
+        "region": {
+          "status": "provisional",
+          "roi": [
+            274,
+            219,
+            714,
+            488
+          ],
+          "reason": "experimental_mask_not_verified_presence_or_full_view",
+          "mask_pixels": 257,
+          "threshold": 0.5,
+          "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+        }
+      },
+      "v2": {
+        "accepted": true,
+        "prediction": "non_pleated",
+        "region": {
+          "status": "provisional",
+          "roi": [
+            438,
+            231,
+            659,
+            476
+          ],
+          "reason": "experimental_mask_not_verified_presence_or_full_view",
+          "mask_pixels": 161,
+          "threshold": 0.5,
+          "model_sha256": "f2f5f73d34cd99c3fb46502cb806ddbc347c6664e8ce24b8fe06a548c70090de"
+        }
+      },
+      "v3": {
+        "accepted": true,
+        "prediction": "non_pleated",
+        "region": {
+          "status": "provisional",
+          "roi": [
+            457,
+            256,
+            677,
+            464
+          ],
+          "reason": "experimental_mask_not_verified_presence_or_full_view",
+          "mask_pixels": 151,
+          "threshold": 0.5,
+          "model_sha256": "ca2c135ede7ee760ac205db0e404fb7246739d1741f8fb43b6296ef3a5c7cc26"
+        }
+      }
+    },
+    {
+      "sample_id": "fashionpedia-train2020-24325",
+      "expected": "non_pleated",
+      "positive": true,
+      "v1": {
+        "accepted": true,
+        "prediction": "non_pleated",
+        "region": {
+          "status": "provisional",
+          "roi": [
+            203,
+            384,
+            407,
+            695
+          ],
+          "reason": "experimental_mask_not_verified_presence_or_full_view",
+          "mask_pixels": 280,
+          "threshold": 0.5,
+          "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+        }
+      },
+      "v2": {
+        "accepted": true,
+        "prediction": "non_pleated",
+        "region": {
+          "status": "provisional",
+          "roi": [
+            224,
+            402,
+            386,
+            677
+          ],
+          "reason": "experimental_mask_not_verified_presence_or_full_view",
+          "mask_pixels": 199,
+          "threshold": 0.5,
+          "model_sha256": "f2f5f73d34cd99c3fb46502cb806ddbc347c6664e8ce24b8fe06a548c70090de"
+        }
+      },
+      "v3": {
+        "accepted": true,
+        "prediction": "non_pleated",
+        "region": {
+          "status": "provisional",
+          "roi": [
+            235,
+            402,
+            364,
+            695
+          ],
+          "reason": "experimental_mask_not_verified_presence_or_full_view",
+          "mask_pixels": 143,
+          "threshold": 0.5,
+          "model_sha256": "ca2c135ede7ee760ac205db0e404fb7246739d1741f8fb43b6296ef3a5c7cc26"
+        }
+      }
+    },
+    {
+      "sample_id": "fashionpedia-train2020-24650",
+      "expected": "non_pleated",
+      "positive": true,
+      "v1": {
+        "accepted": false,
+        "prediction": null,
+        "region": {
+          "status": "unavailable",
+          "roi": null,
+          "reason": "region_touches_frame_edge",
+          "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+        }
+      },
+      "v2": {
+        "accepted": false,
+        "prediction": null,
+        "region": {
+          "status": "unavailable",
+          "roi": null,
+          "reason": "region_touches_frame_edge",
+          "model_sha256": "f2f5f73d34cd99c3fb46502cb806ddbc347c6664e8ce24b8fe06a548c70090de"
+        }
+      },
+      "v3": {
+        "accepted": false,
+        "prediction": null,
+        "region": {
+          "status": "unavailable",
+          "roi": null,
+          "reason": "region_touches_frame_edge",
+          "model_sha256": "ca2c135ede7ee760ac205db0e404fb7246739d1741f8fb43b6296ef3a5c7cc26"
+        }
+      }
+    },
+    {
+      "sample_id": "fashionpedia-train2020-24708",
+      "expected": "pleated",
+      "positive": true,
+      "v1": {
+        "accepted": false,
+        "prediction": null,
+        "region": {
+          "status": "unavailable",
+          "roi": null,
+          "reason": "multiple_regions",
+          "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+        }
+      },
+      "v2": {
+        "accepted": true,
+        "prediction": "pleated",
+        "region": {
+          "status": "provisional",
+          "roi": [
+            133,
+            457,
+            427,
+            933
+          ],
+          "reason": "experimental_mask_not_verified_presence_or_full_view",
+          "mask_pixels": 471,
+          "threshold": 0.5,
+          "model_sha256": "f2f5f73d34cd99c3fb46502cb806ddbc347c6664e8ce24b8fe06a548c70090de"
+        }
+      },
+      "v3": {
+        "accepted": true,
+        "prediction": "pleated",
+        "region": {
+          "status": "provisional",
+          "roi": [
+            158,
+            457,
+            415,
+            915
+          ],
+          "reason": "experimental_mask_not_verified_presence_or_full_view",
+          "mask_pixels": 421,
+          "threshold": 0.5,
+          "model_sha256": "ca2c135ede7ee760ac205db0e404fb7246739d1741f8fb43b6296ef3a5c7cc26"
+        }
+      }
+    },
+    {
+      "sample_id": "fashionpedia-train2020-26590",
+      "expected": "non_pleated",
+      "positive": true,
+      "v1": {
+        "accepted": false,
+        "prediction": null,
+        "region": {
+          "status": "unavailable",
+          "roi": null,
+          "reason": "multiple_regions",
+          "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+        }
+      },
+      "v2": {
+        "accepted": true,
+        "prediction": "non_pleated",
+        "region": {
+          "status": "provisional",
+          "roi": [
+            163,
+            310,
+            581,
+            970
+          ],
+          "reason": "experimental_mask_not_verified_presence_or_full_view",
+          "mask_pixels": 619,
+          "threshold": 0.5,
+          "model_sha256": "f2f5f73d34cd99c3fb46502cb806ddbc347c6664e8ce24b8fe06a548c70090de"
+        }
+      },
+      "v3": {
+        "accepted": false,
+        "prediction": null,
+        "region": {
+          "status": "unavailable",
+          "roi": null,
+          "reason": "region_touches_frame_edge",
+          "model_sha256": "ca2c135ede7ee760ac205db0e404fb7246739d1741f8fb43b6296ef3a5c7cc26"
+        }
+      }
+    },
+    {
+      "sample_id": "fashionpedia-train2020-2689",
+      "expected": "pleated",
+      "positive": true,
+      "v1": {
+        "accepted": true,
+        "prediction": "non_pleated",
+        "region": {
+          "status": "provisional",
+          "roi": [
+            146,
+            219,
+            622,
+            951
+          ],
+          "reason": "experimental_mask_not_verified_presence_or_full_view",
+          "mask_pixels": 1035,
+          "threshold": 0.5,
+          "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+        }
+      },
+      "v2": {
+        "accepted": false,
+        "prediction": null,
+        "region": {
+          "status": "unavailable",
+          "roi": null,
+          "reason": "multiple_regions",
+          "model_sha256": "f2f5f73d34cd99c3fb46502cb806ddbc347c6664e8ce24b8fe06a548c70090de"
+        }
+      },
+      "v3": {
+        "accepted": true,
+        "prediction": "non_pleated",
+        "region": {
+          "status": "provisional",
+          "roi": [
+            170,
+            256,
+            609,
+            915
+          ],
+          "reason": "experimental_mask_not_verified_presence_or_full_view",
+          "mask_pixels": 799,
+          "threshold": 0.5,
+          "model_sha256": "ca2c135ede7ee760ac205db0e404fb7246739d1741f8fb43b6296ef3a5c7cc26"
+        }
+      }
+    },
+    {
+      "sample_id": "fashionpedia-train2020-26955",
+      "expected": "non_pleated",
+      "positive": true,
+      "v1": {
+        "accepted": false,
+        "prediction": null,
+        "region": {
+          "status": "unavailable",
+          "roi": null,
+          "reason": "region_touches_frame_edge",
+          "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+        }
+      },
+      "v2": {
+        "accepted": false,
+        "prediction": null,
+        "region": {
+          "status": "unavailable",
+          "roi": null,
+          "reason": "multiple_regions",
+          "model_sha256": "f2f5f73d34cd99c3fb46502cb806ddbc347c6664e8ce24b8fe06a548c70090de"
+        }
+      },
+      "v3": {
+        "accepted": false,
+        "prediction": null,
+        "region": {
+          "status": "unavailable",
+          "roi": null,
+          "reason": "multiple_regions",
+          "model_sha256": "ca2c135ede7ee760ac205db0e404fb7246739d1741f8fb43b6296ef3a5c7cc26"
+        }
+      }
+    },
+    {
+      "sample_id": "fashionpedia-train2020-27922",
+      "expected": "non_pleated",
+      "positive": true,
+      "v1": {
+        "accepted": false,
+        "prediction": null,
+        "region": {
+          "status": "unavailable",
+          "roi": null,
+          "reason": "multiple_regions",
+          "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+        }
+      },
+      "v2": {
+        "accepted": true,
+        "prediction": "non_pleated",
+        "region": {
+          "status": "provisional",
+          "roi": [
+            158,
+            493,
+            536,
+            933
+          ],
+          "reason": "experimental_mask_not_verified_presence_or_full_view",
+          "mask_pixels": 546,
+          "threshold": 0.5,
+          "model_sha256": "f2f5f73d34cd99c3fb46502cb806ddbc347c6664e8ce24b8fe06a548c70090de"
+        }
+      },
+      "v3": {
+        "accepted": true,
+        "prediction": "non_pleated",
+        "region": {
+          "status": "provisional",
+          "roi": [
+            170,
+            530,
+            524,
+            933
+          ],
+          "reason": "experimental_mask_not_verified_presence_or_full_view",
+          "mask_pixels": 490,
+          "threshold": 0.5,
+          "model_sha256": "ca2c135ede7ee760ac205db0e404fb7246739d1741f8fb43b6296ef3a5c7cc26"
+        }
+      }
+    },
+    {
+      "sample_id": "fashionpedia-train2020-29142",
+      "expected": "pleated",
+      "positive": true,
+      "v1": {
+        "accepted": false,
+        "prediction": null,
+        "region": {
+          "status": "unavailable",
+          "roi": null,
+          "reason": "multiple_regions",
+          "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+        }
+      },
+      "v2": {
+        "accepted": true,
+        "prediction": "pleated",
+        "region": {
+          "status": "provisional",
+          "roi": [
+            178,
+            475,
+            590,
+            970
+          ],
+          "reason": "experimental_mask_not_verified_presence_or_full_view",
+          "mask_pixels": 563,
+          "threshold": 0.5,
+          "model_sha256": "f2f5f73d34cd99c3fb46502cb806ddbc347c6664e8ce24b8fe06a548c70090de"
+        }
+      },
+      "v3": {
+        "accepted": false,
+        "prediction": null,
+        "region": {
+          "status": "unavailable",
+          "roi": null,
+          "reason": "region_touches_frame_edge",
+          "model_sha256": "ca2c135ede7ee760ac205db0e404fb7246739d1741f8fb43b6296ef3a5c7cc26"
+        }
+      }
+    },
+    {
+      "sample_id": "fashionpedia-train2020-29403",
+      "expected": "non_pleated",
+      "positive": true,
+      "v1": {
+        "accepted": true,
+        "prediction": "pleated",
+        "region": {
+          "status": "provisional",
+          "roi": [
+            54,
+            128,
+            686,
+            896
+          ],
+          "reason": "experimental_mask_not_verified_presence_or_full_view",
+          "mask_pixels": 1422,
+          "threshold": 0.5,
+          "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+        }
+      },
+      "v2": {
+        "accepted": true,
+        "prediction": "non_pleated",
+        "region": {
+          "status": "provisional",
+          "roi": [
+            82,
+            146,
+            672,
+            878
+          ],
+          "reason": "experimental_mask_not_verified_presence_or_full_view",
+          "mask_pixels": 1252,
+          "threshold": 0.5,
+          "model_sha256": "f2f5f73d34cd99c3fb46502cb806ddbc347c6664e8ce24b8fe06a548c70090de"
+        }
+      },
+      "v3": {
+        "accepted": true,
+        "prediction": "non_pleated",
+        "region": {
+          "status": "provisional",
+          "roi": [
+            82,
+            182,
+            686,
+            878
+          ],
+          "reason": "experimental_mask_not_verified_presence_or_full_view",
+          "mask_pixels": 967,
+          "threshold": 0.5,
+          "model_sha256": "ca2c135ede7ee760ac205db0e404fb7246739d1741f8fb43b6296ef3a5c7cc26"
+        }
+      }
+    },
+    {
+      "sample_id": "fashionpedia-train2020-29964",
+      "expected": "non_pleated",
+      "positive": true,
+      "v1": {
+        "accepted": true,
+        "prediction": "non_pleated",
+        "region": {
+          "status": "provisional",
+          "roi": [
+            52,
+            347,
+            640,
+            896
+          ],
+          "reason": "experimental_mask_not_verified_presence_or_full_view",
+          "mask_pixels": 1138,
+          "threshold": 0.5,
+          "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+        }
+      },
+      "v2": {
+        "accepted": true,
+        "prediction": "non_pleated",
+        "region": {
+          "status": "provisional",
+          "roi": [
+            65,
+            365,
+            627,
+            878
+          ],
+          "reason": "experimental_mask_not_verified_presence_or_full_view",
+          "mask_pixels": 1024,
+          "threshold": 0.5,
+          "model_sha256": "f2f5f73d34cd99c3fb46502cb806ddbc347c6664e8ce24b8fe06a548c70090de"
+        }
+      },
+      "v3": {
+        "accepted": true,
+        "prediction": "non_pleated",
+        "region": {
+          "status": "provisional",
+          "roi": [
+            78,
+            384,
+            614,
+            842
+          ],
+          "reason": "experimental_mask_not_verified_presence_or_full_view",
+          "mask_pixels": 922,
+          "threshold": 0.5,
+          "model_sha256": "ca2c135ede7ee760ac205db0e404fb7246739d1741f8fb43b6296ef3a5c7cc26"
+        }
+      }
+    },
+    {
+      "sample_id": "fashionpedia-train2020-30563",
+      "expected": "pleated",
+      "positive": true,
+      "v1": {
+        "accepted": true,
+        "prediction": "pleated",
+        "region": {
+          "status": "provisional",
+          "roi": [
+            256,
+            128,
+            750,
+            970
+          ],
+          "reason": "experimental_mask_not_verified_presence_or_full_view",
+          "mask_pixels": 1154,
+          "threshold": 0.5,
+          "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+        }
+      },
+      "v2": {
+        "accepted": true,
+        "prediction": "non_pleated",
+        "region": {
+          "status": "provisional",
+          "roi": [
+            274,
+            146,
+            732,
+            951
+          ],
+          "reason": "experimental_mask_not_verified_presence_or_full_view",
+          "mask_pixels": 922,
+          "threshold": 0.5,
+          "model_sha256": "f2f5f73d34cd99c3fb46502cb806ddbc347c6664e8ce24b8fe06a548c70090de"
+        }
+      },
+      "v3": {
+        "accepted": true,
+        "prediction": "non_pleated",
+        "region": {
+          "status": "provisional",
+          "roi": [
+            256,
+            164,
+            695,
+            933
+          ],
+          "reason": "experimental_mask_not_verified_presence_or_full_view",
+          "mask_pixels": 707,
+          "threshold": 0.5,
+          "model_sha256": "ca2c135ede7ee760ac205db0e404fb7246739d1741f8fb43b6296ef3a5c7cc26"
+        }
+      }
+    },
+    {
+      "sample_id": "fashionpedia-train2020-3166",
+      "expected": "non_pleated",
+      "positive": true,
+      "v1": {
+        "accepted": true,
+        "prediction": "non_pleated",
+        "region": {
+          "status": "provisional",
+          "roi": [
+            316,
+            438,
+            622,
+            970
+          ],
+          "reason": "experimental_mask_not_verified_presence_or_full_view",
+          "mask_pixels": 402,
+          "threshold": 0.5,
+          "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+        }
+      },
+      "v2": {
+        "accepted": true,
+        "prediction": "non_pleated",
+        "region": {
+          "status": "provisional",
+          "roi": [
+            365,
+            475,
+            573,
+            823
+          ],
+          "reason": "experimental_mask_not_verified_presence_or_full_view",
+          "mask_pixels": 224,
+          "threshold": 0.5,
+          "model_sha256": "f2f5f73d34cd99c3fb46502cb806ddbc347c6664e8ce24b8fe06a548c70090de"
+        }
+      },
+      "v3": {
+        "accepted": true,
+        "prediction": "non_pleated",
+        "region": {
+          "status": "provisional",
+          "roi": [
+            365,
+            475,
+            561,
+            860
+          ],
+          "reason": "experimental_mask_not_verified_presence_or_full_view",
+          "mask_pixels": 213,
+          "threshold": 0.5,
+          "model_sha256": "ca2c135ede7ee760ac205db0e404fb7246739d1741f8fb43b6296ef3a5c7cc26"
+        }
+      }
+    },
+    {
+      "sample_id": "fashionpedia-train2020-31762",
+      "expected": "non_pleated",
+      "positive": true,
+      "v1": {
+        "accepted": true,
+        "prediction": "non_pleated",
+        "region": {
+          "status": "provisional",
+          "roi": [
+            384,
+            60,
+            787,
+            582
+          ],
+          "reason": "experimental_mask_not_verified_presence_or_full_view",
+          "mask_pixels": 655,
+          "threshold": 0.5,
+          "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+        }
+      },
+      "v2": {
+        "accepted": false,
+        "prediction": null,
+        "region": {
+          "status": "unavailable",
+          "roi": null,
+          "reason": "multiple_regions",
+          "model_sha256": "f2f5f73d34cd99c3fb46502cb806ddbc347c6664e8ce24b8fe06a548c70090de"
+        }
+      },
+      "v3": {
+        "accepted": false,
+        "prediction": null,
+        "region": {
+          "status": "unavailable",
+          "roi": null,
+          "reason": "multiple_regions",
+          "model_sha256": "ca2c135ede7ee760ac205db0e404fb7246739d1741f8fb43b6296ef3a5c7cc26"
+        }
+      }
+    },
+    {
+      "sample_id": "fashionpedia-train2020-31853",
+      "expected": "non_pleated",
+      "positive": true,
+      "v1": {
+        "accepted": false,
+        "prediction": null,
+        "region": {
+          "status": "unavailable",
+          "roi": null,
+          "reason": "region_touches_frame_edge",
+          "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+        }
+      },
+      "v2": {
+        "accepted": false,
+        "prediction": null,
+        "region": {
+          "status": "unavailable",
+          "roi": null,
+          "reason": "region_touches_frame_edge",
+          "model_sha256": "f2f5f73d34cd99c3fb46502cb806ddbc347c6664e8ce24b8fe06a548c70090de"
+        }
+      },
+      "v3": {
+        "accepted": false,
+        "prediction": null,
+        "region": {
+          "status": "unavailable",
+          "roi": null,
+          "reason": "region_touches_frame_edge",
+          "model_sha256": "ca2c135ede7ee760ac205db0e404fb7246739d1741f8fb43b6296ef3a5c7cc26"
+        }
+      }
+    },
+    {
+      "sample_id": "fashionpedia-train2020-31939",
+      "expected": "non_pleated",
+      "positive": true,
+      "v1": {
+        "accepted": false,
+        "prediction": null,
+        "region": {
+          "status": "unavailable",
+          "roi": null,
+          "reason": "multiple_regions",
+          "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+        }
+      },
+      "v2": {
+        "accepted": false,
+        "prediction": null,
+        "region": {
+          "status": "unavailable",
+          "roi": null,
+          "reason": "multiple_regions",
+          "model_sha256": "f2f5f73d34cd99c3fb46502cb806ddbc347c6664e8ce24b8fe06a548c70090de"
+        }
+      },
+      "v3": {
+        "accepted": false,
+        "prediction": null,
+        "region": {
+          "status": "unavailable",
+          "roi": null,
+          "reason": "multiple_regions",
+          "model_sha256": "ca2c135ede7ee760ac205db0e404fb7246739d1741f8fb43b6296ef3a5c7cc26"
+        }
+      }
+    },
+    {
+      "sample_id": "fashionpedia-train2020-3337",
+      "expected": "non_pleated",
+      "positive": true,
+      "v1": {
+        "accepted": true,
+        "prediction": "non_pleated",
+        "region": {
+          "status": "provisional",
+          "roi": [
+            124,
+            347,
+            565,
+            732
+          ],
+          "reason": "experimental_mask_not_verified_presence_or_full_view",
+          "mask_pixels": 423,
+          "threshold": 0.5,
+          "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+        }
+      },
+      "v2": {
+        "accepted": false,
+        "prediction": null,
+        "region": {
+          "status": "unavailable",
+          "roi": null,
+          "reason": "multiple_regions",
+          "model_sha256": "f2f5f73d34cd99c3fb46502cb806ddbc347c6664e8ce24b8fe06a548c70090de"
+        }
+      },
+      "v3": {
+        "accepted": false,
+        "prediction": null,
+        "region": {
+          "status": "unavailable",
+          "roi": null,
+          "reason": "multiple_regions",
+          "model_sha256": "ca2c135ede7ee760ac205db0e404fb7246739d1741f8fb43b6296ef3a5c7cc26"
+        }
+      }
+    },
+    {
+      "sample_id": "fashionpedia-train2020-33951",
+      "expected": "non_pleated",
+      "positive": true,
+      "v1": {
+        "accepted": true,
+        "prediction": "non_pleated",
+        "region": {
+          "status": "provisional",
+          "roi": [
+            327,
+            420,
+            547,
+            677
+          ],
+          "reason": "experimental_mask_not_verified_presence_or_full_view",
+          "mask_pixels": 213,
+          "threshold": 0.5,
+          "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+        }
+      },
+      "v2": {
+        "accepted": true,
+        "prediction": "non_pleated",
+        "region": {
+          "status": "provisional",
+          "roi": [
+            340,
+            438,
+            535,
+            659
+          ],
+          "reason": "experimental_mask_not_verified_presence_or_full_view",
+          "mask_pixels": 160,
+          "threshold": 0.5,
+          "model_sha256": "f2f5f73d34cd99c3fb46502cb806ddbc347c6664e8ce24b8fe06a548c70090de"
+        }
+      },
+      "v3": {
+        "accepted": true,
+        "prediction": "non_pleated",
+        "region": {
+          "status": "provisional",
+          "roi": [
+            315,
+            402,
+            523,
+            640
+          ],
+          "reason": "experimental_mask_not_verified_presence_or_full_view",
+          "mask_pixels": 166,
+          "threshold": 0.5,
+          "model_sha256": "ca2c135ede7ee760ac205db0e404fb7246739d1741f8fb43b6296ef3a5c7cc26"
+        }
+      }
+    },
+    {
+      "sample_id": "fashionpedia-train2020-34108",
+      "expected": "pleated",
+      "positive": true,
+      "v1": {
+        "accepted": true,
+        "prediction": "pleated",
+        "region": {
+          "status": "provisional",
+          "roi": [
+            110,
+            365,
+            626,
+            787
+          ],
+          "reason": "experimental_mask_not_verified_presence_or_full_view",
+          "mask_pixels": 703,
+          "threshold": 0.5,
+          "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+        }
+      },
+      "v2": {
+        "accepted": true,
+        "prediction": "pleated",
+        "region": {
+          "status": "provisional",
+          "roi": [
+            134,
+            384,
+            602,
+            787
+          ],
+          "reason": "experimental_mask_not_verified_presence_or_full_view",
+          "mask_pixels": 627,
+          "threshold": 0.5,
+          "model_sha256": "f2f5f73d34cd99c3fb46502cb806ddbc347c6664e8ce24b8fe06a548c70090de"
+        }
+      },
+      "v3": {
+        "accepted": true,
+        "prediction": "pleated",
+        "region": {
+          "status": "provisional",
+          "roi": [
+            147,
+            402,
+            614,
+            768
+          ],
+          "reason": "experimental_mask_not_verified_presence_or_full_view",
+          "mask_pixels": 565,
+          "threshold": 0.5,
+          "model_sha256": "ca2c135ede7ee760ac205db0e404fb7246739d1741f8fb43b6296ef3a5c7cc26"
+        }
+      }
+    },
+    {
+      "sample_id": "fashionpedia-train2020-34216",
+      "expected": "non_pleated",
+      "positive": true,
+      "v1": {
+        "accepted": true,
+        "prediction": "non_pleated",
+        "region": {
+          "status": "provisional",
+          "roi": [
+            274,
+            128,
+            823,
+            988
+          ],
+          "reason": "experimental_mask_not_verified_presence_or_full_view",
+          "mask_pixels": 1241,
+          "threshold": 0.5,
+          "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+        }
+      },
+      "v2": {
+        "accepted": true,
+        "prediction": "non_pleated",
+        "region": {
+          "status": "provisional",
+          "roi": [
+            292,
+            164,
+            805,
+            970
+          ],
+          "reason": "experimental_mask_not_verified_presence_or_full_view",
+          "mask_pixels": 1104,
+          "threshold": 0.5,
+          "model_sha256": "f2f5f73d34cd99c3fb46502cb806ddbc347c6664e8ce24b8fe06a548c70090de"
+        }
+      },
+      "v3": {
+        "accepted": false,
+        "prediction": null,
+        "region": {
+          "status": "unavailable",
+          "roi": null,
+          "reason": "region_touches_frame_edge",
+          "model_sha256": "ca2c135ede7ee760ac205db0e404fb7246739d1741f8fb43b6296ef3a5c7cc26"
+        }
+      }
+    },
+    {
+      "sample_id": "fashionpedia-train2020-34508",
+      "expected": "pleated",
+      "positive": true,
+      "v1": {
+        "accepted": true,
+        "prediction": "non_pleated",
+        "region": {
+          "status": "provisional",
+          "roi": [
+            126,
+            493,
+            634,
+            823
+          ],
+          "reason": "experimental_mask_not_verified_presence_or_full_view",
+          "mask_pixels": 450,
+          "threshold": 0.5,
+          "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+        }
+      },
+      "v2": {
+        "accepted": true,
+        "prediction": "non_pleated",
+        "region": {
+          "status": "provisional",
+          "roi": [
+            139,
+            512,
+            596,
+            805
+          ],
+          "reason": "experimental_mask_not_verified_presence_or_full_view",
+          "mask_pixels": 316,
+          "threshold": 0.5,
+          "model_sha256": "f2f5f73d34cd99c3fb46502cb806ddbc347c6664e8ce24b8fe06a548c70090de"
+        }
+      },
+      "v3": {
+        "accepted": false,
+        "prediction": null,
+        "region": {
+          "status": "unavailable",
+          "roi": null,
+          "reason": "multiple_regions",
+          "model_sha256": "ca2c135ede7ee760ac205db0e404fb7246739d1741f8fb43b6296ef3a5c7cc26"
+        }
+      }
+    },
+    {
+      "sample_id": "fashionpedia-train2020-35294",
+      "expected": "pleated",
+      "positive": true,
+      "v1": {
+        "accepted": true,
+        "prediction": "pleated",
+        "region": {
+          "status": "provisional",
+          "roi": [
+            243,
+            438,
+            476,
+            732
+          ],
+          "reason": "experimental_mask_not_verified_presence_or_full_view",
+          "mask_pixels": 253,
+          "threshold": 0.5,
+          "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+        }
+      },
+      "v2": {
+        "accepted": true,
+        "prediction": "pleated",
+        "region": {
+          "status": "provisional",
+          "roi": [
+            256,
+            438,
+            476,
+            714
+          ],
+          "reason": "experimental_mask_not_verified_presence_or_full_view",
+          "mask_pixels": 233,
+          "threshold": 0.5,
+          "model_sha256": "f2f5f73d34cd99c3fb46502cb806ddbc347c6664e8ce24b8fe06a548c70090de"
+        }
+      },
+      "v3": {
+        "accepted": true,
+        "prediction": "pleated",
+        "region": {
+          "status": "provisional",
+          "roi": [
+            268,
+            475,
+            464,
+            695
+          ],
+          "reason": "experimental_mask_not_verified_presence_or_full_view",
+          "mask_pixels": 189,
+          "threshold": 0.5,
+          "model_sha256": "ca2c135ede7ee760ac205db0e404fb7246739d1741f8fb43b6296ef3a5c7cc26"
+        }
+      }
+    },
+    {
+      "sample_id": "fashionpedia-train2020-3554",
+      "expected": "non_pleated",
+      "positive": true,
+      "v1": {
+        "accepted": true,
+        "prediction": "non_pleated",
+        "region": {
+          "status": "provisional",
+          "roi": [
+            243,
+            420,
+            464,
+            586
+          ],
+          "reason": "experimental_mask_not_verified_presence_or_full_view",
+          "mask_pixels": 142,
+          "threshold": 0.5,
+          "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+        }
+      },
+      "v2": {
+        "accepted": true,
+        "prediction": "non_pleated",
+        "region": {
+          "status": "provisional",
+          "roi": [
+            256,
+            438,
+            452,
+            586
+          ],
+          "reason": "experimental_mask_not_verified_presence_or_full_view",
+          "mask_pixels": 107,
+          "threshold": 0.5,
+          "model_sha256": "f2f5f73d34cd99c3fb46502cb806ddbc347c6664e8ce24b8fe06a548c70090de"
+        }
+      },
+      "v3": {
+        "accepted": true,
+        "prediction": "non_pleated",
+        "region": {
+          "status": "provisional",
+          "roi": [
+            268,
+            457,
+            464,
+            567
+          ],
+          "reason": "experimental_mask_not_verified_presence_or_full_view",
+          "mask_pixels": 86,
+          "threshold": 0.5,
+          "model_sha256": "ca2c135ede7ee760ac205db0e404fb7246739d1741f8fb43b6296ef3a5c7cc26"
+        }
+      }
+    },
+    {
+      "sample_id": "fashionpedia-train2020-36049",
+      "expected": "non_pleated",
+      "positive": true,
+      "v1": {
+        "accepted": false,
+        "prediction": null,
+        "region": {
+          "status": "unavailable",
+          "roi": null,
+          "reason": "multiple_regions",
+          "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+        }
+      },
+      "v2": {
+        "accepted": true,
+        "prediction": "non_pleated",
+        "region": {
+          "status": "provisional",
+          "roi": [
+            255,
+            457,
+            427,
+            860
+          ],
+          "reason": "experimental_mask_not_verified_presence_or_full_view",
+          "mask_pixels": 241,
+          "threshold": 0.5,
+          "model_sha256": "f2f5f73d34cd99c3fb46502cb806ddbc347c6664e8ce24b8fe06a548c70090de"
+        }
+      },
+      "v3": {
+        "accepted": true,
+        "prediction": "non_pleated",
+        "region": {
+          "status": "provisional",
+          "roi": [
+            267,
+            402,
+            415,
+            842
+          ],
+          "reason": "experimental_mask_not_verified_presence_or_full_view",
+          "mask_pixels": 232,
+          "threshold": 0.5,
+          "model_sha256": "ca2c135ede7ee760ac205db0e404fb7246739d1741f8fb43b6296ef3a5c7cc26"
+        }
+      }
+    },
+    {
+      "sample_id": "fashionpedia-train2020-37302",
+      "expected": "pleated",
+      "positive": true,
+      "v1": {
+        "accepted": true,
+        "prediction": "pleated",
+        "region": {
+          "status": "provisional",
+          "roi": [
+            202,
+            420,
+            469,
+            677
+          ],
+          "reason": "experimental_mask_not_verified_presence_or_full_view",
+          "mask_pixels": 245,
+          "threshold": 0.5,
+          "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+        }
+      },
+      "v2": {
+        "accepted": true,
+        "prediction": "pleated",
+        "region": {
+          "status": "provisional",
+          "roi": [
+            215,
+            438,
+            456,
+            677
+          ],
+          "reason": "experimental_mask_not_verified_presence_or_full_view",
+          "mask_pixels": 208,
+          "threshold": 0.5,
+          "model_sha256": "f2f5f73d34cd99c3fb46502cb806ddbc347c6664e8ce24b8fe06a548c70090de"
+        }
+      },
+      "v3": {
+        "accepted": true,
+        "prediction": "pleated",
+        "region": {
+          "status": "provisional",
+          "roi": [
+            227,
+            457,
+            431,
+            695
+          ],
+          "reason": "experimental_mask_not_verified_presence_or_full_view",
+          "mask_pixels": 179,
+          "threshold": 0.5,
+          "model_sha256": "ca2c135ede7ee760ac205db0e404fb7246739d1741f8fb43b6296ef3a5c7cc26"
+        }
+      }
+    },
+    {
+      "sample_id": "fashionpedia-train2020-37357",
+      "expected": "non_pleated",
+      "positive": true,
+      "v1": {
+        "accepted": true,
+        "prediction": "pleated",
+        "region": {
+          "status": "provisional",
+          "roi": [
+            98,
+            310,
+            581,
+            604
+          ],
+          "reason": "experimental_mask_not_verified_presence_or_full_view",
+          "mask_pixels": 522,
+          "threshold": 0.5,
+          "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+        }
+      },
+      "v2": {
+        "accepted": false,
+        "prediction": null,
+        "region": {
+          "status": "unavailable",
+          "roi": null,
+          "reason": "multiple_regions",
+          "model_sha256": "f2f5f73d34cd99c3fb46502cb806ddbc347c6664e8ce24b8fe06a548c70090de"
+        }
+      },
+      "v3": {
+        "accepted": true,
+        "prediction": "pleated",
+        "region": {
+          "status": "provisional",
+          "roi": [
+            120,
+            329,
+            471,
+            622
+          ],
+          "reason": "experimental_mask_not_verified_presence_or_full_view",
+          "mask_pixels": 351,
+          "threshold": 0.5,
+          "model_sha256": "ca2c135ede7ee760ac205db0e404fb7246739d1741f8fb43b6296ef3a5c7cc26"
+        }
+      }
+    },
+    {
+      "sample_id": "fashionpedia-train2020-37613",
+      "expected": "non_pleated",
+      "positive": true,
+      "v1": {
+        "accepted": false,
+        "prediction": null,
+        "region": {
+          "status": "unavailable",
+          "roi": null,
+          "reason": "multiple_regions",
+          "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+        }
+      },
+      "v2": {
+        "accepted": false,
+        "prediction": null,
+        "region": {
+          "status": "unavailable",
+          "roi": null,
+          "reason": "multiple_regions",
+          "model_sha256": "f2f5f73d34cd99c3fb46502cb806ddbc347c6664e8ce24b8fe06a548c70090de"
+        }
+      },
+      "v3": {
+        "accepted": true,
+        "prediction": "non_pleated",
+        "region": {
+          "status": "provisional",
+          "roi": [
+            146,
+            256,
+            488,
+            695
+          ],
+          "reason": "experimental_mask_not_verified_presence_or_full_view",
+          "mask_pixels": 428,
+          "threshold": 0.5,
+          "model_sha256": "ca2c135ede7ee760ac205db0e404fb7246739d1741f8fb43b6296ef3a5c7cc26"
+        }
+      }
+    },
+    {
+      "sample_id": "fashionpedia-train2020-38701",
+      "expected": "non_pleated",
+      "positive": true,
+      "v1": {
+        "accepted": false,
+        "prediction": null,
+        "region": {
+          "status": "unavailable",
+          "roi": null,
+          "reason": "region_touches_frame_edge",
+          "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+        }
+      },
+      "v2": {
+        "accepted": true,
+        "prediction": "non_pleated",
+        "region": {
+          "status": "provisional",
+          "roi": [
+            233,
+            676,
+            453,
+            988
+          ],
+          "reason": "experimental_mask_not_verified_presence_or_full_view",
+          "mask_pixels": 142,
+          "threshold": 0.5,
+          "model_sha256": "f2f5f73d34cd99c3fb46502cb806ddbc347c6664e8ce24b8fe06a548c70090de"
+        }
+      },
+      "v3": {
+        "accepted": false,
+        "prediction": null,
+        "region": {
+          "status": "unavailable",
+          "roi": null,
+          "reason": "region_touches_frame_edge",
+          "model_sha256": "ca2c135ede7ee760ac205db0e404fb7246739d1741f8fb43b6296ef3a5c7cc26"
+        }
+      }
+    },
+    {
+      "sample_id": "fashionpedia-train2020-39103",
+      "expected": "non_pleated",
+      "positive": true,
+      "v1": {
+        "accepted": true,
+        "prediction": "non_pleated",
+        "region": {
+          "status": "provisional",
+          "roi": [
+            243,
+            402,
+            536,
+            732
+          ],
+          "reason": "experimental_mask_not_verified_presence_or_full_view",
+          "mask_pixels": 346,
+          "threshold": 0.5,
+          "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+        }
+      },
+      "v2": {
+        "accepted": true,
+        "prediction": "non_pleated",
+        "region": {
+          "status": "provisional",
+          "roi": [
+            255,
+            402,
+            524,
+            714
+          ],
+          "reason": "experimental_mask_not_verified_presence_or_full_view",
+          "mask_pixels": 317,
+          "threshold": 0.5,
+          "model_sha256": "f2f5f73d34cd99c3fb46502cb806ddbc347c6664e8ce24b8fe06a548c70090de"
+        }
+      },
+      "v3": {
+        "accepted": true,
+        "prediction": "non_pleated",
+        "region": {
+          "status": "provisional",
+          "roi": [
+            267,
+            402,
+            512,
+            695
+          ],
+          "reason": "experimental_mask_not_verified_presence_or_full_view",
+          "mask_pixels": 286,
+          "threshold": 0.5,
+          "model_sha256": "ca2c135ede7ee760ac205db0e404fb7246739d1741f8fb43b6296ef3a5c7cc26"
+        }
+      }
+    },
+    {
+      "sample_id": "fashionpedia-train2020-39412",
+      "expected": "non_pleated",
+      "positive": true,
+      "v1": {
+        "accepted": false,
+        "prediction": null,
+        "region": {
+          "status": "unavailable",
+          "roi": null,
+          "reason": "multiple_regions",
+          "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+        }
+      },
+      "v2": {
+        "accepted": true,
+        "prediction": "non_pleated",
+        "region": {
+          "status": "provisional",
+          "roi": [
+            68,
+            384,
+            480,
+            933
+          ],
+          "reason": "experimental_mask_not_verified_presence_or_full_view",
+          "mask_pixels": 619,
+          "threshold": 0.5,
+          "model_sha256": "f2f5f73d34cd99c3fb46502cb806ddbc347c6664e8ce24b8fe06a548c70090de"
+        }
+      },
+      "v3": {
+        "accepted": true,
+        "prediction": "non_pleated",
+        "region": {
+          "status": "provisional",
+          "roi": [
+            82,
+            402,
+            467,
+            915
+          ],
+          "reason": "experimental_mask_not_verified_presence_or_full_view",
+          "mask_pixels": 564,
+          "threshold": 0.5,
+          "model_sha256": "ca2c135ede7ee760ac205db0e404fb7246739d1741f8fb43b6296ef3a5c7cc26"
+        }
+      }
+    },
+    {
+      "sample_id": "fashionpedia-train2020-40276",
+      "expected": "non_pleated",
+      "positive": true,
+      "v1": {
+        "accepted": true,
+        "prediction": "pleated",
+        "region": {
+          "status": "provisional",
+          "roi": [
+            237,
+            54,
+            805,
+            988
+          ],
+          "reason": "experimental_mask_not_verified_presence_or_full_view",
+          "mask_pixels": 1221,
+          "threshold": 0.5,
+          "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+        }
+      },
+      "v2": {
+        "accepted": true,
+        "prediction": "non_pleated",
+        "region": {
+          "status": "provisional",
+          "roi": [
+            310,
+            109,
+            787,
+            988
+          ],
+          "reason": "experimental_mask_not_verified_presence_or_full_view",
+          "mask_pixels": 1031,
+          "threshold": 0.5,
+          "model_sha256": "f2f5f73d34cd99c3fb46502cb806ddbc347c6664e8ce24b8fe06a548c70090de"
+        }
+      },
+      "v3": {
+        "accepted": false,
+        "prediction": null,
+        "region": {
+          "status": "unavailable",
+          "roi": null,
+          "reason": "region_touches_frame_edge",
+          "model_sha256": "ca2c135ede7ee760ac205db0e404fb7246739d1741f8fb43b6296ef3a5c7cc26"
+        }
+      }
+    },
+    {
+      "sample_id": "fashionpedia-train2020-41170",
+      "expected": "non_pleated",
+      "positive": true,
+      "v1": {
+        "accepted": false,
+        "prediction": null,
+        "region": {
+          "status": "unavailable",
+          "roi": null,
+          "reason": "multiple_regions",
+          "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+        }
+      },
+      "v2": {
+        "accepted": true,
+        "prediction": "non_pleated",
+        "region": {
+          "status": "provisional",
+          "roi": [
+            231,
+            457,
+            475,
+            860
+          ],
+          "reason": "experimental_mask_not_verified_presence_or_full_view",
+          "mask_pixels": 337,
+          "threshold": 0.5,
+          "model_sha256": "f2f5f73d34cd99c3fb46502cb806ddbc347c6664e8ce24b8fe06a548c70090de"
+        }
+      },
+      "v3": {
+        "accepted": false,
+        "prediction": null,
+        "region": {
+          "status": "unavailable",
+          "roi": null,
+          "reason": "multiple_regions",
+          "model_sha256": "ca2c135ede7ee760ac205db0e404fb7246739d1741f8fb43b6296ef3a5c7cc26"
+        }
+      }
+    },
+    {
+      "sample_id": "fashionpedia-train2020-41961",
+      "expected": "pleated",
+      "positive": true,
+      "v1": {
+        "accepted": true,
+        "prediction": "pleated",
+        "region": {
+          "status": "provisional",
+          "roi": [
+            158,
+            365,
+            512,
+            659
+          ],
+          "reason": "experimental_mask_not_verified_presence_or_full_view",
+          "mask_pixels": 361,
+          "threshold": 0.5,
+          "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+        }
+      },
+      "v2": {
+        "accepted": true,
+        "prediction": "pleated",
+        "region": {
+          "status": "provisional",
+          "roi": [
+            194,
+            384,
+            488,
+            659
+          ],
+          "reason": "experimental_mask_not_verified_presence_or_full_view",
+          "mask_pixels": 303,
+          "threshold": 0.5,
+          "model_sha256": "f2f5f73d34cd99c3fb46502cb806ddbc347c6664e8ce24b8fe06a548c70090de"
+        }
+      },
+      "v3": {
+        "accepted": true,
+        "prediction": "pleated",
+        "region": {
+          "status": "provisional",
+          "roi": [
+            219,
+            402,
+            463,
+            695
+          ],
+          "reason": "experimental_mask_not_verified_presence_or_full_view",
+          "mask_pixels": 267,
+          "threshold": 0.5,
+          "model_sha256": "ca2c135ede7ee760ac205db0e404fb7246739d1741f8fb43b6296ef3a5c7cc26"
+        }
+      }
+    },
+    {
+      "sample_id": "fashionpedia-train2020-43005",
+      "expected": "non_pleated",
+      "positive": true,
+      "v1": {
+        "accepted": false,
+        "prediction": null,
+        "region": {
+          "status": "unavailable",
+          "roi": null,
+          "reason": "multiple_regions",
+          "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+        }
+      },
+      "v2": {
+        "accepted": false,
+        "prediction": null,
+        "region": {
+          "status": "unavailable",
+          "roi": null,
+          "reason": "region_touches_frame_edge",
+          "model_sha256": "f2f5f73d34cd99c3fb46502cb806ddbc347c6664e8ce24b8fe06a548c70090de"
+        }
+      },
+      "v3": {
+        "accepted": false,
+        "prediction": null,
+        "region": {
+          "status": "unavailable",
+          "roi": null,
+          "reason": "region_touches_frame_edge",
+          "model_sha256": "ca2c135ede7ee760ac205db0e404fb7246739d1741f8fb43b6296ef3a5c7cc26"
+        }
+      }
+    },
+    {
+      "sample_id": "fashionpedia-train2020-43076",
+      "expected": "non_pleated",
+      "positive": true,
+      "v1": {
+        "accepted": true,
+        "prediction": "non_pleated",
+        "region": {
+          "status": "provisional",
+          "roi": [
+            146,
+            365,
+            366,
+            732
+          ],
+          "reason": "experimental_mask_not_verified_presence_or_full_view",
+          "mask_pixels": 284,
+          "threshold": 0.5,
+          "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+        }
+      },
+      "v2": {
+        "accepted": true,
+        "prediction": "non_pleated",
+        "region": {
+          "status": "provisional",
+          "roi": [
+            158,
+            384,
+            354,
+            714
+          ],
+          "reason": "experimental_mask_not_verified_presence_or_full_view",
+          "mask_pixels": 231,
+          "threshold": 0.5,
+          "model_sha256": "f2f5f73d34cd99c3fb46502cb806ddbc347c6664e8ce24b8fe06a548c70090de"
+        }
+      },
+      "v3": {
+        "accepted": true,
+        "prediction": "non_pleated",
+        "region": {
+          "status": "provisional",
+          "roi": [
+            170,
+            402,
+            329,
+            695
+          ],
+          "reason": "experimental_mask_not_verified_presence_or_full_view",
+          "mask_pixels": 178,
+          "threshold": 0.5,
+          "model_sha256": "ca2c135ede7ee760ac205db0e404fb7246739d1741f8fb43b6296ef3a5c7cc26"
+        }
+      }
+    },
+    {
+      "sample_id": "fashionpedia-train2020-43360",
+      "expected": "non_pleated",
+      "positive": true,
+      "v1": {
+        "accepted": false,
+        "prediction": null,
+        "region": {
+          "status": "unavailable",
+          "roi": null,
+          "reason": "region_touches_frame_edge",
+          "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+        }
+      },
+      "v2": {
+        "accepted": false,
+        "prediction": null,
+        "region": {
+          "status": "unavailable",
+          "roi": null,
+          "reason": "region_touches_frame_edge",
+          "model_sha256": "f2f5f73d34cd99c3fb46502cb806ddbc347c6664e8ce24b8fe06a548c70090de"
+        }
+      },
+      "v3": {
+        "accepted": false,
+        "prediction": null,
+        "region": {
+          "status": "unavailable",
+          "roi": null,
+          "reason": "region_touches_frame_edge",
+          "model_sha256": "ca2c135ede7ee760ac205db0e404fb7246739d1741f8fb43b6296ef3a5c7cc26"
+        }
+      }
+    },
+    {
+      "sample_id": "fashionpedia-train2020-43394",
+      "expected": "non_pleated",
+      "positive": true,
+      "v1": {
+        "accepted": true,
+        "prediction": "non_pleated",
+        "region": {
+          "status": "provisional",
+          "roi": [
+            41,
+            457,
+            590,
+            896
+          ],
+          "reason": "experimental_mask_not_verified_presence_or_full_view",
+          "mask_pixels": 687,
+          "threshold": 0.5,
+          "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+        }
+      },
+      "v2": {
+        "accepted": true,
+        "prediction": "non_pleated",
+        "region": {
+          "status": "provisional",
+          "roi": [
+            68,
+            457,
+            563,
+            896
+          ],
+          "reason": "experimental_mask_not_verified_presence_or_full_view",
+          "mask_pixels": 591,
+          "threshold": 0.5,
+          "model_sha256": "f2f5f73d34cd99c3fb46502cb806ddbc347c6664e8ce24b8fe06a548c70090de"
+        }
+      },
+      "v3": {
+        "accepted": true,
+        "prediction": "non_pleated",
+        "region": {
+          "status": "provisional",
+          "roi": [
+            82,
+            475,
+            576,
+            915
+          ],
+          "reason": "experimental_mask_not_verified_presence_or_full_view",
+          "mask_pixels": 547,
+          "threshold": 0.5,
+          "model_sha256": "ca2c135ede7ee760ac205db0e404fb7246739d1741f8fb43b6296ef3a5c7cc26"
+        }
+      }
+    },
+    {
+      "sample_id": "fashionpedia-train2020-43660",
+      "expected": "non_pleated",
+      "positive": true,
+      "v1": {
+        "accepted": true,
+        "prediction": "non_pleated",
+        "region": {
+          "status": "provisional",
+          "roi": [
+            97,
+            475,
+            427,
+            896
+          ],
+          "reason": "experimental_mask_not_verified_presence_or_full_view",
+          "mask_pixels": 399,
+          "threshold": 0.5,
+          "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+        }
+      },
+      "v2": {
+        "accepted": true,
+        "prediction": "non_pleated",
+        "region": {
+          "status": "provisional",
+          "roi": [
+            146,
+            512,
+            366,
+            823
+          ],
+          "reason": "experimental_mask_not_verified_presence_or_full_view",
+          "mask_pixels": 149,
+          "threshold": 0.5,
+          "model_sha256": "f2f5f73d34cd99c3fb46502cb806ddbc347c6664e8ce24b8fe06a548c70090de"
+        }
+      },
+      "v3": {
+        "accepted": true,
+        "prediction": "non_pleated",
+        "region": {
+          "status": "provisional",
+          "roi": [
+            158,
+            530,
+            366,
+            842
+          ],
+          "reason": "experimental_mask_not_verified_presence_or_full_view",
+          "mask_pixels": 113,
+          "threshold": 0.5,
+          "model_sha256": "ca2c135ede7ee760ac205db0e404fb7246739d1741f8fb43b6296ef3a5c7cc26"
+        }
+      }
+    },
+    {
+      "sample_id": "fashionpedia-train2020-44234",
+      "expected": "non_pleated",
+      "positive": true,
+      "v1": {
+        "accepted": true,
+        "prediction": "non_pleated",
+        "region": {
+          "status": "provisional",
+          "roi": [
+            316,
+            438,
+            463,
+            714
+          ],
+          "reason": "experimental_mask_not_verified_presence_or_full_view",
+          "mask_pixels": 138,
+          "threshold": 0.5,
+          "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+        }
+      },
+      "v2": {
+        "accepted": true,
+        "prediction": "non_pleated",
+        "region": {
+          "status": "provisional",
+          "roi": [
+            328,
+            475,
+            451,
+            714
+          ],
+          "reason": "experimental_mask_not_verified_presence_or_full_view",
+          "mask_pixels": 105,
+          "threshold": 0.5,
+          "model_sha256": "f2f5f73d34cd99c3fb46502cb806ddbc347c6664e8ce24b8fe06a548c70090de"
+        }
+      },
+      "v3": {
+        "accepted": true,
+        "prediction": "non_pleated",
+        "region": {
+          "status": "provisional",
+          "roi": [
+            316,
+            475,
+            451,
+            695
+          ],
+          "reason": "experimental_mask_not_verified_presence_or_full_view",
+          "mask_pixels": 85,
+          "threshold": 0.5,
+          "model_sha256": "ca2c135ede7ee760ac205db0e404fb7246739d1741f8fb43b6296ef3a5c7cc26"
+        }
+      }
+    },
+    {
+      "sample_id": "fashionpedia-train2020-44450",
+      "expected": "non_pleated",
+      "positive": true,
+      "v1": {
+        "accepted": false,
+        "prediction": null,
+        "region": {
+          "status": "unavailable",
+          "roi": null,
+          "reason": "multiple_regions",
+          "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+        }
+      },
+      "v2": {
+        "accepted": true,
+        "prediction": "non_pleated",
+        "region": {
+          "status": "provisional",
+          "roi": [
+            219,
+            457,
+            402,
+            732
+          ],
+          "reason": "experimental_mask_not_verified_presence_or_full_view",
+          "mask_pixels": 179,
+          "threshold": 0.5,
+          "model_sha256": "f2f5f73d34cd99c3fb46502cb806ddbc347c6664e8ce24b8fe06a548c70090de"
+        }
+      },
+      "v3": {
+        "accepted": false,
+        "prediction": null,
+        "region": {
+          "status": "unavailable",
+          "roi": null,
+          "reason": "multiple_regions",
+          "model_sha256": "ca2c135ede7ee760ac205db0e404fb7246739d1741f8fb43b6296ef3a5c7cc26"
+        }
+      }
+    },
+    {
+      "sample_id": "fashionpedia-train2020-44571",
+      "expected": "pleated",
+      "positive": true,
+      "v1": {
+        "accepted": true,
+        "prediction": "non_pleated",
+        "region": {
+          "status": "provisional",
+          "roi": [
+            207,
+            438,
+            427,
+            842
+          ],
+          "reason": "experimental_mask_not_verified_presence_or_full_view",
+          "mask_pixels": 310,
+          "threshold": 0.5,
+          "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+        }
+      },
+      "v2": {
+        "accepted": true,
+        "prediction": "non_pleated",
+        "region": {
+          "status": "provisional",
+          "roi": [
+            219,
+            457,
+            415,
+            842
+          ],
+          "reason": "experimental_mask_not_verified_presence_or_full_view",
+          "mask_pixels": 237,
+          "threshold": 0.5,
+          "model_sha256": "f2f5f73d34cd99c3fb46502cb806ddbc347c6664e8ce24b8fe06a548c70090de"
+        }
+      },
+      "v3": {
+        "accepted": true,
+        "prediction": "non_pleated",
+        "region": {
+          "status": "provisional",
+          "roi": [
+            219,
+            475,
+            415,
+            842
+          ],
+          "reason": "experimental_mask_not_verified_presence_or_full_view",
+          "mask_pixels": 213,
+          "threshold": 0.5,
+          "model_sha256": "ca2c135ede7ee760ac205db0e404fb7246739d1741f8fb43b6296ef3a5c7cc26"
+        }
+      }
+    },
+    {
+      "sample_id": "fashionpedia-train2020-44832",
+      "expected": "non_pleated",
+      "positive": true,
+      "v1": {
+        "accepted": true,
+        "prediction": "non_pleated",
+        "region": {
+          "status": "provisional",
+          "roi": [
+            237,
+            457,
+            805,
+            988
+          ],
+          "reason": "experimental_mask_not_verified_presence_or_full_view",
+          "mask_pixels": 527,
+          "threshold": 0.5,
+          "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+        }
+      },
+      "v2": {
+        "accepted": true,
+        "prediction": "non_pleated",
+        "region": {
+          "status": "provisional",
+          "roi": [
+            329,
+            640,
+            714,
+            951
+          ],
+          "reason": "experimental_mask_not_verified_presence_or_full_view",
+          "mask_pixels": 226,
+          "threshold": 0.5,
+          "model_sha256": "f2f5f73d34cd99c3fb46502cb806ddbc347c6664e8ce24b8fe06a548c70090de"
+        }
+      },
+      "v3": {
+        "accepted": false,
+        "prediction": null,
+        "region": {
+          "status": "unavailable",
+          "roi": null,
+          "reason": "region_touches_frame_edge",
+          "model_sha256": "ca2c135ede7ee760ac205db0e404fb7246739d1741f8fb43b6296ef3a5c7cc26"
+        }
+      }
+    },
+    {
+      "sample_id": "fashionpedia-train2020-45807",
+      "expected": "non_pleated",
+      "positive": true,
+      "v1": {
+        "accepted": false,
+        "prediction": null,
+        "region": {
+          "status": "unavailable",
+          "roi": null,
+          "reason": "region_touches_frame_edge",
+          "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+        }
+      },
+      "v2": {
+        "accepted": false,
+        "prediction": null,
+        "region": {
+          "status": "unavailable",
+          "roi": null,
+          "reason": "region_touches_frame_edge",
+          "model_sha256": "f2f5f73d34cd99c3fb46502cb806ddbc347c6664e8ce24b8fe06a548c70090de"
+        }
+      },
+      "v3": {
+        "accepted": false,
+        "prediction": null,
+        "region": {
+          "status": "unavailable",
+          "roi": null,
+          "reason": "region_touches_frame_edge",
+          "model_sha256": "ca2c135ede7ee760ac205db0e404fb7246739d1741f8fb43b6296ef3a5c7cc26"
+        }
+      }
+    },
+    {
+      "sample_id": "fashionpedia-train2020-45873",
+      "expected": "pleated",
+      "positive": true,
+      "v1": {
+        "accepted": true,
+        "prediction": "non_pleated",
+        "region": {
+          "status": "provisional",
+          "roi": [
+            146,
+            603,
+            488,
+            951
+          ],
+          "reason": "experimental_mask_not_verified_presence_or_full_view",
+          "mask_pixels": 411,
+          "threshold": 0.5,
+          "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+        }
+      },
+      "v2": {
+        "accepted": true,
+        "prediction": "non_pleated",
+        "region": {
+          "status": "provisional",
+          "roi": [
+            170,
+            640,
+            464,
+            933
+          ],
+          "reason": "experimental_mask_not_verified_presence_or_full_view",
+          "mask_pixels": 327,
+          "threshold": 0.5,
+          "model_sha256": "f2f5f73d34cd99c3fb46502cb806ddbc347c6664e8ce24b8fe06a548c70090de"
+        }
+      },
+      "v3": {
+        "accepted": true,
+        "prediction": "non_pleated",
+        "region": {
+          "status": "provisional",
+          "roi": [
+            170,
+            640,
+            464,
+            915
+          ],
+          "reason": "experimental_mask_not_verified_presence_or_full_view",
+          "mask_pixels": 286,
+          "threshold": 0.5,
+          "model_sha256": "ca2c135ede7ee760ac205db0e404fb7246739d1741f8fb43b6296ef3a5c7cc26"
+        }
+      }
+    },
+    {
+      "sample_id": "fashionpedia-train2020-4713",
+      "expected": "non_pleated",
+      "positive": true,
+      "v1": {
+        "accepted": true,
+        "prediction": "non_pleated",
+        "region": {
+          "status": "provisional",
+          "roi": [
+            207,
+            310,
+            512,
+            586
+          ],
+          "reason": "experimental_mask_not_verified_presence_or_full_view",
+          "mask_pixels": 301,
+          "threshold": 0.5,
+          "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+        }
+      },
+      "v2": {
+        "accepted": true,
+        "prediction": "non_pleated",
+        "region": {
+          "status": "provisional",
+          "roi": [
+            219,
+            310,
+            500,
+            567
+          ],
+          "reason": "experimental_mask_not_verified_presence_or_full_view",
+          "mask_pixels": 255,
+          "threshold": 0.5,
+          "model_sha256": "f2f5f73d34cd99c3fb46502cb806ddbc347c6664e8ce24b8fe06a548c70090de"
+        }
+      },
+      "v3": {
+        "accepted": true,
+        "prediction": "pleated",
+        "region": {
+          "status": "provisional",
+          "roi": [
+            219,
+            329,
+            512,
+            567
+          ],
+          "reason": "experimental_mask_not_verified_presence_or_full_view",
+          "mask_pixels": 231,
+          "threshold": 0.5,
+          "model_sha256": "ca2c135ede7ee760ac205db0e404fb7246739d1741f8fb43b6296ef3a5c7cc26"
+        }
+      }
+    },
+    {
+      "sample_id": "fashionpedia-train2020-47349",
+      "expected": "pleated",
+      "positive": true,
+      "v1": {
+        "accepted": true,
+        "prediction": "pleated",
+        "region": {
+          "status": "provisional",
+          "roi": [
+            237,
+            201,
+            805,
+            988
+          ],
+          "reason": "experimental_mask_not_verified_presence_or_full_view",
+          "mask_pixels": 1033,
+          "threshold": 0.5,
+          "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+        }
+      },
+      "v2": {
+        "accepted": true,
+        "prediction": "pleated",
+        "region": {
+          "status": "provisional",
+          "roi": [
+            256,
+            219,
+            787,
+            970
+          ],
+          "reason": "experimental_mask_not_verified_presence_or_full_view",
+          "mask_pixels": 935,
+          "threshold": 0.5,
+          "model_sha256": "f2f5f73d34cd99c3fb46502cb806ddbc347c6664e8ce24b8fe06a548c70090de"
+        }
+      },
+      "v3": {
+        "accepted": true,
+        "prediction": "pleated",
+        "region": {
+          "status": "provisional",
+          "roi": [
+            256,
+            237,
+            768,
+            951
+          ],
+          "reason": "experimental_mask_not_verified_presence_or_full_view",
+          "mask_pixels": 834,
+          "threshold": 0.5,
+          "model_sha256": "ca2c135ede7ee760ac205db0e404fb7246739d1741f8fb43b6296ef3a5c7cc26"
+        }
+      }
+    },
+    {
+      "sample_id": "fashionpedia-train2020-47376",
+      "expected": "pleated",
+      "positive": true,
+      "v1": {
+        "accepted": true,
+        "prediction": "pleated",
+        "region": {
+          "status": "provisional",
+          "roi": [
+            237,
+            73,
+            842,
+            988
+          ],
+          "reason": "experimental_mask_not_verified_presence_or_full_view",
+          "mask_pixels": 1329,
+          "threshold": 0.5,
+          "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+        }
+      },
+      "v2": {
+        "accepted": true,
+        "prediction": "pleated",
+        "region": {
+          "status": "provisional",
+          "roi": [
+            256,
+            73,
+            823,
+            970
+          ],
+          "reason": "experimental_mask_not_verified_presence_or_full_view",
+          "mask_pixels": 1213,
+          "threshold": 0.5,
+          "model_sha256": "f2f5f73d34cd99c3fb46502cb806ddbc347c6664e8ce24b8fe06a548c70090de"
+        }
+      },
+      "v3": {
+        "accepted": false,
+        "prediction": null,
+        "region": {
+          "status": "unavailable",
+          "roi": null,
+          "reason": "region_touches_frame_edge",
+          "model_sha256": "ca2c135ede7ee760ac205db0e404fb7246739d1741f8fb43b6296ef3a5c7cc26"
+        }
+      }
+    },
+    {
+      "sample_id": "fashionpedia-train2020-47497",
+      "expected": "non_pleated",
+      "positive": true,
+      "v1": {
+        "accepted": false,
+        "prediction": null,
+        "region": {
+          "status": "unavailable",
+          "roi": null,
+          "reason": "region_touches_frame_edge",
+          "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+        }
+      },
+      "v2": {
+        "accepted": false,
+        "prediction": null,
+        "region": {
+          "status": "unavailable",
+          "roi": null,
+          "reason": "region_touches_frame_edge",
+          "model_sha256": "f2f5f73d34cd99c3fb46502cb806ddbc347c6664e8ce24b8fe06a548c70090de"
+        }
+      },
+      "v3": {
+        "accepted": false,
+        "prediction": null,
+        "region": {
+          "status": "unavailable",
+          "roi": null,
+          "reason": "region_touches_frame_edge",
+          "model_sha256": "ca2c135ede7ee760ac205db0e404fb7246739d1741f8fb43b6296ef3a5c7cc26"
+        }
+      }
+    },
+    {
+      "sample_id": "fashionpedia-train2020-48845",
+      "expected": "non_pleated",
+      "positive": true,
+      "v1": {
+        "accepted": false,
+        "prediction": null,
+        "region": {
+          "status": "unavailable",
+          "roi": null,
+          "reason": "multiple_regions",
+          "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+        }
+      },
+      "v2": {
+        "accepted": false,
+        "prediction": null,
+        "region": {
+          "status": "unavailable",
+          "roi": null,
+          "reason": "region_touches_frame_edge",
+          "model_sha256": "f2f5f73d34cd99c3fb46502cb806ddbc347c6664e8ce24b8fe06a548c70090de"
+        }
+      },
+      "v3": {
+        "accepted": false,
+        "prediction": null,
+        "region": {
+          "status": "unavailable",
+          "roi": null,
+          "reason": "region_touches_frame_edge",
+          "model_sha256": "ca2c135ede7ee760ac205db0e404fb7246739d1741f8fb43b6296ef3a5c7cc26"
+        }
+      }
+    },
+    {
+      "sample_id": "fashionpedia-train2020-4925",
+      "expected": "non_pleated",
+      "positive": true,
+      "v1": {
+        "accepted": true,
+        "prediction": "non_pleated",
+        "region": {
+          "status": "provisional",
+          "roi": [
+            158,
+            402,
+            374,
+            659
+          ],
+          "reason": "experimental_mask_not_verified_presence_or_full_view",
+          "mask_pixels": 234,
+          "threshold": 0.5,
+          "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+        }
+      },
+      "v2": {
+        "accepted": true,
+        "prediction": "non_pleated",
+        "region": {
+          "status": "provisional",
+          "roi": [
+            169,
+            420,
+            374,
+            640
+          ],
+          "reason": "experimental_mask_not_verified_presence_or_full_view",
+          "mask_pixels": 194,
+          "threshold": 0.5,
+          "model_sha256": "f2f5f73d34cd99c3fb46502cb806ddbc347c6664e8ce24b8fe06a548c70090de"
+        }
+      },
+      "v3": {
+        "accepted": true,
+        "prediction": "non_pleated",
+        "region": {
+          "status": "provisional",
+          "roi": [
+            158,
+            402,
+            374,
+            640
+          ],
+          "reason": "experimental_mask_not_verified_presence_or_full_view",
+          "mask_pixels": 178,
+          "threshold": 0.5,
+          "model_sha256": "ca2c135ede7ee760ac205db0e404fb7246739d1741f8fb43b6296ef3a5c7cc26"
+        }
+      }
+    },
+    {
+      "sample_id": "fashionpedia-train2020-49537",
+      "expected": "pleated",
+      "positive": true,
+      "v1": {
+        "accepted": true,
+        "prediction": "non_pleated",
+        "region": {
+          "status": "provisional",
+          "roi": [
+            206,
+            420,
+            463,
+            933
+          ],
+          "reason": "experimental_mask_not_verified_presence_or_full_view",
+          "mask_pixels": 274,
+          "threshold": 0.5,
+          "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+        }
+      },
+      "v2": {
+        "accepted": true,
+        "prediction": "pleated",
+        "region": {
+          "status": "provisional",
+          "roi": [
+            218,
+            438,
+            438,
+            659
+          ],
+          "reason": "experimental_mask_not_verified_presence_or_full_view",
+          "mask_pixels": 192,
+          "threshold": 0.5,
+          "model_sha256": "f2f5f73d34cd99c3fb46502cb806ddbc347c6664e8ce24b8fe06a548c70090de"
+        }
+      },
+      "v3": {
+        "accepted": true,
+        "prediction": "pleated",
+        "region": {
+          "status": "provisional",
+          "roi": [
+            218,
+            420,
+            426,
+            677
+          ],
+          "reason": "experimental_mask_not_verified_presence_or_full_view",
+          "mask_pixels": 171,
+          "threshold": 0.5,
+          "model_sha256": "ca2c135ede7ee760ac205db0e404fb7246739d1741f8fb43b6296ef3a5c7cc26"
+        }
+      }
+    },
+    {
+      "sample_id": "fashionpedia-train2020-49555",
+      "expected": "non_pleated",
+      "positive": true,
+      "v1": {
+        "accepted": true,
+        "prediction": "non_pleated",
+        "region": {
+          "status": "provisional",
+          "roi": [
+            310,
+            438,
+            695,
+            823
+          ],
+          "reason": "experimental_mask_not_verified_presence_or_full_view",
+          "mask_pixels": 360,
+          "threshold": 0.5,
+          "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+        }
+      },
+      "v2": {
+        "accepted": true,
+        "prediction": "non_pleated",
+        "region": {
+          "status": "provisional",
+          "roi": [
+            329,
+            438,
+            659,
+            805
+          ],
+          "reason": "experimental_mask_not_verified_presence_or_full_view",
+          "mask_pixels": 272,
+          "threshold": 0.5,
+          "model_sha256": "f2f5f73d34cd99c3fb46502cb806ddbc347c6664e8ce24b8fe06a548c70090de"
+        }
+      },
+      "v3": {
+        "accepted": true,
+        "prediction": "non_pleated",
+        "region": {
+          "status": "provisional",
+          "roi": [
+            329,
+            457,
+            659,
+            842
+          ],
+          "reason": "experimental_mask_not_verified_presence_or_full_view",
+          "mask_pixels": 265,
+          "threshold": 0.5,
+          "model_sha256": "ca2c135ede7ee760ac205db0e404fb7246739d1741f8fb43b6296ef3a5c7cc26"
+        }
+      }
+    },
+    {
+      "sample_id": "fashionpedia-train2020-49867",
+      "expected": "non_pleated",
+      "positive": true,
+      "v1": {
+        "accepted": false,
+        "prediction": null,
+        "region": {
+          "status": "unavailable",
+          "roi": null,
+          "reason": "region_touches_frame_edge",
+          "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+        }
+      },
+      "v2": {
+        "accepted": false,
+        "prediction": null,
+        "region": {
+          "status": "unavailable",
+          "roi": null,
+          "reason": "multiple_regions",
+          "model_sha256": "f2f5f73d34cd99c3fb46502cb806ddbc347c6664e8ce24b8fe06a548c70090de"
+        }
+      },
+      "v3": {
+        "accepted": false,
+        "prediction": null,
+        "region": {
+          "status": "unavailable",
+          "roi": null,
+          "reason": "multiple_regions",
+          "model_sha256": "ca2c135ede7ee760ac205db0e404fb7246739d1741f8fb43b6296ef3a5c7cc26"
+        }
+      }
+    },
+    {
+      "sample_id": "fashionpedia-train2020-50372",
+      "expected": "pleated",
+      "positive": true,
+      "v1": {
+        "accepted": false,
+        "prediction": null,
+        "region": {
+          "status": "unavailable",
+          "roi": null,
+          "reason": "multiple_regions",
+          "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+        }
+      },
+      "v2": {
+        "accepted": false,
+        "prediction": null,
+        "region": {
+          "status": "unavailable",
+          "roi": null,
+          "reason": "region_touches_frame_edge",
+          "model_sha256": "f2f5f73d34cd99c3fb46502cb806ddbc347c6664e8ce24b8fe06a548c70090de"
+        }
+      },
+      "v3": {
+        "accepted": false,
+        "prediction": null,
+        "region": {
+          "status": "unavailable",
+          "roi": null,
+          "reason": "region_touches_frame_edge",
+          "model_sha256": "ca2c135ede7ee760ac205db0e404fb7246739d1741f8fb43b6296ef3a5c7cc26"
+        }
+      }
+    },
+    {
+      "sample_id": "fashionpedia-train2020-5127",
+      "expected": "pleated",
+      "positive": true,
+      "v1": {
+        "accepted": false,
+        "prediction": null,
+        "region": {
+          "status": "unavailable",
+          "roi": null,
+          "reason": "multiple_regions",
+          "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+        }
+      },
+      "v2": {
+        "accepted": true,
+        "prediction": "pleated",
+        "region": {
+          "status": "provisional",
+          "roi": [
+            189,
+            365,
+            480,
+            622
+          ],
+          "reason": "experimental_mask_not_verified_presence_or_full_view",
+          "mask_pixels": 232,
+          "threshold": 0.5,
+          "model_sha256": "f2f5f73d34cd99c3fb46502cb806ddbc347c6664e8ce24b8fe06a548c70090de"
+        }
+      },
+      "v3": {
+        "accepted": true,
+        "prediction": "non_pleated",
+        "region": {
+          "status": "provisional",
+          "roi": [
+            202,
+            384,
+            480,
+            622
+          ],
+          "reason": "experimental_mask_not_verified_presence_or_full_view",
+          "mask_pixels": 220,
+          "threshold": 0.5,
+          "model_sha256": "ca2c135ede7ee760ac205db0e404fb7246739d1741f8fb43b6296ef3a5c7cc26"
+        }
+      }
+    },
+    {
+      "sample_id": "fashionpedia-train2020-5360",
+      "expected": "non_pleated",
+      "positive": true,
+      "v1": {
+        "accepted": false,
+        "prediction": null,
+        "region": {
+          "status": "unavailable",
+          "roi": null,
+          "reason": "multiple_regions",
+          "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+        }
+      },
+      "v2": {
+        "accepted": true,
+        "prediction": "non_pleated",
+        "region": {
+          "status": "provisional",
+          "roi": [
+            280,
+            420,
+            623,
+            714
+          ],
+          "reason": "experimental_mask_not_verified_presence_or_full_view",
+          "mask_pixels": 274,
+          "threshold": 0.5,
+          "model_sha256": "f2f5f73d34cd99c3fb46502cb806ddbc347c6664e8ce24b8fe06a548c70090de"
+        }
+      },
+      "v3": {
+        "accepted": true,
+        "prediction": "non_pleated",
+        "region": {
+          "status": "provisional",
+          "roi": [
+            268,
+            402,
+            574,
+            714
+          ],
+          "reason": "experimental_mask_not_verified_presence_or_full_view",
+          "mask_pixels": 265,
+          "threshold": 0.5,
+          "model_sha256": "ca2c135ede7ee760ac205db0e404fb7246739d1741f8fb43b6296ef3a5c7cc26"
+        }
+      }
+    },
+    {
+      "sample_id": "fashionpedia-train2020-5478",
+      "expected": "non_pleated",
+      "positive": true,
+      "v1": {
+        "accepted": true,
+        "prediction": "non_pleated",
+        "region": {
+          "status": "provisional",
+          "roi": [
+            60,
+            384,
+            415,
+            714
+          ],
+          "reason": "experimental_mask_not_verified_presence_or_full_view",
+          "mask_pixels": 232,
+          "threshold": 0.5,
+          "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+        }
+      },
+      "v2": {
+        "accepted": true,
+        "prediction": "non_pleated",
+        "region": {
+          "status": "provisional",
+          "roi": [
+            243,
+            402,
+            403,
+            586
+          ],
+          "reason": "experimental_mask_not_verified_presence_or_full_view",
+          "mask_pixels": 107,
+          "threshold": 0.5,
+          "model_sha256": "f2f5f73d34cd99c3fb46502cb806ddbc347c6664e8ce24b8fe06a548c70090de"
+        }
+      },
+      "v3": {
+        "accepted": false,
+        "prediction": null,
+        "region": {
+          "status": "unavailable",
+          "roi": null,
+          "reason": "multiple_regions",
+          "model_sha256": "ca2c135ede7ee760ac205db0e404fb7246739d1741f8fb43b6296ef3a5c7cc26"
+        }
+      }
+    },
+    {
+      "sample_id": "fashionpedia-train2020-5573",
+      "expected": "pleated",
+      "positive": true,
+      "v1": {
+        "accepted": true,
+        "prediction": "non_pleated",
+        "region": {
+          "status": "provisional",
+          "roi": [
+            170,
+            329,
+            646,
+            933
+          ],
+          "reason": "experimental_mask_not_verified_presence_or_full_view",
+          "mask_pixels": 733,
+          "threshold": 0.5,
+          "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+        }
+      },
+      "v2": {
+        "accepted": true,
+        "prediction": "non_pleated",
+        "region": {
+          "status": "provisional",
+          "roi": [
+            292,
+            493,
+            634,
+            915
+          ],
+          "reason": "experimental_mask_not_verified_presence_or_full_view",
+          "mask_pixels": 429,
+          "threshold": 0.5,
+          "model_sha256": "f2f5f73d34cd99c3fb46502cb806ddbc347c6664e8ce24b8fe06a548c70090de"
+        }
+      },
+      "v3": {
+        "accepted": true,
+        "prediction": "non_pleated",
+        "region": {
+          "status": "provisional",
+          "roi": [
+            182,
+            329,
+            622,
+            915
+          ],
+          "reason": "experimental_mask_not_verified_presence_or_full_view",
+          "mask_pixels": 587,
+          "threshold": 0.5,
+          "model_sha256": "ca2c135ede7ee760ac205db0e404fb7246739d1741f8fb43b6296ef3a5c7cc26"
+        }
+      }
+    },
+    {
+      "sample_id": "fashionpedia-train2020-5601",
+      "expected": "non_pleated",
+      "positive": true,
+      "v1": {
+        "accepted": true,
+        "prediction": "non_pleated",
+        "region": {
+          "status": "provisional",
+          "roi": [
+            117,
+            365,
+            673,
+            896
+          ],
+          "reason": "experimental_mask_not_verified_presence_or_full_view",
+          "mask_pixels": 609,
+          "threshold": 0.5,
+          "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+        }
+      },
+      "v2": {
+        "accepted": true,
+        "prediction": "non_pleated",
+        "region": {
+          "status": "provisional",
+          "roi": [
+            263,
+            420,
+            644,
+            878
+          ],
+          "reason": "experimental_mask_not_verified_presence_or_full_view",
+          "mask_pixels": 449,
+          "threshold": 0.5,
+          "model_sha256": "f2f5f73d34cd99c3fb46502cb806ddbc347c6664e8ce24b8fe06a548c70090de"
+        }
+      },
+      "v3": {
+        "accepted": true,
+        "prediction": "non_pleated",
+        "region": {
+          "status": "provisional",
+          "roi": [
+            248,
+            402,
+            629,
+            860
+          ],
+          "reason": "experimental_mask_not_verified_presence_or_full_view",
+          "mask_pixels": 439,
+          "threshold": 0.5,
+          "model_sha256": "ca2c135ede7ee760ac205db0e404fb7246739d1741f8fb43b6296ef3a5c7cc26"
+        }
+      }
+    },
+    {
+      "sample_id": "fashionpedia-train2020-6020",
+      "expected": "non_pleated",
+      "positive": true,
+      "v1": {
+        "accepted": true,
+        "prediction": "non_pleated",
+        "region": {
+          "status": "provisional",
+          "roi": [
+            230,
+            384,
+            486,
+            659
+          ],
+          "reason": "experimental_mask_not_verified_presence_or_full_view",
+          "mask_pixels": 266,
+          "threshold": 0.5,
+          "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+        }
+      },
+      "v2": {
+        "accepted": true,
+        "prediction": "non_pleated",
+        "region": {
+          "status": "provisional",
+          "roi": [
+            230,
+            420,
+            474,
+            659
+          ],
+          "reason": "experimental_mask_not_verified_presence_or_full_view",
+          "mask_pixels": 208,
+          "threshold": 0.5,
+          "model_sha256": "f2f5f73d34cd99c3fb46502cb806ddbc347c6664e8ce24b8fe06a548c70090de"
+        }
+      },
+      "v3": {
+        "accepted": true,
+        "prediction": "non_pleated",
+        "region": {
+          "status": "provisional",
+          "roi": [
+            218,
+            402,
+            462,
+            695
+          ],
+          "reason": "experimental_mask_not_verified_presence_or_full_view",
+          "mask_pixels": 227,
+          "threshold": 0.5,
+          "model_sha256": "ca2c135ede7ee760ac205db0e404fb7246739d1741f8fb43b6296ef3a5c7cc26"
+        }
+      }
+    },
+    {
+      "sample_id": "fashionpedia-train2020-6021",
+      "expected": "non_pleated",
+      "positive": true,
+      "v1": {
+        "accepted": true,
+        "prediction": "pleated",
+        "region": {
+          "status": "provisional",
+          "roi": [
+            158,
+            493,
+            513,
+            970
+          ],
+          "reason": "experimental_mask_not_verified_presence_or_full_view",
+          "mask_pixels": 589,
+          "threshold": 0.5,
+          "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+        }
+      },
+      "v2": {
+        "accepted": true,
+        "prediction": "pleated",
+        "region": {
+          "status": "provisional",
+          "roi": [
+            207,
+            493,
+            476,
+            951
+          ],
+          "reason": "experimental_mask_not_verified_presence_or_full_view",
+          "mask_pixels": 451,
+          "threshold": 0.5,
+          "model_sha256": "f2f5f73d34cd99c3fb46502cb806ddbc347c6664e8ce24b8fe06a548c70090de"
+        }
+      },
+      "v3": {
+        "accepted": true,
+        "prediction": "non_pleated",
+        "region": {
+          "status": "provisional",
+          "roi": [
+            207,
+            512,
+            476,
+            933
+          ],
+          "reason": "experimental_mask_not_verified_presence_or_full_view",
+          "mask_pixels": 409,
+          "threshold": 0.5,
+          "model_sha256": "ca2c135ede7ee760ac205db0e404fb7246739d1741f8fb43b6296ef3a5c7cc26"
+        }
+      }
+    },
+    {
+      "sample_id": "fashionpedia-train2020-6359",
+      "expected": "non_pleated",
+      "positive": true,
+      "v1": {
+        "accepted": false,
+        "prediction": null,
+        "region": {
+          "status": "unavailable",
+          "roi": null,
+          "reason": "multiple_regions",
+          "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+        }
+      },
+      "v2": {
+        "accepted": false,
+        "prediction": null,
+        "region": {
+          "status": "unavailable",
+          "roi": null,
+          "reason": "multiple_regions",
+          "model_sha256": "f2f5f73d34cd99c3fb46502cb806ddbc347c6664e8ce24b8fe06a548c70090de"
+        }
+      },
+      "v3": {
+        "accepted": false,
+        "prediction": null,
+        "region": {
+          "status": "unavailable",
+          "roi": null,
+          "reason": "multiple_regions",
+          "model_sha256": "ca2c135ede7ee760ac205db0e404fb7246739d1741f8fb43b6296ef3a5c7cc26"
+        }
+      }
+    },
+    {
+      "sample_id": "fashionpedia-train2020-6986",
+      "expected": "non_pleated",
+      "positive": true,
+      "v1": {
+        "accepted": false,
+        "prediction": null,
+        "region": {
+          "status": "unavailable",
+          "roi": null,
+          "reason": "region_touches_frame_edge",
+          "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+        }
+      },
+      "v2": {
+        "accepted": false,
+        "prediction": null,
+        "region": {
+          "status": "unavailable",
+          "roi": null,
+          "reason": "region_touches_frame_edge",
+          "model_sha256": "f2f5f73d34cd99c3fb46502cb806ddbc347c6664e8ce24b8fe06a548c70090de"
+        }
+      },
+      "v3": {
+        "accepted": false,
+        "prediction": null,
+        "region": {
+          "status": "unavailable",
+          "roi": null,
+          "reason": "region_touches_frame_edge",
+          "model_sha256": "ca2c135ede7ee760ac205db0e404fb7246739d1741f8fb43b6296ef3a5c7cc26"
+        }
+      }
+    },
+    {
+      "sample_id": "fashionpedia-train2020-830",
+      "expected": "non_pleated",
+      "positive": true,
+      "v1": {
+        "accepted": true,
+        "prediction": "non_pleated",
+        "region": {
+          "status": "provisional",
+          "roi": [
+            243,
+            347,
+            438,
+            677
+          ],
+          "reason": "experimental_mask_not_verified_presence_or_full_view",
+          "mask_pixels": 245,
+          "threshold": 0.5,
+          "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+        }
+      },
+      "v2": {
+        "accepted": true,
+        "prediction": "non_pleated",
+        "region": {
+          "status": "provisional",
+          "roi": [
+            255,
+            347,
+            426,
+            659
+          ],
+          "reason": "experimental_mask_not_verified_presence_or_full_view",
+          "mask_pixels": 214,
+          "threshold": 0.5,
+          "model_sha256": "f2f5f73d34cd99c3fb46502cb806ddbc347c6664e8ce24b8fe06a548c70090de"
+        }
+      },
+      "v3": {
+        "accepted": true,
+        "prediction": "non_pleated",
+        "region": {
+          "status": "provisional",
+          "roi": [
+            255,
+            329,
+            426,
+            695
+          ],
+          "reason": "experimental_mask_not_verified_presence_or_full_view",
+          "mask_pixels": 222,
+          "threshold": 0.5,
+          "model_sha256": "ca2c135ede7ee760ac205db0e404fb7246739d1741f8fb43b6296ef3a5c7cc26"
+        }
+      }
+    },
+    {
+      "sample_id": "fashionpedia-train2020-8732",
+      "expected": "pleated",
+      "positive": true,
+      "v1": {
+        "accepted": false,
+        "prediction": null,
+        "region": {
+          "status": "unavailable",
+          "roi": null,
+          "reason": "multiple_regions",
+          "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+        }
+      },
+      "v2": {
+        "accepted": true,
+        "prediction": "pleated",
+        "region": {
+          "status": "provisional",
+          "roi": [
+            231,
+            475,
+            450,
+            787
+          ],
+          "reason": "experimental_mask_not_verified_presence_or_full_view",
+          "mask_pixels": 250,
+          "threshold": 0.5,
+          "model_sha256": "f2f5f73d34cd99c3fb46502cb806ddbc347c6664e8ce24b8fe06a548c70090de"
+        }
+      },
+      "v3": {
+        "accepted": true,
+        "prediction": "pleated",
+        "region": {
+          "status": "provisional",
+          "roi": [
+            218,
+            475,
+            438,
+            768
+          ],
+          "reason": "experimental_mask_not_verified_presence_or_full_view",
+          "mask_pixels": 204,
+          "threshold": 0.5,
+          "model_sha256": "ca2c135ede7ee760ac205db0e404fb7246739d1741f8fb43b6296ef3a5c7cc26"
+        }
+      }
+    },
+    {
+      "sample_id": "fashionpedia-train2020-8880",
+      "expected": "non_pleated",
+      "positive": true,
+      "v1": {
+        "accepted": false,
+        "prediction": null,
+        "region": {
+          "status": "unavailable",
+          "roi": null,
+          "reason": "multiple_regions",
+          "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+        }
+      },
+      "v2": {
+        "accepted": false,
+        "prediction": null,
+        "region": {
+          "status": "unavailable",
+          "roi": null,
+          "reason": "multiple_regions",
+          "model_sha256": "f2f5f73d34cd99c3fb46502cb806ddbc347c6664e8ce24b8fe06a548c70090de"
+        }
+      },
+      "v3": {
+        "accepted": false,
+        "prediction": null,
+        "region": {
+          "status": "unavailable",
+          "roi": null,
+          "reason": "multiple_regions",
+          "model_sha256": "ca2c135ede7ee760ac205db0e404fb7246739d1741f8fb43b6296ef3a5c7cc26"
+        }
+      }
+    },
+    {
+      "sample_id": "fashionpedia-train2020-9473",
+      "expected": "non_pleated",
+      "positive": true,
+      "v1": {
+        "accepted": false,
+        "prediction": null,
+        "region": {
+          "status": "unavailable",
+          "roi": null,
+          "reason": "multiple_regions",
+          "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+        }
+      },
+      "v2": {
+        "accepted": false,
+        "prediction": null,
+        "region": {
+          "status": "unavailable",
+          "roi": null,
+          "reason": "multiple_regions",
+          "model_sha256": "f2f5f73d34cd99c3fb46502cb806ddbc347c6664e8ce24b8fe06a548c70090de"
+        }
+      },
+      "v3": {
+        "accepted": true,
+        "prediction": "non_pleated",
+        "region": {
+          "status": "provisional",
+          "roi": [
+            411,
+            438,
+            631,
+            768
+          ],
+          "reason": "experimental_mask_not_verified_presence_or_full_view",
+          "mask_pixels": 217,
+          "threshold": 0.5,
+          "model_sha256": "ca2c135ede7ee760ac205db0e404fb7246739d1741f8fb43b6296ef3a5c7cc26"
+        }
+      }
+    },
+    {
+      "sample_id": "fashionpedia-train2020-9732",
+      "expected": "pleated",
+      "positive": true,
+      "v1": {
+        "accepted": false,
+        "prediction": null,
+        "region": {
+          "status": "unavailable",
+          "roi": null,
+          "reason": "multiple_regions",
+          "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+        }
+      },
+      "v2": {
+        "accepted": true,
+        "prediction": "non_pleated",
+        "region": {
+          "status": "provisional",
+          "roi": [
+            182,
+            340,
+            494,
+            535
+          ],
+          "reason": "experimental_mask_not_verified_presence_or_full_view",
+          "mask_pixels": 154,
+          "threshold": 0.5,
+          "model_sha256": "f2f5f73d34cd99c3fb46502cb806ddbc347c6664e8ce24b8fe06a548c70090de"
+        }
+      },
+      "v3": {
+        "accepted": true,
+        "prediction": "non_pleated",
+        "region": {
+          "status": "provisional",
+          "roi": [
+            219,
+            267,
+            476,
+            559
+          ],
+          "reason": "experimental_mask_not_verified_presence_or_full_view",
+          "mask_pixels": 183,
+          "threshold": 0.5,
+          "model_sha256": "ca2c135ede7ee760ac205db0e404fb7246739d1741f8fb43b6296ef3a5c7cc26"
+        }
+      }
+    },
+    {
+      "sample_id": "fashionpedia-negative-candidate-27765",
+      "expected": "no_skirt",
+      "positive": false,
+      "v1": {
+        "accepted": true,
+        "prediction": "non_pleated",
+        "region": {
+          "status": "provisional",
+          "roi": [
+            218,
+            310,
+            493,
+            640
+          ],
+          "reason": "experimental_mask_not_verified_presence_or_full_view",
+          "mask_pixels": 319,
+          "threshold": 0.5,
+          "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+        }
+      },
+      "v2": {
+        "accepted": true,
+        "prediction": "non_pleated",
+        "region": {
+          "status": "provisional",
+          "roi": [
+            251,
+            329,
+            482,
+            640
+          ],
+          "reason": "experimental_mask_not_verified_presence_or_full_view",
+          "mask_pixels": 296,
+          "threshold": 0.5,
+          "model_sha256": "f2f5f73d34cd99c3fb46502cb806ddbc347c6664e8ce24b8fe06a548c70090de"
+        }
+      },
+      "v3": {
+        "accepted": true,
+        "prediction": "pleated",
+        "region": {
+          "status": "provisional",
+          "roi": [
+            240,
+            329,
+            471,
+            622
+          ],
+          "reason": "experimental_mask_not_verified_presence_or_full_view",
+          "mask_pixels": 286,
+          "threshold": 0.5,
+          "model_sha256": "ca2c135ede7ee760ac205db0e404fb7246739d1741f8fb43b6296ef3a5c7cc26"
+        }
+      }
+    },
+    {
+      "sample_id": "fashionpedia-negative-candidate-21184",
+      "expected": "no_skirt",
+      "positive": false,
+      "v1": {
+        "accepted": true,
+        "prediction": "non_pleated",
+        "region": {
+          "status": "provisional",
+          "roi": [
+            731,
+            384,
+            878,
+            535
+          ],
+          "reason": "experimental_mask_not_verified_presence_or_full_view",
+          "mask_pixels": 72,
+          "threshold": 0.5,
+          "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+        }
+      },
+      "v2": {
+        "accepted": true,
+        "prediction": "non_pleated",
+        "region": {
+          "status": "provisional",
+          "roi": [
+            749,
+            411,
+            860,
+            522
+          ],
+          "reason": "experimental_mask_not_verified_presence_or_full_view",
+          "mask_pixels": 43,
+          "threshold": 0.5,
+          "model_sha256": "f2f5f73d34cd99c3fb46502cb806ddbc347c6664e8ce24b8fe06a548c70090de"
+        }
+      },
+      "v3": {
+        "accepted": true,
+        "prediction": "non_pleated",
+        "region": {
+          "status": "provisional",
+          "roi": [
+            749,
+            411,
+            842,
+            522
+          ],
+          "reason": "experimental_mask_not_verified_presence_or_full_view",
+          "mask_pixels": 37,
+          "threshold": 0.5,
+          "model_sha256": "ca2c135ede7ee760ac205db0e404fb7246739d1741f8fb43b6296ef3a5c7cc26"
+        }
+      }
+    },
+    {
+      "sample_id": "fashionpedia-negative-candidate-13377",
+      "expected": "no_skirt",
+      "positive": false,
+      "v1": {
+        "accepted": false,
+        "prediction": null,
+        "region": {
+          "status": "unavailable",
+          "roi": null,
+          "reason": "multiple_regions",
+          "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+        }
+      },
+      "v2": {
+        "accepted": true,
+        "prediction": "non_pleated",
+        "region": {
+          "status": "provisional",
+          "roi": [
+            219,
+            475,
+            390,
+            659
+          ],
+          "reason": "experimental_mask_not_verified_presence_or_full_view",
+          "mask_pixels": 100,
+          "threshold": 0.5,
+          "model_sha256": "f2f5f73d34cd99c3fb46502cb806ddbc347c6664e8ce24b8fe06a548c70090de"
+        }
+      },
+      "v3": {
+        "accepted": true,
+        "prediction": "non_pleated",
+        "region": {
+          "status": "provisional",
+          "roi": [
+            219,
+            457,
+            415,
+            659
+          ],
+          "reason": "experimental_mask_not_verified_presence_or_full_view",
+          "mask_pixels": 99,
+          "threshold": 0.5,
+          "model_sha256": "ca2c135ede7ee760ac205db0e404fb7246739d1741f8fb43b6296ef3a5c7cc26"
+        }
+      }
+    },
+    {
+      "sample_id": "fashionpedia-negative-v2-5212",
+      "expected": "no_skirt",
+      "positive": false,
+      "v1": {
+        "accepted": true,
+        "prediction": "non_pleated",
+        "region": {
+          "status": "provisional",
+          "roi": [
+            164,
+            384,
+            417,
+            695
+          ],
+          "reason": "experimental_mask_not_verified_presence_or_full_view",
+          "mask_pixels": 267,
+          "threshold": 0.5,
+          "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+        }
+      },
+      "v2": {
+        "accepted": true,
+        "prediction": "non_pleated",
+        "region": {
+          "status": "provisional",
+          "roi": [
+            175,
+            402,
+            395,
+            695
+          ],
+          "reason": "experimental_mask_not_verified_presence_or_full_view",
+          "mask_pixels": 214,
+          "threshold": 0.5,
+          "model_sha256": "f2f5f73d34cd99c3fb46502cb806ddbc347c6664e8ce24b8fe06a548c70090de"
+        }
+      },
+      "v3": {
+        "accepted": true,
+        "prediction": "pleated",
+        "region": {
+          "status": "provisional",
+          "roi": [
+            186,
+            420,
+            384,
+            695
+          ],
+          "reason": "experimental_mask_not_verified_presence_or_full_view",
+          "mask_pixels": 195,
+          "threshold": 0.5,
+          "model_sha256": "ca2c135ede7ee760ac205db0e404fb7246739d1741f8fb43b6296ef3a5c7cc26"
+        }
+      }
+    },
+    {
+      "sample_id": "fashionpedia-negative-v2-4320",
+      "expected": "no_skirt",
+      "positive": false,
+      "v1": {
+        "accepted": false,
+        "prediction": null,
+        "region": {
+          "status": "unavailable",
+          "roi": null,
+          "reason": "multiple_regions",
+          "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+        }
+      },
+      "v2": {
+        "accepted": true,
+        "prediction": "non_pleated",
+        "region": {
+          "status": "provisional",
+          "roi": [
+            158,
+            676,
+            463,
+            933
+          ],
+          "reason": "experimental_mask_not_verified_presence_or_full_view",
+          "mask_pixels": 217,
+          "threshold": 0.5,
+          "model_sha256": "f2f5f73d34cd99c3fb46502cb806ddbc347c6664e8ce24b8fe06a548c70090de"
+        }
+      },
+      "v3": {
+        "accepted": true,
+        "prediction": "non_pleated",
+        "region": {
+          "status": "provisional",
+          "roi": [
+            170,
+            694,
+            463,
+            915
+          ],
+          "reason": "experimental_mask_not_verified_presence_or_full_view",
+          "mask_pixels": 166,
+          "threshold": 0.5,
+          "model_sha256": "ca2c135ede7ee760ac205db0e404fb7246739d1741f8fb43b6296ef3a5c7cc26"
+        }
+      }
+    },
+    {
+      "sample_id": "fashionpedia-negative-v2-8621",
+      "expected": "no_skirt",
+      "positive": false,
+      "v1": {
+        "accepted": true,
+        "prediction": "pleated",
+        "region": {
+          "status": "provisional",
+          "roi": [
+            194,
+            420,
+            413,
+            677
+          ],
+          "reason": "experimental_mask_not_verified_presence_or_full_view",
+          "mask_pixels": 215,
+          "threshold": 0.5,
+          "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+        }
+      },
+      "v2": {
+        "accepted": true,
+        "prediction": "pleated",
+        "region": {
+          "status": "provisional",
+          "roi": [
+            206,
+            420,
+            389,
+            677
+          ],
+          "reason": "experimental_mask_not_verified_presence_or_full_view",
+          "mask_pixels": 181,
+          "threshold": 0.5,
+          "model_sha256": "f2f5f73d34cd99c3fb46502cb806ddbc347c6664e8ce24b8fe06a548c70090de"
+        }
+      },
+      "v3": {
+        "accepted": true,
+        "prediction": "pleated",
+        "region": {
+          "status": "provisional",
+          "roi": [
+            218,
+            402,
+            389,
+            695
+          ],
+          "reason": "experimental_mask_not_verified_presence_or_full_view",
+          "mask_pixels": 176,
+          "threshold": 0.5,
+          "model_sha256": "ca2c135ede7ee760ac205db0e404fb7246739d1741f8fb43b6296ef3a5c7cc26"
+        }
+      }
+    },
+    {
+      "sample_id": "fashionpedia-negative-v2-24169",
+      "expected": "no_skirt",
+      "positive": false,
+      "v1": {
+        "accepted": true,
+        "prediction": "pleated",
+        "region": {
+          "status": "provisional",
+          "roi": [
+            256,
+            438,
+            537,
+            915
+          ],
+          "reason": "experimental_mask_not_verified_presence_or_full_view",
+          "mask_pixels": 479,
+          "threshold": 0.5,
+          "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+        }
+      },
+      "v2": {
+        "accepted": true,
+        "prediction": "pleated",
+        "region": {
+          "status": "provisional",
+          "roi": [
+            268,
+            457,
+            525,
+            896
+          ],
+          "reason": "experimental_mask_not_verified_presence_or_full_view",
+          "mask_pixels": 393,
+          "threshold": 0.5,
+          "model_sha256": "f2f5f73d34cd99c3fb46502cb806ddbc347c6664e8ce24b8fe06a548c70090de"
+        }
+      },
+      "v3": {
+        "accepted": true,
+        "prediction": "pleated",
+        "region": {
+          "status": "provisional",
+          "roi": [
+            268,
+            420,
+            513,
+            915
+          ],
+          "reason": "experimental_mask_not_verified_presence_or_full_view",
+          "mask_pixels": 399,
+          "threshold": 0.5,
+          "model_sha256": "ca2c135ede7ee760ac205db0e404fb7246739d1741f8fb43b6296ef3a5c7cc26"
+        }
+      }
+    },
+    {
+      "sample_id": "fashionpedia-negative-v2-24448",
+      "expected": "no_skirt",
+      "positive": false,
+      "v1": {
+        "accepted": false,
+        "prediction": null,
+        "region": {
+          "status": "unavailable",
+          "roi": null,
+          "reason": "multiple_regions",
+          "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+        }
+      },
+      "v2": {
+        "accepted": false,
+        "prediction": null,
+        "region": {
+          "status": "unavailable",
+          "roi": null,
+          "reason": "multiple_regions",
+          "model_sha256": "f2f5f73d34cd99c3fb46502cb806ddbc347c6664e8ce24b8fe06a548c70090de"
+        }
+      },
+      "v3": {
+        "accepted": false,
+        "prediction": null,
+        "region": {
+          "status": "unavailable",
+          "roi": null,
+          "reason": "multiple_regions",
+          "model_sha256": "ca2c135ede7ee760ac205db0e404fb7246739d1741f8fb43b6296ef3a5c7cc26"
+        }
+      }
+    },
+    {
+      "sample_id": "fashionpedia-negative-v2-33532",
+      "expected": "no_skirt",
+      "positive": false,
+      "v1": {
+        "accepted": true,
+        "prediction": "non_pleated",
+        "region": {
+          "status": "provisional",
+          "roi": [
+            243,
+            438,
+            463,
+            896
+          ],
+          "reason": "experimental_mask_not_verified_presence_or_full_view",
+          "mask_pixels": 327,
+          "threshold": 0.5,
+          "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+        }
+      },
+      "v2": {
+        "accepted": true,
+        "prediction": "non_pleated",
+        "region": {
+          "status": "provisional",
+          "roi": [
+            267,
+            457,
+            439,
+            842
+          ],
+          "reason": "experimental_mask_not_verified_presence_or_full_view",
+          "mask_pixels": 206,
+          "threshold": 0.5,
+          "model_sha256": "f2f5f73d34cd99c3fb46502cb806ddbc347c6664e8ce24b8fe06a548c70090de"
+        }
+      },
+      "v3": {
+        "accepted": true,
+        "prediction": "non_pleated",
+        "region": {
+          "status": "provisional",
+          "roi": [
+            267,
+            457,
+            463,
+            842
+          ],
+          "reason": "experimental_mask_not_verified_presence_or_full_view",
+          "mask_pixels": 209,
+          "threshold": 0.5,
+          "model_sha256": "ca2c135ede7ee760ac205db0e404fb7246739d1741f8fb43b6296ef3a5c7cc26"
+        }
+      }
+    },
+    {
+      "sample_id": "fashionpedia-negative-v2-7454",
+      "expected": "no_skirt",
+      "positive": false,
+      "v1": {
+        "accepted": false,
+        "prediction": null,
+        "region": {
+          "status": "unavailable",
+          "roi": null,
+          "reason": "multiple_regions",
+          "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+        }
+      },
+      "v2": {
+        "accepted": false,
+        "prediction": null,
+        "region": {
+          "status": "unavailable",
+          "roi": null,
+          "reason": "no_supported_skirt_region",
+          "model_sha256": "f2f5f73d34cd99c3fb46502cb806ddbc347c6664e8ce24b8fe06a548c70090de"
+        }
+      },
+      "v3": {
+        "accepted": true,
+        "prediction": "non_pleated",
+        "region": {
+          "status": "provisional",
+          "roi": [
+            530,
+            548,
+            640,
+            573
+          ],
+          "reason": "experimental_mask_not_verified_presence_or_full_view",
+          "mask_pixels": 10,
+          "threshold": 0.5,
+          "model_sha256": "ca2c135ede7ee760ac205db0e404fb7246739d1741f8fb43b6296ef3a5c7cc26"
+        }
+      }
+    },
+    {
+      "sample_id": "fashionpedia-negative-v2-28563",
+      "expected": "no_skirt",
+      "positive": false,
+      "v1": {
+        "accepted": false,
+        "prediction": null,
+        "region": {
+          "status": "unavailable",
+          "roi": null,
+          "reason": "multiple_regions",
+          "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+        }
+      },
+      "v2": {
+        "accepted": false,
+        "prediction": null,
+        "region": {
+          "status": "unavailable",
+          "roi": null,
+          "reason": "multiple_regions",
+          "model_sha256": "f2f5f73d34cd99c3fb46502cb806ddbc347c6664e8ce24b8fe06a548c70090de"
+        }
+      },
+      "v3": {
+        "accepted": false,
+        "prediction": null,
+        "region": {
+          "status": "unavailable",
+          "roi": null,
+          "reason": "multiple_regions",
+          "model_sha256": "ca2c135ede7ee760ac205db0e404fb7246739d1741f8fb43b6296ef3a5c7cc26"
+        }
+      }
+    },
+    {
+      "sample_id": "fashionpedia-negative-v2-44529",
+      "expected": "no_skirt",
+      "positive": false,
+      "v1": {
+        "accepted": false,
+        "prediction": null,
+        "region": {
+          "status": "unavailable",
+          "roi": null,
+          "reason": "region_touches_frame_edge",
+          "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+        }
+      },
+      "v2": {
+        "accepted": false,
+        "prediction": null,
+        "region": {
+          "status": "unavailable",
+          "roi": null,
+          "reason": "region_touches_frame_edge",
+          "model_sha256": "f2f5f73d34cd99c3fb46502cb806ddbc347c6664e8ce24b8fe06a548c70090de"
+        }
+      },
+      "v3": {
+        "accepted": false,
+        "prediction": null,
+        "region": {
+          "status": "unavailable",
+          "roi": null,
+          "reason": "region_touches_frame_edge",
+          "model_sha256": "ca2c135ede7ee760ac205db0e404fb7246739d1741f8fb43b6296ef3a5c7cc26"
+        }
+      }
+    },
+    {
+      "sample_id": "fashionpedia-negative-v2-28085",
+      "expected": "no_skirt",
+      "positive": false,
+      "v1": {
+        "accepted": true,
+        "prediction": "non_pleated",
+        "region": {
+          "status": "provisional",
+          "roi": [
+            207,
+            475,
+            536,
+            915
+          ],
+          "reason": "experimental_mask_not_verified_presence_or_full_view",
+          "mask_pixels": 455,
+          "threshold": 0.5,
+          "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+        }
+      },
+      "v2": {
+        "accepted": true,
+        "prediction": "non_pleated",
+        "region": {
+          "status": "provisional",
+          "roi": [
+            207,
+            512,
+            524,
+            878
+          ],
+          "reason": "experimental_mask_not_verified_presence_or_full_view",
+          "mask_pixels": 392,
+          "threshold": 0.5,
+          "model_sha256": "f2f5f73d34cd99c3fb46502cb806ddbc347c6664e8ce24b8fe06a548c70090de"
+        }
+      },
+      "v3": {
+        "accepted": true,
+        "prediction": "non_pleated",
+        "region": {
+          "status": "provisional",
+          "roi": [
+            219,
+            475,
+            524,
+            860
+          ],
+          "reason": "experimental_mask_not_verified_presence_or_full_view",
+          "mask_pixels": 383,
+          "threshold": 0.5,
+          "model_sha256": "ca2c135ede7ee760ac205db0e404fb7246739d1741f8fb43b6296ef3a5c7cc26"
+        }
+      }
+    },
+    {
+      "sample_id": "fashionpedia-negative-v2-42344",
+      "expected": "no_skirt",
+      "positive": false,
+      "v1": {
+        "accepted": true,
+        "prediction": "pleated",
+        "region": {
+          "status": "provisional",
+          "roi": [
+            182,
+            329,
+            480,
+            677
+          ],
+          "reason": "experimental_mask_not_verified_presence_or_full_view",
+          "mask_pixels": 376,
+          "threshold": 0.5,
+          "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+        }
+      },
+      "v2": {
+        "accepted": true,
+        "prediction": "pleated",
+        "region": {
+          "status": "provisional",
+          "roi": [
+            194,
+            347,
+            458,
+            677
+          ],
+          "reason": "experimental_mask_not_verified_presence_or_full_view",
+          "mask_pixels": 305,
+          "threshold": 0.5,
+          "model_sha256": "f2f5f73d34cd99c3fb46502cb806ddbc347c6664e8ce24b8fe06a548c70090de"
+        }
+      },
+      "v3": {
+        "accepted": true,
+        "prediction": "pleated",
+        "region": {
+          "status": "provisional",
+          "roi": [
+            205,
+            329,
+            458,
+            695
+          ],
+          "reason": "experimental_mask_not_verified_presence_or_full_view",
+          "mask_pixels": 301,
+          "threshold": 0.5,
+          "model_sha256": "ca2c135ede7ee760ac205db0e404fb7246739d1741f8fb43b6296ef3a5c7cc26"
+        }
+      }
+    },
+    {
+      "sample_id": "fashionpedia-negative-v2-37096",
+      "expected": "no_skirt",
+      "positive": false,
+      "v1": {
+        "accepted": false,
+        "prediction": null,
+        "region": {
+          "status": "unavailable",
+          "roi": null,
+          "reason": "region_touches_frame_edge",
+          "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+        }
+      },
+      "v2": {
+        "accepted": false,
+        "prediction": null,
+        "region": {
+          "status": "unavailable",
+          "roi": null,
+          "reason": "multiple_regions",
+          "model_sha256": "f2f5f73d34cd99c3fb46502cb806ddbc347c6664e8ce24b8fe06a548c70090de"
+        }
+      },
+      "v3": {
+        "accepted": false,
+        "prediction": null,
+        "region": {
+          "status": "unavailable",
+          "roi": null,
+          "reason": "region_touches_frame_edge",
+          "model_sha256": "ca2c135ede7ee760ac205db0e404fb7246739d1741f8fb43b6296ef3a5c7cc26"
+        }
+      }
+    },
+    {
+      "sample_id": "fashionpedia-negative-v2-42625",
+      "expected": "no_skirt",
+      "positive": false,
+      "v1": {
+        "accepted": false,
+        "prediction": null,
+        "region": {
+          "status": "unavailable",
+          "roi": null,
+          "reason": "multiple_regions",
+          "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+        }
+      },
+      "v2": {
+        "accepted": false,
+        "prediction": null,
+        "region": {
+          "status": "unavailable",
+          "roi": null,
+          "reason": "region_touches_frame_edge",
+          "model_sha256": "f2f5f73d34cd99c3fb46502cb806ddbc347c6664e8ce24b8fe06a548c70090de"
+        }
+      },
+      "v3": {
+        "accepted": false,
+        "prediction": null,
+        "region": {
+          "status": "unavailable",
+          "roi": null,
+          "reason": "region_touches_frame_edge",
+          "model_sha256": "ca2c135ede7ee760ac205db0e404fb7246739d1741f8fb43b6296ef3a5c7cc26"
+        }
+      }
+    },
+    {
+      "sample_id": "fashionpedia-negative-v2-46648",
+      "expected": "no_skirt",
+      "positive": false,
+      "v1": {
+        "accepted": false,
+        "prediction": null,
+        "region": {
+          "status": "unavailable",
+          "roi": null,
+          "reason": "region_touches_frame_edge",
+          "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+        }
+      },
+      "v2": {
+        "accepted": false,
+        "prediction": null,
+        "region": {
+          "status": "unavailable",
+          "roi": null,
+          "reason": "region_touches_frame_edge",
+          "model_sha256": "f2f5f73d34cd99c3fb46502cb806ddbc347c6664e8ce24b8fe06a548c70090de"
+        }
+      },
+      "v3": {
+        "accepted": true,
+        "prediction": "non_pleated",
+        "region": {
+          "status": "provisional",
+          "roi": [
+            292,
+            475,
+            842,
+            988
+          ],
+          "reason": "experimental_mask_not_verified_presence_or_full_view",
+          "mask_pixels": 333,
+          "threshold": 0.5,
+          "model_sha256": "ca2c135ede7ee760ac205db0e404fb7246739d1741f8fb43b6296ef3a5c7cc26"
+        }
+      }
+    },
+    {
+      "sample_id": "fashionpedia-negative-v2-32211",
+      "expected": "no_skirt",
+      "positive": false,
+      "v1": {
+        "accepted": true,
+        "prediction": "non_pleated",
+        "region": {
+          "status": "provisional",
+          "roi": [
+            231,
+            347,
+            439,
+            951
+          ],
+          "reason": "experimental_mask_not_verified_presence_or_full_view",
+          "mask_pixels": 483,
+          "threshold": 0.5,
+          "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+        }
+      },
+      "v2": {
+        "accepted": true,
+        "prediction": "non_pleated",
+        "region": {
+          "status": "provisional",
+          "roi": [
+            243,
+            384,
+            427,
+            567
+          ],
+          "reason": "experimental_mask_not_verified_presence_or_full_view",
+          "mask_pixels": 122,
+          "threshold": 0.5,
+          "model_sha256": "f2f5f73d34cd99c3fb46502cb806ddbc347c6664e8ce24b8fe06a548c70090de"
+        }
+      },
+      "v3": {
+        "accepted": true,
+        "prediction": "non_pleated",
+        "region": {
+          "status": "provisional",
+          "roi": [
+            267,
+            402,
+            415,
+            512
+          ],
+          "reason": "experimental_mask_not_verified_presence_or_full_view",
+          "mask_pixels": 61,
+          "threshold": 0.5,
+          "model_sha256": "ca2c135ede7ee760ac205db0e404fb7246739d1741f8fb43b6296ef3a5c7cc26"
+        }
+      }
+    },
+    {
+      "sample_id": "fashionpedia-negative-v2-33815",
+      "expected": "no_skirt",
+      "positive": false,
+      "v1": {
+        "accepted": false,
+        "prediction": null,
+        "region": {
+          "status": "unavailable",
+          "roi": null,
+          "reason": "region_touches_frame_edge",
+          "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+        }
+      },
+      "v2": {
+        "accepted": false,
+        "prediction": null,
+        "region": {
+          "status": "unavailable",
+          "roi": null,
+          "reason": "multiple_regions",
+          "model_sha256": "f2f5f73d34cd99c3fb46502cb806ddbc347c6664e8ce24b8fe06a548c70090de"
+        }
+      },
+      "v3": {
+        "accepted": true,
+        "prediction": "non_pleated",
+        "region": {
+          "status": "provisional",
+          "roi": [
+            182,
+            73,
+            805,
+            622
+          ],
+          "reason": "experimental_mask_not_verified_presence_or_full_view",
+          "mask_pixels": 763,
+          "threshold": 0.5,
+          "model_sha256": "ca2c135ede7ee760ac205db0e404fb7246739d1741f8fb43b6296ef3a5c7cc26"
+        }
+      }
+    }
+  ],
+  "decision": "Do not promote v3: lower positive coverage, correct pleating count and negative rejection than v2; negative rejection worse than v1",
+  "limitations": [
+    "Agent-reviewed source-domain development only",
+    "No threshold tuning in this comparison",
+    "No independent human/camera/Pi accuracy",
+    "No promotion inferred"
+  ]
+}

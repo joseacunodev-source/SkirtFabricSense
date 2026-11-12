@@ -1,0 +1,316 @@
+{
+  "schema_version": 1,
+  "date_asia_manila": "2026-10-21T23:00:53.248066+08:00",
+  "reviewer": "agent_handoff_docs_oct21",
+  "checks": {
+    "run_completed": true,
+    "fixed_threshold_and_preprocessing": true,
+    "category_order": true,
+    "exact_counts": true,
+    "unique_source_and_target_ids": true,
+    "inputs_hash": true,
+    "derived_targets_hash": true,
+    "split_hash": true,
+    "executed_train_skirt_baseline.py": true,
+    "executed_train_presence_finetune.py": true,
+    "executed_train_category_presence.py": true,
+    "executed_train_presence.py": true,
+    "main_source_identity": true,
+    "source_data/manifests/worn-pleating-development-v1.jsonl": true,
+    "source_data/labels/negative-reviewed-v3.jsonl": true,
+    "source_data/manifests/source-skirt-development-splits.json": true,
+    "source_data/manifests/negative-candidates-v1.jsonl": true,
+    "source_data/manifests/negative-candidates-v2.jsonl": true,
+    "source_data/manifests/negative-candidates-v3.jsonl": true,
+    "source_data/external/fashionpedia_train/instances_attributes_train2020.json": true,
+    "all538_original_hashes": true,
+    "no_cross_split_groups": true,
+    "no_cross_split_original_hashes": true,
+    "all538_derived_targets_match_raw_reviewed_inputs": true,
+    "category_counts": true,
+    "cache_identity": true,
+    "cache_inputs_and_validation_membership": true,
+    "all_saved_prediction_membership": true,
+    "eight_epochs_archived": true,
+    "epoch1_prediction_membership": true,
+    "epoch1_valid_probabilities": true,
+    "epoch1_targets": true,
+    "epoch1_bce": true,
+    "epoch1_joint_and_eligibility": true,
+    "epoch1_rank": true,
+    "epoch2_prediction_membership": true,
+    "epoch2_valid_probabilities": true,
+    "epoch2_targets": true,
+    "epoch2_bce": true,
+    "epoch2_joint_and_eligibility": true,
+    "epoch2_rank": true,
+    "epoch3_prediction_membership": true,
+    "epoch3_valid_probabilities": true,
+    "epoch3_targets": true,
+    "epoch3_bce": true,
+    "epoch3_joint_and_eligibility": true,
+    "epoch3_rank": true,
+    "epoch4_prediction_membership": true,
+    "epoch4_valid_probabilities": true,
+    "epoch4_targets": true,
+    "epoch4_bce": true,
+    "epoch4_joint_and_eligibility": true,
+    "epoch4_rank": true,
+    "epoch5_prediction_membership": true,
+    "epoch5_valid_probabilities": true,
+    "epoch5_targets": true,
+    "epoch5_bce": true,
+    "epoch5_joint_and_eligibility": true,
+    "epoch5_rank": true,
+    "epoch6_prediction_membership": true,
+    "epoch6_valid_probabilities": true,
+    "epoch6_targets": true,
+    "epoch6_bce": true,
+    "epoch6_joint_and_eligibility": true,
+    "epoch6_rank": true,
+    "epoch7_prediction_membership": true,
+    "epoch7_valid_probabilities": true,
+    "epoch7_targets": true,
+    "epoch7_bce": true,
+    "epoch7_joint_and_eligibility": true,
+    "epoch7_rank": true,
+    "epoch8_prediction_membership": true,
+    "epoch8_valid_probabilities": true,
+    "epoch8_targets": true,
+    "epoch8_bce": true,
+    "epoch8_joint_and_eligibility": true,
+    "epoch8_rank": true,
+    "selected_epoch_is_protocol_winner": true,
+    "selected_eligible_no_fallback": true,
+    "selected_probabilities_preserved": true,
+    "scalar_class0_saved_identity": true,
+    "head_frozen_digest": true,
+    "head_bn_frozen": true,
+    "finetune_frozen_digest": true,
+    "finetune_bn_frozen": true,
+    "model_run_copy": true,
+    "scalar_export_hash": true,
+    "early_export_hash": true,
+    "archived_export_parity": true,
+    "comparison_completed_fixed_thresholds": true,
+    "comparison_source_identity": true,
+    "comparison_inputs_split": true,
+    "comparison_export_identity": true,
+    "mask_v1_identity": true,
+    "mask_v2_identity": true,
+    "comparison_pleating_identity": true,
+    "comparison_exact_membership": true,
+    "cached_masks_and_composed_paths_reproduced": true,
+    "all_comparison_metrics_recomputed": true,
+    "actual_export_joint_matches_training": true,
+    "relative_development_gate": true,
+    "v4_comparable_frozen_inputs": true,
+    "v4_coverage_and_correctness_preserved_rejection_improved": true,
+    "cpu_only_review": true,
+    "keras_shapes": true,
+    "single_reopened_backbone": true,
+    "reopened_bn_frozen": true,
+    "reopened_trainable_layers": true,
+    "reopened_actual_frozen_weights": true,
+    "tflite_tensor_contract": true,
+    "all_reopened_predictions_valid": true,
+    "all118_reopened_parity": true,
+    "scalar_class0_identity_all118": true,
+    "all118_threshold_decisions_preserved": true,
+    "standalone_metrics_and_confusion": true
+  },
+  "packages_installed": 0,
+  "training_performed": false,
+  "camera_used": false,
+  "pi_verified": false,
+  "deployment_approved": false,
+  "original_files_rehashed": 538,
+  "status": "passed_artifact_and_development_checks_not_deployment_approval",
+  "category_counts": {
+    "development_train": {
+      "skirt_present": 265,
+      "no_skirt_shorts": 44,
+      "no_skirt_pants": 53,
+      "no_skirt_dress": 58
+    },
+    "development_validation": {
+      "skirt_present": 66,
+      "no_skirt_dress": 20,
+      "no_skirt_shorts": 15,
+      "no_skirt_pants": 17
+    }
+  },
+  "selected_epoch": 7,
+  "selected_rank": [
+    0,
+    -42,
+    -38,
+    -44,
+    0.4889628476675465
+  ],
+  "metrics": {
+    "v1": {
+      "positive_count": 66,
+      "positive_accepted": 41,
+      "positive_coverage": 0.6212121212121212,
+      "correct_pleating": 33,
+      "accepted_pleating_accuracy": 0.8048780487804879,
+      "negative_count": 52,
+      "negative_rejected": 29,
+      "negative_rejection": 0.5576923076923077
+    },
+    "v2": {
+      "positive_count": 66,
+      "positive_accepted": 50,
+      "positive_coverage": 0.7575757575757576,
+      "correct_pleating": 44,
+      "accepted_pleating_accuracy": 0.88,
+      "negative_count": 52,
+      "negative_rejected": 21,
+      "negative_rejection": 0.40384615384615385
+    },
+    "v1_plus_presence": {
+      "positive_count": 66,
+      "positive_accepted": 36,
+      "positive_coverage": 0.5454545454545454,
+      "correct_pleating": 29,
+      "accepted_pleating_accuracy": 0.8055555555555556,
+      "negative_count": 52,
+      "negative_rejected": 43,
+      "negative_rejection": 0.8269230769230769
+    },
+    "v2_plus_presence": {
+      "positive_count": 66,
+      "positive_accepted": 44,
+      "positive_coverage": 0.6666666666666666,
+      "correct_pleating": 38,
+      "accepted_pleating_accuracy": 0.8636363636363636,
+      "negative_count": 52,
+      "negative_rejected": 42,
+      "negative_rejection": 0.8076923076923077
+    }
+  },
+  "v4_reference_metrics": {
+    "positive_count": 66,
+    "positive_accepted": 44,
+    "positive_coverage": 0.6666666666666666,
+    "correct_pleating": 38,
+    "accepted_pleating_accuracy": 0.8636363636363636,
+    "negative_count": 52,
+    "negative_rejected": 39,
+    "negative_rejection": 0.75
+  },
+  "negative_category_counts": {
+    "no_skirt_pants": {
+      "count": 17,
+      "accepted": 2,
+      "rejected": 15
+    },
+    "no_skirt_shorts": {
+      "count": 15,
+      "accepted": 1,
+      "rejected": 14
+    },
+    "no_skirt_dress": {
+      "count": 20,
+      "accepted": 7,
+      "rejected": 13
+    }
+  },
+  "paired_acceptance_v4_to_category": {
+    "positive": {
+      "False->False": 19,
+      "False->True": 3,
+      "True->False": 3,
+      "True->True": 41
+    },
+    "negative": {
+      "False->False": 38,
+      "False->True": 1,
+      "True->False": 4,
+      "True->True": 9
+    }
+  },
+  "actual_cpu_reopen": {
+    "originals": 118,
+    "models": [
+      "category-model.keras",
+      "model.keras",
+      "model.tflite"
+    ],
+    "maximum_absolute_errors": {
+      "scalar_vs_category_component0": 0.0,
+      "scalar_keras_vs_tflite": 4.231929779052734e-06,
+      "category_keras_vs_archived": 2.682209014892578e-06,
+      "scalar_keras_vs_archived": 2.682209014892578e-06,
+      "tflite_vs_archived": 0.0,
+      "tflite_vs_actual_comparison": 0.0
+    },
+    "tolerance": 0.001,
+    "all_threshold_decisions_match": true
+  },
+  "model_files": [
+    {
+      "path": "artifacts/models/skirt-category-presence-v1/category-model.keras",
+      "sha256": "4c442ef2e01028d6fcbd9a210c981359301a7f366a1f54edb060fe0b9e21b78f",
+      "bytes": 23936814
+    },
+    {
+      "path": "artifacts/models/skirt-category-presence-v1/model.keras",
+      "sha256": "a5208c08164db35be7969e249c260d140b732eb1b3db7596a8688b5673bf3b97",
+      "bytes": 9957409
+    },
+    {
+      "path": "artifacts/models/skirt-category-presence-v1/model.tflite",
+      "sha256": "f47ddf148102f905d0a81e6a1fe3001b8a4944fd86e0c1c2d635d975f8fdc34d",
+      "bytes": 9188656
+    }
+  ],
+  "source_files": [
+    {
+      "path": "records/experiments/20261021-category-presence-v1/run.json",
+      "sha256": "94eb220727759eaf767062a962f2fc727d313b8a969d30d576c9a358884cb8d3"
+    },
+    {
+      "path": "records/experiments/20261021-category-presence-v1/inputs.json",
+      "sha256": "5fd31356dad9333efaa82cb0e2a312533fe695b5c565278cd00136c9e693a1f7"
+    },
+    {
+      "path": "records/experiments/20261021-category-presence-v1/source-category-targets.json",
+      "sha256": "8f520b63482cf802bb70f47c9db57e0d0ce746eadc0e58d9dc18c7707eda07f2"
+    },
+    {
+      "path": "records/experiments/20261021-category-presence-v1/history.json",
+      "sha256": "071e4f0bd8e5d56587362f2090540af903d1c562e47e5fdd423cf9681ba8e6f3"
+    },
+    {
+      "path": "records/validation/2026-10-21-category-presence-comparison.json",
+      "sha256": "f0ebd8a2fd04530559ff661c35beddc7100da8e1852fa46762f2d867666c0648"
+    },
+    {
+      "path": "records/validation/2026-10-19-detection-v4-comparison.json",
+      "sha256": "11bf2fac8f14d3c7b781745c209bac139b02374c0c354cf1a8123c11a48805ec"
+    },
+    {
+      "path": "records/validation/2026-10-21-category-presence-artifact-review.py",
+      "sha256": "a96eeaf435f7c2f23d6a5b555a9fa40008c3488ee800827763c2000d5bc440c3"
+    }
+  ],
+  "review_runtime": {
+    "python": "3.12.3",
+    "tensorflow": "2.20.0",
+    "keras": "3.15.1",
+    "numpy": "2.5.3",
+    "device": "CPU"
+  },
+  "limitations": [
+    "Repeated source-domain development groups informed the hypothesis and checkpoint selection; no independent test.",
+    "Raw copied source-category joins were independently checked and official annotation bytes rehashed. The full542MB publisher JSON join was not independently rerun by this review; that join remains executed trainer/preflight evidence.",
+    "Source scene categories and provisional absence reviews are not independent human-confirmed physical garment truth.",
+    "This audit replays all eight saved epochs probabilities for selection arithmetic, but does not refit weights.",
+    "Early scalar export was independently rehashed; its historical Keras checkpoint was not recreated.",
+    "No live camera, actual garments, measured calibration, broad unknown-input rejection or Raspberry Pi verification."
+  ],
+  "checks_passed": 115,
+  "checks_failed": 0
+}

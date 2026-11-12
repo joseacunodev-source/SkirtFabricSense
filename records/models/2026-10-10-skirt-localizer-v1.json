@@ -1,0 +1,118 @@
+{
+  "release_id": "skirt-localizer-v1",
+  "status": "experimental_desktop_export_verified",
+  "source_run_id": "records/experiments/20261009-localizer-v1",
+  "model_files_and_sha256": [
+    {
+      "path": "artifacts/models/skirt-localizer-v1/model.tflite",
+      "sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+    },
+    {
+      "path": "artifacts/models/skirt-localizer-v1/model.keras",
+      "sha256": "24bddbee60debca1358f2550fd8c2ec775051b6e3e975ab33cec1039279a8c8e"
+    }
+  ],
+  "labels_in_output_order": [
+    "skirt_pixel_probability"
+  ],
+  "input_output_tensor_contract": {
+    "input": {
+      "shape": [
+        1,
+        224,
+        224,
+        3
+      ],
+      "dtype": "float32",
+      "range": [
+        0,
+        255
+      ]
+    },
+    "output": {
+      "shape": [
+        1,
+        56,
+        56,
+        1
+      ],
+      "dtype": "float32",
+      "range": [
+        0,
+        1
+      ]
+    }
+  },
+  "preprocessing_version": "RGB full source resized bilinear224; source all-skirt polygon masks nearest56; model normalization inside",
+  "patch_strategy": "Full source resize; separate experimental ROI decoder",
+  "quantization_parameters": null,
+  "calibration_dataset_hash": null,
+  "thresholds_and_temporal_settings": {
+    "mask_threshold": 0.5,
+    "min_component_pixels": 9,
+    "reject_multiple_components": true,
+    "reject_frame_edge_contact": true,
+    "calibrated": false
+  },
+  "training_environment": {
+    "path": "records/experiments/20261009-localizer-v1/environment.json",
+    "sha256": "d633fb1dc9272234bf1e57a633e0d91118b40ed138ae855edb3788fa75245b2a"
+  },
+  "conversion_environment": {
+    "path": "records/experiments/20261009-localizer-v1/environment.json",
+    "sha256": "d633fb1dc9272234bf1e57a633e0d91118b40ed138ae855edb3788fa75245b2a"
+  },
+  "target_environment": null,
+  "pre_export_metrics": {
+    "mean_mask_iou": 0.6601152133026801,
+    "median_mask_iou": 0.6963398692810457,
+    "mask_iou_at_least_point5": 0.825
+  },
+  "post_export_metrics": {
+    "maximum_absolute_error": 1.0907649993896484e-05,
+    "tolerance": 0.001
+  },
+  "pi_validation_record": null,
+  "camera_calibration_id": null,
+  "known_limitations": [
+    "Development images all contain skirts; no image-level negative validation",
+    "Physical garment grouping and agent appearance confirmation unresolved",
+    "No camera, body landmarks, length, fabric or Pi verification",
+    "Localization candidate, not deployment-approved"
+  ],
+  "rollback_release_id": null,
+  "experiment_artifacts": [
+    {
+      "path": "records/experiments/20261009-localizer-v1/environment.json",
+      "sha256": "d633fb1dc9272234bf1e57a633e0d91118b40ed138ae855edb3788fa75245b2a"
+    },
+    {
+      "path": "records/experiments/20261009-localizer-v1/history.json",
+      "sha256": "7d56683eac9c2b0ff97188f1726ff58b0295ec0631c4d88964f947f8f3e08902"
+    },
+    {
+      "path": "records/experiments/20261009-localizer-v1/inputs.json",
+      "sha256": "916a459668424ee83e621c123f0c964a3f297a8618ca71c4ea2945c1cada3a1c"
+    },
+    {
+      "path": "records/experiments/20261009-localizer-v1/run.json",
+      "sha256": "36224f27c20731e22f49696a7dca9566c91ee4094bfefeb622d2f1f0d7ee426e"
+    },
+    {
+      "path": "records/experiments/20261009-localizer-v1/training_source.py",
+      "sha256": "02686fe46e479b15181ecb612390117ff932ff4dc30d6e666f7e92213085e1ab"
+    },
+    {
+      "path": "records/experiments/20261009-localizer-v1/validation-masks.npz",
+      "sha256": "7a9f83e75614a7970d1f2f10d1974414e11dcbcb7dce7a033dd68594970ce041"
+    },
+    {
+      "path": "records/experiments/20261009-localizer-v1/validation-predictions.json",
+      "sha256": "55c54f9d32cc59e65ecb6c66003341dd7bd5dd9e2492f6b0098699b0f68ba367"
+    }
+  ],
+  "automatic_evaluation": {
+    "path": "records/validation/2026-10-10-automatic-pilot.json",
+    "sha256": "0ab40f8d3f0e2d9baa94e34434467693db1cba6e75eb9f14e06ee0fc104d47ff"
+  }
+}

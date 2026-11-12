@@ -1,0 +1,209 @@
+{
+  "run_id": "20261004-skirt-finetune-v1",
+  "status": "completed",
+  "started_at": "2026-10-04T10:08:34.798002+00:00",
+  "source_sha256": "9c00a33d4d7e7fb6fdf5d9b988395293d648d5c4e01a067e0ab4acc74bcfe8d6",
+  "labels_in_output_order": [
+    "non_pleated",
+    "pleated"
+  ],
+  "environment_snapshot": {
+    "path": "environment.json",
+    "sha256": "a2f05f93f79e7be2f51c3f42c266356d468754589217f7866c356cb4612e3527"
+  },
+  "dataset_manifest_sha256": "9160998b5ab0f65251c53cefd783e1c6351887bec8c655074be64dd2717dc2eb",
+  "split_manifest_sha256": "df3b096e4d131db55852b20de075d811c95520d23766648928555d755fe8812c",
+  "image_counts": {
+    "development_train": {
+      "non_pleated": 232,
+      "pleated": 60
+    },
+    "development_validation": {
+      "non_pleated": 60,
+      "pleated": 20
+    }
+  },
+  "independent_specimen_counts": null,
+  "label_schema_version": "reviewed_pleating_appearance_v1",
+  "training_tf32_enabled": false,
+  "versions": {
+    "tensorflow": "2.20.0",
+    "keras": "3.15.1",
+    "numpy": "2.5.3",
+    "Pillow": "12.3.0"
+  },
+  "gpu_devices": [
+    "PhysicalDevice(name='/physical_device:GPU:0', device_type='GPU')"
+  ],
+  "architecture": "MobileNetV2 last30 backbone layers fine-tuned except BatchNorm; inherited head; BN inference mode",
+  "preprocessing": "Source annotated bbox plus 5% each side; RGB Pillow bilinear letterbox224; padding128; model Rescaling(1/127.5,offset=-1) exactly once",
+  "limitations": [
+    "Development validation only; no final-test use",
+    "Agent appearance labels require independent confirmation",
+    "Physical garment identity unresolved despite connected-group split",
+    "Manual source ROI; no automatic camera localization",
+    "Web-image domain; no webcam, length, fabric or Raspberry Pi verification",
+    "No probability calibration or rejection threshold",
+    "Source image and pretrained-weight redistribution rights require review before publishing weights"
+  ],
+  "parent": {
+    "run_id": "20261004-skirt-baseline-v1",
+    "report_sha256": "8218892c64e13fcfa8028fd8096a0832aed86d93ba810d30958c435c4d274c3d",
+    "checkpoint_sha256": "e89a2084f7dc4a8c7be950d27e1a3a603eb4707e638a482b18cba0e2229705af"
+  },
+  "trainable_backbone_layers": [
+    "block_14_expand",
+    "block_14_expand_relu",
+    "block_14_depthwise",
+    "block_14_depthwise_relu",
+    "block_14_project",
+    "block_14_add",
+    "block_15_expand",
+    "block_15_expand_relu",
+    "block_15_depthwise",
+    "block_15_depthwise_relu",
+    "block_15_project",
+    "block_15_add",
+    "block_16_expand",
+    "block_16_expand_relu",
+    "block_16_depthwise",
+    "block_16_depthwise_relu",
+    "block_16_project",
+    "Conv_1",
+    "out_relu",
+    "global_average_pooling2d"
+  ],
+  "prediction_device": "/job:localhost/replica:0/task:0/device:GPU:0",
+  "pretrained_weights": {
+    "path": "/home/skirttrain/.keras/models/mobilenet_v2_weights_tf_dim_ordering_tf_kernels_1.0_224_no_top.h5",
+    "sha256": "f8aff69536bd77a692c594f559c798c19bf7f3f36668fc9fa00b21c6aab4797c",
+    "source": "https://storage.googleapis.com/tensorflow/keras-applications/mobilenet_v2/mobilenet_v2_weights_tf_dim_ordering_tf_kernels_1.0_224_no_top.h5",
+    "training_source": "ImageNet",
+    "code_license": "Keras Apache-2.0",
+    "weight_redistribution_status": "not independently cleared"
+  },
+  "hyperparameters": {
+    "epochs": 5,
+    "batch_size": 8,
+    "optimizer": "Adam",
+    "learning_rate": 1e-05,
+    "backbone_frozen": false,
+    "augmentation": "horizontal flip p=.5; per-image brightness multiplier uniform[.9,1.1]",
+    "seed": 42,
+    "deterministic_ops": false,
+    "selection": "minimum development validation cross entropy",
+    "threshold": "argmax, uncalibrated"
+  },
+  "initial_validation_loss": 0.3884425759315491,
+  "selected_epoch": 5,
+  "evaluation_tf32_enabled": false,
+  "training_duration_seconds": 27.202641940999996,
+  "gpu_memory": {
+    "current": 24282880,
+    "peak": 1498963456
+  },
+  "metrics": {
+    "model": {
+      "count": 80,
+      "accuracy": 0.8125,
+      "macro_f1": 0.7540479606476738,
+      "per_class": [
+        {
+          "label": "non_pleated",
+          "support": 60,
+          "precision": 0.8813559322033898,
+          "recall": 0.8666666666666667,
+          "f1": 0.8739495798319329
+        },
+        {
+          "label": "pleated",
+          "support": 20,
+          "precision": 0.6190476190476191,
+          "recall": 0.65,
+          "f1": 0.6341463414634146
+        }
+      ],
+      "confusion_matrix_actual_rows_predicted_columns": [
+        [
+          52,
+          8
+        ],
+        [
+          7,
+          13
+        ]
+      ]
+    },
+    "train_majority_baseline": {
+      "count": 80,
+      "accuracy": 0.75,
+      "macro_f1": 0.42857142857142855,
+      "per_class": [
+        {
+          "label": "non_pleated",
+          "support": 60,
+          "precision": 0.75,
+          "recall": 1.0,
+          "f1": 0.8571428571428571
+        },
+        {
+          "label": "pleated",
+          "support": 20,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        }
+      ],
+      "confusion_matrix_actual_rows_predicted_columns": [
+        [
+          60,
+          0
+        ],
+        [
+          20,
+          0
+        ]
+      ]
+    }
+  },
+  "export": {
+    "sha256": "c1d8f49e221a2672c20adb87fe4ae5d2f6966f125ee99cb212ff2eb56fffdbf0",
+    "bytes": 8868352,
+    "maximum_absolute_error": 7.68899917602539e-06,
+    "argmax_agreement": 1.0,
+    "tolerance_absolute": 0.001,
+    "metrics": {
+      "count": 80,
+      "accuracy": 0.8125,
+      "macro_f1": 0.7540479606476738,
+      "per_class": [
+        {
+          "label": "non_pleated",
+          "support": 60,
+          "precision": 0.8813559322033898,
+          "recall": 0.8666666666666667,
+          "f1": 0.8739495798319329
+        },
+        {
+          "label": "pleated",
+          "support": 20,
+          "precision": 0.6190476190476191,
+          "recall": 0.65,
+          "f1": 0.6341463414634146
+        }
+      ],
+      "confusion_matrix_actual_rows_predicted_columns": [
+        [
+          52,
+          8
+        ],
+        [
+          7,
+          13
+        ]
+      ]
+    },
+    "pi_verified": false
+  },
+  "completed_at": "2026-10-04T10:09:41.728229+00:00"
+}

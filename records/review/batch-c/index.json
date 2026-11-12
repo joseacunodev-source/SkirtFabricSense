@@ -1,0 +1,2000 @@
+[
+  {
+    "index": 0,
+    "sample_id": "fashionpedia-train2020-40484",
+    "image_sha256": "61ea7ff4888e53c67edd84d38ec87fdd2165fc6591682506bb361b3d4d8f16fd",
+    "sheet": "records/review/batch-c/sheet-00.jpg"
+  },
+  {
+    "index": 1,
+    "sample_id": "fashionpedia-train2020-4052",
+    "image_sha256": "3a3304ddc7dd375410217842d2e1643be53807c0ad621be409650a7a694bce01",
+    "sheet": "records/review/batch-c/sheet-00.jpg"
+  },
+  {
+    "index": 2,
+    "sample_id": "fashionpedia-train2020-4054",
+    "image_sha256": "2cb20fd71fd462b85c9e6e4325531c7adcb0451f3f156bafdd0b6d074f9fb6a0",
+    "sheet": "records/review/batch-c/sheet-00.jpg"
+  },
+  {
+    "index": 3,
+    "sample_id": "fashionpedia-train2020-40692",
+    "image_sha256": "7a9b95bd1dfa842e614df6dfa1e9801fad7aaf880d91f509b819653034d2510c",
+    "sheet": "records/review/batch-c/sheet-00.jpg"
+  },
+  {
+    "index": 4,
+    "sample_id": "fashionpedia-train2020-40739",
+    "image_sha256": "4be173b8a829e90a9ac44aae1e888ed75ae9b8581fc53687c1be82e66f495857",
+    "sheet": "records/review/batch-c/sheet-00.jpg"
+  },
+  {
+    "index": 5,
+    "sample_id": "fashionpedia-train2020-40792",
+    "image_sha256": "54492c4a806f3ce30101a90e6254cab7b0b483fdf6dc0c77c0d2ca27c1a7e3af",
+    "sheet": "records/review/batch-c/sheet-00.jpg"
+  },
+  {
+    "index": 6,
+    "sample_id": "fashionpedia-train2020-40834",
+    "image_sha256": "a4292d0a35ebdee5da3aa2c659fcf0cbf10d4dcd11c6102d9ca035a9f13a9203",
+    "sheet": "records/review/batch-c/sheet-00.jpg"
+  },
+  {
+    "index": 7,
+    "sample_id": "fashionpedia-train2020-4085",
+    "image_sha256": "98ccb04ff43dbc328d18e020cfc55fcf31ff94bcf682bff1e0d9198af0a99032",
+    "sheet": "records/review/batch-c/sheet-00.jpg"
+  },
+  {
+    "index": 8,
+    "sample_id": "fashionpedia-train2020-4095",
+    "image_sha256": "505498cb75064eb22a338b6eb693fc4cb7f306770c1dab210d7d4484dfa67e29",
+    "sheet": "records/review/batch-c/sheet-00.jpg"
+  },
+  {
+    "index": 9,
+    "sample_id": "fashionpedia-train2020-41015",
+    "image_sha256": "baa0125222e5e6531a466af82145365b329d159832804af5fc5cab1641f331aa",
+    "sheet": "records/review/batch-c/sheet-00.jpg"
+  },
+  {
+    "index": 10,
+    "sample_id": "fashionpedia-train2020-41053",
+    "image_sha256": "b7fd9cf0d763056064c510f1bcb5253c40d4f6bb742786530e869fcb76418709",
+    "sheet": "records/review/batch-c/sheet-00.jpg"
+  },
+  {
+    "index": 11,
+    "sample_id": "fashionpedia-train2020-4106",
+    "image_sha256": "af0516767672d91db2a4ac300919e43d878033d6a8f575201278d94707b3b29a",
+    "sheet": "records/review/batch-c/sheet-00.jpg"
+  },
+  {
+    "index": 12,
+    "sample_id": "fashionpedia-train2020-4117",
+    "image_sha256": "6f2c61e58e6f22bc6649da8271bd1facd4c6169faa34bb3086c563d870082a4d",
+    "sheet": "records/review/batch-c/sheet-00.jpg"
+  },
+  {
+    "index": 13,
+    "sample_id": "fashionpedia-train2020-41170",
+    "image_sha256": "97a1a413b8248bc07d67ac0a02d623bc93ac27a46cafab117dadf3b661dca762",
+    "sheet": "records/review/batch-c/sheet-00.jpg"
+  },
+  {
+    "index": 14,
+    "sample_id": "fashionpedia-train2020-41216",
+    "image_sha256": "dcd6daefcce02aee668843b35fbf3b5d7ba5e424b1ae8428b47f1c5eaae4f509",
+    "sheet": "records/review/batch-c/sheet-00.jpg"
+  },
+  {
+    "index": 15,
+    "sample_id": "fashionpedia-train2020-41451",
+    "image_sha256": "40a31b4500e554953c0b4fe99ea3489ecd5eade67ed9476c51e4b1ec1a7c46c6",
+    "sheet": "records/review/batch-c/sheet-00.jpg"
+  },
+  {
+    "index": 16,
+    "sample_id": "fashionpedia-train2020-41546",
+    "image_sha256": "4bc7fbc79d57febed0ca99f6f0da169cd570146bee334949326b6e4ecb7cc453",
+    "sheet": "records/review/batch-c/sheet-01.jpg"
+  },
+  {
+    "index": 17,
+    "sample_id": "fashionpedia-train2020-41802",
+    "image_sha256": "b6dfa7eb745aafbbdb90f7f34486d6b08820c5f3a6b4a2b639502dd41e272530",
+    "sheet": "records/review/batch-c/sheet-01.jpg"
+  },
+  {
+    "index": 18,
+    "sample_id": "fashionpedia-train2020-41816",
+    "image_sha256": "8ca2ebab2a06221fddc4959e4b8961017fc0a07b3690a0d72525bd09bcb30388",
+    "sheet": "records/review/batch-c/sheet-01.jpg"
+  },
+  {
+    "index": 19,
+    "sample_id": "fashionpedia-train2020-41834",
+    "image_sha256": "56fdb01a23750a9a44f98bab57b8b7a329e4ed743162ce3c16218fa29720311e",
+    "sheet": "records/review/batch-c/sheet-01.jpg"
+  },
+  {
+    "index": 20,
+    "sample_id": "fashionpedia-train2020-41961",
+    "image_sha256": "ce2d2e7e5f92c1db4651d938317b64663bb5ce7df3046a54094e0438f0a92e77",
+    "sheet": "records/review/batch-c/sheet-01.jpg"
+  },
+  {
+    "index": 21,
+    "sample_id": "fashionpedia-train2020-41994",
+    "image_sha256": "3429a506ab922db851d4b8bcc9926c94f541e437075ebb98df0405a3a5221f8a",
+    "sheet": "records/review/batch-c/sheet-01.jpg"
+  },
+  {
+    "index": 22,
+    "sample_id": "fashionpedia-train2020-4203",
+    "image_sha256": "0a563de0bb72f6029f5e9ff8e04121dde4216620df47e71f5aa26607d00463a4",
+    "sheet": "records/review/batch-c/sheet-01.jpg"
+  },
+  {
+    "index": 23,
+    "sample_id": "fashionpedia-train2020-42057",
+    "image_sha256": "7eb19d0f9c6e93824d7fb8b53a769d45a62b45494fc1c4c9eae2de5e6993c31b",
+    "sheet": "records/review/batch-c/sheet-01.jpg"
+  },
+  {
+    "index": 24,
+    "sample_id": "fashionpedia-train2020-42059",
+    "image_sha256": "0bf10cc6f09f9a1a1c7b4ad1aec9e6f020cc5994506c913e401e5ef4dd42e311",
+    "sheet": "records/review/batch-c/sheet-01.jpg"
+  },
+  {
+    "index": 25,
+    "sample_id": "fashionpedia-train2020-42107",
+    "image_sha256": "06dc569304d76590fb9b7fe30979c39169247cc925c2b381bdbf0dc7e4881263",
+    "sheet": "records/review/batch-c/sheet-01.jpg"
+  },
+  {
+    "index": 26,
+    "sample_id": "fashionpedia-train2020-42112",
+    "image_sha256": "06883e4dab4db8438018044166d256b33192f371a35d8830f2c6c298ac2e208c",
+    "sheet": "records/review/batch-c/sheet-01.jpg"
+  },
+  {
+    "index": 27,
+    "sample_id": "fashionpedia-train2020-42126",
+    "image_sha256": "39307758792cfd8bdaaf9545f02b727505bb5107a676135831bfb71c919a552d",
+    "sheet": "records/review/batch-c/sheet-01.jpg"
+  },
+  {
+    "index": 28,
+    "sample_id": "fashionpedia-train2020-4213",
+    "image_sha256": "2b4a35001859850a7eeec66b110368d7dc93cc9527999b76f4ba21bb1151d77b",
+    "sheet": "records/review/batch-c/sheet-01.jpg"
+  },
+  {
+    "index": 29,
+    "sample_id": "fashionpedia-train2020-42167",
+    "image_sha256": "95098e8927638465f6a1732d8cf0df44978782a66c321ae58bb0c6a3325c24e4",
+    "sheet": "records/review/batch-c/sheet-01.jpg"
+  },
+  {
+    "index": 30,
+    "sample_id": "fashionpedia-train2020-42199",
+    "image_sha256": "80774efbc59eafff1da35be3e32d81ab4d1cc3c777d36b168e176be3850982f1",
+    "sheet": "records/review/batch-c/sheet-01.jpg"
+  },
+  {
+    "index": 31,
+    "sample_id": "fashionpedia-train2020-4221",
+    "image_sha256": "429c4794de2c17c6afc9723fbdb7795efb16ae03f77f5dab4a38266aefc755f5",
+    "sheet": "records/review/batch-c/sheet-01.jpg"
+  },
+  {
+    "index": 32,
+    "sample_id": "fashionpedia-train2020-42495",
+    "image_sha256": "f56515ae805f21f3819f2d0895c9bae12657602fbb3557930d4e088d99e4e6e3",
+    "sheet": "records/review/batch-c/sheet-02.jpg"
+  },
+  {
+    "index": 33,
+    "sample_id": "fashionpedia-train2020-42514",
+    "image_sha256": "76dfb931930ae1677c9ebce1847d1ef5de1c747270411ca0ad4a0f5114ec1867",
+    "sheet": "records/review/batch-c/sheet-02.jpg"
+  },
+  {
+    "index": 34,
+    "sample_id": "fashionpedia-train2020-42559",
+    "image_sha256": "bd3df9b0410a9f226da36f739205e19f15ce04a22741656796e3f973d73a8abd",
+    "sheet": "records/review/batch-c/sheet-02.jpg"
+  },
+  {
+    "index": 35,
+    "sample_id": "fashionpedia-train2020-4261",
+    "image_sha256": "95303f1e125583cdeb8acc37dd7d59d111167d2d8b44c748788cde00b0327cb2",
+    "sheet": "records/review/batch-c/sheet-02.jpg"
+  },
+  {
+    "index": 36,
+    "sample_id": "fashionpedia-train2020-4263",
+    "image_sha256": "18b6ab0026159d5029318021e3a71051220ed2e00bd54b04f6927ed28bf653b4",
+    "sheet": "records/review/batch-c/sheet-02.jpg"
+  },
+  {
+    "index": 37,
+    "sample_id": "fashionpedia-train2020-42636",
+    "image_sha256": "100bc98003a7cf5a4ff8f060f38a99acddd1ae5f85ee7dddae749bd9da81fe20",
+    "sheet": "records/review/batch-c/sheet-02.jpg"
+  },
+  {
+    "index": 38,
+    "sample_id": "fashionpedia-train2020-42644",
+    "image_sha256": "62bf7c5e84816c27907ee2af1649c4442e7c88bc21a99a227fdc9c0aad54d251",
+    "sheet": "records/review/batch-c/sheet-02.jpg"
+  },
+  {
+    "index": 39,
+    "sample_id": "fashionpedia-train2020-42668",
+    "image_sha256": "78265df6927601b74842d36785ac2651c80328c4cf2c5f73984dfd95f7659e68",
+    "sheet": "records/review/batch-c/sheet-02.jpg"
+  },
+  {
+    "index": 40,
+    "sample_id": "fashionpedia-train2020-42683",
+    "image_sha256": "4b7d697764c4a7d7a20e26e74bba2ce42096d5c20858a59e662da702b17d5793",
+    "sheet": "records/review/batch-c/sheet-02.jpg"
+  },
+  {
+    "index": 41,
+    "sample_id": "fashionpedia-train2020-42703",
+    "image_sha256": "f1919998c2b198b60c8c2ea2085505bba0310c55715aecd7963804afb604a9d6",
+    "sheet": "records/review/batch-c/sheet-02.jpg"
+  },
+  {
+    "index": 42,
+    "sample_id": "fashionpedia-train2020-42779",
+    "image_sha256": "6ab766d0ffe86ceb10571797c3b980a3db41625bcf69394a6b634abd8d88cb34",
+    "sheet": "records/review/batch-c/sheet-02.jpg"
+  },
+  {
+    "index": 43,
+    "sample_id": "fashionpedia-train2020-42842",
+    "image_sha256": "616c595bae4bcb08cd90eccc8b1fec02220cdc37e2809a28adc4d99fb628d53b",
+    "sheet": "records/review/batch-c/sheet-02.jpg"
+  },
+  {
+    "index": 44,
+    "sample_id": "fashionpedia-train2020-43003",
+    "image_sha256": "5a4a18a2f1c11e8dc382517b0f61cbb6fd332186ba2e15f1768d78aaf87e15ed",
+    "sheet": "records/review/batch-c/sheet-02.jpg"
+  },
+  {
+    "index": 45,
+    "sample_id": "fashionpedia-train2020-43005",
+    "image_sha256": "e8bda385960e4868e16a9d2524ca0e9b6b25cc05008e6737ab38c73d275e9edc",
+    "sheet": "records/review/batch-c/sheet-02.jpg"
+  },
+  {
+    "index": 46,
+    "sample_id": "fashionpedia-train2020-43076",
+    "image_sha256": "f3c3890b49b6251d91927973b068ef901320b6ab226b7f5833dea12bb3e9dd92",
+    "sheet": "records/review/batch-c/sheet-02.jpg"
+  },
+  {
+    "index": 47,
+    "sample_id": "fashionpedia-train2020-43097",
+    "image_sha256": "2d271f5a7d7a4168d13025525a5eb6a75f119c5e5bc8ef8c3a9e4db6b184f050",
+    "sheet": "records/review/batch-c/sheet-02.jpg"
+  },
+  {
+    "index": 48,
+    "sample_id": "fashionpedia-train2020-43104",
+    "image_sha256": "3a0a94416d7c8e77f2cb99fca32fd4552362b2b593e6cf79cbf19145dfe9b6f7",
+    "sheet": "records/review/batch-c/sheet-03.jpg"
+  },
+  {
+    "index": 49,
+    "sample_id": "fashionpedia-train2020-43111",
+    "image_sha256": "e370f55e7a24de10324c70381dfa68a4e59401bfb4c965c399453777e06f378f",
+    "sheet": "records/review/batch-c/sheet-03.jpg"
+  },
+  {
+    "index": 50,
+    "sample_id": "fashionpedia-train2020-43132",
+    "image_sha256": "919c8077bc3072d979706c96469abc47bf1f7a0da65334d22c9ee29237673a32",
+    "sheet": "records/review/batch-c/sheet-03.jpg"
+  },
+  {
+    "index": 51,
+    "sample_id": "fashionpedia-train2020-43235",
+    "image_sha256": "12b65e9a8cde12cf4a83579da5fc777fc984f8ff7f40034e8e927a1bcc76d49d",
+    "sheet": "records/review/batch-c/sheet-03.jpg"
+  },
+  {
+    "index": 52,
+    "sample_id": "fashionpedia-train2020-43278",
+    "image_sha256": "f991235b043031afda65aa53e65a39f8185091ffc190b05fe899b0b0a72ac7a4",
+    "sheet": "records/review/batch-c/sheet-03.jpg"
+  },
+  {
+    "index": 53,
+    "sample_id": "fashionpedia-train2020-4331",
+    "image_sha256": "298668754ed53c75612820e7ce6c41bc2587aa6542232da5f704bea404daf0d6",
+    "sheet": "records/review/batch-c/sheet-03.jpg"
+  },
+  {
+    "index": 54,
+    "sample_id": "fashionpedia-train2020-43333",
+    "image_sha256": "da76f240e9964368f372d8894c678dc9b96217a6a27799d3131dff8e00bd50ab",
+    "sheet": "records/review/batch-c/sheet-03.jpg"
+  },
+  {
+    "index": 55,
+    "sample_id": "fashionpedia-train2020-43359",
+    "image_sha256": "bb9b2b8af29d3967914b54db38182c81b7323fe0799eebc1446f98d089bf9623",
+    "sheet": "records/review/batch-c/sheet-03.jpg"
+  },
+  {
+    "index": 56,
+    "sample_id": "fashionpedia-train2020-43360",
+    "image_sha256": "879add7234921de6a01c7b5ff81b0340a37eacfa65f355fc5b7b9e79f0ae3e05",
+    "sheet": "records/review/batch-c/sheet-03.jpg"
+  },
+  {
+    "index": 57,
+    "sample_id": "fashionpedia-train2020-43394",
+    "image_sha256": "73140e35a338c34b36b3a3c6ad05231b41f74a8f99efe0089ec084632c389a90",
+    "sheet": "records/review/batch-c/sheet-03.jpg"
+  },
+  {
+    "index": 58,
+    "sample_id": "fashionpedia-train2020-43446",
+    "image_sha256": "2448b7f7b252034c54bd8c0004f9f6e5ab4c8005d6982037b6d723be7c45c551",
+    "sheet": "records/review/batch-c/sheet-03.jpg"
+  },
+  {
+    "index": 59,
+    "sample_id": "fashionpedia-train2020-43476",
+    "image_sha256": "78a40e8bc58105f00f047635d28e8e051bbdcad14de19c47532ccb2d95b515cb",
+    "sheet": "records/review/batch-c/sheet-03.jpg"
+  },
+  {
+    "index": 60,
+    "sample_id": "fashionpedia-train2020-435",
+    "image_sha256": "ca5c7e09f3e2b34be9d1b31e01d1fcecd766eeba4127c58746d44da5b6de635d",
+    "sheet": "records/review/batch-c/sheet-03.jpg"
+  },
+  {
+    "index": 61,
+    "sample_id": "fashionpedia-train2020-43540",
+    "image_sha256": "2f4c8423cefd5268c9e775c2a21c8a9e1a60ef3bbac0476934ee036837d80d20",
+    "sheet": "records/review/batch-c/sheet-03.jpg"
+  },
+  {
+    "index": 62,
+    "sample_id": "fashionpedia-train2020-43541",
+    "image_sha256": "cbd1f1dfe62474ca92f8b315049faea7a2504f8fdf437d35701dc563fcf51373",
+    "sheet": "records/review/batch-c/sheet-03.jpg"
+  },
+  {
+    "index": 63,
+    "sample_id": "fashionpedia-train2020-43601",
+    "image_sha256": "98d97d6969e30a957e7caf2263507a92f789c112d466111d4f1e2429dfbb3243",
+    "sheet": "records/review/batch-c/sheet-03.jpg"
+  },
+  {
+    "index": 64,
+    "sample_id": "fashionpedia-train2020-43616",
+    "image_sha256": "77fd4e7cb9eec8ecc094c3d0e85f7e3c19d4a73decdc5a17ae5ae75463883d25",
+    "sheet": "records/review/batch-c/sheet-04.jpg"
+  },
+  {
+    "index": 65,
+    "sample_id": "fashionpedia-train2020-43620",
+    "image_sha256": "df3cad0355b956e199d95c0933636e50b130a60b1d224b82c50e128d918f6d14",
+    "sheet": "records/review/batch-c/sheet-04.jpg"
+  },
+  {
+    "index": 66,
+    "sample_id": "fashionpedia-train2020-43660",
+    "image_sha256": "62091ad9c154c7df36e63e9038357159ec4742436e60555bcbd53e04f0c3d0bc",
+    "sheet": "records/review/batch-c/sheet-04.jpg"
+  },
+  {
+    "index": 67,
+    "sample_id": "fashionpedia-train2020-4390",
+    "image_sha256": "3719192c3da825b840525fb2a5dc074d4a9c1188ac12d922c070ee9f5e26a1fa",
+    "sheet": "records/review/batch-c/sheet-04.jpg"
+  },
+  {
+    "index": 68,
+    "sample_id": "fashionpedia-train2020-43939",
+    "image_sha256": "4bb618e8e315ed4300a8dd35fe1690623a080baca205f76172ad124730633ccc",
+    "sheet": "records/review/batch-c/sheet-04.jpg"
+  },
+  {
+    "index": 69,
+    "sample_id": "fashionpedia-train2020-44006",
+    "image_sha256": "62e6cbe3da341e2cad27290cd2e86f5d78a73c3d0771a584345c29f6354781e8",
+    "sheet": "records/review/batch-c/sheet-04.jpg"
+  },
+  {
+    "index": 70,
+    "sample_id": "fashionpedia-train2020-44037",
+    "image_sha256": "4a79da64c9ab4feb062b1fcfb91621ec24fc8ce6de32735a701d3ff8aa9fdadf",
+    "sheet": "records/review/batch-c/sheet-04.jpg"
+  },
+  {
+    "index": 71,
+    "sample_id": "fashionpedia-train2020-44170",
+    "image_sha256": "1fb88efd8cfd919ace7aa480352085db8e6bee6a0694688cf57334c96b2b70f3",
+    "sheet": "records/review/batch-c/sheet-04.jpg"
+  },
+  {
+    "index": 72,
+    "sample_id": "fashionpedia-train2020-44234",
+    "image_sha256": "e4259219f549cc2a1d6844e1ef61a6c49289fd9aeb8c7e4521dd5ab7db03d2fc",
+    "sheet": "records/review/batch-c/sheet-04.jpg"
+  },
+  {
+    "index": 73,
+    "sample_id": "fashionpedia-train2020-44268",
+    "image_sha256": "653be13575fb4c153b6a81281861c51a266f9f5a2a9ca613962921869b6709d4",
+    "sheet": "records/review/batch-c/sheet-04.jpg"
+  },
+  {
+    "index": 74,
+    "sample_id": "fashionpedia-train2020-44282",
+    "image_sha256": "ed2d88b1407e66d220da07f546036183aa38fa6a95673c73a4a6b77a1571ec5e",
+    "sheet": "records/review/batch-c/sheet-04.jpg"
+  },
+  {
+    "index": 75,
+    "sample_id": "fashionpedia-train2020-44347",
+    "image_sha256": "b3b7486cc905a7ec6fa514ff78ef13c4765108081aaf4aac55512fbdaf607118",
+    "sheet": "records/review/batch-c/sheet-04.jpg"
+  },
+  {
+    "index": 76,
+    "sample_id": "fashionpedia-train2020-4437",
+    "image_sha256": "c7fb2134161f04a1585eb7dc6aacd7214a51003345b20c92513c6a77a39f5686",
+    "sheet": "records/review/batch-c/sheet-04.jpg"
+  },
+  {
+    "index": 77,
+    "sample_id": "fashionpedia-train2020-44394",
+    "image_sha256": "5eb4974fe2ed9b3731cecd0901e63e0e1f7ab78bb0623f96d79df0847f5a8845",
+    "sheet": "records/review/batch-c/sheet-04.jpg"
+  },
+  {
+    "index": 78,
+    "sample_id": "fashionpedia-train2020-44450",
+    "image_sha256": "106b29df505f0fd74d11c3eed4218275b34f7ed31eea21f4e418554a40394eb1",
+    "sheet": "records/review/batch-c/sheet-04.jpg"
+  },
+  {
+    "index": 79,
+    "sample_id": "fashionpedia-train2020-4447",
+    "image_sha256": "900309608f2ac1d584f31fcaa68e8015446b042504be44e8dbc03f12e3af572b",
+    "sheet": "records/review/batch-c/sheet-04.jpg"
+  },
+  {
+    "index": 80,
+    "sample_id": "fashionpedia-train2020-44471",
+    "image_sha256": "1a8f52e4f6c6268cbe3d993c94580551cdb6de420d9e49b6a370bd4669b20523",
+    "sheet": "records/review/batch-c/sheet-05.jpg"
+  },
+  {
+    "index": 81,
+    "sample_id": "fashionpedia-train2020-44478",
+    "image_sha256": "27b218550f639406af07bdf32c927f3e7c12fa00d952120cea16eac859c699dd",
+    "sheet": "records/review/batch-c/sheet-05.jpg"
+  },
+  {
+    "index": 82,
+    "sample_id": "fashionpedia-train2020-44514",
+    "image_sha256": "f78db7a2a450fdece1e625b86812a6f9ddfba9a20afb30b4128921d6cda5875a",
+    "sheet": "records/review/batch-c/sheet-05.jpg"
+  },
+  {
+    "index": 83,
+    "sample_id": "fashionpedia-train2020-4453",
+    "image_sha256": "8c9f8cd40379b8596ea6e46db90777bae12eff198e8c9b2164184808e64ecffd",
+    "sheet": "records/review/batch-c/sheet-05.jpg"
+  },
+  {
+    "index": 84,
+    "sample_id": "fashionpedia-train2020-44545",
+    "image_sha256": "c445c8a725be1b0ce22b00151805d9cd76e862afb494f6c801410ef043086470",
+    "sheet": "records/review/batch-c/sheet-05.jpg"
+  },
+  {
+    "index": 85,
+    "sample_id": "fashionpedia-train2020-44571",
+    "image_sha256": "7c836c40bc7c6b0eed62cb43e81d98fff81189c9044d99e2887aa9ed7cb30f79",
+    "sheet": "records/review/batch-c/sheet-05.jpg"
+  },
+  {
+    "index": 86,
+    "sample_id": "fashionpedia-train2020-44719",
+    "image_sha256": "938be36343c9856cb216d44807c3754f76e9a649f5f9d9ba08f5c28f47d2edc1",
+    "sheet": "records/review/batch-c/sheet-05.jpg"
+  },
+  {
+    "index": 87,
+    "sample_id": "fashionpedia-train2020-44832",
+    "image_sha256": "0dcc151b56068a3825b3e4890fce4ffe1d060a2b0b43971e6670a38b15673ee7",
+    "sheet": "records/review/batch-c/sheet-05.jpg"
+  },
+  {
+    "index": 88,
+    "sample_id": "fashionpedia-train2020-44906",
+    "image_sha256": "9f8c7711a352fadacad887469cc0775ba009091010c287780aa79804d2238125",
+    "sheet": "records/review/batch-c/sheet-05.jpg"
+  },
+  {
+    "index": 89,
+    "sample_id": "fashionpedia-train2020-4491",
+    "image_sha256": "02bb0fcb480c78b3374c9a09ad17f9d715d8a03b4c762e8f1c8b1ab42c51768b",
+    "sheet": "records/review/batch-c/sheet-05.jpg"
+  },
+  {
+    "index": 90,
+    "sample_id": "fashionpedia-train2020-44922",
+    "image_sha256": "667a3ec982df46cf02b13e93aa58c19f796c860537a4685eafa85aff55088f6d",
+    "sheet": "records/review/batch-c/sheet-05.jpg"
+  },
+  {
+    "index": 91,
+    "sample_id": "fashionpedia-train2020-44934",
+    "image_sha256": "687abcd470989121c86b78986eae480bcbdc74f0c565d5215dc7a0d668baed46",
+    "sheet": "records/review/batch-c/sheet-05.jpg"
+  },
+  {
+    "index": 92,
+    "sample_id": "fashionpedia-train2020-45023",
+    "image_sha256": "939e30fe75d4a87755504054be09bc766d1d8c2bc958aa1b5155307e08293433",
+    "sheet": "records/review/batch-c/sheet-05.jpg"
+  },
+  {
+    "index": 93,
+    "sample_id": "fashionpedia-train2020-45070",
+    "image_sha256": "56359649fd7f6691497d94c0f3d778040a57dec8e260a01c35675104ffc90ca6",
+    "sheet": "records/review/batch-c/sheet-05.jpg"
+  },
+  {
+    "index": 94,
+    "sample_id": "fashionpedia-train2020-4509",
+    "image_sha256": "8b0e348be54fa7f3546465b8335a07d087d4ca9a81423eec0972a6041ce68a98",
+    "sheet": "records/review/batch-c/sheet-05.jpg"
+  },
+  {
+    "index": 95,
+    "sample_id": "fashionpedia-train2020-45095",
+    "image_sha256": "767a95c8f71efd2e3fbb1247f9c9085ed844d053aba295e392546fff8718edf4",
+    "sheet": "records/review/batch-c/sheet-05.jpg"
+  },
+  {
+    "index": 96,
+    "sample_id": "fashionpedia-train2020-45106",
+    "image_sha256": "2b6d359cf82358b019f9c5c333ea06b940c770c3ec36661b05b2fae2b48aae24",
+    "sheet": "records/review/batch-c/sheet-06.jpg"
+  },
+  {
+    "index": 97,
+    "sample_id": "fashionpedia-train2020-45112",
+    "image_sha256": "cc7ffd61077c5539d0e217477db64cebbe34b5c825b9864849f2abfb6597049c",
+    "sheet": "records/review/batch-c/sheet-06.jpg"
+  },
+  {
+    "index": 98,
+    "sample_id": "fashionpedia-train2020-45339",
+    "image_sha256": "b08a66c821490b72a2cd8aa99c67bbdb4f37348b881a50407fc24e1b5ce90e6c",
+    "sheet": "records/review/batch-c/sheet-06.jpg"
+  },
+  {
+    "index": 99,
+    "sample_id": "fashionpedia-train2020-45387",
+    "image_sha256": "7d86e3eef821ea5a3db3f52bbfc68cdea1fc9c828214c49927cbfc1050b04c27",
+    "sheet": "records/review/batch-c/sheet-06.jpg"
+  },
+  {
+    "index": 100,
+    "sample_id": "fashionpedia-train2020-45422",
+    "image_sha256": "a8bb18ecaf676d6273637951f0332a9a51289349d5a37cb1865b28b1466c8b43",
+    "sheet": "records/review/batch-c/sheet-06.jpg"
+  },
+  {
+    "index": 101,
+    "sample_id": "fashionpedia-train2020-45432",
+    "image_sha256": "6413b491d9677b9c643e79611d27a4790cbdf3707ab9c97d81e609f0a471231c",
+    "sheet": "records/review/batch-c/sheet-06.jpg"
+  },
+  {
+    "index": 102,
+    "sample_id": "fashionpedia-train2020-45492",
+    "image_sha256": "13bc9b3b968daea88d4afb2018a8f369c6fa4f59be19d13c55e90e552876173d",
+    "sheet": "records/review/batch-c/sheet-06.jpg"
+  },
+  {
+    "index": 103,
+    "sample_id": "fashionpedia-train2020-45547",
+    "image_sha256": "ce7ae02c66dd0fefd867fadbc44b24cc0fe26b246378e86ca5b9e98ffd12153d",
+    "sheet": "records/review/batch-c/sheet-06.jpg"
+  },
+  {
+    "index": 104,
+    "sample_id": "fashionpedia-train2020-45578",
+    "image_sha256": "cc8988cc8eb5885d3ce061f2184e81846804de926de865b035c8c97f1401ec11",
+    "sheet": "records/review/batch-c/sheet-06.jpg"
+  },
+  {
+    "index": 105,
+    "sample_id": "fashionpedia-train2020-45781",
+    "image_sha256": "2e8d18459d8574b83e4c05e0e0dabd8029332abf9a65a1fab8cb3126d4cee4fc",
+    "sheet": "records/review/batch-c/sheet-06.jpg"
+  },
+  {
+    "index": 106,
+    "sample_id": "fashionpedia-train2020-45790",
+    "image_sha256": "70f31ef22d2e7d0f5189ed55814998ec006c61032d7586e1408c802f149e08e5",
+    "sheet": "records/review/batch-c/sheet-06.jpg"
+  },
+  {
+    "index": 107,
+    "sample_id": "fashionpedia-train2020-45807",
+    "image_sha256": "5080a0ff501824ec8ee15c2ed8d7edac4e036bd9aa951538dacc9e5d648be351",
+    "sheet": "records/review/batch-c/sheet-06.jpg"
+  },
+  {
+    "index": 108,
+    "sample_id": "fashionpedia-train2020-45821",
+    "image_sha256": "594d9b07f20f7d5d503aa9ab8f64008f731016e9fdad4596754e65f02446383c",
+    "sheet": "records/review/batch-c/sheet-06.jpg"
+  },
+  {
+    "index": 109,
+    "sample_id": "fashionpedia-train2020-45853",
+    "image_sha256": "818ac4e09c95de41801574753d7e67131056b6695e052401fb52390eca48b648",
+    "sheet": "records/review/batch-c/sheet-06.jpg"
+  },
+  {
+    "index": 110,
+    "sample_id": "fashionpedia-train2020-45865",
+    "image_sha256": "474d9575ea1e94560f52a1d54612e2006c0faa7db6a6a6be7c449fe8ec0653f7",
+    "sheet": "records/review/batch-c/sheet-06.jpg"
+  },
+  {
+    "index": 111,
+    "sample_id": "fashionpedia-train2020-4587",
+    "image_sha256": "82ecbea781b22cbbcaf663e59694f021562227c83386ee728689c8c1dd640787",
+    "sheet": "records/review/batch-c/sheet-06.jpg"
+  },
+  {
+    "index": 112,
+    "sample_id": "fashionpedia-train2020-45873",
+    "image_sha256": "d1086894f14cd70202649b47801cc76dca792c5d49a719334551d0ce93ca6087",
+    "sheet": "records/review/batch-c/sheet-07.jpg"
+  },
+  {
+    "index": 113,
+    "sample_id": "fashionpedia-train2020-45900",
+    "image_sha256": "53e7ad5f762b9520929ce02e9e18e86748f2ca9784f916cdfbe4878b4bdc9880",
+    "sheet": "records/review/batch-c/sheet-07.jpg"
+  },
+  {
+    "index": 114,
+    "sample_id": "fashionpedia-train2020-45946",
+    "image_sha256": "1506b029c4f1b5ea146fc90f7430c782813aec5837650f2120917788ffd1c593",
+    "sheet": "records/review/batch-c/sheet-07.jpg"
+  },
+  {
+    "index": 115,
+    "sample_id": "fashionpedia-train2020-46167",
+    "image_sha256": "2a6ad8e3e5b32ab2f61a84e1d4c92c66a7859a1e0dfecefabd995629f016259b",
+    "sheet": "records/review/batch-c/sheet-07.jpg"
+  },
+  {
+    "index": 116,
+    "sample_id": "fashionpedia-train2020-46188",
+    "image_sha256": "17fbbcbd1d3832df664241ba4579e49b87b068af33f9820753a9db32e22054e8",
+    "sheet": "records/review/batch-c/sheet-07.jpg"
+  },
+  {
+    "index": 117,
+    "sample_id": "fashionpedia-train2020-4622",
+    "image_sha256": "1a0b55c44ea9a85e75af39d4e78b95057b444927aa8094d5b2bda30c4c3c4b54",
+    "sheet": "records/review/batch-c/sheet-07.jpg"
+  },
+  {
+    "index": 118,
+    "sample_id": "fashionpedia-train2020-46248",
+    "image_sha256": "f315e64720a17fb6f46bc8653babb268993d534b5559bea0a2e97276458b899f",
+    "sheet": "records/review/batch-c/sheet-07.jpg"
+  },
+  {
+    "index": 119,
+    "sample_id": "fashionpedia-train2020-46308",
+    "image_sha256": "63b308f1b71161c9c51b3245d6b5c2e8d178035461e59b6ad515f0f1cd081ac4",
+    "sheet": "records/review/batch-c/sheet-07.jpg"
+  },
+  {
+    "index": 120,
+    "sample_id": "fashionpedia-train2020-46316",
+    "image_sha256": "64dee180e9b9f034b209c2f5d74c8298f082ce72f118821f1c8da8c068b98e86",
+    "sheet": "records/review/batch-c/sheet-07.jpg"
+  },
+  {
+    "index": 121,
+    "sample_id": "fashionpedia-train2020-46438",
+    "image_sha256": "008a1fa3ec5ba4a07218472e037e2fdd7fe62f0826ce7158078efd2e934491e8",
+    "sheet": "records/review/batch-c/sheet-07.jpg"
+  },
+  {
+    "index": 122,
+    "sample_id": "fashionpedia-train2020-46561",
+    "image_sha256": "bb3c2d59cc6d7e56f8294dd18a2dcc2bdb415d880ff334e7e1edc788aab28697",
+    "sheet": "records/review/batch-c/sheet-07.jpg"
+  },
+  {
+    "index": 123,
+    "sample_id": "fashionpedia-train2020-46627",
+    "image_sha256": "d945c6695e7cefa9e633582973920863e88d45085b27d69e32d1744ba8c0568d",
+    "sheet": "records/review/batch-c/sheet-07.jpg"
+  },
+  {
+    "index": 124,
+    "sample_id": "fashionpedia-train2020-4668",
+    "image_sha256": "46aa8d8a622678fe3fca06a16bd4c4a099d168282d6e15aef75ce1b06c219a04",
+    "sheet": "records/review/batch-c/sheet-07.jpg"
+  },
+  {
+    "index": 125,
+    "sample_id": "fashionpedia-train2020-46732",
+    "image_sha256": "5049d0985b53fa9b99a8189555866c91ef55c2d18d6f752ccff75dabd27a2051",
+    "sheet": "records/review/batch-c/sheet-07.jpg"
+  },
+  {
+    "index": 126,
+    "sample_id": "fashionpedia-train2020-46766",
+    "image_sha256": "61ef7992795f103740ea086bc8e702271714fc538ee63e3d1ada5ccde967ba48",
+    "sheet": "records/review/batch-c/sheet-07.jpg"
+  },
+  {
+    "index": 127,
+    "sample_id": "fashionpedia-train2020-46827",
+    "image_sha256": "4061588948a9444ca827d8adc16416933da823fcbb8fc6c48c33eb5f4ada4e5e",
+    "sheet": "records/review/batch-c/sheet-07.jpg"
+  },
+  {
+    "index": 128,
+    "sample_id": "fashionpedia-train2020-46929",
+    "image_sha256": "b42df22f48043886b1b38e0361b9e97a55346d14935431578b4cfcb6626c3233",
+    "sheet": "records/review/batch-c/sheet-08.jpg"
+  },
+  {
+    "index": 129,
+    "sample_id": "fashionpedia-train2020-4695",
+    "image_sha256": "98f155281f0fb0e9496f8be372f14b7eca45894cc7b2da3acabfbb5f0f89fe32",
+    "sheet": "records/review/batch-c/sheet-08.jpg"
+  },
+  {
+    "index": 130,
+    "sample_id": "fashionpedia-train2020-46969",
+    "image_sha256": "f7fd95e2976307ff215eb34563dcbb1136e125254b79496245e5818916cc306f",
+    "sheet": "records/review/batch-c/sheet-08.jpg"
+  },
+  {
+    "index": 131,
+    "sample_id": "fashionpedia-train2020-4713",
+    "image_sha256": "147539dbf0eddb7d59e89702de0b74074dddd376a11df644ad489d16205f0017",
+    "sheet": "records/review/batch-c/sheet-08.jpg"
+  },
+  {
+    "index": 132,
+    "sample_id": "fashionpedia-train2020-47200",
+    "image_sha256": "eba3e89cc6a87f47ddecaaeca7b30d48f2f60d713057c8d14c7d1288d8dceb1c",
+    "sheet": "records/review/batch-c/sheet-08.jpg"
+  },
+  {
+    "index": 133,
+    "sample_id": "fashionpedia-train2020-47233",
+    "image_sha256": "7b9e250ef8c5ded6b6ca369715438f1c559c790da6d6a4a16e7cc975a74e17aa",
+    "sheet": "records/review/batch-c/sheet-08.jpg"
+  },
+  {
+    "index": 134,
+    "sample_id": "fashionpedia-train2020-47336",
+    "image_sha256": "817a84cc266638665d8a4ba25046cb2dde168008335d7bca72c4efe8c4779ede",
+    "sheet": "records/review/batch-c/sheet-08.jpg"
+  },
+  {
+    "index": 135,
+    "sample_id": "fashionpedia-train2020-47349",
+    "image_sha256": "4e2c46549493773887347bbc3f65dfc3dc90944a9cecd035891368ed82191513",
+    "sheet": "records/review/batch-c/sheet-08.jpg"
+  },
+  {
+    "index": 136,
+    "sample_id": "fashionpedia-train2020-47376",
+    "image_sha256": "9f576618afad96261c9603d731a6494a0b74e29074d525ed9c2e654fd6a5c356",
+    "sheet": "records/review/batch-c/sheet-08.jpg"
+  },
+  {
+    "index": 137,
+    "sample_id": "fashionpedia-train2020-47417",
+    "image_sha256": "d98e047327c124d43022613377633af1fbc70fd34f4ff7aee76f2a240405e886",
+    "sheet": "records/review/batch-c/sheet-08.jpg"
+  },
+  {
+    "index": 138,
+    "sample_id": "fashionpedia-train2020-47497",
+    "image_sha256": "4e8a5fb4dee43bdef5edbb646f7cb5906cbd9853bcc281e242db1fb15c54c6be",
+    "sheet": "records/review/batch-c/sheet-08.jpg"
+  },
+  {
+    "index": 139,
+    "sample_id": "fashionpedia-train2020-47525",
+    "image_sha256": "67af7a6bc2c73909b27ef319ca6d6679320e256620010620d8c050124ca4c92b",
+    "sheet": "records/review/batch-c/sheet-08.jpg"
+  },
+  {
+    "index": 140,
+    "sample_id": "fashionpedia-train2020-47609",
+    "image_sha256": "67c3a6da112c812394eafe1f1fddd2fdd980b755ba9fe85758413fdc72d7ba49",
+    "sheet": "records/review/batch-c/sheet-08.jpg"
+  },
+  {
+    "index": 141,
+    "sample_id": "fashionpedia-train2020-4763",
+    "image_sha256": "6f0e93edf9a7ce2818c1d1371b679d6ece9216ebae330c4d2463039c59b4d719",
+    "sheet": "records/review/batch-c/sheet-08.jpg"
+  },
+  {
+    "index": 142,
+    "sample_id": "fashionpedia-train2020-4765",
+    "image_sha256": "919c7a04b8d313a98afae5ba84b6547263aafdee949ec5f4a41b01399ae6f1ef",
+    "sheet": "records/review/batch-c/sheet-08.jpg"
+  },
+  {
+    "index": 143,
+    "sample_id": "fashionpedia-train2020-4768",
+    "image_sha256": "03e6044dc8b0be41bc33c82745138996cee64f4ca15634f7f7e8a5f228679f75",
+    "sheet": "records/review/batch-c/sheet-08.jpg"
+  },
+  {
+    "index": 144,
+    "sample_id": "fashionpedia-train2020-47739",
+    "image_sha256": "1d267d02b1d63c3240835b3cb20807e99d701065149576adaa9fec45ce5fd25f",
+    "sheet": "records/review/batch-c/sheet-09.jpg"
+  },
+  {
+    "index": 145,
+    "sample_id": "fashionpedia-train2020-47811",
+    "image_sha256": "758953662e246f485b1be0ccfd12de94aa4b6213c8311c5f6d8cba988a71f142",
+    "sheet": "records/review/batch-c/sheet-09.jpg"
+  },
+  {
+    "index": 146,
+    "sample_id": "fashionpedia-train2020-48086",
+    "image_sha256": "026d37a5a620c73c4e6e743f96f3f070c2f3830b5c9698de90a8b29d69689f56",
+    "sheet": "records/review/batch-c/sheet-09.jpg"
+  },
+  {
+    "index": 147,
+    "sample_id": "fashionpedia-train2020-48109",
+    "image_sha256": "fab8433882c3ee0f1c515d6f589a4380849b3c01d1d87f46eacc7b121d74cdad",
+    "sheet": "records/review/batch-c/sheet-09.jpg"
+  },
+  {
+    "index": 148,
+    "sample_id": "fashionpedia-train2020-48283",
+    "image_sha256": "8d3950bc0fe5b2ae40480db91764c1eb175e430b575f089a9fff0330e6942983",
+    "sheet": "records/review/batch-c/sheet-09.jpg"
+  },
+  {
+    "index": 149,
+    "sample_id": "fashionpedia-train2020-48389",
+    "image_sha256": "e45de01d57d4acec46d62307549d54a3be4295f0c151652cefc38183821656de",
+    "sheet": "records/review/batch-c/sheet-09.jpg"
+  },
+  {
+    "index": 150,
+    "sample_id": "fashionpedia-train2020-48420",
+    "image_sha256": "e48d543828c5b25328472e688b2fde75609f25ebb77502a9689c4fa34ab8f506",
+    "sheet": "records/review/batch-c/sheet-09.jpg"
+  },
+  {
+    "index": 151,
+    "sample_id": "fashionpedia-train2020-48482",
+    "image_sha256": "fcaa420e43f75db7dc4a7e41f7367c3e3851fec42f731dde0258e0a7eb378f85",
+    "sheet": "records/review/batch-c/sheet-09.jpg"
+  },
+  {
+    "index": 152,
+    "sample_id": "fashionpedia-train2020-48571",
+    "image_sha256": "43415e2d7463ca4303904d8b59f56093b7615e3be1e3390654a7e6acf440fecb",
+    "sheet": "records/review/batch-c/sheet-09.jpg"
+  },
+  {
+    "index": 153,
+    "sample_id": "fashionpedia-train2020-48613",
+    "image_sha256": "9bbc9e8f017d2c8d4d84cadf3631364f73a0582490db3c58cae405223f73a069",
+    "sheet": "records/review/batch-c/sheet-09.jpg"
+  },
+  {
+    "index": 154,
+    "sample_id": "fashionpedia-train2020-48703",
+    "image_sha256": "86485a9282369fc0dca7052f965240daf0b0b6318704a21aee7e2022eca9f8ec",
+    "sheet": "records/review/batch-c/sheet-09.jpg"
+  },
+  {
+    "index": 155,
+    "sample_id": "fashionpedia-train2020-48713",
+    "image_sha256": "a262ba45ecd6bc2f33cd85d20f53abc9709eb3f65fe673b6a3a0fc9e825d1501",
+    "sheet": "records/review/batch-c/sheet-09.jpg"
+  },
+  {
+    "index": 156,
+    "sample_id": "fashionpedia-train2020-48747",
+    "image_sha256": "dcdfadde900c2a90748a566c07747ecd62fd80070baa41e5418875319c311a59",
+    "sheet": "records/review/batch-c/sheet-09.jpg"
+  },
+  {
+    "index": 157,
+    "sample_id": "fashionpedia-train2020-48792",
+    "image_sha256": "22693af19eb2393902fd5d5313f159158e15dcfc9bc8b8113361762cb13e8e78",
+    "sheet": "records/review/batch-c/sheet-09.jpg"
+  },
+  {
+    "index": 158,
+    "sample_id": "fashionpedia-train2020-4883",
+    "image_sha256": "1e625a9560db6ab5e9621b9809e1849a0f3108bb9dcbb9fdb3bd6d31c05c6812",
+    "sheet": "records/review/batch-c/sheet-09.jpg"
+  },
+  {
+    "index": 159,
+    "sample_id": "fashionpedia-train2020-48845",
+    "image_sha256": "c382f2afab5d226bb1c361f59ac1047df96d47811688e41658d28e3f95ebb6f5",
+    "sheet": "records/review/batch-c/sheet-09.jpg"
+  },
+  {
+    "index": 160,
+    "sample_id": "fashionpedia-train2020-48982",
+    "image_sha256": "45547fde4856883afc6bd54b86f094c68ba46a1e5f09c03dda9acacbf313d9a5",
+    "sheet": "records/review/batch-c/sheet-10.jpg"
+  },
+  {
+    "index": 161,
+    "sample_id": "fashionpedia-train2020-49039",
+    "image_sha256": "1ad6fbe6aad860eaf4458920b43b0e6e7e3e3221dfbb60e1e78ae422e23e72ef",
+    "sheet": "records/review/batch-c/sheet-10.jpg"
+  },
+  {
+    "index": 162,
+    "sample_id": "fashionpedia-train2020-49099",
+    "image_sha256": "a0218416f3ab4a72ac4f44be2e035e23bac794eb22c8bc99407d1f9f9a1a0342",
+    "sheet": "records/review/batch-c/sheet-10.jpg"
+  },
+  {
+    "index": 163,
+    "sample_id": "fashionpedia-train2020-49215",
+    "image_sha256": "9199fc207472fdb093f372a75dd316f6709508cf3376ee1eeb569094c6d833cb",
+    "sheet": "records/review/batch-c/sheet-10.jpg"
+  },
+  {
+    "index": 164,
+    "sample_id": "fashionpedia-train2020-4922",
+    "image_sha256": "93890055adc13d8465ed524cb406212cf58176db300a04c212e7aa3ddd7fb03a",
+    "sheet": "records/review/batch-c/sheet-10.jpg"
+  },
+  {
+    "index": 165,
+    "sample_id": "fashionpedia-train2020-4923",
+    "image_sha256": "16a8f159cc35a1e938b086c3a77647311547c3126f10679a9a9938ca94ad5d1c",
+    "sheet": "records/review/batch-c/sheet-10.jpg"
+  },
+  {
+    "index": 166,
+    "sample_id": "fashionpedia-train2020-49241",
+    "image_sha256": "2d74e3d42ce5eb482e5e3d2203fea1abb5d06910469b515f2018a6c3f9d8763c",
+    "sheet": "records/review/batch-c/sheet-10.jpg"
+  },
+  {
+    "index": 167,
+    "sample_id": "fashionpedia-train2020-4925",
+    "image_sha256": "bb938732001d1c311c7f24ea8e3b6eb51456298bd15d8e0593bc3c333e1202e0",
+    "sheet": "records/review/batch-c/sheet-10.jpg"
+  },
+  {
+    "index": 168,
+    "sample_id": "fashionpedia-train2020-49266",
+    "image_sha256": "0b9416c98886c4af6bfd7e6c9bff43ea2456c39d93c772dbc70a6f4f8b845a2c",
+    "sheet": "records/review/batch-c/sheet-10.jpg"
+  },
+  {
+    "index": 169,
+    "sample_id": "fashionpedia-train2020-49279",
+    "image_sha256": "3c2945872c65b394284f4afbc73252d11e63653caf8f3563ea54a8fc964e5e6f",
+    "sheet": "records/review/batch-c/sheet-10.jpg"
+  },
+  {
+    "index": 170,
+    "sample_id": "fashionpedia-train2020-49281",
+    "image_sha256": "de639c2b35667eb223329dc49ed1fb40b4a65f17ad6ce81a65582fc7fe600ff3",
+    "sheet": "records/review/batch-c/sheet-10.jpg"
+  },
+  {
+    "index": 171,
+    "sample_id": "fashionpedia-train2020-49421",
+    "image_sha256": "aa1b85fe107e2428a6d3f021d102086f8e0aaf3cb0501a8a06fdb6df7043a555",
+    "sheet": "records/review/batch-c/sheet-10.jpg"
+  },
+  {
+    "index": 172,
+    "sample_id": "fashionpedia-train2020-49537",
+    "image_sha256": "f03258d72bac2a85fa8ff124368b53c8b40b1386fe0d7e74571e9bb95e0e429c",
+    "sheet": "records/review/batch-c/sheet-10.jpg"
+  },
+  {
+    "index": 173,
+    "sample_id": "fashionpedia-train2020-49555",
+    "image_sha256": "413d154ae66a83231a429a98e71aafa67d4b154d691610573fe20a615ee7b627",
+    "sheet": "records/review/batch-c/sheet-10.jpg"
+  },
+  {
+    "index": 174,
+    "sample_id": "fashionpedia-train2020-49556",
+    "image_sha256": "ae35f9485bda8e0b7bb6f25ce6bd993a979a75ca8192a43e2b4a9c4b52ef9578",
+    "sheet": "records/review/batch-c/sheet-10.jpg"
+  },
+  {
+    "index": 175,
+    "sample_id": "fashionpedia-train2020-49747",
+    "image_sha256": "ab877437f422ace3a9b33b4e2e15500b40765e698af6fc76860b32978341692e",
+    "sheet": "records/review/batch-c/sheet-10.jpg"
+  },
+  {
+    "index": 176,
+    "sample_id": "fashionpedia-train2020-4975",
+    "image_sha256": "4a8e59a377c3bd150cc1088074c856629861346782b7cd1e2d79084d4681961f",
+    "sheet": "records/review/batch-c/sheet-11.jpg"
+  },
+  {
+    "index": 177,
+    "sample_id": "fashionpedia-train2020-49760",
+    "image_sha256": "b5878c5385c306f6a8e7003c8bfc49e301b048431ce180b100a4e287cff3cc4c",
+    "sheet": "records/review/batch-c/sheet-11.jpg"
+  },
+  {
+    "index": 178,
+    "sample_id": "fashionpedia-train2020-49867",
+    "image_sha256": "01b9871bbd06b3c1a73163f70452a185c84f8cc723036eb8382ee62fcd886823",
+    "sheet": "records/review/batch-c/sheet-11.jpg"
+  },
+  {
+    "index": 179,
+    "sample_id": "fashionpedia-train2020-5003",
+    "image_sha256": "d7b57cf1ff00c57006aedb1edf99d888a197427cd1d8cba6094999888129381c",
+    "sheet": "records/review/batch-c/sheet-11.jpg"
+  },
+  {
+    "index": 180,
+    "sample_id": "fashionpedia-train2020-50050",
+    "image_sha256": "9aa73e80d4dbc86b327a4d8a17ffbbfb4a1e6f0c917ff1bbf68021b497409520",
+    "sheet": "records/review/batch-c/sheet-11.jpg"
+  },
+  {
+    "index": 181,
+    "sample_id": "fashionpedia-train2020-50052",
+    "image_sha256": "93ae3676e4dcd613a3e9ba6044ce4372924f5175372a30df01c0e85fa2654218",
+    "sheet": "records/review/batch-c/sheet-11.jpg"
+  },
+  {
+    "index": 182,
+    "sample_id": "fashionpedia-train2020-50112",
+    "image_sha256": "56ecf99d5a42c363ec7b3357778695529c97709e0a0dc4c0f1040b8973aa3206",
+    "sheet": "records/review/batch-c/sheet-11.jpg"
+  },
+  {
+    "index": 183,
+    "sample_id": "fashionpedia-train2020-5013",
+    "image_sha256": "ad20ea8faa049a14a7b9024bc6084c46ddf5a97a0741a38fc3eec59da266a9ba",
+    "sheet": "records/review/batch-c/sheet-11.jpg"
+  },
+  {
+    "index": 184,
+    "sample_id": "fashionpedia-train2020-5017",
+    "image_sha256": "f48fdb3848637e915ec11748612e8954fba70ca9b05eb91b646e89d3a0280024",
+    "sheet": "records/review/batch-c/sheet-11.jpg"
+  },
+  {
+    "index": 185,
+    "sample_id": "fashionpedia-train2020-5020",
+    "image_sha256": "a3afd7aa753894be660e1e98ef6e4b3a96878bc3adfe51951b2d08f8e3a1e4e6",
+    "sheet": "records/review/batch-c/sheet-11.jpg"
+  },
+  {
+    "index": 186,
+    "sample_id": "fashionpedia-train2020-50301",
+    "image_sha256": "04381f567ecbe0df840a3512a8c6dbfa561875ed5cb3142f1705748e6313f0c5",
+    "sheet": "records/review/batch-c/sheet-11.jpg"
+  },
+  {
+    "index": 187,
+    "sample_id": "fashionpedia-train2020-50322",
+    "image_sha256": "46b7f7bcb081fdec1e7c7273ea908163c2554ca5bcf18d4d14e1bcc430eb1379",
+    "sheet": "records/review/batch-c/sheet-11.jpg"
+  },
+  {
+    "index": 188,
+    "sample_id": "fashionpedia-train2020-50327",
+    "image_sha256": "c0c7d447caafe99bf65c12a1ba464a1d735d00fc84c8f21d71e6336e1fb00031",
+    "sheet": "records/review/batch-c/sheet-11.jpg"
+  },
+  {
+    "index": 189,
+    "sample_id": "fashionpedia-train2020-50372",
+    "image_sha256": "8c77cb9ae3b01e41bb42919f52145d4836e79c1867e0ddcf46f00538da443be0",
+    "sheet": "records/review/batch-c/sheet-11.jpg"
+  },
+  {
+    "index": 190,
+    "sample_id": "fashionpedia-train2020-50470",
+    "image_sha256": "cb65987979116d8f70bf24b13543c73155798737e8a28ebb1e7a19284a07e59b",
+    "sheet": "records/review/batch-c/sheet-11.jpg"
+  },
+  {
+    "index": 191,
+    "sample_id": "fashionpedia-train2020-50486",
+    "image_sha256": "6bdf13602661a2e96c410a79e86b1956490a945f7d4e9fcdbcfe0223c1559a60",
+    "sheet": "records/review/batch-c/sheet-11.jpg"
+  },
+  {
+    "index": 192,
+    "sample_id": "fashionpedia-train2020-5127",
+    "image_sha256": "07302ec124b44876ddc71e92b887fea21c44e678fb3cc3baf1a3f91999795fe6",
+    "sheet": "records/review/batch-c/sheet-12.jpg"
+  },
+  {
+    "index": 193,
+    "sample_id": "fashionpedia-train2020-5148",
+    "image_sha256": "494c8f4ef813614877ed678125437ed3ef6c27f66f8f28a47e5a45309eee94bc",
+    "sheet": "records/review/batch-c/sheet-12.jpg"
+  },
+  {
+    "index": 194,
+    "sample_id": "fashionpedia-train2020-5237",
+    "image_sha256": "a062dd321eb4ff2c8d8babf0b4abe0c027b088048951245c975fa337efb1b9a4",
+    "sheet": "records/review/batch-c/sheet-12.jpg"
+  },
+  {
+    "index": 195,
+    "sample_id": "fashionpedia-train2020-5243",
+    "image_sha256": "78a9afcfb2791c50d8a12c8ed292e9439524ad7f8214562a1b9d69f4b74b4345",
+    "sheet": "records/review/batch-c/sheet-12.jpg"
+  },
+  {
+    "index": 196,
+    "sample_id": "fashionpedia-train2020-5267",
+    "image_sha256": "56f8ec05d1d2cefcee334fee4ff18650741c0db818b24cbdc8ef30e1b721a014",
+    "sheet": "records/review/batch-c/sheet-12.jpg"
+  },
+  {
+    "index": 197,
+    "sample_id": "fashionpedia-train2020-5278",
+    "image_sha256": "e5f9c1c98c09645136b89fcd4bc15af1c28c1a1e6b4ebb6d01447add5891f3a6",
+    "sheet": "records/review/batch-c/sheet-12.jpg"
+  },
+  {
+    "index": 198,
+    "sample_id": "fashionpedia-train2020-5360",
+    "image_sha256": "733f92b4c76243ec9db5e69868a968d5a1122d2e302fa47732457f5a594184f9",
+    "sheet": "records/review/batch-c/sheet-12.jpg"
+  },
+  {
+    "index": 199,
+    "sample_id": "fashionpedia-train2020-5369",
+    "image_sha256": "6e5bf5cebca90e40ed90a3f57e7cac3e531f65ef21804344d78ef8ef437faca1",
+    "sheet": "records/review/batch-c/sheet-12.jpg"
+  },
+  {
+    "index": 200,
+    "sample_id": "fashionpedia-train2020-5371",
+    "image_sha256": "ada5addfed7043ebf35ada03d4f8405c54db6241fa50268deb499d2ec6ec8954",
+    "sheet": "records/review/batch-c/sheet-12.jpg"
+  },
+  {
+    "index": 201,
+    "sample_id": "fashionpedia-train2020-5379",
+    "image_sha256": "572387c367b14bd35f4d1281f22bf3392f17ea0b83594a12b74e7d26bdb5548b",
+    "sheet": "records/review/batch-c/sheet-12.jpg"
+  },
+  {
+    "index": 202,
+    "sample_id": "fashionpedia-train2020-5388",
+    "image_sha256": "fb316b16a6082242594376a3061bba05f2927b38e84b9b94ebcab4dabc32ac78",
+    "sheet": "records/review/batch-c/sheet-12.jpg"
+  },
+  {
+    "index": 203,
+    "sample_id": "fashionpedia-train2020-5433",
+    "image_sha256": "b16708259618682d7436bc554f5e550712b0ef45eaaafedf641b46e5a1e8f7b7",
+    "sheet": "records/review/batch-c/sheet-12.jpg"
+  },
+  {
+    "index": 204,
+    "sample_id": "fashionpedia-train2020-5462",
+    "image_sha256": "0f26d571058fa0c064f087e227f6f1481a6f8310acccfcf94b9dee12a65fc89f",
+    "sheet": "records/review/batch-c/sheet-12.jpg"
+  },
+  {
+    "index": 205,
+    "sample_id": "fashionpedia-train2020-5478",
+    "image_sha256": "21799a51a81a56689b88204c01d950293bad813b13096f9d1823d738c29dea68",
+    "sheet": "records/review/batch-c/sheet-12.jpg"
+  },
+  {
+    "index": 206,
+    "sample_id": "fashionpedia-train2020-5481",
+    "image_sha256": "838d819eb1f9708c0bbe852821644d5a6ffa80eca57f63498a57b12069a10638",
+    "sheet": "records/review/batch-c/sheet-12.jpg"
+  },
+  {
+    "index": 207,
+    "sample_id": "fashionpedia-train2020-551",
+    "image_sha256": "db6103715ed14f02ad35333ba7cbcbdd0574664b1bb274f890e09aba2849845e",
+    "sheet": "records/review/batch-c/sheet-12.jpg"
+  },
+  {
+    "index": 208,
+    "sample_id": "fashionpedia-train2020-5510",
+    "image_sha256": "848a5bbc27515823c102cfe4e96a5548885f3e26f58eb763e5f923c4ac9f5448",
+    "sheet": "records/review/batch-c/sheet-13.jpg"
+  },
+  {
+    "index": 209,
+    "sample_id": "fashionpedia-train2020-5537",
+    "image_sha256": "5dc0635c2607404f4e1bc57e35227179a15659a8500d3df9f2f7873be8c44e86",
+    "sheet": "records/review/batch-c/sheet-13.jpg"
+  },
+  {
+    "index": 210,
+    "sample_id": "fashionpedia-train2020-554",
+    "image_sha256": "eb125046f7619688d2bc19852cd5188880b3e87f1ffe5fcca5195eb89d010de1",
+    "sheet": "records/review/batch-c/sheet-13.jpg"
+  },
+  {
+    "index": 211,
+    "sample_id": "fashionpedia-train2020-5542",
+    "image_sha256": "c4512fa5da6cb924370f467177819c4da594da71ab54fdb6c7cbfa0105ce7bdb",
+    "sheet": "records/review/batch-c/sheet-13.jpg"
+  },
+  {
+    "index": 212,
+    "sample_id": "fashionpedia-train2020-555",
+    "image_sha256": "bb09f8f6179d72167c2fdeaacadfa18e747818380667342c1b95b1d6839c32ba",
+    "sheet": "records/review/batch-c/sheet-13.jpg"
+  },
+  {
+    "index": 213,
+    "sample_id": "fashionpedia-train2020-5573",
+    "image_sha256": "66cdc122c06586bac72dd6a751eb88519a6d2242e1b21bac546bcbc5cb57a2bb",
+    "sheet": "records/review/batch-c/sheet-13.jpg"
+  },
+  {
+    "index": 214,
+    "sample_id": "fashionpedia-train2020-5601",
+    "image_sha256": "fa4e3cea9d4f0904fe7b9000aaaf22ad3516de1fd52c160b567d038fdd71b46c",
+    "sheet": "records/review/batch-c/sheet-13.jpg"
+  },
+  {
+    "index": 215,
+    "sample_id": "fashionpedia-train2020-5605",
+    "image_sha256": "0817d79717a06ff0ba32f0374ae76b2c632583fa11a10aaf85b40458ef904a4d",
+    "sheet": "records/review/batch-c/sheet-13.jpg"
+  },
+  {
+    "index": 216,
+    "sample_id": "fashionpedia-train2020-5658",
+    "image_sha256": "6dc26cda97130f48f793615ab481a96308beaf3383830bf283c8b5c924185ebd",
+    "sheet": "records/review/batch-c/sheet-13.jpg"
+  },
+  {
+    "index": 217,
+    "sample_id": "fashionpedia-train2020-5665",
+    "image_sha256": "da26b4e17ccb55459b4aefdd34398356f907a24b94be530225673e16575197cd",
+    "sheet": "records/review/batch-c/sheet-13.jpg"
+  },
+  {
+    "index": 218,
+    "sample_id": "fashionpedia-train2020-5706",
+    "image_sha256": "eb7ca33f7fa70a2dc35319f350f3b2d4cc26644e510efee0e473e1f4081c22c5",
+    "sheet": "records/review/batch-c/sheet-13.jpg"
+  },
+  {
+    "index": 219,
+    "sample_id": "fashionpedia-train2020-5732",
+    "image_sha256": "5a81a2536dd4c70abe24e151b408e577ff95747d13b24461e2f2ab35b3521312",
+    "sheet": "records/review/batch-c/sheet-13.jpg"
+  },
+  {
+    "index": 220,
+    "sample_id": "fashionpedia-train2020-5809",
+    "image_sha256": "82f5c1b75012d37296b0bdc6c3d6eb271abb486a98970e59357b470943693aee",
+    "sheet": "records/review/batch-c/sheet-13.jpg"
+  },
+  {
+    "index": 221,
+    "sample_id": "fashionpedia-train2020-5887",
+    "image_sha256": "9b1f5674cb7deeaba70b2c3c3cdbcab7cfc4c2dfa482fdaf72537baffaffb1a1",
+    "sheet": "records/review/batch-c/sheet-13.jpg"
+  },
+  {
+    "index": 222,
+    "sample_id": "fashionpedia-train2020-5917",
+    "image_sha256": "bf3dfdf004e8b6f43ca1b981adb85bed66a9de403d725cbefc05c352ad0cb482",
+    "sheet": "records/review/batch-c/sheet-13.jpg"
+  },
+  {
+    "index": 223,
+    "sample_id": "fashionpedia-train2020-5991",
+    "image_sha256": "0759a2b53e60b60fd695204bca465e85693eae3a533401fb08710eba72dd8240",
+    "sheet": "records/review/batch-c/sheet-13.jpg"
+  },
+  {
+    "index": 224,
+    "sample_id": "fashionpedia-train2020-5994",
+    "image_sha256": "e0fd744dc27c9de41bdc8c9653c0c241f038a16f717504ef5796afd261ace08f",
+    "sheet": "records/review/batch-c/sheet-14.jpg"
+  },
+  {
+    "index": 225,
+    "sample_id": "fashionpedia-train2020-6011",
+    "image_sha256": "b09570e8c25857e9eaca12d2313aee1dd1dd76bee0a924f92ec920603648be72",
+    "sheet": "records/review/batch-c/sheet-14.jpg"
+  },
+  {
+    "index": 226,
+    "sample_id": "fashionpedia-train2020-6020",
+    "image_sha256": "17d3a2a4b23714967e9f44d915364b5da5904f09da93fb9c3dbb4ba42486ca78",
+    "sheet": "records/review/batch-c/sheet-14.jpg"
+  },
+  {
+    "index": 227,
+    "sample_id": "fashionpedia-train2020-6021",
+    "image_sha256": "3066a581db50769579ef765ca71e7ee769eb896a8dd4653c13103d168eff64f3",
+    "sheet": "records/review/batch-c/sheet-14.jpg"
+  },
+  {
+    "index": 228,
+    "sample_id": "fashionpedia-train2020-6024",
+    "image_sha256": "3738703c588f2940389679e4e06bd0c563c45604d398701c4214e7e569e587a9",
+    "sheet": "records/review/batch-c/sheet-14.jpg"
+  },
+  {
+    "index": 229,
+    "sample_id": "fashionpedia-train2020-6103",
+    "image_sha256": "869f3e827bb783d8ca7bdd977ce826a2961f5e7baaacb2be69a870e4d44499b0",
+    "sheet": "records/review/batch-c/sheet-14.jpg"
+  },
+  {
+    "index": 230,
+    "sample_id": "fashionpedia-train2020-6115",
+    "image_sha256": "debf7c9d5f3fcdc12a86aa62e0a1937ae3d9a1ec9967a1e648bfaee21113c71a",
+    "sheet": "records/review/batch-c/sheet-14.jpg"
+  },
+  {
+    "index": 231,
+    "sample_id": "fashionpedia-train2020-6135",
+    "image_sha256": "44f0c97bde6b6dd0e26b16c0ff2ad0df09688171a378efd17de6c7a04010d4de",
+    "sheet": "records/review/batch-c/sheet-14.jpg"
+  },
+  {
+    "index": 232,
+    "sample_id": "fashionpedia-train2020-6145",
+    "image_sha256": "ec34f9026601e37da97b0dd6031a8dfe9f7d75918e449a7192393d0e2dca6e1b",
+    "sheet": "records/review/batch-c/sheet-14.jpg"
+  },
+  {
+    "index": 233,
+    "sample_id": "fashionpedia-train2020-6172",
+    "image_sha256": "7c5848ca8493f4f44a10f32038f2611f2cfc890e40cbbda2411bd28988fb65bd",
+    "sheet": "records/review/batch-c/sheet-14.jpg"
+  },
+  {
+    "index": 234,
+    "sample_id": "fashionpedia-train2020-6176",
+    "image_sha256": "4389e0ce0c7a567dd8f6f431530583fdcc8da97b7224bcb64698689d5fdf3e9f",
+    "sheet": "records/review/batch-c/sheet-14.jpg"
+  },
+  {
+    "index": 235,
+    "sample_id": "fashionpedia-train2020-6253",
+    "image_sha256": "238c848da6cf7ebe31724133015454d74a33d37aa2f2874bd3e84785d2a5dc11",
+    "sheet": "records/review/batch-c/sheet-14.jpg"
+  },
+  {
+    "index": 236,
+    "sample_id": "fashionpedia-train2020-6263",
+    "image_sha256": "e44100ff491af5007539bef551a074aa567045aceb30fb5767e37988d22cc91d",
+    "sheet": "records/review/batch-c/sheet-14.jpg"
+  },
+  {
+    "index": 237,
+    "sample_id": "fashionpedia-train2020-6269",
+    "image_sha256": "fc64bfad8ef306ccd8e621b492201bd74b5b8c1036629065e8ee189551c6eb78",
+    "sheet": "records/review/batch-c/sheet-14.jpg"
+  },
+  {
+    "index": 238,
+    "sample_id": "fashionpedia-train2020-6285",
+    "image_sha256": "202e6372f58793f086afcc2d0d1021361df76d21ee91cb8a139b2ea106a48463",
+    "sheet": "records/review/batch-c/sheet-14.jpg"
+  },
+  {
+    "index": 239,
+    "sample_id": "fashionpedia-train2020-6359",
+    "image_sha256": "d42b9b7900969a8f944a6d410a6281635838deb17f9ba06c5804e6e36aacbcb5",
+    "sheet": "records/review/batch-c/sheet-14.jpg"
+  },
+  {
+    "index": 240,
+    "sample_id": "fashionpedia-train2020-6419",
+    "image_sha256": "89ff86ac86cee09313074c4f8788282118c71c407523f30bb90361e992e8d7fe",
+    "sheet": "records/review/batch-c/sheet-15.jpg"
+  },
+  {
+    "index": 241,
+    "sample_id": "fashionpedia-train2020-6420",
+    "image_sha256": "7d8350ad81e26affe5498f1d1ba18a0bd9356c1d06ee67cdc4708ca8f53d717b",
+    "sheet": "records/review/batch-c/sheet-15.jpg"
+  },
+  {
+    "index": 242,
+    "sample_id": "fashionpedia-train2020-6424",
+    "image_sha256": "facf8802ee3d166f58156a4b7f4df2a2e34c823bcecd335749045bb7c96211d5",
+    "sheet": "records/review/batch-c/sheet-15.jpg"
+  },
+  {
+    "index": 243,
+    "sample_id": "fashionpedia-train2020-6475",
+    "image_sha256": "1dd754c138028f6effb4120cef85b65d56a74538fc5b1211d167afb2b9559059",
+    "sheet": "records/review/batch-c/sheet-15.jpg"
+  },
+  {
+    "index": 244,
+    "sample_id": "fashionpedia-train2020-6518",
+    "image_sha256": "b8182dc8c82279468861240cb3bfa83e46daf9f4efc5d84d64baf436911c0374",
+    "sheet": "records/review/batch-c/sheet-15.jpg"
+  },
+  {
+    "index": 245,
+    "sample_id": "fashionpedia-train2020-6541",
+    "image_sha256": "944c2ba38f60bf91caf15c9aef97ba020317bbcb6d0cca6f9d1f62e44eaab1eb",
+    "sheet": "records/review/batch-c/sheet-15.jpg"
+  },
+  {
+    "index": 246,
+    "sample_id": "fashionpedia-train2020-6559",
+    "image_sha256": "5ebfd7a8431b74eab54fb3c1ebc27d505d2c0b557a5fdc009f9804aac940bbca",
+    "sheet": "records/review/batch-c/sheet-15.jpg"
+  },
+  {
+    "index": 247,
+    "sample_id": "fashionpedia-train2020-6616",
+    "image_sha256": "dcbc1d251342d13421096b256c6cc9fc0a81f4f0281a04ff0d310a50001a1922",
+    "sheet": "records/review/batch-c/sheet-15.jpg"
+  },
+  {
+    "index": 248,
+    "sample_id": "fashionpedia-train2020-6625",
+    "image_sha256": "ff9c6c20500a55267d4cd8589cf9f17fba398a83f219387b28387a8f00803574",
+    "sheet": "records/review/batch-c/sheet-15.jpg"
+  },
+  {
+    "index": 249,
+    "sample_id": "fashionpedia-train2020-6853",
+    "image_sha256": "5e02d8429b990f1d2f4a4db29d18df15386bc2a4d8430be145c64e621cb33f67",
+    "sheet": "records/review/batch-c/sheet-15.jpg"
+  },
+  {
+    "index": 250,
+    "sample_id": "fashionpedia-train2020-6871",
+    "image_sha256": "4ed6d9aa614fe09bc0765735c24cf0c717fbebd947edbf2b1bebea241fa3209e",
+    "sheet": "records/review/batch-c/sheet-15.jpg"
+  },
+  {
+    "index": 251,
+    "sample_id": "fashionpedia-train2020-6915",
+    "image_sha256": "2d5e91e22f587e10be556466b6a2d30eb1ec7dbe9ca16a89b66beb17cbf732dd",
+    "sheet": "records/review/batch-c/sheet-15.jpg"
+  },
+  {
+    "index": 252,
+    "sample_id": "fashionpedia-train2020-6951",
+    "image_sha256": "a85742e9ad110a9343ea5f4128cedcb46dcfbe4035109cc33f3a5e10c0181729",
+    "sheet": "records/review/batch-c/sheet-15.jpg"
+  },
+  {
+    "index": 253,
+    "sample_id": "fashionpedia-train2020-6986",
+    "image_sha256": "6be5ca2fce26d3de666d98f47592f1adf1b7cf6965bef786e46c43f242576c44",
+    "sheet": "records/review/batch-c/sheet-15.jpg"
+  },
+  {
+    "index": 254,
+    "sample_id": "fashionpedia-train2020-7021",
+    "image_sha256": "1be12a89d66ff7d69545dc018e87b9066fa76ef1dfd713a77c1dae1b69e48495",
+    "sheet": "records/review/batch-c/sheet-15.jpg"
+  },
+  {
+    "index": 255,
+    "sample_id": "fashionpedia-train2020-7046",
+    "image_sha256": "aa4f441a9e8da2b8e50ffcd2884afc46b7f78053d737d366fd72a85404af0967",
+    "sheet": "records/review/batch-c/sheet-15.jpg"
+  },
+  {
+    "index": 256,
+    "sample_id": "fashionpedia-train2020-7127",
+    "image_sha256": "3950639368f7383f40785f44e20ec6c5edb378a2ee52e43a91a2136a31e95899",
+    "sheet": "records/review/batch-c/sheet-16.jpg"
+  },
+  {
+    "index": 257,
+    "sample_id": "fashionpedia-train2020-7163",
+    "image_sha256": "919ba22045cf03c1815f6ab1b51c5c56a0c87102a74f6021de04effd3f178ace",
+    "sheet": "records/review/batch-c/sheet-16.jpg"
+  },
+  {
+    "index": 258,
+    "sample_id": "fashionpedia-train2020-7207",
+    "image_sha256": "c974096aeda875c05f4d359d2e6eab5a8f866bc5c339b78c3d6ab00c320d49cd",
+    "sheet": "records/review/batch-c/sheet-16.jpg"
+  },
+  {
+    "index": 259,
+    "sample_id": "fashionpedia-train2020-7214",
+    "image_sha256": "4f2eb5440b3ff38c1de22f846e5c4867d88ba29289829b91ae8928954e63bc67",
+    "sheet": "records/review/batch-c/sheet-16.jpg"
+  },
+  {
+    "index": 260,
+    "sample_id": "fashionpedia-train2020-7306",
+    "image_sha256": "86eb1c9f46e39a7e0db08fde10c6e3b4c2f4606132c05037bd5cda484493783b",
+    "sheet": "records/review/batch-c/sheet-16.jpg"
+  },
+  {
+    "index": 261,
+    "sample_id": "fashionpedia-train2020-7330",
+    "image_sha256": "3d0be4cbd1adb46adf26da07938f00c3f2780918580da698ec05678cf08faced",
+    "sheet": "records/review/batch-c/sheet-16.jpg"
+  },
+  {
+    "index": 262,
+    "sample_id": "fashionpedia-train2020-7471",
+    "image_sha256": "cf68c84b14b71c19bde7c255a179b6ada56aa01aa8ebf191da5cd64f906f7840",
+    "sheet": "records/review/batch-c/sheet-16.jpg"
+  },
+  {
+    "index": 263,
+    "sample_id": "fashionpedia-train2020-7501",
+    "image_sha256": "b64dac5531c3d46cca423dff441f9fce5a5adf3043b1ba587d10c0cfd8e6f1bc",
+    "sheet": "records/review/batch-c/sheet-16.jpg"
+  },
+  {
+    "index": 264,
+    "sample_id": "fashionpedia-train2020-7587",
+    "image_sha256": "9df327bf5991cb631d6830a5d0a5e9f7534f6d0d4a9cba7b3d56538b49f850f0",
+    "sheet": "records/review/batch-c/sheet-16.jpg"
+  },
+  {
+    "index": 265,
+    "sample_id": "fashionpedia-train2020-7595",
+    "image_sha256": "6230b43e1114a8f57619f4ff8c8bbada09b9bd8c78c6693703cd665492303caf",
+    "sheet": "records/review/batch-c/sheet-16.jpg"
+  },
+  {
+    "index": 266,
+    "sample_id": "fashionpedia-train2020-7612",
+    "image_sha256": "35a947993dd7fa0d5097ddf771e3ef056661e10c00f589865e56c2810061b40c",
+    "sheet": "records/review/batch-c/sheet-16.jpg"
+  },
+  {
+    "index": 267,
+    "sample_id": "fashionpedia-train2020-7621",
+    "image_sha256": "bf113749f1df30133cdd79bd803937709828ad51241f4492107d29e93455e3e5",
+    "sheet": "records/review/batch-c/sheet-16.jpg"
+  },
+  {
+    "index": 268,
+    "sample_id": "fashionpedia-train2020-7628",
+    "image_sha256": "69e180669ce912165d564957803d896567da74bc0db0c84a9931223df954bf01",
+    "sheet": "records/review/batch-c/sheet-16.jpg"
+  },
+  {
+    "index": 269,
+    "sample_id": "fashionpedia-train2020-7686",
+    "image_sha256": "342f452c7dd8b985dbf8f4763ed83e31e0b83d1b615fff64eb2c3feb338dc06a",
+    "sheet": "records/review/batch-c/sheet-16.jpg"
+  },
+  {
+    "index": 270,
+    "sample_id": "fashionpedia-train2020-7694",
+    "image_sha256": "456339d3467120d097bd9a62486cfab3db99ceb30b96ea21e7e399e8cc257327",
+    "sheet": "records/review/batch-c/sheet-16.jpg"
+  },
+  {
+    "index": 271,
+    "sample_id": "fashionpedia-train2020-7789",
+    "image_sha256": "70fcb7ba01fe90ae23c00d10ee4f32c7bad7889b1e43c608cbfc04e23b30d1e9",
+    "sheet": "records/review/batch-c/sheet-16.jpg"
+  },
+  {
+    "index": 272,
+    "sample_id": "fashionpedia-train2020-7808",
+    "image_sha256": "2dfcd3396c80db86401f2de30045868443d89eb85baf71f6c77e5909ccf63be6",
+    "sheet": "records/review/batch-c/sheet-17.jpg"
+  },
+  {
+    "index": 273,
+    "sample_id": "fashionpedia-train2020-7839",
+    "image_sha256": "ab5bb0ed5a9ac9721fe32999f1058b47db4e414480c9fc136aeca4fd532df438",
+    "sheet": "records/review/batch-c/sheet-17.jpg"
+  },
+  {
+    "index": 274,
+    "sample_id": "fashionpedia-train2020-7876",
+    "image_sha256": "9e9b4aff5f4fb105757a35addd395c37658847a71b3a6e9e1eb1111690fa6087",
+    "sheet": "records/review/batch-c/sheet-17.jpg"
+  },
+  {
+    "index": 275,
+    "sample_id": "fashionpedia-train2020-7978",
+    "image_sha256": "0312498ce8b3fdf17ff67eddb532ef2d8eaf9afa419f6299190d086bd7f54f0a",
+    "sheet": "records/review/batch-c/sheet-17.jpg"
+  },
+  {
+    "index": 276,
+    "sample_id": "fashionpedia-train2020-8004",
+    "image_sha256": "5d3f4a520d5a8a4297e0e7895f6df843377bc27422422822078fdd56eb423f5e",
+    "sheet": "records/review/batch-c/sheet-17.jpg"
+  },
+  {
+    "index": 277,
+    "sample_id": "fashionpedia-train2020-8006",
+    "image_sha256": "047336ba572bfb87480b5397fca0c58e12280243382d4e1f9a7fb6185d9ac531",
+    "sheet": "records/review/batch-c/sheet-17.jpg"
+  },
+  {
+    "index": 278,
+    "sample_id": "fashionpedia-train2020-8008",
+    "image_sha256": "61e1434838bf8579fbd8bf467abac08e5e9043f0418cfb1384db561525fa5b27",
+    "sheet": "records/review/batch-c/sheet-17.jpg"
+  },
+  {
+    "index": 279,
+    "sample_id": "fashionpedia-train2020-8019",
+    "image_sha256": "a265dcd003324fd15441c267b053ed59fa27e62cd0097e71d4bcb5d12078a19e",
+    "sheet": "records/review/batch-c/sheet-17.jpg"
+  },
+  {
+    "index": 280,
+    "sample_id": "fashionpedia-train2020-8160",
+    "image_sha256": "91bb107b8597f2117af2cd2c945664ed9eeef6af4f0a7cb0a35d1d3ebe3383ed",
+    "sheet": "records/review/batch-c/sheet-17.jpg"
+  },
+  {
+    "index": 281,
+    "sample_id": "fashionpedia-train2020-8193",
+    "image_sha256": "df91cbc7521f9704d6b05b8140525d4a8e707b453ad0d881e8f8ee095a5514eb",
+    "sheet": "records/review/batch-c/sheet-17.jpg"
+  },
+  {
+    "index": 282,
+    "sample_id": "fashionpedia-train2020-8195",
+    "image_sha256": "1bcbb6b5a8bcc2e851b5d319e8f84477ffe18538c18ce7866165a9fdd111dfd0",
+    "sheet": "records/review/batch-c/sheet-17.jpg"
+  },
+  {
+    "index": 283,
+    "sample_id": "fashionpedia-train2020-8201",
+    "image_sha256": "70501cb362b494e29d8aa74d271506040470ab515dfcd895020020b990ec1034",
+    "sheet": "records/review/batch-c/sheet-17.jpg"
+  },
+  {
+    "index": 284,
+    "sample_id": "fashionpedia-train2020-8243",
+    "image_sha256": "6bc37f9a7eaecd77e62beda991dc2147671d406861bb8eaf348cf78cce913933",
+    "sheet": "records/review/batch-c/sheet-17.jpg"
+  },
+  {
+    "index": 285,
+    "sample_id": "fashionpedia-train2020-8257",
+    "image_sha256": "fd033547958668f4c35c79e6214a4a5708f96e2b4e1a68e466abdc9fdd9f615a",
+    "sheet": "records/review/batch-c/sheet-17.jpg"
+  },
+  {
+    "index": 286,
+    "sample_id": "fashionpedia-train2020-8259",
+    "image_sha256": "5a115de7f4d6b28df746e30d1988722f285793bc5fc9c7ee32867b92aac05c38",
+    "sheet": "records/review/batch-c/sheet-17.jpg"
+  },
+  {
+    "index": 287,
+    "sample_id": "fashionpedia-train2020-8266",
+    "image_sha256": "8a2f38b04f6e72f2f892cfa3b97a013690c963d51f4aa2aeb1b81179e3cc85ff",
+    "sheet": "records/review/batch-c/sheet-17.jpg"
+  },
+  {
+    "index": 288,
+    "sample_id": "fashionpedia-train2020-8296",
+    "image_sha256": "e0f49d5add0cc67997a4d1bc98e868fe940165661ce70e95e0bd14622adbb38d",
+    "sheet": "records/review/batch-c/sheet-18.jpg"
+  },
+  {
+    "index": 289,
+    "sample_id": "fashionpedia-train2020-8299",
+    "image_sha256": "23454d4a6ec114659f3464e1046e39e8d1600f16759c4074809aa1d55e05a371",
+    "sheet": "records/review/batch-c/sheet-18.jpg"
+  },
+  {
+    "index": 290,
+    "sample_id": "fashionpedia-train2020-830",
+    "image_sha256": "7b0dc3b0a5c2488963fccc2a8a84574afc30db50497a52e4fe9755276184cf28",
+    "sheet": "records/review/batch-c/sheet-18.jpg"
+  },
+  {
+    "index": 291,
+    "sample_id": "fashionpedia-train2020-8332",
+    "image_sha256": "a717cca32f9dfe0f209e511489bf0231b8f1cd9ec48c2fbcac184562d226cece",
+    "sheet": "records/review/batch-c/sheet-18.jpg"
+  },
+  {
+    "index": 292,
+    "sample_id": "fashionpedia-train2020-8335",
+    "image_sha256": "3dff3deb67ce8a1863a98902becb9996cec7d4f157ca22f43ae7336bd43cedf8",
+    "sheet": "records/review/batch-c/sheet-18.jpg"
+  },
+  {
+    "index": 293,
+    "sample_id": "fashionpedia-train2020-8366",
+    "image_sha256": "0e3b5150d8896a20a34df464be5d51741b123fb9635020fc8988f6d3c2daec15",
+    "sheet": "records/review/batch-c/sheet-18.jpg"
+  },
+  {
+    "index": 294,
+    "sample_id": "fashionpedia-train2020-8474",
+    "image_sha256": "28503e68a5ee01320d656c3b46a5d87ee476d3cb41d357c34df0a470c3e0ddc3",
+    "sheet": "records/review/batch-c/sheet-18.jpg"
+  },
+  {
+    "index": 295,
+    "sample_id": "fashionpedia-train2020-85",
+    "image_sha256": "f0c7e366ecefd3cb048968f026ca2205f7c02657d3e4ac42c6b3880b28823076",
+    "sheet": "records/review/batch-c/sheet-18.jpg"
+  },
+  {
+    "index": 296,
+    "sample_id": "fashionpedia-train2020-8500",
+    "image_sha256": "642264f90ee073f535848f3549aa59d129244caf15ca065b68f9868ae4e21fff",
+    "sheet": "records/review/batch-c/sheet-18.jpg"
+  },
+  {
+    "index": 297,
+    "sample_id": "fashionpedia-train2020-8517",
+    "image_sha256": "fe4c56ca10a513d9bea57afb2b9fbc27a104eceefb55cf5c6ff00ee8f4df48e1",
+    "sheet": "records/review/batch-c/sheet-18.jpg"
+  },
+  {
+    "index": 298,
+    "sample_id": "fashionpedia-train2020-8521",
+    "image_sha256": "5ebc86183c3159580a7ef3b201cfee4c7c650f88b2ca684cc220458fa93ded11",
+    "sheet": "records/review/batch-c/sheet-18.jpg"
+  },
+  {
+    "index": 299,
+    "sample_id": "fashionpedia-train2020-856",
+    "image_sha256": "d075e00daf8e3a5365064d3c2cbbdda25a69fe916dbf26531e9e616716e9bd55",
+    "sheet": "records/review/batch-c/sheet-18.jpg"
+  },
+  {
+    "index": 300,
+    "sample_id": "fashionpedia-train2020-8573",
+    "image_sha256": "cea104e123d16badb871b498ccc8546b70589e92c7ff9f90aaea030a73c35545",
+    "sheet": "records/review/batch-c/sheet-18.jpg"
+  },
+  {
+    "index": 301,
+    "sample_id": "fashionpedia-train2020-8592",
+    "image_sha256": "b6033f4b18c532ed53b21b9e621b469e5025dab73cdd3fcdd91cc2ff42507744",
+    "sheet": "records/review/batch-c/sheet-18.jpg"
+  },
+  {
+    "index": 302,
+    "sample_id": "fashionpedia-train2020-8601",
+    "image_sha256": "18b0877e631536e638ddc70e9a7db78527399e2ab06f3bdfd73cceb81d4486d5",
+    "sheet": "records/review/batch-c/sheet-18.jpg"
+  },
+  {
+    "index": 303,
+    "sample_id": "fashionpedia-train2020-8647",
+    "image_sha256": "a5b6231284c797e57d807e069cbc6356555095e429b80e269b6ad97ae4bbb05e",
+    "sheet": "records/review/batch-c/sheet-18.jpg"
+  },
+  {
+    "index": 304,
+    "sample_id": "fashionpedia-train2020-8662",
+    "image_sha256": "4804c40930c72acaaa5d4ffc43d5fe9c7c79de8c5904c8157803c1e7bf513ac1",
+    "sheet": "records/review/batch-c/sheet-19.jpg"
+  },
+  {
+    "index": 305,
+    "sample_id": "fashionpedia-train2020-8732",
+    "image_sha256": "88f3e86b1be3ec85234d30b02f1dc85eace28eec0a1355ca8e8047f342889982",
+    "sheet": "records/review/batch-c/sheet-19.jpg"
+  },
+  {
+    "index": 306,
+    "sample_id": "fashionpedia-train2020-8745",
+    "image_sha256": "7b263e10030a5b8e34bc1cd792158f94d786ef278c79bcba8e4feb9bfd0250d9",
+    "sheet": "records/review/batch-c/sheet-19.jpg"
+  },
+  {
+    "index": 307,
+    "sample_id": "fashionpedia-train2020-8769",
+    "image_sha256": "ed63ac0e6bc8ac81bc3253542bc4a4fcafaa85adaa9632bb675d721ba3786dee",
+    "sheet": "records/review/batch-c/sheet-19.jpg"
+  },
+  {
+    "index": 308,
+    "sample_id": "fashionpedia-train2020-8816",
+    "image_sha256": "1db6daff0f206d28ab279f7827f081551c081280f107d7d9fb0e0b4b38590409",
+    "sheet": "records/review/batch-c/sheet-19.jpg"
+  },
+  {
+    "index": 309,
+    "sample_id": "fashionpedia-train2020-8848",
+    "image_sha256": "a994231ed34002e5b791199c2e6db1c89ce3a5024cd542be1ed7e362060dc048",
+    "sheet": "records/review/batch-c/sheet-19.jpg"
+  },
+  {
+    "index": 310,
+    "sample_id": "fashionpedia-train2020-8880",
+    "image_sha256": "522fece6bfd16a74095516dcc13a2090a1730e9cfaa0b3ee834fa506a704477b",
+    "sheet": "records/review/batch-c/sheet-19.jpg"
+  },
+  {
+    "index": 311,
+    "sample_id": "fashionpedia-train2020-895",
+    "image_sha256": "325bb1754357cfaf221d4864cf14b1ad947be396215a793fe24717311bab685a",
+    "sheet": "records/review/batch-c/sheet-19.jpg"
+  },
+  {
+    "index": 312,
+    "sample_id": "fashionpedia-train2020-8989",
+    "image_sha256": "0a4f54d33752abe422dcfd2f886c261b5d5f5e41e26a10368cac06e0a83dbf82",
+    "sheet": "records/review/batch-c/sheet-19.jpg"
+  },
+  {
+    "index": 313,
+    "sample_id": "fashionpedia-train2020-9047",
+    "image_sha256": "73f1c140c66f1b2b27f7c77bf4f9053029afe74072296893c8cd93cc5a1358dd",
+    "sheet": "records/review/batch-c/sheet-19.jpg"
+  },
+  {
+    "index": 314,
+    "sample_id": "fashionpedia-train2020-9068",
+    "image_sha256": "6e47a078ff03d93dde204670d161673d95259c2f202589b2a31833498a1b7973",
+    "sheet": "records/review/batch-c/sheet-19.jpg"
+  },
+  {
+    "index": 315,
+    "sample_id": "fashionpedia-train2020-9156",
+    "image_sha256": "458f36a7e5436cf09b72c76ccddf21c901c49800152ce54ec5503ece659de2d0",
+    "sheet": "records/review/batch-c/sheet-19.jpg"
+  },
+  {
+    "index": 316,
+    "sample_id": "fashionpedia-train2020-9208",
+    "image_sha256": "ce4b871824e06c2ef3b603982fb649d08c6c6403fcda3f4af6c96b4e6231ddfa",
+    "sheet": "records/review/batch-c/sheet-19.jpg"
+  },
+  {
+    "index": 317,
+    "sample_id": "fashionpedia-train2020-9241",
+    "image_sha256": "500b68287b3728b9cd15af595a2f74d68b33b66597d86c7f0862494260516c29",
+    "sheet": "records/review/batch-c/sheet-19.jpg"
+  },
+  {
+    "index": 318,
+    "sample_id": "fashionpedia-train2020-9372",
+    "image_sha256": "70c8fde8b832c860561cc7fb910e56ffff2740bcea312d0cd469e5e2ecf7a7fa",
+    "sheet": "records/review/batch-c/sheet-19.jpg"
+  },
+  {
+    "index": 319,
+    "sample_id": "fashionpedia-train2020-9386",
+    "image_sha256": "5a8a9a3c60d061624d76476852c26f4cfa040edf5b28379cca26cc3f0937cdd1",
+    "sheet": "records/review/batch-c/sheet-19.jpg"
+  },
+  {
+    "index": 320,
+    "sample_id": "fashionpedia-train2020-9448",
+    "image_sha256": "535512ee7fc2b30fdbe78f4bac09bda84fc76df03843919b0314eba4c6a8a4b3",
+    "sheet": "records/review/batch-c/sheet-20.jpg"
+  },
+  {
+    "index": 321,
+    "sample_id": "fashionpedia-train2020-9473",
+    "image_sha256": "9df48bfc9da60cc6dd737f60b4c99bb27219ace34932bfc181f18497114f8fc3",
+    "sheet": "records/review/batch-c/sheet-20.jpg"
+  },
+  {
+    "index": 322,
+    "sample_id": "fashionpedia-train2020-9544",
+    "image_sha256": "40befa604f359b651757a2e6c11e9cb9dc294e3c7ab46f5963383c3c6b9aab58",
+    "sheet": "records/review/batch-c/sheet-20.jpg"
+  },
+  {
+    "index": 323,
+    "sample_id": "fashionpedia-train2020-9597",
+    "image_sha256": "1b731d72364e2a0d8cc69cbd79998998d928a4781e771e1b459e1e2929fc0824",
+    "sheet": "records/review/batch-c/sheet-20.jpg"
+  },
+  {
+    "index": 324,
+    "sample_id": "fashionpedia-train2020-97",
+    "image_sha256": "25b55affe0e2d471eb5658137f16d60fb1bddedbe76514570c517c5d3f4f40d2",
+    "sheet": "records/review/batch-c/sheet-20.jpg"
+  },
+  {
+    "index": 325,
+    "sample_id": "fashionpedia-train2020-972",
+    "image_sha256": "0ac351afad8830f429c615ac7e94cf0f0d00c9455409cdd2cb438f7e3874bba4",
+    "sheet": "records/review/batch-c/sheet-20.jpg"
+  },
+  {
+    "index": 326,
+    "sample_id": "fashionpedia-train2020-9732",
+    "image_sha256": "6848d72392c49f40ad88a9e487f127726ccdcddc235844a35133da7f45135255",
+    "sheet": "records/review/batch-c/sheet-20.jpg"
+  },
+  {
+    "index": 327,
+    "sample_id": "fashionpedia-train2020-9853",
+    "image_sha256": "c86dd7ec3fef606b2a81781a0931308143f931dc1c18813c5f468313c0b5f668",
+    "sheet": "records/review/batch-c/sheet-20.jpg"
+  },
+  {
+    "index": 328,
+    "sample_id": "fashionpedia-train2020-9866",
+    "image_sha256": "4091475094f1628df3398e9c8fcaa85ff1e251a1920e3ac75f87ea69c913f204",
+    "sheet": "records/review/batch-c/sheet-20.jpg"
+  },
+  {
+    "index": 329,
+    "sample_id": "fashionpedia-train2020-9894",
+    "image_sha256": "a9a4eb4bfbf44872e29ad61586dd48feeac4e5ef3a0b3c6690c8cf6627329f8c",
+    "sheet": "records/review/batch-c/sheet-20.jpg"
+  },
+  {
+    "index": 330,
+    "sample_id": "fashionpedia-train2020-9910",
+    "image_sha256": "0bf25d00521a8ea54782c8d12ae9ec61bf80108479ea236c58c3a18c3d30d103",
+    "sheet": "records/review/batch-c/sheet-20.jpg"
+  },
+  {
+    "index": 331,
+    "sample_id": "fashionpedia-train2020-9956",
+    "image_sha256": "f8d895ffb6768fad68a8a9afbbb4a3c69711718568673f327a41451846e77885",
+    "sheet": "records/review/batch-c/sheet-20.jpg"
+  },
+  {
+    "index": 332,
+    "sample_id": "fashionpedia-train2020-9978",
+    "image_sha256": "c1fa1c7f9735d1bb66fd971d347c1f248eae854512bac76fb67fc4b55414e98f",
+    "sheet": "records/review/batch-c/sheet-20.jpg"
+  }
+]

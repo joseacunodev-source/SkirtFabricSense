@@ -1,0 +1,11 @@
+{
+  "status": "passed",
+  "training_contract_tests": 9,
+  "metric_check": "Hand-calculated accuracy .75 and macro F1 .7333333333333334 passed",
+  "reviewed_originals": 1000,
+  "baseline_images": 372,
+  "split_membership": "preserved",
+  "suspected_garment_components": "quarantined before training",
+  "model_files": "hash matched strict-FP32 export verification",
+  "independent_human_labels": false
+}

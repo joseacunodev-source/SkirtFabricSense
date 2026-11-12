@@ -1,0 +1,27 @@
+# Camera-first interface — October 6, 2026
+
+November 11 implementation: **R01–R04 software tasks are complete**. [Recovery and tool instructions](RECOVERY_IMPLEMENTATION_NOV11.md). Station-v9/research-v14 is selected, with v8 rollback. The 21 raw HTTP failures are preserved and verified as transport evidence; fabric/geometry reviewer tools are tested and documented; essential controls/results fit800 ×480. Human labels, automatic wearer geometry/calibration and physical camera/Pi acceptance remain open.
+
+November 4 latest: station-v8/research-v13 adds requested camera modes and actual decoded-size reporting; v7 is rollback. The user reconfirmed no Pi or webcam. Fifty-two mocked checks and 12 saved-image HTTP jobs pass; physical camera/display and Pi acceptance remain open. [Camera mode evidence](CAMERA_MODE_NOV04.md).
+
+November 4: user selected Waveshare 14447 (800 × 480, HDMI video and USB resistive touch). Station-v7/research-v12 contains the compact landscape UI, verified with 45 mocked cases and 12 saved-image HTTP jobs. Station-v6 is rollback. Physical screen, touch, camera and Pi performance remain unverified. [Waveshare 14447 layout](LCD_14447_LAYOUT.md).
+
+Current motion update: station-v6/research-v11 adds restrained entrances, control/switch transitions, connection feedback and changed-label reveals. Reduced-motion support and immediate stale clearing are preserved; 18 lifecycle, 21 score and six motion cases pass. [Motion contract and evidence](UI_MOTION_OCT22.md).
+
+Latest October22: the user supplied a cream/burgundy reference. Research-v10/station-v5 implements that visual direction with a large live preview, four result fields and the existing nine-class guide/fabric switch. Score display is guarded and explicitly uncalibrated. Startup failure now clears completed results and invalidates late track events. Browser desktop/mobile checks, 18 lifecycle scenarios, 21 score cases and 12 saved-frame HTTP jobs pass. No camera was started. [Current UI and limits](REFERENCE_UI_OCT22.md). Older descriptions below are dated history.
+
+October22: fixed an interruption during startup being overwritten by “Camera on” when pending playback resolved. An initially muted track is also respected. Seventeen mocked lifecycle scenarios pass against the exact station-v3 UI, including recovery and stopping during playback. The new research-v8 app/station-v3 retains the earlier packages. This is simulated-event evidence, not a new physical camera test. [Batch evidence](CAMERA_SOURCE_UPDATE_OCT22.md).
+
+October 16: the selector explicitly defaults to “Worn by a person” and groups other presentations as secondary. Live framing guidance changes by mode. Worn guidance requests waist, hem, feet and floor, without requiring the face; secondary guidance preserves calibrated-reference requirements. This is UI guidance, not an automatic framing or anatomy detector.
+
+Superseding update, October 10: the root page now sends browser frames to the local worker automatically without recording them. Optional experimental localization supplies pleating ROIs. A 1,000 ms acquisition-age ceiling and cancellation clear stale outputs; fabric toggle and four presentation modes travel with each frame. Fourteen mocked UI cases pass, and one actual 640×480 camera connection/Stop check succeeded. Fabric and length remain unavailable. [Current contract and limits](LIVE_AUTOMATIC_PILOT.md). The preview-only description below records the earlier implementation.
+
+The root page is now a plain camera station: a large unmirrored preview, camera selector, Start/Stop controls and a three-attribute results panel. Neutral colors, standard typography, compact borders and explicit text replace the previous promotional heading and card styling. Layout stacks below 800 pixels. The image-upload development tool remains at `/analysis`; label review remains at `/review`.
+
+The browser requests video only after Start camera is clicked. It does not request audio. Stop, page exit, disconnected tracks and superseded permission requests release camera tracks. Permission, missing-device and busy-camera failures have readable messages. Device selection is available after permission reveals cameras; stop the current feed before changing devices. Video remains inside the browser; this screen does not save, upload or send frames to the model.
+
+This is a working preview implementation, **not automatic classification**. Skirt detection is not connected, fabric has no trained model and length needs calibration. The panel shows unavailable states rather than invented scores. The final requirement remains automatic output from one full-skirt live view, without uploads or per-frame confirmation. Connecting localization/validity and the inference worker is still required.
+
+Verification uses five mocked media lifecycle scenarios, 14 HTTP regression tests and visual inspection of the camera-off layout. These do not establish a physical webcam or Raspberry Pi acceptance result. No dependencies installed. Camera permissions were not granted or exercised during automated UI verification.
+
+Run lifecycle checks with `node tests/camera_ui_lifecycle.cjs`. Start the existing WSL server using the setup instructions, then open the root page. If the app browser does not support camera access, use the local URL in a browser with webcam support. Actual device support remains to be tested.

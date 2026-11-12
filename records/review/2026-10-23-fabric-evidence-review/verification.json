@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "integrity_passed": true,
+  "queue_records": 17,
+  "observations_submitted": 0,
+  "samples_with_submitted_observations": 0,
+  "pending_samples": 17,
+  "pending_reconciliation_events": 0,
+  "event_chain_head_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+  "event_log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "queue_sha256": "b06d3e2185d96c26ca482ecf8b37aa77066dc96073cf7d382091dc423c179207",
+  "bindings_sha256": "1d5ad3ae5b28027cb6f92ddebc4a2c57a72be40ba498961fde416c37215b5f6d",
+  "frozen_inputs": {
+    "data/labels/fabric-pilot-v1.jsonl": "92a80e4f974b9730f4631da75fed99b3f628751c882bfe179b39322d20247523",
+    "data/labels/fabric-pilot-v1-splits.json": "e076033aa293ebad2058cec0ed2395292202f87bec9a78bfe2d350fa38e06c57",
+    "records/acquisitions/2026-10-09-deepfashion-multimodal/LICENSE": "383efc1e19406703d591d32fa73b64f44914550456ecff4c0764b451e871b641"
+  },
+  "training_approved": false,
+  "composition_verified": false,
+  "independent_human_truth_established": false,
+  "verified_physical_specimens": null
+}

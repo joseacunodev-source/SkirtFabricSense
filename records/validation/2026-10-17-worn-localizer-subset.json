@@ -1,0 +1,47 @@
+{
+  "date_asia_manila": "2026-10-17",
+  "method": "Exact sample-id subset of archived development outputs; no new inference or fitted thresholds",
+  "sources": [
+    {
+      "path": "records/validation/2026-10-15-localizer-threeway.json",
+      "sha256": "50792eaec38468516f08cb7a54b3294c949ae6259bb1a60d20b4a6fa16895eb6"
+    },
+    {
+      "path": "data/manifests/worn-pleating-development-v1.jsonl",
+      "sha256": "876bb315009592fdbcf0a646703b21d99801756f4e37b1807a66675bdbd98ec2"
+    },
+    {
+      "path": "records/review/2026-10-17-presentation-complete-audit.json",
+      "sha256": "bd677d313855edc81c049806b763cd191b0f580275078f0fe74a3b4b47e16d14"
+    }
+  ],
+  "metrics": {
+    "v1": {
+      "worn_validation_images": 66,
+      "accepted": 41,
+      "correct_pleating": 33,
+      "coverage": 0.6212121212121212,
+      "accuracy_accepted": 0.8048780487804879
+    },
+    "v2": {
+      "worn_validation_images": 66,
+      "accepted": 50,
+      "correct_pleating": 44,
+      "coverage": 0.7575757575757576,
+      "accuracy_accepted": 0.88
+    },
+    "v3": {
+      "worn_validation_images": 66,
+      "accepted": 46,
+      "correct_pleating": 38,
+      "coverage": 0.696969696969697,
+      "accuracy_accepted": 0.8260869565217391
+    }
+  },
+  "limitations": [
+    "Models selected using broader mixed-presentation development set",
+    "Not final independent test, webcam or Pi performance",
+    "No negative worn-presentation review accompanies these subset metrics",
+    "No automatic model promotion"
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "recorded_at": "2026-11-11T13:16:23.634969+08:00",
+  "status": "failed",
+  "local_links_checked": 910,
+  "json_records_parsed": 4879,
+  "raw_http_failure_bodies_verified": 21,
+  "acquired_artifacts_verified": 33,
+  "expansion_image_hashes_verified": 1920,
+  "continuation_record_present": true,
+  "continuation_evidence_references_verified": 245,
+  "skill_copy_matches": true,
+  "errors": [
+    "Evidence reference mismatch: tools/validate_records.py",
+    "Evidence reference mismatch: app/static/index.html",
+    "Evidence reference mismatch: tools/serve_fabric_review.py",
+    "Evidence reference mismatch: tools/static/fabric_review.html"
+  ],
+  "limits": "Documentation/integrity checks only; not model training or Raspberry Pi verification."
+}

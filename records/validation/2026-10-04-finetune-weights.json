@@ -1,0 +1,17 @@
+{
+  "status": "passed",
+  "frozen_layer_changes": [],
+  "tuned_layer_changes": [
+    "block_14_expand",
+    "block_14_depthwise",
+    "block_14_project",
+    "block_15_expand",
+    "block_15_depthwise",
+    "block_15_project",
+    "block_16_expand",
+    "block_16_depthwise",
+    "block_16_project",
+    "Conv_1"
+  ],
+  "head_changed": true
+}

@@ -1,0 +1,188 @@
+test_corruption_detected (test_acquire_seed.AcquisitionIntegrityTests.test_corruption_detected) ... ok
+test_failed_replace_preserves_original (test_acquire_seed.AcquisitionIntegrityTests.test_failed_replace_preserves_original) ... ok
+test_path_escape_rejected (test_acquire_seed.AcquisitionIntegrityTests.test_path_escape_rejected) ... ok
+test_verify_only_never_networks_or_writes (test_acquire_seed.AcquisitionIntegrityTests.test_verify_only_never_networks_or_writes) ... ok
+test_fabric_range_extract_and_identity_rejection (test_archive_intake.ArchiveIntakeTests.test_fabric_range_extract_and_identity_rejection) ... ok
+test_oversized_member_rejected_before_network (test_archive_intake.ArchiveIntakeTests.test_oversized_member_rejected_before_network) ... ok
+test_skirt_range_extract_and_crc_rejection (test_archive_intake.ArchiveIntakeTests.test_skirt_range_extract_and_crc_rejection) ... ok
+test_cancel_current_rejects_late_worker_result (test_async_server.AsyncServerTests.test_cancel_current_rejects_late_worker_result) ... ok
+test_jobs_remain_responsive_and_old_cancellation_cannot_cancel_new (test_async_server.AsyncServerTests.test_jobs_remain_responsive_and_old_cancellation_cannot_cancel_new) ... ok
+test_worker_mode_disables_legacy_endpoint (test_async_server.AsyncServerTests.test_worker_mode_disables_legacy_endpoint) ... ok
+test_corruption_and_dimension_mismatch_rejected (test_dataset_pipeline.DatasetPipelineTests.test_corruption_and_dimension_mismatch_rejected) ... ok
+test_decode_rejects_valid_hash_of_nonimage (test_dataset_pipeline.DatasetPipelineTests.test_decode_rejects_valid_hash_of_nonimage) ... ok
+test_exact_duplicate_of_holdout_never_enters_training (test_dataset_pipeline.DatasetPipelineTests.test_exact_duplicate_of_holdout_never_enters_training) ... C:\Users\Administrator\OneDrive\Documents\ChatGPT\SkirtFabricSense\tools\datasets\audit_candidates.py:86: DeprecationWarning: Image.Image.getdata is deprecated and will be removed in Pillow 14 (2027-10-15). Use get_flattened_data instead.
+  pixels = list(tiny.getdata())
+ok
+test_missing_parent_fails_instead_of_leaking (test_dataset_pipeline.DatasetPipelineTests.test_missing_parent_fails_instead_of_leaking) ... ok
+test_near_duplicate_connected_to_holdout_is_excluded (test_dataset_pipeline.DatasetPipelineTests.test_near_duplicate_connected_to_holdout_is_excluded) ... ok
+test_parents_and_transitive_groups_stay_together (test_dataset_pipeline.DatasetPipelineTests.test_parents_and_transitive_groups_stay_together) ... ok
+test_path_escape_and_duplicate_ids_rejected (test_dataset_pipeline.DatasetPipelineTests.test_path_escape_and_duplicate_ids_rejected) ... ok
+test_report_does_not_overwrite_existing_evidence (test_dataset_pipeline.DatasetPipelineTests.test_report_does_not_overwrite_existing_evidence) ... ok
+test_source_labels_do_not_become_project_labels (test_dataset_pipeline.DatasetPipelineTests.test_source_labels_do_not_become_project_labels) ... ok
+test_task_approval_does_not_transfer_and_missing_terms_rejected (test_dataset_pipeline.DatasetPipelineTests.test_task_approval_does_not_transfer_and_missing_terms_rejected) ... ok
+test_unknown_partition_excluded_and_input_order_deterministic (test_dataset_pipeline.DatasetPipelineTests.test_unknown_partition_excluded_and_input_order_deterministic) ... ok
+test_all_nine_labels (test_hemline.HemlineTests.test_all_nine_labels) ... ok
+test_bad_calibration_rejected (test_hemline.HemlineTests.test_bad_calibration_rejected) ... ok
+test_boundary_uncertainty (test_hemline.HemlineTests.test_boundary_uncertainty) ... ok
+test_invalid_interval_rejected (test_hemline.HemlineTests.test_invalid_interval_rejected) ... ok
+test_no_reference_abstains_in_every_mode (test_hemline.HemlineTests.test_no_reference_abstains_in_every_mode) ... ok
+test_out_of_range_and_missing_geometry (test_hemline.HemlineTests.test_out_of_range_and_missing_geometry) ... ok
+test_reference_mismatch_rejected (test_hemline.HemlineTests.test_reference_mismatch_rejected) ... ok
+test_unsupported_mode_for_reference (test_hemline.HemlineTests.test_unsupported_mode_for_reference) ... ok
+test_actual_tensor_shape_rejected (test_inference_contract.InferenceTests.test_actual_tensor_shape_rejected) ... ok
+test_confirmed_provisional_rgb_and_no_external_normalization (test_inference_contract.InferenceTests.test_confirmed_provisional_rgb_and_no_external_normalization) ... ok
+test_contract_label_swap_rejected (test_inference_contract.InferenceTests.test_contract_label_swap_rejected) ... ok
+test_corrupt_model_rejected_before_runtime (test_inference_contract.InferenceTests.test_corrupt_model_rejected_before_runtime) ... ok
+test_external_normalization_contract_rejected (test_inference_contract.InferenceTests.test_external_normalization_contract_rejected) ... ok
+test_invalid_roi_rejected (test_inference_contract.InferenceTests.test_invalid_roi_rejected) ... ok
+test_nonfinite_scores_rejected (test_inference_contract.InferenceTests.test_nonfinite_scores_rejected) ... ok
+test_required_hash_and_duplicate_rejected (test_inference_contract.InferenceTests.test_required_hash_and_duplicate_rejected) ... ok
+test_roi_clips_to_source_before_expansion (test_inference_contract.InferenceTests.test_roi_clips_to_source_before_expansion) ... ok
+test_roi_padding_and_source_coordinates (test_inference_contract.InferenceTests.test_roi_padding_and_source_coordinates) ... ok
+test_unconfirmed_never_invokes (test_inference_contract.InferenceTests.test_unconfirmed_never_invokes) ... ok
+test_unsafe_path_rejected (test_inference_contract.InferenceTests.test_unsafe_path_rejected) ... ok
+test_bad_review_hash_rejected (test_label_preparation.LabelPreparationTests.test_bad_review_hash_rejected) ... ok
+test_conflicting_annotations_are_unknown (test_label_preparation.LabelPreparationTests.test_conflicting_annotations_are_unknown) ... ok
+test_explicit_negative_is_source_only (test_label_preparation.LabelPreparationTests.test_explicit_negative_is_source_only) ... ok
+test_group_leakage_rejected (test_label_preparation.LabelPreparationTests.test_group_leakage_rejected) ... ok
+test_missing_pleat_is_unknown (test_label_preparation.LabelPreparationTests.test_missing_pleat_is_unknown) ... ok
+test_protected_source_rejected (test_label_preparation.LabelPreparationTests.test_protected_source_rejected) ... ok
+test_review_exclusion_and_input_preservation (test_label_preparation.LabelPreparationTests.test_review_exclusion_and_input_preservation) ... ok
+test_cancelling_completed_live_job_clears_result (test_live_api.LiveApiTests.test_cancelling_completed_live_job_clears_result) ... ok
+test_fabric_disabled_survives_http_and_worker (test_live_api.LiveApiTests.test_fabric_disabled_survives_http_and_worker) ... ok
+test_invalid_or_missing_live_options_rejected (test_live_api.LiveApiTests.test_invalid_or_missing_live_options_rejected) ... ok
+test_live_cross_origin_rejected (test_live_api.LiveApiTests.test_live_cross_origin_rejected) ... ERROR
+test_live_without_manual_confirmation_completes_with_unavailable_outputs (test_live_api.LiveApiTests.test_live_without_manual_confirmation_completes_with_unavailable_outputs) ... ok
+test_age_limits_and_connection_types_are_validated (test_live_state.LiveStateTests.test_age_limits_and_connection_types_are_validated) ... ok
+test_disconnect_reconnect_rejects_old_completion (test_live_state.LiveStateTests.test_disconnect_reconnect_rejects_old_completion) ... ok
+test_expiry_uses_capture_not_completion_time (test_live_state.LiveStateTests.test_expiry_uses_capture_not_completion_time) ... ok
+test_fake_and_duplicate_claims_cannot_release_or_overwrite_work (test_live_state.LiveStateTests.test_fake_and_duplicate_claims_cannot_release_or_overwrite_work) ... ok
+test_inference_error_clears_previous_result_and_releases_worker (test_live_state.LiveStateTests.test_inference_error_clears_previous_result_and_releases_worker) ... ok
+test_invalid_frame_clears_prediction_and_invalidates_running_work (test_live_state.LiveStateTests.test_invalid_frame_clears_prediction_and_invalidates_running_work) ... ok
+test_latest_pending_replaces_older_without_replacing_active (test_live_state.LiveStateTests.test_latest_pending_replaces_older_without_replacing_active) ... ok
+test_malformed_completion_keeps_claim_for_valid_retry (test_live_state.LiveStateTests.test_malformed_completion_keeps_claim_for_valid_retry) ... ok
+test_malformed_inputs_do_not_consume_pending_frame (test_live_state.LiveStateTests.test_malformed_inputs_do_not_consume_pending_frame) ... ok
+test_pending_frame_can_expire_while_waiting_for_worker (test_live_state.LiveStateTests.test_pending_frame_can_expire_while_waiting_for_worker) ... ok
+test_prediction_and_returned_snapshot_are_defensively_copied (test_live_state.LiveStateTests.test_prediction_and_returned_snapshot_are_defensively_copied) ... ok
+test_repeated_connection_notification_preserves_result (test_live_state.LiveStateTests.test_repeated_connection_notification_preserves_result) ... ok
+test_result_already_expired_at_completion_is_never_published (test_live_state.LiveStateTests.test_result_already_expired_at_completion_is_never_published) ... ok
+test_scene_change_keeps_busy_slot_but_rejects_old_completion (test_live_state.LiveStateTests.test_scene_change_keeps_busy_slot_but_rejects_old_completion) ... ok
+test_simultaneous_workers_obtain_only_one_claim (test_live_state.LiveStateTests.test_simultaneous_workers_obtain_only_one_claim) ... ok
+test_stale_submission_is_dropped_before_inference (test_live_state.LiveStateTests.test_stale_submission_is_dropped_before_inference) ... ok
+test_localizer_rejection_does_not_call_classifier (test_localization.AutomaticTests.test_localizer_rejection_does_not_call_classifier) ... ok
+test_manual_delegate_preserves_confirmation (test_localization.AutomaticTests.test_manual_delegate_preserves_confirmation) ... ok
+test_missing_localizer_abstains_and_honors_fabric_toggle_all_modes (test_localization.AutomaticTests.test_missing_localizer_abstains_and_honors_fabric_toggle_all_modes) ... ok
+test_pipeline_owns_live_options_before_worker_uses_them (test_localization.AutomaticTests.test_pipeline_owns_live_options_before_worker_uses_them) ... ok
+test_provisional_path_preserves_roi_and_experimental_limitations (test_localization.AutomaticTests.test_provisional_path_preserves_roi_and_experimental_limitations) ... ok
+test_incomplete_or_tampered_model_never_loads_runtime (test_localization.LocalizerLoadTests.test_incomplete_or_tampered_model_never_loads_runtime) ... ok
+test_raw_rgb_preprocessing_and_output_provenance (test_localization.LocalizerLoadTests.test_raw_rgb_preprocessing_and_output_provenance) ... ok
+test_tensor_shape_and_dtype_mismatch_rejected (test_localization.LocalizerLoadTests.test_tensor_shape_and_dtype_mismatch_rejected) ... ok
+test_each_frame_edge_is_rejected (test_localization.MaskTests.test_each_frame_edge_is_rejected) ... ok
+test_empty_and_small_components_abstain (test_localization.MaskTests.test_empty_and_small_components_abstain) ... ok
+test_invalid_values_shape_dimensions_and_settings_rejected (test_localization.MaskTests.test_invalid_values_shape_dimensions_and_settings_rejected) ... ok
+test_multiple_and_diagonally_touching_regions_abstain (test_localization.MaskTests.test_multiple_and_diagonally_touching_regions_abstain) ... ok
+test_outward_rounding_covers_small_source (test_localization.MaskTests.test_outward_rounding_covers_small_source) ... ok
+test_source_coordinates_preserve_non_square_frame (test_localization.MaskTests.test_source_coordinates_preserve_non_square_frame) ... ok
+test_tiny_noise_does_not_create_second_region (test_localization.MaskTests.test_tiny_noise_does_not_create_second_region) ... ok
+test_close_timeout_then_completion_never_publishes_or_restarts (test_pipeline.PipelineTests.test_close_timeout_then_completion_never_publishes_or_restarts) ... ok
+test_disconnect_reconnect_rejects_pre_disconnect_completion (test_pipeline.PipelineTests.test_disconnect_reconnect_rejects_pre_disconnect_completion) ... ok
+test_explicit_invalidation_discards_active_and_pending_work (test_pipeline.PipelineTests.test_explicit_invalidation_discards_active_and_pending_work) ... ok
+test_invalid_frame_clears_prior_result_without_predicting (test_pipeline.PipelineTests.test_invalid_frame_clears_prior_result_without_predicting) ... ok
+test_latest_waiting_frame_replaces_middle_without_overlapping_inference (test_pipeline.PipelineTests.test_latest_waiting_frame_replaces_middle_without_overlapping_inference) ... ok
+test_non_dictionary_prediction_is_recoverable_error (test_pipeline.PipelineTests.test_non_dictionary_prediction_is_recoverable_error) ... ok
+test_predictor_exception_clears_result_and_worker_recovers (test_pipeline.PipelineTests.test_predictor_exception_clears_result_and_worker_recovers) ... ok
+test_scene_change_discards_old_completion_while_new_work_waits (test_pipeline.PipelineTests.test_scene_change_discards_old_completion_while_new_work_waits) ... ok
+test_submit_owns_pixels_and_roi_before_capture_buffer_is_reused (test_pipeline.PipelineTests.test_submit_owns_pixels_and_roi_before_capture_buffer_is_reused) ... ok
+test_wait_idle_timeout_is_truthful_while_predictor_is_blocked (test_pipeline.PipelineTests.test_wait_idle_timeout_is_truthful_while_predictor_is_blocked) ... ok
+test_app_inventory_is_separate (test_release_builder.ReleaseBuilderTests.test_app_inventory_is_separate) ... ok
+test_manifest_and_inventory (test_release_builder.ReleaseBuilderTests.test_manifest_and_inventory) ... ok
+test_missing_contract (test_release_builder.ReleaseBuilderTests.test_missing_contract) ... ok
+test_no_overwrite (test_release_builder.ReleaseBuilderTests.test_no_overwrite) ... ok
+test_symlink_source (test_release_builder.ReleaseBuilderTests.test_symlink_source) ... ok
+test_tamper_rejected_before_output (test_release_builder.ReleaseBuilderTests.test_tamper_rejected_before_output) ... ok
+test_traversal_and_absolute_paths (test_release_builder.ReleaseBuilderTests.test_traversal_and_absolute_paths) ... ok
+test_application_required_and_complete (test_release_verifier.ReleaseVerifierTests.test_application_required_and_complete) ... ok
+test_cannot_claim_pi_verified (test_release_verifier.ReleaseVerifierTests.test_cannot_claim_pi_verified) ... ok
+test_contract_change_even_when_rehashed (test_release_verifier.ReleaseVerifierTests.test_contract_change_even_when_rehashed) ... ok
+test_corrupt_same_size (test_release_verifier.ReleaseVerifierTests.test_corrupt_same_size) ... ok
+test_disagreeing_manifest (test_release_verifier.ReleaseVerifierTests.test_disagreeing_manifest) ... ok
+test_duplicate_entry (test_release_verifier.ReleaseVerifierTests.test_duplicate_entry) ... ok
+test_duplicate_json_key (test_release_verifier.ReleaseVerifierTests.test_duplicate_json_key) ... ok
+test_extra_empty_directory (test_release_verifier.ReleaseVerifierTests.test_extra_empty_directory) ... ok
+test_extra_file (test_release_verifier.ReleaseVerifierTests.test_extra_file) ... ok
+test_missing_file (test_release_verifier.ReleaseVerifierTests.test_missing_file) ... ok
+test_symlink_file_rejected (test_release_verifier.ReleaseVerifierTests.test_symlink_file_rejected) ... ok
+test_unsafe_inventory_paths (test_release_verifier.ReleaseVerifierTests.test_unsafe_inventory_paths) ... ok
+test_valid_model_only (test_release_verifier.ReleaseVerifierTests.test_valid_model_only) ... ok
+test_cli_refuses_to_overwrite_report (test_review_reconciliation.ReconciliationTests.test_cli_refuses_to_overwrite_report) ... ok
+test_conflicts_and_revisions_keep_history (test_review_reconciliation.ReconciliationTests.test_conflicts_and_revisions_keep_history) ... ok
+test_duplicate_event_id (test_review_reconciliation.ReconciliationTests.test_duplicate_event_id) ... ok
+test_empty_is_not_review_completion (test_review_reconciliation.ReconciliationTests.test_empty_is_not_review_completion) ... ok
+test_event_tampering (test_review_reconciliation.ReconciliationTests.test_event_tampering) ... ok
+test_malformed_event_retained (test_review_reconciliation.ReconciliationTests.test_malformed_event_retained) ... ok
+test_original_tampering (test_review_reconciliation.ReconciliationTests.test_original_tampering) ... ok
+test_protected_assignment_rejected (test_review_reconciliation.ReconciliationTests.test_protected_assignment_rejected) ... ok
+test_resplit_rejected_even_with_valid_event_hash (test_review_reconciliation.ReconciliationTests.test_resplit_rejected_even_with_valid_event_hash) ... ok
+test_stale_manifest_hash (test_review_reconciliation.ReconciliationTests.test_stale_manifest_hash) ... ok
+test_unknown_or_protected_sample (test_review_reconciliation.ReconciliationTests.test_unknown_or_protected_sample) ... ok
+test_valid_review_preserves_validation_split_and_every_input (test_review_reconciliation.ReconciliationTests.test_valid_review_preserves_validation_split_and_every_input) ... ok
+test_annotation_validation (test_review_workflow.ReviewTests.test_annotation_validation) ... ok
+test_append_preserves_sources_and_split (test_review_workflow.ReviewTests.test_append_preserves_sources_and_split) ... ok
+test_blind_queue (test_review_workflow.ReviewTests.test_blind_queue) ... ok
+test_changed_original_and_manifest_rejected (test_review_workflow.ReviewTests.test_changed_original_and_manifest_rejected) ... ok
+test_protected_split_rejected (test_review_workflow.ReviewTests.test_protected_split_rejected) ... ok
+test_reject_protected_and_path_escape (test_review_workflow.ReviewTests.test_reject_protected_and_path_escape) ... ok
+test_unknown_sample_and_bad_hash (test_review_workflow.ReviewTests.test_unknown_sample_and_bad_hash) ... ok
+test_confirmed_roi_preserved (test_server.ServerTests.test_confirmed_roi_preserved) ... ok
+test_cross_origin_refused_before_inference_or_review_write (test_server.ServerTests.test_cross_origin_refused_before_inference_or_review_write) ... ok
+test_exif_orientation_applied_before_inference (test_server.ServerTests.test_exif_orientation_applied_before_inference) ... ok
+test_invalid_boolean_roi_and_image_rejected (test_server.ServerTests.test_invalid_boolean_roi_and_image_rejected) ... ok
+test_json_object_required (test_server.ServerTests.test_json_object_required) ... ok
+test_missing_review_returns_503 (test_server.ServerTests.test_missing_review_returns_503) ... ok
+test_non_json_content_type_rejected (test_server.ServerTests.test_non_json_content_type_rejected) ... ok
+test_review_fake_only (test_server.ServerTests.test_review_fake_only) ... ok
+test_same_origin_allowed (test_server.ServerTests.test_same_origin_allowed) ... ok
+test_status_has_no_camera_claim (test_server.ServerTests.test_status_has_no_camera_claim) ... ok
+test_unconfirmed_flag_preserved (test_server.ServerTests.test_unconfirmed_flag_preserved) ... ok
+test_balanced_pilot_passes (test_training_contract.TrainingContractTests.test_balanced_pilot_passes) ... ok
+test_changed_assignment_rejected (test_training_contract.TrainingContractTests.test_changed_assignment_rejected) ... ok
+test_duplicate_rejected (test_training_contract.TrainingContractTests.test_duplicate_rejected) ... ok
+test_exclusion_rejected (test_training_contract.TrainingContractTests.test_exclusion_rejected) ... ok
+test_framing_rejected (test_training_contract.TrainingContractTests.test_framing_rejected) ... ok
+test_heldout_rejected (test_training_contract.TrainingContractTests.test_heldout_rejected) ... ok
+test_malformed_boolean_rejected (test_training_contract.TrainingContractTests.test_malformed_boolean_rejected) ... ok
+test_review_conflict_rejected (test_training_contract.TrainingContractTests.test_review_conflict_rejected) ... ok
+test_single_class_validation_rejected (test_training_contract.TrainingContractTests.test_single_class_validation_rejected) ... ok
+
+======================================================================
+ERROR: test_live_cross_origin_rejected (test_live_api.LiveApiTests.test_live_cross_origin_rejected)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\Administrator\OneDrive\Documents\ChatGPT\SkirtFabricSense\tests\test_live_api.py", line 62, in test_live_cross_origin_rejected
+    status, _, _ = self.request('POST', '/api/live', self.live_payload(),
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Administrator\OneDrive\Documents\ChatGPT\SkirtFabricSense\tests\test_server.py", line 71, in request
+    response = connection.getresponse()
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Administrator\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\http\client.py", line 1478, in getresponse
+    response.begin()
+  File "C:\Users\Administrator\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\http\client.py", line 343, in begin
+    version, status, reason = self._read_status()
+                              ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Administrator\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\http\client.py", line 304, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Administrator\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\socket.py", line 720, in readinto
+    return self._sock.recv_into(b)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+
+----------------------------------------------------------------------
+Ran 153 tests in 4.810s
+
+FAILED (errors=1)
+{
+  "verified_artifacts": 0,
+  "images": 0,
+  "network_used": false
+}

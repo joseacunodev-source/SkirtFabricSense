@@ -1,0 +1,73 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-04",
+  "inputs": [
+    {
+      "path": "data/manifests/skirt_candidates.jsonl",
+      "sha256": "3eb0038cf41995135b03895d6845a9a287fff7462a8e7e9449597a4353c54f24"
+    },
+    {
+      "path": "data/manifests/source-skirt-development-splits.json",
+      "sha256": "df3b096e4d131db55852b20de075d811c95520d23766648928555d755fe8812c"
+    },
+    {
+      "path": "data/labels/skirt-visual-reviews-v2.jsonl",
+      "sha256": "8608cdd71c471f8f505c11745378cdea0f3f62d1eb55d962701a3fbb25f973fc"
+    }
+  ],
+  "code_sha256": "1b97017fb954b5ae15423084a47641163163ffc440cd1d6bc8f2259684fabf89",
+  "outputs": {
+    "review-queue": {
+      "path": "data/labels/skirt-preparation-v2/review-queue.jsonl",
+      "sha256": "f872ec1f37f4d8873cc4d3e349a8b7bc3a08ae47983dc90e997c13629cfafd8e",
+      "count": 1000,
+      "split_counts": {
+        "development_train": 810,
+        "development_validation": 190
+      },
+      "label_split_counts": {
+        "development_train:None": 810,
+        "development_validation:None": 190
+      }
+    },
+    "source-manufacturing": {
+      "path": "data/labels/skirt-preparation-v2/source-manufacturing.jsonl",
+      "sha256": "d5683953e212b835536a258f43accb2e82ba9858fd80beb9f85ec97f480e0d55",
+      "count": 256,
+      "split_counts": {
+        "development_train": 197,
+        "development_validation": 59
+      },
+      "label_split_counts": {
+        "development_train:source_no_special_manufacturing": 152,
+        "development_train:source_pleat": 45,
+        "development_validation:source_no_special_manufacturing": 41,
+        "development_validation:source_pleat": 18
+      }
+    },
+    "reviewed-appearance": {
+      "path": "data/labels/skirt-preparation-v2/reviewed-appearance.jsonl",
+      "sha256": "6622be8545624f07f884314f4146c1deed6580e0abaa0c96b2d3c7324fbced97",
+      "count": 375,
+      "split_counts": {
+        "development_train": 294,
+        "development_validation": 81
+      },
+      "label_split_counts": {
+        "development_train:non_pleated": 233,
+        "development_validation:non_pleated": 61,
+        "development_train:pleated": 61,
+        "development_validation:pleated": 20
+      }
+    }
+  },
+  "limits": [
+    "No new original images",
+    "No physical garment identity verification",
+    "No verified fiber or physical length labels",
+    "No final test set created or modified",
+    "Source manufacturing task is auxiliary noisy supervision",
+    "Visual labels are one agent's appearance review, not independent human validation"
+  ],
+  "date_correction_note": "Generator inherited fixed October3 date; corrected to actual October4 execution. Recorded code hash remains that of executed version."
+}

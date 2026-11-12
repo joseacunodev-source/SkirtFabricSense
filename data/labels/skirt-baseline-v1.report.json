@@ -1,0 +1,63 @@
+{
+  "inputs": [
+    {
+      "path": "data/labels/skirt-preparation-v2/reviewed-appearance.jsonl",
+      "sha256": "6622be8545624f07f884314f4146c1deed6580e0abaa0c96b2d3c7324fbced97"
+    },
+    {
+      "path": "data/manifests/source-skirt-development-splits.json",
+      "sha256": "df3b096e4d131db55852b20de075d811c95520d23766648928555d755fe8812c"
+    },
+    {
+      "path": "records/review/batch-a/group-candidates.json",
+      "sha256": "5b0d1067cbdab3609adbd3d3df5748be065b11a1cd1502a65a3a0e4d0e07b6de"
+    }
+  ],
+  "output": {
+    "path": "data/labels/skirt-baseline-v1.jsonl",
+    "sha256": "9160998b5ab0f65251c53cefd783e1c6351887bec8c655074be64dd2717dc2eb"
+  },
+  "source_code": {
+    "path": "tools/datasets/prepare_baseline_manifest.py",
+    "sha256": "36f91444ce3d76be3e0f0a01d7791dd49484b9d078cff1dd0b06d0becc6c125e"
+  },
+  "admitted": 372,
+  "class_split_counts": {
+    "development_train:non_pleated": 232,
+    "development_validation:non_pleated": 60,
+    "development_train:pleated": 60,
+    "development_validation:pleated": 20
+  },
+  "excluded": [
+    {
+      "sample_id": "fashionpedia-train2020-11864",
+      "reason": "suspected_repeated_garment_component_quarantine"
+    },
+    {
+      "sample_id": "fashionpedia-train2020-13801",
+      "reason": "suspected_repeated_garment_component_quarantine"
+    },
+    {
+      "sample_id": "fashionpedia-train2020-1674",
+      "reason": "suspected_repeated_garment_component_quarantine"
+    }
+  ],
+  "suspected_garment_ids": [
+    "fashionpedia-train2020-10179",
+    "fashionpedia-train2020-11864",
+    "fashionpedia-train2020-13801",
+    "fashionpedia-train2020-1674",
+    "fashionpedia-train2020-20354",
+    "fashionpedia-train2020-2140",
+    "fashionpedia-train2020-22332"
+  ],
+  "quarantined_group_hashes": [
+    "059c6fbff1dabfbf7cd5bf1fd6b34fbcc735064ac61160a760a417a0ac31530a",
+    "26440919fca85d4bc4a2d46495871a1bd1aa215b2404516522d6c71d36dd302f",
+    "281f0521fd3ff7908753ea48b27b4af2b32b32b5090e6eded58f19ddefb41327",
+    "707d93f23f0eecaf475be675139cfefba6ac1ffdb8131641b9a134d59960f03c",
+    "b926e2ce8592ee9240e1314fe66e5fc96f828f9d5eda792538b8938c82d274b0",
+    "bbfe49b0c2d1f664764ab3213b01ab880c2ca767b40ffcc5ef5513f4af2c88c5"
+  ],
+  "policy": "Exclude complete existing components; no train/validation reassignment; agent labels remain provisional"
+}

@@ -1,0 +1,15 @@
+{
+  "timestamp": null,
+  "environment_role": null,
+  "action": "install",
+  "component": null,
+  "requested_version": null,
+  "observed_version": null,
+  "source": null,
+  "command_redacted": null,
+  "status": "planned",
+  "verification": null,
+  "snapshot_path": null,
+  "reason": null,
+  "notes": null
+}

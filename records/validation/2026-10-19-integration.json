@@ -1,0 +1,101 @@
+{
+  "date_asia_manila": "2026-10-19",
+  "status": "passed_recovery_batch_not_product_acceptance",
+  "source_sha256": "616669995d01022de6a53c69fbeabcd4d901c82427006224c43d6738bc4fa3db",
+  "evidence": [
+    {
+      "path": "data/registry.json",
+      "sha256": "60693140f3410067781b76bd45c4c73540e56f72a4fa0ecc6cde45a67478c625"
+    },
+    {
+      "path": "records/validation/2026-10-18-combined-intake-audit.json",
+      "sha256": "f7090db9b38dffed1cd460492e2943872da895f420a4922f91efb1546ed7fbfe"
+    },
+    {
+      "path": "records/validation/2026-10-18-negative-v3-admission-audit.json",
+      "sha256": "2364f594f2e0df8ebd53ce9bab10f1059bd770aa6ca98509fcc9305bcd64e353"
+    },
+    {
+      "path": "records/validation/2026-10-18-presence-v3-artifact-review.json",
+      "sha256": "ba9baa7fec75ee28c148183f494d410657eb0a07db70cc63ea78758bb7d05aff"
+    },
+    {
+      "path": "records/validation/2026-10-19-presence-v4-artifact-review.json",
+      "sha256": "6c8c659fa2f5d5d1394dd838e42cbb5e96ddd41298a9b4f03c1dd974c9837741"
+    },
+    {
+      "path": "records/validation/2026-10-19-npcgi-pilot-independent-review.json",
+      "sha256": "3fc6c705f1958b3e6f22c55fa517e3194a45632fccc284e5651684da7dda7264"
+    },
+    {
+      "path": "records/validation/2026-10-19-detection-v4-comparison.json",
+      "sha256": "11bf2fac8f14d3c7b781745c209bac139b02374c0c354cf1a8123c11a48805ec"
+    },
+    {
+      "path": "records/validation/2026-10-19-presence-v4-http.json",
+      "sha256": "9dde2677cb43d13fe19f331153766efcebbc9514bd99cb1cb463d1204093b6aa"
+    },
+    {
+      "path": "records/validation/2026-10-19-tests.log",
+      "sha256": "e031eeb0b6ceb7e563865773f5105f878f14de2798f28ddc592423bc3c397281"
+    },
+    {
+      "path": "records/validation/2026-10-19-training-tests.log",
+      "sha256": "bd87a89097251e568b76f3cd6200824393950d1c444ee93801720a1d48763770"
+    },
+    {
+      "path": "records/validation/2026-10-19-final-records.json",
+      "sha256": "ce68f017780981816e14f2d2856c3f9033a7828dcaae276ae0da5455b4c7cd9d"
+    },
+    {
+      "path": "records/review/2026-10-19-presence-v4-negative-failures.json",
+      "sha256": "4d7c51bacf11a53ad13ba89124e631ee42833a85de40d2a4d14ecb92708f9efa"
+    },
+    {
+      "path": "records/review/2026-10-19-presence-v4-positive-failures.json",
+      "sha256": "7949f0a6c3553090b79e4e0ea325c8a692e51dca8e0bd76483825dd61fde1e0c"
+    },
+    {
+      "path": "docs/OCT19_RECOVERY.md",
+      "sha256": "1e0477939c142cde91c68cc3c3e00a355336067544668cd51fbb9c6c34264296"
+    },
+    {
+      "path": "docs/PRESENCE_V4_FAILURE_REVIEW.md",
+      "sha256": "0d1a0fe6399ea8b71fe15a34a0b20642ce235e3725ae9f67cd558718e5ee34a5"
+    },
+    {
+      "path": "docs/TASK_BOARD.md",
+      "sha256": "3792fe1a10c92f036ba6cf4643c3d2e8ff86b1323613a2ee8b26b956440a0c38"
+    }
+  ],
+  "extra_registry_and_nested_model_references_verified": 36,
+  "original_images": 1932,
+  "negative_development_images": 207,
+  "new_fabric_training_admissions": 0,
+  "desktop_tests": {
+    "run": 418,
+    "passed": 416,
+    "skipped": 2
+  },
+  "focused_wsl_tests": {
+    "run": 34,
+    "passed": 34,
+    "skipped": 0
+  },
+  "primary_candidate_metrics": {
+    "positive_count": 66,
+    "positive_accepted": 44,
+    "positive_coverage": 0.6666666666666666,
+    "correct_pleating": 38,
+    "accepted_pleating_accuracy": 0.8636363636363636,
+    "negative_count": 52,
+    "negative_rejected": 39,
+    "negative_rejection": 0.75
+  },
+  "deployment_defaults_changed": false,
+  "packages_installed": 0,
+  "camera_used": false,
+  "pi_verified": false,
+  "supervised_demo_accepted": false,
+  "limits": "Reused agent-labelled development groups; optional research candidate. Fabric labels, wearer geometry, calibration, unseen garments and Pi acceptance remain open."
+}

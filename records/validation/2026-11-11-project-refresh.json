@@ -1,0 +1,61 @@
+{
+  "date": "2026-11-11",
+  "status": "review_completed_recovery_and_acceptance_open",
+  "evidence": [
+    {
+      "path": "docs/PROJECT_REFRESH_NOV11.md",
+      "sha256": "750970e35ef2d89701e464142ed4abf3b1898bf66ae9b63174fc9cdb15b823fe"
+    },
+    {
+      "path": "records/validation/2026-11-11-refresh-audit.py",
+      "sha256": "0a9668fa2481af5bf1f807410986d5ffbb6f5c2e6e02b560e6d37731e1280a7c"
+    },
+    {
+      "path": "records/validation/2026-11-11-refresh-audit.json",
+      "sha256": "6afda66f99861ccd6a1bf6d5f9d2e98d12dfd11245cb804a59a02e00e9d1fe99"
+    },
+    {
+      "path": "records/validation/2026-11-11-refresh-finalize.py",
+      "sha256": "0f270f18496c89e8052da58221930afbe29441d0288d00783265b2b87dbfab1f"
+    },
+    {
+      "path": "records/validation/2026-11-11-refresh-focused-tests.json",
+      "sha256": "f9280562c151c37e544c9687b4eb835f3f41f482c9ad5be8f1fdefa5bf883971"
+    },
+    {
+      "path": "records/validation/2026-11-11-interrupted-fabric-review-audit.json",
+      "sha256": "1258a0d655189848b594a9012d1e3efee436a8961174fb0a474ef6f4d00f2421"
+    },
+    {
+      "path": "tools/serve_fabric_review.py",
+      "sha256": "293e0b2eebba69169fd079534098005c6b4d656260f8174db6d6d137d3d61e9c"
+    },
+    {
+      "path": "tools/static/fabric_review.html",
+      "sha256": "bf23380ddc0c31ddfa41f2febbecb6cdf3e8aa89c4bf7b5fa0f702b7cf52c0ed"
+    },
+    {
+      "path": "records/validation/2026-11-11-progress-screenshot-docx.json",
+      "sha256": "1c0a11ad2486d8bcd9931ed190cada0d3a451300df7e808a11bd3cedecd71fcc"
+    },
+    {
+      "path": "output/SkirtFabricSense_Progress_Report_Screenshots.docx",
+      "sha256": "b2a1e0dffbabb1e532fd35f75fd4bef1f4f9596310b590e956a3c47142a60516"
+    }
+  ],
+  "started_run_records": 0,
+  "active_scoped_jobs": 0,
+  "background_photos_added": 0,
+  "remaining_record_parse_errors": 21,
+  "partial_ui_accepted": false,
+  "geometry_editor_exists": false,
+  "focused_tests_passed": 76,
+  "models_or_thresholds_changed": false,
+  "dependencies_changed": false,
+  "hardware_confirmation": {
+    "date": "2026-11-11",
+    "raspberry_pi_available": false,
+    "webcam_available": false,
+    "skirts_available": false
+  }
+}

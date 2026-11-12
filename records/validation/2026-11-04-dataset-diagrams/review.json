@@ -1,0 +1,223 @@
+{
+  "date": "2026-11-04",
+  "status": "completed_reviewed_documentation_and_partition_checks",
+  "tests_passed": 19,
+  "actual_assignment_sets_checked": 5,
+  "new_diagrams": 4,
+  "visual_reviewers": [
+    "root",
+    "split_evidence"
+  ],
+  "evidence": [
+    {
+      "path": "CHANGELOG.md",
+      "sha256": "4fb1464af03a706565ffb1f0c44b55219d2e0c29f17c4940f1ef7979d0859fca"
+    },
+    {
+      "path": "HANDOFF.md",
+      "sha256": "78cf47f3637e940875c37432dd85c359deade7fcaf17b2ffe4573009b4f1ba40"
+    },
+    {
+      "path": "README.md",
+      "sha256": "64a99a00db98a527a97a6aa7ac4b2d91a0f21d956d65c2324be4da60ff6160ab"
+    },
+    {
+      "path": "docs/AGENT_HANDOFF.md",
+      "sha256": "777d9f7e7637f92d219ea61ee89dcd1fda6a35b61e500d6b50e349cba4aefe7c"
+    },
+    {
+      "path": "docs/DATASETS.md",
+      "sha256": "329cbaf1cc44693438d1c117d68f44acb15584dc320c46a1879231517d12d9f7"
+    },
+    {
+      "path": "docs/DATASET_PARTITION_EVIDENCE.md",
+      "sha256": "722da8d02b23e40f9d9c0a11911f7ca48ec4fd7dc5bd1229fcbac9cc44b75216"
+    },
+    {
+      "path": "docs/DATA_PARTITION_AUDIT.md",
+      "sha256": "c93839f679b6e7661741f6592acbdec245d1e133af3ad5c502ec1fd62ddee099"
+    },
+    {
+      "path": "docs/DECISIONS.md",
+      "sha256": "836f7aa978218c919e4d926981e9a7bedbf7671cdf34de0f66c41ac00d65ad46"
+    },
+    {
+      "path": "docs/DOCUMENTATION_INDEX.md",
+      "sha256": "711665345a55d9eba5e8e56c49b223cccea2a753092939c2ba9c67537ebc262f"
+    },
+    {
+      "path": "docs/REQUIREMENTS.md",
+      "sha256": "7aca963ae180c5cef6b7744166ab8f45bfaf85bd16b79da486abedcf24ad6d7f"
+    },
+    {
+      "path": "docs/TASK_BOARD.md",
+      "sha256": "87a7e185b89b05bc05867c7fea52168d98de3027f8e5a50259ce75f2899e286c"
+    },
+    {
+      "path": "docs/THESIS_DATASET_DIAGRAMS.md",
+      "sha256": "d3247595f4400133879cb7eb82377bd48793894656674ad6c971edd44e74133f"
+    },
+    {
+      "path": "docs/THESIS_FIGURES.md",
+      "sha256": "d786dce133054a50c2f5da50791c9f4d5f04a2b3f40624dd0290f19b118f5cfd"
+    },
+    {
+      "path": "output/thesis_dataset_diagrams/06_training_validation_test.pdf",
+      "sha256": "e7d42933b599f83009cceca6659285649b5937ed3ba0576f414c8da04b5ea018"
+    },
+    {
+      "path": "output/thesis_dataset_diagrams/06_training_validation_test.png",
+      "sha256": "40e35b92a6cee98fef6c3835c24ef49c4eec12d7bd731a5a526df1d510781829"
+    },
+    {
+      "path": "output/thesis_dataset_diagrams/07_datasets_by_model.pdf",
+      "sha256": "9232a9339e90e6a2591fe8da8db7abd4aa5a8fade74fb4fc767a91124c285b11"
+    },
+    {
+      "path": "output/thesis_dataset_diagrams/07_datasets_by_model.png",
+      "sha256": "a45c60f78836a84011b4e8f861c58d64a2d29e0276354fd73da6721b59abf77d"
+    },
+    {
+      "path": "output/thesis_dataset_diagrams/08_planned_train_validation_test_workflow.pdf",
+      "sha256": "6caa8dced16795064b73bd5a90c82f75a6141e9859a927cccb2bd1df6970f6ce"
+    },
+    {
+      "path": "output/thesis_dataset_diagrams/08_planned_train_validation_test_workflow.png",
+      "sha256": "e218d8339de52ac8c6ea2b98624e49820e858db9f2ca23914474d6db606117d5"
+    },
+    {
+      "path": "output/thesis_dataset_diagrams/09_grouping_prevents_data_leakage.pdf",
+      "sha256": "6d59f369fa18883db7fd004ab0d02a4317e454ea569212422f4973e0204f0c4c"
+    },
+    {
+      "path": "output/thesis_dataset_diagrams/09_grouping_prevents_data_leakage.png",
+      "sha256": "a536199b874ad11e5295a0fe924736925ed5e1123f4456b4f6478d28b93e0467"
+    },
+    {
+      "path": "output/thesis_dataset_diagrams/Training_Validation_Test_Diagrams.pdf",
+      "sha256": "65e4af0015ac017c5057860725afe1b78e03de0d1f17e2468950ade900565b8f"
+    },
+    {
+      "path": "output/thesis_dataset_diagrams/source-data.json",
+      "sha256": "feab9c111785f327645a15350825be30ebb8f6ed7997fe60f436ea7730f7bb64"
+    },
+    {
+      "path": "records/validation/2026-11-04-dataset-diagrams-initial-integrity.json",
+      "sha256": "bce4901d912c57916a45569aff4a5981ee16828dec9140d84cec1455ac9c42b1"
+    },
+    {
+      "path": "records/validation/2026-11-04-dataset-diagrams/category-partitions.json",
+      "sha256": "277c6974aadace74df18668bc9efc652a0545ef83c7121d48ac791d64d413fc0"
+    },
+    {
+      "path": "records/validation/2026-11-04-dataset-diagrams/category.log",
+      "sha256": "277c6974aadace74df18668bc9efc652a0545ef83c7121d48ac791d64d413fc0"
+    },
+    {
+      "path": "records/validation/2026-11-04-dataset-diagrams/fabric-partitions.json",
+      "sha256": "9a49e28330a75bed8850e035fe03ee761088281b0b605d277d2f65c0f32e4a0d"
+    },
+    {
+      "path": "records/validation/2026-11-04-dataset-diagrams/fabric.log",
+      "sha256": "9a49e28330a75bed8850e035fe03ee761088281b0b605d277d2f65c0f32e4a0d"
+    },
+    {
+      "path": "records/validation/2026-11-04-dataset-diagrams/finalize.py",
+      "sha256": "f2af08b3caa5166551de9326b2a11ecca7fc762ebc4ff349a95ed0476219735c"
+    },
+    {
+      "path": "records/validation/2026-11-04-dataset-diagrams/localizer-partitions.json",
+      "sha256": "23ff5659842fb6e3b78f27a685dcf87450e0fc8ec2a46cb5592ccad4fa6a53b1"
+    },
+    {
+      "path": "records/validation/2026-11-04-dataset-diagrams/localizer.log",
+      "sha256": "23ff5659842fb6e3b78f27a685dcf87450e0fc8ec2a46cb5592ccad4fa6a53b1"
+    },
+    {
+      "path": "records/validation/2026-11-04-dataset-diagrams/partition-tests.log",
+      "sha256": "d011ed02caaac98855c1edf57eb9ee9394e42110d87103685503e4a99c2a5fa2"
+    },
+    {
+      "path": "records/validation/2026-11-04-dataset-diagrams/pleating-partitions.json",
+      "sha256": "d04d7a9fcdbf672819b6654eaf7a3fd1da72856f060a221395ba67b40f5f12e6"
+    },
+    {
+      "path": "records/validation/2026-11-04-dataset-diagrams/pleating.log",
+      "sha256": "d04d7a9fcdbf672819b6654eaf7a3fd1da72856f060a221395ba67b40f5f12e6"
+    },
+    {
+      "path": "records/validation/2026-11-04-dataset-diagrams/verification.json",
+      "sha256": "c7b3e5c978bae35a41825af360dd51ecfc361e447eadc0a5508916cfa580d09d"
+    },
+    {
+      "path": "records/validation/2026-11-04-dataset-diagrams/verify.py",
+      "sha256": "1afc15398b200f61386fc9b22e9c75b1eb48e5496b7d78fcff0f23efe7d19dbd"
+    },
+    {
+      "path": "records/validation/2026-11-04-dataset-diagrams/worn-partitions.json",
+      "sha256": "c008322f954aba29cbbdeb6a45bc3ecf582f1b1abe0e2ad747af0fc0447596cb"
+    },
+    {
+      "path": "records/validation/2026-11-04-dataset-diagrams/worn.log",
+      "sha256": "c008322f954aba29cbbdeb6a45bc3ecf582f1b1abe0e2ad747af0fc0447596cb"
+    },
+    {
+      "path": "records/validation/2026-11-04-dataset-partitions-audit.json",
+      "sha256": "f1cd02cee2dab22070531d62e8401c74e9a0108003c296486759d8cf546e1833"
+    },
+    {
+      "path": "tests/test_dataset_partitions.py",
+      "sha256": "bf0877c3f0bc48ce7bb02ba9b8e65fdfd1cb04c7f9552161af02e9de38f25789"
+    },
+    {
+      "path": "tools/audit_dataset_partitions.py",
+      "sha256": "dcaa300b68818deb5ec04b5cb888ea0d2d2a7886f37b869ddfd575c0c221da4e"
+    },
+    {
+      "path": "tools/create_dataset_diagrams.py",
+      "sha256": "e01fa03ea421de97afb22b9f4ba8f4eb1a7101b1e2e3d2d9a03b679e013a7314"
+    }
+  ],
+  "process_observations": [
+    {
+      "command": [
+        "wsl",
+        "-d",
+        "Ubuntu-24.04",
+        "-u",
+        "skirttrain",
+        "--exec",
+        "/usr/bin/pgrep",
+        "-af",
+        "[t]rain_.*.py|[e]valuate_image_robustness.py|[a]pp.server.*8766|[s]tation_package.py launch"
+      ],
+      "exit_code": 1,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "C:/Program Files/PowerShell/7/pwsh.exe",
+        "-NoProfile",
+        "-Command",
+        "Get-CimInstance Win32_Process | Where-Object { $_.Name -match '^(python|pythonw|node)(\\.exe)?$' -and $_.CommandLine -match 'train_|evaluate_image_robustness|app.server|station_package.py launch' } | Select-Object ProcessId,Name,CommandLine | ConvertTo-Json -Compress"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    }
+  ],
+  "active_operations": [],
+  "pending_operations": [],
+  "model_or_threshold_change": false,
+  "accuracy_improvement_claimed": false,
+  "data_or_split_change": false,
+  "dependency_changes": [],
+  "pi_verified": false,
+  "remaining_inputs": [
+    "Exact camera/Pi SKUs and purchase/arrival confirmation",
+    "Actual garments and label evidence",
+    "Independent wearer/hem observations and measured calibration",
+    "ARM64 runtime and complete live acceptance"
+  ]
+}

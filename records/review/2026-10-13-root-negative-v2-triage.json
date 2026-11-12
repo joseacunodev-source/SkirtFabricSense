@@ -1,0 +1,24 @@
+{
+  "date_asia_manila": "2026-10-13",
+  "reviewer": "codex_root",
+  "independent_human_review": false,
+  "method": "Visual inspection of all four 30-image contact sheets; no full-original review in this record",
+  "images_seen": 120,
+  "training_admitted": false,
+  "flags": [
+    {"source_item_ids": ["23830"], "reason": "White lower garment could be skirt or wide culottes; requires original-image inspection"},
+    {"source_item_ids": ["24742"], "reason": "Long purple upper/lower garment obscures pants-versus-skirt interpretation"},
+    {"source_item_ids": ["46398"], "reason": "Shorts candidate resembles a red skirt in side view; inspect original before assigning absence"},
+    {"source_item_ids": ["45776"], "reason": "Two foreground people; woman's pleated lower garment may be separate skirt or dress"},
+    {"source_item_ids": ["32509", "26917", "28835"], "reason": "Similar studio room/background; investigate session linkage, not proven same garment"},
+    {"source_item_ids": ["7557", "25096"], "reason": "Similar model, outfit and outdoor seating; possible related views"},
+    {"source_item_ids": ["4995", "39794"], "reason": "Similar model/top/denim shorts in related outdoor setting; possible same garment"},
+    {"source_item_ids": ["41740", "48850"], "reason": "Similar plaid shirt/shorts and outdoor setting; possible related views"}
+  ],
+  "general_observations": [
+    "Some images are clear hanging or isolated product views, others worn, seated or occluded",
+    "Runway and street scenes can contain additional people and partially visible clothing",
+    "Source annotation absence is insufficient for a no-skirt label",
+    "Flags are triage observations, not final labels or exhaustive grouping"
+  ]
+}

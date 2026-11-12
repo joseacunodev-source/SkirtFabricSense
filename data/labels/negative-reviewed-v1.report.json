@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-11",
+  "manifest": "data/labels/negative-reviewed-v1.jsonl",
+  "manifest_sha256": "f5f42fb2dbc3bd5ab53e2ee1ededa01ca1e49a5ce0d656c900447cacfa89ebc2",
+  "source_manifest_sha256": "c4306ef7afacfde2e35daf1c6d5144c026075e5944180e2f38d46b9730470d02",
+  "preparation_source_sha256": "63dae2445decfa4a977b1a81b9551ff7da73183e1cb200907d00359a6122b161",
+  "reviewed_candidates": 90,
+  "admitted_images": 12,
+  "quarantined_images": 78,
+  "full_originals_inspected": 22,
+  "split_counts": {
+    "development_validation": 3,
+    "development_train": 9
+  },
+  "split_category_counts": {
+    "development_validation:dress": 1,
+    "development_validation:shorts": 1,
+    "development_train:shorts": 2,
+    "development_train:pants": 3,
+    "development_train:dress": 4,
+    "development_validation:pants": 1
+  },
+  "split_hash": "44dc6d6aafe6246a5a389ae7df4f401f12b8331692e2daf8d76f85d1f8c3a8f7",
+  "positive_manifest_sha256": "9160998b5ab0f65251c53cefd783e1c6351887bec8c655074be64dd2717dc2eb",
+  "source_partitions_preserved": true,
+  "human_review": false,
+  "limitations": [
+    "Small agent-reviewed development pilot, not independent test truth.",
+    "No empty room, blur or webcam domain examples.",
+    "Source license metadata retained; original photographer title attribution and distribution clearance remain required before redistribution.",
+    "No independently verified physical garment or capture-session IDs; visually recurring sessions excluded."
+  ]
+}

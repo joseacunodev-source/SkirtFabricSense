@@ -1,0 +1,38 @@
+{
+  "created_at_utc": "2026-10-23T11:15:19.532743+00:00",
+  "network_body_cap_bytes": 83886080,
+  "requests_cap": 40,
+  "expanded_json_cap_bytes": 188743680,
+  "compressed_train_member_cap_bytes": 41943040,
+  "individual_photo_cap_bytes": 3145728,
+  "max_photos": 12,
+  "only_annotation_member_allowed": "annotations/captions_train2017.json",
+  "original_partition": "train2017",
+  "protected_annotations_read": false,
+  "full_zip_fallback": false,
+  "source_urls": {
+    "coco_terms.html": "https://raw.githubusercontent.com/cocodataset/cocodataset.github.io/master/dataset/termsofuse.htm",
+    "coco_download.html": "https://raw.githubusercontent.com/cocodataset/cocodataset.github.io/master/dataset/download.htm",
+    "flickr_cc.html": "https://www.flickr.com/creativecommons/",
+    "cc_by_2.html": "https://creativecommons.org/licenses/by/2.0/",
+    "cc_by_sa_2.html": "https://creativecommons.org/licenses/by-sa/2.0/"
+  },
+  "archive_url": "https://storage.googleapis.com/images.cocodataset.org/annotations/annotations_trainval2017.zip",
+  "training_admitted": false,
+  "project_split": null,
+  "selection": "Ascending source image ID; at least two room/furniture/object captions, no person/clothing word in any caption; CC BY2.0/CC BY-SA2.0 plus matching Flickr oEmbed author/licence/photo identity before photo.",
+  "source_identity": "One original COCO photo ID; scene/physical object identity unresolved; source author retained for conservative grouping.",
+  "prior_attempt": {
+    "path": "records/acquisitions/2026-10-23-coco-backgrounds/acquisition.json",
+    "sha256": "2ad2927e293f2e0df7bf70833f045dcf97ae86f79ee6d58b72954773e52e28d9"
+  },
+  "aggregate_prior_network_body_bytes": 313372,
+  "aggregate_prior_requests": 6,
+  "source_use_basis": "Root reviewed saved official CC BY4.0 annotation terms and per-photo Flickr conditions; existing user internet-dataset instruction authorizes ordinary public licensed intake. No account or click-through acceptance action.",
+  "official_transport_evidence": {
+    "path": "records/acquisitions/2026-10-23-coco-backgrounds/coco_download.html",
+    "sha256": "62e500d3e7be567d97c295f5f56c95a416618d0770dd334a0ab943a4c1e6954b",
+    "documented_bucket": "gs://images.cocodataset.org",
+    "transport": "HTTPS public GCP object endpoint; same documented bucket/object; TLS verification retained"
+  }
+}

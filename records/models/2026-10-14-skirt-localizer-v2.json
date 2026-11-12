@@ -1,0 +1,49 @@
+{
+  "release_id": "skirt-localizer-v2",
+  "status": "experimental_not_promoted_rejection_regression",
+  "run": {
+    "path": "records/experiments/20261014-localizer-v2/run.json",
+    "sha256": "d419b1e8ec46b4c631aae78f187ee57525433ccca02d5393f7906ce8372fec58"
+  },
+  "model": {
+    "path": "artifacts/models/skirt-localizer-v2/model.tflite",
+    "sha256": "f2f5f73d34cd99c3fb46502cb806ddbc347c6664e8ce24b8fe06a548c70090de"
+  },
+  "executed_source": {
+    "path": "records/experiments/20261014-localizer-v2/training_source.py",
+    "sha256": "e86233a39c73e678ae16cd256edd8a62969b3ea2f26d28736d4fb04ad9324fdb"
+  },
+  "inputs": {
+    "path": "records/experiments/20261014-localizer-v2/labelled-inputs.json",
+    "sha256": "018a03dd78549e8a54a18d00116722eb4ffcc5c6208f17ae967e3c6158bd8c0c"
+  },
+  "comparison": {
+    "path": "records/validation/2026-10-14-localizer-v2-comparison.json",
+    "sha256": "c8084b1b61f7fea10ad1a39ce336d666c4760ea4cd292af5e8eabd9af07c92c8"
+  },
+  "input": {
+    "shape": [
+      1,
+      224,
+      224,
+      3
+    ],
+    "dtype": "float32",
+    "range": [
+      0,
+      255
+    ],
+    "preprocessing": "Full RGB bilinear resize224; model normalization"
+  },
+  "output": {
+    "shape": [
+      1,
+      56,
+      56,
+      1
+    ],
+    "threshold": 0.5
+  },
+  "pi_verified": false,
+  "camera_accuracy_verified": false
+}

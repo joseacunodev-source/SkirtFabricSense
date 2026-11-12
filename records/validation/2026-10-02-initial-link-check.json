@@ -1,0 +1,12 @@
+{
+  "recorded_at": "2026-10-02T19:10:02.509501+08:00",
+  "status": "failed",
+  "local_links_checked": 41,
+  "json_records_parsed": 26,
+  "acquired_artifacts_verified": 33,
+  "skill_copy_matches": true,
+  "errors": [
+    "README.md: missing link records/validation/2026-10-02-documentation.json"
+  ],
+  "limits": "Documentation/integrity checks only; not model training or Raspberry Pi verification."
+}

@@ -1,0 +1,115 @@
+{
+  "status": "passed",
+  "date": "2026-10-12",
+  "verification_source_sha256": "f57b4f2884dbefdff47cf72af2dca39cad54668b71d42163df5290701e366de7",
+  "device": "WSL desktop CPU; GPU disabled",
+  "tensorflow_version": "2.20.0",
+  "numpy_version": "2.5.3",
+  "model_sha256": "81f144a1c7cd4910989374a1a86c85e955fb4f65cd81ef88c26e7cbcf1158bfd",
+  "tolerance": 0.001,
+  "predictions": [
+    {
+      "sample_id": "deepfashion-multimodal-WOMEN-Skirts-id_00000003-02_1_front",
+      "label": "source_cotton_appearance",
+      "keras_scores": [
+        0.4190572202205658,
+        0.18077009916305542,
+        0.08368756622076035,
+        0.31648507714271545
+      ],
+      "tflite_scores": [
+        0.4190566837787628,
+        0.18077008426189423,
+        0.08368716388940811,
+        0.31648603081703186
+      ],
+      "maximum_absolute_error": 9.5367431640625e-07,
+      "archived_prediction_maximum_absolute_error": 5.960464477539063e-08,
+      "class_agreement": true,
+      "prediction": "source_cotton_appearance"
+    },
+    {
+      "sample_id": "deepfashion-multimodal-WOMEN-Skirts-id_00000334-02_1_front",
+      "label": "source_cotton_appearance",
+      "keras_scores": [
+        0.559070885181427,
+        0.29453209042549133,
+        0.060353755950927734,
+        0.08604327589273453
+      ],
+      "tflite_scores": [
+        0.559072732925415,
+        0.2945297062397003,
+        0.06035440042614937,
+        0.0860431119799614
+      ],
+      "maximum_absolute_error": 2.384185791015625e-06,
+      "archived_prediction_maximum_absolute_error": 1.4901161193847656e-07,
+      "class_agreement": true,
+      "prediction": "source_cotton_appearance"
+    },
+    {
+      "sample_id": "deepfashion-multimodal-WOMEN-Skirts-id_00002711-01_1_front",
+      "label": "source_leather_appearance",
+      "keras_scores": [
+        0.21834611892700195,
+        0.10131749510765076,
+        0.44578105211257935,
+        0.23455539345741272
+      ],
+      "tflite_scores": [
+        0.21834711730480194,
+        0.10131800919771194,
+        0.44578099250793457,
+        0.23455379903316498
+      ],
+      "maximum_absolute_error": 1.5944242477416992e-06,
+      "archived_prediction_maximum_absolute_error": 7.450580596923828e-08,
+      "class_agreement": true,
+      "prediction": "source_leather_appearance"
+    },
+    {
+      "sample_id": "deepfashion-multimodal-WOMEN-Skirts-id_00004182-01_1_front",
+      "label": "source_chiffon_appearance",
+      "keras_scores": [
+        0.49575865268707275,
+        0.457828164100647,
+        0.03265237435698509,
+        0.013760865665972233
+      ],
+      "tflite_scores": [
+        0.49575886130332947,
+        0.45782798528671265,
+        0.03265230357646942,
+        0.013760831207036972
+      ],
+      "maximum_absolute_error": 2.086162567138672e-07,
+      "archived_prediction_maximum_absolute_error": 1.1920928955078125e-07,
+      "class_agreement": true,
+      "prediction": "source_cotton_appearance"
+    },
+    {
+      "sample_id": "deepfashion-multimodal-WOMEN-Skirts-id_00004513-04_1_front",
+      "label": "source_denim_appearance",
+      "keras_scores": [
+        0.023973049595952034,
+        0.918026864528656,
+        0.04163017496466637,
+        0.016369910910725594
+      ],
+      "tflite_scores": [
+        0.023972956463694572,
+        0.9180270433425903,
+        0.041630152612924576,
+        0.016369877383112907
+      ],
+      "maximum_absolute_error": 1.7881393432617188e-07,
+      "archived_prediction_maximum_absolute_error": 5.960464477539063e-08,
+      "class_agreement": true,
+      "prediction": "source_denim_appearance"
+    }
+  ],
+  "pi_verified": false,
+  "live_approved": false,
+  "limitations": "Five development images; smoke verification only."
+}

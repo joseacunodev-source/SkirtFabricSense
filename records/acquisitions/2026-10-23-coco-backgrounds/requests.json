@@ -1,0 +1,105 @@
+{
+  "total_consumed_body_bytes": 313372,
+  "requests": [
+    {
+      "url": "https://raw.githubusercontent.com/cocodataset/cocodataset.github.io/master/dataset/termsofuse.htm",
+      "started_at_utc": "2026-10-23T11:13:51.840900+00:00",
+      "range": null,
+      "response_cap_bytes": 1048576,
+      "consumed_body_bytes": 2370,
+      "outcome": "success",
+      "status": 200,
+      "resolved_url": "https://raw.githubusercontent.com/cocodataset/cocodataset.github.io/master/dataset/termsofuse.htm",
+      "headers": {
+        "Content-Length": "2370",
+        "Content-Type": "text/plain; charset=utf-8",
+        "ETag": "\"acd50f3cb63f7c9881b008bd36b38f2b84b524f830a7f7dacb427539f5571253\""
+      },
+      "finished_at_utc": "2026-10-23T11:13:52.306694+00:00",
+      "sha256_consumed_body": "bd019f88ee44c29b2f19c5b99888cf5bc2e7c16f57b6e52af8ed3a60462e8bdd",
+      "body_path": "records/acquisitions/2026-10-23-coco-backgrounds/coco_terms.html"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/cocodataset/cocodataset.github.io/master/dataset/download.htm",
+      "started_at_utc": "2026-10-23T11:13:52.307690+00:00",
+      "range": null,
+      "response_cap_bytes": 1048576,
+      "consumed_body_bytes": 13225,
+      "outcome": "success",
+      "status": 200,
+      "resolved_url": "https://raw.githubusercontent.com/cocodataset/cocodataset.github.io/master/dataset/download.htm",
+      "headers": {
+        "Content-Length": "13225",
+        "Content-Type": "text/plain; charset=utf-8",
+        "ETag": "\"13802fad27d6ba4d91911af0308bbdc7c0d3f348f682cf56fc409018d2e2cf6a\""
+      },
+      "finished_at_utc": "2026-10-23T11:13:52.905599+00:00",
+      "sha256_consumed_body": "62e500d3e7be567d97c295f5f56c95a416618d0770dd334a0ab943a4c1e6954b",
+      "body_path": "records/acquisitions/2026-10-23-coco-backgrounds/coco_download.html"
+    },
+    {
+      "url": "https://www.flickr.com/creativecommons/",
+      "started_at_utc": "2026-10-23T11:13:52.906605+00:00",
+      "range": null,
+      "response_cap_bytes": 1048576,
+      "consumed_body_bytes": 230526,
+      "outcome": "success",
+      "status": 200,
+      "resolved_url": "https://www.flickr.com/creativecommons/",
+      "headers": {
+        "Content-Type": "text/html; charset=utf-8"
+      },
+      "finished_at_utc": "2026-10-23T11:13:53.685606+00:00",
+      "sha256_consumed_body": "12fb058873581eb0a97d70f435c4ff68b4f8b0e986af9a4f7872e4d0ec6e6954",
+      "body_path": "records/acquisitions/2026-10-23-coco-backgrounds/flickr_cc.html"
+    },
+    {
+      "url": "https://creativecommons.org/licenses/by/2.0/",
+      "started_at_utc": "2026-10-23T11:13:53.688640+00:00",
+      "range": null,
+      "response_cap_bytes": 1048576,
+      "consumed_body_bytes": 31822,
+      "outcome": "success",
+      "status": 200,
+      "resolved_url": "https://creativecommons.org/licenses/by/2.0/",
+      "headers": {
+        "Content-Type": "text/html",
+        "Last-Modified": "Thu, 01 Oct 2026 17:09:56 GMT"
+      },
+      "finished_at_utc": "2026-10-23T11:13:53.987819+00:00",
+      "sha256_consumed_body": "bbb0dcc37f02552e7270e6d2e06be02672ce29ada816107d6fa91e1e6809714b",
+      "body_path": "records/acquisitions/2026-10-23-coco-backgrounds/cc_by_2.html"
+    },
+    {
+      "url": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "started_at_utc": "2026-10-23T11:13:53.989831+00:00",
+      "range": null,
+      "response_cap_bytes": 1048576,
+      "consumed_body_bytes": 35429,
+      "outcome": "success",
+      "status": 200,
+      "resolved_url": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "headers": {
+        "Content-Type": "text/html",
+        "Last-Modified": "Thu, 01 Oct 2026 17:09:55 GMT"
+      },
+      "finished_at_utc": "2026-10-23T11:13:54.512261+00:00",
+      "sha256_consumed_body": "6d15fd2f2ccc7258f39befc9f13f5154f9851e49a9e90ec43c7e22d660ae0e84",
+      "body_path": "records/acquisitions/2026-10-23-coco-backgrounds/cc_by_sa_2.html"
+    },
+    {
+      "url": "https://images.cocodataset.org/annotations/annotations_trainval2017.zip",
+      "started_at_utc": "2026-10-23T11:13:54.514264+00:00",
+      "range": [
+        0,
+        0
+      ],
+      "response_cap_bytes": 1,
+      "consumed_body_bytes": 0,
+      "outcome": "failed",
+      "error": "URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'images.cocodataset.org'. (_ssl.c:1010)>",
+      "finished_at_utc": "2026-10-23T11:13:56.495802+00:00",
+      "sha256_consumed_body": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ]
+}

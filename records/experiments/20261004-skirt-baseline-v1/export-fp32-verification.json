@@ -1,0 +1,1061 @@
+{
+  "status": "passed",
+  "source_sha256": "583c3ac2af4b62ee81df4ae232165c66ef2e32604763a58f27e0001d4d492f58",
+  "parent_run_sha256": "8218892c64e13fcfa8028fd8096a0832aed86d93ba810d30958c435c4d274c3d",
+  "checkpoint_sha256": "e89a2084f7dc4a8c7be950d27e1a3a603eb4707e638a482b18cba0e2229705af",
+  "tflite_sha256": "aee38858c1ab0ae4747e67fc5dc4a93dcd09b4bb0394cf05eae2de7a8c3b3985",
+  "dataset_sha256": "9160998b5ab0f65251c53cefd783e1c6351887bec8c655074be64dd2717dc2eb",
+  "tensorflow_version": "2.20.0",
+  "tf32_default_observed": true,
+  "tf32_enabled_for_verification": false,
+  "retrained": false,
+  "export_changed": false,
+  "count": 80,
+  "maximum_absolute_error": 3.159046173095703e-06,
+  "tolerance_absolute": 0.001,
+  "argmax_agreement": 1.0,
+  "desktop_tflite_invoke_median_seconds": 0.004668969999983119,
+  "pi_verified": false,
+  "predictions": [
+    {
+      "sample_id": "fashionpedia-train2020-12679",
+      "actual": "non_pleated",
+      "tensorflow": [
+        0.9816803932189941,
+        0.018319588154554367
+      ],
+      "tflite": [
+        0.9816806316375732,
+        0.01831936463713646
+      ],
+      "maximum_absolute_error": 2.384185791015625e-07
+    },
+    {
+      "sample_id": "fashionpedia-train2020-16838",
+      "actual": "non_pleated",
+      "tensorflow": [
+        0.9599947929382324,
+        0.040005266666412354
+      ],
+      "tflite": [
+        0.9599945545196533,
+        0.04000544175505638
+      ],
+      "maximum_absolute_error": 2.384185791015625e-07
+    },
+    {
+      "sample_id": "fashionpedia-train2020-16912",
+      "actual": "non_pleated",
+      "tensorflow": [
+        0.9652639627456665,
+        0.03473610430955887
+      ],
+      "tflite": [
+        0.9652634859085083,
+        0.03473644331097603
+      ],
+      "maximum_absolute_error": 4.76837158203125e-07
+    },
+    {
+      "sample_id": "fashionpedia-train2020-17761",
+      "actual": "pleated",
+      "tensorflow": [
+        0.28118976950645447,
+        0.7188102006912231
+      ],
+      "tflite": [
+        0.28119054436683655,
+        0.7188094854354858
+      ],
+      "maximum_absolute_error": 7.748603820800781e-07
+    },
+    {
+      "sample_id": "fashionpedia-train2020-21255",
+      "actual": "non_pleated",
+      "tensorflow": [
+        0.9686089754104614,
+        0.03139105811715126
+      ],
+      "tflite": [
+        0.9686087369918823,
+        0.031391218304634094
+      ],
+      "maximum_absolute_error": 2.384185791015625e-07
+    },
+    {
+      "sample_id": "fashionpedia-train2020-21441",
+      "actual": "non_pleated",
+      "tensorflow": [
+        0.9489896297454834,
+        0.0510103814303875
+      ],
+      "tflite": [
+        0.948989748954773,
+        0.05101029947400093
+      ],
+      "maximum_absolute_error": 1.1920928955078125e-07
+    },
+    {
+      "sample_id": "fashionpedia-train2020-21757",
+      "actual": "non_pleated",
+      "tensorflow": [
+        0.8325061202049255,
+        0.16749383509159088
+      ],
+      "tflite": [
+        0.832505464553833,
+        0.1674945205450058
+      ],
+      "maximum_absolute_error": 6.854534149169922e-07
+    },
+    {
+      "sample_id": "fashionpedia-train2020-2208",
+      "actual": "non_pleated",
+      "tensorflow": [
+        0.5369019508361816,
+        0.46309801936149597
+      ],
+      "tflite": [
+        0.5369025468826294,
+        0.4630975127220154
+      ],
+      "maximum_absolute_error": 5.960464477539062e-07
+    },
+    {
+      "sample_id": "fashionpedia-train2020-22772",
+      "actual": "non_pleated",
+      "tensorflow": [
+        0.9182987809181213,
+        0.08170124143362045
+      ],
+      "tflite": [
+        0.9182994961738586,
+        0.08170052617788315
+      ],
+      "maximum_absolute_error": 7.152557373046875e-07
+    },
+    {
+      "sample_id": "fashionpedia-train2020-23671",
+      "actual": "non_pleated",
+      "tensorflow": [
+        0.9647308588027954,
+        0.03526906669139862
+      ],
+      "tflite": [
+        0.9647308588027954,
+        0.03526914119720459
+      ],
+      "maximum_absolute_error": 7.450580596923828e-08
+    },
+    {
+      "sample_id": "fashionpedia-train2020-23874",
+      "actual": "non_pleated",
+      "tensorflow": [
+        0.9766862988471985,
+        0.023313693702220917
+      ],
+      "tflite": [
+        0.9766864776611328,
+        0.023313505575060844
+      ],
+      "maximum_absolute_error": 1.8812716007232666e-07
+    },
+    {
+      "sample_id": "fashionpedia-train2020-24110",
+      "actual": "non_pleated",
+      "tensorflow": [
+        0.9733090400695801,
+        0.026690969243645668
+      ],
+      "tflite": [
+        0.9733089208602905,
+        0.026691077277064323
+      ],
+      "maximum_absolute_error": 1.1920928955078125e-07
+    },
+    {
+      "sample_id": "fashionpedia-train2020-24284",
+      "actual": "non_pleated",
+      "tensorflow": [
+        0.9666755199432373,
+        0.03332453593611717
+      ],
+      "tflite": [
+        0.9666755199432373,
+        0.033324483782052994
+      ],
+      "maximum_absolute_error": 5.21540641784668e-08
+    },
+    {
+      "sample_id": "fashionpedia-train2020-24325",
+      "actual": "non_pleated",
+      "tensorflow": [
+        0.9894250631332397,
+        0.010574928484857082
+      ],
+      "tflite": [
+        0.9894250631332397,
+        0.01057496853172779
+      ],
+      "maximum_absolute_error": 4.0046870708465576e-08
+    },
+    {
+      "sample_id": "fashionpedia-train2020-24650",
+      "actual": "non_pleated",
+      "tensorflow": [
+        0.9507784247398376,
+        0.04922157898545265
+      ],
+      "tflite": [
+        0.9507789015769958,
+        0.049221161752939224
+      ],
+      "maximum_absolute_error": 4.76837158203125e-07
+    },
+    {
+      "sample_id": "fashionpedia-train2020-24708",
+      "actual": "pleated",
+      "tensorflow": [
+        0.46082791686058044,
+        0.5391720533370972
+      ],
+      "tflite": [
+        0.46082767844200134,
+        0.539172351360321
+      ],
+      "maximum_absolute_error": 2.980232238769531e-07
+    },
+    {
+      "sample_id": "fashionpedia-train2020-26590",
+      "actual": "non_pleated",
+      "tensorflow": [
+        0.9849691390991211,
+        0.015030806884169579
+      ],
+      "tflite": [
+        0.9849692583084106,
+        0.015030693262815475
+      ],
+      "maximum_absolute_error": 1.1920928955078125e-07
+    },
+    {
+      "sample_id": "fashionpedia-train2020-2689",
+      "actual": "pleated",
+      "tensorflow": [
+        0.5592101216316223,
+        0.4407899081707001
+      ],
+      "tflite": [
+        0.5592083930969238,
+        0.44079160690307617
+      ],
+      "maximum_absolute_error": 1.7285346984863281e-06
+    },
+    {
+      "sample_id": "fashionpedia-train2020-26955",
+      "actual": "non_pleated",
+      "tensorflow": [
+        0.9928078651428223,
+        0.007192092016339302
+      ],
+      "tflite": [
+        0.9928079843521118,
+        0.007192013785243034
+      ],
+      "maximum_absolute_error": 1.1920928955078125e-07
+    },
+    {
+      "sample_id": "fashionpedia-train2020-27922",
+      "actual": "non_pleated",
+      "tensorflow": [
+        0.5924868583679199,
+        0.4075131416320801
+      ],
+      "tflite": [
+        0.5924867987632751,
+        0.4075131416320801
+      ],
+      "maximum_absolute_error": 5.960464477539063e-08
+    },
+    {
+      "sample_id": "fashionpedia-train2020-29142",
+      "actual": "pleated",
+      "tensorflow": [
+        0.14843535423278809,
+        0.8515645861625671
+      ],
+      "tflite": [
+        0.14843451976776123,
+        0.8515654802322388
+      ],
+      "maximum_absolute_error": 8.940696716308594e-07
+    },
+    {
+      "sample_id": "fashionpedia-train2020-29403",
+      "actual": "non_pleated",
+      "tensorflow": [
+        0.45741134881973267,
+        0.5425886511802673
+      ],
+      "tflite": [
+        0.45741450786590576,
+        0.5425854921340942
+      ],
+      "maximum_absolute_error": 3.159046173095703e-06
+    },
+    {
+      "sample_id": "fashionpedia-train2020-29964",
+      "actual": "non_pleated",
+      "tensorflow": [
+        0.9271095991134644,
+        0.07289037108421326
+      ],
+      "tflite": [
+        0.9271090626716614,
+        0.07289089262485504
+      ],
+      "maximum_absolute_error": 5.364418029785156e-07
+    },
+    {
+      "sample_id": "fashionpedia-train2020-30563",
+      "actual": "pleated",
+      "tensorflow": [
+        0.6227126121520996,
+        0.3772873878479004
+      ],
+      "tflite": [
+        0.6227145791053772,
+        0.3772854506969452
+      ],
+      "maximum_absolute_error": 1.9669532775878906e-06
+    },
+    {
+      "sample_id": "fashionpedia-train2020-3166",
+      "actual": "non_pleated",
+      "tensorflow": [
+        0.9426651000976562,
+        0.05733489990234375
+      ],
+      "tflite": [
+        0.9426649808883667,
+        0.057335015386343
+      ],
+      "maximum_absolute_error": 1.1920928955078125e-07
+    },
+    {
+      "sample_id": "fashionpedia-train2020-31762",
+      "actual": "non_pleated",
+      "tensorflow": [
+        0.9532719254493713,
+        0.04672810062766075
+      ],
+      "tflite": [
+        0.9532720446586609,
+        0.04672800749540329
+      ],
+      "maximum_absolute_error": 1.1920928955078125e-07
+    },
+    {
+      "sample_id": "fashionpedia-train2020-31853",
+      "actual": "non_pleated",
+      "tensorflow": [
+        0.9171650409698486,
+        0.08283499628305435
+      ],
+      "tflite": [
+        0.9171649217605591,
+        0.08283508569002151
+      ],
+      "maximum_absolute_error": 1.1920928955078125e-07
+    },
+    {
+      "sample_id": "fashionpedia-train2020-31939",
+      "actual": "non_pleated",
+      "tensorflow": [
+        0.5343658328056335,
+        0.46563422679901123
+      ],
+      "tflite": [
+        0.5343689322471619,
+        0.46563106775283813
+      ],
+      "maximum_absolute_error": 3.159046173095703e-06
+    },
+    {
+      "sample_id": "fashionpedia-train2020-3337",
+      "actual": "non_pleated",
+      "tensorflow": [
+        0.9816362857818604,
+        0.018363723531365395
+      ],
+      "tflite": [
+        0.9816363453865051,
+        0.018363626673817635
+      ],
+      "maximum_absolute_error": 9.685754776000977e-08
+    },
+    {
+      "sample_id": "fashionpedia-train2020-33951",
+      "actual": "non_pleated",
+      "tensorflow": [
+        0.9794069528579712,
+        0.02059299685060978
+      ],
+      "tflite": [
+        0.9794071912765503,
+        0.020592818036675453
+      ],
+      "maximum_absolute_error": 2.384185791015625e-07
+    },
+    {
+      "sample_id": "fashionpedia-train2020-34108",
+      "actual": "pleated",
+      "tensorflow": [
+        0.36215487122535706,
+        0.6378451585769653
+      ],
+      "tflite": [
+        0.36215493083000183,
+        0.6378450989723206
+      ],
+      "maximum_absolute_error": 5.960464477539063e-08
+    },
+    {
+      "sample_id": "fashionpedia-train2020-34216",
+      "actual": "non_pleated",
+      "tensorflow": [
+        0.3457000255584717,
+        0.6542999744415283
+      ],
+      "tflite": [
+        0.34570059180259705,
+        0.6542994379997253
+      ],
+      "maximum_absolute_error": 5.662441253662109e-07
+    },
+    {
+      "sample_id": "fashionpedia-train2020-34508",
+      "actual": "pleated",
+      "tensorflow": [
+        0.5465380549430847,
+        0.4534619152545929
+      ],
+      "tflite": [
+        0.5465397834777832,
+        0.4534602165222168
+      ],
+      "maximum_absolute_error": 1.7285346984863281e-06
+    },
+    {
+      "sample_id": "fashionpedia-train2020-35294",
+      "actual": "pleated",
+      "tensorflow": [
+        0.07249319553375244,
+        0.9275068044662476
+      ],
+      "tflite": [
+        0.07249323278665543,
+        0.9275068044662476
+      ],
+      "maximum_absolute_error": 3.725290298461914e-08
+    },
+    {
+      "sample_id": "fashionpedia-train2020-3554",
+      "actual": "non_pleated",
+      "tensorflow": [
+        0.9717206954956055,
+        0.0282793827354908
+      ],
+      "tflite": [
+        0.9717203378677368,
+        0.028279663994908333
+      ],
+      "maximum_absolute_error": 3.5762786865234375e-07
+    },
+    {
+      "sample_id": "fashionpedia-train2020-36049",
+      "actual": "non_pleated",
+      "tensorflow": [
+        0.9927738904953003,
+        0.0072260694578289986
+      ],
+      "tflite": [
+        0.9927738904953003,
+        0.007226051762700081
+      ],
+      "maximum_absolute_error": 1.7695128917694092e-08
+    },
+    {
+      "sample_id": "fashionpedia-train2020-37302",
+      "actual": "pleated",
+      "tensorflow": [
+        0.2558199465274811,
+        0.7441800236701965
+      ],
+      "tflite": [
+        0.25582021474838257,
+        0.7441798448562622
+      ],
+      "maximum_absolute_error": 2.682209014892578e-07
+    },
+    {
+      "sample_id": "fashionpedia-train2020-37357",
+      "actual": "non_pleated",
+      "tensorflow": [
+        0.46704912185668945,
+        0.5329508781433105
+      ],
+      "tflite": [
+        0.46705204248428345,
+        0.5329480171203613
+      ],
+      "maximum_absolute_error": 2.9206275939941406e-06
+    },
+    {
+      "sample_id": "fashionpedia-train2020-37613",
+      "actual": "non_pleated",
+      "tensorflow": [
+        0.9895009398460388,
+        0.01049900334328413
+      ],
+      "tflite": [
+        0.9895009398460388,
+        0.010499069467186928
+      ],
+      "maximum_absolute_error": 6.612390279769897e-08
+    },
+    {
+      "sample_id": "fashionpedia-train2020-38701",
+      "actual": "non_pleated",
+      "tensorflow": [
+        0.7589600682258606,
+        0.24103997647762299
+      ],
+      "tflite": [
+        0.7589597105979919,
+        0.24104030430316925
+      ],
+      "maximum_absolute_error": 3.5762786865234375e-07
+    },
+    {
+      "sample_id": "fashionpedia-train2020-39103",
+      "actual": "non_pleated",
+      "tensorflow": [
+        0.9189367890357971,
+        0.08106327056884766
+      ],
+      "tflite": [
+        0.9189362525939941,
+        0.08106370270252228
+      ],
+      "maximum_absolute_error": 5.364418029785156e-07
+    },
+    {
+      "sample_id": "fashionpedia-train2020-39412",
+      "actual": "non_pleated",
+      "tensorflow": [
+        0.7957049608230591,
+        0.20429502427577972
+      ],
+      "tflite": [
+        0.7957058548927307,
+        0.2042941302061081
+      ],
+      "maximum_absolute_error": 8.940696716308594e-07
+    },
+    {
+      "sample_id": "fashionpedia-train2020-40276",
+      "actual": "non_pleated",
+      "tensorflow": [
+        0.2326839566230774,
+        0.7673161029815674
+      ],
+      "tflite": [
+        0.2326841801404953,
+        0.7673158049583435
+      ],
+      "maximum_absolute_error": 2.980232238769531e-07
+    },
+    {
+      "sample_id": "fashionpedia-train2020-41170",
+      "actual": "non_pleated",
+      "tensorflow": [
+        0.6749318838119507,
+        0.3250681459903717
+      ],
+      "tflite": [
+        0.6749323010444641,
+        0.3250676989555359
+      ],
+      "maximum_absolute_error": 4.470348358154297e-07
+    },
+    {
+      "sample_id": "fashionpedia-train2020-41961",
+      "actual": "pleated",
+      "tensorflow": [
+        0.092536062002182,
+        0.9074639081954956
+      ],
+      "tflite": [
+        0.09253578633069992,
+        0.9074642062187195
+      ],
+      "maximum_absolute_error": 2.980232238769531e-07
+    },
+    {
+      "sample_id": "fashionpedia-train2020-43005",
+      "actual": "non_pleated",
+      "tensorflow": [
+        0.9838882088661194,
+        0.0161118283867836
+      ],
+      "tflite": [
+        0.9838882684707642,
+        0.016111699864268303
+      ],
+      "maximum_absolute_error": 1.2852251529693604e-07
+    },
+    {
+      "sample_id": "fashionpedia-train2020-43076",
+      "actual": "non_pleated",
+      "tensorflow": [
+        0.9962531328201294,
+        0.0037468925584107637
+      ],
+      "tflite": [
+        0.9962530136108398,
+        0.003746909787878394
+      ],
+      "maximum_absolute_error": 1.1920928955078125e-07
+    },
+    {
+      "sample_id": "fashionpedia-train2020-43360",
+      "actual": "non_pleated",
+      "tensorflow": [
+        0.7138565182685852,
+        0.2861434519290924
+      ],
+      "tflite": [
+        0.7138558626174927,
+        0.28614410758018494
+      ],
+      "maximum_absolute_error": 6.556510925292969e-07
+    },
+    {
+      "sample_id": "fashionpedia-train2020-43394",
+      "actual": "non_pleated",
+      "tensorflow": [
+        0.4152494966983795,
+        0.5847505331039429
+      ],
+      "tflite": [
+        0.4152485132217407,
+        0.5847514271736145
+      ],
+      "maximum_absolute_error": 9.834766387939453e-07
+    },
+    {
+      "sample_id": "fashionpedia-train2020-43660",
+      "actual": "non_pleated",
+      "tensorflow": [
+        0.8814865946769714,
+        0.11851337552070618
+      ],
+      "tflite": [
+        0.8814867734909058,
+        0.11851325631141663
+      ],
+      "maximum_absolute_error": 1.7881393432617188e-07
+    },
+    {
+      "sample_id": "fashionpedia-train2020-44234",
+      "actual": "non_pleated",
+      "tensorflow": [
+        0.9963271021842957,
+        0.0036728738341480494
+      ],
+      "tflite": [
+        0.9963271021842957,
+        0.0036728859413415194
+      ],
+      "maximum_absolute_error": 1.210719347000122e-08
+    },
+    {
+      "sample_id": "fashionpedia-train2020-44450",
+      "actual": "non_pleated",
+      "tensorflow": [
+        0.8602665662765503,
+        0.1397334784269333
+      ],
+      "tflite": [
+        0.8602650761604309,
+        0.13973498344421387
+      ],
+      "maximum_absolute_error": 1.5050172805786133e-06
+    },
+    {
+      "sample_id": "fashionpedia-train2020-44571",
+      "actual": "pleated",
+      "tensorflow": [
+        0.652062177658081,
+        0.34793779253959656
+      ],
+      "tflite": [
+        0.6520634293556213,
+        0.34793660044670105
+      ],
+      "maximum_absolute_error": 1.2516975402832031e-06
+    },
+    {
+      "sample_id": "fashionpedia-train2020-44832",
+      "actual": "non_pleated",
+      "tensorflow": [
+        0.9058417081832886,
+        0.09415827691555023
+      ],
+      "tflite": [
+        0.9058424234390259,
+        0.09415753930807114
+      ],
+      "maximum_absolute_error": 7.37607479095459e-07
+    },
+    {
+      "sample_id": "fashionpedia-train2020-45807",
+      "actual": "non_pleated",
+      "tensorflow": [
+        0.2994624972343445,
+        0.7005375027656555
+      ],
+      "tflite": [
+        0.2994631826877594,
+        0.700536847114563
+      ],
+      "maximum_absolute_error": 6.854534149169922e-07
+    },
+    {
+      "sample_id": "fashionpedia-train2020-45873",
+      "actual": "pleated",
+      "tensorflow": [
+        0.6416164636611938,
+        0.3583834767341614
+      ],
+      "tflite": [
+        0.6416168808937073,
+        0.3583831489086151
+      ],
+      "maximum_absolute_error": 4.172325134277344e-07
+    },
+    {
+      "sample_id": "fashionpedia-train2020-4713",
+      "actual": "non_pleated",
+      "tensorflow": [
+        0.19702138006687164,
+        0.8029786348342896
+      ],
+      "tflite": [
+        0.19702394306659698,
+        0.8029760122299194
+      ],
+      "maximum_absolute_error": 2.6226043701171875e-06
+    },
+    {
+      "sample_id": "fashionpedia-train2020-47349",
+      "actual": "pleated",
+      "tensorflow": [
+        0.36471256613731384,
+        0.6352874040603638
+      ],
+      "tflite": [
+        0.3647133708000183,
+        0.6352866291999817
+      ],
+      "maximum_absolute_error": 8.046627044677734e-07
+    },
+    {
+      "sample_id": "fashionpedia-train2020-47376",
+      "actual": "pleated",
+      "tensorflow": [
+        0.19748008251190186,
+        0.8025199174880981
+      ],
+      "tflite": [
+        0.19748125970363617,
+        0.8025187253952026
+      ],
+      "maximum_absolute_error": 1.1920928955078125e-06
+    },
+    {
+      "sample_id": "fashionpedia-train2020-47497",
+      "actual": "non_pleated",
+      "tensorflow": [
+        0.20176789164543152,
+        0.7982320785522461
+      ],
+      "tflite": [
+        0.20176884531974792,
+        0.7982311248779297
+      ],
+      "maximum_absolute_error": 9.5367431640625e-07
+    },
+    {
+      "sample_id": "fashionpedia-train2020-48845",
+      "actual": "non_pleated",
+      "tensorflow": [
+        0.9120798110961914,
+        0.08792021125555038
+      ],
+      "tflite": [
+        0.912079930305481,
+        0.08792009949684143
+      ],
+      "maximum_absolute_error": 1.1920928955078125e-07
+    },
+    {
+      "sample_id": "fashionpedia-train2020-4925",
+      "actual": "non_pleated",
+      "tensorflow": [
+        0.9491803050041199,
+        0.05081964656710625
+      ],
+      "tflite": [
+        0.949180006980896,
+        0.050819940865039825
+      ],
+      "maximum_absolute_error": 2.980232238769531e-07
+    },
+    {
+      "sample_id": "fashionpedia-train2020-49537",
+      "actual": "pleated",
+      "tensorflow": [
+        0.06346093863248825,
+        0.9365389943122864
+      ],
+      "tflite": [
+        0.06346110254526138,
+        0.9365388751029968
+      ],
+      "maximum_absolute_error": 1.6391277313232422e-07
+    },
+    {
+      "sample_id": "fashionpedia-train2020-49555",
+      "actual": "non_pleated",
+      "tensorflow": [
+        0.907050371170044,
+        0.09294958412647247
+      ],
+      "tflite": [
+        0.9070501327514648,
+        0.09294992685317993
+      ],
+      "maximum_absolute_error": 3.427267074584961e-07
+    },
+    {
+      "sample_id": "fashionpedia-train2020-49867",
+      "actual": "non_pleated",
+      "tensorflow": [
+        0.8782839775085449,
+        0.12171604484319687
+      ],
+      "tflite": [
+        0.8782840967178345,
+        0.1217159554362297
+      ],
+      "maximum_absolute_error": 1.1920928955078125e-07
+    },
+    {
+      "sample_id": "fashionpedia-train2020-50372",
+      "actual": "pleated",
+      "tensorflow": [
+        0.5361050963401794,
+        0.46389490365982056
+      ],
+      "tflite": [
+        0.536103367805481,
+        0.46389657258987427
+      ],
+      "maximum_absolute_error": 1.7285346984863281e-06
+    },
+    {
+      "sample_id": "fashionpedia-train2020-5127",
+      "actual": "pleated",
+      "tensorflow": [
+        0.33853864669799805,
+        0.661461353302002
+      ],
+      "tflite": [
+        0.33853766322135925,
+        0.6614623665809631
+      ],
+      "maximum_absolute_error": 1.0132789611816406e-06
+    },
+    {
+      "sample_id": "fashionpedia-train2020-5360",
+      "actual": "non_pleated",
+      "tensorflow": [
+        0.7614641785621643,
+        0.2385357767343521
+      ],
+      "tflite": [
+        0.7614665627479553,
+        0.23853342235088348
+      ],
+      "maximum_absolute_error": 2.384185791015625e-06
+    },
+    {
+      "sample_id": "fashionpedia-train2020-5478",
+      "actual": "non_pleated",
+      "tensorflow": [
+        0.9217284321784973,
+        0.07827161252498627
+      ],
+      "tflite": [
+        0.9217278957366943,
+        0.07827204465866089
+      ],
+      "maximum_absolute_error": 5.364418029785156e-07
+    },
+    {
+      "sample_id": "fashionpedia-train2020-5573",
+      "actual": "pleated",
+      "tensorflow": [
+        0.8690171837806702,
+        0.13098278641700745
+      ],
+      "tflite": [
+        0.8690175414085388,
+        0.13098248839378357
+      ],
+      "maximum_absolute_error": 3.5762786865234375e-07
+    },
+    {
+      "sample_id": "fashionpedia-train2020-5601",
+      "actual": "non_pleated",
+      "tensorflow": [
+        0.938335657119751,
+        0.0616644024848938
+      ],
+      "tflite": [
+        0.9383364915847778,
+        0.061663467437028885
+      ],
+      "maximum_absolute_error": 9.350478649139404e-07
+    },
+    {
+      "sample_id": "fashionpedia-train2020-6020",
+      "actual": "non_pleated",
+      "tensorflow": [
+        0.7572813630104065,
+        0.24271860718727112
+      ],
+      "tflite": [
+        0.7572822570800781,
+        0.24271772801876068
+      ],
+      "maximum_absolute_error": 8.940696716308594e-07
+    },
+    {
+      "sample_id": "fashionpedia-train2020-6021",
+      "actual": "non_pleated",
+      "tensorflow": [
+        0.1637018620967865,
+        0.8362981081008911
+      ],
+      "tflite": [
+        0.16370244324207306,
+        0.8362975716590881
+      ],
+      "maximum_absolute_error": 5.811452865600586e-07
+    },
+    {
+      "sample_id": "fashionpedia-train2020-6359",
+      "actual": "non_pleated",
+      "tensorflow": [
+        0.733630359172821,
+        0.26636964082717896
+      ],
+      "tflite": [
+        0.7336300611495972,
+        0.26636993885040283
+      ],
+      "maximum_absolute_error": 2.980232238769531e-07
+    },
+    {
+      "sample_id": "fashionpedia-train2020-6986",
+      "actual": "non_pleated",
+      "tensorflow": [
+        0.635215699672699,
+        0.36478427052497864
+      ],
+      "tflite": [
+        0.635215699672699,
+        0.3647843301296234
+      ],
+      "maximum_absolute_error": 5.960464477539063e-08
+    },
+    {
+      "sample_id": "fashionpedia-train2020-830",
+      "actual": "non_pleated",
+      "tensorflow": [
+        0.9754751324653625,
+        0.024524925276637077
+      ],
+      "tflite": [
+        0.975475013256073,
+        0.02452501468360424
+      ],
+      "maximum_absolute_error": 1.1920928955078125e-07
+    },
+    {
+      "sample_id": "fashionpedia-train2020-8732",
+      "actual": "pleated",
+      "tensorflow": [
+        0.26421821117401123,
+        0.7357817888259888
+      ],
+      "tflite": [
+        0.2642175257205963,
+        0.7357824444770813
+      ],
+      "maximum_absolute_error": 6.854534149169922e-07
+    },
+    {
+      "sample_id": "fashionpedia-train2020-8880",
+      "actual": "non_pleated",
+      "tensorflow": [
+        0.9133220314979553,
+        0.08667796105146408
+      ],
+      "tflite": [
+        0.9133214354515076,
+        0.08667860925197601
+      ],
+      "maximum_absolute_error": 6.48200511932373e-07
+    },
+    {
+      "sample_id": "fashionpedia-train2020-9473",
+      "actual": "non_pleated",
+      "tensorflow": [
+        0.8348177075386047,
+        0.16518232226371765
+      ],
+      "tflite": [
+        0.8348183035850525,
+        0.1651817262172699
+      ],
+      "maximum_absolute_error": 5.960464477539062e-07
+    },
+    {
+      "sample_id": "fashionpedia-train2020-9732",
+      "actual": "pleated",
+      "tensorflow": [
+        0.9013273119926453,
+        0.09867269545793533
+      ],
+      "tflite": [
+        0.9013274908065796,
+        0.09867247194051743
+      ],
+      "maximum_absolute_error": 2.2351741790771484e-07
+    }
+  ]
+}

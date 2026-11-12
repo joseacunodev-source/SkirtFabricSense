@@ -1,0 +1,292 @@
+{
+  "schema_version": 1,
+  "date_asia_manila": "2026-10-21",
+  "status": "primary_metadata_review_complete_no_image_admission",
+  "reviewer": "codex-agent-fabric_search_oct21",
+  "scope": "Official repositories and papers; bounded public metadata snapshots only.",
+  "acquisition": {
+    "path": "records/acquisitions/2026-10-21-fabric-source-research/acquisition.json",
+    "sha256": "c1d9d91690fbd6f8d0e765e61bf41ae21a3e09da298bfe8c0f0fe9d13aa163d7",
+    "direct_response_body_bytes": 497928,
+    "direct_response_body_budget_bytes": 2097152,
+    "responses": 15,
+    "http200_responses": 14,
+    "error_bodies_saved": 1,
+    "note": "Byte accounting covers this direct acquisition script; web-tool search/open reads are separate and not locally measured."
+  },
+  "checked_snapshots": [
+    {
+      "path": "records/acquisitions/2026-10-21-fabric-source-research/imaterialist2018-repo.json",
+      "sha256": "0ad39ffc03f379e3de712ad358a0532fb5ad4232e5d96cdc89535401e81d7657",
+      "bytes": 6505,
+      "url": "https://api.github.com/repos/visipedia/imat_fashion_comp",
+      "http_status": 200
+    },
+    {
+      "path": "records/acquisitions/2026-10-21-fabric-source-research/imaterialist2018-commit.json",
+      "sha256": "659e471c092828d936942665c79b02f8eacdd2307b6f6c218d83eb7968f77d53",
+      "bytes": 5161,
+      "url": "https://api.github.com/repos/visipedia/imat_fashion_comp/commits/master",
+      "http_status": 200
+    },
+    {
+      "path": "records/acquisitions/2026-10-21-fabric-source-research/imaterialist2018-README.md",
+      "sha256": "5b47db9e1cc13f1f80026c6b2c4b5d7d099466674f4d6231b1d5a64b6569cc13",
+      "bytes": 3995,
+      "url": "https://raw.githubusercontent.com/visipedia/imat_fashion_comp/ed94853da2c830667b1f8d67a26d7f782eb2e6b2/README.md",
+      "http_status": 200
+    },
+    {
+      "path": "records/acquisitions/2026-10-21-fabric-source-research/imaterialist2018-label-map.csv",
+      "sha256": "75892e7708bb464be14a35fb141a0d0c8ef9b69d0b8d1127bedff0d35a8ae678",
+      "bytes": 5740,
+      "url": "https://raw.githubusercontent.com/visipedia/imat_fashion_comp/ed94853da2c830667b1f8d67a26d7f782eb2e6b2/iMat_fashion_2018_label_map_228.csv",
+      "http_status": 200
+    },
+    {
+      "path": "records/acquisitions/2026-10-21-fabric-source-research/imaterialist2020-repo.json",
+      "sha256": "d1a8b8c5ebb0bcc57b27d16776ca728003becade9e78d06b0f22c870cd2bd168",
+      "bytes": 6273,
+      "url": "https://api.github.com/repos/visipedia/imat_comp",
+      "http_status": 200
+    },
+    {
+      "path": "records/acquisitions/2026-10-21-fabric-source-research/imaterialist2020-commit.json",
+      "sha256": "268566096c6e117f61440dd2f6591b136ed8f0986f67cfaf2431862d4fc510c9",
+      "bytes": 7153,
+      "url": "https://api.github.com/repos/visipedia/imat_comp/commits/master",
+      "http_status": 200
+    },
+    {
+      "path": "records/acquisitions/2026-10-21-fabric-source-research/imaterialist2020-README.md",
+      "sha256": "e7800e00c56fa36b18493fe4163e7a68784340bb0fd1d6d0292435b7c6781b4e",
+      "bytes": 5135,
+      "url": "https://raw.githubusercontent.com/visipedia/imat_comp/f0f93fccc80c343ca187d30090a6eb2cf1099c14/README.md",
+      "http_status": 200
+    },
+    {
+      "path": "records/acquisitions/2026-10-21-fabric-source-research/imaterialist2020-LICENSE.txt",
+      "sha256": "62dfb52303aaf78bd3cfd9ca829236766191b85e90c813c92cc1adcebb4f35a7",
+      "bytes": 1066,
+      "url": "https://raw.githubusercontent.com/visipedia/imat_comp/f0f93fccc80c343ca187d30090a6eb2cf1099c14/LICENSE",
+      "http_status": 200
+    },
+    {
+      "path": "records/acquisitions/2026-10-21-fabric-source-research/textilenet-repo.json",
+      "sha256": "d628dc3f268cfd5b518dffec031ff9c10331887cee4cbfe0bc630ecc9389c620",
+      "bytes": 5226,
+      "url": "https://api.github.com/repos/hahashu/TextileNet",
+      "http_status": 200
+    },
+    {
+      "path": "records/acquisitions/2026-10-21-fabric-source-research/textilenet-commit.json",
+      "sha256": "561b811af800b1fe6d8a9024f324144f1704a27f16f47b97d5273f1b6d4e7120",
+      "bytes": 5310,
+      "url": "https://api.github.com/repos/hahashu/TextileNet/commits/main",
+      "http_status": 200
+    },
+    {
+      "path": "records/acquisitions/2026-10-21-fabric-source-research/textilenet-README.md",
+      "sha256": "98f9eee8e0c743220740120442588b0697e3462fe517eb64dbcf19e1ce0b544a",
+      "bytes": 4474,
+      "url": "https://raw.githubusercontent.com/hahashu/TextileNet/6b4f0579b2abc18422192afea07882f84dcb83e4/README.md",
+      "http_status": 200
+    },
+    {
+      "path": "records/acquisitions/2026-10-21-fabric-source-research/textilenet-LICENSE.txt",
+      "sha256": "fc3169d9179c2995cf9b5f07e06f79235b1e2c969e9f0702bd3baf42d3db1e97",
+      "bytes": 1064,
+      "url": "https://raw.githubusercontent.com/hahashu/TextileNet/6b4f0579b2abc18422192afea07882f84dcb83e4/LICENSE",
+      "http_status": 200
+    },
+    {
+      "path": "records/acquisitions/2026-10-21-fabric-source-research/textilenet-paper.html",
+      "sha256": "1f97138e2b09affe50d654f7df5747c931d757ae4f8c320766e9d76c3657d9db",
+      "bytes": 222568,
+      "url": "https://arxiv.org/html/2301.06160v1",
+      "http_status": 200
+    },
+    {
+      "path": "records/acquisitions/2026-10-21-fabric-source-research/fashiongen-paper.html",
+      "sha256": "38e0c6335648dc6b7b75ce120698b365819dd3ee66807228e6dc7734341c2e16",
+      "bytes": 217955,
+      "url": "https://arxiv.org/html/1806.08317v2",
+      "http_status": 200
+    },
+    {
+      "path": "records/acquisitions/2026-10-21-fabric-source-research/fashiongen-homepage.html",
+      "sha256": "a24456cd92f1c058eb9e813000af140d6b963f04e57cfe0611a92eb2d325b0ed",
+      "bytes": 303,
+      "url": "https://fashion-gen.com/",
+      "http_status": 403
+    }
+  ],
+  "repository_revisions": {
+    "imaterialist2018": {
+      "repository": "visipedia/imat_fashion_comp",
+      "revision": "ed94853da2c830667b1f8d67a26d7f782eb2e6b2",
+      "default_branch": "master"
+    },
+    "imaterialist2020": {
+      "repository": "visipedia/imat_comp",
+      "revision": "f0f93fccc80c343ca187d30090a6eb2cf1099c14",
+      "default_branch": "master"
+    },
+    "textilenet": {
+      "repository": "hahashu/TextileNet",
+      "revision": "6b4f0579b2abc18422192afea07882f84dcb83e4",
+      "default_branch": "main"
+    }
+  },
+  "sources": [
+    {
+      "source_id": "imaterialist-fashion-2018",
+      "priority": 1,
+      "official_url": "https://github.com/visipedia/imat_fashion_comp",
+      "paper_url": "https://openaccess.thecvf.com/content_ICCVW_2019/papers/CVFAD/Guo_The_iMaterialist_Fashion_Attribute_Dataset_ICCVW_2019_paper.pdf",
+      "observed_label_map_rows": 228,
+      "selected_exact_label_rows": {
+        "Chiffon": {
+          "label_id": 44,
+          "task_id": 4,
+          "task_name": "material"
+        },
+        "Cotton": {
+          "label_id": 53,
+          "task_id": 4,
+          "task_name": "material"
+        },
+        "Denim": {
+          "label_id": 59,
+          "task_id": 4,
+          "task_name": "material"
+        },
+        "Knit": {
+          "label_id": 97,
+          "task_id": 4,
+          "task_name": "material"
+        },
+        "Lace": {
+          "label_id": 98,
+          "task_id": 4,
+          "task_name": "material"
+        },
+        "Leather": {
+          "label_id": 99,
+          "task_id": 4,
+          "task_name": "material"
+        },
+        "Polyester": {
+          "label_id": 137,
+          "task_id": 4,
+          "task_name": "material"
+        },
+        "Satin": {
+          "label_id": 158,
+          "task_id": 4,
+          "task_name": "material"
+        },
+        "Skirts": {
+          "label_id": 170,
+          "task_id": 1,
+          "task_name": "category"
+        },
+        "Pencil Skirts": {
+          "label_id": 127,
+          "task_id": 1,
+          "task_name": "category"
+        },
+        "Pleated": {
+          "label_id": 133,
+          "task_id": 9,
+          "task_name": "style"
+        }
+      },
+      "source_annotation_scope": "Image-level multiple labels; material and garment category co-occurrence is not an instance-level fabric assignment.",
+      "advertised_source_partition_images": {
+        "train": 1012947,
+        "validation": 9897,
+        "test": 39706
+      },
+      "advertised_counts_not_project_counts": true,
+      "locally_acquired_annotation_records": 0,
+      "locally_acquired_garment_images": 0,
+      "source_schema_fields": {
+        "images": [
+          "image_id",
+          "url"
+        ],
+        "annotations": [
+          "image_id",
+          "label_id"
+        ]
+      },
+      "product_identity_field_published_in_readme_schema": false,
+      "terms_status": "No explicit photo-use grant observed in saved README/repository metadata; Kaggle rules page had no readable text in web tool.",
+      "readable_rules_verified": false,
+      "photo_rights_verified": false,
+      "product_grouping_verified": false,
+      "training_admitted": false,
+      "next_step": "Resolve exact image-use/attribution terms, then declare a bounded official-train-only metadata intake and item/near-duplicate grouping review before selecting full-skirt photos."
+    },
+    {
+      "source_id": "imaterialist-fashion-2020",
+      "priority": null,
+      "official_url": "https://github.com/visipedia/imat_comp",
+      "annotation_link_resolves_to": "https://github.com/cvdfoundation/fashionpedia",
+      "status": "Existing Fashionpedia source, not a distinct fabric-label expansion",
+      "new_images": 0,
+      "training_admitted": false
+    },
+    {
+      "source_id": "textilenet",
+      "priority": 2,
+      "official_url": "https://github.com/hahashu/TextileNet",
+      "paper_url": "https://arxiv.org/html/2301.06160v1",
+      "source_presentation": "Garment-oriented Internet images; source processing includes face/body cropping. Complete worn skirts are not guaranteed.",
+      "source_overlap": "Paper says reconstructed iMaterialist and Amazon images plus Google Image Search; do not treat as an independent source holdout without identity audit.",
+      "label_limitations": "Separate fibre/fabric taxonomies; absent blend metadata, query/crowdsourcing noise and ambiguous multiple material labels.",
+      "repository_license_claim": "MIT for collection code; CC BY sentence refers to Author Accepted Manuscript.",
+      "paper_appendix_f_license_claim": "CC BY asserted for extending the taxonomies and collected data; code MIT.",
+      "rights_interpretation": "Preserve both statements. The paper provides a dataset-level CC BY claim, but exact version, third-party photo attribution/authority and source-specific terms remain unverified for project admission.",
+      "full_skirt_visibility_verified": false,
+      "source_grouping_verified": false,
+      "photo_rights_verified": false,
+      "new_images": 0,
+      "training_admitted": false,
+      "next_step": "Reconcile publisher grant/version and source-photo attribution; inspect metadata for original partitions and iMaterialist/product overlap before a bounded skirt-only photo review."
+    },
+    {
+      "source_id": "fashiongen",
+      "priority": 3,
+      "paper_url": "https://arxiv.org/html/1806.08317v2",
+      "official_url": "https://fashion-gen.com/",
+      "observed_homepage_http_status": 403,
+      "access_interpretation": "Official homepage inaccessible in web tool and direct request denied. This does not establish a login requirement or dataset-wide unavailability.",
+      "paper_evidence": "Product descriptions and multiple views per item; grouping would be essential if access becomes available.",
+      "current_dataset_access_verified": false,
+      "photo_rights_verified": false,
+      "new_images": 0,
+      "training_admitted": false
+    }
+  ],
+  "new_garment_images": 0,
+  "new_training_admissions": 0,
+  "verified_fabric_labels_added": 0,
+  "frozen_splits_changed": false,
+  "packages_installed": 0,
+  "hardware_verified": false,
+  "safety_of_interpretation": "Publisher labels remain publisher evidence, missing labels stay missing, overlapping fibre/construction labels are retained separately; no composition measurement or skirt-specific label is inferred.",
+  "web_access_observations": [
+    {
+      "url": "https://www.kaggle.com/competitions/imaterialist-challenge-fashion-2018/rules",
+      "outcome": "Web tool returned no readable page text; no rules conclusion derived"
+    },
+    {
+      "url": "https://github.com/visipedia/imat_fashion_comp_2020",
+      "outcome": "404 mistaken candidate URL; actual2020 repository is visipedia/imat_comp"
+    }
+  ],
+  "analysis_source_sha256": "7b104f6aa3a48314415119873f01cc8eb78ba08edb467167365d98f1481be5dd",
+  "local_cross_checks": "Every saved response size/hash, total body accounting,228 unique label IDs,11 exact selected label IDs,2020 source link and TextileNet paper/repository claims rechecked from snapshots."
+}

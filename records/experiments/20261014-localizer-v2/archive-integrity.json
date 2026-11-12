@@ -1,0 +1,50 @@
+{
+  "status": "passed",
+  "files": [
+    {
+      "path": "records/experiments/20261014-localizer-v2/run.json",
+      "sha256": "d419b1e8ec46b4c631aae78f187ee57525433ccca02d5393f7906ce8372fec58"
+    },
+    {
+      "path": "records/experiments/20261014-localizer-v2/environment.json",
+      "sha256": "a0210b7465f977bc78c628439a19e882158ced6cc5bff58a8f6fe07d6e770e31"
+    },
+    {
+      "path": "records/experiments/20261014-localizer-v2/history.json",
+      "sha256": "2037a4f9dbf9a8720580fd95dfe68f37bd79f89a24e2e7c60e152be336018ba0"
+    },
+    {
+      "path": "records/experiments/20261014-localizer-v2/inputs.json",
+      "sha256": "03a8a7d95560a3f0e5f253ca4ca1bc4f6699d401690106cc7a29880d0e0877c3"
+    },
+    {
+      "path": "records/experiments/20261014-localizer-v2/labelled-inputs.json",
+      "sha256": "018a03dd78549e8a54a18d00116722eb4ffcc5c6208f17ae967e3c6158bd8c0c"
+    },
+    {
+      "path": "records/experiments/20261014-localizer-v2/validation-predictions.json",
+      "sha256": "cacf86928cb39105adbf5d72add6313df211af8b21ae53ab154a40325f9e058c"
+    },
+    {
+      "path": "records/experiments/20261014-localizer-v2/validation-masks.npz",
+      "sha256": "506b84a8db6321bb6c8387fbea478d52f62063ed2b344a0a6571f4525b632649"
+    },
+    {
+      "path": "records/experiments/20261014-localizer-v2/training_source.py",
+      "sha256": "e86233a39c73e678ae16cd256edd8a62969b3ea2f26d28736d4fb04ad9324fdb"
+    },
+    {
+      "path": "artifacts/models/skirt-localizer-v2/model.keras",
+      "sha256": "3a4843e968badadf30d31133e638d0acdf040fcf1c23733c01d920639b7de5f1"
+    },
+    {
+      "path": "artifacts/models/skirt-localizer-v2/model.tflite",
+      "sha256": "f2f5f73d34cd99c3fb46502cb806ddbc347c6664e8ce24b8fe06a548c70090de"
+    },
+    {
+      "path": "artifacts/models/skirt-localizer-v2/run.json",
+      "sha256": "d419b1e8ec46b4c631aae78f187ee57525433ccca02d5393f7906ce8372fec58"
+    }
+  ],
+  "saved_model_retained_in_wsl": true
+}

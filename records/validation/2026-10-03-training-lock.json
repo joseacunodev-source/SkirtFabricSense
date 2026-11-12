@@ -1,0 +1,6 @@
+{
+  "status": "passed",
+  "package_count": 51,
+  "check": "Every pip freeze package/version matches a hashed installation-report artifact",
+  "clean_reinstallation_tested": false
+}

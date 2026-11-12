@@ -1,0 +1,19 @@
+# Thesis figure pack
+
+Additional training/validation/test figures are available in [the dataset-diagram guide](THESIS_DATASET_DIAGRAMS.md), including a four-page PDF, actual per-model membership and the proposed final-test workflow. Figure 4 below describes the category-presence experiment/current comparison inputs, not every selected component's original training history.
+
+Five figures are supplied as vector PDFs and 300-dpi PNGs under [output/thesis_figures](../output/thesis_figures). Their associated [source data and limitations](../output/thesis_figures/source-data.json) bind to the frozen archived input and saved prediction reports. Figures are for a project-status or methodology section; they do not report final accuracy. Label the evidence as source-domain development, with source groups used repeatedly during model selection and without independently verified garments or labels.
+
+| File stem | Suggested caption | Intended use |
+|---|---|---|
+| `01_system_architecture` | Single-camera architecture for the desktop research prototype, with experimental pleating and unaccepted fabric and hemline branches. | System overview. The hemline branch is a required target; actual validated reference/calibration is missing. |
+| `02_detection_results` | Coverage, end-to-end pleating correctness and negative rejection on the reused development set, with denominators shown. | Present current evidence and limitations, not final system accuracy. |
+| `03_pleating_outcomes` | Provisional reference-class outcomes, including unavailable predictions, on the reused development images. | Explain class errors and abstentions. |
+| `04_development_split` | Frozen detection-comparison development inputs and their source-group split. | Methodology and data partitioning; counts are images, not distinct verified garments. |
+| `05_image_robustness` | Fixed saved-image diagnostic comparing the original images with synthetic brightness and blur changes on the same 118 development parents. | Illustrates conditional sensitivity; neither new independent images nor evidence of model improvement. |
+
+Figure 2 denominators: 44/66 skirt images accepted, 38/66 correct pleating across all skirt images and 42/52 negative images rejected. Figure 3 has rows pleated (10 predicted pleated, five non-pleated, two unavailable) and non-pleated (one predicted pleated, 28 non-pleated, 20 unavailable). All are provisional and derived from the selected chain's [saved comparison analysis](DETECTION_UNCERTAINTY_OCT23.md). The 1,932 registered originals include broader data beyond these 538 inputs; they do not constitute 1,932 independent garments.
+
+Generated with [create_thesis_figures.py](../tools/create_thesis_figures.py), existing ReportLab and `pdftoppm`; no installations, training, inference or split changes. [Artifact and source hashes](../records/validation/2026-11-04-thesis-figures.json). Reproduction needs a fresh/empty output folder because the script refuses to overwrite prior figures. Adapt captions to your thesis numbering and keep the evidence limitations adjacent to the figure. This does not update the main capstone manuscript.
+
+Figure 5 is drawn from the completed [robustness run](../records/experiments/20261104-image-robustness/results.json). Its three columns respectively report skirt images accepted / 66, correct pleating / 66, and negatives rejected / 52. Original: 44, 38, 42. Synthetic brightness factor 0.8: 41, 36, 41. Synthetic Gaussian blur radius 1 pixel: 44, 38, 40. All conditions use the same 118 source-domain development parents; transformations are not new specimens. The figure generation reads the saved outputs and runs no new inference. To append figure 5 to a newly generated set, run `python tools/create_thesis_figures.py --robustness-only` after the four-figure generation.

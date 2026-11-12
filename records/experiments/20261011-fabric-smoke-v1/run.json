@@ -1,0 +1,107 @@
+{
+  "run_id": "20261011-fabric-smoke-v1",
+  "status": "completed",
+  "started_at": "2026-10-11T11:26:46.577434+00:00",
+  "objective": "Internal source-appearance pipeline smoke only",
+  "source_revision_or_hash_manifest": {
+    "training": "9ff695cc97d8cd73b236ae830c59279b79b83481a628f443950274c149946e75",
+    "preparation": "2dfeddbf676bf7976d0820298d3776ed55357752daa1dbc4b8f857b45e4c17dd"
+  },
+  "errors_and_limitations": [
+    "17 agent-reviewed source images only; 12 train and 5 validation",
+    "Two source item groups each for leather/chiffon; no credible performance estimate",
+    "Cotton/source fabric words are appearance labels, not composition",
+    "No final test, camera domain, hanging, held, mannequin or Pi verification",
+    "Manual ROIs do not validate automatic fabric integration",
+    "Not a deployment candidate; do not connect to live classifier"
+  ],
+  "dataset_manifest_sha256": "92a80e4f974b9730f4631da75fed99b3f628751c882bfe179b39322d20247523",
+  "split_manifest_sha256": "e076033aa293ebad2058cec0ed2395292202f87bec9a78bfe2d350fa38e06c57",
+  "classes": [
+    "source_cotton_appearance",
+    "source_denim_appearance",
+    "source_leather_appearance",
+    "source_chiffon_appearance"
+  ],
+  "image_counts": {
+    "train": 12,
+    "validation": 5
+  },
+  "independent_specimen_counts": null,
+  "source_item_counts": {
+    "train": 12,
+    "validation": 5
+  },
+  "seed": 42,
+  "architecture": "Frozen ImageNet MobileNetV2 pooled features plus four-way softmax Dense",
+  "input_preprocessing": "Manual reviewed source-pixel skirt ROI; RGB; PIL bilinear aspect-preserving pad224 gray128; float32 0..255; model normalization inside",
+  "augmentation": "none",
+  "hyperparameters": {
+    "epochs": 10,
+    "batch": 4,
+    "optimizer": "Adam",
+    "learning_rate": 0.001,
+    "class_weights": [
+      0.5,
+      0.75,
+      3.0,
+      3.0
+    ]
+  },
+  "selection_rule": "Fixed final epoch; validation not used for selection",
+  "versions": {
+    "tensorflow": "2.20.0",
+    "numpy": "2.5.3"
+  },
+  "pretrained_weights_source_and_license": "records/acquisitions/2026-10-04-mobilenetv2-weights.json",
+  "metrics": {
+    "accuracy": 0.8,
+    "correct": 4,
+    "macro_f1": 0.7,
+    "per_class_f1": [
+      0.8,
+      1.0,
+      1.0,
+      0.0
+    ],
+    "confusion_matrix": [
+      [
+        2,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0
+      ],
+      [
+        1,
+        0,
+        0,
+        0
+      ]
+    ],
+    "majority_baseline_accuracy": 0.4
+  },
+  "device": "CPU only; GPU disabled",
+  "export": {
+    "sha256": "81f144a1c7cd4910989374a1a86c85e955fb4f65cd81ef88c26e7cbcf1158bfd",
+    "bytes": 8881248,
+    "maximum_absolute_error": 2.2649765014648438e-06,
+    "tolerance": 0.001,
+    "class_agreement": true,
+    "pi_verified": false,
+    "live_approved": false
+  },
+  "completed_at": "2026-10-11T11:27:08.444132+00:00",
+  "duration_seconds": 21.830664362
+}

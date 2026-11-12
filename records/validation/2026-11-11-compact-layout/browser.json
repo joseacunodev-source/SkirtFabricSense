@@ -1,0 +1,789 @@
+{
+  "date": "2026-11-11",
+  "status": "passed_browser_layout_checks",
+  "html_sha256": "40618a91db6b19cd918d70ad10056cd79aaa9c0b44b869d60f2bc60c53c68f3f",
+  "source": "app/static/index.html",
+  "browser": "Existing Microsoft Edge via bundled Playwright",
+  "scenarios": [
+    {
+      "name": "compact_camera_off",
+      "bounds": {
+        ".camera": {
+          "x": 15,
+          "y": 79.59375,
+          "width": 373.5,
+          "height": 205,
+          "right": 388.5,
+          "bottom": 284.59375,
+          "display": "grid"
+        },
+        "#start": {
+          "x": 233.5,
+          "y": 290.59375,
+          "width": 90,
+          "height": 44,
+          "right": 323.5,
+          "bottom": 334.59375,
+          "display": "block"
+        },
+        "#stop": {
+          "x": 328.5,
+          "y": 290.59375,
+          "width": 60,
+          "height": 44,
+          "right": 388.5,
+          "bottom": 334.59375,
+          "display": "block"
+        },
+        "#device": {
+          "x": 70,
+          "y": 290.59375,
+          "width": 158.5,
+          "height": 44,
+          "right": 228.5,
+          "bottom": 334.59375,
+          "display": "block"
+        },
+        "#presentation": {
+          "x": 100,
+          "y": 340.59375,
+          "width": 288.5,
+          "height": 44,
+          "right": 388.5,
+          "bottom": 384.59375,
+          "display": "block"
+        },
+        "#captureMode": {
+          "x": 100,
+          "y": 390.59375,
+          "width": 288.5,
+          "height": 44,
+          "right": 388.5,
+          "bottom": 434.59375,
+          "display": "block"
+        },
+        "#styleValue": {
+          "x": 419.5,
+          "y": 108.6875,
+          "width": 168.25,
+          "height": 22.671875,
+          "right": 587.75,
+          "bottom": 131.359375,
+          "display": "block"
+        },
+        "#lengthValue": {
+          "x": 608.75,
+          "y": 108.6875,
+          "width": 168.25,
+          "height": 22.671875,
+          "right": 777,
+          "bottom": 131.359375,
+          "display": "block"
+        },
+        "#fabricValue": {
+          "x": 419.5,
+          "y": 269.59375,
+          "width": 168.25,
+          "height": 22.671875,
+          "right": 587.75,
+          "bottom": 292.265625,
+          "display": "block"
+        },
+        "#scoreValue": {
+          "x": 608.75,
+          "y": 243.6875,
+          "width": 168.25,
+          "height": 22.671875,
+          "right": 777,
+          "bottom": 266.359375,
+          "display": "block"
+        },
+        ".switch": {
+          "x": 530.734375,
+          "y": 222.59375,
+          "width": 57.015625,
+          "height": 44,
+          "right": 587.75,
+          "bottom": 266.59375,
+          "display": "flex"
+        }
+      },
+      "viewport": [
+        800,
+        480
+      ],
+      "horizontalOverflow": false,
+      "cameraState": "Camera off",
+      "videoHidden": true,
+      "captureCalls": 0,
+      "labels": [
+        "Micro",
+        "Mini",
+        "Above knee",
+        "On knee",
+        "Below knee",
+        "Midi",
+        "Tea",
+        "Maxi",
+        "Full"
+      ],
+      "modes": [
+        "worn",
+        "hanging",
+        "mannequin",
+        "held"
+      ]
+    },
+    {
+      "name": "compact_settings_changed",
+      "bounds": {
+        ".camera": {
+          "x": 15,
+          "y": 79.59375,
+          "width": 373.5,
+          "height": 205,
+          "right": 388.5,
+          "bottom": 284.59375,
+          "display": "grid"
+        },
+        "#start": {
+          "x": 233.5,
+          "y": 290.59375,
+          "width": 90,
+          "height": 44,
+          "right": 323.5,
+          "bottom": 334.59375,
+          "display": "block"
+        },
+        "#stop": {
+          "x": 328.5,
+          "y": 290.59375,
+          "width": 60,
+          "height": 44,
+          "right": 388.5,
+          "bottom": 334.59375,
+          "display": "block"
+        },
+        "#device": {
+          "x": 70,
+          "y": 290.59375,
+          "width": 158.5,
+          "height": 44,
+          "right": 228.5,
+          "bottom": 334.59375,
+          "display": "block"
+        },
+        "#presentation": {
+          "x": 100,
+          "y": 340.59375,
+          "width": 288.5,
+          "height": 44,
+          "right": 388.5,
+          "bottom": 384.59375,
+          "display": "block"
+        },
+        "#captureMode": {
+          "x": 100,
+          "y": 390.59375,
+          "width": 288.5,
+          "height": 44,
+          "right": 388.5,
+          "bottom": 434.59375,
+          "display": "block"
+        },
+        "#styleValue": {
+          "x": 419.5,
+          "y": 108.6875,
+          "width": 168.25,
+          "height": 22.671875,
+          "right": 587.75,
+          "bottom": 131.359375,
+          "display": "block"
+        },
+        "#lengthValue": {
+          "x": 608.75,
+          "y": 108.6875,
+          "width": 168.25,
+          "height": 22.671875,
+          "right": 777,
+          "bottom": 131.359375,
+          "display": "block"
+        },
+        "#fabricValue": {
+          "x": 419.5,
+          "y": 269.59375,
+          "width": 168.25,
+          "height": 22.671875,
+          "right": 587.75,
+          "bottom": 292.265625,
+          "display": "block"
+        },
+        "#scoreValue": {
+          "x": 608.75,
+          "y": 243.6875,
+          "width": 168.25,
+          "height": 22.671875,
+          "right": 777,
+          "bottom": 266.359375,
+          "display": "block"
+        },
+        ".switch": {
+          "x": 530.75,
+          "y": 222.59375,
+          "width": 57,
+          "height": 44,
+          "right": 587.75,
+          "bottom": 266.59375,
+          "display": "flex"
+        }
+      },
+      "viewport": [
+        800,
+        480
+      ],
+      "horizontalOverflow": false,
+      "cameraState": "Camera off",
+      "videoHidden": true,
+      "captureCalls": 0,
+      "labels": [
+        "Micro",
+        "Mini",
+        "Above knee",
+        "On knee",
+        "Below knee",
+        "Midi",
+        "Tea",
+        "Maxi",
+        "Full"
+      ],
+      "modes": [
+        "worn",
+        "hanging",
+        "mannequin",
+        "held"
+      ]
+    },
+    {
+      "name": "compact_synthetic_attribute_text",
+      "bounds": {
+        ".camera": {
+          "x": 15,
+          "y": 79.59375,
+          "width": 373.5,
+          "height": 205,
+          "right": 388.5,
+          "bottom": 284.59375,
+          "display": "grid"
+        },
+        "#start": {
+          "x": 233.5,
+          "y": 290.59375,
+          "width": 90,
+          "height": 44,
+          "right": 323.5,
+          "bottom": 334.59375,
+          "display": "block"
+        },
+        "#stop": {
+          "x": 328.5,
+          "y": 290.59375,
+          "width": 60,
+          "height": 44,
+          "right": 388.5,
+          "bottom": 334.59375,
+          "display": "block"
+        },
+        "#device": {
+          "x": 70,
+          "y": 290.59375,
+          "width": 158.5,
+          "height": 44,
+          "right": 228.5,
+          "bottom": 334.59375,
+          "display": "block"
+        },
+        "#presentation": {
+          "x": 100,
+          "y": 340.59375,
+          "width": 288.5,
+          "height": 44,
+          "right": 388.5,
+          "bottom": 384.59375,
+          "display": "block"
+        },
+        "#captureMode": {
+          "x": 100,
+          "y": 390.59375,
+          "width": 288.5,
+          "height": 44,
+          "right": 388.5,
+          "bottom": 434.59375,
+          "display": "block"
+        },
+        "#styleValue": {
+          "x": 419.5,
+          "y": 108.6875,
+          "width": 168.25,
+          "height": 22.671875,
+          "right": 587.75,
+          "bottom": 131.359375,
+          "display": "block"
+        },
+        "#lengthValue": {
+          "x": 608.75,
+          "y": 108.6875,
+          "width": 168.25,
+          "height": 22.671875,
+          "right": 777,
+          "bottom": 131.359375,
+          "display": "block"
+        },
+        "#fabricValue": {
+          "x": 419.5,
+          "y": 269.59375,
+          "width": 168.25,
+          "height": 22.671875,
+          "right": 587.75,
+          "bottom": 292.265625,
+          "display": "block"
+        },
+        "#scoreValue": {
+          "x": 608.75,
+          "y": 243.6875,
+          "width": 168.25,
+          "height": 22.671875,
+          "right": 777,
+          "bottom": 266.359375,
+          "display": "block"
+        },
+        ".switch": {
+          "x": 530.734375,
+          "y": 222.59375,
+          "width": 57.015625,
+          "height": 44,
+          "right": 587.75,
+          "bottom": 266.59375,
+          "display": "flex"
+        }
+      },
+      "viewport": [
+        800,
+        480
+      ],
+      "horizontalOverflow": false,
+      "cameraState": "Camera off",
+      "videoHidden": true,
+      "captureCalls": 0,
+      "labels": [
+        "Micro",
+        "Mini",
+        "Above knee",
+        "On knee",
+        "Below knee",
+        "Midi",
+        "Tea",
+        "Maxi",
+        "Full"
+      ],
+      "modes": [
+        "worn",
+        "hanging",
+        "mannequin",
+        "held"
+      ]
+    },
+    {
+      "name": "compact_disclosures_closed_again",
+      "bounds": {
+        ".camera": {
+          "x": 15,
+          "y": 79.59375,
+          "width": 373.5,
+          "height": 205,
+          "right": 388.5,
+          "bottom": 284.59375,
+          "display": "grid"
+        },
+        "#start": {
+          "x": 233.5,
+          "y": 290.59375,
+          "width": 90,
+          "height": 44,
+          "right": 323.5,
+          "bottom": 334.59375,
+          "display": "block"
+        },
+        "#stop": {
+          "x": 328.5,
+          "y": 290.59375,
+          "width": 60,
+          "height": 44,
+          "right": 388.5,
+          "bottom": 334.59375,
+          "display": "block"
+        },
+        "#device": {
+          "x": 70,
+          "y": 290.59375,
+          "width": 158.5,
+          "height": 44,
+          "right": 228.5,
+          "bottom": 334.59375,
+          "display": "block"
+        },
+        "#presentation": {
+          "x": 100,
+          "y": 340.59375,
+          "width": 288.5,
+          "height": 44,
+          "right": 388.5,
+          "bottom": 384.59375,
+          "display": "block"
+        },
+        "#captureMode": {
+          "x": 100,
+          "y": 390.59375,
+          "width": 288.5,
+          "height": 44,
+          "right": 388.5,
+          "bottom": 434.59375,
+          "display": "block"
+        },
+        "#styleValue": {
+          "x": 419.5,
+          "y": 108.6875,
+          "width": 168.25,
+          "height": 22.671875,
+          "right": 587.75,
+          "bottom": 131.359375,
+          "display": "block"
+        },
+        "#lengthValue": {
+          "x": 608.75,
+          "y": 108.6875,
+          "width": 168.25,
+          "height": 22.671875,
+          "right": 777,
+          "bottom": 131.359375,
+          "display": "block"
+        },
+        "#fabricValue": {
+          "x": 419.5,
+          "y": 269.59375,
+          "width": 168.25,
+          "height": 22.671875,
+          "right": 587.75,
+          "bottom": 292.265625,
+          "display": "block"
+        },
+        "#scoreValue": {
+          "x": 608.75,
+          "y": 243.6875,
+          "width": 168.25,
+          "height": 22.671875,
+          "right": 777,
+          "bottom": 266.359375,
+          "display": "block"
+        },
+        ".switch": {
+          "x": 530.734375,
+          "y": 222.59375,
+          "width": 57.015625,
+          "height": 44,
+          "right": 587.75,
+          "bottom": 266.59375,
+          "display": "flex"
+        }
+      },
+      "viewport": [
+        800,
+        480
+      ],
+      "horizontalOverflow": false,
+      "cameraState": "Camera off",
+      "videoHidden": true,
+      "captureCalls": 0,
+      "labels": [
+        "Micro",
+        "Mini",
+        "Above knee",
+        "On knee",
+        "Below knee",
+        "Midi",
+        "Tea",
+        "Maxi",
+        "Full"
+      ],
+      "modes": [
+        "worn",
+        "hanging",
+        "mannequin",
+        "held"
+      ]
+    },
+    {
+      "name": "desktop_camera_off",
+      "bounds": {
+        ".camera": {
+          "x": 53,
+          "y": 220.28125,
+          "width": 584.84375,
+          "height": 438.625,
+          "right": 637.84375,
+          "bottom": 658.90625,
+          "display": "grid"
+        },
+        "#start": {
+          "x": 473.171875,
+          "y": 672.90625,
+          "width": 102.78125,
+          "height": 38,
+          "right": 575.953125,
+          "bottom": 710.90625,
+          "display": "block"
+        },
+        "#stop": {
+          "x": 584.953125,
+          "y": 672.90625,
+          "width": 52.890625,
+          "height": 38,
+          "right": 637.84375,
+          "bottom": 710.90625,
+          "display": "block"
+        },
+        "#device": {
+          "x": 140,
+          "y": 672.90625,
+          "width": 324.171875,
+          "height": 38,
+          "right": 464.171875,
+          "bottom": 710.90625,
+          "display": "block"
+        },
+        "#presentation": {
+          "x": 140,
+          "y": 724.90625,
+          "width": 497.84375,
+          "height": 38,
+          "right": 637.84375,
+          "bottom": 762.90625,
+          "display": "block"
+        },
+        "#captureMode": {
+          "x": 140,
+          "y": 776.90625,
+          "width": 497.84375,
+          "height": 38,
+          "right": 637.84375,
+          "bottom": 814.90625,
+          "display": "block"
+        },
+        "#styleValue": {
+          "x": 777.84375,
+          "y": 269.875,
+          "width": 242.578125,
+          "height": 41.390625,
+          "right": 1020.421875,
+          "bottom": 311.265625,
+          "display": "block"
+        },
+        "#lengthValue": {
+          "x": 1126.421875,
+          "y": 269.875,
+          "width": 242.578125,
+          "height": 41.390625,
+          "right": 1369,
+          "bottom": 311.265625,
+          "display": "block"
+        },
+        "#fabricValue": {
+          "x": 777.84375,
+          "y": 442.28125,
+          "width": 242.578125,
+          "height": 41.390625,
+          "right": 1020.421875,
+          "bottom": 483.671875,
+          "display": "block"
+        },
+        "#scoreValue": {
+          "x": 1126.421875,
+          "y": 437.875,
+          "width": 242.578125,
+          "height": 41.390625,
+          "right": 1369,
+          "bottom": 479.265625,
+          "display": "block"
+        },
+        ".switch": {
+          "x": 969.734375,
+          "y": 408.28125,
+          "width": 50.6875,
+          "height": 24,
+          "right": 1020.421875,
+          "bottom": 432.28125,
+          "display": "flex"
+        }
+      },
+      "viewport": [
+        1440,
+        1080
+      ],
+      "horizontalOverflow": false,
+      "cameraState": "Camera off",
+      "videoHidden": true,
+      "captureCalls": 0,
+      "labels": [
+        "Micro",
+        "Mini",
+        "Above knee",
+        "On knee",
+        "Below knee",
+        "Midi",
+        "Tea",
+        "Maxi",
+        "Full"
+      ],
+      "modes": [
+        "worn",
+        "hanging",
+        "mannequin",
+        "held"
+      ]
+    },
+    {
+      "name": "portrait_390_no_horizontal_overflow",
+      "bounds": {
+        ".camera": {
+          "x": 26,
+          "y": 216.796875,
+          "width": 338,
+          "height": 253.5,
+          "right": 364,
+          "bottom": 470.296875,
+          "display": "grid"
+        },
+        "#start": {
+          "x": 26,
+          "y": 531.296875,
+          "width": 164.5,
+          "height": 38,
+          "right": 190.5,
+          "bottom": 569.296875,
+          "display": "block"
+        },
+        "#stop": {
+          "x": 199.5,
+          "y": 531.296875,
+          "width": 164.5,
+          "height": 38,
+          "right": 364,
+          "bottom": 569.296875,
+          "display": "block"
+        },
+        "#device": {
+          "x": 105,
+          "y": 484.296875,
+          "width": 259,
+          "height": 38,
+          "right": 364,
+          "bottom": 522.296875,
+          "display": "block"
+        },
+        "#presentation": {
+          "x": 105,
+          "y": 583.296875,
+          "width": 259,
+          "height": 38,
+          "right": 364,
+          "bottom": 621.296875,
+          "display": "block"
+        },
+        "#captureMode": {
+          "x": 26,
+          "y": 658.296875,
+          "width": 338,
+          "height": 38,
+          "right": 364,
+          "bottom": 696.296875,
+          "display": "block"
+        },
+        "#styleValue": {
+          "x": 97,
+          "y": 849.890625,
+          "width": 250,
+          "height": 34.5,
+          "right": 347,
+          "bottom": 884.390625,
+          "display": "block"
+        },
+        "#lengthValue": {
+          "x": 97,
+          "y": 987.578125,
+          "width": 250,
+          "height": 34.5,
+          "right": 347,
+          "bottom": 1022.078125,
+          "display": "block"
+        },
+        "#fabricValue": {
+          "x": 97,
+          "y": 1129.671875,
+          "width": 250,
+          "height": 34.5,
+          "right": 347,
+          "bottom": 1164.171875,
+          "display": "block"
+        },
+        "#scoreValue": {
+          "x": 97,
+          "y": 1267.359375,
+          "width": 250,
+          "height": 34.5,
+          "right": 347,
+          "bottom": 1301.859375,
+          "display": "block"
+        },
+        ".switch": {
+          "x": 296.3125,
+          "y": 1095.671875,
+          "width": 50.6875,
+          "height": 24,
+          "right": 347,
+          "bottom": 1119.671875,
+          "display": "flex"
+        }
+      },
+      "viewport": [
+        390,
+        844
+      ],
+      "horizontalOverflow": false,
+      "cameraState": "Camera off",
+      "videoHidden": true,
+      "captureCalls": 0,
+      "labels": [
+        "Micro",
+        "Mini",
+        "Above knee",
+        "On knee",
+        "Below knee",
+        "Midi",
+        "Tea",
+        "Maxi",
+        "Full"
+      ],
+      "modes": [
+        "worn",
+        "hanging",
+        "mannequin",
+        "held"
+      ]
+    }
+  ],
+  "keyboard_disclosures_checked": true,
+  "camera_requests": 0,
+  "test_server_stopped": true,
+  "physical_lcd_tested": false,
+  "pi_verified": false,
+  "synthetic_text_is_not_prediction_evidence": true
+}

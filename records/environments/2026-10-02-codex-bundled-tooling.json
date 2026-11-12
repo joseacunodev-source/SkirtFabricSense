@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "recorded_at": "2026-10-02T06:58:23.634723+08:00",
+  "timezone": "Asia/Manila",
+  "environment_role": "codex-bundled-tooling",
+  "collector_version": "1.0",
+  "platform": {
+    "system": "Windows",
+    "release": "11",
+    "version": "10.0.26200",
+    "machine": "AMD64"
+  },
+  "python": {
+    "version": "3.12.14",
+    "executable": "C:\\Users\\Administrator\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+    "prefix": "C:\\Users\\Administrator\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python",
+    "base_prefix": "C:\\Users\\Administrator\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python",
+    "isolated_venv": false
+  },
+  "package_versions": {
+    "tensorflow": null,
+    "tensorflow-cpu": null,
+    "tensorflow-intel": null,
+    "keras": null,
+    "torch": null,
+    "torchvision": null,
+    "ai-edge-litert": null,
+    "tflite-runtime": null,
+    "numpy": "2.3.5",
+    "Pillow": "12.3.0",
+    "opencv-python": null,
+    "opencv-python-headless": null,
+    "scikit-learn": null,
+    "pandas": "3.0.1",
+    "matplotlib": null,
+    "jupyterlab": null,
+    "ipykernel": null,
+    "pytest": null,
+    "PyYAML": null,
+    "picamera2": null,
+    "pypdf": "6.10.0",
+    "pdfplumber": "0.11.9"
+  },
+  "verification_limits": "Inventory only; no package import, GPU training, model conversion or Pi inference verified.",
+  "tools": {
+    "git": {
+      "command": [
+        "git",
+        "--version"
+      ],
+      "executable": "C:\\Program Files\\Git\\cmd\\git.EXE",
+      "status": "completed",
+      "returncode": 0,
+      "stdout": "git version 2.47.0.windows.1",
+      "stderr": ""
+    },
+    "pip_current_interpreter": {
+      "command": [
+        "C:\\Users\\Administrator\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-m",
+        "pip",
+        "--version"
+      ],
+      "executable": "C:\\Users\\Administrator\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "status": "completed",
+      "returncode": 0,
+      "stdout": "pip 26.2.1 from C:\\Users\\Administrator\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\Lib\\site-packages\\pip (python 3.12)",
+      "stderr": ""
+    },
+    "nvidia": {
+      "command": [
+        "nvidia-smi",
+        "--query-gpu=name,memory.total,driver_version",
+        "--format=csv,noheader"
+      ],
+      "executable": "C:\\WINDOWS\\system32\\nvidia-smi.EXE",
+      "status": "completed",
+      "returncode": 0,
+      "stdout": "NVIDIA GeForce RTX 3060 Laptop GPU, 6144 MiB, 581.80",
+      "stderr": ""
+    },
+    "wsl": {
+      "command": [
+        "wsl",
+        "--list",
+        "--verbose"
+      ],
+      "executable": "C:\\WINDOWS\\system32\\wsl.EXE",
+      "status": "failed",
+      "returncode": 1,
+      "stdout": "",
+      "stderr": "The Windows Subsystem for Linux is not installed. You can install by running 'wsl.exe --install'.\r\r\nFor more information please visit https://aka.ms/wslinstall"
+    }
+  },
+  "hardware": {
+    "command": [
+      "powershell",
+      "-NoProfile",
+      "-Command",
+      "$c=Get-CimInstance Win32_ComputerSystem; $p=Get-CimInstance Win32_Processor; $o=Get-CimInstance Win32_OperatingSystem; [pscustomobject]@{Model=$c.Model;RAM_GB=[math]::Round($c.TotalPhysicalMemory/1GB,1);CPU=$p.Name;Cores=$p.NumberOfCores;LogicalProcessors=$p.NumberOfLogicalProcessors;OS=$o.Caption;Build=$o.BuildNumber;FreeDiskC_GB=[math]::Round((Get-PSDrive C).Free/1GB,1)}|ConvertTo-Json -Compress"
+    ],
+    "executable": "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.EXE",
+    "status": "completed",
+    "returncode": 0,
+    "stdout": "{\"Model\":\"ASUS TUF Dash F15 FX516PM_FX516PM\",\"RAM_GB\":15.7,\"CPU\":\"11th Gen Intel(R) Core(TM) i5-11300H @ 3.10GHz\",\"Cores\":4,\"LogicalProcessors\":8,\"OS\":\"Microsoft Windows 11 Home Single Language\",\"Build\":\"26200\",\"FreeDiskC_GB\":101.7}",
+    "stderr": ""
+  }
+}

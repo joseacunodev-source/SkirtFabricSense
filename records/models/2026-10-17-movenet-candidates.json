@@ -1,0 +1,38 @@
+{
+  "release_id": "movenet-lightning-f16-v4",
+  "status": "optional_research_landmark_candidates_not_calibrated_geometry",
+  "model_files_and_sha256": [
+    {
+      "path": "artifacts/models/movenet-lightning-f16-v4/model.tflite",
+      "sha256": "0fac2226112d0371903ca86e3853cec24ef603a0b2f96f589b180f0ebdd135ab"
+    }
+  ],
+  "contract": {
+    "path": "artifacts/models/movenet-lightning-f16-v4/contract.json",
+    "sha256": "002fbc11e1e32763c953cea02f08e51deae2f6f5fdbab1a678b3a69e0621698f"
+  },
+  "acquisition": {
+    "path": "records/acquisitions/2026-10-17-movenet/acquisition.json",
+    "sha256": "72f77c551374d4e414c424f9a0dd2ce1c062655004bf3260086ad6498899cf54"
+  },
+  "terms": {
+    "path": "records/acquisitions/2026-10-17-movenet/terms-research.json",
+    "sha256": "b1320fa14ec579c2d012ef844257072d3605bbd3900ae6d24a8f7792e74703b3"
+  },
+  "publisher_model_card": {
+    "path": "records/acquisitions/2026-10-17-movenet/publisher-model-card.md",
+    "sha256": "b10b692216238f3289ad8a10e872282cc2fbbf42ba7ee9d0ac73e2ef50d1645e"
+  },
+  "runtime_check": {
+    "path": "records/validation/2026-10-17-pose-candidates-corrected.json",
+    "sha256": "a1bb8b3abc2b67dc9ecadaa2f9bf78b8cdacb06d985979657c2959251ce61e53"
+  },
+  "pi_verified": false,
+  "geometry_eligible": false,
+  "limitations": [
+    "Body candidate scores do not verify visible anatomy",
+    "Hip is not waist; ankle is not foot-floor contact",
+    "Single-pose model cannot establish single-person scene or skirt association",
+    "Optional model files are separate from app bundle"
+  ]
+}

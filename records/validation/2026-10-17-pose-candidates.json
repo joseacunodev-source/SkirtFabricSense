@@ -1,0 +1,1001 @@
+{
+  "date_asia_manila": "2026-10-17",
+  "status": "passed",
+  "model_sha256": "0fac2226112d0371903ca86e3853cec24ef603a0b2f96f589b180f0ebdd135ab",
+  "runtime": "tensorflow.lite",
+  "tool_sha256": "709d74a1f8a5b2f8b80325c8a3365228d463562b98e2d302d9407bc156b2e450",
+  "results": [
+    {
+      "sample_id": "fashionpedia-train2020-10214",
+      "image_sha256": "b1418d27e3f6dccbeeb8707a3eb363633fc09c388fccd3e0411319e0d8badbbc",
+      "elapsed_seconds": 0.017680653000013535,
+      "output": {
+        "status": "provisional_landmark_candidates",
+        "frame_id": "fashionpedia-train2020-10214",
+        "model_sha256": "0fac2226112d0371903ca86e3853cec24ef603a0b2f96f589b180f0ebdd135ab",
+        "preprocessing": {
+          "source_size": [
+            678,
+            1024
+          ],
+          "resized_size": [
+            127,
+            192
+          ],
+          "pad_left_top": [
+            32,
+            0
+          ]
+        },
+        "landmarks": [
+          {
+            "name": "nose",
+            "x": 310.7937814907765,
+            "y": 300.26702880859375,
+            "score": 0.5395687818527222,
+            "inside_source": true,
+            "observed": false
+          },
+          {
+            "name": "left_eye",
+            "x": 315.4471607959177,
+            "y": 283.80126953125,
+            "score": 0.39646297693252563,
+            "inside_source": true,
+            "observed": false
+          },
+          {
+            "name": "right_eye",
+            "x": 300.77123116320513,
+            "y": 286.5657043457031,
+            "score": 0.44647184014320374,
+            "inside_source": true,
+            "observed": false
+          },
+          {
+            "name": "left_ear",
+            "x": 304.6457684734675,
+            "y": 271.3253173828125,
+            "score": 0.6646974086761475,
+            "inside_source": true,
+            "observed": false
+          },
+          {
+            "name": "right_ear",
+            "x": 264.2980507677934,
+            "y": 269.3236389160156,
+            "score": 0.7444566488265991,
+            "inside_source": true,
+            "observed": false
+          },
+          {
+            "name": "left_shoulder",
+            "x": 340.09881126223587,
+            "y": 330.9964904785156,
+            "score": 0.8276617527008057,
+            "inside_source": true,
+            "observed": false
+          },
+          {
+            "name": "right_shoulder",
+            "x": 201.10349679180956,
+            "y": 327.77557373046875,
+            "score": 0.7457795143127441,
+            "inside_source": true,
+            "observed": false
+          },
+          {
+            "name": "left_elbow",
+            "x": 447.20971643643117,
+            "y": 384.9864807128906,
+            "score": 0.7180227041244507,
+            "inside_source": true,
+            "observed": false
+          },
+          {
+            "name": "right_elbow",
+            "x": 109.4037107032115,
+            "y": 364.3705749511719,
+            "score": 0.815466046333313,
+            "inside_source": true,
+            "observed": false
+          },
+          {
+            "name": "left_wrist",
+            "x": 506.6455391110398,
+            "y": 313.4947814941406,
+            "score": 0.6215184926986694,
+            "inside_source": true,
+            "observed": false
+          },
+          {
+            "name": "right_wrist",
+            "x": 59.799042273694134,
+            "y": 265.7188720703125,
+            "score": 0.7392561435699463,
+            "inside_source": true,
+            "observed": false
+          },
+          {
+            "name": "left_hip",
+            "x": 316.9766187893124,
+            "y": 543.8095703125,
+            "score": 0.8187706470489502,
+            "inside_source": true,
+            "observed": false
+          },
+          {
+            "name": "right_hip",
+            "x": 245.71700566209208,
+            "y": 543.3679809570312,
+            "score": 0.8690707087516785,
+            "inside_source": true,
+            "observed": false
+          },
+          {
+            "name": "left_knee",
+            "x": 303.762209253987,
+            "y": 738.1824340820312,
+            "score": 0.8472821116447449,
+            "inside_source": true,
+            "observed": false
+          },
+          {
+            "name": "right_knee",
+            "x": 245.197635109969,
+            "y": 739.2125854492188,
+            "score": 0.7580310106277466,
+            "inside_source": true,
+            "observed": false
+          },
+          {
+            "name": "left_ankle",
+            "x": 269.48561621838667,
+            "y": 890.1205444335938,
+            "score": 0.670657217502594,
+            "inside_source": true,
+            "observed": false
+          },
+          {
+            "name": "right_ankle",
+            "x": 252.80857341496025,
+            "y": 886.0278930664062,
+            "score": 0.6536065340042114,
+            "inside_source": true,
+            "observed": false
+          }
+        ],
+        "geometry_eligible": false,
+        "reason": "Single-pose candidates; visibility, wearer association, waist and floor contact unverified."
+      }
+    },
+    {
+      "sample_id": "fashionpedia-train2020-10549",
+      "image_sha256": "9d29df7bfcd7023f03ef71f03fc477560257cebfbd7a25245668c6dc9d5e8f78",
+      "elapsed_seconds": 0.010477735999984361,
+      "output": {
+        "status": "provisional_landmark_candidates",
+        "frame_id": "fashionpedia-train2020-10549",
+        "model_sha256": "0fac2226112d0371903ca86e3853cec24ef603a0b2f96f589b180f0ebdd135ab",
+        "preprocessing": {
+          "source_size": [
+            654,
+            1024
+          ],
+          "resized_size": [
+            123,
+            192
+          ],
+          "pad_left_top": [
+            34,
+            0
+          ]
+        },
+        "landmarks": [
+          {
+            "name": "nose",
+            "x": 325.5029372238531,
+            "y": 192.51565551757812,
+            "score": 0.34394073486328125,
+            "inside_source": true,
+            "observed": false
+          },
+          {
+            "name": "left_eye",
+            "x": 349.3501454795279,
+            "y": 175.06756591796875,
+            "score": 0.5274822115898132,
+            "inside_source": true,
+            "observed": false
+          },
+          {
+            "name": "right_eye",
+            "x": 316.46545028686523,
+            "y": 172.77236938476562,
+            "score": 0.7891329526901245,
+            "inside_source": true,
+            "observed": false
+          },
+          {
+            "name": "left_ear",
+            "x": 385.0422647987924,
+            "y": 194.32411193847656,
+            "score": 0.5085040330886841,
+            "inside_source": true,
+            "observed": false
+          },
+          {
+            "name": "right_ear",
+            "x": 313.9602939326589,
+            "y": 184.63284301757812,
+            "score": 0.6610246300697327,
+            "inside_source": true,
+            "observed": false
+          },
+          {
+            "name": "left_shoulder",
+            "x": 363.78086834419065,
+            "y": 263.4677429199219,
+            "score": 0.6726852655410767,
+            "inside_source": true,
+            "observed": false
+          },
+          {
+            "name": "right_shoulder",
+            "x": 338.1460664330459,
+            "y": 269.32861328125,
+            "score": 0.6187025904655457,
+            "inside_source": true,
+            "observed": false
+          },
+          {
+            "name": "left_elbow",
+            "x": 346.26217669975466,
+            "y": 414.4748229980469,
+            "score": 0.5469239950180054,
+            "inside_source": true,
+            "observed": false
+          },
+          {
+            "name": "right_elbow",
+            "x": 326.5410832660954,
+            "y": 414.6636047363281,
+            "score": 0.49367648363113403,
+            "inside_source": true,
+            "observed": false
+          },
+          {
+            "name": "left_wrist",
+            "x": 310.9552015909334,
+            "y": 538.3467407226562,
+            "score": 0.5239834785461426,
+            "inside_source": true,
+            "observed": false
+          },
+          {
+            "name": "right_wrist",
+            "x": 306.7101572548471,
+            "y": 528.8107299804688,
+            "score": 0.357227087020874,
+            "inside_source": true,
+            "observed": false
+          },
+          {
+            "name": "left_hip",
+            "x": 338.028262626834,
+            "y": 513.3717651367188,
+            "score": 0.669668436050415,
+            "inside_source": true,
+            "observed": false
+          },
+          {
+            "name": "right_hip",
+            "x": 299.61110882642794,
+            "y": 514.1510620117188,
+            "score": 0.5763351917266846,
+            "inside_source": true,
+            "observed": false
+          },
+          {
+            "name": "left_knee",
+            "x": 342.0228826011099,
+            "y": 696.3171997070312,
+            "score": 0.49982330203056335,
+            "inside_source": true,
+            "observed": false
+          },
+          {
+            "name": "right_knee",
+            "x": 279.8940314316168,
+            "y": 689.8864135742188,
+            "score": 0.5125502347946167,
+            "inside_source": true,
+            "observed": false
+          },
+          {
+            "name": "left_ankle",
+            "x": 328.1378238026689,
+            "y": 863.63916015625,
+            "score": 0.4736897051334381,
+            "inside_source": true,
+            "observed": false
+          },
+          {
+            "name": "right_ankle",
+            "x": 302.4147298859387,
+            "y": 856.6893310546875,
+            "score": 0.48008477687835693,
+            "inside_source": true,
+            "observed": false
+          }
+        ],
+        "geometry_eligible": false,
+        "reason": "Single-pose candidates; visibility, wearer association, waist and floor contact unverified."
+      }
+    },
+    {
+      "sample_id": "fashionpedia-train2020-10640",
+      "image_sha256": "ed6a875f4f1d15bee157a3d3a091f6740ec73759c0d7d63e8329fc836f9fc38a",
+      "elapsed_seconds": 0.01289114899998367,
+      "output": {
+        "status": "provisional_landmark_candidates",
+        "frame_id": "fashionpedia-train2020-10640",
+        "model_sha256": "0fac2226112d0371903ca86e3853cec24ef603a0b2f96f589b180f0ebdd135ab",
+        "preprocessing": {
+          "source_size": [
+            683,
+            1024
+          ],
+          "resized_size": [
+            128,
+            192
+          ],
+          "pad_left_top": [
+            32,
+            0
+          ]
+        },
+        "landmarks": [
+          {
+            "name": "nose",
+            "x": 287.52593483030796,
+            "y": 109.29660034179688,
+            "score": 0.5650141835212708,
+            "inside_source": true,
+            "observed": false
+          },
+          {
+            "name": "left_eye",
+            "x": 287.59521302580833,
+            "y": 89.71842956542969,
+            "score": 0.6539594531059265,
+            "inside_source": true,
+            "observed": false
+          },
+          {
+            "name": "right_eye",
+            "x": 255.13662281632423,
+            "y": 102.89698791503906,
+            "score": 0.4068811535835266,
+            "inside_source": true,
+            "observed": false
+          },
+          {
+            "name": "left_ear",
+            "x": 287.0733213573694,
+            "y": 103.40274047851562,
+            "score": 0.44657471776008606,
+            "inside_source": true,
+            "observed": false
+          },
+          {
+            "name": "right_ear",
+            "x": 219.24944891035557,
+            "y": 134.5408172607422,
+            "score": 0.6994524002075195,
+            "inside_source": true,
+            "observed": false
+          },
+          {
+            "name": "left_shoulder",
+            "x": 286.37107433378696,
+            "y": 213.2626190185547,
+            "score": 0.5124351978302002,
+            "inside_source": true,
+            "observed": false
+          },
+          {
+            "name": "right_shoulder",
+            "x": 273.4535151273012,
+            "y": 228.40321350097656,
+            "score": 0.7229406833648682,
+            "inside_source": true,
+            "observed": false
+          },
+          {
+            "name": "left_elbow",
+            "x": 290.8820649534464,
+            "y": 384.8781433105469,
+            "score": 0.37484192848205566,
+            "inside_source": true,
+            "observed": false
+          },
+          {
+            "name": "right_elbow",
+            "x": 280.7891875356436,
+            "y": 396.0754699707031,
+            "score": 0.5503509044647217,
+            "inside_source": true,
+            "observed": false
+          },
+          {
+            "name": "left_wrist",
+            "x": 309.9790926426649,
+            "y": 530.5977172851562,
+            "score": 0.4475112855434418,
+            "inside_source": true,
+            "observed": false
+          },
+          {
+            "name": "right_wrist",
+            "x": 304.43604315817356,
+            "y": 547.25439453125,
+            "score": 0.6102085113525391,
+            "inside_source": true,
+            "observed": false
+          },
+          {
+            "name": "left_hip",
+            "x": 329.4985982477665,
+            "y": 456.0322265625,
+            "score": 0.6042206287384033,
+            "inside_source": true,
+            "observed": false
+          },
+          {
+            "name": "right_hip",
+            "x": 309.2245129495859,
+            "y": 466.8687438964844,
+            "score": 0.6414358019828796,
+            "inside_source": true,
+            "observed": false
+          },
+          {
+            "name": "left_knee",
+            "x": 308.3368116468191,
+            "y": 678.8671264648438,
+            "score": 0.5276691317558289,
+            "inside_source": true,
+            "observed": false
+          },
+          {
+            "name": "right_knee",
+            "x": 338.7937535792589,
+            "y": 697.1676025390625,
+            "score": 0.5459324717521667,
+            "inside_source": true,
+            "observed": false
+          },
+          {
+            "name": "left_ankle",
+            "x": 245.47226874530315,
+            "y": 904.6170043945312,
+            "score": 0.614088773727417,
+            "inside_source": true,
+            "observed": false
+          },
+          {
+            "name": "right_ankle",
+            "x": 286.7016494870186,
+            "y": 917.584716796875,
+            "score": 0.5747198462486267,
+            "inside_source": true,
+            "observed": false
+          }
+        ],
+        "geometry_eligible": false,
+        "reason": "Single-pose candidates; visibility, wearer association, waist and floor contact unverified."
+      }
+    },
+    {
+      "sample_id": "fashionpedia-train2020-10654",
+      "image_sha256": "9dcae57fb1d8f664fca48edcf01515e5cf7d303e483eab812cc5cc3078d4fbab",
+      "elapsed_seconds": 0.014013825000006364,
+      "output": {
+        "status": "provisional_landmark_candidates",
+        "frame_id": "fashionpedia-train2020-10654",
+        "model_sha256": "0fac2226112d0371903ca86e3853cec24ef603a0b2f96f589b180f0ebdd135ab",
+        "preprocessing": {
+          "source_size": [
+            633,
+            1024
+          ],
+          "resized_size": [
+            119,
+            192
+          ],
+          "pad_left_top": [
+            36,
+            0
+          ]
+        },
+        "landmarks": [
+          {
+            "name": "nose",
+            "x": 302.74140152811003,
+            "y": 151.6215362548828,
+            "score": 0.6083493828773499,
+            "inside_source": true,
+            "observed": false
+          },
+          {
+            "name": "left_eye",
+            "x": 317.0756083095775,
+            "y": 133.60342407226562,
+            "score": 0.5975934267044067,
+            "inside_source": true,
+            "observed": false
+          },
+          {
+            "name": "right_eye",
+            "x": 284.665459688972,
+            "y": 134.47056579589844,
+            "score": 0.8277478218078613,
+            "inside_source": true,
+            "observed": false
+          },
+          {
+            "name": "left_ear",
+            "x": 338.69431567793134,
+            "y": 147.2311553955078,
+            "score": 0.6180955171585083,
+            "inside_source": true,
+            "observed": false
+          },
+          {
+            "name": "right_ear",
+            "x": 266.06867242059786,
+            "y": 145.6441192626953,
+            "score": 0.8071808815002441,
+            "inside_source": true,
+            "observed": false
+          },
+          {
+            "name": "left_shoulder",
+            "x": 381.970872959169,
+            "y": 238.20596313476562,
+            "score": 0.8265866637229919,
+            "inside_source": true,
+            "observed": false
+          },
+          {
+            "name": "right_shoulder",
+            "x": 225.0146568202171,
+            "y": 226.68186950683594,
+            "score": 0.8794607520103455,
+            "inside_source": true,
+            "observed": false
+          },
+          {
+            "name": "left_elbow",
+            "x": 387.92224422422777,
+            "y": 373.848876953125,
+            "score": 0.7386348247528076,
+            "inside_source": true,
+            "observed": false
+          },
+          {
+            "name": "right_elbow",
+            "x": 212.6103357587542,
+            "y": 362.4559326171875,
+            "score": 0.8111032247543335,
+            "inside_source": true,
+            "observed": false
+          },
+          {
+            "name": "left_wrist",
+            "x": 407.08145446136217,
+            "y": 507.01092529296875,
+            "score": 0.6541385650634766,
+            "inside_source": true,
+            "observed": false
+          },
+          {
+            "name": "right_wrist",
+            "x": 202.58211324996307,
+            "y": 478.33001708984375,
+            "score": 0.8522271513938904,
+            "inside_source": true,
+            "observed": false
+          },
+          {
+            "name": "left_hip",
+            "x": 353.54072365640593,
+            "y": 463.91082763671875,
+            "score": 0.8289545178413391,
+            "inside_source": true,
+            "observed": false
+          },
+          {
+            "name": "right_hip",
+            "x": 271.4286442764667,
+            "y": 458.4265441894531,
+            "score": 0.8303498029708862,
+            "inside_source": true,
+            "observed": false
+          },
+          {
+            "name": "left_knee",
+            "x": 325.7927382012375,
+            "y": 676.4611206054688,
+            "score": 0.6523331999778748,
+            "inside_source": true,
+            "observed": false
+          },
+          {
+            "name": "right_knee",
+            "x": 301.2752910421676,
+            "y": 672.2294921875,
+            "score": 0.5718027353286743,
+            "inside_source": true,
+            "observed": false
+          },
+          {
+            "name": "left_ankle",
+            "x": 327.1446474219571,
+            "y": 915.8114013671875,
+            "score": 0.4178440570831299,
+            "inside_source": true,
+            "observed": false
+          },
+          {
+            "name": "right_ankle",
+            "x": 304.2966328308362,
+            "y": 925.25048828125,
+            "score": 0.4272893965244293,
+            "inside_source": true,
+            "observed": false
+          }
+        ],
+        "geometry_eligible": false,
+        "reason": "Single-pose candidates; visibility, wearer association, waist and floor contact unverified."
+      }
+    },
+    {
+      "sample_id": "fashionpedia-train2020-10731",
+      "image_sha256": "16762eb989f41d6345be727dabe1771ab0a3d4c655a8d3c7fae135508925477b",
+      "elapsed_seconds": 0.012908103999990317,
+      "output": {
+        "status": "provisional_landmark_candidates",
+        "frame_id": "fashionpedia-train2020-10731",
+        "model_sha256": "0fac2226112d0371903ca86e3853cec24ef603a0b2f96f589b180f0ebdd135ab",
+        "preprocessing": {
+          "source_size": [
+            667,
+            1024
+          ],
+          "resized_size": [
+            125,
+            192
+          ],
+          "pad_left_top": [
+            33,
+            0
+          ]
+        },
+        "landmarks": [
+          {
+            "name": "nose",
+            "x": 377.86651791381837,
+            "y": 309.4500732421875,
+            "score": 0.4594932496547699,
+            "inside_source": true,
+            "observed": false
+          },
+          {
+            "name": "left_eye",
+            "x": 370.71304061889646,
+            "y": 303.1290588378906,
+            "score": 0.48632267117500305,
+            "inside_source": true,
+            "observed": false
+          },
+          {
+            "name": "right_eye",
+            "x": 388.5011660766602,
+            "y": 301.7539978027344,
+            "score": 0.49205756187438965,
+            "inside_source": true,
+            "observed": false
+          },
+          {
+            "name": "left_ear",
+            "x": 351.49390216064455,
+            "y": 319.5112609863281,
+            "score": 0.6030866503715515,
+            "inside_source": true,
+            "observed": false
+          },
+          {
+            "name": "right_ear",
+            "x": 403.8485576171875,
+            "y": 315.95343017578125,
+            "score": 0.6162726879119873,
+            "inside_source": true,
+            "observed": false
+          },
+          {
+            "name": "left_shoulder",
+            "x": 321.0351073760986,
+            "y": 377.59423828125,
+            "score": 0.5200340747833252,
+            "inside_source": true,
+            "observed": false
+          },
+          {
+            "name": "right_shoulder",
+            "x": 456.4976106872559,
+            "y": 383.590087890625,
+            "score": 0.7883116602897644,
+            "inside_source": true,
+            "observed": false
+          },
+          {
+            "name": "left_elbow",
+            "x": 308.27549589538575,
+            "y": 492.81280517578125,
+            "score": 0.7056233882904053,
+            "inside_source": true,
+            "observed": false
+          },
+          {
+            "name": "right_elbow",
+            "x": 450.95645037841797,
+            "y": 484.4372863769531,
+            "score": 0.5182006359100342,
+            "inside_source": true,
+            "observed": false
+          },
+          {
+            "name": "left_wrist",
+            "x": 294.5546191101074,
+            "y": 593.7138061523438,
+            "score": 0.5300291180610657,
+            "inside_source": true,
+            "observed": false
+          },
+          {
+            "name": "right_wrist",
+            "x": 460.0815550842285,
+            "y": 596.6152954101562,
+            "score": 0.39267975091934204,
+            "inside_source": true,
+            "observed": false
+          },
+          {
+            "name": "left_hip",
+            "x": 331.97810665893553,
+            "y": 537.2135009765625,
+            "score": 0.667935848236084,
+            "inside_source": true,
+            "observed": false
+          },
+          {
+            "name": "right_hip",
+            "x": 411.2404353027344,
+            "y": 542.007568359375,
+            "score": 0.5230412483215332,
+            "inside_source": true,
+            "observed": false
+          },
+          {
+            "name": "left_knee",
+            "x": 362.71954391479494,
+            "y": 714.0945434570312,
+            "score": 0.5036587715148926,
+            "inside_source": true,
+            "observed": false
+          },
+          {
+            "name": "right_knee",
+            "x": 396.9892336730957,
+            "y": 718.0036010742188,
+            "score": 0.6388756036758423,
+            "inside_source": true,
+            "observed": false
+          },
+          {
+            "name": "left_ankle",
+            "x": 368.1644647216797,
+            "y": 851.9918823242188,
+            "score": 0.4280098080635071,
+            "inside_source": true,
+            "observed": false
+          },
+          {
+            "name": "right_ankle",
+            "x": 388.524676361084,
+            "y": 858.1759033203125,
+            "score": 0.5410959720611572,
+            "inside_source": true,
+            "observed": false
+          }
+        ],
+        "geometry_eligible": false,
+        "reason": "Single-pose candidates; visibility, wearer association, waist and floor contact unverified."
+      }
+    },
+    {
+      "sample_id": "fashionpedia-train2020-10793",
+      "image_sha256": "25c2cf12094e2a9ba62787f522e533d127dd0e5a799726d45e019f895f72d990",
+      "elapsed_seconds": 0.01573122499999613,
+      "output": {
+        "status": "provisional_landmark_candidates",
+        "frame_id": "fashionpedia-train2020-10793",
+        "model_sha256": "0fac2226112d0371903ca86e3853cec24ef603a0b2f96f589b180f0ebdd135ab",
+        "preprocessing": {
+          "source_size": [
+            683,
+            1024
+          ],
+          "resized_size": [
+            128,
+            192
+          ],
+          "pad_left_top": [
+            32,
+            0
+          ]
+        },
+        "landmarks": [
+          {
+            "name": "nose",
+            "x": 355.9323364496231,
+            "y": 142.54006958007812,
+            "score": 0.6697784066200256,
+            "inside_source": true,
+            "observed": false
+          },
+          {
+            "name": "left_eye",
+            "x": 372.59470424056053,
+            "y": 129.2267608642578,
+            "score": 0.6615970134735107,
+            "inside_source": true,
+            "observed": false
+          },
+          {
+            "name": "right_eye",
+            "x": 341.6375792324543,
+            "y": 126.0184326171875,
+            "score": 0.38364773988723755,
+            "inside_source": true,
+            "observed": false
+          },
+          {
+            "name": "left_ear",
+            "x": 387.2871164679527,
+            "y": 148.4571990966797,
+            "score": 0.6289459466934204,
+            "inside_source": true,
+            "observed": false
+          },
+          {
+            "name": "right_ear",
+            "x": 320.21016006171703,
+            "y": 141.15225219726562,
+            "score": 0.6546413898468018,
+            "inside_source": true,
+            "observed": false
+          },
+          {
+            "name": "left_shoulder",
+            "x": 426.8980620801449,
+            "y": 249.9388885498047,
+            "score": 0.7767044901847839,
+            "inside_source": true,
+            "observed": false
+          },
+          {
+            "name": "right_shoulder",
+            "x": 265.7203709036112,
+            "y": 241.38522338867188,
+            "score": 0.8247674703598022,
+            "inside_source": true,
+            "observed": false
+          },
+          {
+            "name": "left_elbow",
+            "x": 413.62327286601067,
+            "y": 372.7088623046875,
+            "score": 0.748490571975708,
+            "inside_source": true,
+            "observed": false
+          },
+          {
+            "name": "right_elbow",
+            "x": 259.8054663538933,
+            "y": 366.5780944824219,
+            "score": 0.7281692028045654,
+            "inside_source": true,
+            "observed": false
+          },
+          {
+            "name": "left_wrist",
+            "x": 425.17444255948067,
+            "y": 487.3667297363281,
+            "score": 0.5029013156890869,
+            "inside_source": true,
+            "observed": false
+          },
+          {
+            "name": "right_wrist",
+            "x": 237.53095407783985,
+            "y": 487.9648132324219,
+            "score": 0.6793254613876343,
+            "inside_source": true,
+            "observed": false
+          },
+          {
+            "name": "left_hip",
+            "x": 381.32107001543045,
+            "y": 485.395263671875,
+            "score": 0.8337019681930542,
+            "inside_source": true,
+            "observed": false
+          },
+          {
+            "name": "right_hip",
+            "x": 294.4870347827673,
+            "y": 482.186279296875,
+            "score": 0.8246719241142273,
+            "inside_source": true,
+            "observed": false
+          },
+          {
+            "name": "left_knee",
+            "x": 343.5507443845272,
+            "y": 666.4879760742188,
+            "score": 0.6729973554611206,
+            "inside_source": true,
+            "observed": false
+          },
+          {
+            "name": "right_knee",
+            "x": 319.3965610861778,
+            "y": 668.5016479492188,
+            "score": 0.5221401453018188,
+            "inside_source": true,
+            "observed": false
+          },
+          {
+            "name": "left_ankle",
+            "x": 334.84459111094475,
+            "y": 842.617919921875,
+            "score": 0.48365873098373413,
+            "inside_source": true,
+            "observed": false
+          },
+          {
+            "name": "right_ankle",
+            "x": 332.6828915774822,
+            "y": 837.6066284179688,
+            "score": 0.4265443682670593,
+            "inside_source": true,
+            "observed": false
+          }
+        ],
+        "geometry_eligible": false,
+        "reason": "Single-pose candidates; visibility, wearer association, waist and floor contact unverified."
+      }
+    }
+  ],
+  "camera_used": false,
+  "pi_verified": false,
+  "limitations": [
+    "Six training-source images; invocation/contract check only",
+    "No landmark ground truth or accuracy measurement",
+    "Unverified visibility, wearer association, waist or floor contact",
+    "CPU timings include preprocessing; not target-Pi latency"
+  ]
+}

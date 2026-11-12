@@ -1,0 +1,60 @@
+{
+  "recorded_at": "2026-10-22T13:06:11.407262+08:00",
+  "source_sha256": "2b4c4eed504c055f037dbd079690258f81ffd26a945fe34861bef21d7e6bdace",
+  "python_executable": "/home/skirttrain/skirt-fabric-sense/.venv-training/bin/python",
+  "versions": {
+    "tensorflow": "2.20.0",
+    "numpy": "2.5.3",
+    "Pillow": "12.3.0"
+  },
+  "commands": [
+    [
+      "/home/skirttrain/skirt-fabric-sense/.venv-training/bin/python",
+      "-B",
+      "-m",
+      "app.server",
+      "--bundle",
+      "/mnt/c/Users/Administrator/OneDrive/Documents/ChatGPT/SkirtFabricSense/artifacts/stations/skirt-research-station-v3/application",
+      "--root",
+      "/mnt/c/Users/Administrator/OneDrive/Documents/ChatGPT/SkirtFabricSense/artifacts/stations/skirt-research-station-v3/application",
+      "--port",
+      "18824",
+      "--no-review",
+      "--experimental-localizer",
+      "/mnt/c/Users/Administrator/OneDrive/Documents/ChatGPT/SkirtFabricSense/artifacts/stations/skirt-research-station-v3/models/localizer",
+      "--experimental-presence",
+      "/mnt/c/Users/Administrator/OneDrive/Documents/ChatGPT/SkirtFabricSense/artifacts/stations/skirt-research-station-v3/models/presence"
+    ],
+    [
+      "/home/skirttrain/skirt-fabric-sense/.venv-training/bin/python",
+      "-B",
+      "-m",
+      "app.server",
+      "--bundle",
+      "/mnt/c/Users/Administrator/OneDrive/Documents/ChatGPT/SkirtFabricSense/artifacts/stations/skirt-research-station-v3/application",
+      "--root",
+      "/mnt/c/Users/Administrator/OneDrive/Documents/ChatGPT/SkirtFabricSense/artifacts/stations/skirt-research-station-v3/application",
+      "--port",
+      "18825",
+      "--no-review",
+      "--experimental-localizer",
+      "/mnt/c/Users/Administrator/OneDrive/Documents/ChatGPT/SkirtFabricSense/artifacts/stations/skirt-research-station-v3/models/localizer",
+      "--experimental-presence",
+      "/mnt/c/Users/Administrator/OneDrive/Documents/ChatGPT/SkirtFabricSense/artifacts/stations/skirt-research-station-v3/models/presence",
+      "--experimental-fabric",
+      "/mnt/c/Users/Administrator/OneDrive/Documents/ChatGPT/SkirtFabricSense/artifacts/stations/skirt-research-station-v3/models/fabric"
+    ]
+  ],
+  "working_directory": "/mnt/c/Users/Administrator/OneDrive/Documents/ChatGPT/SkirtFabricSense/artifacts/stations/skirt-research-station-v3/application",
+  "environment_overrides": {
+    "CUDA_VISIBLE_DEVICES": "-1",
+    "PYTHONDONTWRITEBYTECODE": "1"
+  },
+  "packages_installed": 0,
+  "gpu_used": false,
+  "owned_servers_stopped": [
+    true,
+    true
+  ],
+  "direct_reference_module_sha256": "64eb54936d8c65fe7552830de06b2914eec1f611a693486e15da8d588da48f23"
+}

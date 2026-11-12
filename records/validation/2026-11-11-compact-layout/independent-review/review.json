@@ -1,0 +1,53 @@
+{
+  "recorded_at": "2026-11-11T23:16:31.098392+08:00",
+  "status": "independently_verified_source_layout",
+  "mock_cases": {
+    "camera_live_loop": 18,
+    "scores": 21,
+    "motion": 6,
+    "camera_mode_safety": 7,
+    "total": 52
+  },
+  "browser_scenarios": 6,
+  "source_hash_matches_previous_result": true,
+  "camera_requests": 0,
+  "owned_server_stopped": true,
+  "visual_review": "Both rendered camera-off screenshots inspected; no clipping or overlap of essential controls/values.",
+  "source_files": [
+    {
+      "path": "app/static/index.html",
+      "sha256": "40618a91db6b19cd918d70ad10056cd79aaa9c0b44b869d60f2bc60c53c68f3f"
+    },
+    {
+      "path": "tests/camera_ui_lifecycle.cjs",
+      "sha256": "7259bb796ac768015a994e9defc7f8c31a0732d8f41eb9edeab98b019a8dcf78"
+    },
+    {
+      "path": "tests/compact_layout_browser.cjs",
+      "sha256": "650e8cb710133928648446b705e98e2e087c168b264eedbddfbedefcb010e70c"
+    },
+    {
+      "path": "docs/COMPACT_LAYOUT_NOV11.md",
+      "sha256": "c295f8e0a882bd9cc20dad68a1b2ca4035fa442350f018944fe67818be498ae4"
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "records/validation/2026-11-11-compact-layout/independent-review/browser.json",
+      "sha256": "ae54e4939215691bbe5b2631c197c6bcc3e60e0e98c6e6b5149125bab701a97d"
+    },
+    {
+      "path": "records/validation/2026-11-11-compact-layout/independent-review/camera-off-800x480.png",
+      "sha256": "3fe758ca076572b70032c4f90a8500e5a40ead9fc38c19eb557e7e4c1ccc584c"
+    },
+    {
+      "path": "records/validation/2026-11-11-compact-layout/independent-review/camera-off-desktop.png",
+      "sha256": "c7f45a67571069cac0ba1d2b1bd02aae1a4f16aa96ccf741612708f51eba8f8c"
+    }
+  ],
+  "app_or_model_changes_by_this_review": false,
+  "dependencies_installed": [],
+  "physical_lcd_tested": false,
+  "pi_verified": false,
+  "packaging": "Root agent must build a new immutable source package; existing station-v8 remains untouched."
+}

@@ -1,0 +1,537 @@
+{
+  "total_consumed_body_bytes": 154197,
+  "requests": [
+    {
+      "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&list=categorymembers&cmtitle=Category%3AEmpty+bedrooms&cmtype=file&cmlimit=8&cmsort=sortkey&cmdir=ascending",
+      "started_at_utc": "2026-11-04T15:00:03.135513+00:00",
+      "response_cap_bytes": 1048576,
+      "consumed_body_bytes": 1072,
+      "outcome": "success",
+      "status": 200,
+      "resolved_url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&list=categorymembers&cmtitle=Category%3AEmpty+bedrooms&cmtype=file&cmlimit=8&cmsort=sortkey&cmdir=ascending",
+      "headers": {
+        "Content-Length": "1072",
+        "Content-Type": "application/json; charset=utf-8"
+      },
+      "finished_at_utc": "2026-11-04T15:00:03.979366+00:00",
+      "sha256_consumed_body": "8eb1e805f10dc35ca0cbc02b46093a17bd8eaaed316322c1f3a30c4d6ad5bb41",
+      "body_path": "records/acquisitions/2026-11-04-backgrounds/category-1.json"
+    },
+    {
+      "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&list=categorymembers&cmtitle=Category%3AEmpty+classrooms&cmtype=file&cmlimit=8&cmsort=sortkey&cmdir=ascending",
+      "started_at_utc": "2026-11-04T15:00:03.983377+00:00",
+      "response_cap_bytes": 1048576,
+      "consumed_body_bytes": 808,
+      "outcome": "success",
+      "status": 200,
+      "resolved_url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&list=categorymembers&cmtitle=Category%3AEmpty+classrooms&cmtype=file&cmlimit=8&cmsort=sortkey&cmdir=ascending",
+      "headers": {
+        "Content-Length": "808",
+        "Content-Type": "application/json; charset=utf-8"
+      },
+      "finished_at_utc": "2026-11-04T15:00:04.595163+00:00",
+      "sha256_consumed_body": "8adaaf3c252287ba8f0f5720ad0cd0c5f7cc608e2334efc00cbe0ed16c8c0812",
+      "body_path": "records/acquisitions/2026-11-04-backgrounds/category-2.json"
+    },
+    {
+      "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&list=categorymembers&cmtitle=Category%3AEmpty+rooms+in+the+Netherlands&cmtype=file&cmlimit=8&cmsort=sortkey&cmdir=ascending",
+      "started_at_utc": "2026-11-04T15:00:04.597161+00:00",
+      "response_cap_bytes": 1048576,
+      "consumed_body_bytes": 1447,
+      "outcome": "success",
+      "status": 200,
+      "resolved_url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&list=categorymembers&cmtitle=Category%3AEmpty+rooms+in+the+Netherlands&cmtype=file&cmlimit=8&cmsort=sortkey&cmdir=ascending",
+      "headers": {
+        "Content-Length": "1447",
+        "Content-Type": "application/json; charset=utf-8"
+      },
+      "finished_at_utc": "2026-11-04T15:00:05.180945+00:00",
+      "sha256_consumed_body": "618656568b3af96b987d23a08e1568cc4bd6720d88ab52a93c46ef3668abedeb",
+      "body_path": "records/acquisitions/2026-11-04-backgrounds/category-3.json"
+    },
+    {
+      "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&list=categorymembers&cmtitle=Category%3AEmpty+rooms+in+the+United+Kingdom&cmtype=file&cmlimit=8&cmsort=sortkey&cmdir=ascending",
+      "started_at_utc": "2026-11-04T15:00:05.180945+00:00",
+      "response_cap_bytes": 1048576,
+      "consumed_body_bytes": 1231,
+      "outcome": "success",
+      "status": 200,
+      "resolved_url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&list=categorymembers&cmtitle=Category%3AEmpty+rooms+in+the+United+Kingdom&cmtype=file&cmlimit=8&cmsort=sortkey&cmdir=ascending",
+      "headers": {
+        "Content-Length": "1231",
+        "Content-Type": "application/json; charset=utf-8"
+      },
+      "finished_at_utc": "2026-11-04T15:00:06.750804+00:00",
+      "sha256_consumed_body": "86bb8033fb5f0aca782b9fc7d25d9edae8c7825cbc5249f299ed62e0a1e89c22",
+      "body_path": "records/acquisitions/2026-11-04-backgrounds/category-4.json"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/Commons:Reusing_content_outside_Wikimedia",
+      "started_at_utc": "2026-11-04T15:00:06.750804+00:00",
+      "response_cap_bytes": 1048576,
+      "consumed_body_bytes": 130544,
+      "outcome": "success",
+      "status": 200,
+      "resolved_url": "https://commons.wikimedia.org/wiki/Commons:Reusing_content_outside_Wikimedia",
+      "headers": {
+        "Content-Length": "130544",
+        "Content-Type": "text/html; charset=UTF-8",
+        "Last-Modified": "Mon, 02 Nov 2026 15:07:22 GMT"
+      },
+      "finished_at_utc": "2026-11-04T15:00:07.915519+00:00",
+      "sha256_consumed_body": "7a1c49cb6efaeb98820cef6936b0e22b1d3e5d87189dd76eb99e12e6e5b72cbb",
+      "body_path": "records/acquisitions/2026-11-04-backgrounds/commons_reuse.html"
+    },
+    {
+      "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&pageids=106578551&prop=imageinfo%7Crevisions&iiprop=url%7Csize%7Csha1%7Cmime%7Cmediatype%7Cextmetadata%7Ctimestamp%7Cuser&iilimit=1&rvprop=ids&rvlimit=1&iiextmetadatafilter=Artist%7CCredit%7CLicenseShortName%7CLicenseUrl%7CUsageTerms%7CAttributionRequired%7CCopyrighted%7CObjectName%7CImageDescription%7CRestrictions",
+      "started_at_utc": "2026-11-04T15:00:07.980712+00:00",
+      "response_cap_bytes": 1048576,
+      "consumed_body_bytes": 1770,
+      "outcome": "success",
+      "status": 200,
+      "resolved_url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&pageids=106578551&prop=imageinfo%7Crevisions&iiprop=url%7Csize%7Csha1%7Cmime%7Cmediatype%7Cextmetadata%7Ctimestamp%7Cuser&iilimit=1&rvprop=ids&rvlimit=1&iiextmetadatafilter=Artist%7CCredit%7CLicenseShortName%7CLicenseUrl%7CUsageTerms%7CAttributionRequired%7CCopyrighted%7CObjectName%7CImageDescription%7CRestrictions",
+      "headers": {
+        "Content-Length": "1770",
+        "Content-Type": "application/json; charset=utf-8"
+      },
+      "finished_at_utc": "2026-11-04T15:00:08.696760+00:00",
+      "sha256_consumed_body": "0a97d801f73c5b38e09d05c36fb2042c82c0ebe0bdcd8e336742d5c80fd3e049",
+      "body_path": "records/acquisitions/2026-11-04-backgrounds/106578551_metadata.json"
+    },
+    {
+      "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&pageids=78867844&prop=imageinfo%7Crevisions&iiprop=url%7Csize%7Csha1%7Cmime%7Cmediatype%7Cextmetadata%7Ctimestamp%7Cuser&iilimit=1&rvprop=ids&rvlimit=1&iiextmetadatafilter=Artist%7CCredit%7CLicenseShortName%7CLicenseUrl%7CUsageTerms%7CAttributionRequired%7CCopyrighted%7CObjectName%7CImageDescription%7CRestrictions",
+      "started_at_utc": "2026-11-04T15:00:08.712406+00:00",
+      "response_cap_bytes": 1048576,
+      "consumed_body_bytes": 1705,
+      "outcome": "success",
+      "status": 200,
+      "resolved_url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&pageids=78867844&prop=imageinfo%7Crevisions&iiprop=url%7Csize%7Csha1%7Cmime%7Cmediatype%7Cextmetadata%7Ctimestamp%7Cuser&iilimit=1&rvprop=ids&rvlimit=1&iiextmetadatafilter=Artist%7CCredit%7CLicenseShortName%7CLicenseUrl%7CUsageTerms%7CAttributionRequired%7CCopyrighted%7CObjectName%7CImageDescription%7CRestrictions",
+      "headers": {
+        "Content-Length": "1705",
+        "Content-Type": "application/json; charset=utf-8"
+      },
+      "finished_at_utc": "2026-11-04T15:00:09.352507+00:00",
+      "sha256_consumed_body": "176f6790ac582c5dec6595df462ada8015b05847909c15ef0102d4b4fa128042",
+      "body_path": "records/acquisitions/2026-11-04-backgrounds/78867844_metadata.json"
+    },
+    {
+      "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&pageids=1860541&prop=imageinfo%7Crevisions&iiprop=url%7Csize%7Csha1%7Cmime%7Cmediatype%7Cextmetadata%7Ctimestamp%7Cuser&iilimit=1&rvprop=ids&rvlimit=1&iiextmetadatafilter=Artist%7CCredit%7CLicenseShortName%7CLicenseUrl%7CUsageTerms%7CAttributionRequired%7CCopyrighted%7CObjectName%7CImageDescription%7CRestrictions",
+      "started_at_utc": "2026-11-04T15:00:09.359298+00:00",
+      "response_cap_bytes": 1048576,
+      "consumed_body_bytes": 1342,
+      "outcome": "success",
+      "status": 200,
+      "resolved_url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&pageids=1860541&prop=imageinfo%7Crevisions&iiprop=url%7Csize%7Csha1%7Cmime%7Cmediatype%7Cextmetadata%7Ctimestamp%7Cuser&iilimit=1&rvprop=ids&rvlimit=1&iiextmetadatafilter=Artist%7CCredit%7CLicenseShortName%7CLicenseUrl%7CUsageTerms%7CAttributionRequired%7CCopyrighted%7CObjectName%7CImageDescription%7CRestrictions",
+      "headers": {
+        "Content-Length": "1342",
+        "Content-Type": "application/json; charset=utf-8"
+      },
+      "finished_at_utc": "2026-11-04T15:00:10.118533+00:00",
+      "sha256_consumed_body": "e912564b5f8df3f94b2e6964bafccae9e6407f227733e79ee673f08ec90f80da",
+      "body_path": "records/acquisitions/2026-11-04-backgrounds/1860541_metadata.json"
+    },
+    {
+      "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&pageids=189945284&prop=imageinfo%7Crevisions&iiprop=url%7Csize%7Csha1%7Cmime%7Cmediatype%7Cextmetadata%7Ctimestamp%7Cuser&iilimit=1&rvprop=ids&rvlimit=1&iiextmetadatafilter=Artist%7CCredit%7CLicenseShortName%7CLicenseUrl%7CUsageTerms%7CAttributionRequired%7CCopyrighted%7CObjectName%7CImageDescription%7CRestrictions",
+      "started_at_utc": "2026-11-04T15:00:10.122678+00:00",
+      "response_cap_bytes": 1048576,
+      "consumed_body_bytes": 2866,
+      "outcome": "success",
+      "status": 200,
+      "resolved_url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&pageids=189945284&prop=imageinfo%7Crevisions&iiprop=url%7Csize%7Csha1%7Cmime%7Cmediatype%7Cextmetadata%7Ctimestamp%7Cuser&iilimit=1&rvprop=ids&rvlimit=1&iiextmetadatafilter=Artist%7CCredit%7CLicenseShortName%7CLicenseUrl%7CUsageTerms%7CAttributionRequired%7CCopyrighted%7CObjectName%7CImageDescription%7CRestrictions",
+      "headers": {
+        "Content-Length": "2866",
+        "Content-Type": "application/json; charset=utf-8"
+      },
+      "finished_at_utc": "2026-11-04T15:00:10.806117+00:00",
+      "sha256_consumed_body": "c8b317fb5d7c9add03796572bba8e7e0a4624cf147841c6e25feebd902b18c35",
+      "body_path": "records/acquisitions/2026-11-04-backgrounds/189945284_metadata.json"
+    },
+    {
+      "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&pageids=189945287&prop=imageinfo%7Crevisions&iiprop=url%7Csize%7Csha1%7Cmime%7Cmediatype%7Cextmetadata%7Ctimestamp%7Cuser&iilimit=1&rvprop=ids&rvlimit=1&iiextmetadatafilter=Artist%7CCredit%7CLicenseShortName%7CLicenseUrl%7CUsageTerms%7CAttributionRequired%7CCopyrighted%7CObjectName%7CImageDescription%7CRestrictions",
+      "started_at_utc": "2026-11-04T15:00:10.806117+00:00",
+      "response_cap_bytes": 1048576,
+      "consumed_body_bytes": 2778,
+      "outcome": "success",
+      "status": 200,
+      "resolved_url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&pageids=189945287&prop=imageinfo%7Crevisions&iiprop=url%7Csize%7Csha1%7Cmime%7Cmediatype%7Cextmetadata%7Ctimestamp%7Cuser&iilimit=1&rvprop=ids&rvlimit=1&iiextmetadatafilter=Artist%7CCredit%7CLicenseShortName%7CLicenseUrl%7CUsageTerms%7CAttributionRequired%7CCopyrighted%7CObjectName%7CImageDescription%7CRestrictions",
+      "headers": {
+        "Content-Type": "application/json; charset=utf-8"
+      },
+      "finished_at_utc": "2026-11-04T15:00:11.492430+00:00",
+      "sha256_consumed_body": "e7799e516bab74429112c552444981f88fbbffa053f5539a49f57ecc0ba17ebc",
+      "body_path": "records/acquisitions/2026-11-04-backgrounds/189945287_metadata.json"
+    },
+    {
+      "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&pageids=189945289&prop=imageinfo%7Crevisions&iiprop=url%7Csize%7Csha1%7Cmime%7Cmediatype%7Cextmetadata%7Ctimestamp%7Cuser&iilimit=1&rvprop=ids&rvlimit=1&iiextmetadatafilter=Artist%7CCredit%7CLicenseShortName%7CLicenseUrl%7CUsageTerms%7CAttributionRequired%7CCopyrighted%7CObjectName%7CImageDescription%7CRestrictions",
+      "started_at_utc": "2026-11-04T15:00:11.500684+00:00",
+      "response_cap_bytes": 1048576,
+      "consumed_body_bytes": 2880,
+      "outcome": "success",
+      "status": 200,
+      "resolved_url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&pageids=189945289&prop=imageinfo%7Crevisions&iiprop=url%7Csize%7Csha1%7Cmime%7Cmediatype%7Cextmetadata%7Ctimestamp%7Cuser&iilimit=1&rvprop=ids&rvlimit=1&iiextmetadatafilter=Artist%7CCredit%7CLicenseShortName%7CLicenseUrl%7CUsageTerms%7CAttributionRequired%7CCopyrighted%7CObjectName%7CImageDescription%7CRestrictions",
+      "headers": {
+        "Content-Type": "application/json; charset=utf-8"
+      },
+      "finished_at_utc": "2026-11-04T15:00:12.148929+00:00",
+      "sha256_consumed_body": "b46e0b30a7935e4da6d5619366d0467d14b49d5132d6b50e065dfb6c88c56823",
+      "body_path": "records/acquisitions/2026-11-04-backgrounds/189945289_metadata.json"
+    },
+    {
+      "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&pageids=189945296&prop=imageinfo%7Crevisions&iiprop=url%7Csize%7Csha1%7Cmime%7Cmediatype%7Cextmetadata%7Ctimestamp%7Cuser&iilimit=1&rvprop=ids&rvlimit=1&iiextmetadatafilter=Artist%7CCredit%7CLicenseShortName%7CLicenseUrl%7CUsageTerms%7CAttributionRequired%7CCopyrighted%7CObjectName%7CImageDescription%7CRestrictions",
+      "started_at_utc": "2026-11-04T15:00:12.152289+00:00",
+      "response_cap_bytes": 1048576,
+      "consumed_body_bytes": 274,
+      "outcome": "failed",
+      "status": 429,
+      "resolved_url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&pageids=189945296&prop=imageinfo%7Crevisions&iiprop=url%7Csize%7Csha1%7Cmime%7Cmediatype%7Cextmetadata%7Ctimestamp%7Cuser&iilimit=1&rvprop=ids&rvlimit=1&iiextmetadatafilter=Artist%7CCredit%7CLicenseShortName%7CLicenseUrl%7CUsageTerms%7CAttributionRequired%7CCopyrighted%7CObjectName%7CImageDescription%7CRestrictions",
+      "headers": {
+        "Content-Length": "274",
+        "Content-Type": "text/plain"
+      },
+      "error": "ValueError: HTTP 429",
+      "finished_at_utc": "2026-11-04T15:00:12.830680+00:00",
+      "sha256_consumed_body": "2fffe9c70ab75664aa0f155790a4652602a668a95f61268475e3e6a854673c34",
+      "body_path": "records/acquisitions/2026-11-04-backgrounds/189945296_metadata.json"
+    },
+    {
+      "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&pageids=189945295&prop=imageinfo%7Crevisions&iiprop=url%7Csize%7Csha1%7Cmime%7Cmediatype%7Cextmetadata%7Ctimestamp%7Cuser&iilimit=1&rvprop=ids&rvlimit=1&iiextmetadatafilter=Artist%7CCredit%7CLicenseShortName%7CLicenseUrl%7CUsageTerms%7CAttributionRequired%7CCopyrighted%7CObjectName%7CImageDescription%7CRestrictions",
+      "started_at_utc": "2026-11-04T15:00:12.832681+00:00",
+      "response_cap_bytes": 1048576,
+      "consumed_body_bytes": 274,
+      "outcome": "failed",
+      "status": 429,
+      "resolved_url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&pageids=189945295&prop=imageinfo%7Crevisions&iiprop=url%7Csize%7Csha1%7Cmime%7Cmediatype%7Cextmetadata%7Ctimestamp%7Cuser&iilimit=1&rvprop=ids&rvlimit=1&iiextmetadatafilter=Artist%7CCredit%7CLicenseShortName%7CLicenseUrl%7CUsageTerms%7CAttributionRequired%7CCopyrighted%7CObjectName%7CImageDescription%7CRestrictions",
+      "headers": {
+        "Content-Length": "274",
+        "Content-Type": "text/plain"
+      },
+      "error": "ValueError: HTTP 429",
+      "finished_at_utc": "2026-11-04T15:00:13.405680+00:00",
+      "sha256_consumed_body": "5b4c895acf3358bddf2569f199960934610ef50a3aa889f759c97f5b8d685ecb",
+      "body_path": "records/acquisitions/2026-11-04-backgrounds/189945295_metadata.json"
+    },
+    {
+      "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&pageids=27737160&prop=imageinfo%7Crevisions&iiprop=url%7Csize%7Csha1%7Cmime%7Cmediatype%7Cextmetadata%7Ctimestamp%7Cuser&iilimit=1&rvprop=ids&rvlimit=1&iiextmetadatafilter=Artist%7CCredit%7CLicenseShortName%7CLicenseUrl%7CUsageTerms%7CAttributionRequired%7CCopyrighted%7CObjectName%7CImageDescription%7CRestrictions",
+      "started_at_utc": "2026-11-04T15:00:13.407681+00:00",
+      "response_cap_bytes": 1048576,
+      "consumed_body_bytes": 274,
+      "outcome": "failed",
+      "status": 429,
+      "resolved_url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&pageids=27737160&prop=imageinfo%7Crevisions&iiprop=url%7Csize%7Csha1%7Cmime%7Cmediatype%7Cextmetadata%7Ctimestamp%7Cuser&iilimit=1&rvprop=ids&rvlimit=1&iiextmetadatafilter=Artist%7CCredit%7CLicenseShortName%7CLicenseUrl%7CUsageTerms%7CAttributionRequired%7CCopyrighted%7CObjectName%7CImageDescription%7CRestrictions",
+      "headers": {
+        "Content-Length": "274",
+        "Content-Type": "text/plain"
+      },
+      "error": "ValueError: HTTP 429",
+      "finished_at_utc": "2026-11-04T15:00:13.988681+00:00",
+      "sha256_consumed_body": "3bf1e4d16565d9a4266ee618ecd953697542c03db78632fd2f5097f93ce3b38a",
+      "body_path": "records/acquisitions/2026-11-04-backgrounds/27737160_metadata.json"
+    },
+    {
+      "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&pageids=31139362&prop=imageinfo%7Crevisions&iiprop=url%7Csize%7Csha1%7Cmime%7Cmediatype%7Cextmetadata%7Ctimestamp%7Cuser&iilimit=1&rvprop=ids&rvlimit=1&iiextmetadatafilter=Artist%7CCredit%7CLicenseShortName%7CLicenseUrl%7CUsageTerms%7CAttributionRequired%7CCopyrighted%7CObjectName%7CImageDescription%7CRestrictions",
+      "started_at_utc": "2026-11-04T15:00:13.990681+00:00",
+      "response_cap_bytes": 1048576,
+      "consumed_body_bytes": 274,
+      "outcome": "failed",
+      "status": 429,
+      "resolved_url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&pageids=31139362&prop=imageinfo%7Crevisions&iiprop=url%7Csize%7Csha1%7Cmime%7Cmediatype%7Cextmetadata%7Ctimestamp%7Cuser&iilimit=1&rvprop=ids&rvlimit=1&iiextmetadatafilter=Artist%7CCredit%7CLicenseShortName%7CLicenseUrl%7CUsageTerms%7CAttributionRequired%7CCopyrighted%7CObjectName%7CImageDescription%7CRestrictions",
+      "headers": {
+        "Content-Length": "274",
+        "Content-Type": "text/plain"
+      },
+      "error": "ValueError: HTTP 429",
+      "finished_at_utc": "2026-11-04T15:00:14.581680+00:00",
+      "sha256_consumed_body": "7c493a6316e38fe049b3ad3f4eb8fd159a2adddd4bd8c10c94cdad1fc3622e08",
+      "body_path": "records/acquisitions/2026-11-04-backgrounds/31139362_metadata.json"
+    },
+    {
+      "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&pageids=31139361&prop=imageinfo%7Crevisions&iiprop=url%7Csize%7Csha1%7Cmime%7Cmediatype%7Cextmetadata%7Ctimestamp%7Cuser&iilimit=1&rvprop=ids&rvlimit=1&iiextmetadatafilter=Artist%7CCredit%7CLicenseShortName%7CLicenseUrl%7CUsageTerms%7CAttributionRequired%7CCopyrighted%7CObjectName%7CImageDescription%7CRestrictions",
+      "started_at_utc": "2026-11-04T15:00:14.583679+00:00",
+      "response_cap_bytes": 1048576,
+      "consumed_body_bytes": 274,
+      "outcome": "failed",
+      "status": 429,
+      "resolved_url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&pageids=31139361&prop=imageinfo%7Crevisions&iiprop=url%7Csize%7Csha1%7Cmime%7Cmediatype%7Cextmetadata%7Ctimestamp%7Cuser&iilimit=1&rvprop=ids&rvlimit=1&iiextmetadatafilter=Artist%7CCredit%7CLicenseShortName%7CLicenseUrl%7CUsageTerms%7CAttributionRequired%7CCopyrighted%7CObjectName%7CImageDescription%7CRestrictions",
+      "headers": {
+        "Content-Length": "274",
+        "Content-Type": "text/plain"
+      },
+      "error": "ValueError: HTTP 429",
+      "finished_at_utc": "2026-11-04T15:00:15.175614+00:00",
+      "sha256_consumed_body": "c71424ddc1d7fd7f7a7a672167f20d521150b362c84091bfdca049dfd1eb963c",
+      "body_path": "records/acquisitions/2026-11-04-backgrounds/31139361_metadata.json"
+    },
+    {
+      "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&pageids=15729163&prop=imageinfo%7Crevisions&iiprop=url%7Csize%7Csha1%7Cmime%7Cmediatype%7Cextmetadata%7Ctimestamp%7Cuser&iilimit=1&rvprop=ids&rvlimit=1&iiextmetadatafilter=Artist%7CCredit%7CLicenseShortName%7CLicenseUrl%7CUsageTerms%7CAttributionRequired%7CCopyrighted%7CObjectName%7CImageDescription%7CRestrictions",
+      "started_at_utc": "2026-11-04T15:00:15.177615+00:00",
+      "response_cap_bytes": 1048576,
+      "consumed_body_bytes": 274,
+      "outcome": "failed",
+      "status": 429,
+      "resolved_url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&pageids=15729163&prop=imageinfo%7Crevisions&iiprop=url%7Csize%7Csha1%7Cmime%7Cmediatype%7Cextmetadata%7Ctimestamp%7Cuser&iilimit=1&rvprop=ids&rvlimit=1&iiextmetadatafilter=Artist%7CCredit%7CLicenseShortName%7CLicenseUrl%7CUsageTerms%7CAttributionRequired%7CCopyrighted%7CObjectName%7CImageDescription%7CRestrictions",
+      "headers": {
+        "Content-Length": "274",
+        "Content-Type": "text/plain"
+      },
+      "error": "ValueError: HTTP 429",
+      "finished_at_utc": "2026-11-04T15:00:15.761694+00:00",
+      "sha256_consumed_body": "11dacca45d40fb2a5a1198fe6c9f83590be02da43579078f8dff4eb87bbd01e7",
+      "body_path": "records/acquisitions/2026-11-04-backgrounds/15729163_metadata.json"
+    },
+    {
+      "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&pageids=38898416&prop=imageinfo%7Crevisions&iiprop=url%7Csize%7Csha1%7Cmime%7Cmediatype%7Cextmetadata%7Ctimestamp%7Cuser&iilimit=1&rvprop=ids&rvlimit=1&iiextmetadatafilter=Artist%7CCredit%7CLicenseShortName%7CLicenseUrl%7CUsageTerms%7CAttributionRequired%7CCopyrighted%7CObjectName%7CImageDescription%7CRestrictions",
+      "started_at_utc": "2026-11-04T15:00:15.763695+00:00",
+      "response_cap_bytes": 1048576,
+      "consumed_body_bytes": 274,
+      "outcome": "failed",
+      "status": 429,
+      "resolved_url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&pageids=38898416&prop=imageinfo%7Crevisions&iiprop=url%7Csize%7Csha1%7Cmime%7Cmediatype%7Cextmetadata%7Ctimestamp%7Cuser&iilimit=1&rvprop=ids&rvlimit=1&iiextmetadatafilter=Artist%7CCredit%7CLicenseShortName%7CLicenseUrl%7CUsageTerms%7CAttributionRequired%7CCopyrighted%7CObjectName%7CImageDescription%7CRestrictions",
+      "headers": {
+        "Content-Length": "274",
+        "Content-Type": "text/plain"
+      },
+      "error": "ValueError: HTTP 429",
+      "finished_at_utc": "2026-11-04T15:00:16.340095+00:00",
+      "sha256_consumed_body": "940a7c5562f4441dbe6ea56380c8679dc116a62d41cc8f893ad623e8e282874d",
+      "body_path": "records/acquisitions/2026-11-04-backgrounds/38898416_metadata.json"
+    },
+    {
+      "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&pageids=38917249&prop=imageinfo%7Crevisions&iiprop=url%7Csize%7Csha1%7Cmime%7Cmediatype%7Cextmetadata%7Ctimestamp%7Cuser&iilimit=1&rvprop=ids&rvlimit=1&iiextmetadatafilter=Artist%7CCredit%7CLicenseShortName%7CLicenseUrl%7CUsageTerms%7CAttributionRequired%7CCopyrighted%7CObjectName%7CImageDescription%7CRestrictions",
+      "started_at_utc": "2026-11-04T15:00:16.342096+00:00",
+      "response_cap_bytes": 1048576,
+      "consumed_body_bytes": 274,
+      "outcome": "failed",
+      "status": 429,
+      "resolved_url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&pageids=38917249&prop=imageinfo%7Crevisions&iiprop=url%7Csize%7Csha1%7Cmime%7Cmediatype%7Cextmetadata%7Ctimestamp%7Cuser&iilimit=1&rvprop=ids&rvlimit=1&iiextmetadatafilter=Artist%7CCredit%7CLicenseShortName%7CLicenseUrl%7CUsageTerms%7CAttributionRequired%7CCopyrighted%7CObjectName%7CImageDescription%7CRestrictions",
+      "headers": {
+        "Content-Length": "274",
+        "Content-Type": "text/plain"
+      },
+      "error": "ValueError: HTTP 429",
+      "finished_at_utc": "2026-11-04T15:00:16.998640+00:00",
+      "sha256_consumed_body": "5b7311f283b0f9366bb95572f9bd0fb7148f8234103c1fdaeb8c419c193375c8",
+      "body_path": "records/acquisitions/2026-11-04-backgrounds/38917249_metadata.json"
+    },
+    {
+      "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&pageids=15356317&prop=imageinfo%7Crevisions&iiprop=url%7Csize%7Csha1%7Cmime%7Cmediatype%7Cextmetadata%7Ctimestamp%7Cuser&iilimit=1&rvprop=ids&rvlimit=1&iiextmetadatafilter=Artist%7CCredit%7CLicenseShortName%7CLicenseUrl%7CUsageTerms%7CAttributionRequired%7CCopyrighted%7CObjectName%7CImageDescription%7CRestrictions",
+      "started_at_utc": "2026-11-04T15:00:17.000639+00:00",
+      "response_cap_bytes": 1048576,
+      "consumed_body_bytes": 274,
+      "outcome": "failed",
+      "status": 429,
+      "resolved_url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&pageids=15356317&prop=imageinfo%7Crevisions&iiprop=url%7Csize%7Csha1%7Cmime%7Cmediatype%7Cextmetadata%7Ctimestamp%7Cuser&iilimit=1&rvprop=ids&rvlimit=1&iiextmetadatafilter=Artist%7CCredit%7CLicenseShortName%7CLicenseUrl%7CUsageTerms%7CAttributionRequired%7CCopyrighted%7CObjectName%7CImageDescription%7CRestrictions",
+      "headers": {
+        "Content-Length": "274",
+        "Content-Type": "text/plain"
+      },
+      "error": "ValueError: HTTP 429",
+      "finished_at_utc": "2026-11-04T15:00:17.578643+00:00",
+      "sha256_consumed_body": "088d537c5666960669f3418e4883796b0242f6b4f1ee9d56d1b38ee81c695d97",
+      "body_path": "records/acquisitions/2026-11-04-backgrounds/15356317_metadata.json"
+    },
+    {
+      "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&pageids=10937769&prop=imageinfo%7Crevisions&iiprop=url%7Csize%7Csha1%7Cmime%7Cmediatype%7Cextmetadata%7Ctimestamp%7Cuser&iilimit=1&rvprop=ids&rvlimit=1&iiextmetadatafilter=Artist%7CCredit%7CLicenseShortName%7CLicenseUrl%7CUsageTerms%7CAttributionRequired%7CCopyrighted%7CObjectName%7CImageDescription%7CRestrictions",
+      "started_at_utc": "2026-11-04T15:00:17.580640+00:00",
+      "response_cap_bytes": 1048576,
+      "consumed_body_bytes": 274,
+      "outcome": "failed",
+      "status": 429,
+      "resolved_url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&pageids=10937769&prop=imageinfo%7Crevisions&iiprop=url%7Csize%7Csha1%7Cmime%7Cmediatype%7Cextmetadata%7Ctimestamp%7Cuser&iilimit=1&rvprop=ids&rvlimit=1&iiextmetadatafilter=Artist%7CCredit%7CLicenseShortName%7CLicenseUrl%7CUsageTerms%7CAttributionRequired%7CCopyrighted%7CObjectName%7CImageDescription%7CRestrictions",
+      "headers": {
+        "Content-Length": "274",
+        "Content-Type": "text/plain"
+      },
+      "error": "ValueError: HTTP 429",
+      "finished_at_utc": "2026-11-04T15:00:18.242055+00:00",
+      "sha256_consumed_body": "d24745e42ecb9b2958d28aa2a9797e2d66d0c718f70bb55964896846c4a29eb5",
+      "body_path": "records/acquisitions/2026-11-04-backgrounds/10937769_metadata.json"
+    },
+    {
+      "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&pageids=24046851&prop=imageinfo%7Crevisions&iiprop=url%7Csize%7Csha1%7Cmime%7Cmediatype%7Cextmetadata%7Ctimestamp%7Cuser&iilimit=1&rvprop=ids&rvlimit=1&iiextmetadatafilter=Artist%7CCredit%7CLicenseShortName%7CLicenseUrl%7CUsageTerms%7CAttributionRequired%7CCopyrighted%7CObjectName%7CImageDescription%7CRestrictions",
+      "started_at_utc": "2026-11-04T15:00:18.245055+00:00",
+      "response_cap_bytes": 1048576,
+      "consumed_body_bytes": 274,
+      "outcome": "failed",
+      "status": 429,
+      "resolved_url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&pageids=24046851&prop=imageinfo%7Crevisions&iiprop=url%7Csize%7Csha1%7Cmime%7Cmediatype%7Cextmetadata%7Ctimestamp%7Cuser&iilimit=1&rvprop=ids&rvlimit=1&iiextmetadatafilter=Artist%7CCredit%7CLicenseShortName%7CLicenseUrl%7CUsageTerms%7CAttributionRequired%7CCopyrighted%7CObjectName%7CImageDescription%7CRestrictions",
+      "headers": {
+        "Content-Length": "274",
+        "Content-Type": "text/plain"
+      },
+      "error": "ValueError: HTTP 429",
+      "finished_at_utc": "2026-11-04T15:00:18.880663+00:00",
+      "sha256_consumed_body": "fa1333856a45fe712120c7ca039fc0ebd083446fb2e7c97e513b6ba053f18744",
+      "body_path": "records/acquisitions/2026-11-04-backgrounds/24046851_metadata.json"
+    },
+    {
+      "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&pageids=24116837&prop=imageinfo%7Crevisions&iiprop=url%7Csize%7Csha1%7Cmime%7Cmediatype%7Cextmetadata%7Ctimestamp%7Cuser&iilimit=1&rvprop=ids&rvlimit=1&iiextmetadatafilter=Artist%7CCredit%7CLicenseShortName%7CLicenseUrl%7CUsageTerms%7CAttributionRequired%7CCopyrighted%7CObjectName%7CImageDescription%7CRestrictions",
+      "started_at_utc": "2026-11-04T15:00:18.882669+00:00",
+      "response_cap_bytes": 1048576,
+      "consumed_body_bytes": 274,
+      "outcome": "failed",
+      "status": 429,
+      "resolved_url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&pageids=24116837&prop=imageinfo%7Crevisions&iiprop=url%7Csize%7Csha1%7Cmime%7Cmediatype%7Cextmetadata%7Ctimestamp%7Cuser&iilimit=1&rvprop=ids&rvlimit=1&iiextmetadatafilter=Artist%7CCredit%7CLicenseShortName%7CLicenseUrl%7CUsageTerms%7CAttributionRequired%7CCopyrighted%7CObjectName%7CImageDescription%7CRestrictions",
+      "headers": {
+        "Content-Length": "274",
+        "Content-Type": "text/plain"
+      },
+      "error": "ValueError: HTTP 429",
+      "finished_at_utc": "2026-11-04T15:00:19.513635+00:00",
+      "sha256_consumed_body": "bd0c22123f9a613d548807fb72542e6b1abe62487575e3cbc669fc1c6f05ab2c",
+      "body_path": "records/acquisitions/2026-11-04-backgrounds/24116837_metadata.json"
+    },
+    {
+      "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&pageids=23519722&prop=imageinfo%7Crevisions&iiprop=url%7Csize%7Csha1%7Cmime%7Cmediatype%7Cextmetadata%7Ctimestamp%7Cuser&iilimit=1&rvprop=ids&rvlimit=1&iiextmetadatafilter=Artist%7CCredit%7CLicenseShortName%7CLicenseUrl%7CUsageTerms%7CAttributionRequired%7CCopyrighted%7CObjectName%7CImageDescription%7CRestrictions",
+      "started_at_utc": "2026-11-04T15:00:19.516599+00:00",
+      "response_cap_bytes": 1048576,
+      "consumed_body_bytes": 274,
+      "outcome": "failed",
+      "status": 429,
+      "resolved_url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&pageids=23519722&prop=imageinfo%7Crevisions&iiprop=url%7Csize%7Csha1%7Cmime%7Cmediatype%7Cextmetadata%7Ctimestamp%7Cuser&iilimit=1&rvprop=ids&rvlimit=1&iiextmetadatafilter=Artist%7CCredit%7CLicenseShortName%7CLicenseUrl%7CUsageTerms%7CAttributionRequired%7CCopyrighted%7CObjectName%7CImageDescription%7CRestrictions",
+      "headers": {
+        "Content-Length": "274",
+        "Content-Type": "text/plain"
+      },
+      "error": "ValueError: HTTP 429",
+      "finished_at_utc": "2026-11-04T15:00:20.112802+00:00",
+      "sha256_consumed_body": "78ff43625faf89e1ceed3f448f10a375428468ea9860c1b2a72df79e20ceb229",
+      "body_path": "records/acquisitions/2026-11-04-backgrounds/23519722_metadata.json"
+    },
+    {
+      "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&pageids=24115594&prop=imageinfo%7Crevisions&iiprop=url%7Csize%7Csha1%7Cmime%7Cmediatype%7Cextmetadata%7Ctimestamp%7Cuser&iilimit=1&rvprop=ids&rvlimit=1&iiextmetadatafilter=Artist%7CCredit%7CLicenseShortName%7CLicenseUrl%7CUsageTerms%7CAttributionRequired%7CCopyrighted%7CObjectName%7CImageDescription%7CRestrictions",
+      "started_at_utc": "2026-11-04T15:00:20.114805+00:00",
+      "response_cap_bytes": 1048576,
+      "consumed_body_bytes": 274,
+      "outcome": "failed",
+      "status": 429,
+      "resolved_url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&pageids=24115594&prop=imageinfo%7Crevisions&iiprop=url%7Csize%7Csha1%7Cmime%7Cmediatype%7Cextmetadata%7Ctimestamp%7Cuser&iilimit=1&rvprop=ids&rvlimit=1&iiextmetadatafilter=Artist%7CCredit%7CLicenseShortName%7CLicenseUrl%7CUsageTerms%7CAttributionRequired%7CCopyrighted%7CObjectName%7CImageDescription%7CRestrictions",
+      "headers": {
+        "Content-Length": "274",
+        "Content-Type": "text/plain"
+      },
+      "error": "ValueError: HTTP 429",
+      "finished_at_utc": "2026-11-04T15:00:20.688804+00:00",
+      "sha256_consumed_body": "cf8407ce652db3aeade68f3f7752843293856167f0b6eb71e5872995d1339293",
+      "body_path": "records/acquisitions/2026-11-04-backgrounds/24115594_metadata.json"
+    },
+    {
+      "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&pageids=24115590&prop=imageinfo%7Crevisions&iiprop=url%7Csize%7Csha1%7Cmime%7Cmediatype%7Cextmetadata%7Ctimestamp%7Cuser&iilimit=1&rvprop=ids&rvlimit=1&iiextmetadatafilter=Artist%7CCredit%7CLicenseShortName%7CLicenseUrl%7CUsageTerms%7CAttributionRequired%7CCopyrighted%7CObjectName%7CImageDescription%7CRestrictions",
+      "started_at_utc": "2026-11-04T15:00:20.690804+00:00",
+      "response_cap_bytes": 1048576,
+      "consumed_body_bytes": 274,
+      "outcome": "failed",
+      "status": 429,
+      "resolved_url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&pageids=24115590&prop=imageinfo%7Crevisions&iiprop=url%7Csize%7Csha1%7Cmime%7Cmediatype%7Cextmetadata%7Ctimestamp%7Cuser&iilimit=1&rvprop=ids&rvlimit=1&iiextmetadatafilter=Artist%7CCredit%7CLicenseShortName%7CLicenseUrl%7CUsageTerms%7CAttributionRequired%7CCopyrighted%7CObjectName%7CImageDescription%7CRestrictions",
+      "headers": {
+        "Content-Length": "274",
+        "Content-Type": "text/plain"
+      },
+      "error": "ValueError: HTTP 429",
+      "finished_at_utc": "2026-11-04T15:00:21.282804+00:00",
+      "sha256_consumed_body": "940427b1708694ceb5596263f9fc43ce2c15ac35edb6e1b91c2d3e2ff5c991cd",
+      "body_path": "records/acquisitions/2026-11-04-backgrounds/24115590_metadata.json"
+    },
+    {
+      "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&pageids=24115675&prop=imageinfo%7Crevisions&iiprop=url%7Csize%7Csha1%7Cmime%7Cmediatype%7Cextmetadata%7Ctimestamp%7Cuser&iilimit=1&rvprop=ids&rvlimit=1&iiextmetadatafilter=Artist%7CCredit%7CLicenseShortName%7CLicenseUrl%7CUsageTerms%7CAttributionRequired%7CCopyrighted%7CObjectName%7CImageDescription%7CRestrictions",
+      "started_at_utc": "2026-11-04T15:00:21.285803+00:00",
+      "response_cap_bytes": 1048576,
+      "consumed_body_bytes": 274,
+      "outcome": "failed",
+      "status": 429,
+      "resolved_url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&pageids=24115675&prop=imageinfo%7Crevisions&iiprop=url%7Csize%7Csha1%7Cmime%7Cmediatype%7Cextmetadata%7Ctimestamp%7Cuser&iilimit=1&rvprop=ids&rvlimit=1&iiextmetadatafilter=Artist%7CCredit%7CLicenseShortName%7CLicenseUrl%7CUsageTerms%7CAttributionRequired%7CCopyrighted%7CObjectName%7CImageDescription%7CRestrictions",
+      "headers": {
+        "Content-Length": "274",
+        "Content-Type": "text/plain"
+      },
+      "error": "ValueError: HTTP 429",
+      "finished_at_utc": "2026-11-04T15:00:21.876318+00:00",
+      "sha256_consumed_body": "2e9506191aadf9c2b1d53d7f8c08a66a3f90c266115cb5b9aa1d7a184ae9570d",
+      "body_path": "records/acquisitions/2026-11-04-backgrounds/24115675_metadata.json"
+    },
+    {
+      "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&pageids=24124442&prop=imageinfo%7Crevisions&iiprop=url%7Csize%7Csha1%7Cmime%7Cmediatype%7Cextmetadata%7Ctimestamp%7Cuser&iilimit=1&rvprop=ids&rvlimit=1&iiextmetadatafilter=Artist%7CCredit%7CLicenseShortName%7CLicenseUrl%7CUsageTerms%7CAttributionRequired%7CCopyrighted%7CObjectName%7CImageDescription%7CRestrictions",
+      "started_at_utc": "2026-11-04T15:00:21.879321+00:00",
+      "response_cap_bytes": 1048576,
+      "consumed_body_bytes": 274,
+      "outcome": "failed",
+      "status": 429,
+      "resolved_url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&pageids=24124442&prop=imageinfo%7Crevisions&iiprop=url%7Csize%7Csha1%7Cmime%7Cmediatype%7Cextmetadata%7Ctimestamp%7Cuser&iilimit=1&rvprop=ids&rvlimit=1&iiextmetadatafilter=Artist%7CCredit%7CLicenseShortName%7CLicenseUrl%7CUsageTerms%7CAttributionRequired%7CCopyrighted%7CObjectName%7CImageDescription%7CRestrictions",
+      "headers": {
+        "Content-Length": "274",
+        "Content-Type": "text/plain"
+      },
+      "error": "ValueError: HTTP 429",
+      "finished_at_utc": "2026-11-04T15:00:22.465423+00:00",
+      "sha256_consumed_body": "368355de32af949c349b2fca4307d26f9e3c3f997e84424296206bccfa57743f",
+      "body_path": "records/acquisitions/2026-11-04-backgrounds/24124442_metadata.json"
+    },
+    {
+      "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&pageids=24115579&prop=imageinfo%7Crevisions&iiprop=url%7Csize%7Csha1%7Cmime%7Cmediatype%7Cextmetadata%7Ctimestamp%7Cuser&iilimit=1&rvprop=ids&rvlimit=1&iiextmetadatafilter=Artist%7CCredit%7CLicenseShortName%7CLicenseUrl%7CUsageTerms%7CAttributionRequired%7CCopyrighted%7CObjectName%7CImageDescription%7CRestrictions",
+      "started_at_utc": "2026-11-04T15:00:22.468424+00:00",
+      "response_cap_bytes": 1048576,
+      "consumed_body_bytes": 274,
+      "outcome": "failed",
+      "status": 429,
+      "resolved_url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&pageids=24115579&prop=imageinfo%7Crevisions&iiprop=url%7Csize%7Csha1%7Cmime%7Cmediatype%7Cextmetadata%7Ctimestamp%7Cuser&iilimit=1&rvprop=ids&rvlimit=1&iiextmetadatafilter=Artist%7CCredit%7CLicenseShortName%7CLicenseUrl%7CUsageTerms%7CAttributionRequired%7CCopyrighted%7CObjectName%7CImageDescription%7CRestrictions",
+      "headers": {
+        "Content-Length": "274",
+        "Content-Type": "text/plain"
+      },
+      "error": "ValueError: HTTP 429",
+      "finished_at_utc": "2026-11-04T15:00:23.056425+00:00",
+      "sha256_consumed_body": "db8fa89cc4787ec312b78ebce78ab5f63ee35d94e31c77ba93a582a7062aea0c",
+      "body_path": "records/acquisitions/2026-11-04-backgrounds/24115579_metadata.json"
+    },
+    {
+      "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&pageids=190236304&prop=imageinfo%7Crevisions&iiprop=url%7Csize%7Csha1%7Cmime%7Cmediatype%7Cextmetadata%7Ctimestamp%7Cuser&iilimit=1&rvprop=ids&rvlimit=1&iiextmetadatafilter=Artist%7CCredit%7CLicenseShortName%7CLicenseUrl%7CUsageTerms%7CAttributionRequired%7CCopyrighted%7CObjectName%7CImageDescription%7CRestrictions",
+      "started_at_utc": "2026-11-04T15:00:23.058426+00:00",
+      "response_cap_bytes": 1048576,
+      "consumed_body_bytes": 274,
+      "outcome": "failed",
+      "status": 429,
+      "resolved_url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&pageids=190236304&prop=imageinfo%7Crevisions&iiprop=url%7Csize%7Csha1%7Cmime%7Cmediatype%7Cextmetadata%7Ctimestamp%7Cuser&iilimit=1&rvprop=ids&rvlimit=1&iiextmetadatafilter=Artist%7CCredit%7CLicenseShortName%7CLicenseUrl%7CUsageTerms%7CAttributionRequired%7CCopyrighted%7CObjectName%7CImageDescription%7CRestrictions",
+      "headers": {
+        "Content-Length": "274",
+        "Content-Type": "text/plain"
+      },
+      "error": "ValueError: HTTP 429",
+      "finished_at_utc": "2026-11-04T15:00:23.642430+00:00",
+      "sha256_consumed_body": "0eefa7ef9dc8140dc950a7d10956d8046ec25a104373bb31253f9442c87386dc",
+      "body_path": "records/acquisitions/2026-11-04-backgrounds/190236304_metadata.json"
+    },
+    {
+      "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&pageids=190236306&prop=imageinfo%7Crevisions&iiprop=url%7Csize%7Csha1%7Cmime%7Cmediatype%7Cextmetadata%7Ctimestamp%7Cuser&iilimit=1&rvprop=ids&rvlimit=1&iiextmetadatafilter=Artist%7CCredit%7CLicenseShortName%7CLicenseUrl%7CUsageTerms%7CAttributionRequired%7CCopyrighted%7CObjectName%7CImageDescription%7CRestrictions",
+      "started_at_utc": "2026-11-04T15:00:23.644426+00:00",
+      "response_cap_bytes": 1048576,
+      "consumed_body_bytes": 274,
+      "outcome": "failed",
+      "status": 429,
+      "resolved_url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&pageids=190236306&prop=imageinfo%7Crevisions&iiprop=url%7Csize%7Csha1%7Cmime%7Cmediatype%7Cextmetadata%7Ctimestamp%7Cuser&iilimit=1&rvprop=ids&rvlimit=1&iiextmetadatafilter=Artist%7CCredit%7CLicenseShortName%7CLicenseUrl%7CUsageTerms%7CAttributionRequired%7CCopyrighted%7CObjectName%7CImageDescription%7CRestrictions",
+      "headers": {
+        "Content-Length": "274",
+        "Content-Type": "text/plain"
+      },
+      "error": "ValueError: HTTP 429",
+      "finished_at_utc": "2026-11-04T15:00:24.473425+00:00",
+      "sha256_consumed_body": "36709ee14dbda8ffaa26a53e836248cb465291ecd16b693efea6b839073f3c7f",
+      "body_path": "records/acquisitions/2026-11-04-backgrounds/190236306_metadata.json"
+    },
+    {
+      "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&pageids=190236303&prop=imageinfo%7Crevisions&iiprop=url%7Csize%7Csha1%7Cmime%7Cmediatype%7Cextmetadata%7Ctimestamp%7Cuser&iilimit=1&rvprop=ids&rvlimit=1&iiextmetadatafilter=Artist%7CCredit%7CLicenseShortName%7CLicenseUrl%7CUsageTerms%7CAttributionRequired%7CCopyrighted%7CObjectName%7CImageDescription%7CRestrictions",
+      "started_at_utc": "2026-11-04T15:00:24.475427+00:00",
+      "response_cap_bytes": 1048576,
+      "consumed_body_bytes": 274,
+      "outcome": "failed",
+      "status": 429,
+      "resolved_url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&pageids=190236303&prop=imageinfo%7Crevisions&iiprop=url%7Csize%7Csha1%7Cmime%7Cmediatype%7Cextmetadata%7Ctimestamp%7Cuser&iilimit=1&rvprop=ids&rvlimit=1&iiextmetadatafilter=Artist%7CCredit%7CLicenseShortName%7CLicenseUrl%7CUsageTerms%7CAttributionRequired%7CCopyrighted%7CObjectName%7CImageDescription%7CRestrictions",
+      "headers": {
+        "Content-Length": "274",
+        "Content-Type": "text/plain"
+      },
+      "error": "ValueError: HTTP 429",
+      "finished_at_utc": "2026-11-04T15:00:25.063428+00:00",
+      "sha256_consumed_body": "745f6dc91c51eb5f82a4f4fe5dd5881b147b95fd7a442ed9e778ad224ce43536",
+      "body_path": "records/acquisitions/2026-11-04-backgrounds/190236303_metadata.json"
+    }
+  ]
+}

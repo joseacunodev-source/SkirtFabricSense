@@ -1,0 +1,263 @@
+{
+  "inputs": [
+    {
+      "path": "data/labels/skirt-review-batch-a.jsonl",
+      "sha256": "a0433464a0a8b44f83ed15ec45aa95424fd8beb58f22c2d4d254ec2168df21af"
+    },
+    {
+      "path": "data/labels/skirt-review-batch-b.jsonl",
+      "sha256": "fbf024c588b6d5ef6921bebc65d8a143c6c1893cfe248bd156d3a230bd2a591a"
+    },
+    {
+      "path": "data/labels/skirt-review-batch-c.jsonl",
+      "sha256": "60772258ef916055d0e73601ebb03d02d5e9d6b788b552b03e6bf3696cc86264"
+    }
+  ],
+  "output": {
+    "path": "data/labels/skirt-visual-reviews-v2.jsonl",
+    "sha256": "8608cdd71c471f8f505c11745378cdea0f3f62d1eb55d962701a3fbb25f973fc"
+  },
+  "reviewed": 1000,
+  "appearance_counts": {
+    "unknown": 357,
+    "non_pleated": 533,
+    "pleated": 110
+  },
+  "full_view_candidate_count": 375,
+  "conflicts_quarantined": 8,
+  "conflicts": [
+    {
+      "sample_id": "fashionpedia-train2020-10323",
+      "prior": {
+        "sample_id": "fashionpedia-train2020-10323",
+        "image_sha256": "a1a01688da8f419f940bcc5bd81b026283ae2deb2c2c203f88c68a2b97849c0f",
+        "review_date": "2026-10-03",
+        "reviewer": "Codex label_preparation agent",
+        "review_method": "visual inspection of original-resolution annotated ROI plus 10 percent context rendered on contact sheet; no AI classifier used",
+        "review_artifact": "records/review/label-sheet-4.jpg",
+        "appearance_label": "non_pleated",
+        "full_skirt_view": true,
+        "evidence": "Smooth wrap panel with diagonal seam and no repeated folds.",
+        "exclude_auxiliary": false,
+        "independent_human_review": false,
+        "physical_length": null,
+        "fiber_composition": null
+      },
+      "current": {
+        "sample_id": "fashionpedia-train2020-10323",
+        "image_sha256": "a1a01688da8f419f940bcc5bd81b026283ae2deb2c2c203f88c68a2b97849c0f",
+        "appearance_label": "unknown",
+        "full_skirt_view": false,
+        "evidence": "Black draped garment category and waistband unclear",
+        "exclude_auxiliary": true,
+        "review_artifact": "records/review/batch-a/page-01.jpg",
+        "reviewer": "codex_visual_agent_a",
+        "independent_human_review": false
+      }
+    },
+    {
+      "sample_id": "fashionpedia-train2020-10641",
+      "prior": {
+        "sample_id": "fashionpedia-train2020-10641",
+        "image_sha256": "5f71ef7edc90eebfc5a2e68db6a312cc1413405e72594524ed72f2f9a12dcb7c",
+        "review_date": "2026-10-03",
+        "reviewer": "Codex label_preparation agent",
+        "review_method": "visual inspection of original-resolution annotated ROI plus 10 percent context rendered on contact sheet; no AI classifier used",
+        "review_artifact": "records/review/label-sheet-6.jpg",
+        "appearance_label": "unknown",
+        "full_skirt_view": false,
+        "evidence": "Dark flared drape and top occlusion; construction unclear.",
+        "exclude_auxiliary": true,
+        "independent_human_review": false,
+        "physical_length": null,
+        "fiber_composition": null
+      },
+      "current": {
+        "sample_id": "fashionpedia-train2020-10641",
+        "image_sha256": "5f71ef7edc90eebfc5a2e68db6a312cc1413405e72594524ed72f2f9a12dcb7c",
+        "appearance_label": "non_pleated",
+        "full_skirt_view": true,
+        "evidence": "Smooth flared black mini with complete silhouette",
+        "exclude_auxiliary": false,
+        "review_artifact": "records/review/batch-a/page-02.jpg",
+        "reviewer": "codex_visual_agent_a",
+        "independent_human_review": false
+      }
+    },
+    {
+      "sample_id": "fashionpedia-train2020-10739",
+      "prior": {
+        "sample_id": "fashionpedia-train2020-10739",
+        "image_sha256": "4ab8351f5b0269707a940bbcfb9237a1e36a5d293e8778e016a50e7056fc3103",
+        "review_date": "2026-10-03",
+        "reviewer": "Codex label_preparation agent",
+        "review_method": "visual inspection of original-resolution annotated ROI plus 10 percent context rendered on contact sheet; no AI classifier used",
+        "review_artifact": "records/review/label-sheet-6.jpg",
+        "appearance_label": "non_pleated",
+        "full_skirt_view": true,
+        "evidence": "Long smooth grey skirt with front zipper and natural drape.",
+        "exclude_auxiliary": false,
+        "independent_human_review": false,
+        "physical_length": null,
+        "fiber_composition": null
+      },
+      "current": {
+        "sample_id": "fashionpedia-train2020-10739",
+        "image_sha256": "4ab8351f5b0269707a940bbcfb9237a1e36a5d293e8778e016a50e7056fc3103",
+        "appearance_label": "non_pleated",
+        "full_skirt_view": false,
+        "evidence": "Smooth grey maxi top covers waistband",
+        "exclude_auxiliary": true,
+        "review_artifact": "records/review/batch-a/page-03.jpg",
+        "reviewer": "codex_visual_agent_a",
+        "independent_human_review": false
+      }
+    },
+    {
+      "sample_id": "fashionpedia-train2020-10751",
+      "prior": {
+        "sample_id": "fashionpedia-train2020-10751",
+        "image_sha256": "a24592029641476ec55c263fc58a4060ff947a5e190b9d5b016f6d9d897345ef",
+        "review_date": "2026-10-03",
+        "reviewer": "Codex label_preparation agent",
+        "review_method": "visual inspection of original-resolution annotated ROI plus 10 percent context rendered on contact sheet; no AI classifier used",
+        "review_artifact": "records/review/label-sheet-6.jpg",
+        "appearance_label": "non_pleated",
+        "full_skirt_view": true,
+        "evidence": "Fitted plaid skirt without repeated folds; belt waist and hem visible.",
+        "exclude_auxiliary": false,
+        "independent_human_review": false,
+        "physical_length": null,
+        "fiber_composition": null
+      },
+      "current": {
+        "sample_id": "fashionpedia-train2020-10751",
+        "image_sha256": "a24592029641476ec55c263fc58a4060ff947a5e190b9d5b016f6d9d897345ef",
+        "appearance_label": "non_pleated",
+        "full_skirt_view": false,
+        "evidence": "Smooth checked mini waist covered by jacket",
+        "exclude_auxiliary": true,
+        "review_artifact": "records/review/batch-a/page-03.jpg",
+        "reviewer": "codex_visual_agent_a",
+        "independent_human_review": false
+      }
+    },
+    {
+      "sample_id": "fashionpedia-train2020-1326",
+      "prior": {
+        "sample_id": "fashionpedia-train2020-1326",
+        "image_sha256": "5dc14ca416a87215fbb34bc08d58c4e02995ef3c6005c99c008c6049d17ad977",
+        "review_date": "2026-10-03",
+        "reviewer": "Codex label_preparation agent",
+        "review_method": "visual inspection of original-resolution annotated ROI plus 10 percent context rendered on contact sheet; no AI classifier used",
+        "review_artifact": "records/review/label-sheet-2.jpg",
+        "appearance_label": "pleated",
+        "full_skirt_view": false,
+        "evidence": "Regular vertical accordion folds; shirt hides part of waistband.",
+        "exclude_auxiliary": true,
+        "independent_human_review": false,
+        "physical_length": null,
+        "fiber_composition": null
+      },
+      "current": {
+        "sample_id": "fashionpedia-train2020-1326",
+        "image_sha256": "5dc14ca416a87215fbb34bc08d58c4e02995ef3c6005c99c008c6049d17ad977",
+        "appearance_label": "unknown",
+        "full_skirt_view": true,
+        "evidence": "Striped flared skirt folds hard to distinguish from gathers",
+        "exclude_auxiliary": true,
+        "review_artifact": "records/review/batch-a/page-06.jpg",
+        "reviewer": "codex_visual_agent_a",
+        "independent_human_review": false
+      }
+    },
+    {
+      "sample_id": "fashionpedia-train2020-14847",
+      "prior": {
+        "sample_id": "fashionpedia-train2020-14847",
+        "image_sha256": "5a2b955e43b4c5647a3d6df3db6d1d99c2234f70757e4dd41c383654f5b069b1",
+        "review_date": "2026-10-03",
+        "reviewer": "Codex label_preparation agent",
+        "review_method": "visual inspection of original-resolution annotated ROI plus 10 percent context rendered on contact sheet; no AI classifier used",
+        "review_artifact": "records/review/label-sheet-2.jpg",
+        "appearance_label": "unknown",
+        "full_skirt_view": false,
+        "evidence": "Bent pose and dark horizontal folds; waistband partially hidden.",
+        "exclude_auxiliary": true,
+        "independent_human_review": false,
+        "physical_length": null,
+        "fiber_composition": null
+      },
+      "current": {
+        "sample_id": "fashionpedia-train2020-14847",
+        "image_sha256": "5a2b955e43b4c5647a3d6df3db6d1d99c2234f70757e4dd41c383654f5b069b1",
+        "appearance_label": "non_pleated",
+        "full_skirt_view": true,
+        "evidence": "Black ruched fitted mini horizontal wrinkles",
+        "exclude_auxiliary": false,
+        "review_artifact": "records/review/batch-a/page-09.jpg",
+        "reviewer": "codex_visual_agent_a",
+        "independent_human_review": false
+      }
+    },
+    {
+      "sample_id": "fashionpedia-train2020-14929",
+      "prior": {
+        "sample_id": "fashionpedia-train2020-14929",
+        "image_sha256": "678cf75a88b7e65442c40a26d17e869746153d081d23140893215ff800db7149",
+        "review_date": "2026-10-03",
+        "reviewer": "Codex label_preparation agent",
+        "review_method": "visual inspection of original-resolution annotated ROI plus 10 percent context rendered on contact sheet; no AI classifier used",
+        "review_artifact": "records/review/label-sheet-2.jpg",
+        "appearance_label": "pleated",
+        "full_skirt_view": true,
+        "evidence": "Two symmetrical broad folded panels below visible waistband; hem visible.",
+        "exclude_auxiliary": false,
+        "independent_human_review": false,
+        "physical_length": null,
+        "fiber_composition": null
+      },
+      "current": {
+        "sample_id": "fashionpedia-train2020-14929",
+        "image_sha256": "678cf75a88b7e65442c40a26d17e869746153d081d23140893215ff800db7149",
+        "appearance_label": "non_pleated",
+        "full_skirt_view": true,
+        "evidence": "Smooth grey straight mini with visible waistband",
+        "exclude_auxiliary": false,
+        "review_artifact": "records/review/batch-a/page-10.jpg",
+        "reviewer": "codex_visual_agent_a",
+        "independent_human_review": false
+      }
+    },
+    {
+      "sample_id": "fashionpedia-train2020-14994",
+      "prior": {
+        "sample_id": "fashionpedia-train2020-14994",
+        "image_sha256": "bd1e10645b2bf924662f4e145fae212f3542ed0679e05de09845d790b4665f90",
+        "review_date": "2026-10-03",
+        "reviewer": "Codex label_preparation agent",
+        "review_method": "visual inspection of original-resolution annotated ROI plus 10 percent context rendered on contact sheet; no AI classifier used",
+        "review_artifact": "records/review/label-sheet-2.jpg",
+        "appearance_label": "unknown",
+        "full_skirt_view": false,
+        "evidence": "Hands obscure waist and central garment structure.",
+        "exclude_auxiliary": true,
+        "independent_human_review": false,
+        "physical_length": null,
+        "fiber_composition": null
+      },
+      "current": {
+        "sample_id": "fashionpedia-train2020-14994",
+        "image_sha256": "bd1e10645b2bf924662f4e145fae212f3542ed0679e05de09845d790b4665f90",
+        "appearance_label": "unknown",
+        "full_skirt_view": true,
+        "evidence": "Dark short garment may be shorts; seam unresolved",
+        "exclude_auxiliary": true,
+        "review_artifact": "records/review/batch-a/page-10.jpg",
+        "reviewer": "codex_visual_agent_a",
+        "independent_human_review": false
+      }
+    }
+  ],
+  "limits": "Agent visual review only; no independently verified garments, composition or physical length"
+}

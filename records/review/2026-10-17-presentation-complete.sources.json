@@ -1,0 +1,28 @@
+{
+  "inputs": [
+    {
+      "path": "records/review/2026-10-16-worn-readiness-observations.jsonl",
+      "sha256": "e9716680b4d926636b0f4659cd81bc6c281b03e011892ef324ff80b4d4f7ab21"
+    },
+    {
+      "path": "records/review/2026-10-17-presentation-full/batch-1-observations.jsonl",
+      "sha256": "43a9518bdeb9b389b8ed03d72103e366e02354454c5944abf8254a6325861ff0"
+    },
+    {
+      "path": "records/review/2026-10-17-presentation-full/batch-2-observations.jsonl",
+      "sha256": "d9a6a5658f4a8255a6f488bf28ed5b792ed3beb9c8c57d4731c899de53096357"
+    },
+    {
+      "path": "records/review/2026-10-17-presentation-full/batch-3-observations.jsonl",
+      "sha256": "a84ffb7455a609a5411364157f12005227c67b1ba6414fd820f894524ac45429"
+    },
+    {
+      "path": "records/review/2026-10-17-presentation-full/ambiguous-original-review.jsonl",
+      "sha256": "572ef4363cd78ea257fe543d70874bd504820e13579c8fd6b0c416cd4a525647"
+    }
+  ],
+  "tool_sha256": "41911fdeb7563a3cc55eb49090384afdb996aa26660fda8eb0cbb9f20b8948de",
+  "output_sha256": "9114d08343d96c994444788d1ff4deb574c27f6b22faadef360db7bff2836bf9",
+  "observations": 372,
+  "scope": "Supplemental agent presentation observations; no frozen labels or splits changed"
+}

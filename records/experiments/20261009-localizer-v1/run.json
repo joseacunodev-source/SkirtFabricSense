@@ -1,0 +1,49 @@
+{
+  "status": "completed",
+  "started_at": "2026-10-09T14:29:17.198293+00:00",
+  "source_sha256": "02686fe46e479b15181ecb612390117ff932ff4dc30d6e666f7e92213085e1ab",
+  "limitations": [
+    "Development images all contain skirts; no image-level negative validation",
+    "Physical garment grouping and agent appearance confirmation unresolved",
+    "No camera, body landmarks, length, fabric or Pi verification",
+    "Localization candidate, not deployment-approved"
+  ],
+  "manifest_sha256": "9160998b5ab0f65251c53cefd783e1c6351887bec8c655074be64dd2717dc2eb",
+  "split_sha256": "df3b096e4d131db55852b20de075d811c95520d23766648928555d755fe8812c",
+  "annotations_sha256": "f6af94fb8712bd8170a49c857e842e1227e6806c4f33f32340db0c849133e006",
+  "architecture": "Frozen ImageNet MobileNetV2 block13 feature14 + Conv32 3x3 + bilinear4x + Conv1 sigmoid56",
+  "seed": 42,
+  "epochs": 10,
+  "batch_size": 8,
+  "optimizer": "Adam",
+  "learning_rate": 0.001,
+  "loss": "BCE with positive pixels weight5; negative weight1",
+  "preprocessing": "RGB full source resized bilinear224; source all-skirt polygon masks nearest56; model normalization inside",
+  "gpu": [
+    "PhysicalDevice(name='/physical_device:GPU:0', device_type='GPU')"
+  ],
+  "train_images": 292,
+  "validation_images": 80,
+  "selection": "minimum validation weighted BCE",
+  "threshold": 0.5,
+  "versions": {
+    "tensorflow": "2.20.0",
+    "numpy": "2.5.3"
+  },
+  "initial_weights_provenance": "records/acquisitions/2026-10-04-mobilenetv2-weights.json",
+  "selected_epoch": 10,
+  "metrics": {
+    "mean_mask_iou": 0.6601152133026801,
+    "median_mask_iou": 0.6963398692810457,
+    "mask_iou_at_least_point5": 0.825
+  },
+  "export": {
+    "sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2",
+    "bytes": 3048752,
+    "maximum_absolute_error": 1.0907649993896484e-05,
+    "tolerance": 0.001,
+    "pi_verified": false
+  },
+  "duration_seconds": 88.61170934499998,
+  "finished_at": "2026-10-09T14:31:28.491631+00:00"
+}

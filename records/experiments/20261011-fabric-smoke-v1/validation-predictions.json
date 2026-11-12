@@ -1,0 +1,57 @@
+[
+  {
+    "sample_id": "deepfashion-multimodal-WOMEN-Skirts-id_00000003-02_1_front",
+    "label": "source_cotton_appearance",
+    "prediction": "source_cotton_appearance",
+    "scores": [
+      0.41905727982521057,
+      0.180770143866539,
+      0.08368755131959915,
+      0.31648513674736023
+    ]
+  },
+  {
+    "sample_id": "deepfashion-multimodal-WOMEN-Skirts-id_00000334-02_1_front",
+    "label": "source_cotton_appearance",
+    "prediction": "source_cotton_appearance",
+    "scores": [
+      0.559070885181427,
+      0.2945319712162018,
+      0.06035377457737923,
+      0.08604342490434647
+    ]
+  },
+  {
+    "sample_id": "deepfashion-multimodal-WOMEN-Skirts-id_00002711-01_1_front",
+    "label": "source_leather_appearance",
+    "prediction": "source_leather_appearance",
+    "scores": [
+      0.21834613382816315,
+      0.10131748020648956,
+      0.44578105211257935,
+      0.23455531895160675
+    ]
+  },
+  {
+    "sample_id": "deepfashion-multimodal-WOMEN-Skirts-id_00004182-01_1_front",
+    "label": "source_chiffon_appearance",
+    "prediction": "source_cotton_appearance",
+    "scores": [
+      0.4957585334777832,
+      0.4578282833099365,
+      0.032652366906404495,
+      0.013760864734649658
+    ]
+  },
+  {
+    "sample_id": "deepfashion-multimodal-WOMEN-Skirts-id_00004513-04_1_front",
+    "label": "source_denim_appearance",
+    "prediction": "source_denim_appearance",
+    "scores": [
+      0.02397303283214569,
+      0.9180269241333008,
+      0.04163011908531189,
+      0.016369890421628952
+    ]
+  }
+]

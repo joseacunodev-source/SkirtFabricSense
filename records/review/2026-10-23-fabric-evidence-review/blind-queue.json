@@ -1,0 +1,179 @@
+{
+  "schema_version": 1,
+  "purpose": "blind_appearance_evidence_only",
+  "reviewer_identity": "self_reported_not_authenticated",
+  "label_ontology_finalized": false,
+  "training_approved": false,
+  "records": [
+    {
+      "review_id": "fabric-4f934795dc18b407ac0d6603",
+      "image": {
+        "path": "data/external/deepfashion_multimodal_candidates/WOMEN-Skirts-id_00000003-02_1_front.jpg",
+        "sha256": "69c8cdc9a4591ccf675ada6261c5450f2edf76f96eecb6941b4cbd7c4d89b7b6",
+        "size_bytes": 156507,
+        "width": 750,
+        "height": 1101
+      }
+    },
+    {
+      "review_id": "fabric-b3d7f3c22fa961adf9c03bf7",
+      "image": {
+        "path": "data/external/deepfashion_multimodal_candidates/WOMEN-Skirts-id_00000111-02_1_front.jpg",
+        "sha256": "c842f7070b3225f8e4b25454c1e0915f01658340104502ae6b6c2447d110ead5",
+        "size_bytes": 215814,
+        "width": 750,
+        "height": 1101
+      }
+    },
+    {
+      "review_id": "fabric-55612b0a6d9564449af9ab93",
+      "image": {
+        "path": "data/external/deepfashion_multimodal_candidates/WOMEN-Skirts-id_00000200-02_1_front.jpg",
+        "sha256": "6856b4d4215b55c33000f0724720d728cdd5e71b903a9a9ec0302c6df5bf1ab8",
+        "size_bytes": 127879,
+        "width": 750,
+        "height": 1101
+      }
+    },
+    {
+      "review_id": "fabric-00167d20204f7e64bef27ff0",
+      "image": {
+        "path": "data/external/deepfashion_multimodal_candidates/WOMEN-Skirts-id_00000334-02_1_front.jpg",
+        "sha256": "4d5a0e59aae29c618fe7176f0547cd5fb89d6169a36436255acdc1aeb697d1f1",
+        "size_bytes": 121173,
+        "width": 750,
+        "height": 1101
+      }
+    },
+    {
+      "review_id": "fabric-47b4a315ed585930cfe9979b",
+      "image": {
+        "path": "data/external/deepfashion_multimodal_candidates/WOMEN-Skirts-id_00000467-02_1_front.jpg",
+        "sha256": "4dd15a30579eda62c201f4beea5e3ecedea344c461041ef053c35d2c3ad66335",
+        "size_bytes": 89297,
+        "width": 750,
+        "height": 1101
+      }
+    },
+    {
+      "review_id": "fabric-94e10da0359569cf470e8e4e",
+      "image": {
+        "path": "data/external/deepfashion_multimodal_candidates/WOMEN-Skirts-id_00000545-02_1_front.jpg",
+        "sha256": "97522e2cc852c34dc609911913025ec55c20eec1d4049522529ff19c12bc3c41",
+        "size_bytes": 96408,
+        "width": 750,
+        "height": 1101
+      }
+    },
+    {
+      "review_id": "fabric-683403634ac0c6415e13bf10",
+      "image": {
+        "path": "data/external/deepfashion_multimodal_candidates/WOMEN-Skirts-id_00000644-03_1_front.jpg",
+        "sha256": "0e9aeaf460e727f2ca5578b14edbec462a51b87dbee18629a20fb5038c0584de",
+        "size_bytes": 212034,
+        "width": 750,
+        "height": 1101
+      }
+    },
+    {
+      "review_id": "fabric-8596892158e0e943de9e07f7",
+      "image": {
+        "path": "data/external/deepfashion_multimodal_candidates/WOMEN-Skirts-id_00000670-01_1_front.jpg",
+        "sha256": "8d46c466e4d36d48cfac848f7540fba6da3806dcc81e0f8ea1aa7cd9ebeaa75c",
+        "size_bytes": 257045,
+        "width": 750,
+        "height": 1101
+      }
+    },
+    {
+      "review_id": "fabric-2bc9f6318bdca941a5910f22",
+      "image": {
+        "path": "data/external/deepfashion_multimodal_candidates/WOMEN-Skirts-id_00000699-03_1_front.jpg",
+        "sha256": "68808c948951ea14ef088ee79661a00bb6e588b7bf09cc916d971aa4ae7a40a7",
+        "size_bytes": 181543,
+        "width": 750,
+        "height": 1101
+      }
+    },
+    {
+      "review_id": "fabric-2b6b3a5995088082260171d4",
+      "image": {
+        "path": "data/external/deepfashion_multimodal_candidates/WOMEN-Skirts-id_00002711-01_1_front.jpg",
+        "sha256": "7c74cd2a0911c4f4270b379a01065ecbaf36761a18188b520249945925fe1707",
+        "size_bytes": 111437,
+        "width": 750,
+        "height": 1101
+      }
+    },
+    {
+      "review_id": "fabric-1dc0dc9e495ecb53d9b5e44b",
+      "image": {
+        "path": "data/external/deepfashion_multimodal_candidates/WOMEN-Skirts-id_00004182-01_1_front.jpg",
+        "sha256": "19e680997f7812bff4cf830c5f227d8ea8ff60741af49eae65b1db44d1d515ed",
+        "size_bytes": 139745,
+        "width": 750,
+        "height": 1101
+      }
+    },
+    {
+      "review_id": "fabric-141ac5fcd2fce40d7ff0e615",
+      "image": {
+        "path": "data/external/deepfashion_multimodal_candidates/WOMEN-Skirts-id_00004335-02_1_front.jpg",
+        "sha256": "2e5839b42c65bf3b6011071976ecc7637cff7781ef2cecf05c8a20ed56d150e3",
+        "size_bytes": 109972,
+        "width": 750,
+        "height": 1101
+      }
+    },
+    {
+      "review_id": "fabric-0abee38e5612e7651503abf2",
+      "image": {
+        "path": "data/external/deepfashion_multimodal_candidates/WOMEN-Skirts-id_00004513-04_1_front.jpg",
+        "sha256": "ed8eae0b10a13d53fd77e0f3d9d241200115e8592e57d8c40ba3ae204511c16f",
+        "size_bytes": 200169,
+        "width": 750,
+        "height": 1101
+      }
+    },
+    {
+      "review_id": "fabric-fe5876313951fa4e48571001",
+      "image": {
+        "path": "data/external/deepfashion_multimodal_candidates/WOMEN-Skirts-id_00005519-03_1_front.jpg",
+        "sha256": "50e671a7b0ea24b767f785887b3c81280191b4e75f3c8545cef889c7656117b6",
+        "size_bytes": 119503,
+        "width": 750,
+        "height": 1101
+      }
+    },
+    {
+      "review_id": "fabric-a35f80fdb9095fbe00521603",
+      "image": {
+        "path": "data/external/deepfashion_multimodal_candidates/WOMEN-Skirts-id_00005894-03_1_front.jpg",
+        "sha256": "ff80637be92ab0973ee025a5a42e6b4abaa6ab7b78d099513c118afdb71924eb",
+        "size_bytes": 183197,
+        "width": 750,
+        "height": 1101
+      }
+    },
+    {
+      "review_id": "fabric-7276bbd7be93fa4a541f8ff3",
+      "image": {
+        "path": "data/external/deepfashion_multimodal_candidates/WOMEN-Skirts-id_00006184-01_1_front.jpg",
+        "sha256": "65632e2fa9ada9069fe829673ea0ed05257305dd0cf9c83ffd42cbe2453b2ff9",
+        "size_bytes": 143311,
+        "width": 750,
+        "height": 1101
+      }
+    },
+    {
+      "review_id": "fabric-5e39c51624cb7b723d1084c0",
+      "image": {
+        "path": "data/external/deepfashion_multimodal_candidates/WOMEN-Skirts-id_00007127-02_1_front.jpg",
+        "sha256": "cb54c45699261baab89c17ce9bcef91c2b91e8c815d6987ac89ccf93c526b698",
+        "size_bytes": 154677,
+        "width": 750,
+        "height": 1101
+      }
+    }
+  ]
+}

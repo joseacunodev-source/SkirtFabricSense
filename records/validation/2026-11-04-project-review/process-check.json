@@ -1,0 +1,17 @@
+{
+  "date": "2026-11-04",
+  "command": [
+    "wsl",
+    "-d",
+    "Ubuntu-24.04",
+    "-u",
+    "skirttrain",
+    "--exec",
+    "/usr/bin/pgrep",
+    "-af",
+    "[t]rain_.*.py|[a]pp.server.*8766|[s]tation_package.py launch"
+  ],
+  "exit_code": 1,
+  "stdout": "",
+  "stderr": ""
+}

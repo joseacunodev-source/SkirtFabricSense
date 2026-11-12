@@ -1,0 +1,111 @@
+{
+  "recorded_at": "2026-10-22T13:06:56.748628+08:00",
+  "status": "passed_focused_root_review",
+  "source": {
+    "path": "records/validation/2026-10-22-camera-source-check.py",
+    "sha256": "b34e43b08d540340c34fc18b0c484253a427ad507bd36f9bd25b6bb8710f8994"
+  },
+  "commands": [
+    {
+      "command": [
+        "C:\\Users\\Administrator\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-B",
+        "-m",
+        "unittest",
+        "tests.test_textilenet_metadata",
+        "-v"
+      ],
+      "returncode": 0,
+      "output": {
+        "path": "records/validation/2026-10-22-camera-source-check-0.log",
+        "sha256": "772d7762a643e93ea8d56a6f4014404d3b9f770839dd431e69db5e53c1e6273e"
+      }
+    },
+    {
+      "command": [
+        "C:/Program Files/nodejs/node.exe",
+        "tests/camera_ui_lifecycle.cjs",
+        "artifacts/stations/skirt-research-station-v3/application/app/static/index.html"
+      ],
+      "returncode": 0,
+      "output": {
+        "path": "records/validation/2026-10-22-camera-source-check-1.log",
+        "sha256": "3265889d71767a9dabc70f2d2b2b08473cf6487f6e9dda29a0942ff696dae6ae"
+      }
+    }
+  ],
+  "metadata_tests_passed": 7,
+  "packaged_camera_mock_scenarios_passed": 17,
+  "prior_console_observed_checks": [
+    {
+      "command": "python -B -m unittest tests.test_station_package tests.test_release_builder tests.test_release_verifier -v",
+      "tests_run": 30,
+      "passed": 30,
+      "evidence_scope": "Root-observed console result earlier in this batch; no raw log retained"
+    },
+    {
+      "command": "node tests/camera_ui_lifecycle.cjs before the camera fix",
+      "outcome": "Expected regression failure: Camera on instead of Camera interrupted"
+    },
+    {
+      "command": "python -B -m unittest tests.test_station_package tests.test_release -v",
+      "outcome": "10 station tests passed, one import error because tests.test_release does not exist; corrected command above passed30 tests"
+    }
+  ],
+  "textilenet_report": {
+    "path": "records/review/2026-10-22-textilenet-gate-agent.json",
+    "sha256": "d844e6adff0907f6ba9cedf19bb67f23da3b3d2c1c9a2a0bb115fb8cc8a64d35"
+  },
+  "cached_metadata_recomputed": true,
+  "embedded_primary_response_hashes_verified": 3,
+  "pinned_git_blob_verified": "1912c29bed175c7360b74a7c58eba588c77aee7f",
+  "new_images": 0,
+  "training_admissions": 0,
+  "stations": {
+    "v1": {
+      "directory": "artifacts/stations/skirt-research-station-v1",
+      "inventory": {
+        "path": "artifacts/stations/skirt-research-station-v1/station-inventory.json",
+        "sha256": "7e1e8fea3bfbd8d15614b1f457768d8cecb6bec059658079b0f20374e50ab0a4"
+      },
+      "payload_files": 28
+    },
+    "v2": {
+      "directory": "artifacts/stations/skirt-research-station-v2",
+      "inventory": {
+        "path": "artifacts/stations/skirt-research-station-v2/station-inventory.json",
+        "sha256": "19444a4ea1622a26822d795bfccb61c558a27383df3741ed84bbeea1544b38f4"
+      },
+      "payload_files": 28
+    },
+    "v3": {
+      "directory": "artifacts/stations/skirt-research-station-v3",
+      "inventory": {
+        "path": "artifacts/stations/skirt-research-station-v3/station-inventory.json",
+        "sha256": "ec865f2c45a635f7e3abb9fe8bd17dbf0c5b389d47ae110182cf37bee90390f8"
+      },
+      "payload_files": 28
+    }
+  },
+  "workspace_and_packaged_ui_identical": true,
+  "http": {
+    "path": "records/validation/2026-10-22-station-v3-http.json",
+    "sha256": "19e4f8266802cc39841fbaf4532d881527427b0ac1ff85435ca2bfb4c5feab79"
+  },
+  "process_observations": [
+    {
+      "pattern": "[t]rain_category_presence.py",
+      "returncode": 1,
+      "matching_processes": 0
+    },
+    {
+      "pattern": "[a]pp.server.*1882[0-5]",
+      "returncode": 1,
+      "matching_processes": 0
+    }
+  ],
+  "packages_installed": 0,
+  "camera_used": false,
+  "pi_verified": false,
+  "limitations": "Focused checks only; no new recognition accuracy, independent labels, measured geometry or physical acceptance."
+}

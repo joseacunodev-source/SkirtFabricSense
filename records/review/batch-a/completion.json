@@ -1,0 +1,17 @@
+{
+  "records": 334,
+  "unique_ids": 334,
+  "source_hash_matches": true,
+  "expected_batch_membership_matches": true,
+  "sha256": "a0433464a0a8b44f83ed15ec45aa95424fd8beb58f22c2d4d254ec2168df21af",
+  "appearance_counts": {
+    "unknown": 129,
+    "non_pleated": 183,
+    "pleated": 22
+  },
+  "full_known_counts": {
+    "non_pleated": 91,
+    "pleated": 7
+  },
+  "independent_human_review": false
+}

@@ -1,0 +1,32 @@
+{
+  "recorded_at_utc": "2026-10-04T23:51:35.139932+00:00",
+  "status": "passed",
+  "automated_tests": {
+    "count": 37,
+    "interpreter": "C:/Users/Administrator/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/python.exe",
+    "command": "python -m unittest tests.test_inference_contract tests.test_review_workflow tests.test_release_builder tests.test_server -q"
+  },
+  "real_model_http_evidence": "records/validation/2026-10-05-http-inference.json",
+  "browser_checks": {
+    "analysis_page_rendered": true,
+    "review_page_rendered": true,
+    "review_queue_total": 1000,
+    "human_reviews_submitted_by_checks": 0,
+    "interactive_upload_and_roi_drag": "not_verified_in_browser"
+  },
+  "bundle": {
+    "path": "artifacts/releases/skirt-finetune-v1-desktop",
+    "inventory_sha256": "b97de416d4767e25c4ef361134881cb091d0b86e75dfbc923a5174a75e364c70",
+    "payload_files_verified": 7,
+    "copied_app_matches_workspace": true
+  },
+  "new_packages_installed": false,
+  "pi_verified": false,
+  "limitations": [
+    "No hardware verification",
+    "No automatic live camera/localization",
+    "No trained fabric or length estimator",
+    "Browser upload and ROI interaction still needs manual acceptance"
+  ],
+  "startup_observation": "WSL Windows-mounted original-path validation delayed initial startup; early connection-refused attempt occurred before ready message."
+}

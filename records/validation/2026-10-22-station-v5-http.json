@@ -1,0 +1,108 @@
+{
+  "recorded_at": "2026-10-22T20:14:57.476896+08:00",
+  "status": "passed",
+  "checks": [
+    {
+      "sample_id": "fashionpedia-train2020-12679",
+      "image_sha256": "a2c1d0c8e7b2abe8f87d8142c7a93cf67e1ae7db39d29f77539c09722d3fa945",
+      "fabric_launch_opt_in": false,
+      "accepted": true,
+      "fabric_off": "disabled",
+      "fabric_on": "unavailable",
+      "fabric_label": null,
+      "style_matches_development": true,
+      "length_unavailable": true
+    },
+    {
+      "sample_id": "fashionpedia-train2020-16838",
+      "image_sha256": "b4d6708c717269eb033cf5da253bdc3e70005499740b1e956126a2b85b0d9878",
+      "fabric_launch_opt_in": false,
+      "accepted": true,
+      "fabric_off": "disabled",
+      "fabric_on": "unavailable",
+      "fabric_label": null,
+      "style_matches_development": true,
+      "length_unavailable": true
+    },
+    {
+      "sample_id": "fashionpedia-negative-candidate-13377",
+      "image_sha256": "d52ac63de47b5b631213eeafcc2d96603e37c31675b7bf8ae0b0252ca0cf56ab",
+      "fabric_launch_opt_in": false,
+      "accepted": false,
+      "fabric_off": "disabled",
+      "fabric_on": "unavailable",
+      "fabric_label": null,
+      "style_matches_development": true,
+      "length_unavailable": true
+    },
+    {
+      "sample_id": "fashionpedia-train2020-12679",
+      "image_sha256": "a2c1d0c8e7b2abe8f87d8142c7a93cf67e1ae7db39d29f77539c09722d3fa945",
+      "fabric_launch_opt_in": true,
+      "accepted": true,
+      "fabric_off": "disabled",
+      "fabric_on": "research_only",
+      "fabric_label": "source_denim_appearance",
+      "style_matches_development": true,
+      "length_unavailable": true
+    },
+    {
+      "sample_id": "fashionpedia-train2020-16838",
+      "image_sha256": "b4d6708c717269eb033cf5da253bdc3e70005499740b1e956126a2b85b0d9878",
+      "fabric_launch_opt_in": true,
+      "accepted": true,
+      "fabric_off": "disabled",
+      "fabric_on": "research_only",
+      "fabric_label": "source_cotton_appearance",
+      "style_matches_development": true,
+      "length_unavailable": true
+    },
+    {
+      "sample_id": "fashionpedia-negative-candidate-13377",
+      "image_sha256": "d52ac63de47b5b631213eeafcc2d96603e37c31675b7bf8ae0b0252ca0cf56ab",
+      "fabric_launch_opt_in": true,
+      "accepted": false,
+      "fabric_off": "disabled",
+      "fabric_on": "unavailable",
+      "fabric_label": null,
+      "style_matches_development": true,
+      "length_unavailable": true
+    }
+  ],
+  "saved_originals": 3,
+  "http_inference_jobs": 12,
+  "server_configurations": 2,
+  "packaged_ui_matches": true,
+  "ui_sha256": "d852f938870db4bbcdffacbe1ae07701e2102e48ffbbd60232e5153717ac62f6",
+  "models": {
+    "localizer": {
+      "directory": "models/localizer",
+      "sha256": "f2f5f73d34cd99c3fb46502cb806ddbc347c6664e8ce24b8fe06a548c70090de"
+    },
+    "presence": {
+      "directory": "models/presence",
+      "sha256": "f47ddf148102f905d0a81e6a1fe3001b8a4944fd86e0c1c2d635d975f8fdc34d"
+    },
+    "fabric": {
+      "directory": "models/fabric",
+      "sha256": "81f144a1c7cd4910989374a1a86c85e955fb4f65cd81ef88c26e7cbcf1158bfd"
+    }
+  },
+  "pleating_sha256": "c1d8f49e221a2672c20adb87fe4ae5d2f6966f125ee99cb212ff2eb56fffdbf0",
+  "station_inventory_sha256": "4d7b14594fd7c85cc7a4e62bb008beb7c18019378bcce10d0e680495f98b0a7d",
+  "station_unchanged": true,
+  "source_sha256": "2b4c4eed504c055f037dbd079690258f81ffd26a945fe34861bef21d7e6bdace",
+  "comparison_sha256": "f0ebd8a2fd04530559ff661c35beddc7100da8e1852fa46762f2d867666c0648",
+  "execution_sha256": "b50bb7562cb0beca4e4b035c5320c4dc50831a0d6c73c9ccfac6f7c28aed82c1",
+  "all_owned_servers_stopped": true,
+  "camera_used": false,
+  "pi_verified": false,
+  "packages_installed": 0,
+  "limitations": [
+    "Three reused saved development originals; no new accuracy estimate.",
+    "No browser camera, physical garments, measured calibration or Pi was tested.",
+    "Fabric remains the unapproved 17-group source-appearance smoke model.",
+    "No fabric model identity/output appears on gated negative results; this does not instrument internal call counts.",
+    "Direct server argv equals the verified launcher command; the wrapper process was not the HTTP server."
+  ]
+}

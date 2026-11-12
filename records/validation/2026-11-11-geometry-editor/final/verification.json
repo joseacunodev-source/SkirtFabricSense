@@ -1,0 +1,52 @@
+{
+  "recorded_at_utc": "2026-11-11T15:17:58.428551+00:00",
+  "status": "completed_software_annotation_editor",
+  "python_tests_run": 14,
+  "python_tests_passed": 14,
+  "python_command": "python -B -m unittest tests.test_geometry_annotation -v",
+  "python_output": "Ran 14 tests in 0.368s; OK",
+  "browser_command": "node tests/geometry_annotation_browser.cjs records/validation/2026-11-11-geometry-editor/final",
+  "browser_status": "passed_synthetic_browser_roundtrip",
+  "browser_visual_review": "Final full-page PNG inspected; no clipped controls or overlapping content",
+  "fixes": [
+    "Cancelled pointer gestures restore prior observation",
+    "Export blocked while pointer gesture active",
+    "Explicit observation date defaults to browser local date",
+    "Browser artifacts refuse overwrite and temporary cleanup path verified"
+  ],
+  "production_observations_created": 0,
+  "evaluator_approved": false,
+  "physical_calibration_verified": false,
+  "dependencies_installed": [],
+  "owned_server_started": false,
+  "evidence": [
+    {
+      "path": "tools/geometry_annotation.py",
+      "sha256": "748d128e7caa974f8082e1f60c4f0611b199bec7707e9caaf92abb5c13b4d6b2"
+    },
+    {
+      "path": "tools/static/geometry_annotation.html",
+      "sha256": "385144269e7f01f031bbf577302e24decdc3a8544e2bfa5ad812eff6b04398fc"
+    },
+    {
+      "path": "tests/test_geometry_annotation.py",
+      "sha256": "cd5751d6c3556d5985d5e9a0e4a5b99158fa6328054efbffaeffed185e7e4c14"
+    },
+    {
+      "path": "tests/geometry_annotation_browser.cjs",
+      "sha256": "e72596476f2246bc3632fd65f38d071f84f89118442f9d571b9baa60db65390f"
+    },
+    {
+      "path": "docs/GEOMETRY_ANNOTATION.md",
+      "sha256": "cea9a568954c2906bb6b900d188d353eac566879825fbd4d2d61b70eae254d8f"
+    },
+    {
+      "path": "records/validation/2026-11-11-geometry-editor/final/browser.json",
+      "sha256": "5a62c4b5f4e41e7630dcccd97bb96d7c82af4b3060bec73c32e99b55f82f8382"
+    },
+    {
+      "path": "records/validation/2026-11-11-geometry-editor/final/synthetic-browser.png",
+      "sha256": "7ebe6d0fb4f17bab45d4d61cd1bcc9c50b2dd2259b532fa3a8bcfabc5e46ef1d"
+    }
+  ]
+}

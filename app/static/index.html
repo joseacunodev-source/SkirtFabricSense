@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Skirt Classification — SkirtFabricSense</title>
+<style>
+:root{font-family:Arial,Helvetica,sans-serif;color:#29231f;background:#faf5ec;font-synthesis:none;--accent:#8b1f23;--line:#ded5c9;--muted:#6a5e55;--panel:#fdf9f2}*{box-sizing:border-box}body{margin:0}button,select{font:inherit}header{max-width:1600px;margin:auto;padding:24px 32px 22px;text-align:center}header h1{font-family:Georgia,'Times New Roman',serif;font-size:clamp(32px,3.4vw,52px);font-weight:600;letter-spacing:-1.2px;margin:0;line-height:1.15}header h1:after{content:"";display:block;width:78px;height:2px;background:var(--accent);margin:13px auto 0}.eyebrow{font-size:11px;letter-spacing:1.8px;text-transform:uppercase;color:var(--muted);margin:0 0 9px}main{max-width:1600px;padding:0 32px 22px;margin:auto}.layout{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.16fr);gap:22px;align-items:start}.panel{min-width:0;border:1px solid var(--line);border-radius:12px;background:var(--panel);padding:18px 20px}.panel-heading{display:flex;gap:12px;align-items:center;padding-bottom:14px;margin-bottom:16px;border-bottom:1px solid var(--line)}.panel-heading h2{font-family:Georgia,'Times New Roman',serif;font-size:21px;font-weight:600;margin:0;letter-spacing:.3px}.panel-heading .state{margin-left:auto;font-family:Arial,Helvetica,sans-serif;font-size:11px;white-space:nowrap}.heading-icon{width:32px;height:32px;display:grid;place-items:center;color:var(--accent)}.heading-icon svg,.attribute-icon svg{width:28px;height:28px;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}.camera{width:100%;background:#ede6db;position:relative;aspect-ratio:4/3;display:grid;place-items:center;overflow:hidden;border-radius:7px;border:1px solid #e1d7ca}video{width:100%;height:100%;object-fit:contain;position:absolute;background:#242321}video[hidden]{display:none}.empty{color:var(--muted);text-align:center;padding:28px;z-index:1}.empty svg{display:block;margin:0 auto 20px;color:#9c8b7b}.empty strong{font-family:Georgia,'Times New Roman',serif;font-size:26px;font-weight:400;color:#44392f}.empty p{font-size:14px;line-height:1.6;margin:10px 0 0}.overlay{position:absolute;bottom:14px;left:14px;color:#fff;font-size:11px;background:#332a24d9;padding:7px 10px;border-radius:3px}.controls{display:flex;flex-wrap:wrap;gap:9px;align-items:center;padding-top:14px}button,select{font-size:13px;min-height:38px;border:1px solid #c7bbae;border-radius:4px;padding:7px 11px;background:var(--panel);color:#342a24}button{cursor:pointer;font-weight:600}button.primary{background:var(--accent);border-color:var(--accent);color:#fff}button:disabled{opacity:.45;cursor:default}button:focus-visible,a:focus-visible,select:focus-visible,summary:focus-visible{outline:3px solid #a64143;outline-offset:3px}select{max-width:100%;min-width:0;flex:1}.control-label{font-size:12px;color:var(--muted);min-width:78px}.hint{font-size:12px;line-height:1.65;color:var(--muted);margin:15px 0 0}.message{font-size:13px;line-height:1.5;color:var(--accent);margin:10px 0 0}.message:empty{display:none}.result-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.result{min-width:0;padding:19px 17px;border:1px solid var(--line);border-radius:9px;display:flex;gap:14px;align-items:flex-start;min-height:156px}.attribute-icon{flex:0 0 44px;width:44px;height:44px;border-radius:50%;background:#f5e5df;color:var(--accent);display:grid;place-items:center;margin-top:4px}.result-body{min-width:0;flex:1}.result h3{font-family:Georgia,'Times New Roman',serif;font-size:14px;line-height:1.4;font-weight:600;margin:0 0 10px}.value{font-family:Georgia,'Times New Roman',serif;font-size:clamp(25px,2.5vw,39px);line-height:1.15;color:var(--accent);margin:0 0 9px;overflow-wrap:anywhere;text-transform:capitalize}.reason{font-size:12px;line-height:1.55;margin:0;color:var(--muted);overflow-wrap:anywhere}.fabric-head{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:7px;margin-bottom:10px}.fabric-head h3{margin:0}.switch{position:relative;display:inline-flex;align-items:center;gap:6px;font-size:11px;color:var(--muted);cursor:pointer;min-height:24px}.switch input{position:absolute;opacity:0;width:1px;height:1px}.slider{width:30px;height:17px;border-radius:12px;background:#8e857b;position:relative}.slider:after{content:"";position:absolute;width:11px;height:11px;background:#fff;left:3px;top:3px;border-radius:50%;transition:transform .12s}.switch input:checked+.slider{background:var(--accent)}.switch input:checked+.slider:after{transform:translateX(13px)}.switch input:focus-visible+.slider{outline:3px solid #a64143;outline-offset:3px}.reference{border-top:1px solid var(--line);padding-top:17px;margin-top:19px}.reference h3{font-family:Georgia,'Times New Roman',serif;font-size:18px;margin:0 0 12px}.hemline-list{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0 20px;list-style:none;padding:0;margin:0 0 14px;counter-reset:hemline}.hemline-list li{counter-increment:hemline;padding:8px 0;border-bottom:1px solid #e9e0d5;font-size:12px;color:#50443a}.hemline-list li:before{content:counter(hemline,decimal-leading-zero);color:var(--accent);font-size:10px;margin-right:8px}.reference-note{background:#f6ebe4;border-left:2px solid #cba99a;padding:12px 14px}.reference-note p{font-size:12px;line-height:1.65;color:#645249;margin:0}.reference-note p+p{margin-top:8px}footer{border-top:1px solid var(--line);margin-top:22px;padding:16px 0 0;display:flex;justify-content:space-between;align-items:center;gap:12px 24px;flex-wrap:wrap;font-size:12px;color:var(--muted)}.state{display:flex;align-items:center;gap:9px;color:#42382f}.dot{width:10px;height:10px;border-radius:50%;background:#978b7d}.on .dot{background:#3b775b}footer nav{display:flex;gap:18px}footer a{color:var(--muted);text-underline-offset:3px}.privacy{margin:0;font-size:11px}.research-note{font-size:11px;line-height:1.6;color:var(--muted);margin:14px 0 0}@media(min-width:1450px){.camera{aspect-ratio:1.2/1}.result{min-height:165px}}@media(max-width:1050px){main{padding:0 20px 20px}header{padding:24px 20px}.layout{gap:16px;grid-template-columns:minmax(0,1fr) minmax(0,1.05fr)}.panel{padding:15px}.result{padding:14px 12px;gap:10px}.attribute-icon{display:none}.panel-heading h2{font-size:18px}}@media(max-width:800px){.layout{grid-template-columns:1fr}.camera{aspect-ratio:4/3}.attribute-icon{display:grid}.value{font-size:31px}.panel{padding:16px}.result{min-height:150px}.privacy{order:3;width:100%}}@media(max-width:480px){.panel-heading{flex-wrap:wrap;column-gap:10px}.panel-heading h2{flex:1}.panel-heading .state{margin-left:42px;width:auto;flex-basis:calc(100% - 42px)}header{padding:22px 16px}main{padding:0 12px 18px}.panel{padding:13px}.result-grid{grid-template-columns:1fr}.result{min-height:0;padding:16px}.value{font-size:30px}.hemline-list{gap:0 9px}.hemline-list li{font-size:11px}.control-label{min-width:70px}.controls button{flex:1}.controls select{flex-basis:calc(100% - 80px)}footer{align-items:flex-start}.panel-heading h2{font-size:18px}.eyebrow{font-size:10px}}@media(prefers-reduced-motion:reduce){.slider:after{transition:none}}
+/* Short, local motion; no layout animation or delayed result clearing. */
+:root{--motion-ease:cubic-bezier(.2,.7,.2,1)}
+header{animation:interface-in 280ms var(--motion-ease) both}
+.layout>.panel{animation:interface-in 340ms var(--motion-ease) both}
+.layout>aside{animation-delay:65ms}
+button,select{transition:background-color 150ms ease,border-color 150ms ease,box-shadow 150ms ease,transform 150ms var(--motion-ease)}
+.slider{transition:background-color 180ms ease,box-shadow 180ms ease}
+.slider:after{transition:transform 180ms var(--motion-ease)}
+.dot{transition:background-color 180ms ease,box-shadow 180ms ease}
+.on .dot{box-shadow:0 0 0 3px #3b775b16}
+.connecting .dot{animation:connecting-pulse 1100ms ease-in-out infinite}
+video:not([hidden]){animation:feed-in 200ms ease-out}
+footer a{transition:color 140ms ease,text-decoration-color 140ms ease}
+footer a:hover{color:var(--accent)}
+@media(hover:hover){button:not(:disabled):hover{border-color:var(--accent);box-shadow:0 3px 8px #48211d13;transform:translateY(-1px)}button.primary:not(:disabled):hover{background:#751a1e}select:not(:disabled):hover{border-color:#a89380}}
+button:not(:disabled):active{transform:translateY(0);box-shadow:none}
+@keyframes interface-in{from{opacity:0;transform:translateY(7px)}to{opacity:1;transform:none}}
+@keyframes feed-in{from{opacity:.4}to{opacity:1}}
+@keyframes connecting-pulse{0%,100%{opacity:1}50%{opacity:.4}}
+@media(prefers-reduced-motion:reduce){header,.layout>.panel,.connecting .dot,video:not([hidden]){animation:none}button,select,.slider,.slider:after,.dot,footer a{transition:none}button:not(:disabled):hover{transform:none}}
+/* Guidance expands on demand without displacing the live controls. */
+.reference summary{font-family:Georgia,'Times New Roman',serif;font-size:18px;font-weight:600;cursor:pointer;min-height:44px;display:list-item;align-content:center;list-style-position:inside}
+.reference[open] summary{margin-bottom:12px}.framing-details{margin:14px 0 0;border-top:1px solid var(--line);padding-top:8px}.framing-details summary{cursor:pointer;min-height:44px;align-content:center;font-size:13px;font-weight:600;list-style-position:inside}.framing-details .hint{max-width:70em;margin:4px 0 12px}
+/* Landscape kiosk: preview, all four attributes and essential actions fit together.
+   Expanded guidance remains in normal flow and can be scrolled. */
+@media (min-width:700px) and (max-width:900px) and (max-height:600px) and (orientation:landscape){
+ header{padding:5px 12px 4px}header .eyebrow,header h1:after{display:none}header h1{font-size:23px;letter-spacing:0;line-height:1.2}
+ main{padding:0 7px 14px}.layout{grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:7px}.panel{padding:7px;border-radius:7px}
+ .panel-heading{gap:5px;padding-bottom:5px;margin-bottom:6px;min-height:27px}.panel-heading h2{font-size:15px}.panel-heading .state{font-size:11px}.heading-icon{width:23px;height:23px}.heading-icon svg{width:20px;height:20px}
+ .camera{height:205px;aspect-ratio:auto}.empty{padding:10px}.empty svg{width:40px;height:32px;margin:0 auto 8px}.empty strong{font-size:21px}.empty p{font-size:12px;line-height:1.3;margin:5px 0}.overlay{bottom:5px;left:5px;font-size:10px;padding:4px 6px}
+ .controls{display:grid;grid-template-columns:80px minmax(0,1fr);gap:5px;padding-top:6px}.control-label{min-width:0;font-size:12px}.controls button,.controls select{min-height:44px;font-size:13px;padding:5px 7px;width:100%}.controls.camera-actions{grid-template-columns:50px minmax(0,1fr) 90px 60px}.hint{margin:8px 0 0;font-size:12px;line-height:1.4}
+ .result-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:5px}.result{display:block;min-height:130px;padding:7px;overflow-wrap:anywhere}.attribute-icon{display:none}.result h3{font-size:14px;line-height:1.15;margin:0 0 5px}.value{font-size:21px;line-height:1.08;margin:0 0 5px}.reason{font-size:12px;line-height:1.2}.fabric-head{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:3px;margin-bottom:3px}.fabric-head h3{font-size:13px}.switch{min-height:44px;min-width:57px;font-size:12px}.slider{width:35px;height:20px}.slider:after{width:14px;height:14px}.switch input:checked+.slider:after{transform:translateX(15px)}
+ .reference{margin-top:8px;padding-top:0}.reference summary{font-size:16px}.hemline-list{gap:0 6px}.hemline-list li{padding:6px 0}.reference-note p{font-size:12px;line-height:1.35}.research-note{font-size:12px;line-height:1.35;margin-top:6px}.framing-details{margin-top:7px;padding-top:0}footer{margin-top:8px}
+}
+</style></head><body>
+<header><p class="eyebrow">SkirtFabricSense · Single-camera station</p><h1>Skirt Classification</h1></header>
+<main><div class="layout">
+<section class="panel" aria-label="Camera preview">
+<div class="panel-heading"><span class="heading-icon"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M5 9h5l2-4h8l2 4h5v17H5z"/><circle cx="16" cy="17" r="5"/></svg></span><h2>Live camera preview</h2><div class="state" id="state" role="status"><span class="dot" aria-hidden="true"></span><span id="stateText">Camera off</span></div></div>
+<div class="camera"><video id="video" aria-label="Live camera feed" autoplay muted playsinline hidden></video><div class="empty" id="empty"><svg width="58" height="48" viewBox="0 0 46 38" fill="none" aria-hidden="true"><rect x="2" y="7" width="42" height="29" rx="3" stroke="currentColor" stroke-width="1.5"/><path d="M14 7l3-5h12l3 5" stroke="currentColor" stroke-width="1.5"/><circle cx="23" cy="21" r="8" stroke="currentColor" stroke-width="1.5"/></svg><strong>Camera is off</strong><p>Start the camera to see the live feed.<br>Results will update automatically.</p></div><span class="overlay" id="resolution">No camera connected</span></div>
+<div class="controls camera-actions"><label class="control-label" for="device">Camera</label><select id="device"><option value="">Default camera</option></select><button class="primary" id="start">Start camera</button><button id="stop" disabled>Stop</button></div>
+<div class="controls"><label class="control-label" for="presentation">Presentation</label><select id="presentation"><option value="worn" selected>Worn by a person</option><optgroup label="Secondary presentations"><option value="hanging">Hanging</option><option value="mannequin">Mannequin</option><option value="held">Held</option></optgroup></select></div>
+<div class="controls"><label class="control-label" for="captureMode">Camera mode</label><select id="captureMode"><option value="auto">Automatic</option><option value="720">Request 1280 × 720</option><option value="1080">Request 1920 × 1080</option><option value="2160">Request 3840 × 2160</option></select></div>
+<p class="message" id="message" role="alert"></p>
+</section>
+<aside class="panel" aria-label="Classification results">
+<div class="panel-heading"><span class="heading-icon"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M5 27h23M8 25V15h4v10m4 0V9h4v16m4 0V4h4v21"/></svg></span><h2>Classification results</h2></div>
+<div class="result-grid">
+<section class="result"><span class="attribute-icon"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M10 4h12v4H10zM10 8L5 27h22L22 8M13 10l-2 15m8-15 2 15m-5-15v15"/></svg></span><div class="result-body"><h3>Pleating</h3><p class="value" id="styleValue">—</p><p class="reason" id="styleReason">Waiting for a camera frame.</p></div></section>
+<section class="result"><span class="attribute-icon"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 4v24M10 10l6-6 6 6M10 22l6 6 6-6"/></svg></span><div class="result-body"><h3>Hemline length</h3><p class="value" id="lengthValue">—</p><p class="reason" id="lengthReason">Body reference required.</p></div></section>
+<section class="result"><span class="attribute-icon"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M5 5h22v22H5zM11 5v22M17 5v22M23 5v22M5 11h22M5 17h22M5 23h22"/></svg></span><div class="result-body"><div class="fabric-head"><h3>Fabric appearance</h3><label class="switch"><input id="fabricEnabled" type="checkbox" role="switch" aria-label="Enable fabric recognition" checked><span class="slider" aria-hidden="true"></span><span id="fabricToggleText">On</span></label></div><p class="value" id="fabricValue">—</p><p class="reason" id="fabricReason" aria-live="polite">Model not available.</p></div></section>
+<section class="result"><span class="attribute-icon"><svg viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="10"/><circle cx="16" cy="16" r="2"/><path d="M16 2v7m0 14v7M2 16h7m14 0h7"/></svg></span><div class="result-body"><h3>Pleating model score</h3><p class="value" id="scoreValue">—</p><p class="reason" id="scoreReason">Available with a pleating result. Uncalibrated; not measured accuracy.</p></div></section>
+</div>
+<details class="reference"><summary id="referenceTitle">Hemline reference</summary><ol class="hemline-list"><li>Micro</li><li>Mini</li><li>Above knee</li><li>On knee</li><li>Below knee</li><li>Midi</li><li>Tea</li><li>Maxi</li><li>Full</li></ol><div class="reference-note"><p>Hemline categories describe where the skirt ends relative to the body. A worn skirt requires its wearer's visible reference and a matching calibration.</p><p>Hanging and held skirts use a calibrated standard body reference and are labelled as estimates. Physical length in centimetres is not available.</p></div></details>
+<p class="research-note">Research station. Predictions can be unavailable; fabric appearance and calibrated length are not yet validated for demonstration use.</p>
+</aside></div>
+<details class="framing-details"><summary>Framing and setup guidance</summary><p class="hint" id="framingHint" aria-live="polite">Stand facing the camera with one skirt fully visible. Include the waist, hem, feet and floor for length assessment; your face does not need to be in view. Use even lighting and a clear background.</p></details>
+<footer><span>One camera · Local station</span><p class="privacy">Local processing · Frames sent to this local app are not recorded</p><nav aria-label="Development tools"><a href="/analysis">Image test</a><a href="/review">Label review</a></nav></footer></main>
+<script>
+const el=id=>document.getElementById(id);let stream=null,generation=0,frameGeneration=0,muted=false,busy=false,timer=null,expiryTimer=null,request=null,jobId=null;
+const MAX_FRAME_AGE_MS=1000;
+const canvas=document.createElement('canvas');
+const resultMotion=new Map();
+const motionPreference=window.matchMedia?.('(prefers-reduced-motion: reduce)');
+const valueIds=['styleValue','lengthValue','fabricValue','scoreValue'];
+function cancelValueMotion(node){try{node.getAnimations?.().forEach(animation=>animation.cancel())}catch{}}
+function clearValue(id,text){const node=el(id);cancelValueMotion(node);node.textContent=text}
+function showValue(id,text,reveal=false){
+ const node=el(id),changed=resultMotion.get(id)!==text;
+ resultMotion.set(id,text);cancelValueMotion(node);node.textContent=text;
+ if(!reveal||!changed||motionPreference?.matches!==false||typeof node.animate!=='function')return;
+ try{node.animate([{opacity:.55,transform:'translateY(3px)'},{opacity:1,transform:'translateY(0)'}],{duration:180,easing:'cubic-bezier(.2,.7,.2,1)'})}catch{}
+}
+motionPreference?.addEventListener?.('change',event=>{if(event.matches)valueIds.forEach(id=>cancelValueMotion(el(id)))});
+function clearResults(reason='Waiting for a camera frame.'){
+ clearValue('styleValue','—');el('styleReason').textContent=reason;
+ clearValue('scoreValue','—');
+ el('scoreReason').textContent='Available with a pleating result. Uncalibrated; not measured accuracy.';
+ clearValue('lengthValue','—');el('lengthReason').textContent='Body reference required.';
+ clearValue('fabricValue',el('fabricEnabled').checked?'—':'Off');
+ el('fabricReason').textContent=el('fabricEnabled').checked?reason:'Fabric recognition disabled.';
+}
+async function cancelJob(id){if(!id)return;const controller=new AbortController();const timeout=setTimeout(()=>controller.abort(),3000);try{await fetch('/api/jobs/cancel',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({id}),signal:controller.signal})}catch{}finally{clearTimeout(timeout)}}
+function invalidate(reason){frameGeneration++;resultMotion.clear();clearTimeout(timer);clearTimeout(expiryTimer);timer=null;expiryTimer=null;if(request)request.abort();const old=jobId;jobId=null;cancelJob(old);clearResults(reason)}
+function schedule(delay=500){clearTimeout(timer);if(stream&&!muted&&!busy)timer=setTimeout(analyzeFrame,delay)}
+async function api(url,options={}){const controller=new AbortController();request=controller;const timeout=setTimeout(()=>controller.abort(),8000);try{const response=await fetch(url,{...options,signal:controller.signal});const body=await response.json();if(!response.ok)throw Error(body.error||body.reason||'Analysis request failed.');return body}finally{clearTimeout(timeout);if(request===controller)request=null}}
+function supportedResult(value){return value&&['provisional','available','estimate','estimated','ok','research_only'].includes(value.status)&&typeof value.label==='string'&&value.label.trim().length>0}
+function renderResult(result){
+ for(const [attribute,prefix] of [['style','style'],['fabric','fabric'],['length','length']]){
+  const value=result?.[attribute];
+  if(attribute==='fabric'&&!el('fabricEnabled').checked)continue;
+  const supported=supportedResult(value);
+  showValue(prefix+'Value',supported?value.label.replaceAll('_',' '):'—',Boolean(supported));
+  let reason=value?.reason||'Result unavailable.';
+  if(attribute==='length'&&supported&&['hanging','held'].includes(el('presentation').value))reason='Estimated against calibrated body reference. '+reason;
+  el(prefix+'Reason').textContent=reason;
+ }
+ const style=result?.style,score=style?.score;
+ const hasScore=supportedResult(style)&&typeof score==='number'&&Number.isFinite(score)&&score>=0&&score<=1;
+ showValue('scoreValue',hasScore?(score*100).toFixed(1)+'%':'—');
+ el('scoreReason').textContent=hasScore?'Uncalibrated pleating score; not measured accuracy.':'No current valid pleating score. Uncalibrated; not measured accuracy.';
+}
+async function analyzeFrame(){
+ if(busy||!stream||muted)return;
+ busy=true;
+ const token=++frameGeneration,capturedAt=performance.now();
+ let ownJob=null;
+ clearTimeout(expiryTimer);
+ clearResults('Analyzing current frame.');
+ // Expiry applies from acquisition, including upload, inference and display time.
+ expiryTimer=setTimeout(()=>{
+  if(token!==frameGeneration)return;
+  invalidate('Frame expired. Waiting for a fresh result.');
+  schedule(0);
+ },MAX_FRAME_AGE_MS);
+ const current=()=>token===frameGeneration&&performance.now()-capturedAt<MAX_FRAME_AGE_MS;
+ try{
+  const video=el('video');
+  if(!video.videoWidth||!video.videoHeight)throw Error('Waiting for camera dimensions.');
+  if(video.videoWidth*video.videoHeight>20000000)throw Error('Frame exceeds 20 megapixels. Select a lower camera mode.');
+  canvas.width=video.videoWidth;canvas.height=video.videoHeight;
+  canvas.getContext('2d').drawImage(video,0,0);
+  const image=canvas.toDataURL('image/jpeg',0.9).split(',')[1];
+  const body=JSON.stringify({image_base64:image,fabric_enabled:el('fabricEnabled').checked,presentation:el('presentation').value});
+  if(body.length>16*1024*1024)throw Error('Encoded frame is too large. Select a lower camera mode.');
+  if(!current())throw Error('Frame expired during encoding. Waiting for a fresh frame.');
+  const submitted=await api('/api/live',{method:'POST',headers:{'Content-Type':'application/json'},body});
+  ownJob=submitted.id;
+  if(typeof ownJob!=='string')throw Error('Invalid analysis job response.');
+  if(!current()){cancelJob(ownJob);return}
+  jobId=ownJob;
+  while(current()){
+   const state=await api('/api/jobs?id='+encodeURIComponent(ownJob));
+   if(!current()){cancelJob(ownJob);return}
+   if(state.state==='complete'){renderResult(state.result);el('message').textContent='';return}
+   if(state.state!=='pending')throw Error(state.error||state.reason||'Frame analysis unavailable.');
+   await new Promise(resolve=>setTimeout(resolve,200));
+  }
+  cancelJob(ownJob);
+ }catch(error){
+  if(token===frameGeneration){clearResults('Analysis unavailable.');el('message').textContent=error.name==='AbortError'?'Analysis request timed out. Retrying.':error.message;cancelJob(ownJob)}
+ }finally{
+  if(jobId===ownJob)jobId=null;
+  busy=false;schedule();
+ }
+}
+function status(text,on=false){el('stateText').textContent=text;el('state').classList.toggle('on',on);el('state').classList.toggle('connecting',text==='Connecting…')}
+function release(){if(stream){stream.getTracks().forEach(track=>track.stop());stream=null}el('video').srcObject=null;el('video').hidden=true;el('empty').hidden=false;el('resolution').textContent='No camera connected';el('stop').disabled=true;el('start').disabled=false;el('device').disabled=false;status('Camera off')}
+function stop(){generation++;muted=false;invalidate('Camera is off.');release()}
+el('stop').onclick=stop;
+function showResolution(){const v=el('video');el('resolution').textContent=v.videoWidth&&v.videoHeight?v.videoWidth+' × '+v.videoHeight+' px (actual)':'Waiting for camera dimensions.'}
+el('video').onresize=()=>{if(!stream||el('video').hidden)return;invalidate('Camera resolution changed.');showResolution();schedule(0)};
+el('captureMode').onchange=()=>{if(stream||el('start').disabled){stop();el('message').textContent='Camera mode changed. Start the camera again.'}};
+el('start').onclick=async()=>{const token=++generation;invalidate('Connecting camera.');muted=false;release();el('message').textContent='';el('start').disabled=true;el('device').disabled=true;el('stop').disabled=false;status('Connecting…');try{if(!navigator.mediaDevices?.getUserMedia)throw Error('Camera access is unavailable in this browser. Open this local page in Chrome or Edge.');const id=el('device').value, mode=el('captureMode').value;const sizes={'720':[1280,720],'1080':[1920,1080],'2160':[3840,2160]};const chosen=sizes[mode];let video=id?{deviceId:{exact:id}}:{};if(chosen){video.width={ideal:chosen[0]};video.height={ideal:chosen[1]}}let fallback=false,next;try{next=await navigator.mediaDevices.getUserMedia({audio:false,video:Object.keys(video).length?video:true})}catch(error){if(!chosen||error.name!=='OverconstrainedError'||token!==generation)throw error;fallback=true;next=await navigator.mediaDevices.getUserMedia({audio:false,video:id?{deviceId:{exact:id}}:true})}if(token!==generation){next.getTracks().forEach(t=>t.stop());return}stream=next;const track=stream.getVideoTracks()[0];muted=track.muted===true;track.onended=()=>{if(token===generation){stop();el('message').textContent='Camera disconnected. Reconnect it and start again.'}};track.onmute=()=>{if(token===generation){muted=true;invalidate('Camera interrupted.');status('Camera interrupted')}};track.onunmute=()=>{if(token===generation){muted=false;status('Camera on',true);schedule(0)}};el('video').srcObject=stream;await el('video').play();if(token!==generation)return;muted=muted||track.muted===true;el('video').hidden=false;el('empty').hidden=true;el('start').disabled=true;el('stop').disabled=false;status(muted?'Camera interrupted':'Camera on',!muted);if(muted)clearResults('Camera interrupted.');showResolution();if(fallback)el('message').textContent='Requested mode unavailable; using automatic camera mode.';schedule(0);try{const devices=await navigator.mediaDevices.enumerateDevices();if(token!==generation)return;const current=track.getSettings().deviceId;el('device').replaceChildren();devices.filter(d=>d.kind==='videoinput').forEach((d,i)=>{const option=new Option(d.label||'Camera '+(i+1),d.deviceId);option.selected=d.deviceId===current;el('device').add(option)})}catch{}}catch(error){if(token!==generation)return;stop();const errors={NotAllowedError:'Camera permission was denied. Allow camera access in your browser and try again.',NotFoundError:'No camera found. Connect a webcam and try again.',NotReadableError:'Camera is busy or unavailable. Close other camera apps and try again.'};el('message').textContent=errors[error.name]||error.message;status('Camera unavailable')}};
+function updateFabric(){const enabled=el('fabricEnabled').checked;el('fabricToggleText').textContent=enabled?'On':'Off';el('fabricValue').textContent=enabled?'—':'Off';el('fabricReason').textContent=enabled?'Model not available.':'Fabric recognition disabled.';try{localStorage.setItem('skirtFabricEnabled',String(enabled))}catch{}}
+try{el('fabricEnabled').checked=localStorage.getItem('skirtFabricEnabled')!=='false'}catch{}
+el('fabricEnabled').onchange=()=>{invalidate('Fabric setting changed.');updateFabric();schedule(0)};updateFabric();
+function updateFraming(){
+ const mode=el('presentation').value;
+ el('framingHint').textContent=mode==='worn'
+  ? 'Stand facing the camera with one skirt fully visible. Include the waist, hem, feet and floor for length assessment; your face does not need to be in view. Use even lighting and a clear background.'
+  : mode==='mannequin'
+   ? 'Keep the entire skirt and the calibrated mannequin or body reference visible. Length requires a matching calibration.'
+   : 'Keep one skirt fully visible, from waistband to hem, with its calibrated standard body reference. Length is an estimate against that reference, not the person holding it.';
+}
+el('presentation').onchange=()=>{invalidate('Presentation changed.');updateFraming();schedule(0)};updateFraming();
+window.addEventListener('pagehide',stop);
+</script></body></html>

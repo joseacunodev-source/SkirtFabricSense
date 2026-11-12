@@ -1,0 +1,97 @@
+{
+  "date": "2026-11-04",
+  "status": "completed_diagnostic_and_figures",
+  "original_reference_mismatches": 0,
+  "synthetic_conditions": 2,
+  "original_parents": 118,
+  "new_training": false,
+  "accuracy_improvement_established": false,
+  "pi_verified": false,
+  "figure_count": 5,
+  "evidence": [
+    {
+      "path": "docs/IMAGE_ROBUSTNESS_NOV04.md",
+      "sha256": "eed1893d590384e2a576a5fc5c7726ec576939bbf1a61368f9acba98fad29af5"
+    },
+    {
+      "path": "docs/THESIS_FIGURES.md",
+      "sha256": "f9174c7331349a4f03fc36d289ac0dd98e6b751dff43062a7f26a1cb72b7d35a"
+    },
+    {
+      "path": "tools/evaluate_image_robustness.py",
+      "sha256": "dd8086055a4bd99d864ac5edd173deb2511f51423572d54ba2c83cc2a4b4e97b"
+    },
+    {
+      "path": "tests/test_image_robustness.py",
+      "sha256": "c358b41de6b54b79445358fd471a79b84e4b6300a988a3b9a431424058fa6111"
+    },
+    {
+      "path": "tools/create_thesis_figures.py",
+      "sha256": "3de5eb0a3dfb0e45799208bf90395f49c87c5e7295d4dcb46ed4e9c0eef7383b"
+    },
+    {
+      "path": "records/validation/2026-11-04-thesis-figures.json",
+      "sha256": "9a5a8928716f11a23f79050a34bc07b8306a67f5c4df62314b02e1b1c441184c"
+    },
+    {
+      "path": "records/experiments/20261104-image-robustness/protocol.json",
+      "sha256": "045b6491ddc4479fb24bc00b36acfd001d2003ea785cc25c8279cf15331682c0"
+    },
+    {
+      "path": "records/experiments/20261104-image-robustness/results.json",
+      "sha256": "633b7636c975e14a74122013dd4b1533dd4555bb8161db352201d8edb97656ca"
+    },
+    {
+      "path": "records/experiments/20261104-image-robustness/completion.json",
+      "sha256": "8f1525db9199915271ad679f91f18a942df7f3b67e987ba8248b1e3460d901f4"
+    },
+    {
+      "path": "records/experiments/20261104-image-robustness/executed_source.py",
+      "sha256": "dd8086055a4bd99d864ac5edd173deb2511f51423572d54ba2c83cc2a4b4e97b"
+    },
+    {
+      "path": "output/thesis_figures/01_system_architecture.pdf",
+      "sha256": "48c53804975d02f993d1fbc27ac7d67eb8c729ac61f14f2d8413a1adbe931bd7"
+    },
+    {
+      "path": "output/thesis_figures/01_system_architecture.png",
+      "sha256": "5be478cb2381cd57b90b2fb0389d3ffba484e8bb2326b46e19b8953353cd7df8"
+    },
+    {
+      "path": "output/thesis_figures/02_detection_results.pdf",
+      "sha256": "bef80ac1f0a0e816f8d08bffae25e8cbbc65f53170f3f960dcd8783e52f9f52d"
+    },
+    {
+      "path": "output/thesis_figures/02_detection_results.png",
+      "sha256": "fb735a9a30d63137aa4e566d8b30dc9ff65acacee305e20815e249f829f0b63a"
+    },
+    {
+      "path": "output/thesis_figures/03_pleating_outcomes.pdf",
+      "sha256": "e521dde6b6132c94cfe1d39601e91f4b93e62af3f338af7bcde321644836a665"
+    },
+    {
+      "path": "output/thesis_figures/03_pleating_outcomes.png",
+      "sha256": "0a39f91b287926c205497edb90760121ff9de018e96c25a774c3505de4c2bdc6"
+    },
+    {
+      "path": "output/thesis_figures/04_development_split.pdf",
+      "sha256": "5e5d16b460e76dd570c9758b3f8be58280c0ee1ebd1c796736512c5a60566eb3"
+    },
+    {
+      "path": "output/thesis_figures/04_development_split.png",
+      "sha256": "9d1c01911f800d0231fb05c57fc053e84c664cb88eb36fb10a5f7a7be8570673"
+    },
+    {
+      "path": "output/thesis_figures/05_image_robustness.pdf",
+      "sha256": "67a7407d483a1b0c1b029e12388d69f34d43f4caccc66ae109d84856b4a75996"
+    },
+    {
+      "path": "output/thesis_figures/05_image_robustness.png",
+      "sha256": "ac49bf50109f8a013fd3a556aff98d26419477f5f8e989ee7536c3386422d556"
+    },
+    {
+      "path": "output/thesis_figures/source-data.json",
+      "sha256": "bfce55fcfa0e6e9ffbb35e98db4bac38abdf2d9b9ff0675db72fc4c00af5e916"
+    }
+  ]
+}

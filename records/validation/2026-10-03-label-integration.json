@@ -1,0 +1,10 @@
+{
+  "status": "passed",
+  "checks": [
+    "All skirt preparation input/output hashes match",
+    "All prepared records preserve original connected-group split and train2020 source",
+    "Fabric source, code and queue hashes match"
+  ],
+  "targeted_tests": "7 label unit tests and 7 lexical checks passed; command output observed by root",
+  "limits": "Does not independently confirm visual labels, fabric truth, GPU execution or Raspberry Pi compatibility"
+}

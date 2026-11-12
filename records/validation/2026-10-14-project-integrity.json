@@ -1,0 +1,11 @@
+{
+  "recorded_at": "2026-10-14T19:04:40.642940+08:00",
+  "status": "passed",
+  "local_links_checked": 301,
+  "json_records_parsed": 2280,
+  "acquired_artifacts_verified": 33,
+  "expansion_image_hashes_verified": 1735,
+  "skill_copy_matches": true,
+  "errors": [],
+  "limits": "Documentation/integrity checks only; not model training or Raspberry Pi verification."
+}

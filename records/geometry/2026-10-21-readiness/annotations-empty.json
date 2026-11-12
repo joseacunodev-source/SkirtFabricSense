@@ -1,0 +1,8 @@
+{
+  "schema_version": 1,
+  "data_kind": "observed_development_geometry_annotations",
+  "coordinate_convention": "source_rgb_pixels_after_exif_transpose",
+  "projection": "upright_rectified_vertical",
+  "examples": [],
+  "note": "No actual geometry observations exist. Schema readiness only; no coordinates are supplied."
+}

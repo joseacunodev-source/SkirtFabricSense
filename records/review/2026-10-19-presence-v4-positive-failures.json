@@ -1,0 +1,1462 @@
+{
+  "schema_version": 1,
+  "date_asia_manila": "2026-10-19T21:47:21.685562+08:00",
+  "reviewer": "codex-agent-v4_artifact_review",
+  "status": "completed_original_visual_review_no_dataset_changes",
+  "purpose": "Diagnostic review of every unavailable or pleating-mismatched positive from the frozen v4 development comparison.",
+  "selection_rule": "presence_target==1 and (v2_plus_presence.accepted==false or predicted pleating differs from retained expected pleating)",
+  "sources": [
+    {
+      "path": "records/validation/2026-10-19-detection-v4-comparison.json",
+      "sha256": "11bf2fac8f14d3c7b781745c209bac139b02374c0c354cf1a8123c11a48805ec"
+    },
+    {
+      "path": "records/experiments/20261018-presence-v4/inputs.json",
+      "sha256": "5fd31356dad9333efaa82cb0e2a312533fe695b5c565278cd00136c9e693a1f7"
+    },
+    {
+      "path": "data/manifests/worn-pleating-development-v1.jsonl",
+      "sha256": "876bb315009592fdbcf0a646703b21d99801756f4e37b1807a66675bdbd98ec2"
+    },
+    {
+      "path": "data/manifests/source-skirt-development-splits.json",
+      "sha256": "df3b096e4d131db55852b20de075d811c95520d23766648928555d755fe8812c"
+    }
+  ],
+  "model_sha256": {
+    "masks": {
+      "v1": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2",
+      "v2": "f2f5f73d34cd99c3fb46502cb806ddbc347c6664e8ce24b8fe06a548c70090de"
+    },
+    "presence": "7bf9df9b1bacc757956c069f688345ff154ee480a65198ee5948fbe80bbcdb87",
+    "pleating": "c1d8f49e221a2672c20adb87fe4ae5d2f6966f125ee99cb212ff2eb56fffdbf0"
+  },
+  "counts": {
+    "reviewed_originals": 28,
+    "review_method": {
+      "original_image_visual_inspection": 28
+    },
+    "failure_types": {
+      "unavailable": 22,
+      "accepted_pleating_mismatch": 6
+    },
+    "failure_buckets": {
+      "mask_only_rejected": 14,
+      "presence_only_rejected": 6,
+      "presence_and_mask_rejected": 2,
+      "accepted_pleating_mismatch": 6
+    },
+    "unavailable_mask_reasons": {
+      "multiple_regions": 9,
+      "region_touches_frame_edge": 7
+    },
+    "retained_expected_pleating": {
+      "non_pleated": 20,
+      "pleated": 8
+    },
+    "provisional_truth_assessments": {
+      "visually_supported_provisional": 22,
+      "pleating_visually_supported_presence_identity_uncertain": 2,
+      "visible_panel_supports_label_full_skirt_visibility_limited": 1,
+      "ambiguous_pleats_vs_gathers": 1,
+      "pleating_visually_supported_full_skirt_visibility_limited": 1,
+      "presence_identity_and_pleating_interpretation_uncertain": 1
+    },
+    "mask_edge_flags_with_observed_complete_skirt_margins": 7
+  },
+  "interpretation": [
+    "22 unavailable positives partition into6 presence-only,14 mask-only and2 rejected by both. Masks reject16 in total:9 multiple_regions and7 region_touches_frame_edge. Presence rejects8 in total.",
+    "The7 mask edge rejection flags do not show a skirt visibly cut off by the original boundary. A model mask edge flag is not itself observed garment truncation.",
+    "Six accepted predictions differ from frozen expected labels:5 pleated-to-non_pleated and1 non_pleated-to-pleated. One of these six has unresolved pleats-versus-gathers appearance. Labels are retained and no corrected-accuracy claim is made.",
+    "Multi-wearer/reflection scenes and uncertain garment identity make some source positives unsuitable as unqualified evidence of the intended single-wearer domain. Counts and membership remain unchanged."
+  ],
+  "data_priorities_are_inference": [
+    {
+      "priority": 1,
+      "inference": "Audit automatic ROI purity and full-hem coverage on a separately acquired development set before changing mask rejection rules.",
+      "basis_sample_ids": [
+        "fashionpedia-train2020-34508",
+        "fashionpedia-train2020-45873",
+        "fashionpedia-train2020-5573",
+        "fashionpedia-train2020-6021",
+        "fashionpedia-train2020-9732"
+      ],
+      "reason": "Direct original-to-recorded-ROI comparison shows adjacent clothing or clipped skirt extent in these accepted mismatches. This is association, not proof of the classifier failure cause."
+    },
+    {
+      "priority": 2,
+      "inference": "Acquire independent worn examples with complete skirts but cropped heads/feet, rear/side views, white-on-white backgrounds and patterned fitted skirts.",
+      "basis_sample_ids": [
+        "fashionpedia-train2020-3166",
+        "fashionpedia-train2020-31762",
+        "fashionpedia-train2020-31853",
+        "fashionpedia-train2020-43005",
+        "fashionpedia-train2020-45807",
+        "fashionpedia-train2020-48845"
+      ],
+      "reason": "These examples show skirt-specific visibility despite difficult person/background context; presence and frame-edge gates need representative data rather than threshold relaxation from these same validation failures."
+    },
+    {
+      "priority": 3,
+      "inference": "Obtain independently verified fine/broad pleat and soft-fold/gather labels across colours, patterns and trims, using new garments.",
+      "basis_sample_ids": [
+        "fashionpedia-train2020-34508",
+        "fashionpedia-train2020-44571",
+        "fashionpedia-train2020-45873",
+        "fashionpedia-train2020-5573",
+        "fashionpedia-train2020-6021",
+        "fashionpedia-train2020-9732"
+      ],
+      "reason": "Five of six accepted mismatches are labelled pleated; one checked/lace example remains visually ambiguous between pleats and gathers. This selected failure list is not a class-specific error-rate estimate."
+    },
+    {
+      "priority": 4,
+      "inference": "Independently review physical garment identity and supported presentation conditions before final evaluation, preserving current frozen results unchanged.",
+      "basis_sample_ids": [
+        "fashionpedia-train2020-3337",
+        "fashionpedia-train2020-34508",
+        "fashionpedia-train2020-37357",
+        "fashionpedia-train2020-44832",
+        "fashionpedia-train2020-5573",
+        "fashionpedia-train2020-6359",
+        "fashionpedia-train2020-8880"
+      ],
+      "reason": "Multiple wearers, heavy occlusion, a skirt meeting the frame boundary and uncertain skirt-versus-dress/trouser construction expose domain/label limitations. Do not delete these retrospectively to improve the reported counts."
+    }
+  ],
+  "reviews": [
+    {
+      "sample_id": "fashionpedia-train2020-21255",
+      "original_path": "data/external/fashionpedia_train/images/0f12b175b6edbfd7e4f02409c39b7d69.jpg",
+      "image_sha256": "06d11f01e6d08c34ed3a19ad0e564c12d22f91f94a8bc822a491855bea7ceb61",
+      "original_hash_verified": true,
+      "split": "development_validation",
+      "group_hash": "1ff63438748bc584a02de28e0648e1ff549f8609d30b4bef7ca64a99e5c5935b",
+      "expected_pleating_retained": "non_pleated",
+      "predicted_pleating": null,
+      "failure_type": "unavailable",
+      "failure_bucket": "mask_only_rejected",
+      "presence": {
+        "accepted": true,
+        "score": 0.9586060047149658,
+        "threshold": 0.5,
+        "model_sha256": "7bf9df9b1bacc757956c069f688345ff154ee480a65198ee5948fbe80bbcdb87",
+        "reason": "experimental_presence_score_not_calibrated_or_full_view_validation"
+      },
+      "localization": {
+        "status": "unavailable",
+        "roi": null,
+        "reason": "multiple_regions",
+        "model_sha256": "f2f5f73d34cd99c3fb46502cb806ddbc347c6664e8ce24b8fe06a548c70090de"
+      },
+      "reviewer": "codex-agent-v4_artifact_review",
+      "review_method": "original_image_visual_inspection",
+      "independent_human_review": false,
+      "observed_presentation": "worn",
+      "observed_evidence": "One wearer in a bright pink fitted mini on a stage. Waist and hem are visible with margins; hands overlap the upper side edges, legs cross. Pink background is similar in colour to the skirt.",
+      "waistband_visibility": "visible",
+      "hem_visibility": "visible_with_margins",
+      "feet_visibility": "visible",
+      "observed_challenge_tags": [
+        "similar_colour_background",
+        "hands_at_waist",
+        "crossed_legs"
+      ],
+      "provisional_truth_assessment": "visually_supported_provisional",
+      "label_evidence_retained_reference": "data/manifests/worn-pleating-development-v1.jsonl",
+      "new_label_or_admission": false,
+      "split_changed": false,
+      "geometry_calibrated": false
+    },
+    {
+      "sample_id": "fashionpedia-train2020-24650",
+      "original_path": "data/external/fashionpedia_train/images/ec8af9c6cdd3cf5c9c8aa731375c6908.jpg",
+      "image_sha256": "0c0b7a9c7e920f2499553a47d2588b8bc185dacfe41d990ce50abbc9a8aa9d87",
+      "original_hash_verified": true,
+      "split": "development_validation",
+      "group_hash": "3f79ad7afeeb0f61527d71b2282723cf52b5cc9c48456ce571a7a7e3537d7ccb",
+      "expected_pleating_retained": "non_pleated",
+      "predicted_pleating": null,
+      "failure_type": "unavailable",
+      "failure_bucket": "mask_only_rejected",
+      "presence": {
+        "accepted": true,
+        "score": 0.7506575584411621,
+        "threshold": 0.5,
+        "model_sha256": "7bf9df9b1bacc757956c069f688345ff154ee480a65198ee5948fbe80bbcdb87",
+        "reason": "experimental_presence_score_not_calibrated_or_full_view_validation"
+      },
+      "localization": {
+        "status": "unavailable",
+        "roi": null,
+        "reason": "region_touches_frame_edge",
+        "model_sha256": "f2f5f73d34cd99c3fb46502cb806ddbc347c6664e8ce24b8fe06a548c70090de"
+      },
+      "reviewer": "codex-agent-v4_artifact_review",
+      "review_method": "original_image_visual_inspection",
+      "independent_human_review": false,
+      "observed_presentation": "worn",
+      "observed_evidence": "Rear/side event view of a long dark fitted skirt. Waist and floor-level hem are visible inside the image; slight train rests on the carpet. Feet are concealed. The skirt itself does not visibly touch the image boundary.",
+      "waistband_visibility": "visible",
+      "hem_visibility": "visible_with_margins",
+      "feet_visibility": "concealed",
+      "observed_challenge_tags": [
+        "rear_or_side_view",
+        "floor_length",
+        "feet_concealed"
+      ],
+      "provisional_truth_assessment": "visually_supported_provisional",
+      "label_evidence_retained_reference": "data/manifests/worn-pleating-development-v1.jsonl",
+      "new_label_or_admission": false,
+      "split_changed": false,
+      "geometry_calibrated": false,
+      "mask_edge_flag_is_observed_garment_truncation": false
+    },
+    {
+      "sample_id": "fashionpedia-train2020-2689",
+      "original_path": "data/external/fashionpedia_train/images/4a94cd734692eef370402627fc23440a.jpg",
+      "image_sha256": "1bbe4ba64c7d0c164180c59858e4d1dffcbad97f8937582f51f6383aa0bb649b",
+      "original_hash_verified": true,
+      "split": "development_validation",
+      "group_hash": "886460abc91e0c44deb708735bb90f0890bea9c10f322c4964d82aa04d2660b0",
+      "expected_pleating_retained": "pleated",
+      "predicted_pleating": null,
+      "failure_type": "unavailable",
+      "failure_bucket": "mask_only_rejected",
+      "presence": {
+        "accepted": true,
+        "score": 0.9948394894599915,
+        "threshold": 0.5,
+        "model_sha256": "7bf9df9b1bacc757956c069f688345ff154ee480a65198ee5948fbe80bbcdb87",
+        "reason": "experimental_presence_score_not_calibrated_or_full_view_validation"
+      },
+      "localization": {
+        "status": "unavailable",
+        "roi": null,
+        "reason": "multiple_regions",
+        "model_sha256": "f2f5f73d34cd99c3fb46502cb806ddbc347c6664e8ce24b8fe06a548c70090de"
+      },
+      "reviewer": "codex-agent-v4_artifact_review",
+      "review_method": "original_image_visual_inspection",
+      "independent_human_review": false,
+      "observed_presentation": "worn",
+      "observed_evidence": "A wearer in a belted short skirt has broad repeated box-like folds and a visible hem. A mirror shows a second view of the same wearer and garment. Feet and lower legs are outside the image.",
+      "waistband_visibility": "visible",
+      "hem_visibility": "visible_with_margins",
+      "feet_visibility": "cropped",
+      "observed_challenge_tags": [
+        "mirror_reflection",
+        "broad_pleats",
+        "feet_cropped"
+      ],
+      "provisional_truth_assessment": "visually_supported_provisional",
+      "label_evidence_retained_reference": "data/manifests/worn-pleating-development-v1.jsonl",
+      "new_label_or_admission": false,
+      "split_changed": false,
+      "geometry_calibrated": false
+    },
+    {
+      "sample_id": "fashionpedia-train2020-29142",
+      "original_path": "data/external/fashionpedia_train/images/139decda47161c36607373438d03da1d.jpg",
+      "image_sha256": "8d349277a33f81dfeaec11a02cda49d53fdc3f58da883c1a35548c245c89f80b",
+      "original_hash_verified": true,
+      "split": "development_validation",
+      "group_hash": "3ba8779cc2792a87ffea438ef5da4aa4ad8a58b33cdf41cfe39297ca5ae9e6f4",
+      "expected_pleating_retained": "pleated",
+      "predicted_pleating": null,
+      "failure_type": "unavailable",
+      "failure_bucket": "presence_only_rejected",
+      "presence": {
+        "accepted": false,
+        "score": 0.4292908310890198,
+        "threshold": 0.5,
+        "model_sha256": "7bf9df9b1bacc757956c069f688345ff154ee480a65198ee5948fbe80bbcdb87",
+        "reason": "experimental_presence_score_not_calibrated_or_full_view_validation"
+      },
+      "localization": {
+        "status": "provisional",
+        "roi": [
+          178,
+          475,
+          590,
+          970
+        ],
+        "reason": "experimental_mask_not_verified_presence_or_full_view",
+        "mask_pixels": 563,
+        "threshold": 0.5,
+        "model_sha256": "f2f5f73d34cd99c3fb46502cb806ddbc347c6664e8ce24b8fe06a548c70090de"
+      },
+      "reviewer": "codex-agent-v4_artifact_review",
+      "review_method": "original_image_visual_inspection",
+      "independent_human_review": false,
+      "observed_presentation": "worn",
+      "observed_evidence": "Dark short skirt with broad repeated folds below a central waistband. Dark jacket overlaps its upper side regions; white shirt ends above the central waistband. The full hem is visible, while feet are cropped.",
+      "waistband_visibility": "partially_visible",
+      "hem_visibility": "visible_with_margins",
+      "feet_visibility": "cropped",
+      "observed_challenge_tags": [
+        "dark_on_dark",
+        "jacket_occlusion",
+        "broad_pleats",
+        "feet_cropped"
+      ],
+      "provisional_truth_assessment": "visually_supported_provisional",
+      "label_evidence_retained_reference": "data/manifests/worn-pleating-development-v1.jsonl",
+      "new_label_or_admission": false,
+      "split_changed": false,
+      "geometry_calibrated": false
+    },
+    {
+      "sample_id": "fashionpedia-train2020-3166",
+      "original_path": "data/external/fashionpedia_train/images/96c5755e16acfd9da438228291a43891.jpg",
+      "image_sha256": "86be8e751ba3aa01c6150063c5ca440c48748763efbbf54ebd0aa21761eb328c",
+      "original_hash_verified": true,
+      "split": "development_validation",
+      "group_hash": "08b7b2608310d6cb04fd696e5333fc44d6f6b8dccbef4e361f258e0473acabaa",
+      "expected_pleating_retained": "non_pleated",
+      "predicted_pleating": null,
+      "failure_type": "unavailable",
+      "failure_bucket": "presence_only_rejected",
+      "presence": {
+        "accepted": false,
+        "score": 0.4710155725479126,
+        "threshold": 0.5,
+        "model_sha256": "7bf9df9b1bacc757956c069f688345ff154ee480a65198ee5948fbe80bbcdb87",
+        "reason": "experimental_presence_score_not_calibrated_or_full_view_validation"
+      },
+      "localization": {
+        "status": "provisional",
+        "roi": [
+          365,
+          475,
+          573,
+          823
+        ],
+        "reason": "experimental_mask_not_verified_presence_or_full_view",
+        "mask_pixels": 224,
+        "threshold": 0.5,
+        "model_sha256": "f2f5f73d34cd99c3fb46502cb806ddbc347c6664e8ce24b8fe06a548c70090de"
+      },
+      "reviewer": "codex-agent-v4_artifact_review",
+      "review_method": "original_image_visual_inspection",
+      "independent_human_review": false,
+      "observed_presentation": "worn",
+      "observed_evidence": "Side/rear walking view of a pale straight skirt with belt, full lower edge and boots visible. A large shoulder bag and layered top occupy the area above the waist; several people and a planter are in the background.",
+      "waistband_visibility": "visible",
+      "hem_visibility": "visible_with_margins",
+      "feet_visibility": "visible",
+      "observed_challenge_tags": [
+        "rear_or_side_view",
+        "walking_pose",
+        "background_people",
+        "bag_near_waist"
+      ],
+      "provisional_truth_assessment": "visually_supported_provisional",
+      "label_evidence_retained_reference": "data/manifests/worn-pleating-development-v1.jsonl",
+      "new_label_or_admission": false,
+      "split_changed": false,
+      "geometry_calibrated": false
+    },
+    {
+      "sample_id": "fashionpedia-train2020-31762",
+      "original_path": "data/external/fashionpedia_train/images/a9d9b41e022e68ea2f71975bf1699519.jpg",
+      "image_sha256": "b0e4263498f10bfde0dcc42e9f71336dfc0ceed5523364eb48ba2bec8b513e7a",
+      "original_hash_verified": true,
+      "split": "development_validation",
+      "group_hash": "6eca12a9574dc81c42b27722415dc148b05a56dd2da9bd7102dd36127aa7c316",
+      "expected_pleating_retained": "non_pleated",
+      "predicted_pleating": null,
+      "failure_type": "unavailable",
+      "failure_bucket": "mask_only_rejected",
+      "presence": {
+        "accepted": true,
+        "score": 0.6493870615959167,
+        "threshold": 0.5,
+        "model_sha256": "7bf9df9b1bacc757956c069f688345ff154ee480a65198ee5948fbe80bbcdb87",
+        "reason": "experimental_presence_score_not_calibrated_or_full_view_validation"
+      },
+      "localization": {
+        "status": "unavailable",
+        "roi": null,
+        "reason": "multiple_regions",
+        "model_sha256": "f2f5f73d34cd99c3fb46502cb806ddbc347c6664e8ce24b8fe06a548c70090de"
+      },
+      "reviewer": "codex-agent-v4_artifact_review",
+      "review_method": "original_image_visual_inspection",
+      "independent_human_review": false,
+      "observed_presentation": "worn",
+      "observed_evidence": "Close torso-to-thigh view of a smooth fitted multicolour striped mini. Waistband and full lower edge are visible; hands overlap small parts of the skirt sides. Head and feet are outside the image.",
+      "waistband_visibility": "visible",
+      "hem_visibility": "visible_with_margins",
+      "feet_visibility": "cropped",
+      "observed_challenge_tags": [
+        "tight_person_crop_full_skirt",
+        "horizontal_stripes",
+        "hands_at_skirt_sides",
+        "feet_cropped"
+      ],
+      "provisional_truth_assessment": "visually_supported_provisional",
+      "label_evidence_retained_reference": "data/manifests/worn-pleating-development-v1.jsonl",
+      "new_label_or_admission": false,
+      "split_changed": false,
+      "geometry_calibrated": false
+    },
+    {
+      "sample_id": "fashionpedia-train2020-31853",
+      "original_path": "data/external/fashionpedia_train/images/0724d6338aef4672e3366b7b24223d71.jpg",
+      "image_sha256": "3d999c2931b5b24c4c47fc3be87b064749c304768407c03c7340fc9d1c7e7611",
+      "original_hash_verified": true,
+      "split": "development_validation",
+      "group_hash": "2d0610196b1fea9b7f04f27e8494a5a83cb1ce1567045642e2d7d6380ac4aefa",
+      "expected_pleating_retained": "non_pleated",
+      "predicted_pleating": null,
+      "failure_type": "unavailable",
+      "failure_bucket": "presence_and_mask_rejected",
+      "presence": {
+        "accepted": false,
+        "score": 0.10327307134866714,
+        "threshold": 0.5,
+        "model_sha256": "7bf9df9b1bacc757956c069f688345ff154ee480a65198ee5948fbe80bbcdb87",
+        "reason": "experimental_presence_score_not_calibrated_or_full_view_validation"
+      },
+      "localization": {
+        "status": "unavailable",
+        "roi": null,
+        "reason": "region_touches_frame_edge",
+        "model_sha256": "f2f5f73d34cd99c3fb46502cb806ddbc347c6664e8ce24b8fe06a548c70090de"
+      },
+      "reviewer": "codex-agent-v4_artifact_review",
+      "review_method": "original_image_visual_inspection",
+      "independent_human_review": false,
+      "observed_presentation": "worn",
+      "observed_evidence": "Lower-body cutout wearing a fitted green printed skirt on white. Waistband and full hem are visible inside the frame, with feet visible and no physical support surface established. The upper body is cropped away.",
+      "waistband_visibility": "visible",
+      "hem_visibility": "visible_with_margins",
+      "feet_visibility": "visible_without_established_support",
+      "observed_challenge_tags": [
+        "tight_person_crop_full_skirt",
+        "dense_print",
+        "cutout_background"
+      ],
+      "provisional_truth_assessment": "visually_supported_provisional",
+      "label_evidence_retained_reference": "data/manifests/worn-pleating-development-v1.jsonl",
+      "new_label_or_admission": false,
+      "split_changed": false,
+      "geometry_calibrated": false,
+      "mask_edge_flag_is_observed_garment_truncation": false
+    },
+    {
+      "sample_id": "fashionpedia-train2020-3337",
+      "original_path": "data/external/fashionpedia_train/images/583d19a8a008af1b195b8a3e2dcf7ec1.jpg",
+      "image_sha256": "1818306acb3315936884ecbeebb2094cff4af73d952385f0fa4ad2042759837e",
+      "original_hash_verified": true,
+      "split": "development_validation",
+      "group_hash": "b46f6babaf462574d82c9e0ed2be9ab6443ed2d7f95cd2339401b0e6b53a1e79",
+      "expected_pleating_retained": "non_pleated",
+      "predicted_pleating": null,
+      "failure_type": "unavailable",
+      "failure_bucket": "mask_only_rejected",
+      "presence": {
+        "accepted": true,
+        "score": 0.9427235722541809,
+        "threshold": 0.5,
+        "model_sha256": "7bf9df9b1bacc757956c069f688345ff154ee480a65198ee5948fbe80bbcdb87",
+        "reason": "experimental_presence_score_not_calibrated_or_full_view_validation"
+      },
+      "localization": {
+        "status": "unavailable",
+        "roi": null,
+        "reason": "multiple_regions",
+        "model_sha256": "f2f5f73d34cd99c3fb46502cb806ddbc347c6664e8ce24b8fe06a548c70090de"
+      },
+      "reviewer": "codex-agent-v4_artifact_review",
+      "review_method": "original_image_visual_inspection",
+      "independent_human_review": false,
+      "observed_presentation": "worn",
+      "observed_evidence": "Foreground runway wearer has a green straight skirt with visible waist and hem, boots and floor. A second wearer with a dark lower garment is clearly visible behind. Multiple target-like lower garments are present.",
+      "waistband_visibility": "visible",
+      "hem_visibility": "visible_with_margins",
+      "feet_visibility": "visible",
+      "observed_challenge_tags": [
+        "multiple_wearers",
+        "multiple_lower_garments",
+        "runway"
+      ],
+      "provisional_truth_assessment": "visually_supported_provisional",
+      "label_evidence_retained_reference": "data/manifests/worn-pleating-development-v1.jsonl",
+      "new_label_or_admission": false,
+      "split_changed": false,
+      "geometry_calibrated": false
+    },
+    {
+      "sample_id": "fashionpedia-train2020-33951",
+      "original_path": "data/external/fashionpedia_train/images/f726b96f7c2a91eea63489adae156b20.jpg",
+      "image_sha256": "3b5a52b045533226b69a1ba05c66f032a224e21b87444c63e2dd4bf147d090af",
+      "original_hash_verified": true,
+      "split": "development_validation",
+      "group_hash": "dad445d7a0bd0edf45a8a18c14f17e4149c8a8c5475a13912812f1ae758d6758",
+      "expected_pleating_retained": "non_pleated",
+      "predicted_pleating": null,
+      "failure_type": "unavailable",
+      "failure_bucket": "presence_only_rejected",
+      "presence": {
+        "accepted": false,
+        "score": 0.23434756696224213,
+        "threshold": 0.5,
+        "model_sha256": "7bf9df9b1bacc757956c069f688345ff154ee480a65198ee5948fbe80bbcdb87",
+        "reason": "experimental_presence_score_not_calibrated_or_full_view_validation"
+      },
+      "localization": {
+        "status": "provisional",
+        "roi": [
+          340,
+          438,
+          535,
+          659
+        ],
+        "reason": "experimental_mask_not_verified_presence_or_full_view",
+        "mask_pixels": 160,
+        "threshold": 0.5,
+        "model_sha256": "f2f5f73d34cd99c3fb46502cb806ddbc347c6664e8ce24b8fe06a548c70090de"
+      },
+      "reviewer": "codex-agent-v4_artifact_review",
+      "review_method": "original_image_visual_inspection",
+      "independent_human_review": false,
+      "observed_presentation": "worn",
+      "observed_evidence": "One wearer in a dark fitted zip-front mini and dark tights against a pale background. Jacket overlaps the upper sides, while central top edge and hem are visible. One leg is bent and boots are visible.",
+      "waistband_visibility": "partially_visible",
+      "hem_visibility": "visible_with_margins",
+      "feet_visibility": "visible",
+      "observed_challenge_tags": [
+        "dark_on_dark",
+        "jacket_occlusion",
+        "bent_leg_pose"
+      ],
+      "provisional_truth_assessment": "visually_supported_provisional",
+      "label_evidence_retained_reference": "data/manifests/worn-pleating-development-v1.jsonl",
+      "new_label_or_admission": false,
+      "split_changed": false,
+      "geometry_calibrated": false
+    },
+    {
+      "sample_id": "fashionpedia-train2020-34508",
+      "original_path": "data/external/fashionpedia_train/images/b9844316244e2f8620502d100ebbf8f5.jpg",
+      "image_sha256": "5135a345ff8348a85b0683bdac9a2b3723ba8992c26be5565ed85e65a1fd7faa",
+      "original_hash_verified": true,
+      "split": "development_validation",
+      "group_hash": "49c752a9a17ad9911b8c71beda53d2309740d7ca99fbfc19302e49533b42e647",
+      "expected_pleating_retained": "pleated",
+      "predicted_pleating": "non_pleated",
+      "failure_type": "accepted_pleating_mismatch",
+      "failure_bucket": "accepted_pleating_mismatch",
+      "presence": {
+        "accepted": true,
+        "score": 0.9894011616706848,
+        "threshold": 0.5,
+        "model_sha256": "7bf9df9b1bacc757956c069f688345ff154ee480a65198ee5948fbe80bbcdb87",
+        "reason": "experimental_presence_score_not_calibrated_or_full_view_validation"
+      },
+      "localization": {
+        "status": "provisional",
+        "roi": [
+          139,
+          512,
+          596,
+          805
+        ],
+        "reason": "experimental_mask_not_verified_presence_or_full_view",
+        "mask_pixels": 316,
+        "threshold": 0.5,
+        "model_sha256": "f2f5f73d34cd99c3fb46502cb806ddbc347c6664e8ce24b8fe06a548c70090de"
+      },
+      "reviewer": "codex-agent-v4_artifact_review",
+      "review_method": "original_image_visual_inspection",
+      "independent_human_review": false,
+      "observed_presentation": "worn",
+      "observed_evidence": "Group of three people. The left wearer has a long patterned skirt with clear fine repeated vertical folds, waist and hem visible. The middle person wears jeans and the right person shorts.",
+      "waistband_visibility": "visible",
+      "hem_visibility": "visible_with_margins",
+      "feet_visibility": "visible",
+      "observed_challenge_tags": [
+        "multiple_wearers",
+        "mixed_lower_garments",
+        "fine_pleats",
+        "patterned_pleats"
+      ],
+      "provisional_truth_assessment": "visually_supported_provisional",
+      "label_evidence_retained_reference": "data/manifests/worn-pleating-development-v1.jsonl",
+      "new_label_or_admission": false,
+      "split_changed": false,
+      "geometry_calibrated": false,
+      "recorded_roi_vs_original_observation": "Recorded ROI [139,512,596,805] spans the left skirt and a substantial part of the middle wearer's jeans, rather than isolating only the skirt."
+    },
+    {
+      "sample_id": "fashionpedia-train2020-37357",
+      "original_path": "data/external/fashionpedia_train/images/2e9237f8c38b2c8803a6cec58188ec08.jpg",
+      "image_sha256": "80d3245ab9f229cd91ab22bfcc1a7785ff8c175ac4d9a8f40273911c36092e08",
+      "original_hash_verified": true,
+      "split": "development_validation",
+      "group_hash": "46e9e3d05f3c3fe622536e1b34d57fff90d9a48b4931cf6f9b19cde48ac5c3be",
+      "expected_pleating_retained": "non_pleated",
+      "predicted_pleating": null,
+      "failure_type": "unavailable",
+      "failure_bucket": "mask_only_rejected",
+      "presence": {
+        "accepted": true,
+        "score": 0.9639442563056946,
+        "threshold": 0.5,
+        "model_sha256": "7bf9df9b1bacc757956c069f688345ff154ee480a65198ee5948fbe80bbcdb87",
+        "reason": "experimental_presence_score_not_calibrated_or_full_view_validation"
+      },
+      "localization": {
+        "status": "unavailable",
+        "roi": null,
+        "reason": "multiple_regions",
+        "model_sha256": "f2f5f73d34cd99c3fb46502cb806ddbc347c6664e8ce24b8fe06a548c70090de"
+      },
+      "reviewer": "codex-agent-v4_artifact_review",
+      "review_method": "original_image_visual_inspection",
+      "independent_human_review": false,
+      "observed_presentation": "worn",
+      "observed_evidence": "One wearer in a black flared lower garment beneath a pale fitted bodice. Waist region and full hem are visible, with soft broad drape rather than regular pressed pleats. One leg is bent. Whether the bodice and lower garment are separate physical items is not established from this photograph.",
+      "waistband_visibility": "visible",
+      "hem_visibility": "visible_with_margins",
+      "feet_visibility": "visible",
+      "observed_challenge_tags": [
+        "flared_soft_folds",
+        "bent_leg_pose",
+        "skirt_vs_dress_identity_uncertain"
+      ],
+      "provisional_truth_assessment": "pleating_visually_supported_presence_identity_uncertain",
+      "label_evidence_retained_reference": "data/manifests/worn-pleating-development-v1.jsonl",
+      "new_label_or_admission": false,
+      "split_changed": false,
+      "geometry_calibrated": false
+    },
+    {
+      "sample_id": "fashionpedia-train2020-37613",
+      "original_path": "data/external/fashionpedia_train/images/94776f5d0da8ea0f0456d85d25221c20.jpg",
+      "image_sha256": "271ea8d5fd92172a4ce831f8d94ec72057d1e14c7191b3521463da72f7355f1e",
+      "original_hash_verified": true,
+      "split": "development_validation",
+      "group_hash": "a1ab5e8264a2afe19986f67fc8052567551e7c71e95491e0c717b0ea629ef532",
+      "expected_pleating_retained": "non_pleated",
+      "predicted_pleating": null,
+      "failure_type": "unavailable",
+      "failure_bucket": "mask_only_rejected",
+      "presence": {
+        "accepted": true,
+        "score": 0.9424142837524414,
+        "threshold": 0.5,
+        "model_sha256": "7bf9df9b1bacc757956c069f688345ff154ee480a65198ee5948fbe80bbcdb87",
+        "reason": "experimental_presence_score_not_calibrated_or_full_view_validation"
+      },
+      "localization": {
+        "status": "unavailable",
+        "roi": null,
+        "reason": "multiple_regions",
+        "model_sha256": "f2f5f73d34cd99c3fb46502cb806ddbc347c6664e8ce24b8fe06a548c70090de"
+      },
+      "reviewer": "codex-agent-v4_artifact_review",
+      "review_method": "original_image_visual_inspection",
+      "independent_human_review": false,
+      "observed_presentation": "worn",
+      "observed_evidence": "One wearer in a black straight skirt with a front/side slit and pale blouse, against a wooden door. Waist edge and full hem are visible; hands rest at the upper sides. Head and portions of the feet are cropped.",
+      "waistband_visibility": "visible",
+      "hem_visibility": "visible_with_margins",
+      "feet_visibility": "partly_cropped",
+      "observed_challenge_tags": [
+        "slit",
+        "hands_at_waist",
+        "tight_person_crop_full_skirt"
+      ],
+      "provisional_truth_assessment": "visually_supported_provisional",
+      "label_evidence_retained_reference": "data/manifests/worn-pleating-development-v1.jsonl",
+      "new_label_or_admission": false,
+      "split_changed": false,
+      "geometry_calibrated": false
+    },
+    {
+      "sample_id": "fashionpedia-train2020-38701",
+      "original_path": "data/external/fashionpedia_train/images/bca22b88c1fed1539b24171f478ad81e.jpg",
+      "image_sha256": "f637eea13d2324cf894a5be77ba120f7025e688f39b45f2ea17766e5eee36b96",
+      "original_hash_verified": true,
+      "split": "development_validation",
+      "group_hash": "2cea095e50167c798df6e3926c00d6b527b22135eabb748ad837dcbf7b55492a",
+      "expected_pleating_retained": "non_pleated",
+      "predicted_pleating": null,
+      "failure_type": "unavailable",
+      "failure_bucket": "presence_only_rejected",
+      "presence": {
+        "accepted": false,
+        "score": 0.1521613448858261,
+        "threshold": 0.5,
+        "model_sha256": "7bf9df9b1bacc757956c069f688345ff154ee480a65198ee5948fbe80bbcdb87",
+        "reason": "experimental_presence_score_not_calibrated_or_full_view_validation"
+      },
+      "localization": {
+        "status": "provisional",
+        "roi": [
+          233,
+          676,
+          453,
+          988
+        ],
+        "reason": "experimental_mask_not_verified_presence_or_full_view",
+        "mask_pixels": 142,
+        "threshold": 0.5,
+        "model_sha256": "f2f5f73d34cd99c3fb46502cb806ddbc347c6664e8ce24b8fe06a548c70090de"
+      },
+      "reviewer": "codex-agent-v4_artifact_review",
+      "review_method": "original_image_visual_inspection",
+      "independent_human_review": false,
+      "observed_presentation": "worn",
+      "observed_evidence": "One wearer in a grey long suspender skirt, with smooth panels and a diagonal drape from a bent leg. Waist and lower edge are visible; a small bag overlaps one side. Feet/lower legs meet the lower image boundary; printed signage and brickwork are behind.",
+      "waistband_visibility": "visible",
+      "hem_visibility": "visible_with_margins",
+      "feet_visibility": "partly_cropped",
+      "observed_challenge_tags": [
+        "suspenders",
+        "bent_leg_pose",
+        "busy_text_background",
+        "bag_occlusion"
+      ],
+      "provisional_truth_assessment": "visually_supported_provisional",
+      "label_evidence_retained_reference": "data/manifests/worn-pleating-development-v1.jsonl",
+      "new_label_or_admission": false,
+      "split_changed": false,
+      "geometry_calibrated": false
+    },
+    {
+      "sample_id": "fashionpedia-train2020-43005",
+      "original_path": "data/external/fashionpedia_train/images/6b361111e1a696579a70db5f1a1d6ea2.jpg",
+      "image_sha256": "e8bda385960e4868e16a9d2524ca0e9b6b25cc05008e6737ab38c73d275e9edc",
+      "original_hash_verified": true,
+      "split": "development_validation",
+      "group_hash": "0f62feba08fd16c02f98fb99587162b61527b7563bb819f5b4b5c0fe55e8e188",
+      "expected_pleating_retained": "non_pleated",
+      "predicted_pleating": null,
+      "failure_type": "unavailable",
+      "failure_bucket": "mask_only_rejected",
+      "presence": {
+        "accepted": true,
+        "score": 0.9617079496383667,
+        "threshold": 0.5,
+        "model_sha256": "7bf9df9b1bacc757956c069f688345ff154ee480a65198ee5948fbe80bbcdb87",
+        "reason": "experimental_presence_score_not_calibrated_or_full_view_validation"
+      },
+      "localization": {
+        "status": "unavailable",
+        "roi": null,
+        "reason": "region_touches_frame_edge",
+        "model_sha256": "f2f5f73d34cd99c3fb46502cb806ddbc347c6664e8ce24b8fe06a548c70090de"
+      },
+      "reviewer": "codex-agent-v4_artifact_review",
+      "review_method": "original_image_visual_inspection",
+      "independent_human_review": false,
+      "observed_presentation": "worn",
+      "observed_evidence": "One full-body event wearer in a smooth striped fitted skirt and matching separate crop top; the exposed midriff establishes separation. Waist and hem are visible well inside the frame. A large brightly coloured curved backdrop fills the background.",
+      "waistband_visibility": "visible",
+      "hem_visibility": "visible_with_margins",
+      "feet_visibility": "visible",
+      "observed_challenge_tags": [
+        "matching_top_and_skirt",
+        "horizontal_stripes",
+        "bright_background"
+      ],
+      "provisional_truth_assessment": "visually_supported_provisional",
+      "label_evidence_retained_reference": "data/manifests/worn-pleating-development-v1.jsonl",
+      "new_label_or_admission": false,
+      "split_changed": false,
+      "geometry_calibrated": false,
+      "mask_edge_flag_is_observed_garment_truncation": false
+    },
+    {
+      "sample_id": "fashionpedia-train2020-44571",
+      "original_path": "data/external/fashionpedia_train/images/2eedc8ad0177c5bd6bd832b0a62f3aa9.jpg",
+      "image_sha256": "7c836c40bc7c6b0eed62cb43e81d98fff81189c9044d99e2887aa9ed7cb30f79",
+      "original_hash_verified": true,
+      "split": "development_validation",
+      "group_hash": "b80e4b6460572a0e5356c8c270d2a5304a9ea03a6dc1dea352ba05674255241d",
+      "expected_pleating_retained": "pleated",
+      "predicted_pleating": "non_pleated",
+      "failure_type": "accepted_pleating_mismatch",
+      "failure_bucket": "accepted_pleating_mismatch",
+      "presence": {
+        "accepted": true,
+        "score": 0.9092822670936584,
+        "threshold": 0.5,
+        "model_sha256": "7bf9df9b1bacc757956c069f688345ff154ee480a65198ee5948fbe80bbcdb87",
+        "reason": "experimental_presence_score_not_calibrated_or_full_view_validation"
+      },
+      "localization": {
+        "status": "provisional",
+        "roi": [
+          219,
+          457,
+          415,
+          842
+        ],
+        "reason": "experimental_mask_not_verified_presence_or_full_view",
+        "mask_pixels": 237,
+        "threshold": 0.5,
+        "model_sha256": "f2f5f73d34cd99c3fb46502cb806ddbc347c6664e8ce24b8fe06a548c70090de"
+      },
+      "reviewer": "codex-agent-v4_artifact_review",
+      "review_method": "original_image_visual_inspection",
+      "independent_human_review": false,
+      "observed_presentation": "worn",
+      "observed_evidence": "One full-body street wearer in a pale long skirt with clear fine regular vertical pleats. Belted waist and complete hem are visible. Arms run down the sides; street and cars form the background.",
+      "waistband_visibility": "visible",
+      "hem_visibility": "visible_with_margins",
+      "feet_visibility": "visible",
+      "observed_challenge_tags": [
+        "fine_pleats",
+        "pale_skirt",
+        "street_background"
+      ],
+      "provisional_truth_assessment": "visually_supported_provisional",
+      "label_evidence_retained_reference": "data/manifests/worn-pleating-development-v1.jsonl",
+      "new_label_or_admission": false,
+      "split_changed": false,
+      "geometry_calibrated": false,
+      "recorded_roi_vs_original_observation": "ROI [219,457,415,842] retains most of the visible central skirt and hem; its upper boundary is below the belt. Visible fine pleats remain within the proposed crop."
+    },
+    {
+      "sample_id": "fashionpedia-train2020-44832",
+      "original_path": "data/external/fashionpedia_train/images/7bcfff0e5f94af87749c50fe7ea64bf1.jpg",
+      "image_sha256": "0dcc151b56068a3825b3e4890fce4ffe1d060a2b0b43971e6670a38b15673ee7",
+      "original_hash_verified": true,
+      "split": "development_validation",
+      "group_hash": "af0c5702df4ed2fbcd137bea659fd078e9aa84e9f7fee2730577c403c78e6fb6",
+      "expected_pleating_retained": "non_pleated",
+      "predicted_pleating": null,
+      "failure_type": "unavailable",
+      "failure_bucket": "presence_only_rejected",
+      "presence": {
+        "accepted": false,
+        "score": 0.030388416722416878,
+        "threshold": 0.5,
+        "model_sha256": "7bf9df9b1bacc757956c069f688345ff154ee480a65198ee5948fbe80bbcdb87",
+        "reason": "experimental_presence_score_not_calibrated_or_full_view_validation"
+      },
+      "localization": {
+        "status": "provisional",
+        "roi": [
+          329,
+          640,
+          714,
+          951
+        ],
+        "reason": "experimental_mask_not_verified_presence_or_full_view",
+        "mask_pixels": 226,
+        "threshold": 0.5,
+        "model_sha256": "f2f5f73d34cd99c3fb46502cb806ddbc347c6664e8ce24b8fe06a548c70090de"
+      },
+      "reviewer": "codex-agent-v4_artifact_review",
+      "review_method": "original_image_visual_inspection",
+      "independent_human_review": false,
+      "observed_presentation": "worn",
+      "observed_evidence": "One wearer in a dark fitted short skirt beneath a bulky blue coat. The coat substantially covers both skirt sides and much of the upper region; the central panel and lower edge remain visible. Feet are outside the frame.",
+      "waistband_visibility": "partially_visible",
+      "hem_visibility": "partially_occluded",
+      "feet_visibility": "cropped",
+      "observed_challenge_tags": [
+        "substantial_coat_occlusion",
+        "dark_skirt",
+        "feet_cropped"
+      ],
+      "provisional_truth_assessment": "visible_panel_supports_label_full_skirt_visibility_limited",
+      "label_evidence_retained_reference": "data/manifests/worn-pleating-development-v1.jsonl",
+      "new_label_or_admission": false,
+      "split_changed": false,
+      "geometry_calibrated": false
+    },
+    {
+      "sample_id": "fashionpedia-train2020-45807",
+      "original_path": "data/external/fashionpedia_train/images/3401b9ba614578a96870d0f7eda66283.jpg",
+      "image_sha256": "5080a0ff501824ec8ee15c2ed8d7edac4e036bd9aa951538dacc9e5d648be351",
+      "original_hash_verified": true,
+      "split": "development_validation",
+      "group_hash": "1bb202bce974ce2a7b80eb32969aa00c60a7c624f1fc1ecc2add42cb5843c1a9",
+      "expected_pleating_retained": "non_pleated",
+      "predicted_pleating": null,
+      "failure_type": "unavailable",
+      "failure_bucket": "mask_only_rejected",
+      "presence": {
+        "accepted": true,
+        "score": 0.8615144491195679,
+        "threshold": 0.5,
+        "model_sha256": "7bf9df9b1bacc757956c069f688345ff154ee480a65198ee5948fbe80bbcdb87",
+        "reason": "experimental_presence_score_not_calibrated_or_full_view_validation"
+      },
+      "localization": {
+        "status": "unavailable",
+        "roi": null,
+        "reason": "region_touches_frame_edge",
+        "model_sha256": "f2f5f73d34cd99c3fb46502cb806ddbc347c6664e8ce24b8fe06a548c70090de"
+      },
+      "reviewer": "codex-agent-v4_artifact_review",
+      "review_method": "original_image_visual_inspection",
+      "independent_human_review": false,
+      "observed_presentation": "worn",
+      "observed_evidence": "Torso-to-lower-leg crop of a wearer in a yellow printed straight skirt. Waist and complete hem have visible margins; hands lie beside the skirt and feet are cropped. A few irregular horizontal wrinkles are visible.",
+      "waistband_visibility": "visible",
+      "hem_visibility": "visible_with_margins",
+      "feet_visibility": "cropped",
+      "observed_challenge_tags": [
+        "tight_person_crop_full_skirt",
+        "dense_print",
+        "feet_cropped"
+      ],
+      "provisional_truth_assessment": "visually_supported_provisional",
+      "label_evidence_retained_reference": "data/manifests/worn-pleating-development-v1.jsonl",
+      "new_label_or_admission": false,
+      "split_changed": false,
+      "geometry_calibrated": false,
+      "mask_edge_flag_is_observed_garment_truncation": false
+    },
+    {
+      "sample_id": "fashionpedia-train2020-45873",
+      "original_path": "data/external/fashionpedia_train/images/3487c2099b83e4e2f36980aa9d439fa2.jpg",
+      "image_sha256": "d1086894f14cd70202649b47801cc76dca792c5d49a719334551d0ce93ca6087",
+      "original_hash_verified": true,
+      "split": "development_validation",
+      "group_hash": "116da65b450269f4ab417201049807bde8e9d9e9b8e5f95c74e0baac9e127696",
+      "expected_pleating_retained": "pleated",
+      "predicted_pleating": "non_pleated",
+      "failure_type": "accepted_pleating_mismatch",
+      "failure_bucket": "accepted_pleating_mismatch",
+      "presence": {
+        "accepted": true,
+        "score": 0.8751197457313538,
+        "threshold": 0.5,
+        "model_sha256": "7bf9df9b1bacc757956c069f688345ff154ee480a65198ee5948fbe80bbcdb87",
+        "reason": "experimental_presence_score_not_calibrated_or_full_view_validation"
+      },
+      "localization": {
+        "status": "provisional",
+        "roi": [
+          170,
+          640,
+          464,
+          933
+        ],
+        "reason": "experimental_mask_not_verified_presence_or_full_view",
+        "mask_pixels": 327,
+        "threshold": 0.5,
+        "model_sha256": "f2f5f73d34cd99c3fb46502cb806ddbc347c6664e8ce24b8fe06a548c70090de"
+      },
+      "reviewer": "codex-agent-v4_artifact_review",
+      "review_method": "original_image_visual_inspection",
+      "independent_human_review": false,
+      "observed_presentation": "worn",
+      "observed_evidence": "One wearer in a checked short skirt with lace lower trim. The dark top covers the waistband, a small bag overlaps the left edge, and feet are cropped. Repeated vertical folds are visible in the checked panel, but this image alone does not confidently distinguish sewn/pressed pleats from gathers.",
+      "waistband_visibility": "covered",
+      "hem_visibility": "visible_with_margins",
+      "feet_visibility": "cropped",
+      "observed_challenge_tags": [
+        "patterned_folds",
+        "lace_trim",
+        "waist_occlusion",
+        "bag_occlusion",
+        "feet_cropped"
+      ],
+      "provisional_truth_assessment": "ambiguous_pleats_vs_gathers",
+      "label_evidence_retained_reference": "data/manifests/worn-pleating-development-v1.jsonl",
+      "new_label_or_admission": false,
+      "split_changed": false,
+      "geometry_calibrated": false,
+      "recorded_roi_vs_original_observation": "ROI [170,640,464,933] includes much of the skirt but does not include all of the right side and lower trim visible in the original."
+    },
+    {
+      "sample_id": "fashionpedia-train2020-48845",
+      "original_path": "data/external/fashionpedia_train/images/d1b35f9a363059ca40983ff324fd612a.jpg",
+      "image_sha256": "c382f2afab5d226bb1c361f59ac1047df96d47811688e41658d28e3f95ebb6f5",
+      "original_hash_verified": true,
+      "split": "development_validation",
+      "group_hash": "69cdbff86f736e7ad3bef70372d705ff3c48edfdc398a08f9541fa94ba450b1b",
+      "expected_pleating_retained": "non_pleated",
+      "predicted_pleating": null,
+      "failure_type": "unavailable",
+      "failure_bucket": "presence_and_mask_rejected",
+      "presence": {
+        "accepted": false,
+        "score": 0.06706587225198746,
+        "threshold": 0.5,
+        "model_sha256": "7bf9df9b1bacc757956c069f688345ff154ee480a65198ee5948fbe80bbcdb87",
+        "reason": "experimental_presence_score_not_calibrated_or_full_view_validation"
+      },
+      "localization": {
+        "status": "unavailable",
+        "roi": null,
+        "reason": "region_touches_frame_edge",
+        "model_sha256": "f2f5f73d34cd99c3fb46502cb806ddbc347c6664e8ce24b8fe06a548c70090de"
+      },
+      "reviewer": "codex-agent-v4_artifact_review",
+      "review_method": "original_image_visual_inspection",
+      "independent_human_review": false,
+      "observed_presentation": "worn",
+      "observed_evidence": "Rear torso-to-knee crop of a wearer in a white fitted skirt against a white background. Separate waist edge, central back seam and complete hem are visible inside the image. Feet are outside the frame; the skirt has low contrast against the background.",
+      "waistband_visibility": "visible",
+      "hem_visibility": "visible_with_margins",
+      "feet_visibility": "cropped",
+      "observed_challenge_tags": [
+        "rear_or_side_view",
+        "white_on_white",
+        "tight_person_crop_full_skirt",
+        "feet_cropped"
+      ],
+      "provisional_truth_assessment": "visually_supported_provisional",
+      "label_evidence_retained_reference": "data/manifests/worn-pleating-development-v1.jsonl",
+      "new_label_or_admission": false,
+      "split_changed": false,
+      "geometry_calibrated": false,
+      "mask_edge_flag_is_observed_garment_truncation": false
+    },
+    {
+      "sample_id": "fashionpedia-train2020-50372",
+      "original_path": "data/external/fashionpedia_train/images/44218e6dbc83431ebbf6b079cc0b1902.jpg",
+      "image_sha256": "8c77cb9ae3b01e41bb42919f52145d4836e79c1867e0ddcf46f00538da443be0",
+      "original_hash_verified": true,
+      "split": "development_validation",
+      "group_hash": "51f6526672b36f6ad8c01d091d90666da76b44c76bbc37f7751726343f70aff2",
+      "expected_pleating_retained": "pleated",
+      "predicted_pleating": null,
+      "failure_type": "unavailable",
+      "failure_bucket": "mask_only_rejected",
+      "presence": {
+        "accepted": true,
+        "score": 0.6838142275810242,
+        "threshold": 0.5,
+        "model_sha256": "7bf9df9b1bacc757956c069f688345ff154ee480a65198ee5948fbe80bbcdb87",
+        "reason": "experimental_presence_score_not_calibrated_or_full_view_validation"
+      },
+      "localization": {
+        "status": "unavailable",
+        "roi": null,
+        "reason": "region_touches_frame_edge",
+        "model_sha256": "f2f5f73d34cd99c3fb46502cb806ddbc347c6664e8ce24b8fe06a548c70090de"
+      },
+      "reviewer": "codex-agent-v4_artifact_review",
+      "review_method": "original_image_visual_inspection",
+      "independent_human_review": false,
+      "observed_presentation": "worn",
+      "observed_evidence": "One wearer in a grey flared skirt with broad front box-like folds and a contrasting lower band. Central waistband and hem are visible; hands overlap the upper pleat origins. Lower legs and feet are cropped.",
+      "waistband_visibility": "partially_visible",
+      "hem_visibility": "visible_with_margins",
+      "feet_visibility": "cropped",
+      "observed_challenge_tags": [
+        "broad_pleats",
+        "hands_occlude_pleat_origins",
+        "contrasting_hem_band",
+        "feet_cropped"
+      ],
+      "provisional_truth_assessment": "visually_supported_provisional",
+      "label_evidence_retained_reference": "data/manifests/worn-pleating-development-v1.jsonl",
+      "new_label_or_admission": false,
+      "split_changed": false,
+      "geometry_calibrated": false,
+      "mask_edge_flag_is_observed_garment_truncation": false
+    },
+    {
+      "sample_id": "fashionpedia-train2020-5573",
+      "original_path": "data/external/fashionpedia_train/images/024d67b3666dc2d4b6488002df5f73c7.jpg",
+      "image_sha256": "66cdc122c06586bac72dd6a751eb88519a6d2242e1b21bac546bcbc5cb57a2bb",
+      "original_hash_verified": true,
+      "split": "development_validation",
+      "group_hash": "5b766d060fc07af27745c4d83445b693a1379aa05921539fe19a1960f3f43202",
+      "expected_pleating_retained": "pleated",
+      "predicted_pleating": "non_pleated",
+      "failure_type": "accepted_pleating_mismatch",
+      "failure_bucket": "accepted_pleating_mismatch",
+      "presence": {
+        "accepted": true,
+        "score": 0.9016522169113159,
+        "threshold": 0.5,
+        "model_sha256": "7bf9df9b1bacc757956c069f688345ff154ee480a65198ee5948fbe80bbcdb87",
+        "reason": "experimental_presence_score_not_calibrated_or_full_view_validation"
+      },
+      "localization": {
+        "status": "provisional",
+        "roi": [
+          292,
+          493,
+          634,
+          915
+        ],
+        "reason": "experimental_mask_not_verified_presence_or_full_view",
+        "mask_pixels": 429,
+        "threshold": 0.5,
+        "model_sha256": "f2f5f73d34cd99c3fb46502cb806ddbc347c6664e8ce24b8fe06a548c70090de"
+      },
+      "reviewer": "codex-agent-v4_artifact_review",
+      "review_method": "original_image_visual_inspection",
+      "independent_human_review": false,
+      "observed_presentation": "worn",
+      "observed_evidence": "Tilted runway photograph with a dark short skirt showing broad structured repeated folds. Dark jacket overlaps the upper sides. The skirt right silhouette/hem meets the right image boundary, so the entire skirt outline is not established; audience members are visible behind.",
+      "waistband_visibility": "partially_visible",
+      "hem_visibility": "partially_at_frame_boundary",
+      "feet_visibility": "cropped",
+      "observed_challenge_tags": [
+        "broad_pleats",
+        "jacket_occlusion",
+        "tilted_camera",
+        "skirt_at_image_boundary",
+        "background_people"
+      ],
+      "provisional_truth_assessment": "pleating_visually_supported_full_skirt_visibility_limited",
+      "label_evidence_retained_reference": "data/manifests/worn-pleating-development-v1.jsonl",
+      "new_label_or_admission": false,
+      "split_changed": false,
+      "geometry_calibrated": false,
+      "recorded_roi_vs_original_observation": "ROI [292,493,634,915] omits part of the right-side skirt visible near the image boundary; broad folds remain visible centrally."
+    },
+    {
+      "sample_id": "fashionpedia-train2020-5601",
+      "original_path": "data/external/fashionpedia_train/images/d7dc7a133e71bb663375c38477a00658.jpg",
+      "image_sha256": "fa4e3cea9d4f0904fe7b9000aaaf22ad3516de1fd52c160b567d038fdd71b46c",
+      "original_hash_verified": true,
+      "split": "development_validation",
+      "group_hash": "c667bedbcfa40c1c9ca96ad694266bc2186f4d4261a445c47d7f1bfbc16d238e",
+      "expected_pleating_retained": "non_pleated",
+      "predicted_pleating": null,
+      "failure_type": "unavailable",
+      "failure_bucket": "presence_only_rejected",
+      "presence": {
+        "accepted": false,
+        "score": 0.3602064251899719,
+        "threshold": 0.5,
+        "model_sha256": "7bf9df9b1bacc757956c069f688345ff154ee480a65198ee5948fbe80bbcdb87",
+        "reason": "experimental_presence_score_not_calibrated_or_full_view_validation"
+      },
+      "localization": {
+        "status": "provisional",
+        "roi": [
+          263,
+          420,
+          644,
+          878
+        ],
+        "reason": "experimental_mask_not_verified_presence_or_full_view",
+        "mask_pixels": 449,
+        "threshold": 0.5,
+        "model_sha256": "f2f5f73d34cd99c3fb46502cb806ddbc347c6664e8ce24b8fe06a548c70090de"
+      },
+      "reviewer": "codex-agent-v4_artifact_review",
+      "review_method": "original_image_visual_inspection",
+      "independent_human_review": false,
+      "observed_presentation": "worn",
+      "observed_evidence": "One wearer in a dark fitted skirt with side ruching and a smooth central panel. Waist and complete lower edge are visible, while feet are cropped. The pale blouse has vertical folds/tucks above the skirt, which are separate from the target garment.",
+      "waistband_visibility": "visible",
+      "hem_visibility": "visible_with_margins",
+      "feet_visibility": "cropped",
+      "observed_challenge_tags": [
+        "ruched_sides",
+        "pleated_or_tucked_top",
+        "feet_cropped"
+      ],
+      "provisional_truth_assessment": "visually_supported_provisional",
+      "label_evidence_retained_reference": "data/manifests/worn-pleating-development-v1.jsonl",
+      "new_label_or_admission": false,
+      "split_changed": false,
+      "geometry_calibrated": false
+    },
+    {
+      "sample_id": "fashionpedia-train2020-6021",
+      "original_path": "data/external/fashionpedia_train/images/53eae902081d8dfe7c2eeabe84cd0968.jpg",
+      "image_sha256": "3066a581db50769579ef765ca71e7ee769eb896a8dd4653c13103d168eff64f3",
+      "original_hash_verified": true,
+      "split": "development_validation",
+      "group_hash": "81ccd53408a59df43f98d2da740fe229cda49639a7deefedc7b8f1dc620c9f9f",
+      "expected_pleating_retained": "non_pleated",
+      "predicted_pleating": "pleated",
+      "failure_type": "accepted_pleating_mismatch",
+      "failure_bucket": "accepted_pleating_mismatch",
+      "presence": {
+        "accepted": true,
+        "score": 0.9582692384719849,
+        "threshold": 0.5,
+        "model_sha256": "7bf9df9b1bacc757956c069f688345ff154ee480a65198ee5948fbe80bbcdb87",
+        "reason": "experimental_presence_score_not_calibrated_or_full_view_validation"
+      },
+      "localization": {
+        "status": "provisional",
+        "roi": [
+          207,
+          493,
+          476,
+          951
+        ],
+        "reason": "experimental_mask_not_verified_presence_or_full_view",
+        "mask_pixels": 451,
+        "threshold": 0.5,
+        "model_sha256": "f2f5f73d34cd99c3fb46502cb806ddbc347c6664e8ce24b8fe06a548c70090de"
+      },
+      "reviewer": "codex-agent-v4_artifact_review",
+      "review_method": "original_image_visual_inspection",
+      "independent_human_review": false,
+      "observed_presentation": "worn",
+      "observed_evidence": "One wearer on a stage in a shiny copper-coloured flared skirt with central fasteners and broad irregular drape near the lower edge. Waist edge is partly visible below the top, and full hem is visible. The image does not show a consistent repeated pleat pattern.",
+      "waistband_visibility": "partially_visible",
+      "hem_visibility": "visible_with_margins",
+      "feet_visibility": "cropped",
+      "observed_challenge_tags": [
+        "shiny_fabric",
+        "natural_flare_folds",
+        "front_fasteners",
+        "busy_text_background",
+        "feet_cropped"
+      ],
+      "provisional_truth_assessment": "visually_supported_provisional",
+      "label_evidence_retained_reference": "data/manifests/worn-pleating-development-v1.jsonl",
+      "new_label_or_admission": false,
+      "split_changed": false,
+      "geometry_calibrated": false,
+      "recorded_roi_vs_original_observation": "ROI [207,493,476,951] clips some of the flared side extent compared with the original silhouette."
+    },
+    {
+      "sample_id": "fashionpedia-train2020-6359",
+      "original_path": "data/external/fashionpedia_train/images/46abad9bc1c9756d65cde62062ea9ead.jpg",
+      "image_sha256": "d42b9b7900969a8f944a6d410a6281635838deb17f9ba06c5804e6e36aacbcb5",
+      "original_hash_verified": true,
+      "split": "development_validation",
+      "group_hash": "a2e31804b43fb3cd4e6d8ba67687fa81ef1c8a2362d0bcef6146446f94084a01",
+      "expected_pleating_retained": "non_pleated",
+      "predicted_pleating": null,
+      "failure_type": "unavailable",
+      "failure_bucket": "mask_only_rejected",
+      "presence": {
+        "accepted": true,
+        "score": 0.9990959763526917,
+        "threshold": 0.5,
+        "model_sha256": "7bf9df9b1bacc757956c069f688345ff154ee480a65198ee5948fbe80bbcdb87",
+        "reason": "experimental_presence_score_not_calibrated_or_full_view_validation"
+      },
+      "localization": {
+        "status": "unavailable",
+        "roi": null,
+        "reason": "multiple_regions",
+        "model_sha256": "f2f5f73d34cd99c3fb46502cb806ddbc347c6664e8ce24b8fe06a548c70090de"
+      },
+      "reviewer": "codex-agent-v4_artifact_review",
+      "review_method": "original_image_visual_inspection",
+      "independent_human_review": false,
+      "observed_presentation": "worn",
+      "observed_evidence": "Side runway wearer in a patterned fitted lower garment and contrasting patterned upper section. The lower hem and shoes are visible; no separate waistband is established. Whether the outfit is a separate skirt or a dress is uncertain from this photograph. Audience members surround the runway.",
+      "waistband_visibility": "not_established",
+      "hem_visibility": "visible_with_margins",
+      "feet_visibility": "visible",
+      "observed_challenge_tags": [
+        "rear_or_side_view",
+        "skirt_vs_dress_identity_uncertain",
+        "background_people",
+        "runway"
+      ],
+      "provisional_truth_assessment": "pleating_visually_supported_presence_identity_uncertain",
+      "label_evidence_retained_reference": "data/manifests/worn-pleating-development-v1.jsonl",
+      "new_label_or_admission": false,
+      "split_changed": false,
+      "geometry_calibrated": false
+    },
+    {
+      "sample_id": "fashionpedia-train2020-6986",
+      "original_path": "data/external/fashionpedia_train/images/78e6a7c50eb2b8b22e49e572b4d9786b.jpg",
+      "image_sha256": "6be5ca2fce26d3de666d98f47592f1adf1b7cf6965bef786e46c43f242576c44",
+      "original_hash_verified": true,
+      "split": "development_validation",
+      "group_hash": "bcefdfa2382f1acb6aa417a6e70f4f2c5af911c6ee1eade69e430db406ce1a3f",
+      "expected_pleating_retained": "non_pleated",
+      "predicted_pleating": null,
+      "failure_type": "unavailable",
+      "failure_bucket": "mask_only_rejected",
+      "presence": {
+        "accepted": true,
+        "score": 0.9050548076629639,
+        "threshold": 0.5,
+        "model_sha256": "7bf9df9b1bacc757956c069f688345ff154ee480a65198ee5948fbe80bbcdb87",
+        "reason": "experimental_presence_score_not_calibrated_or_full_view_validation"
+      },
+      "localization": {
+        "status": "unavailable",
+        "roi": null,
+        "reason": "region_touches_frame_edge",
+        "model_sha256": "f2f5f73d34cd99c3fb46502cb806ddbc347c6664e8ce24b8fe06a548c70090de"
+      },
+      "reviewer": "codex-agent-v4_artifact_review",
+      "review_method": "original_image_visual_inspection",
+      "independent_human_review": false,
+      "observed_presentation": "worn",
+      "observed_evidence": "One runway wearer in a white long fitted/flared skirt with a separate cropped top and exposed midriff. Waist and floor-level hem are visible inside the image; feet are concealed. Audience members are visible along the left edge.",
+      "waistband_visibility": "visible",
+      "hem_visibility": "visible_with_margins",
+      "feet_visibility": "concealed",
+      "observed_challenge_tags": [
+        "floor_length",
+        "white_skirt",
+        "feet_concealed",
+        "background_people"
+      ],
+      "provisional_truth_assessment": "visually_supported_provisional",
+      "label_evidence_retained_reference": "data/manifests/worn-pleating-development-v1.jsonl",
+      "new_label_or_admission": false,
+      "split_changed": false,
+      "geometry_calibrated": false,
+      "mask_edge_flag_is_observed_garment_truncation": false
+    },
+    {
+      "sample_id": "fashionpedia-train2020-8880",
+      "original_path": "data/external/fashionpedia_train/images/9ba3efd30ef6573b24af251278b6499e.jpg",
+      "image_sha256": "522fece6bfd16a74095516dcc13a2090a1730e9cfaa0b3ee834fa506a704477b",
+      "original_hash_verified": true,
+      "split": "development_validation",
+      "group_hash": "fc5cdb2f53cfe715bd9cd5d616c475d2dbce0935e14ea42612fb4ba41f649fce",
+      "expected_pleating_retained": "non_pleated",
+      "predicted_pleating": null,
+      "failure_type": "unavailable",
+      "failure_bucket": "mask_only_rejected",
+      "presence": {
+        "accepted": true,
+        "score": 0.9944394826889038,
+        "threshold": 0.5,
+        "model_sha256": "7bf9df9b1bacc757956c069f688345ff154ee480a65198ee5948fbe80bbcdb87",
+        "reason": "experimental_presence_score_not_calibrated_or_full_view_validation"
+      },
+      "localization": {
+        "status": "unavailable",
+        "roi": null,
+        "reason": "multiple_regions",
+        "model_sha256": "f2f5f73d34cd99c3fb46502cb806ddbc347c6664e8ce24b8fe06a548c70090de"
+      },
+      "reviewer": "codex-agent-v4_artifact_review",
+      "review_method": "original_image_visual_inspection",
+      "independent_human_review": false,
+      "observed_presentation": "worn",
+      "observed_evidence": "Foreground runway wearer in an asymmetrical draped white lower outfit with separate leg-like gathered sections, beneath a white top. The waistband is hidden. The image alone cannot establish a simple skirt versus trousers or a skirt-over-trouser construction. Another wearer is partly visible at the right.",
+      "waistband_visibility": "covered",
+      "hem_visibility": "lower_garment_boundaries_visible_identity_uncertain",
+      "feet_visibility": "visible",
+      "observed_challenge_tags": [
+        "asymmetric_drape",
+        "skirt_vs_trousers_identity_uncertain",
+        "multiple_wearers",
+        "waist_occlusion"
+      ],
+      "provisional_truth_assessment": "presence_identity_and_pleating_interpretation_uncertain",
+      "label_evidence_retained_reference": "data/manifests/worn-pleating-development-v1.jsonl",
+      "new_label_or_admission": false,
+      "split_changed": false,
+      "geometry_calibrated": false
+    },
+    {
+      "sample_id": "fashionpedia-train2020-9473",
+      "original_path": "data/external/fashionpedia_train/images/6598a2f12a470087275bc77cd1f8b0e9.jpg",
+      "image_sha256": "9df48bfc9da60cc6dd737f60b4c99bb27219ace34932bfc181f18497114f8fc3",
+      "original_hash_verified": true,
+      "split": "development_validation",
+      "group_hash": "669650aca13f0d11136ec222d6511914e62f93ff4f96d80e49d3cbd2513b3687",
+      "expected_pleating_retained": "non_pleated",
+      "predicted_pleating": null,
+      "failure_type": "unavailable",
+      "failure_bucket": "mask_only_rejected",
+      "presence": {
+        "accepted": true,
+        "score": 0.822595477104187,
+        "threshold": 0.5,
+        "model_sha256": "7bf9df9b1bacc757956c069f688345ff154ee480a65198ee5948fbe80bbcdb87",
+        "reason": "experimental_presence_score_not_calibrated_or_full_view_validation"
+      },
+      "localization": {
+        "status": "unavailable",
+        "roi": null,
+        "reason": "multiple_regions",
+        "model_sha256": "f2f5f73d34cd99c3fb46502cb806ddbc347c6664e8ce24b8fe06a548c70090de"
+      },
+      "reviewer": "codex-agent-v4_artifact_review",
+      "review_method": "original_image_visual_inspection",
+      "independent_human_review": false,
+      "observed_presentation": "worn",
+      "observed_evidence": "One street wearer in a dark sheer floral lower garment under a pale sweater. Sweater hides the waistband; translucent hem and shoes are visible, with no clear regular pleats. Street vegetation, cars and a bag create surrounding detail.",
+      "waistband_visibility": "covered",
+      "hem_visibility": "visible_with_margins",
+      "feet_visibility": "visible",
+      "observed_challenge_tags": [
+        "sheer_embroidered_fabric",
+        "waist_occlusion",
+        "busy_street_background"
+      ],
+      "provisional_truth_assessment": "visually_supported_provisional",
+      "label_evidence_retained_reference": "data/manifests/worn-pleating-development-v1.jsonl",
+      "new_label_or_admission": false,
+      "split_changed": false,
+      "geometry_calibrated": false
+    },
+    {
+      "sample_id": "fashionpedia-train2020-9732",
+      "original_path": "data/external/fashionpedia_train/images/d02b1836c3a4a17e20917cce162491c0.jpg",
+      "image_sha256": "6848d72392c49f40ad88a9e487f127726ccdcddc235844a35133da7f45135255",
+      "original_hash_verified": true,
+      "split": "development_validation",
+      "group_hash": "2e686a0d56615b9081ab0f9b3d30473c29a401e08660d6bb6a4ca0b70dca2be4",
+      "expected_pleating_retained": "pleated",
+      "predicted_pleating": "non_pleated",
+      "failure_type": "accepted_pleating_mismatch",
+      "failure_bucket": "accepted_pleating_mismatch",
+      "presence": {
+        "accepted": true,
+        "score": 0.9863550066947937,
+        "threshold": 0.5,
+        "model_sha256": "7bf9df9b1bacc757956c069f688345ff154ee480a65198ee5948fbe80bbcdb87",
+        "reason": "experimental_presence_score_not_calibrated_or_full_view_validation"
+      },
+      "localization": {
+        "status": "provisional",
+        "roi": [
+          182,
+          340,
+          494,
+          535
+        ],
+        "reason": "experimental_mask_not_verified_presence_or_full_view",
+        "mask_pixels": 154,
+        "threshold": 0.5,
+        "model_sha256": "f2f5f73d34cd99c3fb46502cb806ddbc347c6664e8ce24b8fe06a548c70090de"
+      },
+      "reviewer": "codex-agent-v4_artifact_review",
+      "review_method": "original_image_visual_inspection",
+      "independent_human_review": false,
+      "observed_presentation": "worn",
+      "observed_evidence": "Tilted outdoor image of a wearer in a black short skirt with broad repeated folds from a visible waistband and scalloped lower trim. Full original skirt is visible; feet are outside the crop.",
+      "waistband_visibility": "visible",
+      "hem_visibility": "visible_with_margins",
+      "feet_visibility": "cropped",
+      "observed_challenge_tags": [
+        "broad_pleats",
+        "tilted_camera",
+        "scalloped_trim",
+        "feet_cropped"
+      ],
+      "provisional_truth_assessment": "visually_supported_provisional",
+      "label_evidence_retained_reference": "data/manifests/worn-pleating-development-v1.jsonl",
+      "new_label_or_admission": false,
+      "split_changed": false,
+      "geometry_calibrated": false,
+      "recorded_roi_vs_original_observation": "ROI [182,340,494,535] excludes part of the lower hem of the tilted skirt, which extends below y535 in the original."
+    }
+  ],
+  "mutations": {
+    "training_labels_changed": false,
+    "admissions_changed": false,
+    "split_membership_changed": false,
+    "thresholds_changed": false,
+    "training_performed": false,
+    "packages_installed": false,
+    "physical_camera_or_pi_used": false
+  },
+  "limitations": [
+    "A second agent visual review is not independent human ground truth or physical garment identity verification.",
+    "Only the preselected28 failure originals were inspected in this task; no claim about the remaining38 accepted-correct originals follows.",
+    "No raw predicted-mask overlay was generated or inspected. Recorded ROI coordinates were compared against displayed originals; failure mechanisms remain hypotheses.",
+    "No hardware, measured geometry, new data acquisition, tuning or independent held-out evaluation occurred."
+  ]
+}

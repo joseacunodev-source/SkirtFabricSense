@@ -1,0 +1,144 @@
+{
+  "release_id": "skirt-baseline-v1",
+  "status": "desktop_verified_development_pilot",
+  "source_run_id": "20261004-skirt-baseline-v1",
+  "model_files_and_sha256": [
+    {
+      "path": "artifacts/models/skirt-baseline-v1/model.keras",
+      "sha256": "e89a2084f7dc4a8c7be950d27e1a3a603eb4707e638a482b18cba0e2229705af"
+    },
+    {
+      "path": "artifacts/models/skirt-baseline-v1/model.tflite",
+      "sha256": "aee38858c1ab0ae4747e67fc5dc4a93dcd09b4bb0394cf05eae2de7a8c3b3985"
+    }
+  ],
+  "input_output_tensor_contract": {
+    "input": {
+      "shape": [
+        1,
+        224,
+        224,
+        3
+      ],
+      "dtype": "float32",
+      "color": "RGB",
+      "range": [
+        0,
+        255
+      ]
+    },
+    "preprocessing": "Source annotated bbox plus 5% each side; RGB Pillow bilinear letterbox224; padding128; model Rescaling(1/127.5,offset=-1) exactly once",
+    "normalization": "Inside model only",
+    "output": {
+      "shape": [
+        1,
+        2
+      ],
+      "dtype": "float32",
+      "labels": [
+        "non_pleated",
+        "pleated"
+      ],
+      "semantics": "uncalibrated softmax scores"
+    },
+    "roi": "Source annotated box; automatic live localization not implemented",
+    "scope": "Pleating only, no length or fabric model",
+    "pi_verified": false
+  },
+  "labels_in_output_order": [
+    "non_pleated",
+    "pleated"
+  ],
+  "dataset": {
+    "path": "data/labels/skirt-baseline-v1.jsonl",
+    "sha256": "9160998b5ab0f65251c53cefd783e1c6351887bec8c655074be64dd2717dc2eb"
+  },
+  "environment": {
+    "path": "records/experiments/20261004-skirt-baseline-v1/environment.json",
+    "sha256": "20c6940ec920e1f03a3ab83befb7f0cda10b8466e03311cc8a3b1ac599a2ebdc"
+  },
+  "training_record": {
+    "path": "records/experiments/20261004-skirt-baseline-v1/run.json",
+    "sha256": "8218892c64e13fcfa8028fd8096a0832aed86d93ba810d30958c435c4d274c3d"
+  },
+  "export_verification": {
+    "path": "records/experiments/20261004-skirt-baseline-v1/export-fp32-verification.json",
+    "sha256": "c39c038c3363e18e833ad1c54689a276eab4e9f63f2bf0e002310709546ae1a5"
+  },
+  "selected_epoch": 4,
+  "metrics": {
+    "model": {
+      "count": 80,
+      "accuracy": 0.7875,
+      "macro_f1": 0.7212543554006969,
+      "per_class": [
+        {
+          "label": "non_pleated",
+          "support": 60,
+          "precision": 0.864406779661017,
+          "recall": 0.85,
+          "f1": 0.8571428571428572
+        },
+        {
+          "label": "pleated",
+          "support": 20,
+          "precision": 0.5714285714285714,
+          "recall": 0.6,
+          "f1": 0.5853658536585366
+        }
+      ],
+      "confusion_matrix_actual_rows_predicted_columns": [
+        [
+          51,
+          9
+        ],
+        [
+          8,
+          12
+        ]
+      ]
+    },
+    "train_majority_baseline": {
+      "count": 80,
+      "accuracy": 0.75,
+      "macro_f1": 0.42857142857142855,
+      "per_class": [
+        {
+          "label": "non_pleated",
+          "support": 60,
+          "precision": 0.75,
+          "recall": 1.0,
+          "f1": 0.8571428571428571
+        },
+        {
+          "label": "pleated",
+          "support": 20,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        }
+      ],
+      "confusion_matrix_actual_rows_predicted_columns": [
+        [
+          60,
+          0
+        ],
+        [
+          20,
+          0
+        ]
+      ]
+    }
+  },
+  "pi_validation_record": null,
+  "known_limitations": [
+    "Development validation only; no final-test use",
+    "Agent appearance labels require independent confirmation",
+    "Physical garment identity unresolved despite connected-group split",
+    "Manual source ROI; no automatic camera localization",
+    "Web-image domain; no webcam, length, fabric or Raspberry Pi verification",
+    "No probability calibration or rejection threshold",
+    "Source image and pretrained-weight redistribution rights require review before publishing weights"
+  ],
+  "export_note": "Original run status failed only for TF32 probability parity. Unchanged trained checkpoint and TFLite subsequently passed strict-FP32 verification without retraining."
+}

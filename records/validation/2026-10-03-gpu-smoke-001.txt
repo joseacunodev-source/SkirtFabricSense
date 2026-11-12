@@ -1,0 +1,63 @@
+2026-10-03 16:21:47.769107: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2026-10-03 16:21:47.855175: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F AVX512_VNNI FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2026-10-03 16:21:49.265136: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1791015711.740343    2645 gpu_device.cc:2020] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 3584 MB memory:  -> device: 0, name: NVIDIA GeForce RTX 3060 Laptop GPU, pci bus id: 0000:01:00.0, compute capability: 8.6
+2026-10-03 16:21:53.259610: I external/local_xla/xla/stream_executor/cuda/cuda_dnn.cc:473] Loaded cuDNN version 92700
+W0000 00:00:1791015716.512312    2645 tf_tfl_flatbuffer_helpers.cc:364] Ignored output_format.
+W0000 00:00:1791015716.512417    2645 tf_tfl_flatbuffer_helpers.cc:367] Ignored drop_control_dependency.
+2026-10-03 16:21:56.513273: I tensorflow/cc/saved_model/reader.cc:83] Reading SavedModel from: /home/skirttrain/skirt-fabric-sense/runs/gpu-smoke-001/saved_model
+2026-10-03 16:21:56.514077: I tensorflow/cc/saved_model/reader.cc:52] Reading meta graph with tags { serve }
+2026-10-03 16:21:56.514131: I tensorflow/cc/saved_model/reader.cc:147] Reading SavedModel debug info (if present) from: /home/skirttrain/skirt-fabric-sense/runs/gpu-smoke-001/saved_model
+I0000 00:00:1791015716.520233    2645 mlir_graph_optimization_pass.cc:437] MLIR V1 optimization pass is not enabled
+2026-10-03 16:21:56.520951: I tensorflow/cc/saved_model/loader.cc:236] Restoring SavedModel bundle.
+2026-10-03 16:21:56.544644: I tensorflow/cc/saved_model/loader.cc:220] Running initialization op on SavedModel bundle at path: /home/skirttrain/skirt-fabric-sense/runs/gpu-smoke-001/saved_model
+2026-10-03 16:21:56.549797: I tensorflow/cc/saved_model/loader.cc:471] SavedModel load for tags { serve }; Status: success: OK. Took 36528 microseconds.
+2026-10-03 16:21:56.560172: I tensorflow/compiler/mlir/tensorflow/utils/dump_mlir_util.cc:269] disabling MLIR crash reproducer, set env var `MLIR_CRASH_REPRODUCER_DIRECTORY` to enable.
+2026-10-03 16:21:56.620745: I tensorflow/compiler/mlir/lite/flatbuffer_export.cc:4150] Estimated count of arithmetic ops: 0.202 M  ops, equivalently 0.101 M  MACs
+/home/skirttrain/skirt-fabric-sense/.venv-training/lib/python3.12/site-packages/tensorflow/lite/python/interpreter.py:457: UserWarning:     Warning: tf.lite.Interpreter is deprecated and is scheduled for deletion in
+    TF 2.20. Please use the LiteRT interpreter from the ai_edge_litert package.
+    See the [migration guide](https://ai.google.dev/edge/litert/migration)
+    for details.
+    
+  warnings.warn(_INTERPRETER_DELETION_WARNING)
+INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+{
+  "status": "failed",
+  "seed": 42,
+  "data": "synthetic stateless normal, 4x32x32x3",
+  "dataset_manifest": null,
+  "split_hash": null,
+  "purpose": "infrastructure only; no project accuracy or Pi verification",
+  "python": "3.12.3",
+  "source_sha256": "d822c2a9fcc86a6667c32eee81223ca489d30ac8c8df2e9eb80ff5bf53712875",
+  "versions": {
+    "tensorflow": "2.20.0",
+    "numpy": "2.5.3"
+  },
+  "gpu_devices": [
+    "PhysicalDevice(name='/physical_device:GPU:0', device_type='GPU')"
+  ],
+  "loss": 0.8526039719581604,
+  "gradient_norm": 0.5379453897476196,
+  "elapsed_training_step_seconds": 0.820960389999982,
+  "tensor_device": "/job:localhost/replica:0/task:0/device:GPU:0",
+  "prediction_device": "/job:localhost/replica:0/task:0/device:GPU:0",
+  "weights_changed": true,
+  "optimizer": {
+    "name": "SGD",
+    "learning_rate": 0.01,
+    "steps": 1
+  },
+  "export": {
+    "sha256": "1c5bbd8a57216bf5eb5e21b48299a3112ee55c8f03886c994a0cb88b4a4fa471",
+    "bytes": 3292,
+    "maximum_absolute_error": Infinity,
+    "atol": 1e-05,
+    "rtol": 0.0001,
+    "hardware": "desktop CPU, not Raspberry Pi"
+  },
+  "error": "\nNot equal to tolerance rtol=0.0001, atol=1e-05\n\ninf location mismatch:\n ACTUAL: array([[inf,  0.]], dtype=float32)\n DESIRED: array([[ 0.959127, -0.068373]], dtype=float32)",
+  "traceback": "Traceback (most recent call last):\n  File \"/mnt/c/Users/Administrator/OneDrive/Documents/ChatGPT/SkirtFabricSense/tools/training/gpu_smoke.py\", line 83, in main\n    np.testing.assert_allclose(actual, expected, atol=1e-5, rtol=1e-4)\n  File \"/home/skirttrain/skirt-fabric-sense/.venv-training/lib/python3.12/site-packages/numpy/testing/_private/utils.py\", line 1780, in assert_allclose\n    assert_array_compare(compare, actual, desired, err_msg=str(err_msg),\n  File \"/home/skirttrain/skirt-fabric-sense/.venv-training/lib/python3.12/site-packages/numpy/testing/_private/utils.py\", line 858, in assert_array_compare\n    infs_mask = func_assert_same_pos(\n                ^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/skirttrain/skirt-fabric-sense/.venv-training/lib/python3.12/site-packages/numpy/testing/_private/utils.py\", line 795, in func_assert_same_pos\n    raise AssertionError(msg)\nAssertionError: \nNot equal to tolerance rtol=0.0001, atol=1e-05\n\ninf location mismatch:\n ACTUAL: array([[inf,  0.]], dtype=float32)\n DESIRED: array([[ 0.959127, -0.068373]], dtype=float32)\n"
+}

@@ -1,0 +1,43 @@
+{
+  "status": "frozen_development_only",
+  "source_manifest_sha256": "12328ba062b158a7c238c4bc6c1b57252f0a16e82001b37911c3c57839f50e3d",
+  "manifest_sha256": "016e45e38d695b9bb62c480497c02af08845b83f4831d8ca91365e2eabc067b8",
+  "review_sources": [
+    {
+      "path": "records\\review\\2026-10-14-negative-v2-a.json",
+      "sha256": "9de06ed447f26144f958ac1167389ea0efd700e202a8922189cc3b5960a5fc35"
+    },
+    {
+      "path": "records\\review\\2026-10-14-negative-v2-b.json",
+      "sha256": "b18f7d819debfda30bc964d312568edfb4cd63ebb3377bcb8e4445a3d4b3d36a"
+    }
+  ],
+  "grouping_evidence": [
+    {
+      "path": "records\\validation\\2026-10-13-expansion-v2-audit.json",
+      "sha256": "187b6fe93e7f3264150ecb556d83abef038cb9d279131fb2882845a2ebaf7ece"
+    },
+    {
+      "path": "records\\review\\2026-10-13-root-negative-v2-triage.json",
+      "sha256": "6567662cc49ade9e36039e24ee9a660c394f345b849e558c3d7fbcaedd0087a4"
+    }
+  ],
+  "source_sha256": "9e326c1e88d321e757284d2000078311c3b28d598c2df318e9f71137fc51bfcc",
+  "prior_manifest_sha256": "f5f42fb2dbc3bd5ab53e2ee1ededa01ca1e49a5ce0d656c900447cacfa89ebc2",
+  "prior_assignments_preserved": true,
+  "counts": {
+    "all_rows": 210,
+    "admitted": 75,
+    "new_admitted": 63,
+    "by_split": {
+      "development_validation": 19,
+      "development_train": 56
+    }
+  },
+  "limitations": [
+    "Agent reviewed, not independent human truth",
+    "Physical identity not verified",
+    "Known ambiguous links quarantined",
+    "Source-domain development only"
+  ]
+}

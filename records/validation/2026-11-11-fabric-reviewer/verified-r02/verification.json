@@ -1,0 +1,90 @@
+{
+  "recorded_at": "2026-11-11T23:17:27.063057+08:00",
+  "status": "completed_software_and_temporary_browser_validation",
+  "test_command": "python -B -m unittest tests.test_fabric_review_ui tests.test_fabric_evidence_review -v",
+  "tests": {
+    "run": 41,
+    "passed": 41,
+    "ui": 11,
+    "underlying_evidence": 30,
+    "browser_checks": 14
+  },
+  "observed_test_output": "Ran 41 tests in 12.971s; OK",
+  "browser": "Existing Microsoft Edge using bundled Playwright",
+  "synthetic_fixtures_only": true,
+  "production_queue_verification": {
+    "schema_version": 1,
+    "integrity_passed": true,
+    "queue_records": 17,
+    "observations_submitted": 0,
+    "source_groups": 17,
+    "split_counts": {
+      "development_validation": 5,
+      "development_train": 12
+    },
+    "samples_with_submitted_observations": 0,
+    "pending_samples": 17,
+    "pending_reconciliation_events": 0,
+    "event_chain_head_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+    "event_log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "queue_sha256": "b06d3e2185d96c26ca482ecf8b37aa77066dc96073cf7d382091dc423c179207",
+    "bindings_sha256": "1d5ad3ae5b28027cb6f92ddebc4a2c57a72be40ba498961fde416c37215b5f6d",
+    "frozen_inputs": {
+      "data/labels/fabric-pilot-v1.jsonl": "92a80e4f974b9730f4631da75fed99b3f628751c882bfe179b39322d20247523",
+      "data/labels/fabric-pilot-v1-splits.json": "e076033aa293ebad2058cec0ed2395292202f87bec9a78bfe2d350fa38e06c57",
+      "records/acquisitions/2026-10-09-deepfashion-multimodal/LICENSE": "383efc1e19406703d591d32fa73b64f44914550456ecff4c0764b451e871b641"
+    },
+    "training_approved": false,
+    "composition_verified": false,
+    "independent_human_truth_established": false,
+    "verified_physical_specimens": null
+  },
+  "production_observations_added": 0,
+  "source_and_artifact_references": [
+    {
+      "path": "tools/serve_fabric_review.py",
+      "sha256": "843b60012d4cae6282706a1dcdebf925babd5ad57d95d06a3ed4164e17018c4e"
+    },
+    {
+      "path": "tools/static/fabric_review.html",
+      "sha256": "1de4c47f6b10aba7697e4c45fb860f34f15858653d1fd2475735d1cc27b62be7"
+    },
+    {
+      "path": "tests/test_fabric_review_ui.py",
+      "sha256": "9a9d7435a8852c873b908aa2af11992c8661614c1e41e6ea72b1587f86c7f533"
+    },
+    {
+      "path": "tests/fabric_review_browser.cjs",
+      "sha256": "dd3923be93d3c697b3c3f288fceecbe8a70fc560fe98bd673666ec052e2e4811"
+    },
+    {
+      "path": "docs/FABRIC_REVIEW_UI.md",
+      "sha256": "529131d6878ea12704c5e2c04a863720d34749575edac9382ada15f6a5d26520"
+    },
+    {
+      "path": "tools/datasets/fabric_evidence_review.py",
+      "sha256": "e9f0faec9272af02e98388b340b224e17b5e7f1c525ba8b94284a1d2530704fe"
+    },
+    {
+      "path": "records/validation/2026-11-11-fabric-reviewer/verified-r02/browser-result.json",
+      "sha256": "4c8cafa9c22091ab87b2afb84a9d5ef64767b083f1f0024e97a2f4f617324522"
+    },
+    {
+      "path": "records/validation/2026-11-11-fabric-reviewer/verified-r02/browser-synthetic-review.png",
+      "sha256": "9af25cee02590d2752d367209b5df4f93a0d840e5ff98851f37cb3b18a0a7535"
+    },
+    {
+      "path": "records/validation/2026-11-11-fabric-reviewer/verified-r02/download.json",
+      "sha256": "ad4ae1f7f1c2ceae35e72d3d349192d1f6089b4013b85fa0b30da63feab04f82"
+    }
+  ],
+  "visual_review": "Synthetic reviewer screenshot inspected; full original panel and form are readable and no overlapping controls found.",
+  "owned_servers_stopped": true,
+  "dependencies_installed": [],
+  "remaining_work": [
+    "Human observations and independent reconciliation",
+    "Credible rare-class groups and final textile ontology",
+    "Accepted fabric model and real camera/Pi evaluation"
+  ],
+  "limits": "Software evidence only; no composition verification, approved label release or final model accuracy."
+}

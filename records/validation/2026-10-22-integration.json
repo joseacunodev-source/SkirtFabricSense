@@ -1,0 +1,56 @@
+{
+  "date_asia_manila": "2026-10-22",
+  "status": "passed_research_recovery_and_handoff",
+  "source_sha256": "642a2bfa021ec27e20666b2e2ec2ee6e3e3ca5e8c33bacac73fb783a1034a15f",
+  "checkpoint": {
+    "path": "records/continuation/latest.json",
+    "sha256": "953f92279fb8f610d86aeaf9ff40bc9184bf5dcdac425ed85975683710835613"
+  },
+  "record_validation": {
+    "path": "records/validation/2026-10-22-records.json",
+    "sha256": "054c502785c042a96ec79c8b2b7fe9cbfe348c7b1dc63ae4586ea6eb30fa227d"
+  },
+  "selected_research_station": {
+    "directory": "artifacts/stations/skirt-research-station-v2",
+    "inventory": {
+      "path": "artifacts/stations/skirt-research-station-v2/station-inventory.json",
+      "sha256": "19444a4ea1622a26822d795bfccb61c558a27383df3741ed84bbeea1544b38f4"
+    },
+    "configuration": {
+      "path": "artifacts/stations/skirt-research-station-v2/station.json",
+      "sha256": "953d17494b579c751ba046c5e6c48e73975ea9b5d82b7e2f419bca35da833b22"
+    },
+    "payload_files": 28,
+    "desktop_http_jobs": 12,
+    "pi_verified": false
+  },
+  "rollback_station": {
+    "directory": "artifacts/stations/skirt-research-station-v1",
+    "inventory": {
+      "path": "artifacts/stations/skirt-research-station-v1/station-inventory.json",
+      "sha256": "7e1e8fea3bfbd8d15614b1f457768d8cecb6bec059658079b0f20374e50ab0a4"
+    },
+    "configuration": {
+      "path": "artifacts/stations/skirt-research-station-v1/station.json",
+      "sha256": "3f502f64eacf9bb697ccabaaa95ecaa868f8783a2571d729f0ef9bcf87d02871"
+    },
+    "payload_files": 28,
+    "desktop_http_jobs": 12,
+    "pi_verified": false
+  },
+  "metrics": {
+    "positive_count": 66,
+    "positive_accepted": 44,
+    "positive_coverage": 0.6666666666666666,
+    "correct_pleating": 38,
+    "accepted_pleating_accuracy": 0.8636363636363636,
+    "negative_count": 52,
+    "negative_rejected": 42,
+    "negative_rejection": 0.8076923076923077
+  },
+  "packages_installed": 0,
+  "camera_used": false,
+  "pi_verified": false,
+  "project_complete": false,
+  "physical_acceptance_remains_open": true
+}

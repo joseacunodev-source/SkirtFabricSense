@@ -1,0 +1,688 @@
+{
+  "schema_version": 1,
+  "status": "completed_saved_prediction_analysis",
+  "evidence_kind": "Reused source-domain development; no new inference, fitting, threshold selection or final-test access.",
+  "limitations": [
+    "Reused source-domain development groups motivated hypotheses and selected checkpoints; these intervals do not correct selection optimism.",
+    "Source groups are not independently verified physical garments; the observed group-size histogram is reported rather than assuming garment independence.",
+    "Agent-reviewed labels lack independent human confirmation. No locked test, camera-domain accuracy, score calibration, public-demo acceptance or Raspberry Pi evidence is produced.",
+    "Paired bootstrap conditions on these groups, their provisional labels and fixed saved predictions. Degenerate zero-delta intervals do not establish equivalence or a guaranteed absence of regression.",
+    "Presence-stratified resampling holds the observed positive/negative group counts fixed; it does not estimate deployment class prevalence.",
+    "Sparse per-class and negative-category slices are descriptive raw counts; their apparent rates are unstable."
+  ],
+  "inputs_sha256": "5fd31356dad9333efaa82cb0e2a312533fe695b5c565278cd00136c9e693a1f7",
+  "split_hash": "2da2070b87f9107d4431c32289d3cad242a2929c49185002c1b06971db3ad04f",
+  "evaluated_path": "v2_plus_presence",
+  "fixed_presence_threshold": 0.5,
+  "fixed_mask_threshold": 0.5,
+  "inventory": {
+    "all_input_images": 538,
+    "all_source_groups": 538,
+    "training_images": 420,
+    "validation_images": 118,
+    "validation_source_groups": 118,
+    "validation_group_size_histogram": {
+      "1": 118
+    },
+    "mixed_target_groups": 0,
+    "cross_split_groups": 0,
+    "original_partition": "train2020",
+    "independent_physical_garment_count": null,
+    "source_group_identity_verified_as_physical_garment": false,
+    "original_image_bytes_rehashed_in_this_analysis": false,
+    "original_image_integrity_scope": "Frozen image digests and metadata were joined; this report reads saved predictions and does not reopen original image bytes."
+  },
+  "models": {
+    "baseline": {
+      "masks": {
+        "v1": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2",
+        "v2": "f2f5f73d34cd99c3fb46502cb806ddbc347c6664e8ce24b8fe06a548c70090de"
+      },
+      "presence": "7bf9df9b1bacc757956c069f688345ff154ee480a65198ee5948fbe80bbcdb87",
+      "pleating": "c1d8f49e221a2672c20adb87fe4ae5d2f6966f125ee99cb212ff2eb56fffdbf0"
+    },
+    "candidate": {
+      "masks": {
+        "v1": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2",
+        "v2": "f2f5f73d34cd99c3fb46502cb806ddbc347c6664e8ce24b8fe06a548c70090de"
+      },
+      "presence": "f47ddf148102f905d0a81e6a1fe3001b8a4944fd86e0c1c2d635d975f8fdc34d",
+      "pleating": "c1d8f49e221a2672c20adb87fe4ae5d2f6966f125ee99cb212ff2eb56fffdbf0"
+    }
+  },
+  "raw_image_metrics": {
+    "baseline": {
+      "positive_count": 66,
+      "positive_accepted": 44,
+      "positive_unavailable": 22,
+      "positive_coverage": 0.6666666666666666,
+      "correct_pleating": 38,
+      "end_to_end_pleating_correctness": 0.5757575757575758,
+      "accepted_pleating_accuracy": 0.8636363636363636,
+      "negative_count": 52,
+      "negative_rejected": 39,
+      "negative_falsely_accepted": 13,
+      "negative_rejection": 0.75,
+      "negative_false_acceptance": 0.25,
+      "per_pleating_class": {
+        "pleated": {
+          "support": 17,
+          "accepted": 14,
+          "unavailable": 3,
+          "correct": 9,
+          "wrong_accepted": 5,
+          "coverage": 0.8235294117647058,
+          "end_to_end_correctness": 0.5294117647058824,
+          "accepted_accuracy": 0.6428571428571429,
+          "precision_within_skirt_truth": 0.9,
+          "recall_including_unavailable": 0.5294117647058824,
+          "f1_including_unavailable": 0.6666666666666666
+        },
+        "non_pleated": {
+          "support": 49,
+          "accepted": 30,
+          "unavailable": 19,
+          "correct": 29,
+          "wrong_accepted": 1,
+          "coverage": 0.6122448979591837,
+          "end_to_end_correctness": 0.5918367346938775,
+          "accepted_accuracy": 0.9666666666666667,
+          "precision_within_skirt_truth": 0.8529411764705882,
+          "recall_including_unavailable": 0.5918367346938775,
+          "f1_including_unavailable": 0.6987951807228916
+        }
+      },
+      "confusion_matrix": {
+        "pleated": {
+          "pleated": 9,
+          "non_pleated": 5,
+          "unavailable": 3
+        },
+        "non_pleated": {
+          "pleated": 1,
+          "non_pleated": 29,
+          "unavailable": 19
+        }
+      },
+      "negative_source_category_slices": {
+        "dress": {
+          "count": 20,
+          "rejected": 10,
+          "falsely_accepted": 10
+        },
+        "pants": {
+          "count": 17,
+          "rejected": 14,
+          "falsely_accepted": 3
+        },
+        "shorts": {
+          "count": 15,
+          "rejected": 15,
+          "falsely_accepted": 0
+        }
+      },
+      "precision_scope": "Pleating precision uses true-skirt rows only; negative false acceptances are reported separately."
+    },
+    "candidate": {
+      "positive_count": 66,
+      "positive_accepted": 44,
+      "positive_unavailable": 22,
+      "positive_coverage": 0.6666666666666666,
+      "correct_pleating": 38,
+      "end_to_end_pleating_correctness": 0.5757575757575758,
+      "accepted_pleating_accuracy": 0.8636363636363636,
+      "negative_count": 52,
+      "negative_rejected": 42,
+      "negative_falsely_accepted": 10,
+      "negative_rejection": 0.8076923076923077,
+      "negative_false_acceptance": 0.19230769230769232,
+      "per_pleating_class": {
+        "pleated": {
+          "support": 17,
+          "accepted": 15,
+          "unavailable": 2,
+          "correct": 10,
+          "wrong_accepted": 5,
+          "coverage": 0.8823529411764706,
+          "end_to_end_correctness": 0.5882352941176471,
+          "accepted_accuracy": 0.6666666666666666,
+          "precision_within_skirt_truth": 0.9090909090909091,
+          "recall_including_unavailable": 0.5882352941176471,
+          "f1_including_unavailable": 0.7142857142857143
+        },
+        "non_pleated": {
+          "support": 49,
+          "accepted": 29,
+          "unavailable": 20,
+          "correct": 28,
+          "wrong_accepted": 1,
+          "coverage": 0.5918367346938775,
+          "end_to_end_correctness": 0.5714285714285714,
+          "accepted_accuracy": 0.9655172413793104,
+          "precision_within_skirt_truth": 0.8484848484848485,
+          "recall_including_unavailable": 0.5714285714285714,
+          "f1_including_unavailable": 0.6829268292682927
+        }
+      },
+      "confusion_matrix": {
+        "pleated": {
+          "pleated": 10,
+          "non_pleated": 5,
+          "unavailable": 2
+        },
+        "non_pleated": {
+          "pleated": 1,
+          "non_pleated": 28,
+          "unavailable": 20
+        }
+      },
+      "negative_source_category_slices": {
+        "dress": {
+          "count": 20,
+          "rejected": 13,
+          "falsely_accepted": 7
+        },
+        "pants": {
+          "count": 17,
+          "rejected": 15,
+          "falsely_accepted": 2
+        },
+        "shorts": {
+          "count": 15,
+          "rejected": 14,
+          "falsely_accepted": 1
+        }
+      },
+      "precision_scope": "Pleating precision uses true-skirt rows only; negative false acceptances are reported separately."
+    }
+  },
+  "paired_transitions": {
+    "skirt_states": {
+      "correct -> correct": 35,
+      "correct -> unavailable": 3,
+      "unavailable -> correct": 3,
+      "unavailable -> unavailable": 19,
+      "wrong_pleating -> wrong_pleating": 6
+    },
+    "negative_states": {
+      "falsely_accepted -> falsely_accepted": 9,
+      "falsely_accepted -> rejected": 4,
+      "rejected -> falsely_accepted": 1,
+      "rejected -> rejected": 38
+    },
+    "changed_results": [
+      {
+        "sample_id": "fashionpedia-train2020-29142",
+        "group_id": "fashionpedia-source-ddd08d3c45abccf549af",
+        "group_hash": "3ba8779cc2792a87ffea438ef5da4aa4ad8a58b33cdf41cfe39297ca5ae9e6f4",
+        "presence_target": 1,
+        "expected_pleating": "pleated",
+        "sampling_bucket": null,
+        "baseline": {
+          "accepted": false,
+          "pleating_prediction": null
+        },
+        "candidate": {
+          "accepted": true,
+          "pleating_prediction": "pleated"
+        },
+        "baseline_state": "unavailable",
+        "candidate_state": "correct"
+      },
+      {
+        "sample_id": "fashionpedia-train2020-33951",
+        "group_id": "fashionpedia-source-8ccb014b81483ff1f619",
+        "group_hash": "dad445d7a0bd0edf45a8a18c14f17e4149c8a8c5475a13912812f1ae758d6758",
+        "presence_target": 1,
+        "expected_pleating": "non_pleated",
+        "sampling_bucket": null,
+        "baseline": {
+          "accepted": false,
+          "pleating_prediction": null
+        },
+        "candidate": {
+          "accepted": true,
+          "pleating_prediction": "non_pleated"
+        },
+        "baseline_state": "unavailable",
+        "candidate_state": "correct"
+      },
+      {
+        "sample_id": "fashionpedia-train2020-39412",
+        "group_id": "fashionpedia-source-e9c3900b72918ee34d31",
+        "group_hash": "4ce27b2228df4bfa5885f7778e31a88f58083b0c334f860708bd695344871542",
+        "presence_target": 1,
+        "expected_pleating": "non_pleated",
+        "sampling_bucket": null,
+        "baseline": {
+          "accepted": true,
+          "pleating_prediction": "non_pleated"
+        },
+        "candidate": {
+          "accepted": false,
+          "pleating_prediction": null
+        },
+        "baseline_state": "correct",
+        "candidate_state": "unavailable"
+      },
+      {
+        "sample_id": "fashionpedia-train2020-43660",
+        "group_id": "fashionpedia-source-4a90112f098e1801adce",
+        "group_hash": "fb91d4cc7122115437f8eb582e71cd625eeee0100e4d01c1c2d6d67dc952188e",
+        "presence_target": 1,
+        "expected_pleating": "non_pleated",
+        "sampling_bucket": null,
+        "baseline": {
+          "accepted": true,
+          "pleating_prediction": "non_pleated"
+        },
+        "candidate": {
+          "accepted": false,
+          "pleating_prediction": null
+        },
+        "baseline_state": "correct",
+        "candidate_state": "unavailable"
+      },
+      {
+        "sample_id": "fashionpedia-train2020-4713",
+        "group_id": "fashionpedia-source-7c02f126974eabcd0fd8",
+        "group_hash": "5dbbf08723e7108120c922b88cb296d548cacb0223485c334da51b24da335bf4",
+        "presence_target": 1,
+        "expected_pleating": "non_pleated",
+        "sampling_bucket": null,
+        "baseline": {
+          "accepted": true,
+          "pleating_prediction": "non_pleated"
+        },
+        "candidate": {
+          "accepted": false,
+          "pleating_prediction": null
+        },
+        "baseline_state": "correct",
+        "candidate_state": "unavailable"
+      },
+      {
+        "sample_id": "fashionpedia-train2020-5601",
+        "group_id": "fashionpedia-source-d352029b857596fc6b4c",
+        "group_hash": "c667bedbcfa40c1c9ca96ad694266bc2186f4d4261a445c47d7f1bfbc16d238e",
+        "presence_target": 1,
+        "expected_pleating": "non_pleated",
+        "sampling_bucket": null,
+        "baseline": {
+          "accepted": false,
+          "pleating_prediction": null
+        },
+        "candidate": {
+          "accepted": true,
+          "pleating_prediction": "non_pleated"
+        },
+        "baseline_state": "unavailable",
+        "candidate_state": "correct"
+      },
+      {
+        "sample_id": "fashionpedia-negative-candidate-21184",
+        "group_id": "fashionpedia-source-dc64bccf5cfd8a22d756",
+        "group_hash": "cec21cb6826437db11565952bdb0b862bb2c59baadf35462847ee690b107d175",
+        "presence_target": 0,
+        "expected_pleating": null,
+        "sampling_bucket": "shorts",
+        "baseline": {
+          "accepted": false,
+          "pleating_prediction": null
+        },
+        "candidate": {
+          "accepted": true,
+          "pleating_prediction": "non_pleated"
+        },
+        "baseline_state": "rejected",
+        "candidate_state": "falsely_accepted"
+      },
+      {
+        "sample_id": "fashionpedia-negative-v2-33532",
+        "group_id": "fashionpedia-source-a7872b24355f0ec580f9",
+        "group_hash": "15ad5da5ba3e98f2cb0e50321f9e21547a5552dd07458b75fe947fef25d0af6c",
+        "presence_target": 0,
+        "expected_pleating": null,
+        "sampling_bucket": "dress",
+        "baseline": {
+          "accepted": true,
+          "pleating_prediction": "non_pleated"
+        },
+        "candidate": {
+          "accepted": false,
+          "pleating_prediction": null
+        },
+        "baseline_state": "falsely_accepted",
+        "candidate_state": "rejected"
+      },
+      {
+        "sample_id": "fashionpedia-negative-v3-5822",
+        "group_id": "fashionpedia-source-3c67dd2aec8c0ad825bf",
+        "group_hash": "6caedceb8abb5fd9f2a224437165d5336d092154656a780242144e096c331aec",
+        "presence_target": 0,
+        "expected_pleating": null,
+        "sampling_bucket": "pants",
+        "baseline": {
+          "accepted": true,
+          "pleating_prediction": "non_pleated"
+        },
+        "candidate": {
+          "accepted": false,
+          "pleating_prediction": null
+        },
+        "baseline_state": "falsely_accepted",
+        "candidate_state": "rejected"
+      },
+      {
+        "sample_id": "fashionpedia-negative-v3-7787",
+        "group_id": "fashionpedia-source-14dcac2c2cf592daaa54",
+        "group_hash": "b32b7d80231cd55707bda94b51afc3b17466206f93cef0d30fa7607efab24afd",
+        "presence_target": 0,
+        "expected_pleating": null,
+        "sampling_bucket": "dress",
+        "baseline": {
+          "accepted": true,
+          "pleating_prediction": "non_pleated"
+        },
+        "candidate": {
+          "accepted": false,
+          "pleating_prediction": null
+        },
+        "baseline_state": "falsely_accepted",
+        "candidate_state": "rejected"
+      },
+      {
+        "sample_id": "fashionpedia-negative-v3-2498",
+        "group_id": "fashionpedia-source-d6e45089588781a102a7",
+        "group_hash": "24d3985c155daf0deeae2c4440a6a5d81e2c0ad79e52565df4120c794b9e56f0",
+        "presence_target": 0,
+        "expected_pleating": null,
+        "sampling_bucket": "dress",
+        "baseline": {
+          "accepted": true,
+          "pleating_prediction": "non_pleated"
+        },
+        "candidate": {
+          "accepted": false,
+          "pleating_prediction": null
+        },
+        "baseline_state": "falsely_accepted",
+        "candidate_state": "rejected"
+      }
+    ],
+    "unchanged_results": 107
+  },
+  "equal_source_group_bootstrap": {
+    "method": "Paired source-group cluster bootstrap, stratified by frozen presence target; linear-interpolated percentile 2.5/97.5.",
+    "seed": 42,
+    "resamples": 2000,
+    "positive_source_groups": 66,
+    "negative_source_groups": 52,
+    "weighting": "Equal source-group weight; within each group equal image weight. Accepted accuracy is ratio of group-mean correct to group-mean accepted, not mean of per-group accepted accuracies.",
+    "conditions": "Same sampled groups, with all group members retained, are used for both models in every resample. No pleating-class stratification.",
+    "selection_bias_corrected": false,
+    "independent_generalization_established": false,
+    "metrics": {
+      "skirt_coverage": {
+        "baseline": {
+          "estimate": 0.6666666666666666,
+          "percentile_95_interval": [
+            0.5606060606060606,
+            0.7878787878787878
+          ],
+          "defined_resamples": 2000,
+          "undefined_resamples": 0
+        },
+        "candidate": {
+          "estimate": 0.6666666666666666,
+          "percentile_95_interval": [
+            0.5454545454545454,
+            0.7878787878787878
+          ],
+          "defined_resamples": 2000,
+          "undefined_resamples": 0
+        },
+        "candidate_minus_baseline": {
+          "estimate": 0.0,
+          "percentile_95_interval": [
+            -0.07575757575757569,
+            0.0757575757575758
+          ],
+          "defined_resamples": 2000,
+          "undefined_resamples": 0
+        }
+      },
+      "end_to_end_pleating_correctness": {
+        "baseline": {
+          "estimate": 0.5757575757575758,
+          "percentile_95_interval": [
+            0.45454545454545453,
+            0.696969696969697
+          ],
+          "defined_resamples": 2000,
+          "undefined_resamples": 0
+        },
+        "candidate": {
+          "estimate": 0.5757575757575758,
+          "percentile_95_interval": [
+            0.45454545454545453,
+            0.696969696969697
+          ],
+          "defined_resamples": 2000,
+          "undefined_resamples": 0
+        },
+        "candidate_minus_baseline": {
+          "estimate": 0.0,
+          "percentile_95_interval": [
+            -0.07575757575757569,
+            0.0757575757575758
+          ],
+          "defined_resamples": 2000,
+          "undefined_resamples": 0
+        }
+      },
+      "accepted_pleating_accuracy": {
+        "baseline": {
+          "estimate": 0.8636363636363636,
+          "percentile_95_interval": [
+            0.75,
+            0.9534883720930233
+          ],
+          "defined_resamples": 2000,
+          "undefined_resamples": 0
+        },
+        "candidate": {
+          "estimate": 0.8636363636363636,
+          "percentile_95_interval": [
+            0.7450876095118899,
+            0.9534883720930233
+          ],
+          "defined_resamples": 2000,
+          "undefined_resamples": 0
+        },
+        "candidate_minus_baseline": {
+          "estimate": 0.0,
+          "percentile_95_interval": [
+            -0.016378990955649972,
+            0.016703003875969024
+          ],
+          "defined_resamples": 2000,
+          "undefined_resamples": 0
+        }
+      },
+      "negative_rejection": {
+        "baseline": {
+          "estimate": 0.75,
+          "percentile_95_interval": [
+            0.6346153846153846,
+            0.8653846153846154
+          ],
+          "defined_resamples": 2000,
+          "undefined_resamples": 0
+        },
+        "candidate": {
+          "estimate": 0.8076923076923077,
+          "percentile_95_interval": [
+            0.6923076923076923,
+            0.9038461538461539
+          ],
+          "defined_resamples": 2000,
+          "undefined_resamples": 0
+        },
+        "candidate_minus_baseline": {
+          "estimate": 0.05769230769230771,
+          "percentile_95_interval": [
+            -0.019230769230769273,
+            0.1346153846153847
+          ],
+          "defined_resamples": 2000,
+          "undefined_resamples": 0
+        }
+      },
+      "negative_false_acceptance": {
+        "baseline": {
+          "estimate": 0.25,
+          "percentile_95_interval": [
+            0.1346153846153846,
+            0.36538461538461536
+          ],
+          "defined_resamples": 2000,
+          "undefined_resamples": 0
+        },
+        "candidate": {
+          "estimate": 0.19230769230769232,
+          "percentile_95_interval": [
+            0.09615384615384616,
+            0.3076923076923077
+          ],
+          "defined_resamples": 2000,
+          "undefined_resamples": 0
+        },
+        "candidate_minus_baseline": {
+          "estimate": -0.05769230769230768,
+          "percentile_95_interval": [
+            -0.13461538461538464,
+            0.019230769230769246
+          ],
+          "defined_resamples": 2000,
+          "undefined_resamples": 0
+        }
+      }
+    }
+  },
+  "new_inference_jobs": 0,
+  "training_runs": 0,
+  "thresholds_changed": false,
+  "deployment_approved": false,
+  "public_demonstration_accepted": false,
+  "pi_verified": false,
+  "recorded_utc": "2026-10-23T11:19:01.973797+00:00",
+  "source": {
+    "path": "tools/report_detection_uncertainty.py",
+    "sha256": "3a293a877f8919c286e402d5fd872ec36dea4cd97ee33ab6c05b52073cf98f26"
+  },
+  "evidence": [
+    {
+      "path": "artifacts/models/skirt-category-presence-v1/model.tflite",
+      "sha256": "f47ddf148102f905d0a81e6a1fe3001b8a4944fd86e0c1c2d635d975f8fdc34d"
+    },
+    {
+      "path": "artifacts/models/skirt-localizer-v2/model.tflite",
+      "sha256": "f2f5f73d34cd99c3fb46502cb806ddbc347c6664e8ce24b8fe06a548c70090de"
+    },
+    {
+      "path": "artifacts/models/skirt-presence-v4/model.tflite",
+      "sha256": "7bf9df9b1bacc757956c069f688345ff154ee480a65198ee5948fbe80bbcdb87"
+    },
+    {
+      "path": "artifacts/releases/skirt-finetune-v1-desktop-research-v7/model.tflite",
+      "sha256": "c1d8f49e221a2672c20adb87fe4ae5d2f6966f125ee99cb212ff2eb56fffdbf0"
+    },
+    {
+      "path": "data/labels/negative-reviewed-v3.jsonl",
+      "sha256": "82009d40445a9091f7998ab8479cec10b5086826001b7b9f513862bd11da52d1"
+    },
+    {
+      "path": "data/manifests/source-skirt-development-splits.json",
+      "sha256": "df3b096e4d131db55852b20de075d811c95520d23766648928555d755fe8812c"
+    },
+    {
+      "path": "data/manifests/worn-pleating-development-v1.jsonl",
+      "sha256": "876bb315009592fdbcf0a646703b21d99801756f4e37b1807a66675bdbd98ec2"
+    },
+    {
+      "path": "records/experiments/20261018-presence-v4/inputs.json",
+      "sha256": "5fd31356dad9333efaa82cb0e2a312533fe695b5c565278cd00136c9e693a1f7"
+    },
+    {
+      "path": "records/experiments/20261018-presence-v4/run.json",
+      "sha256": "10def7351036cb5bfb860190ca05fd64d08c3abf82f17ea93fb9c17a72b29e20"
+    },
+    {
+      "path": "records/experiments/20261018-presence-v4/train_presence.py",
+      "sha256": "c4623ad184858584b10b126175547d89f144a72447edae154c6284efd618549e"
+    },
+    {
+      "path": "records/experiments/20261018-presence-v4/train_presence_finetune.py",
+      "sha256": "241488599bb48d31af20fb75c8cd295011b277b29275510de0a7a09d1bfae2f1"
+    },
+    {
+      "path": "records/experiments/20261018-presence-v4/train_skirt_baseline.py",
+      "sha256": "9c00a33d4d7e7fb6fdf5d9b988395293d648d5c4e01a067e0ab4acc74bcfe8d6"
+    },
+    {
+      "path": "records/experiments/20261021-category-presence-v1/inputs.json",
+      "sha256": "5fd31356dad9333efaa82cb0e2a312533fe695b5c565278cd00136c9e693a1f7"
+    },
+    {
+      "path": "records/experiments/20261021-category-presence-v1/run.json",
+      "sha256": "94eb220727759eaf767062a962f2fc727d313b8a969d30d576c9a358884cb8d3"
+    },
+    {
+      "path": "records/experiments/20261021-category-presence-v1/train_category_presence.py",
+      "sha256": "5802bbf758fb86aafca3aec55702a748e7d4f13905c03cdbfa36afd74a89ebd9"
+    },
+    {
+      "path": "records/experiments/20261021-category-presence-v1/train_presence.py",
+      "sha256": "c4623ad184858584b10b126175547d89f144a72447edae154c6284efd618549e"
+    },
+    {
+      "path": "records/experiments/20261021-category-presence-v1/train_presence_finetune.py",
+      "sha256": "241488599bb48d31af20fb75c8cd295011b277b29275510de0a7a09d1bfae2f1"
+    },
+    {
+      "path": "records/experiments/20261021-category-presence-v1/train_skirt_baseline.py",
+      "sha256": "9c00a33d4d7e7fb6fdf5d9b988395293d648d5c4e01a067e0ab4acc74bcfe8d6"
+    },
+    {
+      "path": "records/validation/2026-10-19-detection-v4-comparison.json",
+      "sha256": "11bf2fac8f14d3c7b781745c209bac139b02374c0c354cf1a8123c11a48805ec"
+    },
+    {
+      "path": "records/validation/2026-10-21-category-presence-comparison.json",
+      "sha256": "f0ebd8a2fd04530559ff661c35beddc7100da8e1852fa46762f2d867666c0648"
+    },
+    {
+      "path": "tools/check_detection_candidate.py",
+      "sha256": "592c246d44234c14aec60e55e06052986e02facbe53a0a8d2b8fa6f95b61061f"
+    }
+  ],
+  "runtime": {
+    "executable": "C:\\Users\\Administrator\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+    "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "dependencies": "Python standard library only; no package installation or model runtime used."
+  },
+  "verification": {
+    "command": "C:/Users/Administrator/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/python.exe -m unittest tests.test_detection_uncertainty -v",
+    "exit_code": 0,
+    "tests_run": 26,
+    "tests_passed": 26,
+    "tests_failed": 0,
+    "test_source": {
+      "path": "tests/test_detection_uncertainty.py",
+      "sha256": "3f0ee6519dd878fc969993efa79ff867b041749447a8dd2701faeebe897c6c9f"
+    },
+    "outcome": "Observed unittest completion: Ran 26 tests in 0.060s; OK."
+  }
+}

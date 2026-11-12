@@ -1,0 +1,55 @@
+{
+  "release_id": "skirt-presence-v1",
+  "status": "development_candidate_not_promoted",
+  "model_files_and_sha256": [
+    {
+      "path": "artifacts/models/skirt-presence-v1/model.keras",
+      "sha256": "0f174903d02f2c6a27dd50a7e7f98d777b27e95024f2dc5ca5b67dac84996e2b"
+    },
+    {
+      "path": "artifacts/models/skirt-presence-v1/model.tflite",
+      "sha256": "f2ce3e5e405bede28587166dce4d402e73c7d346bea0a4734429e836da4bb1c8"
+    }
+  ],
+  "run": {
+    "path": "records/experiments/20261011-presence-v1/run.json",
+    "sha256": "85717d140b9cda7b4033ea766d650bf3ec663fd84389be52fe66bf7c8138d1ca"
+  },
+  "executed_source": {
+    "path": "records/experiments/20261011-presence-v1/training_source.py",
+    "sha256": "f090841bbb23cc568b4d96b332246a55144fd6f5df90cf5348bb621bc2c4f780"
+  },
+  "inputs": {
+    "path": "records/experiments/20261011-presence-v1/inputs.json",
+    "sha256": "537574c1172f1c655c8fc24d9894c97563380756507a60861bf5ccb0a24df313"
+  },
+  "comparison": {
+    "path": "records/validation/2026-10-12-presence-comparison.json",
+    "sha256": "4ed2a38cea206283a20cf49a3e0381ab2004aefadca553b54e61afecc1be8690"
+  },
+  "input": {
+    "shape": [
+      1,
+      224,
+      224,
+      3
+    ],
+    "dtype": "float32",
+    "range": [
+      0,
+      255
+    ],
+    "preprocessing": "Full RGB frame; Pillow bilinear resize224; model normalizes internally"
+  },
+  "output": {
+    "shape": [
+      1,
+      1
+    ],
+    "meaning": "uncalibrated skirt-presence score",
+    "threshold": 0.5
+  },
+  "promotion_reason": "Combined skirt coverage falls from 48/80 to 25/80; three negative validation cases insufficient",
+  "pi_verified": false,
+  "camera_accuracy_verified": false
+}

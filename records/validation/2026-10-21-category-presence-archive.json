@@ -1,0 +1,135 @@
+{
+  "status": "passed",
+  "source_run_directory": "\\\\wsl.localhost\\Ubuntu-24.04\\home\\skirttrain\\skirt-fabric-sense\\runs\\20261021-category-presence-v1",
+  "copied_files": [
+    {
+      "path": "records/experiments/20261021-category-presence-v1/environment.json",
+      "sha256": "2c0cc2ad8cfdd9e451a60e53f95833d688353f15d91822059471d9754cc433d0",
+      "bytes": 4088
+    },
+    {
+      "path": "records/experiments/20261021-category-presence-v1/epoch-01-predictions.json",
+      "sha256": "25c4eb1795b752d3aae6b6696b96562acf65a64a699c57b543d6702efdb376e4",
+      "bytes": 26992
+    },
+    {
+      "path": "records/experiments/20261021-category-presence-v1/epoch-02-predictions.json",
+      "sha256": "778a24d8fa711f58f9b17cd97f60f0893537db80afb7f65ea908ea521821e9b8",
+      "bytes": 27072
+    },
+    {
+      "path": "records/experiments/20261021-category-presence-v1/epoch-03-predictions.json",
+      "sha256": "120ced4043b7b42b8397430d18edd6c3093262c932d14b73c97c2fa66326212d",
+      "bytes": 27158
+    },
+    {
+      "path": "records/experiments/20261021-category-presence-v1/epoch-04-predictions.json",
+      "sha256": "4b8095862ac3c1396cba85a7c2c7ff400ebe55abd04b5cf6daec7a7ed59fa840",
+      "bytes": 27213
+    },
+    {
+      "path": "records/experiments/20261021-category-presence-v1/epoch-05-predictions.json",
+      "sha256": "557630fd7a39bf9083ad7a7a34375aef169f8b2800cd6bbfbc032859411a2831",
+      "bytes": 27274
+    },
+    {
+      "path": "records/experiments/20261021-category-presence-v1/epoch-06-predictions.json",
+      "sha256": "df8e664032098e29c4d93e7b8c89b25458a38f7759362f012b913b953d9b97d0",
+      "bytes": 27425
+    },
+    {
+      "path": "records/experiments/20261021-category-presence-v1/epoch-07-predictions.json",
+      "sha256": "f2ed405f5133dc4aa33e7141d48f5999ab03af233b3d8bf1508bcee6b76ca9a3",
+      "bytes": 27353
+    },
+    {
+      "path": "records/experiments/20261021-category-presence-v1/epoch-08-predictions.json",
+      "sha256": "6596335a84fb9490653663bd8df721b00fd58ec475472236c32605163f027299",
+      "bytes": 27416
+    },
+    {
+      "path": "records/experiments/20261021-category-presence-v1/history.json",
+      "sha256": "071e4f0bd8e5d56587362f2090540af903d1c562e47e5fdd423cf9681ba8e6f3",
+      "bytes": 7854
+    },
+    {
+      "path": "records/experiments/20261021-category-presence-v1/inputs.json",
+      "sha256": "5fd31356dad9333efaa82cb0e2a312533fe695b5c565278cd00136c9e693a1f7",
+      "bytes": 3493197
+    },
+    {
+      "path": "records/experiments/20261021-category-presence-v1/joint-comparison-cache.json",
+      "sha256": "11bf2fac8f14d3c7b781745c209bac139b02374c0c354cf1a8123c11a48805ec",
+      "bytes": 189107
+    },
+    {
+      "path": "records/experiments/20261021-category-presence-v1/run.json",
+      "sha256": "94eb220727759eaf767062a962f2fc727d313b8a969d30d576c9a358884cb8d3",
+      "bytes": 17579
+    },
+    {
+      "path": "records/experiments/20261021-category-presence-v1/source-category-targets.json",
+      "sha256": "8f520b63482cf802bb70f47c9db57e0d0ce746eadc0e58d9dc18c7707eda07f2",
+      "bytes": 405303
+    },
+    {
+      "path": "records/experiments/20261021-category-presence-v1/train_category_presence.py",
+      "sha256": "5802bbf758fb86aafca3aec55702a748e7d4f13905c03cdbfa36afd74a89ebd9",
+      "bytes": 19922
+    },
+    {
+      "path": "records/experiments/20261021-category-presence-v1/train_presence.py",
+      "sha256": "c4623ad184858584b10b126175547d89f144a72447edae154c6284efd618549e",
+      "bytes": 9921
+    },
+    {
+      "path": "records/experiments/20261021-category-presence-v1/train_presence_finetune.py",
+      "sha256": "241488599bb48d31af20fb75c8cd295011b277b29275510de0a7a09d1bfae2f1",
+      "bytes": 24740
+    },
+    {
+      "path": "records/experiments/20261021-category-presence-v1/train_skirt_baseline.py",
+      "sha256": "9c00a33d4d7e7fb6fdf5d9b988395293d648d5c4e01a067e0ab4acc74bcfe8d6",
+      "bytes": 16814
+    },
+    {
+      "path": "records/experiments/20261021-category-presence-v1/validation-predictions.json",
+      "sha256": "fe45adf4f8c4dde4566202471bd7609e038ce6c1f78b8807e11f6b1bc9ce3335",
+      "bytes": 54235
+    },
+    {
+      "path": "records/experiments/20261021-category-presence-v1/early_export/model.tflite",
+      "sha256": "ce7fea13e4c41ed1caacf86d8c5f9a0a31675109157ac9794edc965f115cd7ae",
+      "bytes": 9188656
+    },
+    {
+      "path": "artifacts/models/skirt-category-presence-v1/model.tflite",
+      "sha256": "f47ddf148102f905d0a81e6a1fe3001b8a4944fd86e0c1c2d635d975f8fdc34d",
+      "bytes": 9188656
+    },
+    {
+      "path": "artifacts/models/skirt-category-presence-v1/model.keras",
+      "sha256": "a5208c08164db35be7969e249c260d140b732eb1b3db7596a8688b5673bf3b97",
+      "bytes": 9957409
+    },
+    {
+      "path": "artifacts/models/skirt-category-presence-v1/category-model.keras",
+      "sha256": "4c442ef2e01028d6fcbd9a210c981359301a7f366a1f54edb060fe0b9e21b78f",
+      "bytes": 23936814
+    },
+    {
+      "path": "artifacts/models/skirt-category-presence-v1/run.json",
+      "sha256": "94eb220727759eaf767062a962f2fc727d313b8a969d30d576c9a358884cb8d3",
+      "bytes": 17579
+    },
+    {
+      "path": "records/experiments/20261021-category-presence-v1/check_detection_candidate.py",
+      "sha256": "592c246d44234c14aec60e55e06052986e02facbe53a0a8d2b8fa6f95b61061f",
+      "bytes": 5581
+    }
+  ],
+  "source_sha256": "77100d6b9612e1fa1c346c84024f66a0ba02a1649adde577cc1c69e056fc4964",
+  "packages_installed": 0,
+  "pi_verified": false,
+  "training_command": "wsl -d Ubuntu-24.04 -u skirttrain -- /home/skirttrain/skirt-fabric-sense/.venv-training/bin/python /mnt/c/Users/Administrator/OneDrive/Documents/ChatGPT/SkirtFabricSense/tools/training/train_category_presence.py --negative-manifest /mnt/c/Users/Administrator/OneDrive/Documents/ChatGPT/SkirtFabricSense/data/labels/negative-reviewed-v3.jsonl --joint-comparison-cache /mnt/c/Users/Administrator/OneDrive/Documents/ChatGPT/SkirtFabricSense/records/validation/2026-10-19-detection-v4-comparison.json --output /home/skirttrain/skirt-fabric-sense/runs/20261021-category-presence-v1"
+}

@@ -1,0 +1,24 @@
+test_assignment_split_alias_conflict_fails (tests.test_dataset_partitions.DatasetPartitionTests.test_assignment_split_alias_conflict_fails) ... ok
+test_bad_hash_or_identity_fails (tests.test_dataset_partitions.DatasetPartitionTests.test_bad_hash_or_identity_fails) ... ok
+test_cli_output_refuses_overwrite (tests.test_dataset_partitions.DatasetPartitionTests.test_cli_output_refuses_overwrite) ... ok
+test_conflicting_catalog_provenance_not_overwritten (tests.test_dataset_partitions.DatasetPartitionTests.test_conflicting_catalog_provenance_not_overwritten) ... ok
+test_connected_catalog_development_partition_drift_fails (tests.test_dataset_partitions.DatasetPartitionTests.test_connected_catalog_development_partition_drift_fails) ... ok
+test_current_json_and_jsonl_containers (tests.test_dataset_partitions.DatasetPartitionTests.test_current_json_and_jsonl_containers) ... ok
+test_disjoint_development_passes_without_claiming_final_test (tests.test_dataset_partitions.DatasetPartitionTests.test_disjoint_development_passes_without_claiming_final_test) ... ok
+test_duplicate_assignments_not_counted_as_new_samples (tests.test_dataset_partitions.DatasetPartitionTests.test_duplicate_assignments_not_counted_as_new_samples) ... ok
+test_frozen_catalog_assignment_drift_fails (tests.test_dataset_partitions.DatasetPartitionTests.test_frozen_catalog_assignment_drift_fails) ... ok
+test_locked_catalog_split_never_silently_becomes_development (tests.test_dataset_partitions.DatasetPartitionTests.test_locked_catalog_split_never_silently_becomes_development) ... ok
+test_missing_parent_fails (tests.test_dataset_partitions.DatasetPartitionTests.test_missing_parent_fails) ... ok
+test_model_validation_aliases_are_consistent (tests.test_dataset_partitions.DatasetPartitionTests.test_model_validation_aliases_are_consistent) ... ok
+test_non_assignment_catalog_status_not_treated_as_partition (tests.test_dataset_partitions.DatasetPartitionTests.test_non_assignment_catalog_status_not_treated_as_partition) ... ok
+test_protected_original_joined_by_file_hash_alias (tests.test_dataset_partitions.DatasetPartitionTests.test_protected_original_joined_by_file_hash_alias) ... ok
+test_source_item_ids_are_namespaced (tests.test_dataset_partitions.DatasetPartitionTests.test_source_item_ids_are_namespaced) ... ok
+test_source_partition_cannot_hide_protected_original_split (tests.test_dataset_partitions.DatasetPartitionTests.test_source_partition_cannot_hide_protected_original_split) ... ok
+test_transitive_parent_and_session_cross_split (tests.test_dataset_partitions.DatasetPartitionTests.test_transitive_parent_and_session_cross_split) ... ok
+test_unknown_source_fails_development (tests.test_dataset_partitions.DatasetPartitionTests.test_unknown_source_fails_development) ... ok
+test_unknown_split_and_empty_input_fail (tests.test_dataset_partitions.DatasetPartitionTests.test_unknown_split_and_empty_input_fail) ... ok
+
+----------------------------------------------------------------------
+Ran 19 tests in 0.357s
+
+OK

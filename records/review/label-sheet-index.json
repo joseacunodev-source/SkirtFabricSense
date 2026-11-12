@@ -1,0 +1,66 @@
+{
+  "purpose": "review crops from original annotated skirt frame; not new samples",
+  "selection": "first 24 sorted pleat and first 24 explicit no special manufacturing technique",
+  "pages": [
+    [
+      "fashionpedia-train2020-10059",
+      "fashionpedia-train2020-10711",
+      "fashionpedia-train2020-10793",
+      "fashionpedia-train2020-10796",
+      "fashionpedia-train2020-12004",
+      "fashionpedia-train2020-12918",
+      "fashionpedia-train2020-13127",
+      "fashionpedia-train2020-1322"
+    ],
+    [
+      "fashionpedia-train2020-1326",
+      "fashionpedia-train2020-13842",
+      "fashionpedia-train2020-14056",
+      "fashionpedia-train2020-14847",
+      "fashionpedia-train2020-14929",
+      "fashionpedia-train2020-14994",
+      "fashionpedia-train2020-15020",
+      "fashionpedia-train2020-15378"
+    ],
+    [
+      "fashionpedia-train2020-15773",
+      "fashionpedia-train2020-16270",
+      "fashionpedia-train2020-1658",
+      "fashionpedia-train2020-17212",
+      "fashionpedia-train2020-17761",
+      "fashionpedia-train2020-18792",
+      "fashionpedia-train2020-19578",
+      "fashionpedia-train2020-199"
+    ],
+    [
+      "fashionpedia-train2020-10132",
+      "fashionpedia-train2020-10165",
+      "fashionpedia-train2020-10178",
+      "fashionpedia-train2020-10214",
+      "fashionpedia-train2020-10299",
+      "fashionpedia-train2020-10323",
+      "fashionpedia-train2020-10498",
+      "fashionpedia-train2020-10529"
+    ],
+    [
+      "fashionpedia-train2020-10530",
+      "fashionpedia-train2020-10541",
+      "fashionpedia-train2020-10549",
+      "fashionpedia-train2020-10571",
+      "fashionpedia-train2020-10588",
+      "fashionpedia-train2020-10623",
+      "fashionpedia-train2020-10635",
+      "fashionpedia-train2020-10640"
+    ],
+    [
+      "fashionpedia-train2020-10641",
+      "fashionpedia-train2020-10654",
+      "fashionpedia-train2020-10709",
+      "fashionpedia-train2020-10731",
+      "fashionpedia-train2020-10739",
+      "fashionpedia-train2020-10741",
+      "fashionpedia-train2020-10751",
+      "fashionpedia-train2020-10780"
+    ]
+  ]
+}

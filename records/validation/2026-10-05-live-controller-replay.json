@@ -1,0 +1,115 @@
+{
+  "recorded_at_utc": "2026-10-04T23:53:22.078616+00:00",
+  "status": "passed",
+  "kind": "synthetic_controller_replay",
+  "configuration": {
+    "max_frame_age_seconds": 1.0,
+    "max_result_age_seconds": 2.0,
+    "status": "test_configuration_not_calibrated_product_thresholds"
+  },
+  "source_hashes": {
+    "app/live_state.py": "06003cf0f3c3d2f534a3c7a3080e665ce15491151e5c9f8c9bb61ba4e27e67ec",
+    "tools/replay_live_state.py": "b46eeb96ba58936a90e1e79e3538f1d9de4833a2b09f10f4c75d875320364ad9"
+  },
+  "trace": [
+    {
+      "event": "newest_waiting_frame_replaces_older",
+      "simulation_time": 0.2,
+      "connected": true,
+      "generation": 1,
+      "active_frame_id": 1,
+      "pending_frame_id": 3,
+      "dropped_frames": 1,
+      "reason": "waiting_for_frame",
+      "result": null
+    },
+    {
+      "event": "old_scene_completion_rejected",
+      "simulation_time": 0.2,
+      "connected": true,
+      "generation": 2,
+      "active_frame_id": null,
+      "pending_frame_id": 4,
+      "dropped_frames": 2,
+      "reason": "scene_changed",
+      "result": null
+    },
+    {
+      "event": "current_scene_result_accepted",
+      "simulation_time": 0.2,
+      "connected": true,
+      "generation": 2,
+      "active_frame_id": null,
+      "pending_frame_id": null,
+      "dropped_frames": 2,
+      "reason": "current_result",
+      "result": {
+        "frame_id": 4,
+        "captured_at": 0.2,
+        "started_at": 0.2,
+        "finished_at": 0.2,
+        "generation": 2,
+        "prediction": {
+          "style": {
+            "status": "synthetic_test_value"
+          },
+          "fabric": {
+            "status": "unavailable"
+          },
+          "length": {
+            "status": "unavailable"
+          }
+        },
+        "age_seconds": 0.0
+      }
+    },
+    {
+      "event": "capture_age_expired",
+      "simulation_time": 2.21,
+      "connected": true,
+      "generation": 2,
+      "active_frame_id": null,
+      "pending_frame_id": null,
+      "dropped_frames": 2,
+      "reason": "result_expired",
+      "result": null
+    },
+    {
+      "event": "pre_disconnect_completion_rejected",
+      "simulation_time": 2.21,
+      "connected": true,
+      "generation": 4,
+      "active_frame_id": null,
+      "pending_frame_id": 6,
+      "dropped_frames": 2,
+      "reason": "waiting_for_frame",
+      "result": null
+    },
+    {
+      "event": "invalid_frame_clears_result",
+      "simulation_time": 2.21,
+      "connected": true,
+      "generation": 5,
+      "active_frame_id": null,
+      "pending_frame_id": null,
+      "dropped_frames": 2,
+      "reason": "invalid_frame",
+      "result": null
+    },
+    {
+      "event": "inference_error_clears_result",
+      "simulation_time": 2.21,
+      "connected": true,
+      "generation": 5,
+      "active_frame_id": null,
+      "pending_frame_id": null,
+      "dropped_frames": 2,
+      "reason": "inference_error",
+      "result": null
+    }
+  ],
+  "camera_opened": false,
+  "model_executed": false,
+  "pi_verified": false,
+  "limitations": "Synthetic events and clock; no camera detection, measured speed, accuracy or hardware reliability evidence."
+}

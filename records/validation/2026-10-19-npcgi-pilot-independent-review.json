@@ -1,0 +1,687 @@
+{
+  "schema_version": 1,
+  "date_asia_manila": "2026-10-19",
+  "reviewer": "agent_pilot_finalize",
+  "status": "passed",
+  "scope": "Independent read-only review of saved five originals and intake records; this JSON is the only written artifact. No download, installation, dataset admission, split or model change.",
+  "checked_original_files": 5,
+  "checked_files_count": 25,
+  "checked_files": {
+    "data/manifests/npcgi-pilot-candidates.jsonl": {
+      "size_bytes": 18335,
+      "sha256": "a0d52850ba7a749dd8d7aa33225eaceed8710b2f21c63ff3bf246c892c59d5ed"
+    },
+    "records/acquisitions/2026-10-18-npcgi-pilot/selection.json": {
+      "size_bytes": 16846,
+      "sha256": "b13602fbc9a2a0a0602851a8fa99fe51a9d3173139b66d45c15d1bbf639362d7"
+    },
+    "records/acquisitions/2026-10-18-npcgi-pilot/report.json": {
+      "size_bytes": 1272,
+      "sha256": "bc5d796a5bd313ad4724e9631e40ec1f4e16bd6429acf6b06b5b237b2e9df2ba"
+    },
+    "records/acquisitions/2026-10-18-npcgi-pilot/photo-review.json": {
+      "size_bytes": 5486,
+      "sha256": "6e384b5c8efeda0a978d037dac87c53f3fc8cb466b9950ea15865bcc9e9037a5"
+    },
+    "records/acquisitions/2026-10-18-npcgi-pilot/execution.json": {
+      "size_bytes": 2202,
+      "sha256": "26456f0df73ecd1fd01e468779c7456a9e2e5d82ed7b36eed7e7395bd7838956"
+    },
+    "records/acquisitions/2026-10-18-fabric-archive-index/recovery-execution.json": {
+      "size_bytes": 1445,
+      "sha256": "d13b92926c23a0a57c9496547ed05971aeba75e00760f4796b55ba5bb96c7707"
+    },
+    "records/acquisitions/2026-10-17-fabric-source-resolution/acquisition.json": {
+      "size_bytes": 1150,
+      "sha256": "78c5da46b13a2c72bb8c7b54023173721dd97d37aab1ad4532007f4ace415f51"
+    },
+    "records/acquisitions/2026-10-17-fabric-source-resolution/skirt-metadata-candidates.jsonl": {
+      "size_bytes": 565710,
+      "sha256": "0ea24ad27c7100542e415e0be234523e36f4abf60a633d0859a7d80c9cd85b20"
+    },
+    "records/acquisitions/2026-10-17-fabric-source-resolution/NPCGA_datatable_1.1.csv": {
+      "size_bytes": 5021278,
+      "sha256": "127235b40fcbbd7f26053006cdbb3d6fa2c69f736393fdbb1d346a25e7c99d28"
+    },
+    "tools/datasets/inspect_fabric_7z_header.py": {
+      "size_bytes": 17153,
+      "sha256": "90727cb71c101989d97442825a048eac273cf4b4d7b886b90f93d79619043227"
+    },
+    "tests/test_fabric_7z_header.py": {
+      "size_bytes": 4521,
+      "sha256": "a1209589588bc022dd06ca3cdeb364a2754a584823b23be36fa01016842f5548"
+    },
+    "records/acquisitions/2026-10-18-fabric-archive-index/packed-header.bin": {
+      "size_bytes": 23592,
+      "sha256": "eb63ccf5c27c67624d8c760e53151fb72494ec991793726cc274c83cfc4dc083"
+    },
+    "records/acquisitions/2026-10-18-fabric-archive-index/decoded-header.bin": {
+      "size_bytes": 97602,
+      "sha256": "3ad473ff52925123210368b13c483a3e05f8a9a6f29757b226617479be212d5d"
+    },
+    "records/acquisitions/2026-10-18-fabric-archive-index/parsed/archive-index.json": {
+      "size_bytes": 1189971,
+      "sha256": "6f668e33e1f33d3424c788e8c824a6a6a88b3586e01f40caf2e053109b7fad58"
+    },
+    "records/acquisitions/2026-10-18-fabric-archive-index/parsed/report.json": {
+      "size_bytes": 1707,
+      "sha256": "4847838dd9a9334ca242a10c3fd5c7dbf7f9d9c5fa34642f3faa5833ce249e2f"
+    },
+    "tools/datasets/acquire_npcgi_pilot.py": {
+      "size_bytes": 10379,
+      "sha256": "4ca24d75b2a6a00e2755fcc52fa6dabd28203703e80666fc5d2eb9885a12bfed"
+    },
+    "tests/test_npcgi_pilot.py": {
+      "size_bytes": 3112,
+      "sha256": "5189188b76af17a702387908d00226bd48c1248f093e4b428aec2d4b60f28f63"
+    },
+    "records/acquisitions/2026-10-18-fabric-archive-probe/start-header.bin": {
+      "size_bytes": 32,
+      "sha256": "43f2b583e6174511b61840c7c921fb6e5c9ea17ecce9d4cdd49da6efebf61bef"
+    },
+    "records/acquisitions/2026-10-18-fabric-archive-probe/next-header.bin": {
+      "size_bytes": 40,
+      "sha256": "6d587e6ff8e9bf86df2a54f8034d76fc26e8e0c938ad858854e24413b4d26393"
+    },
+    "records/acquisitions/2026-10-18-fabric-archive-probe/report.json": {
+      "size_bytes": 1524,
+      "sha256": "ac2f9b7a873a922457b4382c0881b15cd97ed3ddd0faf155a9854755fb7dda54"
+    },
+    "data/external/npcgi_pilot/F1564.jpg": {
+      "size_bytes": 3645740,
+      "sha256": "864849625b4c3fc5b0beea04d2140f203337d5a70462af5a7df8edc22d429a35"
+    },
+    "data/external/npcgi_pilot/F0848.jpg": {
+      "size_bytes": 3983869,
+      "sha256": "6d5abb6d286932623595c5b99183709b066f61f91042111147e2607cff750198"
+    },
+    "data/external/npcgi_pilot/F1810.jpg": {
+      "size_bytes": 4221647,
+      "sha256": "9817b7a02d4c46f6bdb42c10dbf4d543de078762fca2a23b65a36f9ea2f23f8c"
+    },
+    "data/external/npcgi_pilot/F0870.jpg": {
+      "size_bytes": 4081064,
+      "sha256": "145b424cf320065754ea5cc2da02c18fadfa64c10ffd01a1f9ab759b0643ef04"
+    },
+    "data/external/npcgi_pilot/F1350.jpg": {
+      "size_bytes": 3710967,
+      "sha256": "7083e7aa1ebb7b78c6fea5f5aaf20a50111698750865fefb1aae9c9dab71e8e2"
+    }
+  },
+  "checks_passed": 111,
+  "checks_failed": 0,
+  "checks": [
+    {
+      "name": "publisher_metadata_csv_sha256",
+      "passed": true
+    },
+    {
+      "name": "publisher_metadata_csv_byte_count",
+      "passed": true
+    },
+    {
+      "name": "publisher_metadata_csv_md5",
+      "passed": true
+    },
+    {
+      "name": "source_metadata_unique_ids",
+      "passed": true
+    },
+    {
+      "name": "skirt_metadata_count",
+      "passed": true
+    },
+    {
+      "name": "archive_header_crc_and_full_saved_index_reconstructed",
+      "passed": true,
+      "details": "Read-only verified_index() decoded saved encoded header, validated start/next/decoded CRCs and compared full reconstructed index; no network function called."
+    },
+    {
+      "name": "archive_recovery_binding:tools/datasets/inspect_fabric_7z_header.py",
+      "passed": true
+    },
+    {
+      "name": "archive_recovery_binding:tests/test_fabric_7z_header.py",
+      "passed": true
+    },
+    {
+      "name": "archive_recovery_binding:records/acquisitions/2026-10-18-fabric-archive-index/packed-header.bin",
+      "passed": true
+    },
+    {
+      "name": "archive_recovery_binding:records/acquisitions/2026-10-18-fabric-archive-index/decoded-header.bin",
+      "passed": true
+    },
+    {
+      "name": "archive_recovery_binding:records/acquisitions/2026-10-18-fabric-archive-index/parsed/archive-index.json",
+      "passed": true
+    },
+    {
+      "name": "archive_recovery_binding:records/acquisitions/2026-10-18-fabric-archive-index/parsed/report.json",
+      "passed": true
+    },
+    {
+      "name": "pilot_execution_binding:tools/datasets/acquire_npcgi_pilot.py",
+      "passed": true
+    },
+    {
+      "name": "pilot_execution_binding:tests/test_npcgi_pilot.py",
+      "passed": true
+    },
+    {
+      "name": "pilot_execution_binding:tools/datasets/inspect_fabric_7z_header.py",
+      "passed": true
+    },
+    {
+      "name": "pilot_execution_binding:tests/test_fabric_7z_header.py",
+      "passed": true
+    },
+    {
+      "name": "pilot_execution_binding:data/manifests/npcgi-pilot-candidates.jsonl",
+      "passed": true
+    },
+    {
+      "name": "pilot_execution_binding:records/acquisitions/2026-10-18-npcgi-pilot/selection.json",
+      "passed": true
+    },
+    {
+      "name": "pilot_execution_binding:records/acquisitions/2026-10-18-npcgi-pilot/report.json",
+      "passed": true
+    },
+    {
+      "name": "pilot_execution_binding:records/acquisitions/2026-10-18-npcgi-pilot/photo-review.json",
+      "passed": true
+    },
+    {
+      "name": "selection_archive_index_hash",
+      "passed": true
+    },
+    {
+      "name": "selection_metadata_hash",
+      "passed": true
+    },
+    {
+      "name": "report_selection_hash",
+      "passed": true
+    },
+    {
+      "name": "report_manifest_hash",
+      "passed": true
+    },
+    {
+      "name": "review_manifest_hash",
+      "passed": true
+    },
+    {
+      "name": "manifest_exact_predeclared_count",
+      "passed": true
+    },
+    {
+      "name": "manifest_order_matches_selection",
+      "passed": true
+    },
+    {
+      "name": "recorded_predeclaration_flag",
+      "passed": true,
+      "details": "Saved assertion and acquisition tool ordering support this; filesystem timestamps are not independent historical proof."
+    },
+    {
+      "name": "skirt_metadata_unique_ids",
+      "passed": true
+    },
+    {
+      "name": "independent_sorted_interleaved_selection",
+      "passed": true,
+      "details": [
+        "F1564",
+        "F0848",
+        "F1810",
+        "F0870",
+        "F1350"
+      ]
+    },
+    {
+      "name": "known_selected_ids",
+      "passed": true
+    },
+    {
+      "name": "F1564:original_sha256",
+      "passed": true
+    },
+    {
+      "name": "F1564:archive_crc32",
+      "passed": true
+    },
+    {
+      "name": "F1564:original_size",
+      "passed": true
+    },
+    {
+      "name": "F1564:jpeg_dimensions",
+      "passed": true
+    },
+    {
+      "name": "F1564:decoded_rgb_sha256",
+      "passed": true
+    },
+    {
+      "name": "F1564:source_item_exact_join",
+      "passed": true
+    },
+    {
+      "name": "F1564:raw_source_csv_row_preserved",
+      "passed": true
+    },
+    {
+      "name": "F1564:copy_stream",
+      "passed": true
+    },
+    {
+      "name": "F1564:range_join",
+      "passed": true
+    },
+    {
+      "name": "F1564:recorded_http_range",
+      "passed": true
+    },
+    {
+      "name": "F1564:null_splits_unadmitted",
+      "passed": true
+    },
+    {
+      "name": "F1564:source_group_preserved",
+      "passed": true
+    },
+    {
+      "name": "F1564:no_appearance_or_composition_claim",
+      "passed": true
+    },
+    {
+      "name": "F1564:saved_review_hash_binding",
+      "passed": true
+    },
+    {
+      "name": "F1564:rights_record",
+      "passed": true
+    },
+    {
+      "name": "F0848:original_sha256",
+      "passed": true
+    },
+    {
+      "name": "F0848:archive_crc32",
+      "passed": true
+    },
+    {
+      "name": "F0848:original_size",
+      "passed": true
+    },
+    {
+      "name": "F0848:jpeg_dimensions",
+      "passed": true
+    },
+    {
+      "name": "F0848:decoded_rgb_sha256",
+      "passed": true
+    },
+    {
+      "name": "F0848:source_item_exact_join",
+      "passed": true
+    },
+    {
+      "name": "F0848:raw_source_csv_row_preserved",
+      "passed": true
+    },
+    {
+      "name": "F0848:copy_stream",
+      "passed": true
+    },
+    {
+      "name": "F0848:range_join",
+      "passed": true
+    },
+    {
+      "name": "F0848:recorded_http_range",
+      "passed": true
+    },
+    {
+      "name": "F0848:null_splits_unadmitted",
+      "passed": true
+    },
+    {
+      "name": "F0848:source_group_preserved",
+      "passed": true
+    },
+    {
+      "name": "F0848:no_appearance_or_composition_claim",
+      "passed": true
+    },
+    {
+      "name": "F0848:saved_review_hash_binding",
+      "passed": true
+    },
+    {
+      "name": "F0848:rights_record",
+      "passed": true
+    },
+    {
+      "name": "F1810:original_sha256",
+      "passed": true
+    },
+    {
+      "name": "F1810:archive_crc32",
+      "passed": true
+    },
+    {
+      "name": "F1810:original_size",
+      "passed": true
+    },
+    {
+      "name": "F1810:jpeg_dimensions",
+      "passed": true
+    },
+    {
+      "name": "F1810:decoded_rgb_sha256",
+      "passed": true
+    },
+    {
+      "name": "F1810:source_item_exact_join",
+      "passed": true
+    },
+    {
+      "name": "F1810:raw_source_csv_row_preserved",
+      "passed": true
+    },
+    {
+      "name": "F1810:copy_stream",
+      "passed": true
+    },
+    {
+      "name": "F1810:range_join",
+      "passed": true
+    },
+    {
+      "name": "F1810:recorded_http_range",
+      "passed": true
+    },
+    {
+      "name": "F1810:null_splits_unadmitted",
+      "passed": true
+    },
+    {
+      "name": "F1810:source_group_preserved",
+      "passed": true
+    },
+    {
+      "name": "F1810:no_appearance_or_composition_claim",
+      "passed": true
+    },
+    {
+      "name": "F1810:saved_review_hash_binding",
+      "passed": true
+    },
+    {
+      "name": "F1810:rights_record",
+      "passed": true
+    },
+    {
+      "name": "F0870:original_sha256",
+      "passed": true
+    },
+    {
+      "name": "F0870:archive_crc32",
+      "passed": true
+    },
+    {
+      "name": "F0870:original_size",
+      "passed": true
+    },
+    {
+      "name": "F0870:jpeg_dimensions",
+      "passed": true
+    },
+    {
+      "name": "F0870:decoded_rgb_sha256",
+      "passed": true
+    },
+    {
+      "name": "F0870:source_item_exact_join",
+      "passed": true
+    },
+    {
+      "name": "F0870:raw_source_csv_row_preserved",
+      "passed": true
+    },
+    {
+      "name": "F0870:copy_stream",
+      "passed": true
+    },
+    {
+      "name": "F0870:range_join",
+      "passed": true
+    },
+    {
+      "name": "F0870:recorded_http_range",
+      "passed": true
+    },
+    {
+      "name": "F0870:null_splits_unadmitted",
+      "passed": true
+    },
+    {
+      "name": "F0870:source_group_preserved",
+      "passed": true
+    },
+    {
+      "name": "F0870:no_appearance_or_composition_claim",
+      "passed": true
+    },
+    {
+      "name": "F0870:saved_review_hash_binding",
+      "passed": true
+    },
+    {
+      "name": "F0870:rights_record",
+      "passed": true
+    },
+    {
+      "name": "F1350:original_sha256",
+      "passed": true
+    },
+    {
+      "name": "F1350:archive_crc32",
+      "passed": true
+    },
+    {
+      "name": "F1350:original_size",
+      "passed": true
+    },
+    {
+      "name": "F1350:jpeg_dimensions",
+      "passed": true
+    },
+    {
+      "name": "F1350:decoded_rgb_sha256",
+      "passed": true
+    },
+    {
+      "name": "F1350:source_item_exact_join",
+      "passed": true
+    },
+    {
+      "name": "F1350:raw_source_csv_row_preserved",
+      "passed": true
+    },
+    {
+      "name": "F1350:copy_stream",
+      "passed": true
+    },
+    {
+      "name": "F1350:range_join",
+      "passed": true
+    },
+    {
+      "name": "F1350:recorded_http_range",
+      "passed": true
+    },
+    {
+      "name": "F1350:null_splits_unadmitted",
+      "passed": true
+    },
+    {
+      "name": "F1350:source_group_preserved",
+      "passed": true
+    },
+    {
+      "name": "F1350:no_appearance_or_composition_claim",
+      "passed": true
+    },
+    {
+      "name": "F1350:saved_review_hash_binding",
+      "passed": true
+    },
+    {
+      "name": "F1350:rights_record",
+      "passed": true
+    },
+    {
+      "name": "unique_original_file_and_rgb_hashes",
+      "passed": true
+    },
+    {
+      "name": "total_original_and_http_body_bytes",
+      "passed": true
+    },
+    {
+      "name": "recorded_acquisition_limits",
+      "passed": true
+    },
+    {
+      "name": "two_full_candidates_three_quarantined_zero_worn",
+      "passed": true
+    },
+    {
+      "name": "recorded_zero_admissions",
+      "passed": true
+    }
+  ],
+  "originals": [
+    {
+      "source_item_id": "F1564",
+      "original_path": "data/external/npcgi_pilot/F1564.jpg",
+      "size_bytes": 3645740,
+      "sha256": "864849625b4c3fc5b0beea04d2140f203337d5a70462af5a7df8edc22d429a35",
+      "crc32": 2206272931,
+      "dimensions": [
+        4608,
+        3456
+      ],
+      "decoded_rgb_sha256": "3bb51cc087bf2187270bb2909ffbc30860d741c818c17f1f898742340f81b683",
+      "visual_inspection": {
+        "observed_garment": "dress",
+        "presentation": "flat_laid",
+        "full_view_skirt_candidate": false,
+        "quarantined": true,
+        "reason": "Sleeveless bodice, neckline and arm openings plus belt above skirt portion; source card F1564 visible."
+      }
+    },
+    {
+      "source_item_id": "F0848",
+      "original_path": "data/external/npcgi_pilot/F0848.jpg",
+      "size_bytes": 3983869,
+      "sha256": "6d5abb6d286932623595c5b99183709b066f61f91042111147e2607cff750198",
+      "crc32": 956453956,
+      "dimensions": [
+        4608,
+        3456
+      ],
+      "decoded_rgb_sha256": "8c7c823069b45b850be8656119a5c9f4c3881cb49a6596e7ee5f23f7f8bbc8ce",
+      "visual_inspection": {
+        "observed_garment": "skirt",
+        "presentation": "flat_laid",
+        "full_view_skirt_candidate": true,
+        "quarantined": false,
+        "reason": "Plaid skirt, complete waistband-to-hem silhouette contained; source card F0848 visible."
+      }
+    },
+    {
+      "source_item_id": "F1810",
+      "original_path": "data/external/npcgi_pilot/F1810.jpg",
+      "size_bytes": 4221647,
+      "sha256": "9817b7a02d4c46f6bdb42c10dbf4d543de078762fca2a23b65a36f9ea2f23f8c",
+      "crc32": 3391068001,
+      "dimensions": [
+        4608,
+        3456
+      ],
+      "decoded_rgb_sha256": "25561b97d927fc682c89c8bf77eebf3711a9bcd85bd67329bfe7d4d01598efec",
+      "visual_inspection": {
+        "observed_garment": "uncertain_skirt_candidate",
+        "presentation": "flat_laid",
+        "full_view_skirt_candidate": false,
+        "quarantined": true,
+        "reason": "White elastic-waist garment is folded/bunched; cannot establish the complete hem/silhouette; source card F1810 visible."
+      }
+    },
+    {
+      "source_item_id": "F0870",
+      "original_path": "data/external/npcgi_pilot/F0870.jpg",
+      "size_bytes": 4081064,
+      "sha256": "145b424cf320065754ea5cc2da02c18fadfa64c10ffd01a1f9ab759b0643ef04",
+      "crc32": 3696716509,
+      "dimensions": [
+        4608,
+        3456
+      ],
+      "decoded_rgb_sha256": "0877266ea2cf995eb9e97b09010c1f97d193df2bdabe0eb3a8b5ff6005d8bab8",
+      "visual_inspection": {
+        "observed_garment": "skirt_candidate",
+        "presentation": "flat_laid",
+        "full_view_skirt_candidate": false,
+        "quarantined": true,
+        "reason": "Dark garment is cut off at upper image edge; waistband-to-hem completeness not established; source card F0870 visible."
+      }
+    },
+    {
+      "source_item_id": "F1350",
+      "original_path": "data/external/npcgi_pilot/F1350.jpg",
+      "size_bytes": 3710967,
+      "sha256": "7083e7aa1ebb7b78c6fea5f5aaf20a50111698750865fefb1aae9c9dab71e8e2",
+      "crc32": 3646157884,
+      "dimensions": [
+        4608,
+        3456
+      ],
+      "decoded_rgb_sha256": "5b25d7c917d3863c119d7dbbcd546eb9168ee809c368fd74087b74582910064b",
+      "visual_inspection": {
+        "observed_garment": "skirt",
+        "presentation": "flat_laid",
+        "full_view_skirt_candidate": true,
+        "quarantined": false,
+        "reason": "Dark skirt, waistband and hem contained, folds remain; source card F1350 visible."
+      }
+    }
+  ],
+  "actual_visual_inspection": {
+    "method": "All five original local JPEGs independently opened through view_image on this audit turn; tool displayed each image at 1824x1368, resized from 4608x3456.",
+    "full_view_skirt_candidates": 2,
+    "quarantined": 3,
+    "worn_photographs": 0,
+    "training_admissions": 0,
+    "source_split_assignments": 0,
+    "project_split_assignments": 0
+  },
+  "limitations": [
+    "Image-derived observations are agent review, not human ground truth or independently measured fibre composition.",
+    "Historical HTTP statuses and predeclaration timing were audited from saved records and code ordering, not newly observed network traffic.",
+    "Full publisher archive checksum not verified because no full archive was downloaded.",
+    "Near-duplicate and physical specimen identity analysis remains incomplete; source item IDs do not prove unique physical garments.",
+    "Five flat-laid images and two full skirt candidates do not establish worn-camera fabric feasibility or model accuracy."
+  ],
+  "runtime": {
+    "python_version": "3.12.14",
+    "pillow_version": "12.3.0",
+    "network_requests_by_this_audit": 0,
+    "dependency_changes": 0
+  }
+}

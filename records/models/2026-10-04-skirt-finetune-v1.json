@@ -1,0 +1,144 @@
+{
+  "release_id": "skirt-finetune-v1",
+  "status": "desktop_verified_development_candidate",
+  "source_run_id": "20261004-skirt-finetune-v1",
+  "model_files_and_sha256": [
+    {
+      "path": "artifacts/models/skirt-finetune-v1/model.keras",
+      "sha256": "2e792fbc83c1058eba7c65a7b8535fdb28d6e246df9ddbc094ba71692de640fc"
+    },
+    {
+      "path": "artifacts/models/skirt-finetune-v1/model.tflite",
+      "sha256": "c1d8f49e221a2672c20adb87fe4ae5d2f6966f125ee99cb212ff2eb56fffdbf0"
+    }
+  ],
+  "contract": {
+    "path": "artifacts/models/skirt-finetune-v1/contract.json",
+    "sha256": "89adbc26323d62b87dd8e7cca0481f40f6cdcd9fd44a8da738f05f5f00bd8a99"
+  },
+  "training_record": {
+    "path": "records/experiments/20261004-skirt-finetune-v1/run.json",
+    "sha256": "effcc483d835b37fa6e4ac1ba99cc7f2bfc0bcf72a55dbbc4516d123413a8760"
+  },
+  "environment": {
+    "path": "records/experiments/20261004-skirt-finetune-v1/environment.json",
+    "sha256": "a2f05f93f79e7be2f51c3f42c266356d468754589217f7866c356cb4612e3527"
+  },
+  "dataset": {
+    "path": "data/labels/skirt-baseline-v1.jsonl",
+    "sha256": "9160998b5ab0f65251c53cefd783e1c6351887bec8c655074be64dd2717dc2eb"
+  },
+  "metrics": {
+    "model": {
+      "count": 80,
+      "accuracy": 0.8125,
+      "macro_f1": 0.7540479606476738,
+      "per_class": [
+        {
+          "label": "non_pleated",
+          "support": 60,
+          "precision": 0.8813559322033898,
+          "recall": 0.8666666666666667,
+          "f1": 0.8739495798319329
+        },
+        {
+          "label": "pleated",
+          "support": 20,
+          "precision": 0.6190476190476191,
+          "recall": 0.65,
+          "f1": 0.6341463414634146
+        }
+      ],
+      "confusion_matrix_actual_rows_predicted_columns": [
+        [
+          52,
+          8
+        ],
+        [
+          7,
+          13
+        ]
+      ]
+    },
+    "train_majority_baseline": {
+      "count": 80,
+      "accuracy": 0.75,
+      "macro_f1": 0.42857142857142855,
+      "per_class": [
+        {
+          "label": "non_pleated",
+          "support": 60,
+          "precision": 0.75,
+          "recall": 1.0,
+          "f1": 0.8571428571428571
+        },
+        {
+          "label": "pleated",
+          "support": 20,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        }
+      ],
+      "confusion_matrix_actual_rows_predicted_columns": [
+        [
+          60,
+          0
+        ],
+        [
+          20,
+          0
+        ]
+      ]
+    }
+  },
+  "export": {
+    "sha256": "c1d8f49e221a2672c20adb87fe4ae5d2f6966f125ee99cb212ff2eb56fffdbf0",
+    "bytes": 8868352,
+    "maximum_absolute_error": 7.68899917602539e-06,
+    "argmax_agreement": 1.0,
+    "tolerance_absolute": 0.001,
+    "metrics": {
+      "count": 80,
+      "accuracy": 0.8125,
+      "macro_f1": 0.7540479606476738,
+      "per_class": [
+        {
+          "label": "non_pleated",
+          "support": 60,
+          "precision": 0.8813559322033898,
+          "recall": 0.8666666666666667,
+          "f1": 0.8739495798319329
+        },
+        {
+          "label": "pleated",
+          "support": 20,
+          "precision": 0.6190476190476191,
+          "recall": 0.65,
+          "f1": 0.6341463414634146
+        }
+      ],
+      "confusion_matrix_actual_rows_predicted_columns": [
+        [
+          52,
+          8
+        ],
+        [
+          7,
+          13
+        ]
+      ]
+    },
+    "pi_verified": false
+  },
+  "pi_validation_record": null,
+  "limitations": [
+    "Development validation only; no final-test use",
+    "Agent appearance labels require independent confirmation",
+    "Physical garment identity unresolved despite connected-group split",
+    "Manual source ROI; no automatic camera localization",
+    "Web-image domain; no webcam, length, fabric or Raspberry Pi verification",
+    "No probability calibration or rejection threshold",
+    "Source image and pretrained-weight redistribution rights require review before publishing weights"
+  ]
+}

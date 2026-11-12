@@ -1,0 +1,27 @@
+{
+  "date": "2026-11-11",
+  "command": "python -B -m unittest tests.test_dataset_partitions tests.test_fabric_evidence_review tests.test_worn_geometry_evaluation tests.test_hemline -q",
+  "interpreter": "C:/Users/Administrator/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/python.exe",
+  "run": 76,
+  "passed": 76,
+  "stdout": "Ran 76 tests in 3.258s; OK",
+  "scope": "Saved-data contracts and synthetic software checks, not camera/Pi acceptance",
+  "sources": [
+    {
+      "path": "tests/test_dataset_partitions.py",
+      "sha256": "bf0877c3f0bc48ce7bb02ba9b8e65fdfd1cb04c7f9552161af02e9de38f25789"
+    },
+    {
+      "path": "tests/test_fabric_evidence_review.py",
+      "sha256": "cc6d1615bd36f7b27675322b783b0f12d9d51888613930bd5319d60434c63757"
+    },
+    {
+      "path": "tests/test_worn_geometry_evaluation.py",
+      "sha256": "bc7f1cef422e936eb54bcabe26c309593888e81b360df71717ecca9e9dd52062"
+    },
+    {
+      "path": "tests/test_hemline.py",
+      "sha256": "a21845497f2433f6c553bfc26ff4cb78619e5a311634bbf617d34a80914bfc6b"
+    }
+  ]
+}

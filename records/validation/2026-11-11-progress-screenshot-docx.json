@@ -1,0 +1,9 @@
+{
+  "status": "visually_verified",
+  "artifact": "output\\SkirtFabricSense_Progress_Report_Screenshots.docx",
+  "sha256": "b2a1e0dffbabb1e532fd35f75fd4bef1f4f9596310b590e956a3c47142a60516",
+  "embedded_images": 5,
+  "pages_reviewed": 5,
+  "renderer": "Microsoft Word PDF export plus Poppler; packaged renderer unavailable because soffice.exe absent",
+  "dependencies_installed": []
+}

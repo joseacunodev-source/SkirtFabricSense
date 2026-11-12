@@ -1,0 +1,42 @@
+[
+  {
+    "epoch": 1,
+    "reported_cumulative_training_loss": 2.0353012482325235
+  },
+  {
+    "epoch": 2,
+    "reported_cumulative_training_loss": 1.2996625105539958
+  },
+  {
+    "epoch": 3,
+    "reported_cumulative_training_loss": 0.9471017420291901
+  },
+  {
+    "epoch": 4,
+    "reported_cumulative_training_loss": 0.5660598675409952
+  },
+  {
+    "epoch": 5,
+    "reported_cumulative_training_loss": 0.3465715746084849
+  },
+  {
+    "epoch": 6,
+    "reported_cumulative_training_loss": 0.2182922065258026
+  },
+  {
+    "epoch": 7,
+    "reported_cumulative_training_loss": 0.1466524749994278
+  },
+  {
+    "epoch": 8,
+    "reported_cumulative_training_loss": 0.10964193319280942
+  },
+  {
+    "epoch": 9,
+    "reported_cumulative_training_loss": 0.08141143868366878
+  },
+  {
+    "epoch": 10,
+    "reported_cumulative_training_loss": 0.06197219590346018
+  }
+]

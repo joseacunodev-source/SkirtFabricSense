@@ -1,0 +1,181 @@
+{
+  "run_id": "20261004-skirt-baseline-v1",
+  "status": "failed",
+  "started_at": "2026-10-04T05:10:44.003906+00:00",
+  "source_sha256": "f55feba27b36c65155729425ea7bf42b457d37365621739780475a1b095f0238",
+  "labels_in_output_order": [
+    "non_pleated",
+    "pleated"
+  ],
+  "environment_snapshot": {
+    "path": "environment.json",
+    "sha256": "20c6940ec920e1f03a3ab83befb7f0cda10b8466e03311cc8a3b1ac599a2ebdc"
+  },
+  "dataset_manifest_sha256": "9160998b5ab0f65251c53cefd783e1c6351887bec8c655074be64dd2717dc2eb",
+  "split_manifest_sha256": "df3b096e4d131db55852b20de075d811c95520d23766648928555d755fe8812c",
+  "image_counts": {
+    "development_train": {
+      "non_pleated": 232,
+      "pleated": 60
+    },
+    "development_validation": {
+      "non_pleated": 60,
+      "pleated": 20
+    }
+  },
+  "independent_specimen_counts": null,
+  "label_schema_version": "reviewed_pleating_appearance_v1",
+  "versions": {
+    "tensorflow": "2.20.0",
+    "keras": "3.15.1",
+    "numpy": "2.5.3",
+    "Pillow": "12.3.0"
+  },
+  "gpu_devices": [
+    "PhysicalDevice(name='/physical_device:GPU:0', device_type='GPU')"
+  ],
+  "architecture": "ImageNet MobileNetV2 alpha1.0 frozen, global-average pooling, Dense2 softmax",
+  "preprocessing": "Source annotated bbox plus 5% each side; RGB Pillow bilinear letterbox224; padding128; model Rescaling(1/127.5,offset=-1) exactly once",
+  "limitations": [
+    "Development validation only; no final-test use",
+    "Agent appearance labels require independent confirmation",
+    "Physical garment identity unresolved despite connected-group split",
+    "Manual source ROI; no automatic camera localization",
+    "Web-image domain; no webcam, length, fabric or Raspberry Pi verification",
+    "No probability calibration or rejection threshold",
+    "Source image and pretrained-weight redistribution rights require review before publishing weights"
+  ],
+  "prediction_device": "/job:localhost/replica:0/task:0/device:GPU:0",
+  "pretrained_weights": {
+    "path": "/home/skirttrain/.keras/models/mobilenet_v2_weights_tf_dim_ordering_tf_kernels_1.0_224_no_top.h5",
+    "sha256": "f8aff69536bd77a692c594f559c798c19bf7f3f36668fc9fa00b21c6aab4797c",
+    "source": "https://storage.googleapis.com/tensorflow/keras-applications/mobilenet_v2/mobilenet_v2_weights_tf_dim_ordering_tf_kernels_1.0_224_no_top.h5",
+    "training_source": "ImageNet",
+    "code_license": "Keras Apache-2.0",
+    "weight_redistribution_status": "not independently cleared"
+  },
+  "hyperparameters": {
+    "epochs": 5,
+    "batch_size": 16,
+    "optimizer": "Adam",
+    "learning_rate": 0.001,
+    "backbone_frozen": true,
+    "augmentation": "none for first reproducible baseline",
+    "seed": 42,
+    "deterministic_ops": false,
+    "selection": "minimum development validation cross entropy",
+    "threshold": "argmax, uncalibrated"
+  },
+  "selected_epoch": 4,
+  "training_duration_seconds": 20.888488068,
+  "gpu_memory": {
+    "current": 11113728,
+    "peak": 1489161216
+  },
+  "metrics": {
+    "model": {
+      "count": 80,
+      "accuracy": 0.7875,
+      "macro_f1": 0.7212543554006969,
+      "per_class": [
+        {
+          "label": "non_pleated",
+          "support": 60,
+          "precision": 0.864406779661017,
+          "recall": 0.85,
+          "f1": 0.8571428571428572
+        },
+        {
+          "label": "pleated",
+          "support": 20,
+          "precision": 0.5714285714285714,
+          "recall": 0.6,
+          "f1": 0.5853658536585366
+        }
+      ],
+      "confusion_matrix_actual_rows_predicted_columns": [
+        [
+          51,
+          9
+        ],
+        [
+          8,
+          12
+        ]
+      ]
+    },
+    "train_majority_baseline": {
+      "count": 80,
+      "accuracy": 0.75,
+      "macro_f1": 0.42857142857142855,
+      "per_class": [
+        {
+          "label": "non_pleated",
+          "support": 60,
+          "precision": 0.75,
+          "recall": 1.0,
+          "f1": 0.8571428571428571
+        },
+        {
+          "label": "pleated",
+          "support": 20,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        }
+      ],
+      "confusion_matrix_actual_rows_predicted_columns": [
+        [
+          60,
+          0
+        ],
+        [
+          20,
+          0
+        ]
+      ]
+    }
+  },
+  "export": {
+    "sha256": "aee38858c1ab0ae4747e67fc5dc4a93dcd09b4bb0394cf05eae2de7a8c3b3985",
+    "bytes": 8868352,
+    "maximum_absolute_error": 0.0024245381355285645,
+    "argmax_agreement": 1.0,
+    "tolerance_absolute": 0.001,
+    "metrics": {
+      "count": 80,
+      "accuracy": 0.7875,
+      "macro_f1": 0.7212543554006969,
+      "per_class": [
+        {
+          "label": "non_pleated",
+          "support": 60,
+          "precision": 0.864406779661017,
+          "recall": 0.85,
+          "f1": 0.8571428571428572
+        },
+        {
+          "label": "pleated",
+          "support": 20,
+          "precision": 0.5714285714285714,
+          "recall": 0.6,
+          "f1": 0.5853658536585366
+        }
+      ],
+      "confusion_matrix_actual_rows_predicted_columns": [
+        [
+          51,
+          9
+        ],
+        [
+          8,
+          12
+        ]
+      ]
+    },
+    "pi_verified": false
+  },
+  "error": "Export exceeded prespecified absolute parity tolerance",
+  "traceback": "Traceback (most recent call last):\n  File \"/mnt/c/Users/Administrator/OneDrive/Documents/ChatGPT/SkirtFabricSense/tools/training/train_skirt_baseline.py\", line 235, in main\n    run(args,report)\n  File \"/mnt/c/Users/Administrator/OneDrive/Documents/ChatGPT/SkirtFabricSense/tools/training/train_skirt_baseline.py\", line 213, in run\n    raise RuntimeError('Export exceeded prespecified absolute parity tolerance')\nRuntimeError: Export exceeded prespecified absolute parity tolerance\n",
+  "completed_at": "2026-10-04T05:11:53.417760+00:00"
+}

@@ -1,0 +1,89 @@
+{
+  "recorded_at": "2026-10-22T20:28:16.744388+08:00",
+  "status": "passed_ui_motion_update",
+  "source": {
+    "path": "records/validation/2026-10-22-ui-motion-finalize.py",
+    "sha256": "0e570e98c3a0a76bf5a86fcf355a094c646e3b969f3ecba1a5f809c386a7c40b"
+  },
+  "ui": {
+    "path": "artifacts/stations/skirt-research-station-v6/application/app/static/index.html",
+    "sha256": "6c742156d9813e50b4632f9c09c723e2550c8ed27c76e77cd3cc9ae1d9c1854e"
+  },
+  "test_source": {
+    "path": "tests/camera_ui_lifecycle.cjs",
+    "sha256": "d07a79e6c06c2980b0bd82854ea5074b63b13456d70fc2130c839ba5870c8b48"
+  },
+  "node": {
+    "command": [
+      "C:/Program Files/nodejs/node.exe",
+      "tests/camera_ui_lifecycle.cjs",
+      "artifacts/stations/skirt-research-station-v6/application/app/static/index.html"
+    ],
+    "returncode": 0,
+    "log": {
+      "path": "records/validation/2026-10-22-ui-motion/node.log",
+      "sha256": "fd56675530d02d344fa1ffa5da673fa49dad297c57c13589604bee907a5714b0"
+    },
+    "lifecycle_scenarios": 18,
+    "score_cases": 21,
+    "motion_cases": 6,
+    "independent_agent_review_and_rerun": true
+  },
+  "browser_observations": {
+    "header_animation": "interface-in",
+    "header_duration_seconds": 0.28,
+    "panel_animation": "interface-in",
+    "control_transition_seconds": 0.15,
+    "switch_thumb_transition_seconds": 0.18,
+    "fabric_toggle_checked_and_saved_off_restored": true,
+    "camera_state": "Camera off",
+    "score": "\u2014",
+    "screenshot": {
+      "path": "records/validation/2026-10-22-ui-motion/preview.png",
+      "sha256": "8bec7fe623b42eecc72819e4008b4848896aaf04da72ede6f60ed79f1ee141a4"
+    }
+  },
+  "only_application_payload_changed": "app/static/index.html",
+  "models_and_backend_unchanged": true,
+  "fresh_http_inference_jobs": 0,
+  "prior_http_evidence": {
+    "path": "records/validation/2026-10-22-station-v5-http.json",
+    "sha256": "190f070a8627584b8479005f5f81b21a6c5d52d25755387f3145dde54135d902"
+  },
+  "exact_served_ui_verified": true,
+  "process_check": {
+    "command": [
+      "wsl",
+      "-d",
+      "Ubuntu-24.04",
+      "-u",
+      "skirttrain",
+      "--exec",
+      "/usr/bin/pgrep",
+      "-af",
+      "[a]pp.server.*8766|[s]tation_package.py launch"
+    ],
+    "output": "559 /home/skirttrain/skirt-fabric-sense/.venv-training/bin/python -B station_package.py launch . --port 8766\n560 /home/skirttrain/skirt-fabric-sense/.venv-training/bin/python -B -m app.server --bundle /mnt/c/Users/Administrator/OneDrive/Documents/ChatGPT/SkirtFabricSense/artifacts/stations/skirt-research-station-v6/application --root /mnt/c/Users/Administrator/OneDrive/Documents/ChatGPT/SkirtFabricSense/artifacts/stations/skirt-research-station-v6/application --port 8766 --no-review --experimental-localizer /mnt/c/Users/Administrator/OneDrive/Documents/ChatGPT/SkirtFabricSense/artifacts/stations/skirt-research-station-v6/models/localizer --experimental-presence /mnt/c/Users/Administrator/OneDrive/Documents/ChatGPT/SkirtFabricSense/artifacts/stations/skirt-research-station-v6/models/presence"
+  },
+  "active_preview": {
+    "type": "loopback_research_preview",
+    "url": "http://127.0.0.1:8766/",
+    "package": "artifacts/stations/skirt-research-station-v6",
+    "exec_session_id": 66571,
+    "host": "Ubuntu-24.04/skirttrain",
+    "process_ids": [
+      559,
+      560
+    ],
+    "camera_started_by_agent": false,
+    "fabric_research_loaded": false,
+    "operation": "Intentionally running for UI review; verify actual state before restarting"
+  },
+  "old_preview_exec_session": 21130,
+  "old_preview_stopped": true,
+  "packages_installed": 0,
+  "new_training_images": 0,
+  "camera_used": false,
+  "pi_verified": false,
+  "limits": "Mock animation/lifecycle checks and camera-off browser verification; no new ML accuracy or hardware performance claim."
+}

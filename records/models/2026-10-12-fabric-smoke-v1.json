@@ -1,0 +1,159 @@
+{
+  "release_id": "fabric-smoke-v1",
+  "status": "internal_pipeline_smoke_only_not_live_approved",
+  "source_run_id": "records/experiments/20261011-fabric-smoke-v1",
+  "model_files_and_sha256": [
+    {
+      "path": "artifacts/models/fabric-smoke-v1/model.keras",
+      "sha256": "70ae2f580817ba7507462c17446b27e2e1745508e5c460710b1aa3ce4eab9e78"
+    },
+    {
+      "path": "artifacts/models/fabric-smoke-v1/model.tflite",
+      "sha256": "81f144a1c7cd4910989374a1a86c85e955fb4f65cd81ef88c26e7cbcf1158bfd"
+    }
+  ],
+  "labels_in_output_order": [
+    "source_cotton_appearance",
+    "source_denim_appearance",
+    "source_leather_appearance",
+    "source_chiffon_appearance"
+  ],
+  "input_output_tensor_contract": {
+    "input": {
+      "shape": [
+        1,
+        224,
+        224,
+        3
+      ],
+      "dtype": "float32",
+      "range": [
+        0,
+        255
+      ]
+    },
+    "output": {
+      "shape": [
+        1,
+        4
+      ],
+      "dtype": "float32",
+      "range": [
+        0,
+        1
+      ]
+    }
+  },
+  "preprocessing_version": "Manual reviewed source-pixel skirt ROI; RGB; PIL bilinear aspect-preserving pad224 gray128; float32 0..255; model normalization inside",
+  "patch_strategy": "Manual reviewed ROI from single original full-view image; automatic localization not evaluated",
+  "quantization_parameters": null,
+  "calibration_dataset_hash": null,
+  "thresholds_and_temporal_settings": null,
+  "training_environment": {
+    "path": "records/experiments/20261011-fabric-smoke-v1/environment.json",
+    "sha256": "529c53a344bf3a0a75e2145d783e75b09c28b4a9d104f3657d258957bf41bbb0"
+  },
+  "conversion_environment": {
+    "path": "records/experiments/20261011-fabric-smoke-v1/environment.json",
+    "sha256": "529c53a344bf3a0a75e2145d783e75b09c28b4a9d104f3657d258957bf41bbb0"
+  },
+  "target_environment": null,
+  "pre_export_metrics": {
+    "accuracy": 0.8,
+    "correct": 4,
+    "macro_f1": 0.7,
+    "per_class_f1": [
+      0.8,
+      1.0,
+      1.0,
+      0.0
+    ],
+    "confusion_matrix": [
+      [
+        2,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0
+      ],
+      [
+        1,
+        0,
+        0,
+        0
+      ]
+    ],
+    "majority_baseline_accuracy": 0.4
+  },
+  "post_export_metrics": {
+    "sha256": "81f144a1c7cd4910989374a1a86c85e955fb4f65cd81ef88c26e7cbcf1158bfd",
+    "bytes": 8881248,
+    "maximum_absolute_error": 2.2649765014648438e-06,
+    "tolerance": 0.001,
+    "class_agreement": true,
+    "pi_verified": false,
+    "live_approved": false
+  },
+  "pi_validation_record": null,
+  "camera_calibration_id": null,
+  "known_limitations": [
+    "17 agent-reviewed source images only; 12 train and 5 validation",
+    "Two source item groups each for leather/chiffon; no credible performance estimate",
+    "Cotton/source fabric words are appearance labels, not composition",
+    "No final test, camera domain, hanging, held, mannequin or Pi verification",
+    "Manual ROIs do not validate automatic fabric integration",
+    "Not a deployment candidate; do not connect to live classifier"
+  ],
+  "rollback_release_id": null,
+  "experiment_artifacts": [
+    {
+      "path": "records/experiments/20261011-fabric-smoke-v1/environment.json",
+      "sha256": "529c53a344bf3a0a75e2145d783e75b09c28b4a9d104f3657d258957bf41bbb0"
+    },
+    {
+      "path": "records/experiments/20261011-fabric-smoke-v1/history.json",
+      "sha256": "3bd23b5b85f26b1971ceb4c96f4df59044cf6392a91a08b2531893612fbbf330"
+    },
+    {
+      "path": "records/experiments/20261011-fabric-smoke-v1/inputs.jsonl",
+      "sha256": "92a80e4f974b9730f4631da75fed99b3f628751c882bfe179b39322d20247523"
+    },
+    {
+      "path": "records/experiments/20261011-fabric-smoke-v1/preparation_source.py",
+      "sha256": "2dfeddbf676bf7976d0820298d3776ed55357752daa1dbc4b8f857b45e4c17dd"
+    },
+    {
+      "path": "records/experiments/20261011-fabric-smoke-v1/run.json",
+      "sha256": "c05070be717dda36aa3a272b532872ee1402b203cf03273a4aa73c2e755c911f"
+    },
+    {
+      "path": "records/experiments/20261011-fabric-smoke-v1/splits.json",
+      "sha256": "e076033aa293ebad2058cec0ed2395292202f87bec9a78bfe2d350fa38e06c57"
+    },
+    {
+      "path": "records/experiments/20261011-fabric-smoke-v1/training_source.py",
+      "sha256": "9ff695cc97d8cd73b236ae830c59279b79b83481a628f443950274c149946e75"
+    },
+    {
+      "path": "records/experiments/20261011-fabric-smoke-v1/validation-predictions.json",
+      "sha256": "00a4b11b1d278f86e40afd6d57970a23c0ffdb544e5e237509c0037ab37aa420"
+    }
+  ],
+  "desktop_reopen_parity": {
+    "path": "records/validation/2026-10-12-fabric-desktop-parity.json",
+    "sha256": "880bf62e2ed26bcbcc34c40d12d138207de00619293bbc5f7193499b361e0408"
+  },
+  "data_rights_scope": "Noncommercial internal research, no source image redistribution; not included in deployment release",
+  "live_approved": false
+}

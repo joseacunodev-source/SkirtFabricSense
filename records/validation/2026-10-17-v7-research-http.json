@@ -1,0 +1,28 @@
+{
+  "date_asia_manila": "2026-10-17",
+  "status": "passed",
+  "checks": [
+    {
+      "sample_id": "deepfashion-multimodal-WOMEN-Skirts-id_00000003-02_1_front",
+      "toggle_and_same_frame_passed": true,
+      "fabric_label": "source_cotton_appearance",
+      "length_unavailable": true
+    },
+    {
+      "sample_id": "deepfashion-multimodal-WOMEN-Skirts-id_00002711-01_1_front",
+      "toggle_and_same_frame_passed": true,
+      "fabric_label": "source_leather_appearance",
+      "length_unavailable": true
+    }
+  ],
+  "secondary_mode_skips_wearer_pose": true,
+  "server_stopped": true,
+  "camera_used": false,
+  "pi_verified": false,
+  "source_sha256": "6b14169f30a96b32c2e0ce569d67cf19b931d4ee0b3738d751e62cb6b013c527",
+  "reference_sha256": "6d4d95740645954f37df19e8047d0a2cc454db07e3b7d23f678a95ffad3e3e17",
+  "limitations": [
+    "Saved-image HTTP integration only; not new recognition accuracy or camera evidence",
+    "Research models remain unapproved; pose does not enable calibrated length"
+  ]
+}

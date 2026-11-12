@@ -1,0 +1,15 @@
+test_cross_split_group_rejected (tests.test_fabric_pilot.FabricPilotTests.test_cross_split_group_rejected) ... ok
+test_duplicate_split_assignment_rejected (tests.test_fabric_pilot.FabricPilotTests.test_duplicate_split_assignment_rejected) ... ok
+test_frozen_smoke_counts (tests.test_fabric_pilot.FabricPilotTests.test_frozen_smoke_counts) ... ok
+test_order_independent (tests.test_fabric_pilot.FabricPilotTests.test_order_independent) ... ok
+test_query_partition_rejected (tests.test_fabric_pilot.FabricPilotTests.test_query_partition_rejected) ... ok
+test_repeated_source_group_rejected (tests.test_fabric_pilot.FabricPilotTests.test_repeated_source_group_rejected) ... ok
+test_source_not_mutated (tests.test_fabric_pilot.FabricPilotTests.test_source_not_mutated) ... ok
+test_split_tampering_rejected (tests.test_fabric_pilot.FabricPilotTests.test_split_tampering_rejected) ... ok
+test_unadmitted_rejected (tests.test_fabric_pilot.FabricPilotTests.test_unadmitted_rejected) ... ok
+test_unknown_source_label_rejected (tests.test_fabric_pilot.FabricPilotTests.test_unknown_source_label_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 0.010s
+
+OK

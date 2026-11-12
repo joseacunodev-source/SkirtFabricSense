@@ -1,0 +1,87 @@
+{
+  "date_asia_manila": "2026-10-18",
+  "reviewer": "agent-oct18-negative-b-independent-admission-audit",
+  "status": "passed",
+  "runtime": {
+    "python": "3.12.14",
+    "executable": "C:\\Users\\Administrator\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe"
+  },
+  "test_source": {
+    "path": "tests/test_negative_v3_admission.py",
+    "sha256": "cc584b2c694725d6f1022008a1f32ec673931238e534edaae878f6e06a4d6e0c"
+  },
+  "command": "python -m unittest tests.test_negative_v3_admission -v",
+  "tests_run": 6,
+  "failures": 0,
+  "errors": 0,
+  "output": "test_complete_original_review_binding (tests.test_negative_v3_admission.FrozenNegativeV3Tests.test_complete_original_review_binding) ... ok\ntest_counts_and_quarantine_are_consistent (tests.test_negative_v3_admission.FrozenNegativeV3Tests.test_counts_and_quarantine_are_consistent) ... ok\ntest_frozen_inputs_and_preparation_code_hashes (tests.test_negative_v3_admission.FrozenNegativeV3Tests.test_frozen_inputs_and_preparation_code_hashes) ... ok\ntest_near_and_related_candidates_quarantined (tests.test_negative_v3_admission.FrozenNegativeV3Tests.test_near_and_related_candidates_quarantined) ... ok\ntest_prior_rows_preserved_and_reproduction (tests.test_negative_v3_admission.FrozenNegativeV3Tests.test_prior_rows_preserved_and_reproduction) ... ok\ntest_protected_groups_and_exact_duplicates (tests.test_negative_v3_admission.FrozenNegativeV3Tests.test_protected_groups_and_exact_duplicates) ... ok\n\n----------------------------------------------------------------------\nRan 6 tests in 0.130s\n\nOK\n",
+  "observed_counts": {
+    "frozen_rows": 390,
+    "prior_rows": 210,
+    "new_candidates": 180,
+    "original_reviews": 180,
+    "admitted": 207,
+    "new_admitted": 132,
+    "quarantined": 183,
+    "admitted_by_split": {
+      "development_validation": 52,
+      "development_train": 155
+    },
+    "near_pairs_touching_new": 17,
+    "new_related_or_near_excluded": 25,
+    "root_offprice_group_members": 7
+  },
+  "checks": {
+    "prior210_rows_semantically_and_line_bytes_preserved": true,
+    "all180_reviews_hash_bound_and_originals_rehashed": true,
+    "frozen_output_exactly_reproduced": true,
+    "all_report_input_and_code_hashes_match": true,
+    "all17_near_pair_new_members_quarantined": true,
+    "all_related_new_groups_including7_root_offprice_quarantined": true,
+    "no_admitted_positive_or_protected_seed_canonical_source_collision": true,
+    "no_admitted_positive_or_protected_seed_file_hash_collision": true,
+    "cross_split_source_group_integrity_passed": true,
+    "combined_audit_no_file_or_pixel_duplicates": true
+  },
+  "inputs": [
+    {
+      "path": "data/manifests/negative-candidates-v3.jsonl",
+      "sha256": "45c69c3db6697ca5b82eed9856d12c3cfde92ce85467f67be75c8e4f1f7209d7"
+    },
+    {
+      "path": "data/labels/negative-reviewed-v2.jsonl",
+      "sha256": "016e45e38d695b9bb62c480497c02af08845b83f4831d8ca91365e2eabc067b8"
+    },
+    {
+      "path": "records/validation/2026-10-17-expansion-v3-audit.json",
+      "sha256": "2e33a763425fd8110185aa28238d5a39951779e338f463b8bf4738cebbd1f060"
+    },
+    {
+      "path": "records/review/2026-10-17-negative-v3-a.json",
+      "sha256": "8d1ea33aae1687d7f18ca53756b9fa6ccbe86c012f8a01f2ebf45fb4a8947443"
+    },
+    {
+      "path": "records/review/2026-10-18-negative-v3-b.json",
+      "sha256": "d1f0b8139a540972dd5059600d484d9a62bfefb8cad8a50dc86ebd0d2d620843"
+    },
+    {
+      "path": "records/review/2026-10-18-negative-v3-c.json",
+      "sha256": "4519c32a566142c38bd3afc9306527afcdf5881cb6b6bb899eccff64fc9d9341"
+    },
+    {
+      "path": "records/review/2026-10-18-negative-v3-root-grouping.json",
+      "sha256": "36129ba02045e962000a6f31582e3a42f1a12a3869493e746153b3279e202602"
+    },
+    {
+      "path": "data/labels/negative-reviewed-v3.jsonl",
+      "sha256": "82009d40445a9091f7998ab8479cec10b5086826001b7b9f513862bd11da52d1"
+    }
+  ],
+  "limitations": [
+    "Read-only admission audit; no independent human label confirmation",
+    "Review original-inspection evidence belongs to named visual agents, not this audit",
+    "Physical garment identity remains unverified",
+    "Protected source audit covers acquired protected seeds and recorded source partitions, not all internet photographs",
+    "No production source, frozen data, split or model changed"
+  ]
+}

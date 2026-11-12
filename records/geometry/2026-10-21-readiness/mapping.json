@@ -1,0 +1,19 @@
+{
+  "status": "inventory_mapped_no_geometry_observations",
+  "source": {
+    "path": "data/manifests/worn-pleating-development-v1.jsonl",
+    "sha256": "876bb315009592fdbcf0a646703b21d99801756f4e37b1807a66675bdbd98ec2"
+  },
+  "inventory": {
+    "path": "records/geometry/2026-10-21-readiness/frozen-inventory.json",
+    "sha256": "7603ca342288fec2ff0ec785f03bcefa8dd2e1fc80f918f55c40386f1ec72a43"
+  },
+  "source_rows": 331,
+  "observed_geometry_examples": 0,
+  "unannotated_validation_members": 66,
+  "group_mapping": "garment_group_id equals preserved source group_hash; physical identity unverified",
+  "split_changed": false,
+  "training_admissions": 0,
+  "packages_installed": 0,
+  "source_sha256": "9378137dabec8482953c88d2e16f2a490c4249eaf9a625770b73a5b7d2ffdf23"
+}

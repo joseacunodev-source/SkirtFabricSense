@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "status": "passed_metadata_checks",
+  "assignment_rows": 17,
+  "unique_assigned_samples": 17,
+  "catalog_and_assignment_unique_samples": 17,
+  "unique_sample_counts_by_role": {
+    "model_validation": 5,
+    "training": 12
+  },
+  "assigned_connected_components": 17,
+  "components_by_role": {
+    "model_validation": 5,
+    "training": 12
+  },
+  "issues": [],
+  "final_test_readiness": "not_established_by_metadata_audit",
+  "limits": [
+    "Only supplied metadata connections checked; omitted catalogs and unrecorded near-duplicates cannot be detected.",
+    "No images opened or file hashes recomputed; this complements, not replaces, image integrity and duplicate audits.",
+    "Source groups are not verified physical garments; no label, license, unseen-test, camera or Pi acceptance inferred.",
+    "Each model input set must be audited separately; do not combine historic models into one split."
+  ],
+  "recorded_at_utc": "2026-11-04T12:43:53.875882+00:00",
+  "inputs": [
+    {
+      "path": "data\\labels\\fabric-pilot-v1-splits.json",
+      "sha256": "e076033aa293ebad2058cec0ed2395292202f87bec9a78bfe2d350fa38e06c57",
+      "role": "assignments"
+    },
+    {
+      "path": "data\\labels\\fabric-pilot-v1.jsonl",
+      "sha256": "92a80e4f974b9730f4631da75fed99b3f628751c882bfe179b39322d20247523",
+      "role": "catalog"
+    }
+  ],
+  "source": {
+    "path": "tools/audit_dataset_partitions.py",
+    "sha256": "dcaa300b68818deb5ec04b5cb888ea0d2d2a7886f37b869ddfd575c0c221da4e"
+  }
+}

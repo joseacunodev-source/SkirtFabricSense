@@ -1,0 +1,19 @@
+test_bad_source_fails_before_output_and_existing_output_is_preserved (tests.test_station_package.StationPackageTests.test_bad_source_fails_before_output_and_existing_output_is_preserved) ... ok
+test_config_traversal_rejected_even_after_inventory_rehash (tests.test_station_package.StationPackageTests.test_config_traversal_rejected_even_after_inventory_rehash) ... ok
+test_invalid_ports_rejected (tests.test_station_package.StationPackageTests.test_invalid_ports_rejected) ... ok
+test_output_inside_immutable_inputs_is_refused (tests.test_station_package.StationPackageTests.test_output_inside_immutable_inputs_is_refused) ... ok
+test_pi_or_length_claim_rejected (tests.test_station_package.StationPackageTests.test_pi_or_length_claim_rejected) ... ok
+test_relocated_package_has_internal_launch_paths_and_fabric_opt_in (tests.test_station_package.StationPackageTests.test_relocated_package_has_internal_launch_paths_and_fabric_opt_in) ... ok
+test_tampered_model_refused_before_launch (tests.test_station_package.StationPackageTests.test_tampered_model_refused_before_launch) ... ok
+test_uninventoried_file_or_empty_directory_rejected (tests.test_station_package.StationPackageTests.test_uninventoried_file_or_empty_directory_rejected) ... ok
+test_all_three_model_identities_required (tests.test_detection_http.DetectionHttpTests.test_all_three_model_identities_required) ... ok
+test_checks_survive_python_optimized_mode (tests.test_detection_http.DetectionHttpTests.test_checks_survive_python_optimized_mode) ... ok
+test_comparison_missing_identity_and_incomplete_paths_rejected (tests.test_detection_http.DetectionHttpTests.test_comparison_missing_identity_and_incomplete_paths_rejected) ... ok
+test_completed_fixture_and_output (tests.test_detection_http.DetectionHttpTests.test_completed_fixture_and_output) ... ok
+test_gated_negative_does_not_require_localization (tests.test_detection_http.DetectionHttpTests.test_gated_negative_does_not_require_localization) ... ok
+test_http_model_roi_decision_and_score_mismatches_rejected (tests.test_detection_http.DetectionHttpTests.test_http_model_roi_decision_and_score_mismatches_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 14 tests in 6.825s
+
+OK

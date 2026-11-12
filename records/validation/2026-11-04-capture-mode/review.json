@@ -1,0 +1,49 @@
+{
+  "date": "2026-11-04",
+  "status": "desktop_research_verified",
+  "mock_cases": 52,
+  "http_jobs": 12,
+  "actual_camera_tested": false,
+  "pi_verified": false,
+  "physical_lcd_tested": false,
+  "new_training": false,
+  "installs": 0,
+  "evidence": [
+    {
+      "path": "docs/CAMERA_MODE_NOV04.md",
+      "sha256": "29d1a62b170daeebd4982445e38571b5dbdd7244caa6ffcd1068cf111efe77e7"
+    },
+    {
+      "path": "app/static/index.html",
+      "sha256": "d8fc25f12072c82ecd2d4a64889522fd6c867d65c3167504d034bf73e58cd964"
+    },
+    {
+      "path": "tests/camera_ui_lifecycle.cjs",
+      "sha256": "7259bb796ac768015a994e9defc7f8c31a0732d8f41eb9edeab98b019a8dcf78"
+    },
+    {
+      "path": "records/validation/2026-11-04-capture-mode/node.log",
+      "sha256": "6d26d09344a971db654ebc1261ef1f9eb955c9e5426b900f356976ccbd9efb61"
+    },
+    {
+      "path": "records/validation/2026-11-04-capture-mode-http.json",
+      "sha256": "896832b7e6289d258b8333475b27e06389b05bc9f0a098c4446a3ce8d877cd80"
+    },
+    {
+      "path": "records/validation/2026-11-04-capture-mode-http.execution.json",
+      "sha256": "c4223c63868f541d901aee0f90b99aeedb9fce4d0666e9ff580fc6a38c365bcc"
+    },
+    {
+      "path": "artifacts/stations/skirt-research-station-v8/station-inventory.json",
+      "sha256": "68215a3b974f2dc3034e59974acea7c29436c1efaa56cf3e14b3a43ac479f34d"
+    },
+    {
+      "path": "artifacts/stations/skirt-research-station-v8/station.json",
+      "sha256": "953d17494b579c751ba046c5e6c48e73975ea9b5d82b7e2f419bca35da833b22"
+    },
+    {
+      "path": "artifacts/releases/skirt-finetune-v1-desktop-research-v13/inventory.json",
+      "sha256": "a5ccb1b0e5ecb0953249c67c6c977d791d81fd098ccbee39fc1c65e1ec9a99d0"
+    }
+  ]
+}

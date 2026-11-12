@@ -1,0 +1,770 @@
+{
+  "schema_version": 1,
+  "date_asia_manila": "2026-10-14",
+  "reviewer": "codex_agent_review_negatives_b",
+  "independent_human_review": false,
+  "manifest": "data/manifests/negative-candidates-v2.jsonl",
+  "manifest_sha256": "12328ba062b158a7c238c4bc6c1b57252f0a16e82001b37911c3c57839f50e3d",
+  "coverage": {
+    "start_index_inclusive": 60,
+    "end_index_exclusive": 120,
+    "originals_inspected": 60,
+    "additional_group_comparison_originals": 6,
+    "visually_approved": 47,
+    "ambiguous_or_rejected": 13
+  },
+  "method": "Each of the 60 original files opened individually using view_image (batched presentation). Additional originals 31612,32509,4995,26917,42225,38459 inspected for grouping; first-half contact sheets inspected only for cross-batch grouping triage. No model outputs used.",
+  "limitations": [
+    "Visual approval is a provisional single-agent no-separate-skirt label, not independent human truth, split approval, usage-rights approval or public release approval.",
+    "Related sample IDs are conservative potential session/source links, not verified same physical garments. White product-background similarity alone is not identity. Root must resolve or group/quarantine before splitting.",
+    "Prior combined audit reviewed for known exact/pixel/dHash relationships; no exhaustive manual review of all historical originals performed.",
+    "Dresses are treated as no separate skirt, as required for negative source-category distinction."
+  ],
+  "group_notes": [
+    {
+      "ids": [
+        33837,
+        47621,
+        28569,
+        43900,
+        32369,
+        26716
+      ],
+      "note": "Matching transparent OFF-PRICE hanger and plain wall; first-half 32369/26716 seen only on contact sheets, linkage requires root confirmation."
+    },
+    {
+      "ids": [
+        47243,
+        40697
+      ],
+      "note": "Matching model appearance, image cutout treatment and white studio setting; different dresses; conservative shared session."
+    },
+    {
+      "ids": [
+        32509,
+        26917,
+        28835
+      ],
+      "note": "Matching wood floor boards, white wall edge and image style; conservative studio session. 32160 has wood floor/white wall but visible skirting differs, not asserted linked."
+    },
+    {
+      "ids": [
+        31612,
+        31421,
+        42225,
+        38459,
+        48719,
+        25741,
+        38288,
+        25924,
+        28025,
+        29016
+      ],
+      "note": "Isolated white-background product family, includes audit similarity connected candidates. Different colors/patterns/garments apparent; conservative source/session linkage until metadata reviewed."
+    },
+    {
+      "ids": [
+        34249,
+        32373
+      ],
+      "note": "Flat shorts on brown carpet; possible shared seller photo session."
+    },
+    {
+      "ids": [
+        39794,
+        4995
+      ],
+      "note": "Full-original comparison shows different shorts/top and watermark years; shared photographer, not proven shared session or garment."
+    },
+    {
+      "ids": [
+        41740,
+        48850
+      ],
+      "note": "Different sleeve lengths, plaid pattern and purse; original thumbnail same-outfit suspicion not confirmed. Conservative unresolved source linkage only."
+    }
+  ],
+  "reviews": [
+    {
+      "sample_id": "fashionpedia-negative-v2-7454",
+      "original_path": "data/external/fashionpedia_negatives_v2/images/47612258b3edc1af91a979ffab223c8b.jpg",
+      "sha256": "581f3d120e1f6ee359ed78508c5a0251589da62822b930b8f20f44becb1838f1",
+      "original_inspected": true,
+      "approve_no_skirt": true,
+      "observation": "Seated person in fitted black trousers; separate legs visible; bag partly covers crotch.",
+      "related_sample_ids": [],
+      "grouping_review_complete": false
+    },
+    {
+      "sample_id": "fashionpedia-negative-v2-28563",
+      "original_path": "data/external/fashionpedia_negatives_v2/images/7ac0a669273b839201ee80ddda06c559.jpg",
+      "sha256": "19a122482ba36a08af051cd56a6acb90414365e4c84ed9b1a562cf4649041ceb",
+      "original_inspected": true,
+      "approve_no_skirt": true,
+      "observation": "White shorts with clear crotch seam and separate hems under open knit sweater.",
+      "related_sample_ids": [],
+      "grouping_review_complete": false
+    },
+    {
+      "sample_id": "fashionpedia-negative-v2-47243",
+      "original_path": "data/external/fashionpedia_negatives_v2/images/0ade1c146ceb67172ad78d188a66c18d.jpg",
+      "sha256": "bc1b83fe1172c0acea5823c0bab442674f2ebb0518fe7c05c379877ae13c385b",
+      "original_inspected": true,
+      "approve_no_skirt": true,
+      "observation": "Black sleeveless dress, continuous bodice to hem; no separate skirt observed.",
+      "related_sample_ids": [
+        "fashionpedia-negative-v2-40697"
+      ],
+      "grouping_review_complete": false
+    },
+    {
+      "sample_id": "fashionpedia-negative-v2-8528",
+      "original_path": "data/external/fashionpedia_negatives_v2/images/b958e2fe9688ffc036f4459443efd3ef.jpg",
+      "sha256": "4678a3657b7bd7b3892ac1769da8ef9c3cc395ce892ecb15248e23f0f9857f51",
+      "original_inspected": true,
+      "approve_no_skirt": true,
+      "observation": "Wide black cropped trousers with distinct separated legs.",
+      "related_sample_ids": [],
+      "grouping_review_complete": false
+    },
+    {
+      "sample_id": "fashionpedia-negative-v2-9402",
+      "original_path": "data/external/fashionpedia_negatives_v2/images/0c28141eb16c00f32b8d3f4dd885c8fe.jpg",
+      "sha256": "3decd2b849a2e71ee0f7ff0196c85da1eff84e370070e5973aa79200a2910929",
+      "original_inspected": true,
+      "approve_no_skirt": false,
+      "observation": "Foreground printed shorts clear, but crowded event background has occluded lower garments; no-skirt scene cannot be established.",
+      "related_sample_ids": [],
+      "grouping_review_complete": false
+    },
+    {
+      "sample_id": "fashionpedia-negative-v2-44529",
+      "original_path": "data/external/fashionpedia_negatives_v2/images/4039a9a0fbe435486576533d91e55ce9.jpg",
+      "sha256": "64f0e794aa94fd79214e09ccacc16e77e5b357bfc1fd748bc9c07a1b5aa862d7",
+      "original_inspected": true,
+      "approve_no_skirt": true,
+      "observation": "White bridal gown with continuous fitted bodice and gathered full-length lower section.",
+      "related_sample_ids": [],
+      "grouping_review_complete": false
+    },
+    {
+      "sample_id": "fashionpedia-negative-v2-25741",
+      "original_path": "data/external/fashionpedia_negatives_v2/images/8d5e44675f254837492dd52f9a4ac741.jpg",
+      "sha256": "ae2282af3c9c5aa07d7a35f8fe5dc324fa3795e15a6d78480045ebb6d5b9d16c",
+      "original_inspected": true,
+      "approve_no_skirt": true,
+      "observation": "Isolated dark blue jeans product, two full trouser legs.",
+      "related_sample_ids": [
+        "fashionpedia-negative-v2-31612",
+        "fashionpedia-negative-v2-31421",
+        "fashionpedia-negative-v2-42225",
+        "fashionpedia-negative-v2-38459",
+        "fashionpedia-negative-v2-48719",
+        "fashionpedia-negative-v2-38288",
+        "fashionpedia-negative-v2-25924",
+        "fashionpedia-negative-v2-28025",
+        "fashionpedia-negative-v2-29016"
+      ],
+      "grouping_review_complete": false
+    },
+    {
+      "sample_id": "fashionpedia-negative-v2-31421",
+      "original_path": "data/external/fashionpedia_negatives_v2/images/ded3f0bde613baae6e1a942b9122260d.jpg",
+      "sha256": "35dc5acf9e57bdce9d6a444d6fc52a43136681dbf8f7c65cd7b75020ad428cc7",
+      "original_inspected": true,
+      "approve_no_skirt": true,
+      "observation": "Isolated grey denim shorts with clear crotch and two legs; audit similarity links require grouping.",
+      "related_sample_ids": [
+        "fashionpedia-negative-v2-31612",
+        "fashionpedia-negative-v2-42225",
+        "fashionpedia-negative-v2-38459",
+        "fashionpedia-negative-v2-48719",
+        "fashionpedia-negative-v2-25741",
+        "fashionpedia-negative-v2-38288",
+        "fashionpedia-negative-v2-25924",
+        "fashionpedia-negative-v2-28025",
+        "fashionpedia-negative-v2-29016"
+      ],
+      "grouping_review_complete": false
+    },
+    {
+      "sample_id": "fashionpedia-negative-v2-49795",
+      "original_path": "data/external/fashionpedia_negatives_v2/images/1dd5dc41910bb495e5efb20b4bc3ce8e.jpg",
+      "sha256": "9f3509e941479c09096d29d07dc9a12867bb489889c90e720f7bc68994986aa6",
+      "original_inspected": true,
+      "approve_no_skirt": true,
+      "observation": "White empire-waist bridal gown with continuous bodice/lower garment.",
+      "related_sample_ids": [],
+      "grouping_review_complete": false
+    },
+    {
+      "sample_id": "fashionpedia-negative-v2-23923",
+      "original_path": "data/external/fashionpedia_negatives_v2/images/46fe9899747a191c57571ce4e6314099.jpg",
+      "sha256": "76008dbcb1166c1429c25e387ba78616fc4a1889eebb81d33268e029fe1993e2",
+      "original_inspected": true,
+      "approve_no_skirt": true,
+      "observation": "Single person in fitted dark jeans and white top; two legs clear.",
+      "related_sample_ids": [],
+      "grouping_review_complete": false
+    },
+    {
+      "sample_id": "fashionpedia-negative-v2-28085",
+      "original_path": "data/external/fashionpedia_negatives_v2/images/0760649dc3a769a8adb5c492b1820dfc.jpg",
+      "sha256": "4de332cded5ad37680b551aff04f310f2c12294a337e74390b3976285856e9ba",
+      "original_inspected": true,
+      "approve_no_skirt": true,
+      "observation": "Navy athletic shorts with clear leg openings under blue vest.",
+      "related_sample_ids": [],
+      "grouping_review_complete": false
+    },
+    {
+      "sample_id": "fashionpedia-negative-v2-42344",
+      "original_path": "data/external/fashionpedia_negatives_v2/images/6b3ecf0e5c391ebe7fd3fc89109bee0c.jpg",
+      "sha256": "34a5657e9d3eca0dd1161159124c482d07925d206ea6b93af21fec265cdd4309",
+      "original_inspected": true,
+      "approve_no_skirt": true,
+      "observation": "Purple halter dress continuous gathered waist and bodice; no separate skirt visible.",
+      "related_sample_ids": [],
+      "grouping_review_complete": false
+    },
+    {
+      "sample_id": "fashionpedia-negative-v2-30468",
+      "original_path": "data/external/fashionpedia_negatives_v2/images/ef1c81e132e7f03bd04e31dda62cd02a.jpg",
+      "sha256": "1b637fcb0031c68fcb00b5e1a113b31b829e36fd34538545e56f6d83c22f9d95",
+      "original_inspected": true,
+      "approve_no_skirt": true,
+      "observation": "Cropped torso view of dark jeans, crotch and separate upper legs visible; not full garment.",
+      "related_sample_ids": [],
+      "grouping_review_complete": false
+    },
+    {
+      "sample_id": "fashionpedia-negative-v2-33837",
+      "original_path": "data/external/fashionpedia_negatives_v2/images/f6d553e46f4e5de9bbd660877acb5e6a.jpg",
+      "sha256": "c2fe5960e927f385bf584884f86b37af8f4f012f3e58d2b68ccc589a84d5118b",
+      "original_inspected": true,
+      "approve_no_skirt": true,
+      "observation": "Green cargo shorts hanging; clear two legs and fly.",
+      "related_sample_ids": [
+        "fashionpedia-negative-v2-47621",
+        "fashionpedia-negative-v2-28569",
+        "fashionpedia-negative-v2-43900",
+        "fashionpedia-negative-v2-32369",
+        "fashionpedia-negative-v2-26716"
+      ],
+      "grouping_review_complete": false
+    },
+    {
+      "sample_id": "fashionpedia-negative-v2-37096",
+      "original_path": "data/external/fashionpedia_negatives_v2/images/3e3a2e8b955628c9c733bb293827f3ca.jpg",
+      "sha256": "993881fd7fabf483e540109cf5c68369f485b9cac0459be3238338d8f5bd119b",
+      "original_inspected": true,
+      "approve_no_skirt": true,
+      "observation": "White one-shoulder bridal gown continuous to full hem.",
+      "related_sample_ids": [],
+      "grouping_review_complete": false
+    },
+    {
+      "sample_id": "fashionpedia-negative-v2-32859",
+      "original_path": "data/external/fashionpedia_negatives_v2/images/d47b5ed85ade956db4d3a5aca0740cac.jpg",
+      "sha256": "5c1eacc5771023bc01e1e75bc7b518a7d4ddbdaceb91692387aba7084fbcbb02",
+      "original_inspected": true,
+      "approve_no_skirt": false,
+      "observation": "Coat and large bag obscure hips and upper legs; dark trouser-like lower legs insufficient to exclude layered skirt.",
+      "related_sample_ids": [],
+      "grouping_review_complete": false
+    },
+    {
+      "sample_id": "fashionpedia-negative-v2-38288",
+      "original_path": "data/external/fashionpedia_negatives_v2/images/ba26cef5cca871c43c5c37a80cf00ec3.jpg",
+      "sha256": "29196df8b23cb2d83dc94bceca25a726fc5f7276cd9863a77446a1280a43ff3e",
+      "original_inspected": true,
+      "approve_no_skirt": true,
+      "observation": "Isolated green board shorts; distinct crotch and hems.",
+      "related_sample_ids": [
+        "fashionpedia-negative-v2-31612",
+        "fashionpedia-negative-v2-31421",
+        "fashionpedia-negative-v2-42225",
+        "fashionpedia-negative-v2-38459",
+        "fashionpedia-negative-v2-48719",
+        "fashionpedia-negative-v2-25741",
+        "fashionpedia-negative-v2-25924",
+        "fashionpedia-negative-v2-28025",
+        "fashionpedia-negative-v2-29016"
+      ],
+      "grouping_review_complete": false
+    },
+    {
+      "sample_id": "fashionpedia-negative-v2-44646",
+      "original_path": "data/external/fashionpedia_negatives_v2/images/9b6b8e3a255381e40ad2ce936d64267d.jpg",
+      "sha256": "574081a879e36315a3e5507c7a866630ed09529b70a7acf14eed77f507e6811f",
+      "original_inspected": true,
+      "approve_no_skirt": true,
+      "observation": "Navy dress with continuous bodice and drop-waist gathered lower section.",
+      "related_sample_ids": [],
+      "grouping_review_complete": false
+    },
+    {
+      "sample_id": "fashionpedia-negative-v2-1211",
+      "original_path": "data/external/fashionpedia_negatives_v2/images/3d1cd90ae62ab7decc7dcd1e2b1ec734.jpg",
+      "sha256": "719b33d50ee3307110146b8c0fb7a4613ce12cd4868cdce8330228110bf89b9d",
+      "original_inspected": true,
+      "approve_no_skirt": true,
+      "observation": "Single person in white trousers and black top; both legs fully shown.",
+      "related_sample_ids": [],
+      "grouping_review_complete": false
+    },
+    {
+      "sample_id": "fashionpedia-negative-v2-39794",
+      "original_path": "data/external/fashionpedia_negatives_v2/images/0a83b6b6540848ee923908f7a7eeb20a.jpg",
+      "sha256": "9c0173400686f29a7a7c6729171f86050a6796c7221898576d968df4a765fdfb",
+      "original_inspected": true,
+      "approve_no_skirt": true,
+      "observation": "Blue denim cutoff shorts with fly and separate leg openings. Compared full original 4995: different top, shorts wash/hem and watermark year (2014 versus 2015); shared photographer evidence only, not same garment proof.",
+      "related_sample_ids": [
+        "fashionpedia-negative-v2-4995"
+      ],
+      "grouping_review_complete": false
+    },
+    {
+      "sample_id": "fashionpedia-negative-v2-6282",
+      "original_path": "data/external/fashionpedia_negatives_v2/images/c477e419880856d910787c49bf4040eb.jpg",
+      "sha256": "65ee26172fed2bebcdc5667169851edb393a9093f1ec349b596284ad302bb734",
+      "original_inspected": true,
+      "approve_no_skirt": false,
+      "observation": "Foreground striped dress but seated audience and second runway person have obscured garments; image-wide skirt absence uncertain.",
+      "related_sample_ids": [],
+      "grouping_review_complete": false
+    },
+    {
+      "sample_id": "fashionpedia-negative-v2-27113",
+      "original_path": "data/external/fashionpedia_negatives_v2/images/26c4e300a0fa1903afa6deb5b8e6f346.jpg",
+      "sha256": "59ab79c62922111e3da37a2229064b00ac9cc15528d1e67843b603e8dc306bed",
+      "original_inspected": true,
+      "approve_no_skirt": true,
+      "observation": "Fitted dark trousers and patterned blouse, separate crossed legs visible.",
+      "related_sample_ids": [],
+      "grouping_review_complete": false
+    },
+    {
+      "sample_id": "fashionpedia-negative-v2-47621",
+      "original_path": "data/external/fashionpedia_negatives_v2/images/32494ba5f21b4ae9771c98823c637a18.jpg",
+      "sha256": "5a9251aae11a34b5c56e2a33419bf8793bec0f44e3ff9b7692e26dcf061d2cff",
+      "original_inspected": true,
+      "approve_no_skirt": true,
+      "observation": "Grey Roxy shorts on hanger with clear fly and leg gap; hanger/background resembles 33837, possible product session.",
+      "related_sample_ids": [
+        "fashionpedia-negative-v2-33837",
+        "fashionpedia-negative-v2-28569",
+        "fashionpedia-negative-v2-43900",
+        "fashionpedia-negative-v2-32369",
+        "fashionpedia-negative-v2-26716"
+      ],
+      "grouping_review_complete": false
+    },
+    {
+      "sample_id": "fashionpedia-negative-v2-21672",
+      "original_path": "data/external/fashionpedia_negatives_v2/images/ece68dfa6cb42cd9a7e2248883c6ba4b.jpg",
+      "sha256": "0cab1cbb768f4ce4d331720dff44a16810bb3229d21fb935de5f4f27e154b4ab",
+      "original_inspected": true,
+      "approve_no_skirt": false,
+      "observation": "Red gown-like outfit has ornate bodice overlapping lower section; separate bodice/skirt versus dress unresolved.",
+      "related_sample_ids": [],
+      "grouping_review_complete": false
+    },
+    {
+      "sample_id": "fashionpedia-negative-v2-35266",
+      "original_path": "data/external/fashionpedia_negatives_v2/images/b1e04379b40f583ba91293e062a81b71.jpg",
+      "sha256": "511ab83a8cfd47befbc12718a9dd65d96afcf55ed14db1a7f41212b731913bd9",
+      "original_inspected": true,
+      "approve_no_skirt": true,
+      "observation": "High-waisted black trousers with clear crotch and separate cropped legs.",
+      "related_sample_ids": [],
+      "grouping_review_complete": false
+    },
+    {
+      "sample_id": "fashionpedia-negative-v2-41740",
+      "original_path": "data/external/fashionpedia_negatives_v2/images/438dd2abb32be36d6a96554cd906dccc.jpg",
+      "sha256": "3b0b7f2dc0b8c5a70a733e16689195b2a0f8cf2c704603fc578a453554a027de",
+      "original_inspected": true,
+      "approve_no_skirt": false,
+      "observation": "Plaid long shirt obscures dark lower garment crotch; shorts versus skirt unresolved in this view; related 48850.",
+      "related_sample_ids": [
+        "fashionpedia-negative-v2-48850"
+      ],
+      "grouping_review_complete": false
+    },
+    {
+      "sample_id": "fashionpedia-negative-v2-42876",
+      "original_path": "data/external/fashionpedia_negatives_v2/images/ed07f9233e9b569569cb41755b91a7ae.jpg",
+      "sha256": "eb2deb9f23955b73476bf823557aedba254839d8694c59103bdc11e9b16765f8",
+      "original_inspected": true,
+      "approve_no_skirt": false,
+      "observation": "Floral lower garment under black outer layer and dog; waist/body join obscured, dress versus skirt unresolved.",
+      "related_sample_ids": [],
+      "grouping_review_complete": false
+    },
+    {
+      "sample_id": "fashionpedia-negative-v2-24635",
+      "original_path": "data/external/fashionpedia_negatives_v2/images/e7f2be673fb91eb114b6a1f9d4e05a27.jpg",
+      "sha256": "caaf6bf3350fbebad07f9180e2c903d80792f37b0f8237c41601c734b406fcd0",
+      "original_inspected": true,
+      "approve_no_skirt": true,
+      "observation": "White trousers under blue blazer, full separated legs visible.",
+      "related_sample_ids": [],
+      "grouping_review_complete": false
+    },
+    {
+      "sample_id": "fashionpedia-negative-v2-32133",
+      "original_path": "data/external/fashionpedia_negatives_v2/images/c4555433236d61c006c8f1351448b62e.jpg",
+      "sha256": "fcad4d7a44c69415a9f19efd902c25aabb0deadd8e91775fc24ccbcf73700828",
+      "original_inspected": true,
+      "approve_no_skirt": true,
+      "observation": "Close worn black athletic shorts, crotch and two curved leg hems clear.",
+      "related_sample_ids": [],
+      "grouping_review_complete": false
+    },
+    {
+      "sample_id": "fashionpedia-negative-v2-16608",
+      "original_path": "data/external/fashionpedia_negatives_v2/images/fdc066e4f42577a374c700f03d31407f.jpg",
+      "sha256": "2da1918de6a340958a84e04130e1fd9da933dabdb986d342a2123d9f0b274cd9",
+      "original_inspected": true,
+      "approve_no_skirt": true,
+      "observation": "Continuous white fitted dress with waist draping, entire hem visible.",
+      "related_sample_ids": [],
+      "grouping_review_complete": false
+    },
+    {
+      "sample_id": "fashionpedia-negative-v2-37001",
+      "original_path": "data/external/fashionpedia_negatives_v2/images/617004a415623984dcfaeb1ed576a9cc.jpg",
+      "sha256": "b28080698f01bb7dd6969ff528c87b664ac939c95c7f7282400525cc210591f4",
+      "original_inspected": true,
+      "approve_no_skirt": true,
+      "observation": "Black trouser suit under textured cardigan; two legs and crotch visible.",
+      "related_sample_ids": [],
+      "grouping_review_complete": false
+    },
+    {
+      "sample_id": "fashionpedia-negative-v2-25283",
+      "original_path": "data/external/fashionpedia_negatives_v2/images/8ea81d3a0343bbc3b638ab6ea775c363.jpg",
+      "sha256": "4344a30bea30454d03392b02974df104670b3d9812d0f4f0ca3d862e10726766",
+      "original_inspected": true,
+      "approve_no_skirt": true,
+      "observation": "Distressed denim shorts with two separate openings under red plaid crop top.",
+      "related_sample_ids": [],
+      "grouping_review_complete": false
+    },
+    {
+      "sample_id": "fashionpedia-negative-v2-22456",
+      "original_path": "data/external/fashionpedia_negatives_v2/images/4f8880ca0a8522f7506fd5ab55707cfa.jpg",
+      "sha256": "61a8931ac8ce7d822db3afc1e30f054f97bc1be93dd051c44773d807aad479c1",
+      "original_inspected": true,
+      "approve_no_skirt": false,
+      "observation": "Foreground black dress clear but blurred background pedestrian clothing unresolved.",
+      "related_sample_ids": [],
+      "grouping_review_complete": false
+    },
+    {
+      "sample_id": "fashionpedia-negative-v2-10798",
+      "original_path": "data/external/fashionpedia_negatives_v2/images/c28d023b37d043a024b2d060a4252711.jpg",
+      "sha256": "09e6bee145ba1d923a14dd7239f9db9ab4c770d11b246e40b71e20ebe5ea62a3",
+      "original_inspected": true,
+      "approve_no_skirt": false,
+      "observation": "Foreground teal trousers clear; several partially occluded background people prevent scene-wide no-skirt certainty.",
+      "related_sample_ids": [],
+      "grouping_review_complete": false
+    },
+    {
+      "sample_id": "fashionpedia-negative-v2-34249",
+      "original_path": "data/external/fashionpedia_negatives_v2/images/3ed6566f3bd897becfb79e1e17475d9d.jpg",
+      "sha256": "32b9b9fea5f33826d5dcc36b11a695f2fa88eb879d78ce36d2d55443bb3caf77",
+      "original_inspected": true,
+      "approve_no_skirt": true,
+      "observation": "Isolated flat plaid shorts with clear fly and leg split.",
+      "related_sample_ids": [
+        "fashionpedia-negative-v2-32373"
+      ],
+      "grouping_review_complete": false
+    },
+    {
+      "sample_id": "fashionpedia-negative-v2-5941",
+      "original_path": "data/external/fashionpedia_negatives_v2/images/d333b9b2b6ad7e23d314c8811f8d1f87.jpg",
+      "sha256": "e56ea6370b8cdfa2d611ebf43df9243900df85ba777a07e8ecf3a26da24cc2ec",
+      "original_inspected": true,
+      "approve_no_skirt": false,
+      "observation": "Foreground seated mauve dress clear; distant blurred pedestrians have unresolved garments.",
+      "related_sample_ids": [],
+      "grouping_review_complete": false
+    },
+    {
+      "sample_id": "fashionpedia-negative-v2-32160",
+      "original_path": "data/external/fashionpedia_negatives_v2/images/2beb9efb9e931096387779c2488ef7f2.jpg",
+      "sha256": "2605ba2962af90d4dd21433837f726afb7766ef12242b7bc62b107e585f617cb",
+      "original_inspected": true,
+      "approve_no_skirt": true,
+      "observation": "Printed green/black trousers with clearly separated legs; plain wall and wooden floor studio setting.",
+      "related_sample_ids": [],
+      "grouping_review_complete": false
+    },
+    {
+      "sample_id": "fashionpedia-negative-v2-4596",
+      "original_path": "data/external/fashionpedia_negatives_v2/images/f0357ced6ed7226ecfd6bc274c3e8a5b.jpg",
+      "sha256": "1a63b681bba118a2a9404135f15d2d94e9fc7eb66063261e0009ba1b0d1d11b9",
+      "original_inspected": true,
+      "approve_no_skirt": false,
+      "observation": "Reclining side view of denim lower garment shows one hem only; shorts versus denim skirt ambiguous.",
+      "related_sample_ids": [],
+      "grouping_review_complete": false
+    },
+    {
+      "sample_id": "fashionpedia-negative-v2-42625",
+      "original_path": "data/external/fashionpedia_negatives_v2/images/b125332a5fdd92fc938a9838fd41ee99.jpg",
+      "sha256": "1cd99c12b419d11f750884bc2415acf878fafefb32b2dbb0f356ba5e8ea01c06",
+      "original_inspected": true,
+      "approve_no_skirt": true,
+      "observation": "Continuous pale pink halter evening gown, gathered from waist clasp to full hem.",
+      "related_sample_ids": [],
+      "grouping_review_complete": false
+    },
+    {
+      "sample_id": "fashionpedia-negative-v2-46648",
+      "original_path": "data/external/fashionpedia_negatives_v2/images/91e1e3024953882e8410e60cbaa7c47c.jpg",
+      "sha256": "75a8d89007aef4ac76f57f385b019478045bdd6ce06ac6388e39b4e90221692c",
+      "original_inspected": true,
+      "approve_no_skirt": true,
+      "observation": "Cropped shirt/trouser torso view; grey fly and upper leg division visible, no full garment framing.",
+      "related_sample_ids": [],
+      "grouping_review_complete": false
+    },
+    {
+      "sample_id": "fashionpedia-negative-v2-25082",
+      "original_path": "data/external/fashionpedia_negatives_v2/images/2c07f779cddffd7c011f33ed2c47266c.jpg",
+      "sha256": "4176b073f4610d8ab5597dea7f73241ab43efdba1a0cbc4053abd34cd466f3c2",
+      "original_inspected": true,
+      "approve_no_skirt": true,
+      "observation": "Black sequin shorts with distinct center split and individual hems.",
+      "related_sample_ids": [],
+      "grouping_review_complete": false
+    },
+    {
+      "sample_id": "fashionpedia-negative-v2-7172",
+      "original_path": "data/external/fashionpedia_negatives_v2/images/0591284f15a0b5daeb767a7da62ea38f.jpg",
+      "sha256": "638c8d96df6d33e5a591d5ba34c4f9a6407541b5944a05c79d88f9c79516b60e",
+      "original_inspected": true,
+      "approve_no_skirt": false,
+      "observation": "Black short overlayer above leggings resembles skirt; jacket conceals waist and construction, audience also ambiguous.",
+      "related_sample_ids": [],
+      "grouping_review_complete": false
+    },
+    {
+      "sample_id": "fashionpedia-negative-v2-32211",
+      "original_path": "data/external/fashionpedia_negatives_v2/images/cb9d72751174356fce4d5a1ff253af92.jpg",
+      "sha256": "00e19ca45cda00a881ab05ae1175c93d6f983b1ba089875ea7e0c767a44665e7",
+      "original_inspected": true,
+      "approve_no_skirt": true,
+      "observation": "Navy high-waisted trousers with long separate legs, white tucked top.",
+      "related_sample_ids": [],
+      "grouping_review_complete": false
+    },
+    {
+      "sample_id": "fashionpedia-negative-v2-47198",
+      "original_path": "data/external/fashionpedia_negatives_v2/images/79bb0cda6636cb06eeada29ffff44dfa.jpg",
+      "sha256": "606aa74cffc6b6f8b81257f2c6b5ba5655748ec3cea6ba511b078b39331da165",
+      "original_inspected": true,
+      "approve_no_skirt": true,
+      "observation": "Black shorts with clear two hems and crotch under pink tee.",
+      "related_sample_ids": [],
+      "grouping_review_complete": false
+    },
+    {
+      "sample_id": "fashionpedia-negative-v2-20300",
+      "original_path": "data/external/fashionpedia_negatives_v2/images/fcbf1a2490d9531efc33322b2702912f.jpg",
+      "sha256": "748a615f29eca5e5d58f22897b192b55e1a79d6231659c18df95489f3937de6b",
+      "original_inspected": true,
+      "approve_no_skirt": false,
+      "observation": "Bronze draped tunic/dress over dark lower band; skirt-versus-dress/layering unresolved, crowd dark.",
+      "related_sample_ids": [],
+      "grouping_review_complete": false
+    },
+    {
+      "sample_id": "fashionpedia-negative-v2-32881",
+      "original_path": "data/external/fashionpedia_negatives_v2/images/0c2ef84d4776d386d1ed39f5f10ea754.jpg",
+      "sha256": "e6624e743798017f8031f493559a3c16222f075ba238e67dc91191fb763c0bf7",
+      "original_inspected": true,
+      "approve_no_skirt": true,
+      "observation": "Isolated flat red plaid trousers with separate legs.",
+      "related_sample_ids": [],
+      "grouping_review_complete": false
+    },
+    {
+      "sample_id": "fashionpedia-negative-v2-28569",
+      "original_path": "data/external/fashionpedia_negatives_v2/images/3509d13716f8ea9b430cc97401db5941.jpg",
+      "sha256": "c6c4dd912fd7e66e5e4351d665df7122dd48f9405d2525f6bf0da84548d109f8",
+      "original_inspected": true,
+      "approve_no_skirt": true,
+      "observation": "Dark denim shorts hanging with fly, leg split and side buttons; same hanger/background family as 33837/47621.",
+      "related_sample_ids": [
+        "fashionpedia-negative-v2-33837",
+        "fashionpedia-negative-v2-47621",
+        "fashionpedia-negative-v2-43900",
+        "fashionpedia-negative-v2-32369",
+        "fashionpedia-negative-v2-26716"
+      ],
+      "grouping_review_complete": false
+    },
+    {
+      "sample_id": "fashionpedia-negative-v2-33283",
+      "original_path": "data/external/fashionpedia_negatives_v2/images/51ecbd174ccb4c305bf3080b740ff9b0.jpg",
+      "sha256": "95ac5b57f3f1d165c88bba5c83462db6e2af3361214770a1ebff414bc9b337c5",
+      "original_inspected": true,
+      "approve_no_skirt": true,
+      "observation": "Floral blue/green button-front dress on mannequin, continuous bodice through waist.",
+      "related_sample_ids": [],
+      "grouping_review_complete": false
+    },
+    {
+      "sample_id": "fashionpedia-negative-v2-36581",
+      "original_path": "data/external/fashionpedia_negatives_v2/images/3657bb7c7ae031d92610d215bd0f4f84.jpg",
+      "sha256": "a5fab167a2f1edace6d607af20a00ed52f025b485094e00afb7557015755ca2c",
+      "original_inspected": true,
+      "approve_no_skirt": false,
+      "observation": "Foreground trousers clear, but near and distant pedestrians have occluded/blurred lower garments.",
+      "related_sample_ids": [],
+      "grouping_review_complete": false
+    },
+    {
+      "sample_id": "fashionpedia-negative-v2-48850",
+      "original_path": "data/external/fashionpedia_negatives_v2/images/ff6c3b819ec5914c34bd317f17f4b023.jpg",
+      "sha256": "b2e338ff73ad87e2553bdf89cca4f70e7d8186178fdf9444084002fc96c0c424",
+      "original_inspected": true,
+      "approve_no_skirt": true,
+      "observation": "Navy shorts with visible separate legs; seated background person also visible in shorts. Prior pairing 41740 is weak: different sleeve/plaid/purse, no proof same session.",
+      "related_sample_ids": [
+        "fashionpedia-negative-v2-41740"
+      ],
+      "grouping_review_complete": false
+    },
+    {
+      "sample_id": "fashionpedia-negative-v2-27218",
+      "original_path": "data/external/fashionpedia_negatives_v2/images/0534770b7aa512fb91ad57f9a6ef144f.jpg",
+      "sha256": "8aac3b2771f44a2b2fc289a24bb99e95806b8b0a170585a1a409f2d474849acf",
+      "original_inspected": true,
+      "approve_no_skirt": true,
+      "observation": "Gold sleeveless jumpsuit with distinct trouser legs and continuous bodice.",
+      "related_sample_ids": [],
+      "grouping_review_complete": false
+    },
+    {
+      "sample_id": "fashionpedia-negative-v2-28835",
+      "original_path": "data/external/fashionpedia_negatives_v2/images/c135d57904f701e47e586a364814ab02.jpg",
+      "sha256": "11ae1e78096bf600d3afa8cae0079ab2130d396dea2c521381186f00c76b9680",
+      "original_inspected": true,
+      "approve_no_skirt": true,
+      "observation": "Dark jeans below plaid shirt/jacket, separated legs; plain white wall and wood floor session flag 32509/26917.",
+      "related_sample_ids": [
+        "fashionpedia-negative-v2-32509",
+        "fashionpedia-negative-v2-26917"
+      ],
+      "grouping_review_complete": false
+    },
+    {
+      "sample_id": "fashionpedia-negative-v2-32373",
+      "original_path": "data/external/fashionpedia_negatives_v2/images/80de99e176a513596eda0f356664be36.jpg",
+      "sha256": "82dc4283e97d83dbae3a747e09fa9b5b9ed76c6a0bcebc70c7d4c18cb30abf73",
+      "original_inspected": true,
+      "approve_no_skirt": true,
+      "observation": "Flat patterned drawstring shorts, distinct crotch and leg openings; carpet-product session possible 34249.",
+      "related_sample_ids": [
+        "fashionpedia-negative-v2-34249"
+      ],
+      "grouping_review_complete": false
+    },
+    {
+      "sample_id": "fashionpedia-negative-v2-45147",
+      "original_path": "data/external/fashionpedia_negatives_v2/images/7deae1968b1c1451d26e3dab81da7e6d.jpg",
+      "sha256": "d51fed5b6cd4415350e2868cd4834997b95f69ab25af3da57b58571aa506fc5a",
+      "original_inspected": true,
+      "approve_no_skirt": true,
+      "observation": "Pink sleeveless dress with decorative bodice folds continuous into fitted lower garment.",
+      "related_sample_ids": [],
+      "grouping_review_complete": false
+    },
+    {
+      "sample_id": "fashionpedia-negative-v2-43900",
+      "original_path": "data/external/fashionpedia_negatives_v2/images/0781212a26d7d3cdf603af5fb394934d.jpg",
+      "sha256": "e76c0eb2aa957283a0d63a6db8de1991fca9a8e2923ef721e9e9c63409b34f21",
+      "original_inspected": true,
+      "approve_no_skirt": true,
+      "observation": "Blue jeans on transparent hanger, full two legs; hanger/background family 33837/47621/28569.",
+      "related_sample_ids": [
+        "fashionpedia-negative-v2-33837",
+        "fashionpedia-negative-v2-47621",
+        "fashionpedia-negative-v2-28569",
+        "fashionpedia-negative-v2-32369",
+        "fashionpedia-negative-v2-26716"
+      ],
+      "grouping_review_complete": false
+    },
+    {
+      "sample_id": "fashionpedia-negative-v2-48719",
+      "original_path": "data/external/fashionpedia_negatives_v2/images/b1fda8618907f08cdd3656391561bec0.jpg",
+      "sha256": "32f316e17b2f3add300f6d36ce59ce73ad21600a45462b85a688a408e1190ed4",
+      "original_inspected": true,
+      "approve_no_skirt": true,
+      "observation": "Isolated blue denim shorts; clear fly and two legs; similarity group with grey shorts 31421 and others requires conservative linkage.",
+      "related_sample_ids": [
+        "fashionpedia-negative-v2-31612",
+        "fashionpedia-negative-v2-31421",
+        "fashionpedia-negative-v2-42225",
+        "fashionpedia-negative-v2-38459",
+        "fashionpedia-negative-v2-25741",
+        "fashionpedia-negative-v2-38288",
+        "fashionpedia-negative-v2-25924",
+        "fashionpedia-negative-v2-28025",
+        "fashionpedia-negative-v2-29016"
+      ],
+      "grouping_review_complete": false
+    },
+    {
+      "sample_id": "fashionpedia-negative-v2-44957",
+      "original_path": "data/external/fashionpedia_negatives_v2/images/8e119f908aaca09d209ee7646df01492.jpg",
+      "sha256": "6dc8c8170d5323f5db3dd311aa1de22dbb5adb8cbffe772b90a90864e0b658eb",
+      "original_inspected": true,
+      "approve_no_skirt": true,
+      "observation": "Yellow halter dress, gathered bodice and skirt portion joined at ribbon waist.",
+      "related_sample_ids": [],
+      "grouping_review_complete": false
+    },
+    {
+      "sample_id": "fashionpedia-negative-v2-615",
+      "original_path": "data/external/fashionpedia_negatives_v2/images/8c4902c1a3c9d2f9a233517721027f20.jpg",
+      "sha256": "7ac70c0896623b00009d56a2ed4fcf7efd9ed36ace15146ec5da076e77a7ef5c",
+      "original_inspected": true,
+      "approve_no_skirt": true,
+      "observation": "Single runway person in bright printed flared trousers, crotch and full legs clear.",
+      "related_sample_ids": [],
+      "grouping_review_complete": false
+    },
+    {
+      "sample_id": "fashionpedia-negative-v2-33815",
+      "original_path": "data/external/fashionpedia_negatives_v2/images/e78c1868336c12543a6f97d17f7a6631.jpg",
+      "sha256": "3018220d15efaebbceb74ecaa8e08fe5e37447433306657464f74e3729d171d0",
+      "original_inspected": true,
+      "approve_no_skirt": true,
+      "observation": "Close view of blue denim cutoff shorts, center seam and two leg hems clear; bag partly overlaps one side.",
+      "related_sample_ids": [],
+      "grouping_review_complete": false
+    },
+    {
+      "sample_id": "fashionpedia-negative-v2-40697",
+      "original_path": "data/external/fashionpedia_negatives_v2/images/6dbf8f70d70bc87358e00a8c88406255.jpg",
+      "sha256": "f36ef14c1eb90c546c239fed951483c5b187d5619013e22bcd10392cd2e3184b",
+      "original_inspected": true,
+      "approve_no_skirt": true,
+      "observation": "Black embellished halter dress with continuous bodice and lower chiffon-like section; similar white-background model shoot to 47243.",
+      "related_sample_ids": [
+        "fashionpedia-negative-v2-47243"
+      ],
+      "grouping_review_complete": false
+    }
+  ]
+}

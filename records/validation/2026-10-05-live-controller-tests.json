@@ -1,0 +1,19 @@
+{
+  "recorded_at_utc": "2026-10-04T23:54:13.697417+00:00",
+  "status": "passed",
+  "tests_run": 16,
+  "failures": 0,
+  "errors": 0,
+  "python_version": "3.11.9",
+  "environment": "windows_host",
+  "source_hashes": {
+    "app/live_state.py": "06003cf0f3c3d2f534a3c7a3080e665ce15491151e5c9f8c9bb61ba4e27e67ec",
+    "tests/test_live_state.py": "30ad59c7187ca76b6ba9d0957a69d31cacc8dbd5dd74142d4b99700473ba01b0",
+    "tools/replay_live_state.py": "b46eeb96ba58936a90e1e79e3538f1d9de4833a2b09f10f4c75d875320364ad9"
+  },
+  "replay": "records/validation/2026-10-05-live-controller-replay.json",
+  "camera_opened": false,
+  "dependencies_changed": false,
+  "pi_verified": false,
+  "limitations": "Controller only; synthetic clock/frames and a thread race. Capture, model, UI and device integration remain unverified."
+}

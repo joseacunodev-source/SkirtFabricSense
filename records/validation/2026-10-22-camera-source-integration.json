@@ -1,0 +1,37 @@
+{
+  "status": "passed_camera_source_batch",
+  "recorded_at": "2026-10-22T13:10:05.143061+08:00",
+  "checkpoint": {
+    "path": "records/continuation/latest.json",
+    "sha256": "bb563b2d9eac24d8f2a0a8d3321b8188f57ac500faf7852143ab7deb6b6cecd1"
+  },
+  "record_validation": {
+    "path": "records/validation/2026-10-22-camera-source-records.json",
+    "sha256": "a9709e3a2fec557f0da96ffc1901b3a42cc818af8880de99ff0ab58552572344"
+  },
+  "root_review": {
+    "path": "records/validation/2026-10-22-camera-source-check.json",
+    "sha256": "b9918ee1c6a207a9639d9d22354b33ce267e7fa483ebbce50529ff7573ef7d71"
+  },
+  "selected_station": {
+    "directory": "artifacts/stations/skirt-research-station-v3",
+    "inventory": {
+      "path": "artifacts/stations/skirt-research-station-v3/station-inventory.json",
+      "sha256": "ec865f2c45a635f7e3abb9fe8bd17dbf0c5b389d47ae110182cf37bee90390f8"
+    },
+    "configuration": {
+      "path": "artifacts/stations/skirt-research-station-v3/station.json",
+      "sha256": "953d17494b579c751ba046c5e6c48e73975ea9b5d82b7e2f419bca35da833b22"
+    },
+    "payload_files": 28,
+    "desktop_http_jobs": 12,
+    "pi_verified": false
+  },
+  "only_app_payload_change": "app/static/index.html",
+  "packages_installed": 0,
+  "new_originals": 0,
+  "training_admissions": 0,
+  "camera_used": false,
+  "pi_verified": false,
+  "project_complete": false
+}

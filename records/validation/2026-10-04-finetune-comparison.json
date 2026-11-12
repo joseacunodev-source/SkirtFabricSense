@@ -1,0 +1,80 @@
+{
+  "status": "passed",
+  "same_validation_ids": true,
+  "dataset_sha256": "9160998b5ab0f65251c53cefd783e1c6351887bec8c655074be64dd2717dc2eb",
+  "baseline": {
+    "count": 80,
+    "accuracy": 0.7875,
+    "macro_f1": 0.7212543554006969,
+    "per_class": [
+      {
+        "label": "non_pleated",
+        "support": 60,
+        "precision": 0.864406779661017,
+        "recall": 0.85,
+        "f1": 0.8571428571428572
+      },
+      {
+        "label": "pleated",
+        "support": 20,
+        "precision": 0.5714285714285714,
+        "recall": 0.6,
+        "f1": 0.5853658536585366
+      }
+    ],
+    "confusion_matrix_actual_rows_predicted_columns": [
+      [
+        51,
+        9
+      ],
+      [
+        8,
+        12
+      ]
+    ]
+  },
+  "fine_tuned": {
+    "count": 80,
+    "accuracy": 0.8125,
+    "macro_f1": 0.7540479606476738,
+    "per_class": [
+      {
+        "label": "non_pleated",
+        "support": 60,
+        "precision": 0.8813559322033898,
+        "recall": 0.8666666666666667,
+        "f1": 0.8739495798319329
+      },
+      {
+        "label": "pleated",
+        "support": 20,
+        "precision": 0.6190476190476191,
+        "recall": 0.65,
+        "f1": 0.6341463414634146
+      }
+    ],
+    "confusion_matrix_actual_rows_predicted_columns": [
+      [
+        52,
+        8
+      ],
+      [
+        7,
+        13
+      ]
+    ]
+  },
+  "fixed_ids": [
+    "fashionpedia-train2020-34216",
+    "fashionpedia-train2020-37357",
+    "fashionpedia-train2020-43394",
+    "fashionpedia-train2020-50372"
+  ],
+  "regressed_ids": [
+    "fashionpedia-train2020-2208",
+    "fashionpedia-train2020-27922"
+  ],
+  "selected_epoch": 5,
+  "selection_rule": "minimum development validation cross entropy",
+  "note": "Development comparison, not independent test; two intervention changes together."
+}

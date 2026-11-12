@@ -1,0 +1,539 @@
+{
+  "schema_version": 1,
+  "verified_at_utc": "2026-10-01T22:59:55.982145+00:00",
+  "report_date_asia_manila": "2026-10-02",
+  "scope": "Downloaded seed files and derived records, not model or dataset-label validation",
+  "verification_environment": {
+    "python": "3.11.9",
+    "python_executable": "C:\\Users\\Administrator\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+    "pillow": "12.3.0",
+    "new_dependencies_installed": false
+  },
+  "acquisition_manifest": {
+    "path": "data/external/acquisition_manifest.json",
+    "sha256": "a9db7b065b21004ab576de471f85fd623475d51fbcb937d223ccbcec4455aa7d"
+  },
+  "downloaded_artifact_count": 33,
+  "downloaded_artifact_bytes": 16863279,
+  "all_manifest_hashes_and_sizes_passed": true,
+  "artifact_checks": [
+    {
+      "path": "data/external/fashionpedia/instances_attributes_val2020.json",
+      "expected_sha256": "f831f415edad12d52acde8b138fe7ebd1592b57bf0dcd6a3b63ba8cabd208223",
+      "actual_sha256": "f831f415edad12d52acde8b138fe7ebd1592b57bf0dcd6a3b63ba8cabd208223",
+      "actual_size_bytes": 14533475,
+      "passed": true
+    },
+    {
+      "path": "data/external/fashionpedia/source_README.md",
+      "expected_sha256": "9c851fad2d3496c9f144a7d1cfe60f470657a454e0fd6fd112276859dfeb10cd",
+      "actual_sha256": "9c851fad2d3496c9f144a7d1cfe60f470657a454e0fd6fd112276859dfeb10cd",
+      "actual_size_bytes": 3608,
+      "passed": true
+    },
+    {
+      "path": "data/external/fashionpedia/terms_snapshot.html",
+      "expected_sha256": "2cb6772a3c5ea90ecd3510cd09f8998ecf1d4178f31f85f9c1c95c7b972aeba4",
+      "actual_sha256": "2cb6772a3c5ea90ecd3510cd09f8998ecf1d4178f31f85f9c1c95c7b972aeba4",
+      "actual_size_bytes": 8255,
+      "passed": true
+    },
+    {
+      "path": "data/external/textilenet/fabric_label.txt",
+      "expected_sha256": "af1c5fddc7c0b4820cd66d4fecd788536e1aeabc2bf5754389df71ceaa240c6b",
+      "actual_sha256": "af1c5fddc7c0b4820cd66d4fecd788536e1aeabc2bf5754389df71ceaa240c6b",
+      "actual_size_bytes": 374,
+      "passed": true
+    },
+    {
+      "path": "data/external/textilenet/fibre_label.txt",
+      "expected_sha256": "efaf0882bc82c942a528823be28987b7abdf3aff82a44f7c51c167044809bece",
+      "actual_sha256": "efaf0882bc82c942a528823be28987b7abdf3aff82a44f7c51c167044809bece",
+      "actual_size_bytes": 489,
+      "passed": true
+    },
+    {
+      "path": "data/external/textilenet/source_README.md",
+      "expected_sha256": "98f9eee8e0c743220740120442588b0697e3462fe517eb64dbcf19e1ce0b544a",
+      "actual_sha256": "98f9eee8e0c743220740120442588b0697e3462fe517eb64dbcf19e1ce0b544a",
+      "actual_size_bytes": 4474,
+      "passed": true
+    },
+    {
+      "path": "data/external/textilenet/LICENSE",
+      "expected_sha256": "fc3169d9179c2995cf9b5f07e06f79235b1e2c969e9f0702bd3baf42d3db1e97",
+      "actual_sha256": "fc3169d9179c2995cf9b5f07e06f79235b1e2c969e9f0702bd3baf42d3db1e97",
+      "actual_size_bytes": 1064,
+      "passed": true
+    },
+    {
+      "path": "data/external/dtd/source_README.txt",
+      "expected_sha256": "7f11a2225f0a140b1c7e96889e3c4cca6cba6cb3148327e84d5c361aa3793413",
+      "actual_sha256": "7f11a2225f0a140b1c7e96889e3c4cca6cba6cb3148327e84d5c361aa3793413",
+      "actual_size_bytes": 2981,
+      "passed": true
+    },
+    {
+      "path": "data/external/dtd/dtd-r1.0.1-labels.tar.gz",
+      "expected_sha256": "d95422715cd7a0d76cc34235b85b4b14002d6c1687e68d5aa3b3517651da57e1",
+      "actual_sha256": "d95422715cd7a0d76cc34235b85b4b14002d6c1687e68d5aa3b3517651da57e1",
+      "actual_size_bytes": 188651,
+      "passed": true
+    },
+    {
+      "path": "data/external/fashionpedia/sample_metadata/9656_oembed.json",
+      "expected_sha256": "706dc6dd9c0e8fc61be208b7ed12a0b8040748ad2ac0a0be53fa87f2aa3c38c8",
+      "actual_sha256": "706dc6dd9c0e8fc61be208b7ed12a0b8040748ad2ac0a0be53fa87f2aa3c38c8",
+      "actual_size_bytes": 1392,
+      "passed": true
+    },
+    {
+      "path": "data/external/fashionpedia/sample_images/9656.jpg",
+      "expected_sha256": "f301dd219a67389067d363664f2388d50a09d4be0ef6a6b22ae90209647c7f3a",
+      "actual_sha256": "f301dd219a67389067d363664f2388d50a09d4be0ef6a6b22ae90209647c7f3a",
+      "actual_size_bytes": 147139,
+      "passed": true
+    },
+    {
+      "path": "data/external/fashionpedia/sample_metadata/16212_oembed.json",
+      "expected_sha256": "23ec8948415a93dd6920766ad408ddd8271d382c7a9637d2747f8bb93ef183dd",
+      "actual_sha256": "23ec8948415a93dd6920766ad408ddd8271d382c7a9637d2747f8bb93ef183dd",
+      "actual_size_bytes": 1234,
+      "passed": true
+    },
+    {
+      "path": "data/external/fashionpedia/sample_images/16212.jpg",
+      "expected_sha256": "257a56174ae6120d47d547922318982135fc8c097a38b8c5e251ccdad11f6a05",
+      "actual_sha256": "257a56174ae6120d47d547922318982135fc8c097a38b8c5e251ccdad11f6a05",
+      "actual_size_bytes": 208444,
+      "passed": true
+    },
+    {
+      "path": "data/external/fashionpedia/sample_metadata/9425_oembed.json",
+      "expected_sha256": "5b396f5039e4b436ac363c0ed68e985d94a7e54f2379297b3125f09f4d461fe8",
+      "actual_sha256": "5b396f5039e4b436ac363c0ed68e985d94a7e54f2379297b3125f09f4d461fe8",
+      "actual_size_bytes": 1300,
+      "passed": true
+    },
+    {
+      "path": "data/external/fashionpedia/sample_images/9425.jpg",
+      "expected_sha256": "e07668119739a9e5a3ca82ff5a25b0a2c042c24f47fd025c43e975fa68edfdf6",
+      "actual_sha256": "e07668119739a9e5a3ca82ff5a25b0a2c042c24f47fd025c43e975fa68edfdf6",
+      "actual_size_bytes": 178590,
+      "passed": true
+    },
+    {
+      "path": "data/external/fashionpedia/sample_metadata/10727_oembed.json",
+      "expected_sha256": "e2935c94066151ec986c797237c08d9ad042c6cd373bdac5845360449316f38e",
+      "actual_sha256": "e2935c94066151ec986c797237c08d9ad042c6cd373bdac5845360449316f38e",
+      "actual_size_bytes": 1224,
+      "passed": true
+    },
+    {
+      "path": "data/external/fashionpedia/sample_images/10727.jpg",
+      "expected_sha256": "477b4cb1037156428a59f2ae85c88112a69bebc3d536673b8ec71343df978f7f",
+      "actual_sha256": "477b4cb1037156428a59f2ae85c88112a69bebc3d536673b8ec71343df978f7f",
+      "actual_size_bytes": 234544,
+      "passed": true
+    },
+    {
+      "path": "data/external/fashionpedia/sample_metadata/11803_oembed.json",
+      "expected_sha256": "532beb7b893968db5bbb4b665ce30f336475073911601a27dc169df1a9357ce5",
+      "actual_sha256": "532beb7b893968db5bbb4b665ce30f336475073911601a27dc169df1a9357ce5",
+      "actual_size_bytes": 1300,
+      "passed": true
+    },
+    {
+      "path": "data/external/fashionpedia/sample_images/11803.jpg",
+      "expected_sha256": "d9b7809dd0b6734937d9c3f4c57b5a25b9517d3b67340593d368a54b57c0df2d",
+      "actual_sha256": "d9b7809dd0b6734937d9c3f4c57b5a25b9517d3b67340593d368a54b57c0df2d",
+      "actual_size_bytes": 121993,
+      "passed": true
+    },
+    {
+      "path": "data/external/fashionpedia/sample_metadata/13049_oembed.json",
+      "expected_sha256": "1786220637013ab5cec1b2a4a330649fe434f2f4a5b2296a9cfe6172179cbb5d",
+      "actual_sha256": "1786220637013ab5cec1b2a4a330649fe434f2f4a5b2296a9cfe6172179cbb5d",
+      "actual_size_bytes": 1280,
+      "passed": true
+    },
+    {
+      "path": "data/external/fashionpedia/sample_images/13049.jpg",
+      "expected_sha256": "f6f25100bfdaf00d59125f03823075a03c7a3da63e2dafff5950ddbdd2ed003f",
+      "actual_sha256": "f6f25100bfdaf00d59125f03823075a03c7a3da63e2dafff5950ddbdd2ed003f",
+      "actual_size_bytes": 113868,
+      "passed": true
+    },
+    {
+      "path": "data/external/fashionpedia/sample_metadata/13283_oembed.json",
+      "expected_sha256": "eb79e37781c2e1f1293552e933aeb8ade83b7c0e68a87c785e940f8b2d21a255",
+      "actual_sha256": "eb79e37781c2e1f1293552e933aeb8ade83b7c0e68a87c785e940f8b2d21a255",
+      "actual_size_bytes": 1223,
+      "passed": true
+    },
+    {
+      "path": "data/external/fashionpedia/sample_images/13283.jpg",
+      "expected_sha256": "d024d10f626e63e98178d70cda9dd034a963c0b23d6e072a0fd78ffab77ee244",
+      "actual_sha256": "d024d10f626e63e98178d70cda9dd034a963c0b23d6e072a0fd78ffab77ee244",
+      "actual_size_bytes": 163505,
+      "passed": true
+    },
+    {
+      "path": "data/external/fashionpedia/sample_metadata/13339_oembed.json",
+      "expected_sha256": "2ce1b976578fb49259ef5af899cef53f0f912ac61f2d6ff2133c544cf5d0bb31",
+      "actual_sha256": "2ce1b976578fb49259ef5af899cef53f0f912ac61f2d6ff2133c544cf5d0bb31",
+      "actual_size_bytes": 1435,
+      "passed": true
+    },
+    {
+      "path": "data/external/fashionpedia/sample_images/13339.jpg",
+      "expected_sha256": "a72d9f26df78d9588ef34cfb28362b6329b5febcbffaa9ce7b747527ca7d7f77",
+      "actual_sha256": "a72d9f26df78d9588ef34cfb28362b6329b5febcbffaa9ce7b747527ca7d7f77",
+      "actual_size_bytes": 236207,
+      "passed": true
+    },
+    {
+      "path": "data/external/fashionpedia/sample_metadata/14794_oembed.json",
+      "expected_sha256": "067d39a39c26e3125a84f143be1b05a6a1ba211329589b1a0464d592f8807db1",
+      "actual_sha256": "067d39a39c26e3125a84f143be1b05a6a1ba211329589b1a0464d592f8807db1",
+      "actual_size_bytes": 1244,
+      "passed": true
+    },
+    {
+      "path": "data/external/fashionpedia/sample_images/14794.jpg",
+      "expected_sha256": "0b9680dd18f7f301df14936240ff8901f07b5e738e29685e1db9fb81b2827bc7",
+      "actual_sha256": "0b9680dd18f7f301df14936240ff8901f07b5e738e29685e1db9fb81b2827bc7",
+      "actual_size_bytes": 207611,
+      "passed": true
+    },
+    {
+      "path": "data/external/fashionpedia/sample_metadata/14983_oembed.json",
+      "expected_sha256": "fe45e244f6a7226a2dd2d93e9393610d060f77cf51fd4ccdd92dc88ec75fa77e",
+      "actual_sha256": "fe45e244f6a7226a2dd2d93e9393610d060f77cf51fd4ccdd92dc88ec75fa77e",
+      "actual_size_bytes": 1266,
+      "passed": true
+    },
+    {
+      "path": "data/external/fashionpedia/sample_images/14983.jpg",
+      "expected_sha256": "4c5543561cac5a2915c4e448608de666b7ee015d21272af3ef13849ac6bb83f8",
+      "actual_sha256": "4c5543561cac5a2915c4e448608de666b7ee015d21272af3ef13849ac6bb83f8",
+      "actual_size_bytes": 104316,
+      "passed": true
+    },
+    {
+      "path": "data/external/fashionpedia/sample_metadata/15619_oembed.json",
+      "expected_sha256": "349012689be1a17ee80903ac2b2b0383eb0507564b58511ef646c9b2c19d4400",
+      "actual_sha256": "349012689be1a17ee80903ac2b2b0383eb0507564b58511ef646c9b2c19d4400",
+      "actual_size_bytes": 1234,
+      "passed": true
+    },
+    {
+      "path": "data/external/fashionpedia/sample_images/15619.jpg",
+      "expected_sha256": "ddfa6ed3f78074902d7fb1609ac88102ee9fb8349809af8f06cb217f9c2ae14e",
+      "actual_sha256": "ddfa6ed3f78074902d7fb1609ac88102ee9fb8349809af8f06cb217f9c2ae14e",
+      "actual_size_bytes": 195821,
+      "passed": true
+    },
+    {
+      "path": "data/external/fashionpedia/sample_metadata/15687_oembed.json",
+      "expected_sha256": "37ed6bfa8267c8160c337004a7b1c05a300a2438934a15df2f8ce3a08b4e767d",
+      "actual_sha256": "37ed6bfa8267c8160c337004a7b1c05a300a2438934a15df2f8ce3a08b4e767d",
+      "actual_size_bytes": 1223,
+      "passed": true
+    },
+    {
+      "path": "data/external/fashionpedia/sample_images/15687.jpg",
+      "expected_sha256": "96c68e40f57a8f8453cb67ffee9eba120621f61bae12d7abe760f1b77c429cae",
+      "actual_sha256": "96c68e40f57a8f8453cb67ffee9eba120621f61bae12d7abe760f1b77c429cae",
+      "actual_size_bytes": 192515,
+      "passed": true
+    }
+  ],
+  "jpeg_checks": [
+    {
+      "path": "data/external/fashionpedia/sample_images/9656.jpg",
+      "decode_passed": true,
+      "format": "JPEG",
+      "mode": "RGB",
+      "actual_dimensions": [
+        683,
+        1024
+      ],
+      "matches_saved_oembed_dimensions": true,
+      "matches_annotation_dimensions": false,
+      "visual_annotation_registration_verified": false
+    },
+    {
+      "path": "data/external/fashionpedia/sample_images/16212.jpg",
+      "decode_passed": true,
+      "format": "JPEG",
+      "mode": "RGB",
+      "actual_dimensions": [
+        768,
+        1024
+      ],
+      "matches_saved_oembed_dimensions": true,
+      "matches_annotation_dimensions": true,
+      "visual_annotation_registration_verified": false
+    },
+    {
+      "path": "data/external/fashionpedia/sample_images/9425.jpg",
+      "decode_passed": true,
+      "format": "JPEG",
+      "mode": "RGB",
+      "actual_dimensions": [
+        684,
+        1024
+      ],
+      "matches_saved_oembed_dimensions": true,
+      "matches_annotation_dimensions": false,
+      "visual_annotation_registration_verified": false
+    },
+    {
+      "path": "data/external/fashionpedia/sample_images/10727.jpg",
+      "decode_passed": true,
+      "format": "JPEG",
+      "mode": "RGB",
+      "actual_dimensions": [
+        667,
+        1000
+      ],
+      "matches_saved_oembed_dimensions": true,
+      "matches_annotation_dimensions": false,
+      "visual_annotation_registration_verified": false
+    },
+    {
+      "path": "data/external/fashionpedia/sample_images/11803.jpg",
+      "decode_passed": true,
+      "format": "JPEG",
+      "mode": "RGB",
+      "actual_dimensions": [
+        683,
+        1024
+      ],
+      "matches_saved_oembed_dimensions": true,
+      "matches_annotation_dimensions": false,
+      "visual_annotation_registration_verified": false
+    },
+    {
+      "path": "data/external/fashionpedia/sample_images/13049.jpg",
+      "decode_passed": true,
+      "format": "JPEG",
+      "mode": "RGB",
+      "actual_dimensions": [
+        1024,
+        1024
+      ],
+      "matches_saved_oembed_dimensions": true,
+      "matches_annotation_dimensions": true,
+      "visual_annotation_registration_verified": false
+    },
+    {
+      "path": "data/external/fashionpedia/sample_images/13283.jpg",
+      "decode_passed": true,
+      "format": "JPEG",
+      "mode": "RGB",
+      "actual_dimensions": [
+        683,
+        1024
+      ],
+      "matches_saved_oembed_dimensions": true,
+      "matches_annotation_dimensions": false,
+      "visual_annotation_registration_verified": false
+    },
+    {
+      "path": "data/external/fashionpedia/sample_images/13339.jpg",
+      "decode_passed": true,
+      "format": "JPEG",
+      "mode": "RGB",
+      "actual_dimensions": [
+        683,
+        1024
+      ],
+      "matches_saved_oembed_dimensions": true,
+      "matches_annotation_dimensions": false,
+      "visual_annotation_registration_verified": false
+    },
+    {
+      "path": "data/external/fashionpedia/sample_images/14794.jpg",
+      "decode_passed": true,
+      "format": "JPEG",
+      "mode": "RGB",
+      "actual_dimensions": [
+        683,
+        1024
+      ],
+      "matches_saved_oembed_dimensions": true,
+      "matches_annotation_dimensions": false,
+      "visual_annotation_registration_verified": false
+    },
+    {
+      "path": "data/external/fashionpedia/sample_images/14983.jpg",
+      "decode_passed": true,
+      "format": "JPEG",
+      "mode": "RGB",
+      "actual_dimensions": [
+        683,
+        1024
+      ],
+      "matches_saved_oembed_dimensions": true,
+      "matches_annotation_dimensions": false,
+      "visual_annotation_registration_verified": false
+    },
+    {
+      "path": "data/external/fashionpedia/sample_images/15619.jpg",
+      "decode_passed": true,
+      "format": "JPEG",
+      "mode": "RGB",
+      "actual_dimensions": [
+        1024,
+        682
+      ],
+      "matches_saved_oembed_dimensions": true,
+      "matches_annotation_dimensions": false,
+      "visual_annotation_registration_verified": false
+    },
+    {
+      "path": "data/external/fashionpedia/sample_images/15687.jpg",
+      "decode_passed": true,
+      "format": "JPEG",
+      "mode": "RGB",
+      "actual_dimensions": [
+        683,
+        1024
+      ],
+      "matches_saved_oembed_dimensions": true,
+      "matches_annotation_dimensions": false,
+      "visual_annotation_registration_verified": false
+    }
+  ],
+  "dimension_mismatch_count": 10,
+  "fashionpedia_metadata_counts": {
+    "images_in_metadata": 1158,
+    "annotations_in_metadata": 8781,
+    "skirt_instances": 162,
+    "skirt_images": 162,
+    "pleated_skirt_instances": 23,
+    "skirt_images_marked_cc_by_2_0": 20
+  },
+  "fashionpedia_downloaded_photo_count": 12,
+  "fashionpedia_source_pleat_attribute_photo_count": 2,
+  "verified_unique_garments": null,
+  "fabric_labels_verified": 0,
+  "dtd": {
+    "archive_file_count": 31,
+    "uncompressed_member_bytes": 1659069,
+    "extracted": false,
+    "split_checks": [
+      {
+        "split": 1,
+        "train_references": 1880,
+        "validation_references": 1880,
+        "test_references": 1880,
+        "within_split_overlap": false,
+        "union_references": 5640
+      },
+      {
+        "split": 2,
+        "train_references": 1880,
+        "validation_references": 1880,
+        "test_references": 1880,
+        "within_split_overlap": false,
+        "union_references": 5640
+      },
+      {
+        "split": 3,
+        "train_references": 1880,
+        "validation_references": 1880,
+        "test_references": 1880,
+        "within_split_overlap": false,
+        "union_references": 5640
+      },
+      {
+        "split": 4,
+        "train_references": 1880,
+        "validation_references": 1880,
+        "test_references": 1880,
+        "within_split_overlap": false,
+        "union_references": 5640
+      },
+      {
+        "split": 5,
+        "train_references": 1880,
+        "validation_references": 1880,
+        "test_references": 1880,
+        "within_split_overlap": false,
+        "union_references": 5640
+      },
+      {
+        "split": 6,
+        "train_references": 1880,
+        "validation_references": 1880,
+        "test_references": 1880,
+        "within_split_overlap": false,
+        "union_references": 5640
+      },
+      {
+        "split": 7,
+        "train_references": 1880,
+        "validation_references": 1880,
+        "test_references": 1880,
+        "within_split_overlap": false,
+        "union_references": 5640
+      },
+      {
+        "split": 8,
+        "train_references": 1880,
+        "validation_references": 1880,
+        "test_references": 1880,
+        "within_split_overlap": false,
+        "union_references": 5640
+      },
+      {
+        "split": 9,
+        "train_references": 1880,
+        "validation_references": 1880,
+        "test_references": 1880,
+        "within_split_overlap": false,
+        "union_references": 5640
+      },
+      {
+        "split": 10,
+        "train_references": 1880,
+        "validation_references": 1880,
+        "test_references": 1880,
+        "within_split_overlap": false,
+        "union_references": 5640
+      }
+    ],
+    "joint_annotation_references": 5640,
+    "category_count": 47,
+    "downloaded_image_count": 0
+  },
+  "textilenet": {
+    "fabric_labels": 27,
+    "fibre_labels": 33,
+    "downloaded_image_count": 0
+  },
+  "derived_records": [
+    {
+      "path": "data/external/fashionpedia/seed_summary.json",
+      "sha256": "f75640e51a66c382ba0d8a1a8e2d9ca2bb3b79f457df0b076e3aeb75094eca40"
+    },
+    {
+      "path": "data/external/fashionpedia/ATTRIBUTION.md",
+      "sha256": "b179e737b6a3c8816c99ddcd27b0c41d1ba24d0e9eddb1429b23aa8571d29ee7"
+    },
+    {
+      "path": "data/provenance/external_holdout_samples.jsonl",
+      "sha256": "80518a060dc06a22b57df484cd746298e7080c09f2e053216d0dd8c40cf1dd41"
+    }
+  ],
+  "limitations": [
+    "No visual annotation registration performed.",
+    "No garment identity verification or near-duplicate review performed.",
+    "Flickr license assertions are from saved acquisition-time oEmbed, not a new live recheck.",
+    "No downloaded photograph has verified project fabric ground truth.",
+    "No training or model evaluation performed."
+  ]
+}

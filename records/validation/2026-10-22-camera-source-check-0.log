@@ -1,0 +1,12 @@
+test_api_bounds_are_positive_non_boolean_integers (tests.test_textilenet_metadata.TextileNetMetadataTests.test_api_bounds_are_positive_non_boolean_integers) ... ok
+test_declared_bounds_are_enforced (tests.test_textilenet_metadata.TextileNetMetadataTests.test_declared_bounds_are_enforced) ... ok
+test_duplicate_and_multi_label_evidence_does_not_admit (tests.test_textilenet_metadata.TextileNetMetadataTests.test_duplicate_and_multi_label_evidence_does_not_admit) ... ok
+test_growth_after_stat_cannot_trigger_unbounded_read (tests.test_textilenet_metadata.TextileNetMetadataTests.test_growth_after_stat_cannot_trigger_unbounded_read) ... ok
+test_protected_identity_check_omits_label_distribution (tests.test_textilenet_metadata.TextileNetMetadataTests.test_protected_identity_check_omits_label_distribution) ... ok
+test_rejects_malformed_rows (tests.test_textilenet_metadata.TextileNetMetadataTests.test_rejects_malformed_rows) ... ok
+test_wish_token_is_identity_lead_not_filename_or_query (tests.test_textilenet_metadata.TextileNetMetadataTests.test_wish_token_is_identity_lead_not_filename_or_query) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.148s
+
+OK

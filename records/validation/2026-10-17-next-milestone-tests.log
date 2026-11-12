@@ -1,0 +1,14 @@
+..........................C:\Users\Administrator\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\zipfile\__init__.py:1625: UserWarning: Duplicate name: 'a'
+  return self._open_to_write(zinfo, force_zip64=force_zip64)
+..................C:\Users\Administrator\OneDrive\Documents\ChatGPT\SkirtFabricSense\tools\datasets\audit_candidates.py:86: DeprecationWarning: Image.Image.getdata is deprecated and will be removed in Pillow 14 (2027-10-15). Use get_flattened_data instead.
+  pixels = list(tiny.getdata())
+..............................................................................................................................................s.......................................................................................................................................................
+----------------------------------------------------------------------
+Ran 338 tests in 9.092s
+
+OK (skipped=1)
+{
+  "verified_artifacts": 0,
+  "images": 0,
+  "network_used": false
+}

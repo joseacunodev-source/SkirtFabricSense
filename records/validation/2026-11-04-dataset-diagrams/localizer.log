@@ -1,0 +1,71 @@
+{
+  "schema_version": 1,
+  "status": "passed_metadata_checks",
+  "assignment_rows": 447,
+  "unique_assigned_samples": 447,
+  "catalog_and_assignment_unique_samples": 1402,
+  "unique_sample_counts_by_role": {
+    "model_validation": 99,
+    "training": 348
+  },
+  "assigned_connected_components": 447,
+  "components_by_role": {
+    "model_validation": 99,
+    "training": 348
+  },
+  "issues": [],
+  "final_test_readiness": "not_established_by_metadata_audit",
+  "limits": [
+    "Only supplied metadata connections checked; omitted catalogs and unrecorded near-duplicates cannot be detected.",
+    "No images opened or file hashes recomputed; this complements, not replaces, image integrity and duplicate audits.",
+    "Source groups are not verified physical garments; no label, license, unseen-test, camera or Pi acceptance inferred.",
+    "Each model input set must be audited separately; do not combine historic models into one split."
+  ],
+  "recorded_at_utc": "2026-11-04T12:43:53.399957+00:00",
+  "inputs": [
+    {
+      "path": "records\\experiments\\20261014-localizer-v2\\labelled-inputs.json",
+      "sha256": "018a03dd78549e8a54a18d00116722eb4ffcc5c6208f17ae967e3c6158bd8c0c",
+      "role": "assignments"
+    },
+    {
+      "path": "data\\manifests\\worn-pleating-development-v1.jsonl",
+      "sha256": "876bb315009592fdbcf0a646703b21d99801756f4e37b1807a66675bdbd98ec2",
+      "role": "catalog"
+    },
+    {
+      "path": "data\\labels\\negative-reviewed-v3.jsonl",
+      "sha256": "82009d40445a9091f7998ab8479cec10b5086826001b7b9f513862bd11da52d1",
+      "role": "catalog"
+    },
+    {
+      "path": "data\\manifests\\skirt_candidates.jsonl",
+      "sha256": "3eb0038cf41995135b03895d6845a9a287fff7462a8e7e9449597a4353c54f24",
+      "role": "catalog"
+    },
+    {
+      "path": "data\\manifests\\negative-candidates-v1.jsonl",
+      "sha256": "c4306ef7afacfde2e35daf1c6d5144c026075e5944180e2f38d46b9730470d02",
+      "role": "catalog"
+    },
+    {
+      "path": "data\\manifests\\negative-candidates-v2.jsonl",
+      "sha256": "12328ba062b158a7c238c4bc6c1b57252f0a16e82001b37911c3c57839f50e3d",
+      "role": "catalog"
+    },
+    {
+      "path": "data\\manifests\\negative-candidates-v3.jsonl",
+      "sha256": "45c69c3db6697ca5b82eed9856d12c3cfde92ce85467f67be75c8e4f1f7209d7",
+      "role": "catalog"
+    },
+    {
+      "path": "data\\provenance\\external_holdout_samples.jsonl",
+      "sha256": "80518a060dc06a22b57df484cd746298e7080c09f2e053216d0dd8c40cf1dd41",
+      "role": "catalog"
+    }
+  ],
+  "source": {
+    "path": "tools/audit_dataset_partitions.py",
+    "sha256": "dcaa300b68818deb5ec04b5cb888ea0d2d2a7886f37b869ddfd575c0c221da4e"
+  }
+}

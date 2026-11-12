@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "prediction_kind": "saved_geometry_extractor_inputs",
+  "coordinate_convention": "source_rgb_pixels_after_exif_transpose",
+  "projection": "upright_rectified_vertical",
+  "annotation_sha256": "85d5cad7e307904901a2b5b0bd43830d3373503852acd21f12ecc727b3b4c85d",
+  "split_sha256": "7603ca342288fec2ff0ec785f03bcefa8dd2e1fc80f918f55c40386f1ec72a43",
+  "predictions": [],
+  "producer": {
+    "name": "empty_readiness_inventory_no_detector",
+    "source_sha256": "9378137dabec8482953c88d2e16f2a490c4249eaf9a625770b73a5b7d2ffdf23",
+    "evidence": "No observed geometry annotations or saved detector inputs are available."
+  }
+}

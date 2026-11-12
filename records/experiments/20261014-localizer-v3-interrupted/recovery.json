@@ -1,0 +1,29 @@
+{
+  "replacement_run": "20261015-localizer-v3",
+  "files": [
+    {
+      "bytes": 4083,
+      "name": "environment.json",
+      "sha256": "2e4e65e86a78f1afddc3536d7d073dbb184bb9099d1a203868901f7d44c860d2"
+    },
+    {
+      "bytes": 145040,
+      "name": "inputs.json",
+      "sha256": "03a8a7d95560a3f0e5f253ca4ca1bc4f6699d401690106cc7a29880d0e0877c3"
+    },
+    {
+      "bytes": 2785089,
+      "name": "labelled-inputs.json",
+      "sha256": "018a03dd78549e8a54a18d00116722eb4ffcc5c6208f17ae967e3c6158bd8c0c"
+    },
+    {
+      "bytes": 10779,
+      "name": "training_source.py",
+      "sha256": "e4f191dcd6d874bc530e7da6b23ad98e43cdcacc2a2687d8118d51d064976ba2"
+    }
+  ],
+  "observed": "No active training process; only inputs, environment and source present. No history, run report or model. Interruption cause not established.",
+  "review_date": "2026-10-15",
+  "original_run": "/home/skirttrain/skirt-fabric-sense/runs/20261014-localizer-v3",
+  "status": "interrupted_no_completed_training_evidence"
+}

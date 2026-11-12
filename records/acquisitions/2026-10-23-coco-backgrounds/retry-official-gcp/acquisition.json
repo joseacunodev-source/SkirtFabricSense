@@ -1,0 +1,46 @@
+{
+  "started_at_utc": "2026-10-23T11:15:19.557978+00:00",
+  "status": "bounded_failure",
+  "images_acquired": 0,
+  "training_admitted": 0,
+  "new_labels": 0,
+  "project_splits_assigned": 0,
+  "caption_triage_is_not_absence_truth": true,
+  "candidate_outcomes": [],
+  "artifacts": [
+    {
+      "path": "data/manifests/coco-background-candidates-v2.jsonl",
+      "size_bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "records/acquisitions/2026-10-23-coco-backgrounds/retry-official-gcp/executed_acquire_coco_backgrounds.py",
+      "size_bytes": 25156,
+      "sha256": "61715c59b4cda95e550d795811a4971be70bfd7d92557e773fe64c5092d9af52"
+    },
+    {
+      "path": "records/acquisitions/2026-10-23-coco-backgrounds/retry-official-gcp/plan.json",
+      "size_bytes": 2354,
+      "sha256": "346a9b293c399d0471e91a9e46ab4daad32df87536fc9703fab110a5549a1180"
+    },
+    {
+      "path": "records/acquisitions/2026-10-23-coco-backgrounds/retry-official-gcp/requests.json",
+      "size_bytes": 5440,
+      "sha256": "f368d19028c7062fb64adbb6bf1a80528f88d936ebf0faba21e4753da26ad715"
+    }
+  ],
+  "error": "ValueError: Server did not honor exact inclusive byte range; full fallback refused",
+  "finished_at_utc": "2026-10-23T11:15:20.286450+00:00",
+  "total_consumed_network_body_bytes": 313372,
+  "requests_made": 7,
+  "no_installs": true,
+  "no_training": true,
+  "executed_source": {
+    "path": "tools/datasets/acquire_coco_backgrounds.py",
+    "sha256": "61715c59b4cda95e550d795811a4971be70bfd7d92557e773fe64c5092d9af52"
+  },
+  "shared_zip_parser": {
+    "path": "tools/datasets/bounded_zip.py",
+    "sha256": "6ebfd5d101d713e4b3003986ff38eed6cf89be9a3613aa4481afaee9b2612feb"
+  }
+}

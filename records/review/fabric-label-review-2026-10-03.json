@@ -1,0 +1,94 @@
+{
+  "blockers": [
+    "no_verified_composition_or_construction_evidence",
+    "source_partition_unspecified",
+    "physical_specimen_grouping_unresolved",
+    "closeup_source_does_not_validate_full_skirt_domain"
+  ],
+  "fabric_mention_counts": {
+    "brocade": 24,
+    "canvas": 5,
+    "chiffon": 15,
+    "corduroy": 11,
+    "crepe": 16,
+    "denim": 9,
+    "felt": 2,
+    "flannel": 7,
+    "fleece": 19,
+    "georgette": 3,
+    "jacquard": 20,
+    "knit": 10,
+    "lawn": 19,
+    "mesh": 5,
+    "organza": 5,
+    "poplin": 15,
+    "sateen": 22,
+    "satin": 47,
+    "taffeta": 15,
+    "tulle": 1,
+    "tweed": 13,
+    "twill": 64,
+    "velour": 14,
+    "velvet": 13,
+    "voile": 20
+  },
+  "fiber_mention_counts": {
+    "acetate": 2,
+    "acrylic": 6,
+    "bamboo": 6,
+    "cotton": 229,
+    "cupro": 1,
+    "linen": 3,
+    "nylon": 5,
+    "polyester": 139,
+    "rayon": 1,
+    "silk": 1,
+    "viscose": 7,
+    "wool": 5
+  },
+  "flag_counts": {
+    "blend_word_present": 6,
+    "folder_fiber_not_explicit_in_description": 148,
+    "multiple_fibers_mentioned": 35,
+    "other_fiber_mentioned": 47,
+    "possible_truncated_fiber_token": 9,
+    "stretch_word_requires_composition_check": 103
+  },
+  "images_hash_verified": 500,
+  "limitations": [
+    "Descriptions may be truncated and incomplete",
+    "No flag does not mean correct label",
+    "Bamboo is preserved as a source term without inferring fiber processing",
+    "Textile words may name colors/prints rather than construction",
+    "No physical specimens independently verified",
+    "No source partitions altered"
+  ],
+  "method": "lexical triage, not verified truth",
+  "priority_counts": {
+    "high": 56,
+    "normal": 444
+  },
+  "project_training_admitted": 0,
+  "publisher_folder_counts": {
+    "Cotton": 250,
+    "Polyester": 250
+  },
+  "queue": {
+    "path": "records/review/fabric-label-review-2026-10-03.jsonl",
+    "sha256": "069190ce8a3469e11d8823b0ed2c7c5f68a0b5aaf0bc09d6238179a94091b317"
+  },
+  "records_reviewed": 500,
+  "review_date": "2026-10-03",
+  "review_tool": {
+    "path": "tools/datasets/review_fabric_labels.py",
+    "sha256": "9d5108d36efbf8f2b991bf772f5107f4b6d94a6154e04605f54001d012a3c561"
+  },
+  "schema_version": 1,
+  "source_manifest": {
+    "path": "data/manifests/fabric_candidates.jsonl",
+    "sha256": "c66cca912ec79b70e8eaf5b11700962e4cdc6a7d71451534a3d27c91fba1d782"
+  },
+  "source_pretraining_admitted": 0,
+  "verified_composition_labels": 0,
+  "verified_construction_labels": 0
+}

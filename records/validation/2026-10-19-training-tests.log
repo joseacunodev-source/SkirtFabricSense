@@ -1,0 +1,45 @@
+test_approved_negative_without_review_fails (tests.test_presence_finetune.PresenceFineTuneTests.test_approved_negative_without_review_fails) ... ok
+test_current_manifest_admission_and_original_counts (tests.test_presence_finetune.PresenceFineTuneTests.test_current_manifest_admission_and_original_counts) ... ok
+test_finetune_boundary_keeps_every_batchnorm_frozen (tests.test_presence_finetune.PresenceFineTuneTests.test_finetune_boundary_keeps_every_batchnorm_frozen) ... ok
+test_head_freezes_every_backbone_layer (tests.test_presence_finetune.PresenceFineTuneTests.test_head_freezes_every_backbone_layer) ... ok
+test_missing_boundary_and_bad_phase_fail (tests.test_presence_finetune.PresenceFineTuneTests.test_missing_boundary_and_bad_phase_fail) ... ok
+test_path_escape_and_missing_file (tests.test_presence_finetune.PresenceFineTuneTests.test_path_escape_and_missing_file) ... ok
+test_prespecified_schedule_and_balance (tests.test_presence_finetune.PresenceFineTuneTests.test_prespecified_schedule_and_balance) ... ok
+test_worn_review_hash_mismatch_fails (tests.test_presence_finetune.PresenceFineTuneTests.test_worn_review_hash_mismatch_fails) ... ok
+test_actual_cached_weights_and_phase_variables (tests.test_presence_finetune_review.ActualKerasPresenceReview.test_actual_cached_weights_and_phase_variables) ... 2026-10-19 21:40:51.461106: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2026-10-19 21:40:51.551179: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F AVX512_VNNI FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2026-10-19 21:40:52.745141: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1792417254.846476     427 gpu_device.cc:2020] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 3584 MB memory:  -> device: 0, name: NVIDIA GeForce RTX 3060 Laptop GPU, pci bus id: 0000:01:00.0, compute capability: 8.6
+ok
+test_conflicting_second_hash_is_rejected (tests.test_presence_finetune_review.AdmissionReviewRegressionTests.test_conflicting_second_hash_is_rejected) ... ok
+test_frozen_positive_and_assignment_bytes_are_pinned (tests.test_presence_finetune_review.AdmissionReviewRegressionTests.test_frozen_positive_and_assignment_bytes_are_pinned) ... ok
+test_missing_review_hash_is_rejected (tests.test_presence_finetune_review.AdmissionReviewRegressionTests.test_missing_review_hash_is_rejected) ... ok
+test_stale_review_hash_is_rejected (tests.test_presence_finetune_review.AdmissionReviewRegressionTests.test_stale_review_hash_is_rejected) ... ok
+test_wrong_review_identity_is_rejected (tests.test_presence_finetune_review.AdmissionReviewRegressionTests.test_wrong_review_identity_is_rejected) ... ok
+test_cache_order_is_reconciled_to_current_validation (tests.test_presence_joint_selection.JointSelectionTests.test_cache_order_is_reconciled_to_current_validation) ... ok
+test_changed_input_bytes_rejected (tests.test_presence_joint_selection.JointSelectionTests.test_changed_input_bytes_rejected) ... ok
+test_changed_target_or_expected_pleating_rejected (tests.test_presence_joint_selection.JointSelectionTests.test_changed_target_or_expected_pleating_rejected) ... ok
+test_default_keeps_minimum_balanced_bce_and_optional_argument (tests.test_presence_joint_selection.JointSelectionTests.test_default_keeps_minimum_balanced_bce_and_optional_argument) ... ok
+test_duplicate_missing_extra_and_train_identity_rejected (tests.test_presence_joint_selection.JointSelectionTests.test_duplicate_missing_extra_and_train_identity_rejected) ... ok
+test_eligibility_requires_all_three_counts_and_strict_rejection_gain (tests.test_presence_joint_selection.JointSelectionTests.test_eligibility_requires_all_three_counts_and_strict_rejection_gain) ... ok
+test_eligible_rank_precedes_loss_and_uses_count_priority (tests.test_presence_joint_selection.JointSelectionTests.test_eligible_rank_precedes_loss_and_uses_count_priority) ... ok
+test_historical_pleating_bundle_hash_checked_and_lineage_recorded (tests.test_presence_joint_selection.JointSelectionTests.test_historical_pleating_bundle_hash_checked_and_lineage_recorded) ... ok
+test_invalid_mask_contract_threshold_or_probability_rejected (tests.test_presence_joint_selection.JointSelectionTests.test_invalid_mask_contract_threshold_or_probability_rejected) ... ok
+test_model_bytes_cached_hash_export_hash_and_row_hash_rejected (tests.test_presence_joint_selection.JointSelectionTests.test_model_bytes_cached_hash_export_hash_and_row_hash_rejected) ... ok
+test_no_eligible_epoch_falls_back_to_minimum_bce (tests.test_presence_joint_selection.JointSelectionTests.test_no_eligible_epoch_falls_back_to_minimum_bce) ... ok
+test_old_presence_predictions_and_gated_paths_are_ignored (tests.test_presence_joint_selection.JointSelectionTests.test_old_presence_predictions_and_gated_paths_are_ignored) ... ok
+test_coverage_and_rejection_have_separate_denominators (tests.test_detection_comparison.DetectionComparisonTests.test_coverage_and_rejection_have_separate_denominators) ... ok
+test_tradeoff_is_not_declared_improvement (tests.test_detection_comparison.DetectionComparisonTests.test_tradeoff_is_not_declared_improvement) ... ok
+test_all_three_model_identities_required (tests.test_detection_http.DetectionHttpTests.test_all_three_model_identities_required) ... ok
+test_checks_survive_python_optimized_mode (tests.test_detection_http.DetectionHttpTests.test_checks_survive_python_optimized_mode) ... ok
+test_comparison_missing_identity_and_incomplete_paths_rejected (tests.test_detection_http.DetectionHttpTests.test_comparison_missing_identity_and_incomplete_paths_rejected) ... ok
+test_completed_fixture_and_output (tests.test_detection_http.DetectionHttpTests.test_completed_fixture_and_output) ... ok
+test_gated_negative_does_not_require_localization (tests.test_detection_http.DetectionHttpTests.test_gated_negative_does_not_require_localization) ... ok
+test_http_model_roi_decision_and_score_mismatches_rejected (tests.test_detection_http.DetectionHttpTests.test_http_model_roi_decision_and_score_mismatches_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 34 tests in 23.516s
+
+OK

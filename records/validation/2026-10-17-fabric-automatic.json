@@ -1,0 +1,547 @@
+{
+  "status": "completed",
+  "date_asia_manila": "2026-10-17",
+  "objective": "Paired frozen saved-image manual ROI versus v1 automatic ROI fabric appearance smoke",
+  "source_sha256": {
+    "check": "1ae9fd3e45f55eac6d1a3a63d93839de9bf8071dafd79579f1b2ed839e7651dc",
+    "adapter": "64eb54936d8c65fe7552830de06b2914eec1f611a693486e15da8d588da48f23",
+    "localizer": "9fd488293186c5af9fd920a004e962adf408ba6be8a6672c6ef32526a5ec5a9f"
+  },
+  "dataset_manifest_sha256": "92a80e4f974b9730f4631da75fed99b3f628751c882bfe179b39322d20247523",
+  "split_manifest_sha256": "e076033aa293ebad2058cec0ed2395292202f87bec9a78bfe2d350fa38e06c57",
+  "model_sha256": "81f144a1c7cd4910989374a1a86c85e955fb4f65cd81ef88c26e7cbcf1158bfd",
+  "model_run_sha256": "c05070be717dda36aa3a272b532872ee1402b203cf03273a4aa73c2e755c911f",
+  "localizer_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2",
+  "versions": {
+    "tensorflow": "2.20.0",
+    "numpy": "2.5.3",
+    "pillow": "12.3.0"
+  },
+  "device": "WSL desktop CPU; GPU disabled",
+  "labels": [
+    "source_cotton_appearance",
+    "source_denim_appearance",
+    "source_leather_appearance",
+    "source_chiffon_appearance"
+  ],
+  "manual_metrics": {
+    "total": 5,
+    "accepted": 5,
+    "correct": 4,
+    "coverage": 1.0,
+    "correct_fraction_all": 0.8,
+    "accuracy_accepted": 0.8,
+    "macro_f1_accepted": 0.7,
+    "confusion_matrix_accepted": [
+      [
+        2,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0
+      ],
+      [
+        1,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  "automatic_metrics": {
+    "total": 5,
+    "accepted": 4,
+    "correct": 3,
+    "coverage": 0.8,
+    "correct_fraction_all": 0.6,
+    "accuracy_accepted": 0.75,
+    "macro_f1_accepted": 0.6666666666666666,
+    "confusion_matrix_accepted": [
+      [
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        1,
+        0,
+        0
+      ]
+    ]
+  },
+  "predictions": [
+    {
+      "sample_id": "deepfashion-multimodal-WOMEN-Skirts-id_00000003-02_1_front",
+      "group_id": "deepfashion-inshop-WOMEN-Skirts-id_00000003",
+      "image_sha256": "69c8cdc9a4591ccf675ada6261c5450f2edf76f96eecb6941b4cbd7c4d89b7b6",
+      "original_path": "data/external/deepfashion_multimodal_candidates/WOMEN-Skirts-id_00000003-02_1_front.jpg",
+      "label": "source_cotton_appearance",
+      "source_frame_size": [
+        750,
+        1101
+      ],
+      "manual": {
+        "status": "research_only",
+        "label": "source_cotton_appearance",
+        "score": 0.4190566837787628,
+        "scores": [
+          0.4190566837787628,
+          0.18077008426189423,
+          0.08368716388940811,
+          0.31648603081703186
+        ],
+        "labels": [
+          "source_cotton_appearance",
+          "source_denim_appearance",
+          "source_leather_appearance",
+          "source_chiffon_appearance"
+        ],
+        "reason": "Source appearance smoke only; not verified fiber composition.",
+        "score_semantics": "uncalibrated softmax score",
+        "composition_verified": false,
+        "live_approved": false,
+        "pi_verified": false,
+        "runtime": "tensorflow.lite",
+        "model_sha256": "81f144a1c7cd4910989374a1a86c85e955fb4f65cd81ef88c26e7cbcf1158bfd",
+        "run_sha256": "c05070be717dda36aa3a272b532872ee1402b203cf03273a4aa73c2e755c911f",
+        "roi_xyxy": [
+          103,
+          568,
+          440,
+          908
+        ],
+        "source_frame_size": [
+          750,
+          1101
+        ],
+        "preprocessing": "Original source-pixel ROI before bilinear pad224 gray128; no ROI expansion"
+      },
+      "localization": {
+        "status": "provisional",
+        "roi": [
+          107,
+          471,
+          442,
+          925
+        ],
+        "reason": "experimental_mask_not_verified_presence_or_full_view",
+        "mask_pixels": 425,
+        "threshold": 0.5,
+        "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+      },
+      "automatic": {
+        "status": "research_only",
+        "label": "source_cotton_appearance",
+        "score": 0.37586885690689087,
+        "scores": [
+          0.37586885690689087,
+          0.26492512226104736,
+          0.04579874500632286,
+          0.3134073317050934
+        ],
+        "labels": [
+          "source_cotton_appearance",
+          "source_denim_appearance",
+          "source_leather_appearance",
+          "source_chiffon_appearance"
+        ],
+        "reason": "Source appearance smoke only; not verified fiber composition.",
+        "score_semantics": "uncalibrated softmax score",
+        "composition_verified": false,
+        "live_approved": false,
+        "pi_verified": false,
+        "runtime": "tensorflow.lite",
+        "model_sha256": "81f144a1c7cd4910989374a1a86c85e955fb4f65cd81ef88c26e7cbcf1158bfd",
+        "run_sha256": "c05070be717dda36aa3a272b532872ee1402b203cf03273a4aa73c2e755c911f",
+        "roi_xyxy": [
+          107,
+          471,
+          442,
+          925
+        ],
+        "source_frame_size": [
+          750,
+          1101
+        ],
+        "preprocessing": "Original source-pixel ROI before bilinear pad224 gray128; no ROI expansion"
+      }
+    },
+    {
+      "sample_id": "deepfashion-multimodal-WOMEN-Skirts-id_00000334-02_1_front",
+      "group_id": "deepfashion-inshop-WOMEN-Skirts-id_00000334",
+      "image_sha256": "4d5a0e59aae29c618fe7176f0547cd5fb89d6169a36436255acdc1aeb697d1f1",
+      "original_path": "data/external/deepfashion_multimodal_candidates/WOMEN-Skirts-id_00000334-02_1_front.jpg",
+      "label": "source_cotton_appearance",
+      "source_frame_size": [
+        750,
+        1101
+      ],
+      "manual": {
+        "status": "research_only",
+        "label": "source_cotton_appearance",
+        "score": 0.559072732925415,
+        "scores": [
+          0.559072732925415,
+          0.2945297062397003,
+          0.06035440042614937,
+          0.0860431119799614
+        ],
+        "labels": [
+          "source_cotton_appearance",
+          "source_denim_appearance",
+          "source_leather_appearance",
+          "source_chiffon_appearance"
+        ],
+        "reason": "Source appearance smoke only; not verified fiber composition.",
+        "score_semantics": "uncalibrated softmax score",
+        "composition_verified": false,
+        "live_approved": false,
+        "pi_verified": false,
+        "runtime": "tensorflow.lite",
+        "model_sha256": "81f144a1c7cd4910989374a1a86c85e955fb4f65cd81ef88c26e7cbcf1158bfd",
+        "run_sha256": "c05070be717dda36aa3a272b532872ee1402b203cf03273a4aa73c2e755c911f",
+        "roi_xyxy": [
+          290,
+          388,
+          466,
+          755
+        ],
+        "source_frame_size": [
+          750,
+          1101
+        ],
+        "preprocessing": "Original source-pixel ROI before bilinear pad224 gray128; no ROI expansion"
+      },
+      "localization": {
+        "status": "unavailable",
+        "roi": null,
+        "reason": "multiple_regions",
+        "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+      },
+      "automatic": null
+    },
+    {
+      "sample_id": "deepfashion-multimodal-WOMEN-Skirts-id_00002711-01_1_front",
+      "group_id": "deepfashion-inshop-WOMEN-Skirts-id_00002711",
+      "image_sha256": "7c74cd2a0911c4f4270b379a01065ecbaf36761a18188b520249945925fe1707",
+      "original_path": "data/external/deepfashion_multimodal_candidates/WOMEN-Skirts-id_00002711-01_1_front.jpg",
+      "label": "source_leather_appearance",
+      "source_frame_size": [
+        750,
+        1101
+      ],
+      "manual": {
+        "status": "research_only",
+        "label": "source_leather_appearance",
+        "score": 0.44578099250793457,
+        "scores": [
+          0.21834711730480194,
+          0.10131800919771194,
+          0.44578099250793457,
+          0.23455379903316498
+        ],
+        "labels": [
+          "source_cotton_appearance",
+          "source_denim_appearance",
+          "source_leather_appearance",
+          "source_chiffon_appearance"
+        ],
+        "reason": "Source appearance smoke only; not verified fiber composition.",
+        "score_semantics": "uncalibrated softmax score",
+        "composition_verified": false,
+        "live_approved": false,
+        "pi_verified": false,
+        "runtime": "tensorflow.lite",
+        "model_sha256": "81f144a1c7cd4910989374a1a86c85e955fb4f65cd81ef88c26e7cbcf1158bfd",
+        "run_sha256": "c05070be717dda36aa3a272b532872ee1402b203cf03273a4aa73c2e755c911f",
+        "roi_xyxy": [
+          253,
+          374,
+          571,
+          813
+        ],
+        "source_frame_size": [
+          750,
+          1101
+        ],
+        "preprocessing": "Original source-pixel ROI before bilinear pad224 gray128; no ROI expansion"
+      },
+      "localization": {
+        "status": "provisional",
+        "roi": [
+          241,
+          353,
+          603,
+          846
+        ],
+        "reason": "experimental_mask_not_verified_presence_or_full_view",
+        "mask_pixels": 499,
+        "threshold": 0.5,
+        "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+      },
+      "automatic": {
+        "status": "research_only",
+        "label": "source_leather_appearance",
+        "score": 0.3954038918018341,
+        "scores": [
+          0.20625005662441254,
+          0.20726378262043,
+          0.3954038918018341,
+          0.19108235836029053
+        ],
+        "labels": [
+          "source_cotton_appearance",
+          "source_denim_appearance",
+          "source_leather_appearance",
+          "source_chiffon_appearance"
+        ],
+        "reason": "Source appearance smoke only; not verified fiber composition.",
+        "score_semantics": "uncalibrated softmax score",
+        "composition_verified": false,
+        "live_approved": false,
+        "pi_verified": false,
+        "runtime": "tensorflow.lite",
+        "model_sha256": "81f144a1c7cd4910989374a1a86c85e955fb4f65cd81ef88c26e7cbcf1158bfd",
+        "run_sha256": "c05070be717dda36aa3a272b532872ee1402b203cf03273a4aa73c2e755c911f",
+        "roi_xyxy": [
+          241,
+          353,
+          603,
+          846
+        ],
+        "source_frame_size": [
+          750,
+          1101
+        ],
+        "preprocessing": "Original source-pixel ROI before bilinear pad224 gray128; no ROI expansion"
+      }
+    },
+    {
+      "sample_id": "deepfashion-multimodal-WOMEN-Skirts-id_00004182-01_1_front",
+      "group_id": "deepfashion-inshop-WOMEN-Skirts-id_00004182",
+      "image_sha256": "19e680997f7812bff4cf830c5f227d8ea8ff60741af49eae65b1db44d1d515ed",
+      "original_path": "data/external/deepfashion_multimodal_candidates/WOMEN-Skirts-id_00004182-01_1_front.jpg",
+      "label": "source_chiffon_appearance",
+      "source_frame_size": [
+        750,
+        1101
+      ],
+      "manual": {
+        "status": "research_only",
+        "label": "source_cotton_appearance",
+        "score": 0.49575886130332947,
+        "scores": [
+          0.49575886130332947,
+          0.45782798528671265,
+          0.03265230357646942,
+          0.013760831207036972
+        ],
+        "labels": [
+          "source_cotton_appearance",
+          "source_denim_appearance",
+          "source_leather_appearance",
+          "source_chiffon_appearance"
+        ],
+        "reason": "Source appearance smoke only; not verified fiber composition.",
+        "score_semantics": "uncalibrated softmax score",
+        "composition_verified": false,
+        "live_approved": false,
+        "pi_verified": false,
+        "runtime": "tensorflow.lite",
+        "model_sha256": "81f144a1c7cd4910989374a1a86c85e955fb4f65cd81ef88c26e7cbcf1158bfd",
+        "run_sha256": "c05070be717dda36aa3a272b532872ee1402b203cf03273a4aa73c2e755c911f",
+        "roi_xyxy": [
+          261,
+          383,
+          528,
+          920
+        ],
+        "source_frame_size": [
+          750,
+          1101
+        ],
+        "preprocessing": "Original source-pixel ROI before bilinear pad224 gray128; no ROI expansion"
+      },
+      "localization": {
+        "status": "provisional",
+        "roi": [
+          241,
+          373,
+          536,
+          866
+        ],
+        "reason": "experimental_mask_not_verified_presence_or_full_view",
+        "mask_pixels": 406,
+        "threshold": 0.5,
+        "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+      },
+      "automatic": {
+        "status": "research_only",
+        "label": "source_denim_appearance",
+        "score": 0.5850380063056946,
+        "scores": [
+          0.36865514516830444,
+          0.5850380063056946,
+          0.03246768191456795,
+          0.01383924763649702
+        ],
+        "labels": [
+          "source_cotton_appearance",
+          "source_denim_appearance",
+          "source_leather_appearance",
+          "source_chiffon_appearance"
+        ],
+        "reason": "Source appearance smoke only; not verified fiber composition.",
+        "score_semantics": "uncalibrated softmax score",
+        "composition_verified": false,
+        "live_approved": false,
+        "pi_verified": false,
+        "runtime": "tensorflow.lite",
+        "model_sha256": "81f144a1c7cd4910989374a1a86c85e955fb4f65cd81ef88c26e7cbcf1158bfd",
+        "run_sha256": "c05070be717dda36aa3a272b532872ee1402b203cf03273a4aa73c2e755c911f",
+        "roi_xyxy": [
+          241,
+          373,
+          536,
+          866
+        ],
+        "source_frame_size": [
+          750,
+          1101
+        ],
+        "preprocessing": "Original source-pixel ROI before bilinear pad224 gray128; no ROI expansion"
+      }
+    },
+    {
+      "sample_id": "deepfashion-multimodal-WOMEN-Skirts-id_00004513-04_1_front",
+      "group_id": "deepfashion-inshop-WOMEN-Skirts-id_00004513",
+      "image_sha256": "ed8eae0b10a13d53fd77e0f3d9d241200115e8592e57d8c40ba3ae204511c16f",
+      "original_path": "data/external/deepfashion_multimodal_candidates/WOMEN-Skirts-id_00004513-04_1_front.jpg",
+      "label": "source_denim_appearance",
+      "source_frame_size": [
+        750,
+        1101
+      ],
+      "manual": {
+        "status": "research_only",
+        "label": "source_denim_appearance",
+        "score": 0.9180270433425903,
+        "scores": [
+          0.023972956463694572,
+          0.9180270433425903,
+          0.041630152612924576,
+          0.016369877383112907
+        ],
+        "labels": [
+          "source_cotton_appearance",
+          "source_denim_appearance",
+          "source_leather_appearance",
+          "source_chiffon_appearance"
+        ],
+        "reason": "Source appearance smoke only; not verified fiber composition.",
+        "score_semantics": "uncalibrated softmax score",
+        "composition_verified": false,
+        "live_approved": false,
+        "pi_verified": false,
+        "runtime": "tensorflow.lite",
+        "model_sha256": "81f144a1c7cd4910989374a1a86c85e955fb4f65cd81ef88c26e7cbcf1158bfd",
+        "run_sha256": "c05070be717dda36aa3a272b532872ee1402b203cf03273a4aa73c2e755c911f",
+        "roi_xyxy": [
+          193,
+          619,
+          515,
+          1013
+        ],
+        "source_frame_size": [
+          750,
+          1101
+        ],
+        "preprocessing": "Original source-pixel ROI before bilinear pad224 gray128; no ROI expansion"
+      },
+      "localization": {
+        "status": "provisional",
+        "roi": [
+          174,
+          353,
+          536,
+          1023
+        ],
+        "reason": "experimental_mask_not_verified_presence_or_full_view",
+        "mask_pixels": 726,
+        "threshold": 0.5,
+        "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+      },
+      "automatic": {
+        "status": "research_only",
+        "label": "source_denim_appearance",
+        "score": 0.6963582038879395,
+        "scores": [
+          0.25761035084724426,
+          0.6963582038879395,
+          0.016130106523633003,
+          0.029901277273893356
+        ],
+        "labels": [
+          "source_cotton_appearance",
+          "source_denim_appearance",
+          "source_leather_appearance",
+          "source_chiffon_appearance"
+        ],
+        "reason": "Source appearance smoke only; not verified fiber composition.",
+        "score_semantics": "uncalibrated softmax score",
+        "composition_verified": false,
+        "live_approved": false,
+        "pi_verified": false,
+        "runtime": "tensorflow.lite",
+        "model_sha256": "81f144a1c7cd4910989374a1a86c85e955fb4f65cd81ef88c26e7cbcf1158bfd",
+        "run_sha256": "c05070be717dda36aa3a272b532872ee1402b203cf03273a4aa73c2e755c911f",
+        "roi_xyxy": [
+          174,
+          353,
+          536,
+          1023
+        ],
+        "source_frame_size": [
+          750,
+          1101
+        ],
+        "preprocessing": "Original source-pixel ROI before bilinear pad224 gray128; no ROI expansion"
+      }
+    }
+  ],
+  "pi_verified": false,
+  "camera_verified": false,
+  "live_approved": false,
+  "limitations": [
+    "Five source-appearance development images only; no independent human ground truth.",
+    "Source appearance annotations do not establish fiber composition.",
+    "Automatic acceptance is a mask decoder output, not verified skirt presence or full visibility.",
+    "No threshold tuning, model retraining, final-test consumption or new admission.",
+    "No camera, Pi, latency benchmark or calibration evidence."
+  ]
+}

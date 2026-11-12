@@ -1,0 +1,468 @@
+{
+  "recorded_at": "2026-11-04T14:48:40.547884+08:00",
+  "audit": {
+    "path": "records/validation/2026-11-04-dataset-partitions-audit.json",
+    "sha256": "f1cd02cee2dab22070531d62e8401c74e9a0108003c296486759d8cf546e1833"
+  },
+  "generator": {
+    "path": "tools/create_dataset_diagrams.py",
+    "sha256": "e01fa03ea421de97afb22b9f4ba8f4eb1a7101b1e2e3d2d9a03b679e013a7314"
+  },
+  "diagrams": [
+    "06_training_validation_test",
+    "07_datasets_by_model",
+    "08_planned_train_validation_test_workflow",
+    "09_grouping_prevents_data_leakage"
+  ],
+  "source_audit": {
+    "schema_version": 1,
+    "date_asia_manila": "2026-11-04",
+    "status": "completed_metadata_partition_audit",
+    "scope": "Recorded metadata only; no protected photographs opened, no inference/training, no admissions or split changes.",
+    "checkpoint_audit": {
+      "path": "records/continuation/latest.json",
+      "sha256_at_audit": "f05df134e6af1359db3380eba7c7f7e884a49a08bf87bdea52888d773521175d",
+      "references_checked": 173,
+      "mismatches": []
+    },
+    "sources": {
+      "registry": {
+        "path": "data/registry.json",
+        "sha256": "f5ee21b4fd5f97b8f68c87e917cbdcddb3225a3a6bc7b42c6f4613615f6b76ee"
+      },
+      "source_skirt_catalog": {
+        "path": "data/manifests/skirt_candidates.jsonl",
+        "sha256": "3eb0038cf41995135b03895d6845a9a287fff7462a8e7e9449597a4353c54f24"
+      },
+      "source_skirt_split": {
+        "path": "data/manifests/source-skirt-development-splits.json",
+        "sha256": "df3b096e4d131db55852b20de075d811c95520d23766648928555d755fe8812c"
+      },
+      "pleating": {
+        "path": "data/labels/skirt-baseline-v1.jsonl",
+        "sha256": "9160998b5ab0f65251c53cefd783e1c6351887bec8c655074be64dd2717dc2eb"
+      },
+      "worn": {
+        "path": "data/manifests/worn-pleating-development-v1.jsonl",
+        "sha256": "876bb315009592fdbcf0a646703b21d99801756f4e37b1807a66675bdbd98ec2"
+      },
+      "negative": {
+        "path": "data/labels/negative-reviewed-v3.jsonl",
+        "sha256": "82009d40445a9091f7998ab8479cec10b5086826001b7b9f513862bd11da52d1"
+      },
+      "localizer": {
+        "path": "records/experiments/20261014-localizer-v2/labelled-inputs.json",
+        "sha256": "018a03dd78549e8a54a18d00116722eb4ffcc5c6208f17ae967e3c6158bd8c0c"
+      },
+      "localizer_saved_inputs": {
+        "path": "records/experiments/20261014-localizer-v2/inputs.json",
+        "sha256": "03a8a7d95560a3f0e5f253ca4ca1bc4f6699d401690106cc7a29880d0e0877c3"
+      },
+      "category": {
+        "path": "records/experiments/20261021-category-presence-v1/inputs.json",
+        "sha256": "5fd31356dad9333efaa82cb0e2a312533fe695b5c565278cd00136c9e693a1f7"
+      },
+      "fabric": {
+        "path": "data/labels/fabric-pilot-v1.jsonl",
+        "sha256": "92a80e4f974b9730f4631da75fed99b3f628751c882bfe179b39322d20247523"
+      },
+      "fabric_split": {
+        "path": "records/experiments/20261011-fabric-smoke-v1/splits.json",
+        "sha256": "e076033aa293ebad2058cec0ed2395292202f87bec9a78bfe2d350fa38e06c57"
+      },
+      "protected_seed": {
+        "path": "data/provenance/external_holdout_samples.jsonl",
+        "sha256": "80518a060dc06a22b57df484cd746298e7080c09f2e053216d0dd8c40cf1dd41"
+      },
+      "geometry": {
+        "path": "records/validation/2026-10-21-geometry-readiness.json",
+        "sha256": "1835b0b6a41c511bad3fddd292ada1ae2403f70a6910909ad95b6c4f2ba64151"
+      },
+      "fabric_original_partition": {
+        "path": "records/review/2026-10-11-fabric-partition.json",
+        "sha256": "df662be550b36778caa22a0f4fcc9e8834112aa3496f2761beb4176a829e0877"
+      },
+      "fabric_partition_join": {
+        "path": "records/acquisitions/2026-10-11-fabric-partition/skirt-partition-join.jsonl",
+        "sha256": "2827f757ca8222b3aa4e62786aa9158b52ccd88d7ac6352df9a1749418582cb6"
+      },
+      "attribute_original_partition": {
+        "path": "records/acquisitions/2026-10-14-attribute-metadata/partition-feasibility.json",
+        "sha256": "1b7b56ff0b80b56eed00db0ce4baf6fa1127b50a9dc30b5d9ef46396113b2885"
+      },
+      "training_plan": {
+        "path": "docs/TRAINING_PLAN.md",
+        "sha256": "24352ccb75399d9af35ce74c119fffb04fd7cfd533b88c2b99de83b3e43d3e2c"
+      },
+      "evaluation_plan": {
+        "path": "docs/EVALUATION.md",
+        "sha256": "da2959811ddd8738b2d3f9510241d4c2f0c1fd195b7eeba6fe3a323e1d2417d4"
+      }
+    },
+    "registered_collection": {
+      "original_images": 1932,
+      "verified_physical_garments": null,
+      "components": {
+        "source_skirt_candidates": 1000,
+        "texture_candidates": 500,
+        "protected_seed": 12,
+        "negative_candidates": 390,
+        "fullview_fabric_candidates": 25,
+        "composition_source_pilot": 5
+      },
+      "not_a_universal_training_dataset": true
+    },
+    "subsystems": {
+      "source_skirt_pool": {
+        "total_images": 1000,
+        "partitions": {
+          "development_train": {
+            "images": 810,
+            "declared_groups": 803,
+            "labels": {
+              "skirt": 810
+            },
+            "original_partitions": {
+              "train2020": 810
+            }
+          },
+          "development_validation": {
+            "images": 190,
+            "declared_groups": 188,
+            "labels": {
+              "skirt": 190
+            },
+            "original_partitions": {
+              "train2020": 190
+            }
+          }
+        },
+        "group_basis": "group_hash",
+        "cross_train_validation_equal_key_overlap": {
+          "sample_id": [],
+          "sha256": [],
+          "group_hash": [],
+          "group_id": []
+        },
+        "verified_physical_garments": null
+      },
+      "pleating_finetune": {
+        "total_images": 372,
+        "partitions": {
+          "development_train": {
+            "images": 292,
+            "declared_groups": 292,
+            "labels": {
+              "non_pleated": 232,
+              "pleated": 60
+            },
+            "original_partitions": {
+              "train2020": 292
+            }
+          },
+          "development_validation": {
+            "images": 80,
+            "declared_groups": 80,
+            "labels": {
+              "non_pleated": 60,
+              "pleated": 20
+            },
+            "original_partitions": {
+              "train2020": 80
+            }
+          }
+        },
+        "group_basis": "group_hash",
+        "cross_train_validation_equal_key_overlap": {
+          "sample_id": [],
+          "sha256": [],
+          "group_hash": [],
+          "group_id": []
+        },
+        "verified_physical_garments": null
+      },
+      "localizer_v2": {
+        "total_images": 447,
+        "partitions": {
+          "development_train": {
+            "images": 348,
+            "declared_groups": 348,
+            "labels": {
+              "non_pleated": 232,
+              "pleated": 60,
+              "no_skirt": 56
+            },
+            "original_partitions": {
+              "train2020": 348
+            }
+          },
+          "development_validation": {
+            "images": 99,
+            "declared_groups": 99,
+            "labels": {
+              "non_pleated": 60,
+              "pleated": 20,
+              "no_skirt": 19
+            },
+            "original_partitions": {
+              "train2020": 99
+            }
+          }
+        },
+        "group_basis": "group_hash",
+        "cross_train_validation_equal_key_overlap": {
+          "sample_id": [],
+          "sha256": [],
+          "group_hash": [],
+          "group_id": []
+        },
+        "verified_physical_garments": null
+      },
+      "worn_subset": {
+        "total_images": 331,
+        "partitions": {
+          "development_train": {
+            "images": 265,
+            "declared_groups": 265,
+            "labels": {
+              "non_pleated": 213,
+              "pleated": 52
+            },
+            "original_partitions": {
+              "train2020": 265
+            }
+          },
+          "development_validation": {
+            "images": 66,
+            "declared_groups": 66,
+            "labels": {
+              "non_pleated": 49,
+              "pleated": 17
+            },
+            "original_partitions": {
+              "train2020": 66
+            }
+          }
+        },
+        "group_basis": "group_hash",
+        "cross_train_validation_equal_key_overlap": {
+          "sample_id": [],
+          "sha256": [],
+          "group_hash": [],
+          "group_id": []
+        },
+        "verified_physical_garments": null
+      },
+      "category_presence_v1": {
+        "total_images": 538,
+        "partitions": {
+          "development_train": {
+            "images": 420,
+            "declared_groups": 420,
+            "labels": {
+              "non_pleated": 213,
+              "pleated": 52,
+              "no_skirt": 155
+            },
+            "original_partitions": {
+              "train2020": 420
+            }
+          },
+          "development_validation": {
+            "images": 118,
+            "declared_groups": 118,
+            "labels": {
+              "non_pleated": 49,
+              "pleated": 17,
+              "no_skirt": 52
+            },
+            "original_partitions": {
+              "train2020": 118
+            }
+          }
+        },
+        "group_basis": "group_hash",
+        "cross_train_validation_equal_key_overlap": {
+          "sample_id": [],
+          "sha256": [],
+          "group_hash": [],
+          "group_id": []
+        },
+        "verified_physical_garments": null
+      },
+      "negative_development": {
+        "total_images": 207,
+        "partitions": {
+          "development_train": {
+            "images": 155,
+            "declared_groups": 155,
+            "labels": {
+              "no_skirt": 155
+            },
+            "original_partitions": {
+              "train2020": 155
+            }
+          },
+          "development_validation": {
+            "images": 52,
+            "declared_groups": 52,
+            "labels": {
+              "no_skirt": 52
+            },
+            "original_partitions": {
+              "train2020": 52
+            }
+          }
+        },
+        "group_basis": "group_hash",
+        "cross_train_validation_equal_key_overlap": {
+          "sample_id": [],
+          "sha256": [],
+          "group_hash": [],
+          "group_id": []
+        },
+        "verified_physical_garments": null
+      },
+      "fabric_smoke": {
+        "total_images": 17,
+        "partitions": {
+          "development_train": {
+            "images": 12,
+            "declared_groups": 12,
+            "labels": {
+              "source_cotton_appearance": 6,
+              "source_denim_appearance": 4,
+              "source_chiffon_appearance": 1,
+              "source_leather_appearance": 1
+            },
+            "original_partitions": {
+              "train": 12
+            }
+          },
+          "development_validation": {
+            "images": 5,
+            "declared_groups": 5,
+            "labels": {
+              "source_cotton_appearance": 2,
+              "source_leather_appearance": 1,
+              "source_chiffon_appearance": 1,
+              "source_denim_appearance": 1
+            },
+            "original_partitions": {
+              "train": 5
+            }
+          }
+        },
+        "group_basis": "group_id",
+        "cross_train_validation_equal_key_overlap": {
+          "sample_id": [],
+          "sha256": [],
+          "group_id": []
+        },
+        "verified_physical_garments": null
+      }
+    },
+    "category_positive_negative": {
+      "development_train": {
+        "skirt_images": 265,
+        "negative_images": 155
+      },
+      "development_validation": {
+        "skirt_images": 66,
+        "negative_images": 52
+      }
+    },
+    "selected_component_overlap": {
+      "pleating_localizer_images": 372,
+      "pleating_category_images": 331,
+      "localizer_category_images": 406,
+      "cross_model_split_conflicts": {},
+      "note": "Intentional reuse of source images across subsystem training; do not sum row totals as unique original or garment counts."
+    },
+    "protected_source_sanity": {
+      "images": 12,
+      "original_partition_counts": {
+        "val2020": 12
+      },
+      "project_role_counts": {
+        "external_holdout_sanity": 12
+      },
+      "declared_source_page_groups": 12,
+      "declared_authors": 7,
+      "development_overlap": {
+        "sample_ids": [],
+        "image_sha256": [],
+        "source_group_ids": []
+      },
+      "final_project_test": false,
+      "not_opened_or_evaluated_in_this_audit": true
+    },
+    "protected_source_metadata": {
+      "deepfashion_multimodal": {
+        "candidate_filename_rows": 848,
+        "original_partition_counts": {
+          "train": 367,
+          "query": 224,
+          "gallery": 257
+        },
+        "train_items_overlapping_test": [],
+        "query_gallery_shared_item_ids": 91,
+        "note": "848 metadata references, not acquired images. Query/gallery are protected original retrieval-test partitions and are not the project final test."
+      },
+      "deepfashion_attribute": {
+        "metadata_rows": 680,
+        "original_partition_counts": {
+          "train": 422,
+          "test": 192,
+          "val": 66
+        },
+        "previously_exposed_broader_holdout_attribute_rows": 258,
+        "newly_admitted_images": 0,
+        "note": "Earlier fine-training metadata exposed broader holdout attributes before partition join; none used by a model. No acquisition eligible under conservative folder grouping."
+      }
+    },
+    "geometry": {
+      "observed_annotated_originals": 0,
+      "unannotated_validation_inventory_members": 66,
+      "project_final_test_observations": 0,
+      "physical_calibration_verified": false
+    },
+    "final_project_test": {
+      "status": "not_collected_or_frozen",
+      "registered_camera_images": 0,
+      "observed_geometry_annotations": 0,
+      "manifest": null,
+      "metrics": null,
+      "final_test_group_count": null,
+      "reason": "Independent garments, physical camera measurements and verified labels are not available; source holdouts do not substitute for this evaluation."
+    },
+    "audit_checks": {
+      "original_source_assignment_preserved_for_pleating_and_worn": true,
+      "category_inputs_equal_worn_plus_admitted_negatives": true,
+      "fabric_labels_match_archived_split": true,
+      "localizer_labels_match_archived_input_id_hash_split_group": true,
+      "cross_model_sample_split_conflicts": 0,
+      "cross_partition_equal_key_overlaps": 0,
+      "protected_seed_sample_hash_overlaps": 0
+    },
+    "interpretation_cautions": [
+      "420/118 describes the category-presence experiment and current chain comparison, not the training membership of every selected component.",
+      "No universal 70/15/15 or 80/10/10 split was executed. Each actual research subsystem retains its own recorded grouped development split.",
+      "Existing validation images were reused for model/epoch selection and diagnostics; they are not a final independent test.",
+      "Equal-key disjointness cannot exclude unknown garment relationships or unrecorded source/session correlations.",
+      "All group counts use stored source or connected-component IDs; no physical garment uniqueness is certified.",
+      "Original-image counts and source-label counts must not become garment counts or verified fiber-composition claims.",
+      "Protected source validation/test metadata exists. Stating no test-related data exists would be misleading; final project device test remains absent."
+    ],
+    "no_changes": {
+      "models": true,
+      "thresholds": true,
+      "datasets": true,
+      "splits": true,
+      "dependencies": true
+    }
+  },
+  "scope": "Two actual metadata diagrams; two proposed methodology diagrams. No new training or split.",
+  "dpi": 300,
+  "pdf_vector": true
+}

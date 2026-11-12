@@ -1,0 +1,135 @@
+{
+  "recorded_at_utc": "2026-10-05T15:57:46.082258+00:00",
+  "status": "passed",
+  "test": "real_model_http_smoke",
+  "source_manifest_sha256": "9160998b5ab0f65251c53cefd783e1c6351887bec8c655074be64dd2717dc2eb",
+  "archive_sha256": "b29ff0c768d9b6966cfc0dd7880e423e0a3e8f77c228481404673a8978938aa9",
+  "queue_total": 1000,
+  "submitted_reviews": 0,
+  "checks": [
+    {
+      "sample_id": "fashionpedia-train2020-12679",
+      "image_sha256": "a2c1d0c8e7b2abe8f87d8142c7a93cf67e1ae7db39d29f77539c09722d3fa945",
+      "archived_score_delta": 0.0,
+      "result": {
+        "style": {
+          "status": "provisional",
+          "label": "non_pleated",
+          "score": 0.9994708895683289,
+          "reason": "Agent-labelled web-image pilot; score is uncalibrated and input validity is user-confirmed."
+        },
+        "fabric": {
+          "status": "unavailable",
+          "reason": "No verified fabric model is installed."
+        },
+        "length": {
+          "status": "unavailable",
+          "reason": "Calibrated length measurement is not implemented."
+        },
+        "metadata": {
+          "roi_xyxy": [
+            241,
+            489,
+            563,
+            988
+          ],
+          "input_width": 682,
+          "input_height": 1024,
+          "model_input_width": 224,
+          "model_input_height": 224,
+          "runtime": "tensorflow.lite",
+          "model_id": "skirt-finetune-v1",
+          "model_sha256": "c1d8f49e221a2672c20adb87fe4ae5d2f6966f125ee99cb212ff2eb56fffdbf0",
+          "contract_sha256": "89adbc26323d62b87dd8e7cca0481f40f6cdcd9fd44a8da738f05f5f00bd8a99",
+          "full_skirt_confirmed": true,
+          "roi_source": "user_region",
+          "score_semantics": "uncalibrated softmax score",
+          "pi_verified": false
+        }
+      }
+    },
+    {
+      "sample_id": "fashionpedia-train2020-16838",
+      "image_sha256": "b4d6708c717269eb033cf5da253bdc3e70005499740b1e956126a2b85b0d9878",
+      "archived_score_delta": 0.0,
+      "result": {
+        "style": {
+          "status": "provisional",
+          "label": "non_pleated",
+          "score": 0.9870360493659973,
+          "reason": "Agent-labelled web-image pilot; score is uncalibrated and input validity is user-confirmed."
+        },
+        "fabric": {
+          "status": "unavailable",
+          "reason": "No verified fabric model is installed."
+        },
+        "length": {
+          "status": "unavailable",
+          "reason": "Calibrated length measurement is not implemented."
+        },
+        "metadata": {
+          "roi_xyxy": [
+            335,
+            521,
+            479,
+            683
+          ],
+          "input_width": 737,
+          "input_height": 1024,
+          "model_input_width": 224,
+          "model_input_height": 224,
+          "runtime": "tensorflow.lite",
+          "model_id": "skirt-finetune-v1",
+          "model_sha256": "c1d8f49e221a2672c20adb87fe4ae5d2f6966f125ee99cb212ff2eb56fffdbf0",
+          "contract_sha256": "89adbc26323d62b87dd8e7cca0481f40f6cdcd9fd44a8da738f05f5f00bd8a99",
+          "full_skirt_confirmed": true,
+          "roi_source": "user_region",
+          "score_semantics": "uncalibrated softmax score",
+          "pi_verified": false
+        }
+      }
+    },
+    {
+      "sample_id": "fashionpedia-train2020-16912",
+      "image_sha256": "8cf097d41f7a51236470bf3ce73722cabe0cf285cf8f062f148be2f910550e1b",
+      "archived_score_delta": 0.0,
+      "result": {
+        "style": {
+          "status": "provisional",
+          "label": "non_pleated",
+          "score": 0.9989023208618164,
+          "reason": "Agent-labelled web-image pilot; score is uncalibrated and input validity is user-confirmed."
+        },
+        "fabric": {
+          "status": "unavailable",
+          "reason": "No verified fabric model is installed."
+        },
+        "length": {
+          "status": "unavailable",
+          "reason": "Calibrated length measurement is not implemented."
+        },
+        "metadata": {
+          "roi_xyxy": [
+            269,
+            391,
+            459,
+            741
+          ],
+          "input_width": 633,
+          "input_height": 1024,
+          "model_input_width": 224,
+          "model_input_height": 224,
+          "runtime": "tensorflow.lite",
+          "model_id": "skirt-finetune-v1",
+          "model_sha256": "c1d8f49e221a2672c20adb87fe4ae5d2f6966f125ee99cb212ff2eb56fffdbf0",
+          "contract_sha256": "89adbc26323d62b87dd8e7cca0481f40f6cdcd9fd44a8da738f05f5f00bd8a99",
+          "full_skirt_confirmed": true,
+          "roi_source": "user_region",
+          "score_semantics": "uncalibrated softmax score",
+          "pi_verified": false
+        }
+      }
+    }
+  ],
+  "limitations": "Three existing development images; not new accuracy evidence, live-camera or Pi verification."
+}

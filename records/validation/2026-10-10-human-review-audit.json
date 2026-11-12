@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "created_at_utc": "2026-10-10T07:54:39.097830+00:00",
+  "status": "no_human_events",
+  "training_approved": false,
+  "source_manifest_sha256": "3eb0038cf41995135b03895d6845a9a287fff7462a8e7e9449597a4353c54f24",
+  "split_manifest_sha256": "df3b096e4d131db55852b20de075d811c95520d23766648928555d755fe8812c",
+  "events_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "events_file_present": false,
+  "candidate_count": 1000,
+  "event_count": 0,
+  "invalid_event_count": 0,
+  "image_integrity_errors": {},
+  "samples": [],
+  "events": [],
+  "limitations": [
+    "Reviewer identity is self-reported, not authenticated.",
+    "Hashes detect inconsistency, not malicious rewriting of all evidence.",
+    "Agreement does not approve labels or establish garment independence.",
+    "No labels, original images or split assignments were modified."
+  ]
+}

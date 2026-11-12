@@ -1,0 +1,62 @@
+__pycache__/
+*.py[cod]
+.venv/
+.venv-tools/
+.venv-*/
+.env
+.env.*
+tmp/
+data/external/
+data/raw/
+data/processed/
+data/cache/
+artifacts/
+*.tflite
+*.keras
+*.h5
+*.pt
+*.pth
+*.onnx
+*.zip
+*.tar.gz
+.ipynb_checkpoints/
+node_modules/
+presentation_build/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Third-party photos, trained payloads and array caches transfer separately.
+data/candidates/
+records/**/*.jpg
+records/**/*.jpeg
+records/**/*.bin
+records/**/*.npz
+records/**/*.npy
+# Keep transport logs/plans and executed code, but transfer acquired third-party
+# annotation tables, metadata dumps and source-page snapshots privately.
+records/acquisitions/**/*
+!records/acquisitions/**/
+!records/acquisitions/**/acquisition.json
+!records/acquisitions/**/plan.json
+!records/acquisitions/**/requests.json
+!records/acquisitions/**/*.py
+!records/acquisitions/**/*.md
+output/geometry-review/
+output/**/*.zip
+docs/references/*.jpg
+
+# Local credentials must never enter the repository or asset bundles.
+*.pem
+*.key
+*.pfx
+*.p12
+id_rsa*
+id_ed25519*
+credentials*.json
+
+
+# Keep small manifests, hashes, terms records, and curated result summaries in version control.

@@ -1,0 +1,402 @@
+[
+  {
+    "sample_id": "fashionpedia-train2020-12679",
+    "mask_iou": 0.905693950177936,
+    "positive_grid_pixels": 546
+  },
+  {
+    "sample_id": "fashionpedia-train2020-16838",
+    "mask_iou": 0.4393939393939394,
+    "positive_grid_pixels": 129
+  },
+  {
+    "sample_id": "fashionpedia-train2020-16912",
+    "mask_iou": 0.7573529411764706,
+    "positive_grid_pixels": 271
+  },
+  {
+    "sample_id": "fashionpedia-train2020-17761",
+    "mask_iou": 0.6933333333333334,
+    "positive_grid_pixels": 147
+  },
+  {
+    "sample_id": "fashionpedia-train2020-21255",
+    "mask_iou": 0.18491921005385997,
+    "positive_grid_pixels": 544
+  },
+  {
+    "sample_id": "fashionpedia-train2020-21441",
+    "mask_iou": 0.5070422535211268,
+    "positive_grid_pixels": 67
+  },
+  {
+    "sample_id": "fashionpedia-train2020-21757",
+    "mask_iou": 0.7714285714285715,
+    "positive_grid_pixels": 210
+  },
+  {
+    "sample_id": "fashionpedia-train2020-2208",
+    "mask_iou": 0.3981191222570533,
+    "positive_grid_pixels": 319
+  },
+  {
+    "sample_id": "fashionpedia-train2020-22772",
+    "mask_iou": 0.0,
+    "positive_grid_pixels": 70
+  },
+  {
+    "sample_id": "fashionpedia-train2020-23671",
+    "mask_iou": 0.3865546218487395,
+    "positive_grid_pixels": 119
+  },
+  {
+    "sample_id": "fashionpedia-train2020-23874",
+    "mask_iou": 0.7950819672131147,
+    "positive_grid_pixels": 241
+  },
+  {
+    "sample_id": "fashionpedia-train2020-24110",
+    "mask_iou": 0.7037037037037037,
+    "positive_grid_pixels": 270
+  },
+  {
+    "sample_id": "fashionpedia-train2020-24284",
+    "mask_iou": 0.4632352941176471,
+    "positive_grid_pixels": 270
+  },
+  {
+    "sample_id": "fashionpedia-train2020-24325",
+    "mask_iou": 0.8,
+    "positive_grid_pixels": 280
+  },
+  {
+    "sample_id": "fashionpedia-train2020-24650",
+    "mask_iou": 0.8204158790170132,
+    "positive_grid_pixels": 516
+  },
+  {
+    "sample_id": "fashionpedia-train2020-24708",
+    "mask_iou": 0.7185929648241206,
+    "positive_grid_pixels": 597
+  },
+  {
+    "sample_id": "fashionpedia-train2020-26590",
+    "mask_iou": 0.7710027100271003,
+    "positive_grid_pixels": 738
+  },
+  {
+    "sample_id": "fashionpedia-train2020-2689",
+    "mask_iou": 0.5699530516431925,
+    "positive_grid_pixels": 1035
+  },
+  {
+    "sample_id": "fashionpedia-train2020-26955",
+    "mask_iou": 0.8001007049345418,
+    "positive_grid_pixels": 1657
+  },
+  {
+    "sample_id": "fashionpedia-train2020-27922",
+    "mask_iou": 0.6677704194260485,
+    "positive_grid_pixels": 902
+  },
+  {
+    "sample_id": "fashionpedia-train2020-29142",
+    "mask_iou": 0.570673712021136,
+    "positive_grid_pixels": 755
+  },
+  {
+    "sample_id": "fashionpedia-train2020-29403",
+    "mask_iou": 0.9075067024128687,
+    "positive_grid_pixels": 1422
+  },
+  {
+    "sample_id": "fashionpedia-train2020-29964",
+    "mask_iou": 0.8086040386303776,
+    "positive_grid_pixels": 1138
+  },
+  {
+    "sample_id": "fashionpedia-train2020-30563",
+    "mask_iou": 0.9072164948453608,
+    "positive_grid_pixels": 1154
+  },
+  {
+    "sample_id": "fashionpedia-train2020-3166",
+    "mask_iou": 0.5110565110565111,
+    "positive_grid_pixels": 405
+  },
+  {
+    "sample_id": "fashionpedia-train2020-31762",
+    "mask_iou": 0.674025974025974,
+    "positive_grid_pixels": 655
+  },
+  {
+    "sample_id": "fashionpedia-train2020-31853",
+    "mask_iou": 0.8333333333333334,
+    "positive_grid_pixels": 858
+  },
+  {
+    "sample_id": "fashionpedia-train2020-31939",
+    "mask_iou": 0.6832010582010583,
+    "positive_grid_pixels": 1375
+  },
+  {
+    "sample_id": "fashionpedia-train2020-3337",
+    "mask_iou": 0.6036446469248291,
+    "positive_grid_pixels": 423
+  },
+  {
+    "sample_id": "fashionpedia-train2020-33951",
+    "mask_iou": 0.7663551401869159,
+    "positive_grid_pixels": 213
+  },
+  {
+    "sample_id": "fashionpedia-train2020-34108",
+    "mask_iou": 0.8807854137447405,
+    "positive_grid_pixels": 708
+  },
+  {
+    "sample_id": "fashionpedia-train2020-34216",
+    "mask_iou": 0.8728881737731295,
+    "positive_grid_pixels": 1241
+  },
+  {
+    "sample_id": "fashionpedia-train2020-34508",
+    "mask_iou": 0.3407079646017699,
+    "positive_grid_pixels": 450
+  },
+  {
+    "sample_id": "fashionpedia-train2020-35294",
+    "mask_iou": 0.8149606299212598,
+    "positive_grid_pixels": 253
+  },
+  {
+    "sample_id": "fashionpedia-train2020-3554",
+    "mask_iou": 0.5974025974025974,
+    "positive_grid_pixels": 151
+  },
+  {
+    "sample_id": "fashionpedia-train2020-36049",
+    "mask_iou": 0.6420118343195266,
+    "positive_grid_pixels": 332
+  },
+  {
+    "sample_id": "fashionpedia-train2020-37302",
+    "mask_iou": 0.7845528455284553,
+    "positive_grid_pixels": 245
+  },
+  {
+    "sample_id": "fashionpedia-train2020-37357",
+    "mask_iou": 0.7893738140417458,
+    "positive_grid_pixels": 522
+  },
+  {
+    "sample_id": "fashionpedia-train2020-37613",
+    "mask_iou": 0.6375739644970414,
+    "positive_grid_pixels": 664
+  },
+  {
+    "sample_id": "fashionpedia-train2020-38701",
+    "mask_iou": 0.6724137931034483,
+    "positive_grid_pixels": 478
+  },
+  {
+    "sample_id": "fashionpedia-train2020-39103",
+    "mask_iou": 0.8305084745762712,
+    "positive_grid_pixels": 347
+  },
+  {
+    "sample_id": "fashionpedia-train2020-39412",
+    "mask_iou": 0.8154506437768241,
+    "positive_grid_pixels": 697
+  },
+  {
+    "sample_id": "fashionpedia-train2020-40276",
+    "mask_iou": 0.856326530612245,
+    "positive_grid_pixels": 1221
+  },
+  {
+    "sample_id": "fashionpedia-train2020-41170",
+    "mask_iou": 0.7056179775280899,
+    "positive_grid_pixels": 443
+  },
+  {
+    "sample_id": "fashionpedia-train2020-41961",
+    "mask_iou": 0.7340720221606648,
+    "positive_grid_pixels": 361
+  },
+  {
+    "sample_id": "fashionpedia-train2020-43005",
+    "mask_iou": 0.35940409683426444,
+    "positive_grid_pixels": 537
+  },
+  {
+    "sample_id": "fashionpedia-train2020-43076",
+    "mask_iou": 0.721830985915493,
+    "positive_grid_pixels": 284
+  },
+  {
+    "sample_id": "fashionpedia-train2020-43360",
+    "mask_iou": 0.9197200494030465,
+    "positive_grid_pixels": 2352
+  },
+  {
+    "sample_id": "fashionpedia-train2020-43394",
+    "mask_iou": 0.8412698412698413,
+    "positive_grid_pixels": 687
+  },
+  {
+    "sample_id": "fashionpedia-train2020-43660",
+    "mask_iou": 0.3463687150837989,
+    "positive_grid_pixels": 399
+  },
+  {
+    "sample_id": "fashionpedia-train2020-44234",
+    "mask_iou": 0.6993464052287581,
+    "positive_grid_pixels": 138
+  },
+  {
+    "sample_id": "fashionpedia-train2020-44450",
+    "mask_iou": 0.6472602739726028,
+    "positive_grid_pixels": 286
+  },
+  {
+    "sample_id": "fashionpedia-train2020-44571",
+    "mask_iou": 0.8840125391849529,
+    "positive_grid_pixels": 310
+  },
+  {
+    "sample_id": "fashionpedia-train2020-44832",
+    "mask_iou": 0.2894736842105263,
+    "positive_grid_pixels": 529
+  },
+  {
+    "sample_id": "fashionpedia-train2020-45807",
+    "mask_iou": 0.7846858638743456,
+    "positive_grid_pixels": 1504
+  },
+  {
+    "sample_id": "fashionpedia-train2020-45873",
+    "mask_iou": 0.5747663551401869,
+    "positive_grid_pixels": 411
+  },
+  {
+    "sample_id": "fashionpedia-train2020-4713",
+    "mask_iou": 0.5514950166112956,
+    "positive_grid_pixels": 301
+  },
+  {
+    "sample_id": "fashionpedia-train2020-47349",
+    "mask_iou": 0.8586640851887706,
+    "positive_grid_pixels": 1033
+  },
+  {
+    "sample_id": "fashionpedia-train2020-47376",
+    "mask_iou": 0.8632607062359129,
+    "positive_grid_pixels": 1329
+  },
+  {
+    "sample_id": "fashionpedia-train2020-47497",
+    "mask_iou": 0.8335170893054025,
+    "positive_grid_pixels": 904
+  },
+  {
+    "sample_id": "fashionpedia-train2020-48845",
+    "mask_iou": 0.7255813953488373,
+    "positive_grid_pixels": 843
+  },
+  {
+    "sample_id": "fashionpedia-train2020-4925",
+    "mask_iou": 0.6794871794871795,
+    "positive_grid_pixels": 234
+  },
+  {
+    "sample_id": "fashionpedia-train2020-49537",
+    "mask_iou": 0.49122807017543857,
+    "positive_grid_pixels": 284
+  },
+  {
+    "sample_id": "fashionpedia-train2020-49555",
+    "mask_iou": 0.7912087912087912,
+    "positive_grid_pixels": 360
+  },
+  {
+    "sample_id": "fashionpedia-train2020-49867",
+    "mask_iou": 0.6162246489859594,
+    "positive_grid_pixels": 1618
+  },
+  {
+    "sample_id": "fashionpedia-train2020-50372",
+    "mask_iou": 0.6505524861878453,
+    "positive_grid_pixels": 705
+  },
+  {
+    "sample_id": "fashionpedia-train2020-5127",
+    "mask_iou": 0.5191740412979351,
+    "positive_grid_pixels": 336
+  },
+  {
+    "sample_id": "fashionpedia-train2020-5360",
+    "mask_iou": 0.6407035175879398,
+    "positive_grid_pixels": 374
+  },
+  {
+    "sample_id": "fashionpedia-train2020-5478",
+    "mask_iou": 0.548936170212766,
+    "positive_grid_pixels": 232
+  },
+  {
+    "sample_id": "fashionpedia-train2020-5573",
+    "mask_iou": 0.4739583333333333,
+    "positive_grid_pixels": 736
+  },
+  {
+    "sample_id": "fashionpedia-train2020-5601",
+    "mask_iou": 0.5654281098546042,
+    "positive_grid_pixels": 617
+  },
+  {
+    "sample_id": "fashionpedia-train2020-6020",
+    "mask_iou": 0.8118081180811808,
+    "positive_grid_pixels": 266
+  },
+  {
+    "sample_id": "fashionpedia-train2020-6021",
+    "mask_iou": 0.8311036789297659,
+    "positive_grid_pixels": 589
+  },
+  {
+    "sample_id": "fashionpedia-train2020-6359",
+    "mask_iou": 0.17472118959107807,
+    "positive_grid_pixels": 230
+  },
+  {
+    "sample_id": "fashionpedia-train2020-6986",
+    "mask_iou": 0.837890625,
+    "positive_grid_pixels": 979
+  },
+  {
+    "sample_id": "fashionpedia-train2020-830",
+    "mask_iou": 0.5577689243027888,
+    "positive_grid_pixels": 246
+  },
+  {
+    "sample_id": "fashionpedia-train2020-8732",
+    "mask_iou": 0.6389684813753582,
+    "positive_grid_pixels": 346
+  },
+  {
+    "sample_id": "fashionpedia-train2020-8880",
+    "mask_iou": 0.6052631578947368,
+    "positive_grid_pixels": 484
+  },
+  {
+    "sample_id": "fashionpedia-train2020-9473",
+    "mask_iou": 0.7101449275362319,
+    "positive_grid_pixels": 330
+  },
+  {
+    "sample_id": "fashionpedia-train2020-9732",
+    "mask_iou": 0.37003058103975534,
+    "positive_grid_pixels": 322
+  }
+]

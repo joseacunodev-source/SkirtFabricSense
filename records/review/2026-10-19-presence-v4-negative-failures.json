@@ -1,0 +1,1916 @@
+{
+  "schema_version": 1,
+  "date_asia_manila": "2026-10-19",
+  "reviewer": "agent_pilot_finalize",
+  "status": "passed",
+  "scope": "Read-only negative failure analysis from saved exported v4 comparison; only this report written. No downloads/installations, relabelling, admissions, split reassignment, threshold changes, model training or model rerun.",
+  "comparison": "records/validation/2026-10-19-detection-v4-comparison.json",
+  "comparison_sha256": "11bf2fac8f14d3c7b781745c209bac139b02374c0c354cf1a8123c11a48805ec",
+  "models": {
+    "masks": {
+      "v1": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2",
+      "v2": "f2f5f73d34cd99c3fb46502cb806ddbc347c6664e8ce24b8fe06a548c70090de"
+    },
+    "presence": "7bf9df9b1bacc757956c069f688345ff154ee480a65198ee5948fbe80bbcdb87",
+    "pleating": "c1d8f49e221a2672c20adb87fe4ae5d2f6966f125ee99cb212ff2eb56fffdbf0"
+  },
+  "inputs_sha256": "5fd31356dad9333efaa82cb0e2a312533fe695b5c565278cd00136c9e693a1f7",
+  "split_hash": "2da2070b87f9107d4431c32289d3cad242a2929c49185002c1b06971db3ad04f",
+  "fixed_presence_threshold": 0.5,
+  "fixed_mask_threshold": 0.5,
+  "source_hashes": {
+    "records/validation/2026-10-19-detection-v4-comparison.json": {
+      "sha256": "11bf2fac8f14d3c7b781745c209bac139b02374c0c354cf1a8123c11a48805ec",
+      "size_bytes": 189107
+    },
+    "data/labels/negative-reviewed-v3.jsonl": {
+      "sha256": "82009d40445a9091f7998ab8479cec10b5086826001b7b9f513862bd11da52d1",
+      "size_bytes": 1284573
+    },
+    "data/manifests/negative-candidates-v1.jsonl": {
+      "sha256": "c4306ef7afacfde2e35daf1c6d5144c026075e5944180e2f38d46b9730470d02",
+      "size_bytes": 211200
+    },
+    "data/manifests/negative-candidates-v2.jsonl": {
+      "sha256": "12328ba062b158a7c238c4bc6c1b57252f0a16e82001b37911c3c57839f50e3d",
+      "size_bytes": 278040
+    },
+    "data/manifests/negative-candidates-v3.jsonl": {
+      "sha256": "45c69c3db6697ca5b82eed9856d12c3cfde92ce85467f67be75c8e4f1f7209d7",
+      "size_bytes": 433577
+    },
+    "records/experiments/20261018-presence-v4/inputs.json": {
+      "sha256": "5fd31356dad9333efaa82cb0e2a312533fe695b5c565278cd00136c9e693a1f7",
+      "size_bytes": 3493197
+    }
+  },
+  "negative_validation_count": 52,
+  "actual_originals_inspected": 13,
+  "source_failure_counts": {
+    "pants": 3,
+    "shorts": 0,
+    "dress": 10
+  },
+  "per_source_category_counts": {
+    "pants": {
+      "negative_validation_count": 17,
+      "presence_gate_accepted": 6,
+      "v1_localizer_accepted": 7,
+      "v2_localizer_accepted": 12,
+      "v1_plus_presence_accepted": 2,
+      "v2_plus_presence_accepted": 3
+    },
+    "shorts": {
+      "negative_validation_count": 15,
+      "presence_gate_accepted": 1,
+      "v1_localizer_accepted": 5,
+      "v2_localizer_accepted": 6,
+      "v1_plus_presence_accepted": 0,
+      "v2_plus_presence_accepted": 0
+    },
+    "dress": {
+      "negative_validation_count": 20,
+      "presence_gate_accepted": 10,
+      "v1_localizer_accepted": 11,
+      "v2_localizer_accepted": 13,
+      "v1_plus_presence_accepted": 9,
+      "v2_plus_presence_accepted": 10
+    }
+  },
+  "gate_mask_negative_acceptance_table": {
+    "False_gate_False_v2_mask": 17,
+    "False_gate_True_v2_mask": 18,
+    "True_gate_False_v2_mask": 4,
+    "True_gate_True_v2_mask": 13
+  },
+  "observed_summary": [
+    "All13 accepted-negative original files match raw acquisition, curated negative and archived experiment input hashes. All13 retain existing validation assignments.",
+    "All13 failures pass both whole-frame presence gate and V2 localizer. Gate acceptance alone does not establish whole-skirt visibility or separate skirt identity.",
+    "Ten source dresses and three source trousers remain visually consistent with existing source category in this agent review; no definite category conflict or separate skirt found.",
+    "Ten dress failures show connected bodices; several have gathered/flared lower portions that resemble separate skirt crops.",
+    "The three pants failures include cropped striped trousers, a long magenta top over skinny trousers, and a long dark sweater over skinny trousers. Two V2 ROIs cover only hips/upper thighs or long-top hems.",
+    "Twelve failures have one visible wearer;5822has a main wearer plus a distant background person. 27837 contains full dress but wearer feet are out of frame."
+  ],
+  "inferences_not_causal_evidence": [
+    "Dress-versus-separate-skirt discrimination is a priority: lower dress shape and waist seams can look valid to skirt-oriented features. A controlled torso-context ablation is needed before claiming a mechanism.",
+    "Long tops and occluded waists may cause fragment/hip acceptance even when leg separation is visible elsewhere in the original frame. The original frame must remain available for whole-garment identity checks.",
+    "Because these validation errors are inspected development examples, they cannot be copied to training or used to tune thresholds while retaining independent validation claims. New related candidate families must be source/group isolated before training.",
+    "Backgrounds range across studios, events, streets and gardens; no single background shortcut is established from this failure subset."
+  ],
+  "reviews": [
+    {
+      "sample_id": "fashionpedia-negative-candidate-27765",
+      "source_item_id": "27765",
+      "original_path": "data/external/fashionpedia_negatives/images/d8587f971edcec1cf21d0eb88affce2d.jpg",
+      "image_sha256": "335b01d057ba1bbfa9c3c3f2b82628f517dcd5d2800a71d235b6f487a0483c63",
+      "size_bytes": 39396,
+      "dimensions": [
+        613,
+        1024
+      ],
+      "raw_manifest": "data/manifests/negative-candidates-v1.jsonl",
+      "curated_manifest": "data/labels/negative-reviewed-v3.jsonl",
+      "experiment_inputs": "records/experiments/20261018-presence-v4/inputs.json",
+      "source_sampling_category": "dress",
+      "source_annotation_categories": [
+        "bead",
+        "dress",
+        "neckline",
+        "shoe"
+      ],
+      "source_skirt_annotation_count": 0,
+      "existing_split": "development_validation",
+      "existing_presence_target": 0,
+      "existing_group_id": "fashionpedia-source-e86221852c0c25999f06",
+      "reviewer": "agent_pilot_finalize",
+      "review_date_asia_manila": "2026-10-19",
+      "review_method": "Actual local original JPEG displayed through view_image individually in this audit; no contact sheet or generated image substituted. All13 displayed at native dimensions returned by tool.",
+      "observation": {
+        "observed_garment": "dress",
+        "presentation": "worn_single_person",
+        "framing": "Main wearer head-to-shoes in frame against dark studio-like background.",
+        "visible_evidence": "Turquoise sleeveless dress has a fitted bodice joined at gathered waist to a flared lower portion. No separate skirt waistband is visible.",
+        "roi_observation": "V2 ROI starts near waist and contains lower dress and some leg; it excludes neckline and most upper bodice.",
+        "hypothesis": "Lower flared fabric and folds may resemble a skirt when torso construction is not retained in the localizer ROI. This is a hypothesis, not an attribution result."
+      },
+      "semantic_assessment": {
+        "source_category_visual_conflict_observed": false,
+        "operational_note": "Dress lower portion can look like a skirt, but current target is an actual separate skirt garment; no label change is made.",
+        "independent_human_truth": false
+      },
+      "saved_inference_evidence": {
+        "presence": {
+          "accepted": true,
+          "score": 0.9217485189437866,
+          "threshold": 0.5,
+          "model_sha256": "7bf9df9b1bacc757956c069f688345ff154ee480a65198ee5948fbe80bbcdb87",
+          "reason": "experimental_presence_score_not_calibrated_or_full_view_validation"
+        },
+        "paths": {
+          "v1": {
+            "accepted": true,
+            "pleating_prediction": "non_pleated",
+            "localization": {
+              "status": "provisional",
+              "roi": [
+                218,
+                310,
+                493,
+                640
+              ],
+              "reason": "experimental_mask_not_verified_presence_or_full_view",
+              "mask_pixels": 319,
+              "threshold": 0.5,
+              "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+            }
+          },
+          "v1_plus_presence": {
+            "accepted": true,
+            "pleating_prediction": "non_pleated"
+          },
+          "v2": {
+            "accepted": true,
+            "pleating_prediction": "non_pleated",
+            "localization": {
+              "status": "provisional",
+              "roi": [
+                251,
+                329,
+                482,
+                640
+              ],
+              "reason": "experimental_mask_not_verified_presence_or_full_view",
+              "mask_pixels": 296,
+              "threshold": 0.5,
+              "model_sha256": "f2f5f73d34cd99c3fb46502cb806ddbc347c6664e8ce24b8fe06a548c70090de"
+            }
+          },
+          "v2_plus_presence": {
+            "accepted": true,
+            "pleating_prediction": "non_pleated"
+          }
+        }
+      }
+    },
+    {
+      "sample_id": "fashionpedia-negative-v2-5212",
+      "source_item_id": "5212",
+      "original_path": "data/external/fashionpedia_negatives_v2/images/aa693576ef90f2ebb0838fc98f5f80cc.jpg",
+      "image_sha256": "2ee2fd9ddcc07288977fdff3b72f850d756f11e4e06ab805c0cc11d4307ce8eb",
+      "size_bytes": 58324,
+      "dimensions": [
+        614,
+        1024
+      ],
+      "raw_manifest": "data/manifests/negative-candidates-v2.jsonl",
+      "curated_manifest": "data/labels/negative-reviewed-v3.jsonl",
+      "experiment_inputs": "records/experiments/20261018-presence-v4/inputs.json",
+      "source_sampling_category": "dress",
+      "source_annotation_categories": [
+        "bag, wallet",
+        "belt",
+        "dress",
+        "neckline",
+        "shoe"
+      ],
+      "source_skirt_annotation_count": 0,
+      "existing_split": "development_validation",
+      "existing_presence_target": 0,
+      "existing_group_id": "fashionpedia-source-a474ccff05bb9f6ad6a9",
+      "reviewer": "agent_pilot_finalize",
+      "review_date_asia_manila": "2026-10-19",
+      "review_method": "Actual local original JPEG displayed through view_image individually in this audit; no contact sheet or generated image substituted. All13 displayed at native dimensions returned by tool.",
+      "observation": {
+        "observed_garment": "dress",
+        "presentation": "worn_single_person",
+        "framing": "Full wearer in three-quarter/side pose; event-text backdrop and pink floor, handbag partly overlaps garment.",
+        "visible_evidence": "Turquoise sleeveless fitted bodice continues through waist into flared mini hem; one dress rather than separate skirt.",
+        "roi_observation": "V2 ROI spans waist/hip-to-below-hem region, excluding upper bodice.",
+        "hypothesis": "A clear gathered waist and flared lower dress may act as skirt-like shape cues. Background influence is unmeasured."
+      },
+      "semantic_assessment": {
+        "source_category_visual_conflict_observed": false,
+        "operational_note": "Dress lower portion can look like a skirt, but current target is an actual separate skirt garment; no label change is made.",
+        "independent_human_truth": false
+      },
+      "saved_inference_evidence": {
+        "presence": {
+          "accepted": true,
+          "score": 0.8795677423477173,
+          "threshold": 0.5,
+          "model_sha256": "7bf9df9b1bacc757956c069f688345ff154ee480a65198ee5948fbe80bbcdb87",
+          "reason": "experimental_presence_score_not_calibrated_or_full_view_validation"
+        },
+        "paths": {
+          "v1": {
+            "accepted": true,
+            "pleating_prediction": "non_pleated",
+            "localization": {
+              "status": "provisional",
+              "roi": [
+                164,
+                384,
+                417,
+                695
+              ],
+              "reason": "experimental_mask_not_verified_presence_or_full_view",
+              "mask_pixels": 267,
+              "threshold": 0.5,
+              "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+            }
+          },
+          "v1_plus_presence": {
+            "accepted": true,
+            "pleating_prediction": "non_pleated"
+          },
+          "v2": {
+            "accepted": true,
+            "pleating_prediction": "non_pleated",
+            "localization": {
+              "status": "provisional",
+              "roi": [
+                175,
+                402,
+                395,
+                695
+              ],
+              "reason": "experimental_mask_not_verified_presence_or_full_view",
+              "mask_pixels": 214,
+              "threshold": 0.5,
+              "model_sha256": "f2f5f73d34cd99c3fb46502cb806ddbc347c6664e8ce24b8fe06a548c70090de"
+            }
+          },
+          "v2_plus_presence": {
+            "accepted": true,
+            "pleating_prediction": "non_pleated"
+          }
+        }
+      }
+    },
+    {
+      "sample_id": "fashionpedia-negative-v2-8621",
+      "source_item_id": "8621",
+      "original_path": "data/external/fashionpedia_negatives_v2/images/4fba98d55b78da295c077c3b43d8945d.jpg",
+      "image_sha256": "41a550246f87daafe017c15cbb9cc61ec274579578781e815a70f7c6d3689f93",
+      "size_bytes": 67212,
+      "dimensions": [
+        680,
+        1024
+      ],
+      "raw_manifest": "data/manifests/negative-candidates-v2.jsonl",
+      "curated_manifest": "data/labels/negative-reviewed-v3.jsonl",
+      "experiment_inputs": "records/experiments/20261018-presence-v4/inputs.json",
+      "source_sampling_category": "dress",
+      "source_annotation_categories": [
+        "collar",
+        "dress",
+        "shoe",
+        "sock"
+      ],
+      "source_skirt_annotation_count": 0,
+      "existing_split": "development_validation",
+      "existing_presence_target": 0,
+      "existing_group_id": "fashionpedia-source-8850f9f19704d3c49e17",
+      "reviewer": "agent_pilot_finalize",
+      "review_date_asia_manila": "2026-10-19",
+      "review_method": "Actual local original JPEG displayed through view_image individually in this audit; no contact sheet or generated image substituted. All13 displayed at native dimensions returned by tool.",
+      "observation": {
+        "observed_garment": "dress",
+        "presentation": "worn_single_person",
+        "framing": "Full wearer outdoors with bench/plants; crossed forearms overlap waist.",
+        "visible_evidence": "Pink sleeveless collared shirt dress has continuous button placket from upper torso to hem, with flared lower portion.",
+        "roi_observation": "V2 ROI begins around crossed forearms/waist and covers lower dress.",
+        "hypothesis": "Forearm waist occlusion and lower A-line shape may obscure dress-vs-skirt distinction; causal effect has not been tested."
+      },
+      "semantic_assessment": {
+        "source_category_visual_conflict_observed": false,
+        "operational_note": "Dress lower portion can look like a skirt, but current target is an actual separate skirt garment; no label change is made.",
+        "independent_human_truth": false
+      },
+      "saved_inference_evidence": {
+        "presence": {
+          "accepted": true,
+          "score": 0.8965064287185669,
+          "threshold": 0.5,
+          "model_sha256": "7bf9df9b1bacc757956c069f688345ff154ee480a65198ee5948fbe80bbcdb87",
+          "reason": "experimental_presence_score_not_calibrated_or_full_view_validation"
+        },
+        "paths": {
+          "v1": {
+            "accepted": true,
+            "pleating_prediction": "pleated",
+            "localization": {
+              "status": "provisional",
+              "roi": [
+                194,
+                420,
+                413,
+                677
+              ],
+              "reason": "experimental_mask_not_verified_presence_or_full_view",
+              "mask_pixels": 215,
+              "threshold": 0.5,
+              "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+            }
+          },
+          "v1_plus_presence": {
+            "accepted": true,
+            "pleating_prediction": "pleated"
+          },
+          "v2": {
+            "accepted": true,
+            "pleating_prediction": "pleated",
+            "localization": {
+              "status": "provisional",
+              "roi": [
+                206,
+                420,
+                389,
+                677
+              ],
+              "reason": "experimental_mask_not_verified_presence_or_full_view",
+              "mask_pixels": 181,
+              "threshold": 0.5,
+              "model_sha256": "f2f5f73d34cd99c3fb46502cb806ddbc347c6664e8ce24b8fe06a548c70090de"
+            }
+          },
+          "v2_plus_presence": {
+            "accepted": true,
+            "pleating_prediction": "pleated"
+          }
+        }
+      }
+    },
+    {
+      "sample_id": "fashionpedia-negative-v2-24169",
+      "source_item_id": "24169",
+      "original_path": "data/external/fashionpedia_negatives_v2/images/5e7ef55b91015c4922bb573d009f0179.jpg",
+      "image_sha256": "d3ef2d4c8341541d55d90aa4aecb2d0cc398dab08d1110f611168ef8cccfc6be",
+      "size_bytes": 54933,
+      "dimensions": [
+        683,
+        1024
+      ],
+      "raw_manifest": "data/manifests/negative-candidates-v2.jsonl",
+      "curated_manifest": "data/labels/negative-reviewed-v3.jsonl",
+      "experiment_inputs": "records/experiments/20261018-presence-v4/inputs.json",
+      "source_sampling_category": "pants",
+      "source_annotation_categories": [
+        "belt",
+        "buckle",
+        "coat",
+        "collar",
+        "neckline",
+        "pants",
+        "pocket",
+        "shoe",
+        "sleeve",
+        "top, t-shirt, sweatshirt"
+      ],
+      "source_skirt_annotation_count": 0,
+      "existing_split": "development_validation",
+      "existing_presence_target": 0,
+      "existing_group_id": "fashionpedia-source-14d9494325609cf81485",
+      "reviewer": "agent_pilot_finalize",
+      "review_date_asia_manila": "2026-10-19",
+      "review_method": "Actual local original JPEG displayed through view_image individually in this audit; no contact sheet or generated image substituted. All13 displayed at native dimensions returned by tool.",
+      "observation": {
+        "observed_garment": "pants",
+        "presentation": "worn_single_person",
+        "framing": "Full wearer outdoors; open dark coat beside striped cropped trousers, hands at hips.",
+        "visible_evidence": "Striped trousers show fly/crotch and clearly separated left/right legs; separate white top and belt.",
+        "roi_observation": "V2 ROI covers striped lower body and coat margins, ending above shoes; the two trouser legs are present in original view.",
+        "hypothesis": "Vertical stripes, broad garment region and coat flanks may resemble pleating/skirt extent after downsampling; mask pixels and low-resolution model inputs need a controlled ablation to establish this."
+      },
+      "semantic_assessment": {
+        "source_category_visual_conflict_observed": false,
+        "operational_note": "Visible trousers remain negative under current separate-skirt target; occluding/long tops are not relabelled as skirts.",
+        "independent_human_truth": false
+      },
+      "saved_inference_evidence": {
+        "presence": {
+          "accepted": true,
+          "score": 0.8523106575012207,
+          "threshold": 0.5,
+          "model_sha256": "7bf9df9b1bacc757956c069f688345ff154ee480a65198ee5948fbe80bbcdb87",
+          "reason": "experimental_presence_score_not_calibrated_or_full_view_validation"
+        },
+        "paths": {
+          "v1": {
+            "accepted": true,
+            "pleating_prediction": "pleated",
+            "localization": {
+              "status": "provisional",
+              "roi": [
+                256,
+                438,
+                537,
+                915
+              ],
+              "reason": "experimental_mask_not_verified_presence_or_full_view",
+              "mask_pixels": 479,
+              "threshold": 0.5,
+              "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+            }
+          },
+          "v1_plus_presence": {
+            "accepted": true,
+            "pleating_prediction": "pleated"
+          },
+          "v2": {
+            "accepted": true,
+            "pleating_prediction": "pleated",
+            "localization": {
+              "status": "provisional",
+              "roi": [
+                268,
+                457,
+                525,
+                896
+              ],
+              "reason": "experimental_mask_not_verified_presence_or_full_view",
+              "mask_pixels": 393,
+              "threshold": 0.5,
+              "model_sha256": "f2f5f73d34cd99c3fb46502cb806ddbc347c6664e8ce24b8fe06a548c70090de"
+            }
+          },
+          "v2_plus_presence": {
+            "accepted": true,
+            "pleating_prediction": "pleated"
+          }
+        }
+      }
+    },
+    {
+      "sample_id": "fashionpedia-negative-v2-33532",
+      "source_item_id": "33532",
+      "original_path": "data/external/fashionpedia_negatives_v2/images/96fcc6925828ca3e8a9eb972ba11a6c0.jpg",
+      "image_sha256": "195ad21b137ec6c33163bd6df1af6b4e5833e1d72e77244a6a40cafd019c95be",
+      "size_bytes": 155926,
+      "dimensions": [
+        682,
+        1024
+      ],
+      "raw_manifest": "data/manifests/negative-candidates-v2.jsonl",
+      "curated_manifest": "data/labels/negative-reviewed-v3.jsonl",
+      "experiment_inputs": "records/experiments/20261018-presence-v4/inputs.json",
+      "source_sampling_category": "dress",
+      "source_annotation_categories": [
+        "belt",
+        "buckle",
+        "cardigan",
+        "dress",
+        "hat",
+        "neckline",
+        "shoe",
+        "sleeve",
+        "tights, stockings"
+      ],
+      "source_skirt_annotation_count": 0,
+      "existing_split": "development_validation",
+      "existing_presence_target": 0,
+      "existing_group_id": "fashionpedia-source-a7872b24355f0ec580f9",
+      "reviewer": "agent_pilot_finalize",
+      "review_date_asia_manila": "2026-10-19",
+      "review_method": "Actual local original JPEG displayed through view_image individually in this audit; no contact sheet or generated image substituted. All13 displayed at native dimensions returned by tool.",
+      "observation": {
+        "observed_garment": "dress",
+        "presentation": "worn_single_person",
+        "framing": "Full wearer outdoors among plants; oblique stance, long open gray cardigan and black tights.",
+        "visible_evidence": "Teal short-sleeve dress visibly continues from torso through belt to hem; cardigan partly borders/overlaps sides.",
+        "roi_observation": "V2 ROI begins at belted waist and extends through lower dress into tights/cardigan region.",
+        "hypothesis": "Belt and cardigan may create an apparent separate lower garment boundary; this is an observed ambiguity in framing, not a relabel."
+      },
+      "semantic_assessment": {
+        "source_category_visual_conflict_observed": false,
+        "operational_note": "Dress lower portion can look like a skirt, but current target is an actual separate skirt garment; no label change is made.",
+        "independent_human_truth": false
+      },
+      "saved_inference_evidence": {
+        "presence": {
+          "accepted": true,
+          "score": 0.7110034227371216,
+          "threshold": 0.5,
+          "model_sha256": "7bf9df9b1bacc757956c069f688345ff154ee480a65198ee5948fbe80bbcdb87",
+          "reason": "experimental_presence_score_not_calibrated_or_full_view_validation"
+        },
+        "paths": {
+          "v1": {
+            "accepted": true,
+            "pleating_prediction": "non_pleated",
+            "localization": {
+              "status": "provisional",
+              "roi": [
+                243,
+                438,
+                463,
+                896
+              ],
+              "reason": "experimental_mask_not_verified_presence_or_full_view",
+              "mask_pixels": 327,
+              "threshold": 0.5,
+              "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+            }
+          },
+          "v1_plus_presence": {
+            "accepted": true,
+            "pleating_prediction": "non_pleated"
+          },
+          "v2": {
+            "accepted": true,
+            "pleating_prediction": "non_pleated",
+            "localization": {
+              "status": "provisional",
+              "roi": [
+                267,
+                457,
+                439,
+                842
+              ],
+              "reason": "experimental_mask_not_verified_presence_or_full_view",
+              "mask_pixels": 206,
+              "threshold": 0.5,
+              "model_sha256": "f2f5f73d34cd99c3fb46502cb806ddbc347c6664e8ce24b8fe06a548c70090de"
+            }
+          },
+          "v2_plus_presence": {
+            "accepted": true,
+            "pleating_prediction": "non_pleated"
+          }
+        }
+      }
+    },
+    {
+      "sample_id": "fashionpedia-negative-v2-42344",
+      "source_item_id": "42344",
+      "original_path": "data/external/fashionpedia_negatives_v2/images/6b3ecf0e5c391ebe7fd3fc89109bee0c.jpg",
+      "image_sha256": "34a5657e9d3eca0dd1161159124c482d07925d206ea6b93af21fec265cdd4309",
+      "size_bytes": 92873,
+      "dimensions": [
+        640,
+        1024
+      ],
+      "raw_manifest": "data/manifests/negative-candidates-v2.jsonl",
+      "curated_manifest": "data/labels/negative-reviewed-v3.jsonl",
+      "experiment_inputs": "records/experiments/20261018-presence-v4/inputs.json",
+      "source_sampling_category": "dress",
+      "source_annotation_categories": [
+        "dress",
+        "glasses",
+        "neckline",
+        "sequin",
+        "shoe"
+      ],
+      "source_skirt_annotation_count": 0,
+      "existing_split": "development_validation",
+      "existing_presence_target": 0,
+      "existing_group_id": "fashionpedia-source-28e446fd6b062dc520bc",
+      "reviewer": "agent_pilot_finalize",
+      "review_date_asia_manila": "2026-10-19",
+      "review_method": "Actual local original JPEG displayed through view_image individually in this audit; no contact sheet or generated image substituted. All13 displayed at native dimensions returned by tool.",
+      "observation": {
+        "observed_garment": "dress",
+        "presentation": "worn_single_person",
+        "framing": "Full wearer on outdoor stone stairs; bare legs and shoes visible.",
+        "visible_evidence": "Purple halter dress has continuous decorative bodice, broad fitted waist band, gathered lower portion and contrasting lace hem.",
+        "roi_observation": "V2 ROI spans broad waist band and flared lower dress, leaving decorated upper bodice outside.",
+        "hypothesis": "Gathered lower dress and waistband-like band are plausible skirt-like cues; no causal model explanation was measured."
+      },
+      "semantic_assessment": {
+        "source_category_visual_conflict_observed": false,
+        "operational_note": "Dress lower portion can look like a skirt, but current target is an actual separate skirt garment; no label change is made.",
+        "independent_human_truth": false
+      },
+      "saved_inference_evidence": {
+        "presence": {
+          "accepted": true,
+          "score": 0.8971130847930908,
+          "threshold": 0.5,
+          "model_sha256": "7bf9df9b1bacc757956c069f688345ff154ee480a65198ee5948fbe80bbcdb87",
+          "reason": "experimental_presence_score_not_calibrated_or_full_view_validation"
+        },
+        "paths": {
+          "v1": {
+            "accepted": true,
+            "pleating_prediction": "pleated",
+            "localization": {
+              "status": "provisional",
+              "roi": [
+                182,
+                329,
+                480,
+                677
+              ],
+              "reason": "experimental_mask_not_verified_presence_or_full_view",
+              "mask_pixels": 376,
+              "threshold": 0.5,
+              "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+            }
+          },
+          "v1_plus_presence": {
+            "accepted": true,
+            "pleating_prediction": "pleated"
+          },
+          "v2": {
+            "accepted": true,
+            "pleating_prediction": "pleated",
+            "localization": {
+              "status": "provisional",
+              "roi": [
+                194,
+                347,
+                458,
+                677
+              ],
+              "reason": "experimental_mask_not_verified_presence_or_full_view",
+              "mask_pixels": 305,
+              "threshold": 0.5,
+              "model_sha256": "f2f5f73d34cd99c3fb46502cb806ddbc347c6664e8ce24b8fe06a548c70090de"
+            }
+          },
+          "v2_plus_presence": {
+            "accepted": true,
+            "pleating_prediction": "pleated"
+          }
+        }
+      }
+    },
+    {
+      "sample_id": "fashionpedia-negative-v3-5822",
+      "source_item_id": "5822",
+      "original_path": "data/external/fashionpedia_negatives_v3/images/6d527c83d5d882e61bd202ea325099ac.jpg",
+      "image_sha256": "16e84a69d2e14a825811d521a1b8f1662d4616b024e7b168dcd922c181a82f41",
+      "size_bytes": 46818,
+      "dimensions": [
+        682,
+        1024
+      ],
+      "raw_manifest": "data/manifests/negative-candidates-v3.jsonl",
+      "curated_manifest": "data/labels/negative-reviewed-v3.jsonl",
+      "experiment_inputs": "records/experiments/20261018-presence-v4/inputs.json",
+      "source_sampling_category": "pants",
+      "source_annotation_categories": [
+        "jacket",
+        "neckline",
+        "pants",
+        "shoe",
+        "sleeve",
+        "top, t-shirt, sweatshirt",
+        "zipper"
+      ],
+      "source_skirt_annotation_count": 0,
+      "existing_split": "development_validation",
+      "existing_presence_target": 0,
+      "existing_group_id": "fashionpedia-source-3c67dd2aec8c0ad825bf",
+      "reviewer": "agent_pilot_finalize",
+      "review_date_asia_manila": "2026-10-19",
+      "review_method": "Actual local original JPEG displayed through view_image individually in this audit; no contact sheet or generated image substituted. All13 displayed at native dimensions returned by tool.",
+      "observation": {
+        "observed_garment": "pants",
+        "presentation": "worn_primary_person_with_background_person",
+        "framing": "Full primary wearer in dark indoor runway/event scene; a smaller background person also visible.",
+        "visible_evidence": "Primary wearer has long magenta draped top over black close-fitting trousers with crotch and separate legs. Background person has dark lower-body clothing; fine details are limited by distance.",
+        "roi_observation": "V2 ROI [280,365,463,512] covers lower magenta top and upper trouser/hip region; it excludes most trouser legs. V1 rejected for its recorded localizer reason.",
+        "hypothesis": "A long top ending over hips may produce a compact garment-like region. Whole-frame presence can also be affected by multiple people; neither cause is verified. Background absence cannot be independently certified from this image."
+      },
+      "semantic_assessment": {
+        "source_category_visual_conflict_observed": false,
+        "operational_note": "Visible trousers remain negative under current separate-skirt target; occluding/long tops are not relabelled as skirts.",
+        "independent_human_truth": false
+      },
+      "saved_inference_evidence": {
+        "presence": {
+          "accepted": true,
+          "score": 0.880959689617157,
+          "threshold": 0.5,
+          "model_sha256": "7bf9df9b1bacc757956c069f688345ff154ee480a65198ee5948fbe80bbcdb87",
+          "reason": "experimental_presence_score_not_calibrated_or_full_view_validation"
+        },
+        "paths": {
+          "v1": {
+            "accepted": false,
+            "pleating_prediction": null,
+            "localization": {
+              "status": "unavailable",
+              "roi": null,
+              "reason": "multiple_regions",
+              "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+            }
+          },
+          "v1_plus_presence": {
+            "accepted": false,
+            "pleating_prediction": null
+          },
+          "v2": {
+            "accepted": true,
+            "pleating_prediction": "non_pleated",
+            "localization": {
+              "status": "provisional",
+              "roi": [
+                280,
+                365,
+                463,
+                512
+              ],
+              "reason": "experimental_mask_not_verified_presence_or_full_view",
+              "mask_pixels": 88,
+              "threshold": 0.5,
+              "model_sha256": "f2f5f73d34cd99c3fb46502cb806ddbc347c6664e8ce24b8fe06a548c70090de"
+            }
+          },
+          "v2_plus_presence": {
+            "accepted": true,
+            "pleating_prediction": "non_pleated"
+          }
+        }
+      }
+    },
+    {
+      "sample_id": "fashionpedia-negative-v3-41468",
+      "source_item_id": "41468",
+      "original_path": "data/external/fashionpedia_negatives_v3/images/8632faccfb0001a9af6925fc3fedc401.jpg",
+      "image_sha256": "804c65ebb76a5a9f7eb920a4d46137402b71f51ca206f4efb1afbb5328ad839d",
+      "size_bytes": 46302,
+      "dimensions": [
+        451,
+        1024
+      ],
+      "raw_manifest": "data/manifests/negative-candidates-v3.jsonl",
+      "curated_manifest": "data/labels/negative-reviewed-v3.jsonl",
+      "experiment_inputs": "records/experiments/20261018-presence-v4/inputs.json",
+      "source_sampling_category": "dress",
+      "source_annotation_categories": [
+        "bag, wallet",
+        "dress",
+        "glasses",
+        "neckline",
+        "shoe",
+        "sleeve"
+      ],
+      "source_skirt_annotation_count": 0,
+      "existing_split": "development_validation",
+      "existing_presence_target": 0,
+      "existing_group_id": "fashionpedia-source-dcf3bde58816f95db68d",
+      "reviewer": "agent_pilot_finalize",
+      "review_date_asia_manila": "2026-10-19",
+      "review_method": "Actual local original JPEG displayed through view_image individually in this audit; no contact sheet or generated image substituted. All13 displayed at native dimensions returned by tool.",
+      "observation": {
+        "observed_garment": "dress",
+        "presentation": "worn_single_person",
+        "framing": "Full wearer against blue catalog-like background; waist pouch and hands overlap waist.",
+        "visible_evidence": "Multicolor patterned dress has visible neckline and continuous fabric through cinched waist into knee-length lower portion.",
+        "roi_observation": "V2 ROI begins around cinched waist and includes lower dress and hem, excluding neckline and most bodice.",
+        "hypothesis": "Repeated pattern and gathers below cinched waist may resemble a skirt crop; appearance similarities do not prove a model shortcut."
+      },
+      "semantic_assessment": {
+        "source_category_visual_conflict_observed": false,
+        "operational_note": "Dress lower portion can look like a skirt, but current target is an actual separate skirt garment; no label change is made.",
+        "independent_human_truth": false
+      },
+      "saved_inference_evidence": {
+        "presence": {
+          "accepted": true,
+          "score": 0.8034836649894714,
+          "threshold": 0.5,
+          "model_sha256": "7bf9df9b1bacc757956c069f688345ff154ee480a65198ee5948fbe80bbcdb87",
+          "reason": "experimental_presence_score_not_calibrated_or_full_view_validation"
+        },
+        "paths": {
+          "v1": {
+            "accepted": true,
+            "pleating_prediction": "non_pleated",
+            "localization": {
+              "status": "provisional",
+              "roi": [
+                80,
+                292,
+                331,
+                695
+              ],
+              "reason": "experimental_mask_not_verified_presence_or_full_view",
+              "mask_pixels": 520,
+              "threshold": 0.5,
+              "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+            }
+          },
+          "v1_plus_presence": {
+            "accepted": true,
+            "pleating_prediction": "non_pleated"
+          },
+          "v2": {
+            "accepted": true,
+            "pleating_prediction": "non_pleated",
+            "localization": {
+              "status": "provisional",
+              "roi": [
+                88,
+                329,
+                331,
+                695
+              ],
+              "reason": "experimental_mask_not_verified_presence_or_full_view",
+              "mask_pixels": 458,
+              "threshold": 0.5,
+              "model_sha256": "f2f5f73d34cd99c3fb46502cb806ddbc347c6664e8ce24b8fe06a548c70090de"
+            }
+          },
+          "v2_plus_presence": {
+            "accepted": true,
+            "pleating_prediction": "non_pleated"
+          }
+        }
+      }
+    },
+    {
+      "sample_id": "fashionpedia-negative-v3-7787",
+      "source_item_id": "7787",
+      "original_path": "data/external/fashionpedia_negatives_v3/images/a9befea7a79f1994a080e8961a80d083.jpg",
+      "image_sha256": "b4b0973fbb0b59e5e7998ae3d78e3a32fd946e8a635d59a2f50e470b1ce14a60",
+      "size_bytes": 85180,
+      "dimensions": [
+        578,
+        1024
+      ],
+      "raw_manifest": "data/manifests/negative-candidates-v3.jsonl",
+      "curated_manifest": "data/labels/negative-reviewed-v3.jsonl",
+      "experiment_inputs": "records/experiments/20261018-presence-v4/inputs.json",
+      "source_sampling_category": "dress",
+      "source_annotation_categories": [
+        "bag, wallet",
+        "coat",
+        "dress",
+        "glasses",
+        "lapel",
+        "neckline",
+        "shoe",
+        "sleeve"
+      ],
+      "source_skirt_annotation_count": 0,
+      "existing_split": "development_validation",
+      "existing_presence_target": 0,
+      "existing_group_id": "fashionpedia-source-14dcac2c2cf592daaa54",
+      "reviewer": "agent_pilot_finalize",
+      "review_date_asia_manila": "2026-10-19",
+      "review_method": "Actual local original JPEG displayed through view_image individually in this audit; no contact sheet or generated image substituted. All13 displayed at native dimensions returned by tool.",
+      "observation": {
+        "observed_garment": "dress",
+        "presentation": "worn_single_person",
+        "framing": "Full wearer outdoors; open white blazer covers sides/upper torso and yellow clutch overlaps front/lower garment.",
+        "visible_evidence": "Green ruched fitted mini dress visibly runs from neckline through torso to hem.",
+        "roi_observation": "V2 ROI is a short lower-body region intersecting green hem and yellow clutch, excluding upper torso.",
+        "hypothesis": "Blazer occlusion and clutch may hide continuous dress construction; the small ROI may represent only a garment fragment."
+      },
+      "semantic_assessment": {
+        "source_category_visual_conflict_observed": false,
+        "operational_note": "Dress lower portion can look like a skirt, but current target is an actual separate skirt garment; no label change is made.",
+        "independent_human_truth": false
+      },
+      "saved_inference_evidence": {
+        "presence": {
+          "accepted": true,
+          "score": 0.6269182562828064,
+          "threshold": 0.5,
+          "model_sha256": "7bf9df9b1bacc757956c069f688345ff154ee480a65198ee5948fbe80bbcdb87",
+          "reason": "experimental_presence_score_not_calibrated_or_full_view_validation"
+        },
+        "paths": {
+          "v1": {
+            "accepted": true,
+            "pleating_prediction": "non_pleated",
+            "localization": {
+              "status": "provisional",
+              "roi": [
+                154,
+                384,
+                393,
+                640
+              ],
+              "reason": "experimental_mask_not_verified_presence_or_full_view",
+              "mask_pixels": 234,
+              "threshold": 0.5,
+              "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+            }
+          },
+          "v1_plus_presence": {
+            "accepted": true,
+            "pleating_prediction": "non_pleated"
+          },
+          "v2": {
+            "accepted": true,
+            "pleating_prediction": "non_pleated",
+            "localization": {
+              "status": "provisional",
+              "roi": [
+                175,
+                457,
+                372,
+                622
+              ],
+              "reason": "experimental_mask_not_verified_presence_or_full_view",
+              "mask_pixels": 122,
+              "threshold": 0.5,
+              "model_sha256": "f2f5f73d34cd99c3fb46502cb806ddbc347c6664e8ce24b8fe06a548c70090de"
+            }
+          },
+          "v2_plus_presence": {
+            "accepted": true,
+            "pleating_prediction": "non_pleated"
+          }
+        }
+      }
+    },
+    {
+      "sample_id": "fashionpedia-negative-v3-27837",
+      "source_item_id": "27837",
+      "original_path": "data/external/fashionpedia_negatives_v3/images/0801133cb09e989dd4e86b8b70035bc1.jpg",
+      "image_sha256": "7dd704a382998e72f58097ddc9a81fe3a2ab00daa1e0cef75cded96e5589203e",
+      "size_bytes": 56358,
+      "dimensions": [
+        523,
+        1024
+      ],
+      "raw_manifest": "data/manifests/negative-candidates-v3.jsonl",
+      "curated_manifest": "data/labels/negative-reviewed-v3.jsonl",
+      "experiment_inputs": "records/experiments/20261018-presence-v4/inputs.json",
+      "source_sampling_category": "dress",
+      "source_annotation_categories": [
+        "dress",
+        "neckline"
+      ],
+      "source_skirt_annotation_count": 0,
+      "existing_split": "development_validation",
+      "existing_presence_target": 0,
+      "existing_group_id": "fashionpedia-source-1f1c4eb9cf8c878d1bcd",
+      "reviewer": "agent_pilot_finalize",
+      "review_date_asia_manila": "2026-10-19",
+      "review_method": "Actual local original JPEG displayed through view_image individually in this audit; no contact sheet or generated image substituted. All13 displayed at native dimensions returned by tool.",
+      "observation": {
+        "observed_garment": "dress",
+        "presentation": "worn_single_person",
+        "framing": "Person head-to-knees cropped image on white background; feet outside frame while complete dress hem is visible.",
+        "visible_evidence": "Black sleeveless fitted mini dress has large uninterrupted graphic from torso toward hem and no separate waistband.",
+        "roi_observation": "V2 ROI spans much of torso/lower dress. V1 rejected multiple_regions while V2 returns one provisional region.",
+        "hypothesis": "This failure is not explained only by missing upper-bodice context: graphic/fitted silhouette confusion remains a candidate. No ablation establishes which visual cues caused acceptance."
+      },
+      "semantic_assessment": {
+        "source_category_visual_conflict_observed": false,
+        "operational_note": "Dress lower portion can look like a skirt, but current target is an actual separate skirt garment; no label change is made.",
+        "independent_human_truth": false
+      },
+      "saved_inference_evidence": {
+        "presence": {
+          "accepted": true,
+          "score": 0.611025333404541,
+          "threshold": 0.5,
+          "model_sha256": "7bf9df9b1bacc757956c069f688345ff154ee480a65198ee5948fbe80bbcdb87",
+          "reason": "experimental_presence_score_not_calibrated_or_full_view_validation"
+        },
+        "paths": {
+          "v1": {
+            "accepted": false,
+            "pleating_prediction": null,
+            "localization": {
+              "status": "unavailable",
+              "roi": null,
+              "reason": "multiple_regions",
+              "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+            }
+          },
+          "v1_plus_presence": {
+            "accepted": false,
+            "pleating_prediction": null
+          },
+          "v2": {
+            "accepted": true,
+            "pleating_prediction": "non_pleated",
+            "localization": {
+              "status": "provisional",
+              "roi": [
+                121,
+                384,
+                402,
+                878
+              ],
+              "reason": "experimental_mask_not_verified_presence_or_full_view",
+              "mask_pixels": 397,
+              "threshold": 0.5,
+              "model_sha256": "f2f5f73d34cd99c3fb46502cb806ddbc347c6664e8ce24b8fe06a548c70090de"
+            }
+          },
+          "v2_plus_presence": {
+            "accepted": true,
+            "pleating_prediction": "non_pleated"
+          }
+        }
+      }
+    },
+    {
+      "sample_id": "fashionpedia-negative-v3-32670",
+      "source_item_id": "32670",
+      "original_path": "data/external/fashionpedia_negatives_v3/images/164cbb2c7fb28621977f6592d3a6de5f.jpg",
+      "image_sha256": "4de4226f2f8f132ffc38e9a21207b05649f2e92392739b12796a68b3799c65d5",
+      "size_bytes": 121519,
+      "dimensions": [
+        682,
+        1024
+      ],
+      "raw_manifest": "data/manifests/negative-candidates-v3.jsonl",
+      "curated_manifest": "data/labels/negative-reviewed-v3.jsonl",
+      "experiment_inputs": "records/experiments/20261018-presence-v4/inputs.json",
+      "source_sampling_category": "dress",
+      "source_annotation_categories": [
+        "cardigan",
+        "dress",
+        "hat",
+        "neckline",
+        "shoe",
+        "sleeve",
+        "tights, stockings",
+        "top, t-shirt, sweatshirt"
+      ],
+      "source_skirt_annotation_count": 0,
+      "existing_split": "development_validation",
+      "existing_presence_target": 0,
+      "existing_group_id": "fashionpedia-source-d9adc9615003ade189f3",
+      "reviewer": "agent_pilot_finalize",
+      "review_date_asia_manila": "2026-10-19",
+      "review_method": "Actual local original JPEG displayed through view_image individually in this audit; no contact sheet or generated image substituted. All13 displayed at native dimensions returned by tool.",
+      "observation": {
+        "observed_garment": "dress",
+        "presentation": "worn_single_person",
+        "framing": "Full wearer against brick wall; open black cardigan and dark tights.",
+        "visible_evidence": "Red dress shows a connected sleeveless bodice through waist seam/gathers to flared hem. Cardigan borders upper body.",
+        "roi_observation": "V2 ROI starts near lower bodice/waist and contains gathered lower dress with some tights.",
+        "hypothesis": "Waist gathers and flared lower dress beneath cardigan may resemble separate pleated skirt shape; this is an inference."
+      },
+      "semantic_assessment": {
+        "source_category_visual_conflict_observed": false,
+        "operational_note": "Dress lower portion can look like a skirt, but current target is an actual separate skirt garment; no label change is made.",
+        "independent_human_truth": false
+      },
+      "saved_inference_evidence": {
+        "presence": {
+          "accepted": true,
+          "score": 0.92355877161026,
+          "threshold": 0.5,
+          "model_sha256": "7bf9df9b1bacc757956c069f688345ff154ee480a65198ee5948fbe80bbcdb87",
+          "reason": "experimental_presence_score_not_calibrated_or_full_view_validation"
+        },
+        "paths": {
+          "v1": {
+            "accepted": true,
+            "pleating_prediction": "pleated",
+            "localization": {
+              "status": "provisional",
+              "roi": [
+                182,
+                384,
+                488,
+                750
+              ],
+              "reason": "experimental_mask_not_verified_presence_or_full_view",
+              "mask_pixels": 411,
+              "threshold": 0.5,
+              "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+            }
+          },
+          "v1_plus_presence": {
+            "accepted": true,
+            "pleating_prediction": "pleated"
+          },
+          "v2": {
+            "accepted": true,
+            "pleating_prediction": "pleated",
+            "localization": {
+              "status": "provisional",
+              "roi": [
+                194,
+                402,
+                475,
+                750
+              ],
+              "reason": "experimental_mask_not_verified_presence_or_full_view",
+              "mask_pixels": 365,
+              "threshold": 0.5,
+              "model_sha256": "f2f5f73d34cd99c3fb46502cb806ddbc347c6664e8ce24b8fe06a548c70090de"
+            }
+          },
+          "v2_plus_presence": {
+            "accepted": true,
+            "pleating_prediction": "pleated"
+          }
+        }
+      }
+    },
+    {
+      "sample_id": "fashionpedia-negative-v3-2498",
+      "source_item_id": "2498",
+      "original_path": "data/external/fashionpedia_negatives_v3/images/15902aef1495051ee622c24ff2f7ba8d.jpg",
+      "image_sha256": "86c506b861a6f23363ccb4bd597d0b88d026e7e584049df6f07f89b53751aadf",
+      "size_bytes": 44694,
+      "dimensions": [
+        682,
+        1024
+      ],
+      "raw_manifest": "data/manifests/negative-candidates-v3.jsonl",
+      "curated_manifest": "data/labels/negative-reviewed-v3.jsonl",
+      "experiment_inputs": "records/experiments/20261018-presence-v4/inputs.json",
+      "source_sampling_category": "dress",
+      "source_annotation_categories": [
+        "dress",
+        "neckline",
+        "shoe"
+      ],
+      "source_skirt_annotation_count": 0,
+      "existing_split": "development_validation",
+      "existing_presence_target": 0,
+      "existing_group_id": "fashionpedia-source-d6e45089588781a102a7",
+      "reviewer": "agent_pilot_finalize",
+      "review_date_asia_manila": "2026-10-19",
+      "review_method": "Actual local original JPEG displayed through view_image individually in this audit; no contact sheet or generated image substituted. All13 displayed at native dimensions returned by tool.",
+      "observation": {
+        "observed_garment": "dress",
+        "presentation": "worn_single_person",
+        "framing": "Full wearer in studio/runway-like scene against pink backdrop.",
+        "visible_evidence": "Floral sleeveless mini dress has continuous neckline/bodice with lavender inset joined into floral gathered lower portion.",
+        "roi_observation": "V2 ROI begins at lower bodice/waist and spans the flared hem, excluding neckline and upper chest.",
+        "hypothesis": "Contrasting bodice inset plus gathered waist may suggest two garments at low resolution, but source and original visual evidence support dress."
+      },
+      "semantic_assessment": {
+        "source_category_visual_conflict_observed": false,
+        "operational_note": "Dress lower portion can look like a skirt, but current target is an actual separate skirt garment; no label change is made.",
+        "independent_human_truth": false
+      },
+      "saved_inference_evidence": {
+        "presence": {
+          "accepted": true,
+          "score": 0.7197237610816956,
+          "threshold": 0.5,
+          "model_sha256": "7bf9df9b1bacc757956c069f688345ff154ee480a65198ee5948fbe80bbcdb87",
+          "reason": "experimental_presence_score_not_calibrated_or_full_view_validation"
+        },
+        "paths": {
+          "v1": {
+            "accepted": true,
+            "pleating_prediction": "non_pleated",
+            "localization": {
+              "status": "provisional",
+              "roi": [
+                158,
+                347,
+                488,
+                640
+              ],
+              "reason": "experimental_mask_not_verified_presence_or_full_view",
+              "mask_pixels": 326,
+              "threshold": 0.5,
+              "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+            }
+          },
+          "v1_plus_presence": {
+            "accepted": true,
+            "pleating_prediction": "non_pleated"
+          },
+          "v2": {
+            "accepted": true,
+            "pleating_prediction": "non_pleated",
+            "localization": {
+              "status": "provisional",
+              "roi": [
+                170,
+                365,
+                475,
+                622
+              ],
+              "reason": "experimental_mask_not_verified_presence_or_full_view",
+              "mask_pixels": 292,
+              "threshold": 0.5,
+              "model_sha256": "f2f5f73d34cd99c3fb46502cb806ddbc347c6664e8ce24b8fe06a548c70090de"
+            }
+          },
+          "v2_plus_presence": {
+            "accepted": true,
+            "pleating_prediction": "non_pleated"
+          }
+        }
+      }
+    },
+    {
+      "sample_id": "fashionpedia-negative-v3-27919",
+      "source_item_id": "27919",
+      "original_path": "data/external/fashionpedia_negatives_v3/images/781f5e49e4ec5786456830239db84e41.jpg",
+      "image_sha256": "df5c82ca3f4adcddd4f31a86bc656fd39030ef3d22bf0991bbdc9d8125cd3123",
+      "size_bytes": 72076,
+      "dimensions": [
+        682,
+        1024
+      ],
+      "raw_manifest": "data/manifests/negative-candidates-v3.jsonl",
+      "curated_manifest": "data/labels/negative-reviewed-v3.jsonl",
+      "experiment_inputs": "records/experiments/20261018-presence-v4/inputs.json",
+      "source_sampling_category": "pants",
+      "source_annotation_categories": [
+        "bag, wallet",
+        "bead",
+        "belt",
+        "epaulette",
+        "hat",
+        "jacket",
+        "lapel",
+        "neckline",
+        "pants",
+        "shoe",
+        "sleeve",
+        "sweater",
+        "zipper"
+      ],
+      "source_skirt_annotation_count": 0,
+      "existing_split": "development_validation",
+      "existing_presence_target": 0,
+      "existing_group_id": "fashionpedia-source-700fcda9781bcdf47350",
+      "reviewer": "agent_pilot_finalize",
+      "review_date_asia_manila": "2026-10-19",
+      "review_method": "Actual local original JPEG displayed through view_image individually in this audit; no contact sheet or generated image substituted. All13 displayed at native dimensions returned by tool.",
+      "observation": {
+        "observed_garment": "pants",
+        "presentation": "worn_single_person",
+        "framing": "Full wearer outdoors; long dark sweater and open jacket cover waist and hips above ripped black skinny trousers.",
+        "visible_evidence": "Separate trouser legs and torn knees are visible beneath long sweater; no separate skirt.",
+        "roi_observation": "V2 ROI [255,475,475,714] covers lower sweater and upper thighs, ending near knees and excluding most lower trouser legs.",
+        "hypothesis": "Long sweater hem and waist occlusion may be mistaken for skirt extent. The original frame contains leg-separation evidence that the accepted ROI mostly omits."
+      },
+      "semantic_assessment": {
+        "source_category_visual_conflict_observed": false,
+        "operational_note": "Visible trousers remain negative under current separate-skirt target; occluding/long tops are not relabelled as skirts.",
+        "independent_human_truth": false
+      },
+      "saved_inference_evidence": {
+        "presence": {
+          "accepted": true,
+          "score": 0.9451572895050049,
+          "threshold": 0.5,
+          "model_sha256": "7bf9df9b1bacc757956c069f688345ff154ee480a65198ee5948fbe80bbcdb87",
+          "reason": "experimental_presence_score_not_calibrated_or_full_view_validation"
+        },
+        "paths": {
+          "v1": {
+            "accepted": true,
+            "pleating_prediction": "non_pleated",
+            "localization": {
+              "status": "provisional",
+              "roi": [
+                243,
+                475,
+                488,
+                860
+              ],
+              "reason": "experimental_mask_not_verified_presence_or_full_view",
+              "mask_pixels": 275,
+              "threshold": 0.5,
+              "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+            }
+          },
+          "v1_plus_presence": {
+            "accepted": true,
+            "pleating_prediction": "non_pleated"
+          },
+          "v2": {
+            "accepted": true,
+            "pleating_prediction": "non_pleated",
+            "localization": {
+              "status": "provisional",
+              "roi": [
+                255,
+                475,
+                475,
+                714
+              ],
+              "reason": "experimental_mask_not_verified_presence_or_full_view",
+              "mask_pixels": 174,
+              "threshold": 0.5,
+              "model_sha256": "f2f5f73d34cd99c3fb46502cb806ddbc347c6664e8ce24b8fe06a548c70090de"
+            }
+          },
+          "v2_plus_presence": {
+            "accepted": true,
+            "pleating_prediction": "non_pleated"
+          }
+        }
+      }
+    }
+  ],
+  "checks": [
+    {
+      "name": "comparison_completed_and_fixed_thresholds",
+      "passed": true
+    },
+    {
+      "name": "comparison_bound_input_manifest",
+      "passed": true
+    },
+    {
+      "name": "expected_negative_and_failure_counts",
+      "passed": true
+    },
+    {
+      "name": "27765:actual_file_hash_join",
+      "passed": true
+    },
+    {
+      "name": "27765:original_path_join",
+      "passed": true
+    },
+    {
+      "name": "27765:source_item_and_bucket_join",
+      "passed": true
+    },
+    {
+      "name": "27765:raw_annotation_preservation",
+      "passed": true
+    },
+    {
+      "name": "27765:original_dimensions",
+      "passed": true
+    },
+    {
+      "name": "27765:existing_validation_admission",
+      "passed": true,
+      "details": {
+        "curated_split": "development_validation",
+        "experiment_input_split": "development_validation",
+        "approved": true,
+        "presence_target": 0
+      }
+    },
+    {
+      "name": "27765:both_gate_and_v2_localizer_accept",
+      "passed": true
+    },
+    {
+      "name": "27765:prior_review_hash_binding",
+      "passed": true
+    },
+    {
+      "name": "5212:actual_file_hash_join",
+      "passed": true
+    },
+    {
+      "name": "5212:original_path_join",
+      "passed": true
+    },
+    {
+      "name": "5212:source_item_and_bucket_join",
+      "passed": true
+    },
+    {
+      "name": "5212:raw_annotation_preservation",
+      "passed": true
+    },
+    {
+      "name": "5212:original_dimensions",
+      "passed": true
+    },
+    {
+      "name": "5212:existing_validation_admission",
+      "passed": true,
+      "details": {
+        "curated_split": "development_validation",
+        "experiment_input_split": "development_validation",
+        "approved": true,
+        "presence_target": 0
+      }
+    },
+    {
+      "name": "5212:both_gate_and_v2_localizer_accept",
+      "passed": true
+    },
+    {
+      "name": "5212:prior_review_hash_binding",
+      "passed": true
+    },
+    {
+      "name": "8621:actual_file_hash_join",
+      "passed": true
+    },
+    {
+      "name": "8621:original_path_join",
+      "passed": true
+    },
+    {
+      "name": "8621:source_item_and_bucket_join",
+      "passed": true
+    },
+    {
+      "name": "8621:raw_annotation_preservation",
+      "passed": true
+    },
+    {
+      "name": "8621:original_dimensions",
+      "passed": true
+    },
+    {
+      "name": "8621:existing_validation_admission",
+      "passed": true,
+      "details": {
+        "curated_split": "development_validation",
+        "experiment_input_split": "development_validation",
+        "approved": true,
+        "presence_target": 0
+      }
+    },
+    {
+      "name": "8621:both_gate_and_v2_localizer_accept",
+      "passed": true
+    },
+    {
+      "name": "8621:prior_review_hash_binding",
+      "passed": true
+    },
+    {
+      "name": "24169:actual_file_hash_join",
+      "passed": true
+    },
+    {
+      "name": "24169:original_path_join",
+      "passed": true
+    },
+    {
+      "name": "24169:source_item_and_bucket_join",
+      "passed": true
+    },
+    {
+      "name": "24169:raw_annotation_preservation",
+      "passed": true
+    },
+    {
+      "name": "24169:original_dimensions",
+      "passed": true
+    },
+    {
+      "name": "24169:existing_validation_admission",
+      "passed": true,
+      "details": {
+        "curated_split": "development_validation",
+        "experiment_input_split": "development_validation",
+        "approved": true,
+        "presence_target": 0
+      }
+    },
+    {
+      "name": "24169:both_gate_and_v2_localizer_accept",
+      "passed": true
+    },
+    {
+      "name": "24169:prior_review_hash_binding",
+      "passed": true
+    },
+    {
+      "name": "33532:actual_file_hash_join",
+      "passed": true
+    },
+    {
+      "name": "33532:original_path_join",
+      "passed": true
+    },
+    {
+      "name": "33532:source_item_and_bucket_join",
+      "passed": true
+    },
+    {
+      "name": "33532:raw_annotation_preservation",
+      "passed": true
+    },
+    {
+      "name": "33532:original_dimensions",
+      "passed": true
+    },
+    {
+      "name": "33532:existing_validation_admission",
+      "passed": true,
+      "details": {
+        "curated_split": "development_validation",
+        "experiment_input_split": "development_validation",
+        "approved": true,
+        "presence_target": 0
+      }
+    },
+    {
+      "name": "33532:both_gate_and_v2_localizer_accept",
+      "passed": true
+    },
+    {
+      "name": "33532:prior_review_hash_binding",
+      "passed": true
+    },
+    {
+      "name": "42344:actual_file_hash_join",
+      "passed": true
+    },
+    {
+      "name": "42344:original_path_join",
+      "passed": true
+    },
+    {
+      "name": "42344:source_item_and_bucket_join",
+      "passed": true
+    },
+    {
+      "name": "42344:raw_annotation_preservation",
+      "passed": true
+    },
+    {
+      "name": "42344:original_dimensions",
+      "passed": true
+    },
+    {
+      "name": "42344:existing_validation_admission",
+      "passed": true,
+      "details": {
+        "curated_split": "development_validation",
+        "experiment_input_split": "development_validation",
+        "approved": true,
+        "presence_target": 0
+      }
+    },
+    {
+      "name": "42344:both_gate_and_v2_localizer_accept",
+      "passed": true
+    },
+    {
+      "name": "42344:prior_review_hash_binding",
+      "passed": true
+    },
+    {
+      "name": "5822:actual_file_hash_join",
+      "passed": true
+    },
+    {
+      "name": "5822:original_path_join",
+      "passed": true
+    },
+    {
+      "name": "5822:source_item_and_bucket_join",
+      "passed": true
+    },
+    {
+      "name": "5822:raw_annotation_preservation",
+      "passed": true
+    },
+    {
+      "name": "5822:original_dimensions",
+      "passed": true
+    },
+    {
+      "name": "5822:existing_validation_admission",
+      "passed": true,
+      "details": {
+        "curated_split": "development_validation",
+        "experiment_input_split": "development_validation",
+        "approved": true,
+        "presence_target": 0
+      }
+    },
+    {
+      "name": "5822:both_gate_and_v2_localizer_accept",
+      "passed": true
+    },
+    {
+      "name": "5822:prior_review_hash_binding",
+      "passed": true
+    },
+    {
+      "name": "41468:actual_file_hash_join",
+      "passed": true
+    },
+    {
+      "name": "41468:original_path_join",
+      "passed": true
+    },
+    {
+      "name": "41468:source_item_and_bucket_join",
+      "passed": true
+    },
+    {
+      "name": "41468:raw_annotation_preservation",
+      "passed": true
+    },
+    {
+      "name": "41468:original_dimensions",
+      "passed": true
+    },
+    {
+      "name": "41468:existing_validation_admission",
+      "passed": true,
+      "details": {
+        "curated_split": "development_validation",
+        "experiment_input_split": "development_validation",
+        "approved": true,
+        "presence_target": 0
+      }
+    },
+    {
+      "name": "41468:both_gate_and_v2_localizer_accept",
+      "passed": true
+    },
+    {
+      "name": "41468:prior_review_hash_binding",
+      "passed": true
+    },
+    {
+      "name": "7787:actual_file_hash_join",
+      "passed": true
+    },
+    {
+      "name": "7787:original_path_join",
+      "passed": true
+    },
+    {
+      "name": "7787:source_item_and_bucket_join",
+      "passed": true
+    },
+    {
+      "name": "7787:raw_annotation_preservation",
+      "passed": true
+    },
+    {
+      "name": "7787:original_dimensions",
+      "passed": true
+    },
+    {
+      "name": "7787:existing_validation_admission",
+      "passed": true,
+      "details": {
+        "curated_split": "development_validation",
+        "experiment_input_split": "development_validation",
+        "approved": true,
+        "presence_target": 0
+      }
+    },
+    {
+      "name": "7787:both_gate_and_v2_localizer_accept",
+      "passed": true
+    },
+    {
+      "name": "7787:prior_review_hash_binding",
+      "passed": true
+    },
+    {
+      "name": "27837:actual_file_hash_join",
+      "passed": true
+    },
+    {
+      "name": "27837:original_path_join",
+      "passed": true
+    },
+    {
+      "name": "27837:source_item_and_bucket_join",
+      "passed": true
+    },
+    {
+      "name": "27837:raw_annotation_preservation",
+      "passed": true
+    },
+    {
+      "name": "27837:original_dimensions",
+      "passed": true
+    },
+    {
+      "name": "27837:existing_validation_admission",
+      "passed": true,
+      "details": {
+        "curated_split": "development_validation",
+        "experiment_input_split": "development_validation",
+        "approved": true,
+        "presence_target": 0
+      }
+    },
+    {
+      "name": "27837:both_gate_and_v2_localizer_accept",
+      "passed": true
+    },
+    {
+      "name": "27837:prior_review_hash_binding",
+      "passed": true
+    },
+    {
+      "name": "32670:actual_file_hash_join",
+      "passed": true
+    },
+    {
+      "name": "32670:original_path_join",
+      "passed": true
+    },
+    {
+      "name": "32670:source_item_and_bucket_join",
+      "passed": true
+    },
+    {
+      "name": "32670:raw_annotation_preservation",
+      "passed": true
+    },
+    {
+      "name": "32670:original_dimensions",
+      "passed": true
+    },
+    {
+      "name": "32670:existing_validation_admission",
+      "passed": true,
+      "details": {
+        "curated_split": "development_validation",
+        "experiment_input_split": "development_validation",
+        "approved": true,
+        "presence_target": 0
+      }
+    },
+    {
+      "name": "32670:both_gate_and_v2_localizer_accept",
+      "passed": true
+    },
+    {
+      "name": "32670:prior_review_hash_binding",
+      "passed": true
+    },
+    {
+      "name": "2498:actual_file_hash_join",
+      "passed": true
+    },
+    {
+      "name": "2498:original_path_join",
+      "passed": true
+    },
+    {
+      "name": "2498:source_item_and_bucket_join",
+      "passed": true
+    },
+    {
+      "name": "2498:raw_annotation_preservation",
+      "passed": true
+    },
+    {
+      "name": "2498:original_dimensions",
+      "passed": true
+    },
+    {
+      "name": "2498:existing_validation_admission",
+      "passed": true,
+      "details": {
+        "curated_split": "development_validation",
+        "experiment_input_split": "development_validation",
+        "approved": true,
+        "presence_target": 0
+      }
+    },
+    {
+      "name": "2498:both_gate_and_v2_localizer_accept",
+      "passed": true
+    },
+    {
+      "name": "2498:prior_review_hash_binding",
+      "passed": true
+    },
+    {
+      "name": "27919:actual_file_hash_join",
+      "passed": true
+    },
+    {
+      "name": "27919:original_path_join",
+      "passed": true
+    },
+    {
+      "name": "27919:source_item_and_bucket_join",
+      "passed": true
+    },
+    {
+      "name": "27919:raw_annotation_preservation",
+      "passed": true
+    },
+    {
+      "name": "27919:original_dimensions",
+      "passed": true
+    },
+    {
+      "name": "27919:existing_validation_admission",
+      "passed": true,
+      "details": {
+        "curated_split": "development_validation",
+        "experiment_input_split": "development_validation",
+        "approved": true,
+        "presence_target": 0
+      }
+    },
+    {
+      "name": "27919:both_gate_and_v2_localizer_accept",
+      "passed": true
+    },
+    {
+      "name": "27919:prior_review_hash_binding",
+      "passed": true
+    },
+    {
+      "name": "source_failure_counts",
+      "passed": true
+    },
+    {
+      "name": "all_failure_originals_actually_reviewed",
+      "passed": true
+    },
+    {
+      "name": "audit_source_unchanged:records/validation/2026-10-19-detection-v4-comparison.json",
+      "passed": true
+    },
+    {
+      "name": "audit_source_unchanged:data/labels/negative-reviewed-v3.jsonl",
+      "passed": true
+    },
+    {
+      "name": "audit_source_unchanged:data/manifests/negative-candidates-v1.jsonl",
+      "passed": true
+    },
+    {
+      "name": "audit_source_unchanged:data/manifests/negative-candidates-v2.jsonl",
+      "passed": true
+    },
+    {
+      "name": "audit_source_unchanged:data/manifests/negative-candidates-v3.jsonl",
+      "passed": true
+    },
+    {
+      "name": "audit_source_unchanged:records/experiments/20261018-presence-v4/inputs.json",
+      "passed": true
+    }
+  ],
+  "checks_passed": 115,
+  "checks_failed": 0,
+  "limitations": [
+    "Agent review is not independent human ground truth.",
+    "Inference scores and ROIs are copied from hash-bound saved comparison; no interpreter or live camera was run in this audit.",
+    "This is a selected failure subset, not a new performance evaluation, representative distribution or causality analysis.",
+    "No specimen identity verification, garment measurement or Raspberry Pi evidence is added."
+  ],
+  "dependency_changes": 0,
+  "network_requests": 0,
+  "runtime": {
+    "python": "3.12.14",
+    "pillow": "12.3.0"
+  },
+  "audit_implementation_correction": {
+    "first_attempt": "Thirteen split-name checks failed because the audit compared the literal validation against the actual preserved development_validation schema value.",
+    "investigation": "Read the actual curated and archived input fields; both agree on development_validation, approved true and target0. No dataset mismatch or split mutation was found.",
+    "correction": "Recomputed the thirteen checks using the existing literal development_validation and recorded actual fields; corrected report display of existing_split.",
+    "corrected_checks": [
+      "27765:existing_validation_admission",
+      "5212:existing_validation_admission",
+      "8621:existing_validation_admission",
+      "24169:existing_validation_admission",
+      "33532:existing_validation_admission",
+      "42344:existing_validation_admission",
+      "5822:existing_validation_admission",
+      "41468:existing_validation_admission",
+      "7787:existing_validation_admission",
+      "27837:existing_validation_admission",
+      "32670:existing_validation_admission",
+      "2498:existing_validation_admission",
+      "27919:existing_validation_admission"
+    ]
+  }
+}

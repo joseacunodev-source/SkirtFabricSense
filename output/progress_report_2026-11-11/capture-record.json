@@ -1,0 +1,64 @@
+{
+  "captured_at": "2026-11-11T05:00:21.428Z",
+  "station": "station-v8 / research-v13",
+  "browser": "Microsoft Edge via Playwright",
+  "captures": [
+    {
+      "file": "01_current_camera_ui_desktop.png",
+      "kind": "unaltered_browser_screenshot",
+      "source": "artifacts/stations/skirt-research-station-v8/application/app/static/index.html",
+      "source_sha256": "d8fc25f12072c82ecd2d4a64889522fd6c867d65c3167504d034bf73e58cd964",
+      "camera_started": false,
+      "viewport": [
+        1440,
+        1080
+      ]
+    },
+    {
+      "file": "02_current_camera_ui_800x480.png",
+      "kind": "unaltered_browser_screenshot",
+      "source": "artifacts/stations/skirt-research-station-v8/application/app/static/index.html",
+      "source_sha256": "d8fc25f12072c82ecd2d4a64889522fd6c867d65c3167504d034bf73e58cd964",
+      "camera_started": false,
+      "viewport": [
+        800,
+        480
+      ],
+      "physical_lcd_test": false
+    },
+    {
+      "file": "03_code_training.png",
+      "kind": "browser_rendered_literal_source_excerpt",
+      "source": "tools/training/train_skirt_baseline.py",
+      "source_sha256": "9c00a33d4d7e7fb6fdf5d9b988395293d648d5c4e01a067e0ab4acc74bcfe8d6",
+      "first_line": 140,
+      "last_line": 167,
+      "training_executed_for_capture": false
+    },
+    {
+      "file": "04_code_frame_freshness.png",
+      "kind": "browser_rendered_literal_source_excerpt",
+      "source": "app/live_state.py",
+      "source_sha256": "06003cf0f3c3d2f534a3c7a3080e665ce15491151e5c9f8c9bb61ba4e27e67ec",
+      "first_line": 116,
+      "last_line": 145,
+      "training_executed_for_capture": false
+    },
+    {
+      "file": "05_code_hemline_rules.png",
+      "kind": "browser_rendered_literal_source_excerpt",
+      "source": "app/hemline.py",
+      "source_sha256": "8c27a8b5b54ba1bebb0bfc8829e66e19351823d85b2cc24ef330990ec18a261c",
+      "first_line": 25,
+      "last_line": 53,
+      "training_executed_for_capture": false
+    }
+  ],
+  "notes": [
+    "No generated imagery or fabricated editor interface.",
+    "UI screenshots show actual camera-off state.",
+    "Code excerpts preserve source text and actual line numbers; these are not IDE screenshots.",
+    "No model training, camera access or Raspberry Pi test performed."
+  ],
+  "capture_script_sha256": "a7402c4eb17cbe972584b3fbc312e3436314d3ed6486793ad8d77567b9055d21"
+}

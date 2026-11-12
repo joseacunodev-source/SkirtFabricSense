@@ -1,0 +1,12 @@
+{
+  "status": "failed",
+  "seed": 42,
+  "data": "synthetic stateless normal, 4x32x32x3",
+  "dataset_manifest": null,
+  "split_hash": null,
+  "purpose": "infrastructure only; no project accuracy or Pi verification",
+  "python": "3.11.9",
+  "source_sha256": "d822c2a9fcc86a6667c32eee81223ca489d30ac8c8df2e9eb80ff5bf53712875",
+  "error": "No module named 'numpy'",
+  "traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\Administrator\\OneDrive\\Documents\\ChatGPT\\SkirtFabricSense\\tools\\training\\gpu_smoke.py\", line 22, in main\n    import numpy as np\nModuleNotFoundError: No module named 'numpy'\n"
+}

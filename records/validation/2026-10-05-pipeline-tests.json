@@ -1,0 +1,26 @@
+{
+  "recorded_at_utc": "2026-10-05T15:54:09.474096+00:00",
+  "status": "passed",
+  "command": "python -m unittest tests.test_live_state tests.test_pipeline -v",
+  "interpreter": "C:/Users/Administrator/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/python.exe",
+  "tests_run": 26,
+  "controller_tests": 16,
+  "worker_tests": 10,
+  "source_hashes": {
+    "app/pipeline.py": "ed784b7cf17aa7182f8c45eb864e9f2cd1a2630ac29f85d48bf92c33508d1568",
+    "app/live_state.py": "06003cf0f3c3d2f534a3c7a3080e665ce15491151e5c9f8c9bb61ba4e27e67ec",
+    "app/inference.py": "bad328a0e41c7a6244fdb1d587f00351d29846e6a88fcea7ca1674b51eb552ee",
+    "tests/test_pipeline.py": "b32bacc96c368de263faf4bb437878e114deadd58d20579a82842c6920b12b57",
+    "tests/test_live_state.py": "30ad59c7187ca76b6ba9d0957a69d31cacc8dbd5dd74142d4b99700473ba01b0"
+  },
+  "real_model_evidence": "records/validation/2026-10-05-pipeline-real-model.json",
+  "real_model_source_hashes_still_match": true,
+  "new_dependencies": false,
+  "camera_opened": false,
+  "pi_verified": false,
+  "review_note": "Root inspected and ran agent-written tests after agent hit usage limit.",
+  "limitations": [
+    "Synthetic worker tests; three archived development images for real runtime check",
+    "Camera capture, automatic quality/localization and web polling are not integrated"
+  ]
+}

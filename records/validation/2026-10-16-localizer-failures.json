@@ -1,0 +1,120 @@
+{
+  "negative_buckets": {
+    "dress": {
+      "count": 8,
+      "v1_false_accepts": 5,
+      "v2_false_accepts": 5,
+      "v3_false_accepts": 5
+    },
+    "shorts": {
+      "count": 5,
+      "v1_false_accepts": 2,
+      "v2_false_accepts": 3,
+      "v3_false_accepts": 4
+    },
+    "pants": {
+      "count": 6,
+      "v1_false_accepts": 2,
+      "v2_false_accepts": 3,
+      "v3_false_accepts": 5
+    }
+  },
+  "all_models_false_accept": [
+    {
+      "sample_id": "fashionpedia-negative-candidate-27765",
+      "sampling_bucket": "dress",
+      "original_path": "data/external/fashionpedia_negatives/images/d8587f971edcec1cf21d0eb88affce2d.jpg",
+      "sha256": "335b01d057ba1bbfa9c3c3f2b82628f517dcd5d2800a71d235b6f487a0483c63",
+      "group_id": "fashionpedia-source-e86221852c0c25999f06"
+    },
+    {
+      "sample_id": "fashionpedia-negative-candidate-21184",
+      "sampling_bucket": "shorts",
+      "original_path": "data/external/fashionpedia_negatives/images/023e8861e292dd375bdbbabb86d7ae55.jpg",
+      "sha256": "65701e872a9d7abfd80aa47a290f785dd7a375a8724e5836a76a043c1bb2c2a8",
+      "group_id": "fashionpedia-source-dc64bccf5cfd8a22d756"
+    },
+    {
+      "sample_id": "fashionpedia-negative-v2-5212",
+      "sampling_bucket": "dress",
+      "original_path": "data/external/fashionpedia_negatives_v2/images/aa693576ef90f2ebb0838fc98f5f80cc.jpg",
+      "sha256": "2ee2fd9ddcc07288977fdff3b72f850d756f11e4e06ab805c0cc11d4307ce8eb",
+      "group_id": "fashionpedia-source-a474ccff05bb9f6ad6a9"
+    },
+    {
+      "sample_id": "fashionpedia-negative-v2-8621",
+      "sampling_bucket": "dress",
+      "original_path": "data/external/fashionpedia_negatives_v2/images/4fba98d55b78da295c077c3b43d8945d.jpg",
+      "sha256": "41a550246f87daafe017c15cbb9cc61ec274579578781e815a70f7c6d3689f93",
+      "group_id": "fashionpedia-source-8850f9f19704d3c49e17"
+    },
+    {
+      "sample_id": "fashionpedia-negative-v2-24169",
+      "sampling_bucket": "pants",
+      "original_path": "data/external/fashionpedia_negatives_v2/images/5e7ef55b91015c4922bb573d009f0179.jpg",
+      "sha256": "d3ef2d4c8341541d55d90aa4aecb2d0cc398dab08d1110f611168ef8cccfc6be",
+      "group_id": "fashionpedia-source-14d9494325609cf81485"
+    },
+    {
+      "sample_id": "fashionpedia-negative-v2-33532",
+      "sampling_bucket": "dress",
+      "original_path": "data/external/fashionpedia_negatives_v2/images/96fcc6925828ca3e8a9eb972ba11a6c0.jpg",
+      "sha256": "195ad21b137ec6c33163bd6df1af6b4e5833e1d72e77244a6a40cafd019c95be",
+      "group_id": "fashionpedia-source-a7872b24355f0ec580f9"
+    },
+    {
+      "sample_id": "fashionpedia-negative-v2-28085",
+      "sampling_bucket": "shorts",
+      "original_path": "data/external/fashionpedia_negatives_v2/images/0760649dc3a769a8adb5c492b1820dfc.jpg",
+      "sha256": "4de332cded5ad37680b551aff04f310f2c12294a337e74390b3976285856e9ba",
+      "group_id": "fashionpedia-source-5aefe5fd5410d9fe5a73"
+    },
+    {
+      "sample_id": "fashionpedia-negative-v2-42344",
+      "sampling_bucket": "dress",
+      "original_path": "data/external/fashionpedia_negatives_v2/images/6b3ecf0e5c391ebe7fd3fc89109bee0c.jpg",
+      "sha256": "34a5657e9d3eca0dd1161159124c482d07925d206ea6b93af21fec265cdd4309",
+      "group_id": "fashionpedia-source-28e446fd6b062dc520bc"
+    },
+    {
+      "sample_id": "fashionpedia-negative-v2-32211",
+      "sampling_bucket": "pants",
+      "original_path": "data/external/fashionpedia_negatives_v2/images/cb9d72751174356fce4d5a1ff253af92.jpg",
+      "sha256": "00e19ca45cda00a881ab05ae1175c93d6f983b1ba089875ea7e0c767a44665e7",
+      "group_id": "fashionpedia-source-09dba5e4b5302928f0dd"
+    }
+  ],
+  "rejection_reasons_all_99_inputs": {
+    "v1": {
+      "multiple_regions": 29,
+      "region_touches_frame_edge": 13
+    },
+    "v2": {
+      "multiple_regions": 16,
+      "region_touches_frame_edge": 12,
+      "no_supported_skirt_region": 1
+    },
+    "v3": {
+      "multiple_regions": 14,
+      "no_supported_skirt_region": 1,
+      "region_touches_frame_edge": 19
+    }
+  },
+  "limitations": [
+    "Archived development outputs only; not new model evaluation",
+    "Source sampling bucket is not a new visual error label",
+    "No thresholds tuned, no model promoted, no test data used"
+  ],
+  "date": "2026-10-16",
+  "sources": [
+    {
+      "path": "records/validation/2026-10-15-localizer-threeway.json",
+      "sha256": "50792eaec38468516f08cb7a54b3294c949ae6259bb1a60d20b4a6fa16895eb6"
+    },
+    {
+      "path": "data/labels/negative-reviewed-v2.jsonl",
+      "sha256": "016e45e38d695b9bb62c480497c02af08845b83f4831d8ca91365e2eabc067b8"
+    }
+  ],
+  "tool_sha256": "c0793753cde3a27d5aeeee3b70411857927cb9e50d9ba094ded847740cda4227"
+}

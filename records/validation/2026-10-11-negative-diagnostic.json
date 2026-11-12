@@ -1,0 +1,1115 @@
+{
+  "date_utc": "2026-10-11T04:55:27.481581+00:00",
+  "candidate_images": 90,
+  "provisional_roi_count": 40,
+  "candidate_acceptance_rate": 0.4444444444444444,
+  "reasons": {
+    "multiple_regions": 41,
+    "experimental_mask_not_verified_presence_or_full_view": 40,
+    "region_touches_frame_edge": 9
+  },
+  "localizer_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2",
+  "runtime": "tensorflow.lite",
+  "manifest_sha256": "c4306ef7afacfde2e35daf1c6d5144c026075e5944180e2f38d46b9730470d02",
+  "source_sha256": "707f269a8563035bfce7145d19b67a32563e7877f80ac403bd16e99fc732e607",
+  "decoder_sha256": "d93dc5754a9990a9e772983e1e49b86fc0942d10f6a9ec605747a7ccca5fcd16",
+  "threshold_changed": false,
+  "training_performed": false,
+  "predictions": [
+    {
+      "sample_id": "fashionpedia-negative-candidate-43158",
+      "localization": {
+        "status": "unavailable",
+        "roi": null,
+        "reason": "multiple_regions",
+        "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+      }
+    },
+    {
+      "sample_id": "fashionpedia-negative-candidate-15688",
+      "localization": {
+        "status": "provisional",
+        "roi": [
+          182,
+          749,
+          379,
+          933
+        ],
+        "reason": "experimental_mask_not_verified_presence_or_full_view",
+        "mask_pixels": 120,
+        "threshold": 0.5,
+        "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+      }
+    },
+    {
+      "sample_id": "fashionpedia-negative-candidate-20870",
+      "localization": {
+        "status": "provisional",
+        "roi": [
+          265,
+          420,
+          545,
+          640
+        ],
+        "reason": "experimental_mask_not_verified_presence_or_full_view",
+        "mask_pixels": 137,
+        "threshold": 0.5,
+        "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+      }
+    },
+    {
+      "sample_id": "fashionpedia-negative-candidate-25065",
+      "localization": {
+        "status": "provisional",
+        "roi": [
+          211,
+          457,
+          522,
+          933
+        ],
+        "reason": "experimental_mask_not_verified_presence_or_full_view",
+        "mask_pixels": 440,
+        "threshold": 0.5,
+        "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+      }
+    },
+    {
+      "sample_id": "fashionpedia-negative-candidate-2544",
+      "localization": {
+        "status": "provisional",
+        "roi": [
+          315,
+          384,
+          559,
+          567
+        ],
+        "reason": "experimental_mask_not_verified_presence_or_full_view",
+        "mask_pixels": 163,
+        "threshold": 0.5,
+        "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+      }
+    },
+    {
+      "sample_id": "fashionpedia-negative-candidate-14978",
+      "localization": {
+        "status": "unavailable",
+        "roi": null,
+        "reason": "multiple_regions",
+        "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+      }
+    },
+    {
+      "sample_id": "fashionpedia-negative-candidate-37200",
+      "localization": {
+        "status": "unavailable",
+        "roi": null,
+        "reason": "region_touches_frame_edge",
+        "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+      }
+    },
+    {
+      "sample_id": "fashionpedia-negative-candidate-4275",
+      "localization": {
+        "status": "provisional",
+        "roi": [
+          402,
+          328,
+          640,
+          622
+        ],
+        "reason": "experimental_mask_not_verified_presence_or_full_view",
+        "mask_pixels": 195,
+        "threshold": 0.5,
+        "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+      }
+    },
+    {
+      "sample_id": "fashionpedia-negative-candidate-27765",
+      "localization": {
+        "status": "provisional",
+        "roi": [
+          218,
+          310,
+          493,
+          640
+        ],
+        "reason": "experimental_mask_not_verified_presence_or_full_view",
+        "mask_pixels": 319,
+        "threshold": 0.5,
+        "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+      }
+    },
+    {
+      "sample_id": "fashionpedia-negative-candidate-47678",
+      "localization": {
+        "status": "unavailable",
+        "roi": null,
+        "reason": "multiple_regions",
+        "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+      }
+    },
+    {
+      "sample_id": "fashionpedia-negative-candidate-22077",
+      "localization": {
+        "status": "provisional",
+        "roi": [
+          109,
+          310,
+          549,
+          988
+        ],
+        "reason": "experimental_mask_not_verified_presence_or_full_view",
+        "mask_pixels": 669,
+        "threshold": 0.5,
+        "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+      }
+    },
+    {
+      "sample_id": "fashionpedia-negative-candidate-23236",
+      "localization": {
+        "status": "provisional",
+        "roi": [
+          219,
+          340,
+          604,
+          474
+        ],
+        "reason": "experimental_mask_not_verified_presence_or_full_view",
+        "mask_pixels": 148,
+        "threshold": 0.5,
+        "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+      }
+    },
+    {
+      "sample_id": "fashionpedia-negative-candidate-12088",
+      "localization": {
+        "status": "unavailable",
+        "roi": null,
+        "reason": "multiple_regions",
+        "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+      }
+    },
+    {
+      "sample_id": "fashionpedia-negative-candidate-38135",
+      "localization": {
+        "status": "provisional",
+        "roi": [
+          243,
+          475,
+          365,
+          640
+        ],
+        "reason": "experimental_mask_not_verified_presence_or_full_view",
+        "mask_pixels": 61,
+        "threshold": 0.5,
+        "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+      }
+    },
+    {
+      "sample_id": "fashionpedia-negative-candidate-17620",
+      "localization": {
+        "status": "provisional",
+        "roi": [
+          230,
+          384,
+          498,
+          896
+        ],
+        "reason": "experimental_mask_not_verified_presence_or_full_view",
+        "mask_pixels": 425,
+        "threshold": 0.5,
+        "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+      }
+    },
+    {
+      "sample_id": "fashionpedia-negative-candidate-10008",
+      "localization": {
+        "status": "unavailable",
+        "roi": null,
+        "reason": "multiple_regions",
+        "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+      }
+    },
+    {
+      "sample_id": "fashionpedia-negative-candidate-2082",
+      "localization": {
+        "status": "unavailable",
+        "roi": null,
+        "reason": "multiple_regions",
+        "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+      }
+    },
+    {
+      "sample_id": "fashionpedia-negative-candidate-10970",
+      "localization": {
+        "status": "unavailable",
+        "roi": null,
+        "reason": "multiple_regions",
+        "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+      }
+    },
+    {
+      "sample_id": "fashionpedia-negative-candidate-5757",
+      "localization": {
+        "status": "unavailable",
+        "roi": null,
+        "reason": "multiple_regions",
+        "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+      }
+    },
+    {
+      "sample_id": "fashionpedia-negative-candidate-5328",
+      "localization": {
+        "status": "provisional",
+        "roi": [
+          457,
+          462,
+          659,
+          561
+        ],
+        "reason": "experimental_mask_not_verified_presence_or_full_view",
+        "mask_pixels": 53,
+        "threshold": 0.5,
+        "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+      }
+    },
+    {
+      "sample_id": "fashionpedia-negative-candidate-49172",
+      "localization": {
+        "status": "unavailable",
+        "roi": null,
+        "reason": "region_touches_frame_edge",
+        "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+      }
+    },
+    {
+      "sample_id": "fashionpedia-negative-candidate-48320",
+      "localization": {
+        "status": "provisional",
+        "roi": [
+          256,
+          329,
+          549,
+          732
+        ],
+        "reason": "experimental_mask_not_verified_presence_or_full_view",
+        "mask_pixels": 323,
+        "threshold": 0.5,
+        "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+      }
+    },
+    {
+      "sample_id": "fashionpedia-negative-candidate-15267",
+      "localization": {
+        "status": "provisional",
+        "roi": [
+          530,
+          412,
+          732,
+          523
+        ],
+        "reason": "experimental_mask_not_verified_presence_or_full_view",
+        "mask_pixels": 76,
+        "threshold": 0.5,
+        "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+      }
+    },
+    {
+      "sample_id": "fashionpedia-negative-candidate-16930",
+      "localization": {
+        "status": "provisional",
+        "roi": [
+          292,
+          256,
+          488,
+          695
+        ],
+        "reason": "experimental_mask_not_verified_presence_or_full_view",
+        "mask_pixels": 255,
+        "threshold": 0.5,
+        "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+      }
+    },
+    {
+      "sample_id": "fashionpedia-negative-candidate-5176",
+      "localization": {
+        "status": "unavailable",
+        "roi": null,
+        "reason": "multiple_regions",
+        "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+      }
+    },
+    {
+      "sample_id": "fashionpedia-negative-candidate-30390",
+      "localization": {
+        "status": "unavailable",
+        "roi": null,
+        "reason": "multiple_regions",
+        "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+      }
+    },
+    {
+      "sample_id": "fashionpedia-negative-candidate-29288",
+      "localization": {
+        "status": "unavailable",
+        "roi": null,
+        "reason": "multiple_regions",
+        "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+      }
+    },
+    {
+      "sample_id": "fashionpedia-negative-candidate-11594",
+      "localization": {
+        "status": "provisional",
+        "roi": [
+          310,
+          396,
+          640,
+          588
+        ],
+        "reason": "experimental_mask_not_verified_presence_or_full_view",
+        "mask_pixels": 204,
+        "threshold": 0.5,
+        "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+      }
+    },
+    {
+      "sample_id": "fashionpedia-negative-candidate-21184",
+      "localization": {
+        "status": "provisional",
+        "roi": [
+          731,
+          384,
+          878,
+          535
+        ],
+        "reason": "experimental_mask_not_verified_presence_or_full_view",
+        "mask_pixels": 72,
+        "threshold": 0.5,
+        "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+      }
+    },
+    {
+      "sample_id": "fashionpedia-negative-candidate-41975",
+      "localization": {
+        "status": "provisional",
+        "roi": [
+          237,
+          128,
+          805,
+          988
+        ],
+        "reason": "experimental_mask_not_verified_presence_or_full_view",
+        "mask_pixels": 971,
+        "threshold": 0.5,
+        "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+      }
+    },
+    {
+      "sample_id": "fashionpedia-negative-candidate-19986",
+      "localization": {
+        "status": "unavailable",
+        "roi": null,
+        "reason": "multiple_regions",
+        "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+      }
+    },
+    {
+      "sample_id": "fashionpedia-negative-candidate-30036",
+      "localization": {
+        "status": "provisional",
+        "roi": [
+          200,
+          347,
+          414,
+          640
+        ],
+        "reason": "experimental_mask_not_verified_presence_or_full_view",
+        "mask_pixels": 185,
+        "threshold": 0.5,
+        "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+      }
+    },
+    {
+      "sample_id": "fashionpedia-negative-candidate-39264",
+      "localization": {
+        "status": "unavailable",
+        "roi": null,
+        "reason": "region_touches_frame_edge",
+        "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+      }
+    },
+    {
+      "sample_id": "fashionpedia-negative-candidate-10296",
+      "localization": {
+        "status": "provisional",
+        "roi": [
+          109,
+          749,
+          378,
+          988
+        ],
+        "reason": "experimental_mask_not_verified_presence_or_full_view",
+        "mask_pixels": 149,
+        "threshold": 0.5,
+        "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+      }
+    },
+    {
+      "sample_id": "fashionpedia-negative-candidate-1853",
+      "localization": {
+        "status": "provisional",
+        "roi": [
+          329,
+          182,
+          604,
+          439
+        ],
+        "reason": "experimental_mask_not_verified_presence_or_full_view",
+        "mask_pixels": 221,
+        "threshold": 0.5,
+        "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+      }
+    },
+    {
+      "sample_id": "fashionpedia-negative-candidate-1632",
+      "localization": {
+        "status": "unavailable",
+        "roi": null,
+        "reason": "multiple_regions",
+        "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+      }
+    },
+    {
+      "sample_id": "fashionpedia-negative-candidate-47945",
+      "localization": {
+        "status": "provisional",
+        "roi": [
+          218,
+          402,
+          425,
+          677
+        ],
+        "reason": "experimental_mask_not_verified_presence_or_full_view",
+        "mask_pixels": 191,
+        "threshold": 0.5,
+        "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+      }
+    },
+    {
+      "sample_id": "fashionpedia-negative-candidate-14679",
+      "localization": {
+        "status": "provisional",
+        "roi": [
+          256,
+          438,
+          501,
+          732
+        ],
+        "reason": "experimental_mask_not_verified_presence_or_full_view",
+        "mask_pixels": 151,
+        "threshold": 0.5,
+        "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+      }
+    },
+    {
+      "sample_id": "fashionpedia-negative-candidate-42562",
+      "localization": {
+        "status": "unavailable",
+        "roi": null,
+        "reason": "region_touches_frame_edge",
+        "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+      }
+    },
+    {
+      "sample_id": "fashionpedia-negative-candidate-39262",
+      "localization": {
+        "status": "unavailable",
+        "roi": null,
+        "reason": "region_touches_frame_edge",
+        "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+      }
+    },
+    {
+      "sample_id": "fashionpedia-negative-candidate-19184",
+      "localization": {
+        "status": "unavailable",
+        "roi": null,
+        "reason": "multiple_regions",
+        "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+      }
+    },
+    {
+      "sample_id": "fashionpedia-negative-candidate-12125",
+      "localization": {
+        "status": "unavailable",
+        "roi": null,
+        "reason": "multiple_regions",
+        "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+      }
+    },
+    {
+      "sample_id": "fashionpedia-negative-candidate-47254",
+      "localization": {
+        "status": "provisional",
+        "roi": [
+          194,
+          493,
+          427,
+          695
+        ],
+        "reason": "experimental_mask_not_verified_presence_or_full_view",
+        "mask_pixels": 127,
+        "threshold": 0.5,
+        "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+      }
+    },
+    {
+      "sample_id": "fashionpedia-negative-candidate-24446",
+      "localization": {
+        "status": "unavailable",
+        "roi": null,
+        "reason": "multiple_regions",
+        "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+      }
+    },
+    {
+      "sample_id": "fashionpedia-negative-candidate-22628",
+      "localization": {
+        "status": "unavailable",
+        "roi": null,
+        "reason": "multiple_regions",
+        "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+      }
+    },
+    {
+      "sample_id": "fashionpedia-negative-candidate-33213",
+      "localization": {
+        "status": "provisional",
+        "roi": [
+          219,
+          402,
+          622,
+          842
+        ],
+        "reason": "experimental_mask_not_verified_presence_or_full_view",
+        "mask_pixels": 497,
+        "threshold": 0.5,
+        "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+      }
+    },
+    {
+      "sample_id": "fashionpedia-negative-candidate-12902",
+      "localization": {
+        "status": "provisional",
+        "roi": [
+          207,
+          475,
+          549,
+          933
+        ],
+        "reason": "experimental_mask_not_verified_presence_or_full_view",
+        "mask_pixels": 548,
+        "threshold": 0.5,
+        "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+      }
+    },
+    {
+      "sample_id": "fashionpedia-negative-candidate-47223",
+      "localization": {
+        "status": "unavailable",
+        "roi": null,
+        "reason": "multiple_regions",
+        "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+      }
+    },
+    {
+      "sample_id": "fashionpedia-negative-candidate-42119",
+      "localization": {
+        "status": "provisional",
+        "roi": [
+          243,
+          310,
+          512,
+          732
+        ],
+        "reason": "experimental_mask_not_verified_presence_or_full_view",
+        "mask_pixels": 340,
+        "threshold": 0.5,
+        "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+      }
+    },
+    {
+      "sample_id": "fashionpedia-negative-candidate-39343",
+      "localization": {
+        "status": "provisional",
+        "roi": [
+          146,
+          365,
+          439,
+          860
+        ],
+        "reason": "experimental_mask_not_verified_presence_or_full_view",
+        "mask_pixels": 386,
+        "threshold": 0.5,
+        "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+      }
+    },
+    {
+      "sample_id": "fashionpedia-negative-candidate-11929",
+      "localization": {
+        "status": "unavailable",
+        "roi": null,
+        "reason": "multiple_regions",
+        "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+      }
+    },
+    {
+      "sample_id": "fashionpedia-negative-candidate-30991",
+      "localization": {
+        "status": "unavailable",
+        "roi": null,
+        "reason": "multiple_regions",
+        "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+      }
+    },
+    {
+      "sample_id": "fashionpedia-negative-candidate-36210",
+      "localization": {
+        "status": "unavailable",
+        "roi": null,
+        "reason": "multiple_regions",
+        "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+      }
+    },
+    {
+      "sample_id": "fashionpedia-negative-candidate-7572",
+      "localization": {
+        "status": "unavailable",
+        "roi": null,
+        "reason": "multiple_regions",
+        "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+      }
+    },
+    {
+      "sample_id": "fashionpedia-negative-candidate-24993",
+      "localization": {
+        "status": "unavailable",
+        "roi": null,
+        "reason": "multiple_regions",
+        "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+      }
+    },
+    {
+      "sample_id": "fashionpedia-negative-candidate-32440",
+      "localization": {
+        "status": "provisional",
+        "roi": [
+          267,
+          384,
+          486,
+          695
+        ],
+        "reason": "experimental_mask_not_verified_presence_or_full_view",
+        "mask_pixels": 233,
+        "threshold": 0.5,
+        "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+      }
+    },
+    {
+      "sample_id": "fashionpedia-negative-candidate-43299",
+      "localization": {
+        "status": "provisional",
+        "roi": [
+          207,
+          219,
+          464,
+          714
+        ],
+        "reason": "experimental_mask_not_verified_presence_or_full_view",
+        "mask_pixels": 364,
+        "threshold": 0.5,
+        "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+      }
+    },
+    {
+      "sample_id": "fashionpedia-negative-candidate-1228",
+      "localization": {
+        "status": "unavailable",
+        "roi": null,
+        "reason": "multiple_regions",
+        "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+      }
+    },
+    {
+      "sample_id": "fashionpedia-negative-candidate-10484",
+      "localization": {
+        "status": "unavailable",
+        "roi": null,
+        "reason": "multiple_regions",
+        "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+      }
+    },
+    {
+      "sample_id": "fashionpedia-negative-candidate-10014",
+      "localization": {
+        "status": "provisional",
+        "roi": [
+          255,
+          365,
+          415,
+          586
+        ],
+        "reason": "experimental_mask_not_verified_presence_or_full_view",
+        "mask_pixels": 136,
+        "threshold": 0.5,
+        "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+      }
+    },
+    {
+      "sample_id": "fashionpedia-negative-candidate-21106",
+      "localization": {
+        "status": "unavailable",
+        "roi": null,
+        "reason": "region_touches_frame_edge",
+        "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+      }
+    },
+    {
+      "sample_id": "fashionpedia-negative-candidate-8933",
+      "localization": {
+        "status": "unavailable",
+        "roi": null,
+        "reason": "multiple_regions",
+        "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+      }
+    },
+    {
+      "sample_id": "fashionpedia-negative-candidate-49787",
+      "localization": {
+        "status": "unavailable",
+        "roi": null,
+        "reason": "region_touches_frame_edge",
+        "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+      }
+    },
+    {
+      "sample_id": "fashionpedia-negative-candidate-7444",
+      "localization": {
+        "status": "provisional",
+        "roi": [
+          207,
+          347,
+          440,
+          677
+        ],
+        "reason": "experimental_mask_not_verified_presence_or_full_view",
+        "mask_pixels": 233,
+        "threshold": 0.5,
+        "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+      }
+    },
+    {
+      "sample_id": "fashionpedia-negative-candidate-15914",
+      "localization": {
+        "status": "provisional",
+        "roi": [
+          414,
+          292,
+          524,
+          494
+        ],
+        "reason": "experimental_mask_not_verified_presence_or_full_view",
+        "mask_pixels": 55,
+        "threshold": 0.5,
+        "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+      }
+    },
+    {
+      "sample_id": "fashionpedia-negative-candidate-4708",
+      "localization": {
+        "status": "provisional",
+        "roi": [
+          243,
+          310,
+          475,
+          604
+        ],
+        "reason": "experimental_mask_not_verified_presence_or_full_view",
+        "mask_pixels": 232,
+        "threshold": 0.5,
+        "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+      }
+    },
+    {
+      "sample_id": "fashionpedia-negative-candidate-43635",
+      "localization": {
+        "status": "unavailable",
+        "roi": null,
+        "reason": "region_touches_frame_edge",
+        "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+      }
+    },
+    {
+      "sample_id": "fashionpedia-negative-candidate-24908",
+      "localization": {
+        "status": "unavailable",
+        "roi": null,
+        "reason": "multiple_regions",
+        "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+      }
+    },
+    {
+      "sample_id": "fashionpedia-negative-candidate-3886",
+      "localization": {
+        "status": "provisional",
+        "roi": [
+          493,
+          438,
+          659,
+          597
+        ],
+        "reason": "experimental_mask_not_verified_presence_or_full_view",
+        "mask_pixels": 88,
+        "threshold": 0.5,
+        "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+      }
+    },
+    {
+      "sample_id": "fashionpedia-negative-candidate-13377",
+      "localization": {
+        "status": "unavailable",
+        "roi": null,
+        "reason": "multiple_regions",
+        "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+      }
+    },
+    {
+      "sample_id": "fashionpedia-negative-candidate-6259",
+      "localization": {
+        "status": "provisional",
+        "roi": [
+          315,
+          530,
+          438,
+          659
+        ],
+        "reason": "experimental_mask_not_verified_presence_or_full_view",
+        "mask_pixels": 61,
+        "threshold": 0.5,
+        "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+      }
+    },
+    {
+      "sample_id": "fashionpedia-negative-candidate-6493",
+      "localization": {
+        "status": "provisional",
+        "roi": [
+          333,
+          347,
+          567,
+          604
+        ],
+        "reason": "experimental_mask_not_verified_presence_or_full_view",
+        "mask_pixels": 151,
+        "threshold": 0.5,
+        "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+      }
+    },
+    {
+      "sample_id": "fashionpedia-negative-candidate-49256",
+      "localization": {
+        "status": "unavailable",
+        "roi": null,
+        "reason": "multiple_regions",
+        "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+      }
+    },
+    {
+      "sample_id": "fashionpedia-negative-candidate-6661",
+      "localization": {
+        "status": "unavailable",
+        "roi": null,
+        "reason": "multiple_regions",
+        "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+      }
+    },
+    {
+      "sample_id": "fashionpedia-negative-candidate-33972",
+      "localization": {
+        "status": "unavailable",
+        "roi": null,
+        "reason": "multiple_regions",
+        "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+      }
+    },
+    {
+      "sample_id": "fashionpedia-negative-candidate-13841",
+      "localization": {
+        "status": "unavailable",
+        "roi": null,
+        "reason": "multiple_regions",
+        "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+      }
+    },
+    {
+      "sample_id": "fashionpedia-negative-candidate-14287",
+      "localization": {
+        "status": "unavailable",
+        "roi": null,
+        "reason": "multiple_regions",
+        "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+      }
+    },
+    {
+      "sample_id": "fashionpedia-negative-candidate-35794",
+      "localization": {
+        "status": "provisional",
+        "roi": [
+          133,
+          146,
+          524,
+          933
+        ],
+        "reason": "experimental_mask_not_verified_presence_or_full_view",
+        "mask_pixels": 878,
+        "threshold": 0.5,
+        "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+      }
+    },
+    {
+      "sample_id": "fashionpedia-negative-candidate-1410",
+      "localization": {
+        "status": "unavailable",
+        "roi": null,
+        "reason": "multiple_regions",
+        "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+      }
+    },
+    {
+      "sample_id": "fashionpedia-negative-candidate-24817",
+      "localization": {
+        "status": "unavailable",
+        "roi": null,
+        "reason": "multiple_regions",
+        "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+      }
+    },
+    {
+      "sample_id": "fashionpedia-negative-candidate-14673",
+      "localization": {
+        "status": "unavailable",
+        "roi": null,
+        "reason": "multiple_regions",
+        "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+      }
+    },
+    {
+      "sample_id": "fashionpedia-negative-candidate-25061",
+      "localization": {
+        "status": "unavailable",
+        "roi": null,
+        "reason": "multiple_regions",
+        "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+      }
+    },
+    {
+      "sample_id": "fashionpedia-negative-candidate-13916",
+      "localization": {
+        "status": "unavailable",
+        "roi": null,
+        "reason": "region_touches_frame_edge",
+        "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+      }
+    },
+    {
+      "sample_id": "fashionpedia-negative-candidate-43923",
+      "localization": {
+        "status": "provisional",
+        "roi": [
+          219,
+          457,
+          439,
+          915
+        ],
+        "reason": "experimental_mask_not_verified_presence_or_full_view",
+        "mask_pixels": 391,
+        "threshold": 0.5,
+        "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+      }
+    },
+    {
+      "sample_id": "fashionpedia-negative-candidate-48295",
+      "localization": {
+        "status": "unavailable",
+        "roi": null,
+        "reason": "multiple_regions",
+        "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+      }
+    },
+    {
+      "sample_id": "fashionpedia-negative-candidate-5220",
+      "localization": {
+        "status": "unavailable",
+        "roi": null,
+        "reason": "multiple_regions",
+        "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+      }
+    },
+    {
+      "sample_id": "fashionpedia-negative-candidate-23272",
+      "localization": {
+        "status": "provisional",
+        "roi": [
+          208,
+          402,
+          442,
+          659
+        ],
+        "reason": "experimental_mask_not_verified_presence_or_full_view",
+        "mask_pixels": 206,
+        "threshold": 0.5,
+        "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+      }
+    },
+    {
+      "sample_id": "fashionpedia-negative-candidate-49655",
+      "localization": {
+        "status": "unavailable",
+        "roi": null,
+        "reason": "multiple_regions",
+        "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+      }
+    },
+    {
+      "sample_id": "fashionpedia-negative-candidate-12699",
+      "localization": {
+        "status": "provisional",
+        "roi": [
+          60,
+          603,
+          463,
+          823
+        ],
+        "reason": "experimental_mask_not_verified_presence_or_full_view",
+        "mask_pixels": 175,
+        "threshold": 0.5,
+        "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+      }
+    },
+    {
+      "sample_id": "fashionpedia-negative-candidate-21531",
+      "localization": {
+        "status": "unavailable",
+        "roi": null,
+        "reason": "multiple_regions",
+        "model_sha256": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2"
+      }
+    }
+  ],
+  "limits": [
+    "Source train2020 images with no annotated skirt; not certified absence",
+    "Development diagnostic, not locked test or camera-domain accuracy",
+    "No thresholds fitted; no model promoted"
+  ]
+}

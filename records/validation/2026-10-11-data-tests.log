@@ -1,0 +1,53 @@
+test_backslash_name (tests.test_bounded_zip.BoundedZipTests.test_backslash_name) ... ok
+test_comment_with_signature (tests.test_bounded_zip.BoundedZipTests.test_comment_with_signature) ... ok
+test_count_and_directory_bounds (tests.test_bounded_zip.BoundedZipTests.test_count_and_directory_bounds) ... ok
+test_crc_failure (tests.test_bounded_zip.BoundedZipTests.test_crc_failure) ... ok
+test_duplicates (tests.test_bounded_zip.BoundedZipTests.test_duplicates) ... C:\Users\Administrator\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\zipfile\__init__.py:1625: UserWarning: Duplicate name: 'a'
+  return self._open_to_write(zinfo, force_zip64=force_zip64)
+ok
+test_empty_and_directory (tests.test_bounded_zip.BoundedZipTests.test_empty_and_directory) ... ok
+test_encryption_and_compression (tests.test_bounded_zip.BoundedZipTests.test_encryption_and_compression) ... ok
+test_exact_callback (tests.test_bounded_zip.BoundedZipTests.test_exact_callback) ... ok
+test_index_copy (tests.test_bounded_zip.BoundedZipTests.test_index_copy) ... ok
+test_local_header_mismatches (tests.test_bounded_zip.BoundedZipTests.test_local_header_mismatches) ... ok
+test_member_caps_and_bomb (tests.test_bounded_zip.BoundedZipTests.test_member_caps_and_bomb) ... ok
+test_missing_zip64_extra (tests.test_bounded_zip.BoundedZipTests.test_missing_zip64_extra) ... ok
+test_multidisk (tests.test_bounded_zip.BoundedZipTests.test_multidisk) ... ok
+test_sparse_zip64_above_four_gib (tests.test_bounded_zip.BoundedZipTests.test_sparse_zip64_above_four_gib) ... ok
+test_stored_and_deflated (tests.test_bounded_zip.BoundedZipTests.test_stored_and_deflated) ... ok
+test_streamed_data_descriptor (tests.test_bounded_zip.BoundedZipTests.test_streamed_data_descriptor) ... ok
+test_symlink (tests.test_bounded_zip.BoundedZipTests.test_symlink) ... ok
+test_unsafe_names (tests.test_bounded_zip.BoundedZipTests.test_unsafe_names) ... ok
+test_zip64 (tests.test_bounded_zip.BoundedZipTests.test_zip64) ... ok
+test_zip64_malformed (tests.test_bounded_zip.BoundedZipTests.test_zip64_malformed) ... ok
+test_existing_ids_excluded (tests.test_negative_intake.NegativeIntakeTests.test_existing_ids_excluded) ... ok
+test_manifest_path_escape (tests.test_negative_intake.NegativeIntakeTests.test_manifest_path_escape) ... ok
+test_overlap_one_candidate (tests.test_negative_intake.NegativeIntakeTests.test_overlap_one_candidate) ... ok
+test_reject_skirt_and_unannotated (tests.test_negative_intake.NegativeIntakeTests.test_reject_skirt_and_unannotated) ... ok
+test_repeatable_and_balanced_order (tests.test_negative_intake.NegativeIntakeTests.test_repeatable_and_balanced_order) ... ok
+test_taxonomy_mismatch_rejected (tests.test_negative_intake.NegativeIntakeTests.test_taxonomy_mismatch_rejected) ... ok
+test_unsafe_paths (tests.test_negative_intake.NegativeIntakeTests.test_unsafe_paths) ... ok
+test_bounded_selection_does_not_add_test_only_classes (tests.test_fullview_fabric_intake.FullviewIntakeTests.test_bounded_selection_does_not_add_test_only_classes) ... ok
+test_confirmation_fields_only_come_from_named_form (tests.test_fullview_fabric_intake.FullviewIntakeTests.test_confirmation_fields_only_come_from_named_form) ... ok
+test_selection_preserves_original_train_and_one_source_item (tests.test_fullview_fabric_intake.FullviewIntakeTests.test_selection_preserves_original_train_and_one_source_item) ... ok
+test_corruption_and_dimension_mismatch_rejected (tests.test_dataset_pipeline.DatasetPipelineTests.test_corruption_and_dimension_mismatch_rejected) ... ok
+test_decode_rejects_valid_hash_of_nonimage (tests.test_dataset_pipeline.DatasetPipelineTests.test_decode_rejects_valid_hash_of_nonimage) ... ok
+test_exact_duplicate_of_holdout_never_enters_training (tests.test_dataset_pipeline.DatasetPipelineTests.test_exact_duplicate_of_holdout_never_enters_training) ... C:\Users\Administrator\OneDrive\Documents\ChatGPT\SkirtFabricSense\tools\datasets\audit_candidates.py:86: DeprecationWarning: Image.Image.getdata is deprecated and will be removed in Pillow 14 (2027-10-15). Use get_flattened_data instead.
+  pixels = list(tiny.getdata())
+ok
+test_missing_parent_fails_instead_of_leaking (tests.test_dataset_pipeline.DatasetPipelineTests.test_missing_parent_fails_instead_of_leaking) ... ok
+test_near_duplicate_connected_to_holdout_is_excluded (tests.test_dataset_pipeline.DatasetPipelineTests.test_near_duplicate_connected_to_holdout_is_excluded) ... ok
+test_parents_and_transitive_groups_stay_together (tests.test_dataset_pipeline.DatasetPipelineTests.test_parents_and_transitive_groups_stay_together) ... ok
+test_path_escape_and_duplicate_ids_rejected (tests.test_dataset_pipeline.DatasetPipelineTests.test_path_escape_and_duplicate_ids_rejected) ... ok
+test_report_does_not_overwrite_existing_evidence (tests.test_dataset_pipeline.DatasetPipelineTests.test_report_does_not_overwrite_existing_evidence) ... ok
+test_source_labels_do_not_become_project_labels (tests.test_dataset_pipeline.DatasetPipelineTests.test_source_labels_do_not_become_project_labels) ... ok
+test_task_approval_does_not_transfer_and_missing_terms_rejected (tests.test_dataset_pipeline.DatasetPipelineTests.test_task_approval_does_not_transfer_and_missing_terms_rejected) ... ok
+test_unknown_partition_excluded_and_input_order_deterministic (tests.test_dataset_pipeline.DatasetPipelineTests.test_unknown_partition_excluded_and_input_order_deterministic) ... ok
+test_fabric_range_extract_and_identity_rejection (tests.test_archive_intake.ArchiveIntakeTests.test_fabric_range_extract_and_identity_rejection) ... ok
+test_oversized_member_rejected_before_network (tests.test_archive_intake.ArchiveIntakeTests.test_oversized_member_rejected_before_network) ... ok
+test_skirt_range_extract_and_crc_rejection (tests.test_archive_intake.ArchiveIntakeTests.test_skirt_range_extract_and_crc_rejection) ... ok
+
+----------------------------------------------------------------------
+Ran 44 tests in 0.961s
+
+OK

@@ -1,0 +1,1182 @@
+[
+  {
+    "sample_id": "fashionpedia-train2020-12679",
+    "category_target": 0,
+    "category_probabilities": [
+      0.6189696788787842,
+      0.023750171065330505,
+      0.269110769033432,
+      0.08816935867071152
+    ]
+  },
+  {
+    "sample_id": "fashionpedia-train2020-16838",
+    "category_target": 0,
+    "category_probabilities": [
+      0.987820029258728,
+      0.006566911935806274,
+      0.0021522045135498047,
+      0.0034608757123351097
+    ]
+  },
+  {
+    "sample_id": "fashionpedia-train2020-16912",
+    "category_target": 0,
+    "category_probabilities": [
+      0.9694857001304626,
+      0.0061468686908483505,
+      0.0010402902262285352,
+      0.02332703396677971
+    ]
+  },
+  {
+    "sample_id": "fashionpedia-train2020-17761",
+    "category_target": 0,
+    "category_probabilities": [
+      0.9832465052604675,
+      0.008050349541008472,
+      0.0013541982043534517,
+      0.007348930463194847
+    ]
+  },
+  {
+    "sample_id": "fashionpedia-train2020-21255",
+    "category_target": 0,
+    "category_probabilities": [
+      0.8564350008964539,
+      0.025172851979732513,
+      0.09193412214517593,
+      0.02645796537399292
+    ]
+  },
+  {
+    "sample_id": "fashionpedia-train2020-21441",
+    "category_target": 0,
+    "category_probabilities": [
+      0.7966534495353699,
+      0.07327354699373245,
+      0.053520023822784424,
+      0.07655300945043564
+    ]
+  },
+  {
+    "sample_id": "fashionpedia-train2020-21757",
+    "category_target": 0,
+    "category_probabilities": [
+      0.9745178818702698,
+      0.0018455316312611103,
+      0.00039880877011455595,
+      0.02323783189058304
+    ]
+  },
+  {
+    "sample_id": "fashionpedia-train2020-2208",
+    "category_target": 0,
+    "category_probabilities": [
+      0.9715569019317627,
+      0.0033531258814036846,
+      0.000256465224083513,
+      0.024833479896187782
+    ]
+  },
+  {
+    "sample_id": "fashionpedia-train2020-22772",
+    "category_target": 0,
+    "category_probabilities": [
+      0.9696938395500183,
+      0.005524189677089453,
+      0.0008673568372614682,
+      0.023914599791169167
+    ]
+  },
+  {
+    "sample_id": "fashionpedia-train2020-23671",
+    "category_target": 0,
+    "category_probabilities": [
+      0.9487309455871582,
+      0.028742903843522072,
+      0.008665026165544987,
+      0.013861047104001045
+    ]
+  },
+  {
+    "sample_id": "fashionpedia-train2020-23874",
+    "category_target": 0,
+    "category_probabilities": [
+      0.6031858921051025,
+      0.04079090431332588,
+      0.044263504445552826,
+      0.31175971031188965
+    ]
+  },
+  {
+    "sample_id": "fashionpedia-train2020-24110",
+    "category_target": 0,
+    "category_probabilities": [
+      0.9104197025299072,
+      0.000904366432223469,
+      0.0019353715470060706,
+      0.08674055337905884
+    ]
+  },
+  {
+    "sample_id": "fashionpedia-train2020-24284",
+    "category_target": 0,
+    "category_probabilities": [
+      0.821049690246582,
+      0.015985161066055298,
+      0.10506699979305267,
+      0.057898178696632385
+    ]
+  },
+  {
+    "sample_id": "fashionpedia-train2020-24325",
+    "category_target": 0,
+    "category_probabilities": [
+      0.9761297106742859,
+      0.005602883640676737,
+      0.005638481583446264,
+      0.012628858909010887
+    ]
+  },
+  {
+    "sample_id": "fashionpedia-train2020-24650",
+    "category_target": 0,
+    "category_probabilities": [
+      0.8884325623512268,
+      0.07101962715387344,
+      0.009430930018424988,
+      0.031116824597120285
+    ]
+  },
+  {
+    "sample_id": "fashionpedia-train2020-24708",
+    "category_target": 0,
+    "category_probabilities": [
+      0.8025407791137695,
+      0.0202166847884655,
+      0.009698411449790001,
+      0.16754411160945892
+    ]
+  },
+  {
+    "sample_id": "fashionpedia-train2020-2689",
+    "category_target": 0,
+    "category_probabilities": [
+      0.9760282039642334,
+      0.0016998442588374019,
+      0.012608340010046959,
+      0.009663554839789867
+    ]
+  },
+  {
+    "sample_id": "fashionpedia-train2020-29142",
+    "category_target": 0,
+    "category_probabilities": [
+      0.3855426609516144,
+      0.01633787341415882,
+      0.4772019386291504,
+      0.12091756612062454
+    ]
+  },
+  {
+    "sample_id": "fashionpedia-train2020-3166",
+    "category_target": 0,
+    "category_probabilities": [
+      0.31495293974876404,
+      0.6763986945152283,
+      0.005427099298685789,
+      0.003221259918063879
+    ]
+  },
+  {
+    "sample_id": "fashionpedia-train2020-31762",
+    "category_target": 0,
+    "category_probabilities": [
+      0.5576228499412537,
+      0.01330080907791853,
+      0.34350332617759705,
+      0.0855729952454567
+    ]
+  },
+  {
+    "sample_id": "fashionpedia-train2020-31853",
+    "category_target": 0,
+    "category_probabilities": [
+      0.21285995841026306,
+      0.02155231311917305,
+      0.3537667691707611,
+      0.4118209481239319
+    ]
+  },
+  {
+    "sample_id": "fashionpedia-train2020-3337",
+    "category_target": 0,
+    "category_probabilities": [
+      0.9153311252593994,
+      0.0017568717012181878,
+      0.001023423857986927,
+      0.0818886011838913
+    ]
+  },
+  {
+    "sample_id": "fashionpedia-train2020-33951",
+    "category_target": 0,
+    "category_probabilities": [
+      0.4924626648426056,
+      0.2236468344926834,
+      0.2574461102485657,
+      0.02644437924027443
+    ]
+  },
+  {
+    "sample_id": "fashionpedia-train2020-34108",
+    "category_target": 0,
+    "category_probabilities": [
+      0.6768858432769775,
+      0.0009636955219320953,
+      0.002532592276111245,
+      0.3196179270744324
+    ]
+  },
+  {
+    "sample_id": "fashionpedia-train2020-34508",
+    "category_target": 0,
+    "category_probabilities": [
+      0.9470910429954529,
+      0.03223168104887009,
+      0.005210396368056536,
+      0.015466786921024323
+    ]
+  },
+  {
+    "sample_id": "fashionpedia-train2020-35294",
+    "category_target": 0,
+    "category_probabilities": [
+      0.7702071666717529,
+      0.003583121346309781,
+      0.08832085132598877,
+      0.13788890838623047
+    ]
+  },
+  {
+    "sample_id": "fashionpedia-train2020-3554",
+    "category_target": 0,
+    "category_probabilities": [
+      0.8807406425476074,
+      0.001023220014758408,
+      0.0054154410026967525,
+      0.11282062530517578
+    ]
+  },
+  {
+    "sample_id": "fashionpedia-train2020-36049",
+    "category_target": 0,
+    "category_probabilities": [
+      0.9812248349189758,
+      0.008758017793297768,
+      0.0007067294209264219,
+      0.009310462512075901
+    ]
+  },
+  {
+    "sample_id": "fashionpedia-train2020-37302",
+    "category_target": 0,
+    "category_probabilities": [
+      0.9678869843482971,
+      0.0008075753576122224,
+      0.000751714629586786,
+      0.030553720891475677
+    ]
+  },
+  {
+    "sample_id": "fashionpedia-train2020-37357",
+    "category_target": 0,
+    "category_probabilities": [
+      0.5840967893600464,
+      0.0009536300203762949,
+      0.016745131462812424,
+      0.3982044458389282
+    ]
+  },
+  {
+    "sample_id": "fashionpedia-train2020-37613",
+    "category_target": 0,
+    "category_probabilities": [
+      0.49470460414886475,
+      0.009455184452235699,
+      0.3362605571746826,
+      0.15957967936992645
+    ]
+  },
+  {
+    "sample_id": "fashionpedia-train2020-38701",
+    "category_target": 0,
+    "category_probabilities": [
+      0.04805099219083786,
+      0.9209265112876892,
+      0.03056027740240097,
+      0.00046218340867199004
+    ]
+  },
+  {
+    "sample_id": "fashionpedia-train2020-39103",
+    "category_target": 0,
+    "category_probabilities": [
+      0.8135071992874146,
+      0.01634049415588379,
+      0.10248737037181854,
+      0.06766492128372192
+    ]
+  },
+  {
+    "sample_id": "fashionpedia-train2020-39412",
+    "category_target": 0,
+    "category_probabilities": [
+      0.4077509045600891,
+      0.0016669208416715264,
+      0.015489824116230011,
+      0.5750923752784729
+    ]
+  },
+  {
+    "sample_id": "fashionpedia-train2020-41170",
+    "category_target": 0,
+    "category_probabilities": [
+      0.9602280855178833,
+      0.0005200843443162739,
+      0.000659871322568506,
+      0.03859210014343262
+    ]
+  },
+  {
+    "sample_id": "fashionpedia-train2020-41961",
+    "category_target": 0,
+    "category_probabilities": [
+      0.9430276155471802,
+      0.001704000518657267,
+      0.0015494837425649166,
+      0.05371888726949692
+    ]
+  },
+  {
+    "sample_id": "fashionpedia-train2020-43005",
+    "category_target": 0,
+    "category_probabilities": [
+      0.9406114220619202,
+      0.016168098896741867,
+      0.011389443650841713,
+      0.03183101490139961
+    ]
+  },
+  {
+    "sample_id": "fashionpedia-train2020-43076",
+    "category_target": 0,
+    "category_probabilities": [
+      0.6884711980819702,
+      0.06631693243980408,
+      0.075221486389637,
+      0.16999034583568573
+    ]
+  },
+  {
+    "sample_id": "fashionpedia-train2020-43394",
+    "category_target": 0,
+    "category_probabilities": [
+      0.5330169796943665,
+      0.00035227026091888547,
+      0.01576024293899536,
+      0.45087048411369324
+    ]
+  },
+  {
+    "sample_id": "fashionpedia-train2020-43660",
+    "category_target": 0,
+    "category_probabilities": [
+      0.3573521375656128,
+      0.03671611100435257,
+      0.36061954498291016,
+      0.24531221389770508
+    ]
+  },
+  {
+    "sample_id": "fashionpedia-train2020-44234",
+    "category_target": 0,
+    "category_probabilities": [
+      0.5135392546653748,
+      0.03035317361354828,
+      0.08143772184848785,
+      0.3746698498725891
+    ]
+  },
+  {
+    "sample_id": "fashionpedia-train2020-44450",
+    "category_target": 0,
+    "category_probabilities": [
+      0.8584825992584229,
+      0.13029760122299194,
+      0.0073396749794483185,
+      0.0038800803013145924
+    ]
+  },
+  {
+    "sample_id": "fashionpedia-train2020-44571",
+    "category_target": 0,
+    "category_probabilities": [
+      0.9321884512901306,
+      0.05584074929356575,
+      0.0031998155172914267,
+      0.008770911023020744
+    ]
+  },
+  {
+    "sample_id": "fashionpedia-train2020-44832",
+    "category_target": 0,
+    "category_probabilities": [
+      0.3126995265483856,
+      0.22438283264636993,
+      0.43664276599884033,
+      0.026274805888533592
+    ]
+  },
+  {
+    "sample_id": "fashionpedia-train2020-45807",
+    "category_target": 0,
+    "category_probabilities": [
+      0.7552676200866699,
+      0.0008349022245965898,
+      0.07220142334699631,
+      0.17169608175754547
+    ]
+  },
+  {
+    "sample_id": "fashionpedia-train2020-45873",
+    "category_target": 0,
+    "category_probabilities": [
+      0.691109299659729,
+      0.001477348036132753,
+      0.10561022907495499,
+      0.20180310308933258
+    ]
+  },
+  {
+    "sample_id": "fashionpedia-train2020-4713",
+    "category_target": 0,
+    "category_probabilities": [
+      0.22342725098133087,
+      0.0025915908627212048,
+      0.43353432416915894,
+      0.340446799993515
+    ]
+  },
+  {
+    "sample_id": "fashionpedia-train2020-48845",
+    "category_target": 0,
+    "category_probabilities": [
+      0.08076141029596329,
+      0.0018187346868216991,
+      0.8191353678703308,
+      0.0982845202088356
+    ]
+  },
+  {
+    "sample_id": "fashionpedia-train2020-4925",
+    "category_target": 0,
+    "category_probabilities": [
+      0.9726492762565613,
+      0.006114785093814135,
+      0.0033350714948028326,
+      0.017900841310620308
+    ]
+  },
+  {
+    "sample_id": "fashionpedia-train2020-49537",
+    "category_target": 0,
+    "category_probabilities": [
+      0.9869309663772583,
+      0.0008085707668215036,
+      0.0014842378441244364,
+      0.010776265524327755
+    ]
+  },
+  {
+    "sample_id": "fashionpedia-train2020-49555",
+    "category_target": 0,
+    "category_probabilities": [
+      0.834036648273468,
+      0.005469242110848427,
+      0.013118184171617031,
+      0.1473759412765503
+    ]
+  },
+  {
+    "sample_id": "fashionpedia-train2020-50372",
+    "category_target": 0,
+    "category_probabilities": [
+      0.4807341992855072,
+      0.0022247277665883303,
+      0.0891152173280716,
+      0.42792579531669617
+    ]
+  },
+  {
+    "sample_id": "fashionpedia-train2020-5127",
+    "category_target": 0,
+    "category_probabilities": [
+      0.9774174690246582,
+      0.001697805244475603,
+      0.013779031112790108,
+      0.007105802185833454
+    ]
+  },
+  {
+    "sample_id": "fashionpedia-train2020-5360",
+    "category_target": 0,
+    "category_probabilities": [
+      0.9320563673973083,
+      0.0006474511465057731,
+      0.0012662920635193586,
+      0.06602992117404938
+    ]
+  },
+  {
+    "sample_id": "fashionpedia-train2020-5478",
+    "category_target": 0,
+    "category_probabilities": [
+      0.9940003156661987,
+      0.0003546990919858217,
+      6.186572863953188e-05,
+      0.0055831605568528175
+    ]
+  },
+  {
+    "sample_id": "fashionpedia-train2020-5573",
+    "category_target": 0,
+    "category_probabilities": [
+      0.7533828616142273,
+      0.1891080141067505,
+      0.04923871532082558,
+      0.008270402438938618
+    ]
+  },
+  {
+    "sample_id": "fashionpedia-train2020-5601",
+    "category_target": 0,
+    "category_probabilities": [
+      0.667052686214447,
+      0.04529661685228348,
+      0.2723919749259949,
+      0.015258707106113434
+    ]
+  },
+  {
+    "sample_id": "fashionpedia-train2020-6020",
+    "category_target": 0,
+    "category_probabilities": [
+      0.9914408922195435,
+      0.0006099599413573742,
+      0.0035665107425302267,
+      0.004382636398077011
+    ]
+  },
+  {
+    "sample_id": "fashionpedia-train2020-6021",
+    "category_target": 0,
+    "category_probabilities": [
+      0.8227096199989319,
+      0.0022466147784143686,
+      0.02049275115132332,
+      0.15455101430416107
+    ]
+  },
+  {
+    "sample_id": "fashionpedia-train2020-6359",
+    "category_target": 0,
+    "category_probabilities": [
+      0.9836283922195435,
+      0.0050401692278683186,
+      0.0014832725282758474,
+      0.00984810572117567
+    ]
+  },
+  {
+    "sample_id": "fashionpedia-train2020-6986",
+    "category_target": 0,
+    "category_probabilities": [
+      0.5539520382881165,
+      0.0036663226783275604,
+      0.006937891710549593,
+      0.4354436695575714
+    ]
+  },
+  {
+    "sample_id": "fashionpedia-train2020-830",
+    "category_target": 0,
+    "category_probabilities": [
+      0.9508194923400879,
+      0.00467159366235137,
+      0.004240377340465784,
+      0.040268514305353165
+    ]
+  },
+  {
+    "sample_id": "fashionpedia-train2020-8732",
+    "category_target": 0,
+    "category_probabilities": [
+      0.9739426374435425,
+      0.0003354249056428671,
+      0.00034850690281018615,
+      0.02537345699965954
+    ]
+  },
+  {
+    "sample_id": "fashionpedia-train2020-8880",
+    "category_target": 0,
+    "category_probabilities": [
+      0.9749600291252136,
+      0.003031429834663868,
+      0.0004169014864601195,
+      0.021591518074274063
+    ]
+  },
+  {
+    "sample_id": "fashionpedia-train2020-9473",
+    "category_target": 0,
+    "category_probabilities": [
+      0.7298020124435425,
+      0.08017443865537643,
+      0.04347148910164833,
+      0.14655205607414246
+    ]
+  },
+  {
+    "sample_id": "fashionpedia-train2020-9732",
+    "category_target": 0,
+    "category_probabilities": [
+      0.9535312056541443,
+      0.030988452956080437,
+      0.005964610259979963,
+      0.009515739977359772
+    ]
+  },
+  {
+    "sample_id": "fashionpedia-negative-candidate-27765",
+    "category_target": 3,
+    "category_probabilities": [
+      0.7197776436805725,
+      0.002666311804205179,
+      0.007098992820829153,
+      0.27045708894729614
+    ]
+  },
+  {
+    "sample_id": "fashionpedia-negative-candidate-21184",
+    "category_target": 2,
+    "category_probabilities": [
+      0.6458252668380737,
+      0.20562836527824402,
+      0.04275227710604668,
+      0.10579409450292587
+    ]
+  },
+  {
+    "sample_id": "fashionpedia-negative-candidate-13377",
+    "category_target": 1,
+    "category_probabilities": [
+      0.027619043365120888,
+      0.9534574151039124,
+      0.017446601763367653,
+      0.0014768950641155243
+    ]
+  },
+  {
+    "sample_id": "fashionpedia-negative-v2-5212",
+    "category_target": 3,
+    "category_probabilities": [
+      0.8306792974472046,
+      0.010849904268980026,
+      0.022624121978878975,
+      0.13584670424461365
+    ]
+  },
+  {
+    "sample_id": "fashionpedia-negative-v2-4320",
+    "category_target": 2,
+    "category_probabilities": [
+      0.04396982863545418,
+      0.0399412177503109,
+      0.913351833820343,
+      0.0027371146716177464
+    ]
+  },
+  {
+    "sample_id": "fashionpedia-negative-v2-8621",
+    "category_target": 3,
+    "category_probabilities": [
+      0.6427162885665894,
+      0.2561052739620209,
+      0.058069199323654175,
+      0.04310920089483261
+    ]
+  },
+  {
+    "sample_id": "fashionpedia-negative-v2-24169",
+    "category_target": 1,
+    "category_probabilities": [
+      0.9413855075836182,
+      0.025119656696915627,
+      0.002447995822876692,
+      0.03104686737060547
+    ]
+  },
+  {
+    "sample_id": "fashionpedia-negative-v2-24448",
+    "category_target": 1,
+    "category_probabilities": [
+      0.9268319606781006,
+      0.016755634918808937,
+      0.009015333838760853,
+      0.04739701747894287
+    ]
+  },
+  {
+    "sample_id": "fashionpedia-negative-v2-33532",
+    "category_target": 3,
+    "category_probabilities": [
+      0.4742913544178009,
+      0.02007751539349556,
+      0.021226756274700165,
+      0.4844043254852295
+    ]
+  },
+  {
+    "sample_id": "fashionpedia-negative-v2-7454",
+    "category_target": 1,
+    "category_probabilities": [
+      0.9407653212547302,
+      0.020229188725352287,
+      0.0019974701572209597,
+      0.037008076906204224
+    ]
+  },
+  {
+    "sample_id": "fashionpedia-negative-v2-28563",
+    "category_target": 2,
+    "category_probabilities": [
+      0.0995110273361206,
+      0.02076548896729946,
+      0.644058346748352,
+      0.23566508293151855
+    ]
+  },
+  {
+    "sample_id": "fashionpedia-negative-v2-44529",
+    "category_target": 3,
+    "category_probabilities": [
+      0.16025470197200775,
+      0.0012086149072274566,
+      0.01435605064034462,
+      0.8241806030273438
+    ]
+  },
+  {
+    "sample_id": "fashionpedia-negative-v2-28085",
+    "category_target": 2,
+    "category_probabilities": [
+      0.22199413180351257,
+      0.012231606058776379,
+      0.6267732977867126,
+      0.1390009969472885
+    ]
+  },
+  {
+    "sample_id": "fashionpedia-negative-v2-42344",
+    "category_target": 3,
+    "category_probabilities": [
+      0.6986132860183716,
+      0.0010413745185360312,
+      0.013556793332099915,
+      0.28678858280181885
+    ]
+  },
+  {
+    "sample_id": "fashionpedia-negative-v2-37096",
+    "category_target": 3,
+    "category_probabilities": [
+      0.14921681582927704,
+      0.003441947279497981,
+      0.007810125593096018,
+      0.8395310640335083
+    ]
+  },
+  {
+    "sample_id": "fashionpedia-negative-v2-42625",
+    "category_target": 3,
+    "category_probabilities": [
+      0.2360314279794693,
+      0.002070860005915165,
+      0.003618549555540085,
+      0.7582791447639465
+    ]
+  },
+  {
+    "sample_id": "fashionpedia-negative-v2-46648",
+    "category_target": 1,
+    "category_probabilities": [
+      0.05077517777681351,
+      0.4153069257736206,
+      0.5247527360916138,
+      0.009165204130113125
+    ]
+  },
+  {
+    "sample_id": "fashionpedia-negative-v2-32211",
+    "category_target": 1,
+    "category_probabilities": [
+      0.00825816486030817,
+      0.9864063858985901,
+      0.004683622159063816,
+      0.0006518308073282242
+    ]
+  },
+  {
+    "sample_id": "fashionpedia-negative-v2-33815",
+    "category_target": 2,
+    "category_probabilities": [
+      0.12365928292274475,
+      0.032154981046915054,
+      0.8417820930480957,
+      0.0024036462418735027
+    ]
+  },
+  {
+    "sample_id": "fashionpedia-negative-v3-5822",
+    "category_target": 1,
+    "category_probabilities": [
+      0.2741393744945526,
+      0.7173416018486023,
+      0.005972903221845627,
+      0.0025460761971771717
+    ]
+  },
+  {
+    "sample_id": "fashionpedia-negative-v3-41240",
+    "category_target": 3,
+    "category_probabilities": [
+      0.47162944078445435,
+      0.008494792506098747,
+      0.053023941814899445,
+      0.4668518304824829
+    ]
+  },
+  {
+    "sample_id": "fashionpedia-negative-v3-46008",
+    "category_target": 1,
+    "category_probabilities": [
+      0.003768958617001772,
+      0.9692830443382263,
+      0.026242496445775032,
+      0.000705503043718636
+    ]
+  },
+  {
+    "sample_id": "fashionpedia-negative-v3-46131",
+    "category_target": 3,
+    "category_probabilities": [
+      0.029163645580410957,
+      0.001614787383005023,
+      0.011804746463894844,
+      0.9574167728424072
+    ]
+  },
+  {
+    "sample_id": "fashionpedia-negative-v3-40277",
+    "category_target": 2,
+    "category_probabilities": [
+      0.371565043926239,
+      0.23863141238689423,
+      0.19794726371765137,
+      0.1918562799692154
+    ]
+  },
+  {
+    "sample_id": "fashionpedia-negative-v3-42940",
+    "category_target": 2,
+    "category_probabilities": [
+      0.044451754540205,
+      0.49404841661453247,
+      0.45913776755332947,
+      0.002362082013860345
+    ]
+  },
+  {
+    "sample_id": "fashionpedia-negative-v3-35379",
+    "category_target": 2,
+    "category_probabilities": [
+      0.006806282326579094,
+      0.03553787246346474,
+      0.947888970375061,
+      0.009766858071088791
+    ]
+  },
+  {
+    "sample_id": "fashionpedia-negative-v3-41468",
+    "category_target": 3,
+    "category_probabilities": [
+      0.7822927236557007,
+      0.0019490623380988836,
+      0.009862998500466347,
+      0.20589515566825867
+    ]
+  },
+  {
+    "sample_id": "fashionpedia-negative-v3-7787",
+    "category_target": 3,
+    "category_probabilities": [
+      0.5376856327056885,
+      0.0623009093105793,
+      0.33341899514198303,
+      0.0665944516658783
+    ]
+  },
+  {
+    "sample_id": "fashionpedia-negative-v3-39093",
+    "category_target": 2,
+    "category_probabilities": [
+      0.09988009184598923,
+      0.006425436586141586,
+      0.8823996186256409,
+      0.011294784024357796
+    ]
+  },
+  {
+    "sample_id": "fashionpedia-negative-v3-29140",
+    "category_target": 1,
+    "category_probabilities": [
+      0.0040483926422894,
+      0.9130622744560242,
+      0.08201006054878235,
+      0.0008792698499746621
+    ]
+  },
+  {
+    "sample_id": "fashionpedia-negative-v3-835",
+    "category_target": 3,
+    "category_probabilities": [
+      0.49503642320632935,
+      0.06759751588106155,
+      0.009103176183998585,
+      0.4282628893852234
+    ]
+  },
+  {
+    "sample_id": "fashionpedia-negative-v3-49416",
+    "category_target": 1,
+    "category_probabilities": [
+      0.10390540957450867,
+      0.12262213230133057,
+      0.749326229095459,
+      0.024146264418959618
+    ]
+  },
+  {
+    "sample_id": "fashionpedia-negative-v3-27837",
+    "category_target": 3,
+    "category_probabilities": [
+      0.3835981488227844,
+      0.009596879594027996,
+      0.48456403613090515,
+      0.12224092334508896
+    ]
+  },
+  {
+    "sample_id": "fashionpedia-negative-v3-25981",
+    "category_target": 3,
+    "category_probabilities": [
+      0.06471854448318481,
+      0.0017098597018048167,
+      0.03852957487106323,
+      0.8950420618057251
+    ]
+  },
+  {
+    "sample_id": "fashionpedia-negative-v3-44310",
+    "category_target": 3,
+    "category_probabilities": [
+      0.13168944418430328,
+      0.002883599605411291,
+      0.0126921646296978,
+      0.8527348041534424
+    ]
+  },
+  {
+    "sample_id": "fashionpedia-negative-v3-45941",
+    "category_target": 3,
+    "category_probabilities": [
+      0.09693606942892075,
+      0.0028559386264532804,
+      0.040683433413505554,
+      0.8595245480537415
+    ]
+  },
+  {
+    "sample_id": "fashionpedia-negative-v3-32670",
+    "category_target": 3,
+    "category_probabilities": [
+      0.8571107387542725,
+      0.0052932691760361195,
+      0.006564520299434662,
+      0.13103137910366058
+    ]
+  },
+  {
+    "sample_id": "fashionpedia-negative-v3-30290",
+    "category_target": 1,
+    "category_probabilities": [
+      0.24688038229942322,
+      0.6905443072319031,
+      0.014918857254087925,
+      0.047656528651714325
+    ]
+  },
+  {
+    "sample_id": "fashionpedia-negative-v3-39875",
+    "category_target": 2,
+    "category_probabilities": [
+      0.006221940275281668,
+      0.002355854958295822,
+      0.9830705523490906,
+      0.008351585827767849
+    ]
+  },
+  {
+    "sample_id": "fashionpedia-negative-v3-2498",
+    "category_target": 3,
+    "category_probabilities": [
+      0.4268835186958313,
+      0.00031112859142012894,
+      0.005287267733365297,
+      0.5675181150436401
+    ]
+  },
+  {
+    "sample_id": "fashionpedia-negative-v3-46124",
+    "category_target": 3,
+    "category_probabilities": [
+      0.0958256721496582,
+      0.014449583366513252,
+      0.05052205175161362,
+      0.8392027020454407
+    ]
+  },
+  {
+    "sample_id": "fashionpedia-negative-v3-41665",
+    "category_target": 1,
+    "category_probabilities": [
+      0.051407888531684875,
+      0.9340059161186218,
+      0.012427049688994884,
+      0.0021591277327388525
+    ]
+  },
+  {
+    "sample_id": "fashionpedia-negative-v3-48125",
+    "category_target": 2,
+    "category_probabilities": [
+      0.010485895909368992,
+      0.014035588130354881,
+      0.9709492325782776,
+      0.004529247991740704
+    ]
+  },
+  {
+    "sample_id": "fashionpedia-negative-v3-40350",
+    "category_target": 1,
+    "category_probabilities": [
+      0.02142045646905899,
+      0.9707393050193787,
+      0.007448873482644558,
+      0.00039138589636422694
+    ]
+  },
+  {
+    "sample_id": "fashionpedia-negative-v3-32090",
+    "category_target": 2,
+    "category_probabilities": [
+      0.83565753698349,
+      0.06645483523607254,
+      0.06744713336229324,
+      0.030440406873822212
+    ]
+  },
+  {
+    "sample_id": "fashionpedia-negative-v3-16640",
+    "category_target": 1,
+    "category_probabilities": [
+      0.2718469798564911,
+      0.7152252793312073,
+      0.005878184922039509,
+      0.007049476727843285
+    ]
+  },
+  {
+    "sample_id": "fashionpedia-negative-v3-28187",
+    "category_target": 1,
+    "category_probabilities": [
+      0.35702598094940186,
+      0.564518928527832,
+      0.07213091105222702,
+      0.006324115674942732
+    ]
+  },
+  {
+    "sample_id": "fashionpedia-negative-v3-27919",
+    "category_target": 1,
+    "category_probabilities": [
+      0.9181874990463257,
+      0.04462020844221115,
+      0.007021880242973566,
+      0.030170492827892303
+    ]
+  },
+  {
+    "sample_id": "fashionpedia-negative-v3-33188",
+    "category_target": 1,
+    "category_probabilities": [
+      0.008629481308162212,
+      0.9632130265235901,
+      0.02505875937640667,
+      0.0030987600330263376
+    ]
+  },
+  {
+    "sample_id": "fashionpedia-negative-v3-31774",
+    "category_target": 2,
+    "category_probabilities": [
+      0.040012262761592865,
+      0.011967767961323261,
+      0.6955392956733704,
+      0.25248071551322937
+    ]
+  },
+  {
+    "sample_id": "fashionpedia-negative-v3-44572",
+    "category_target": 2,
+    "category_probabilities": [
+      0.25212550163269043,
+      0.004495244938880205,
+      0.40117356181144714,
+      0.3422057330608368
+    ]
+  },
+  {
+    "sample_id": "fashionpedia-negative-v3-7610",
+    "category_target": 2,
+    "category_probabilities": [
+      0.5594280958175659,
+      0.3604585528373718,
+      0.06806440651416779,
+      0.012048897333443165
+    ]
+  }
+]

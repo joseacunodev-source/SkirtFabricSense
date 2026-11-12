@@ -1,0 +1,8 @@
+test_denominators_include_unavailable (tests.test_image_robustness.RobustnessTests.test_denominators_include_unavailable) ... ok
+test_pairs_reject_changed_membership_and_truth (tests.test_image_robustness.RobustnessTests.test_pairs_reject_changed_membership_and_truth) ... ok
+test_transform_pixels_and_sizes (tests.test_image_robustness.RobustnessTests.test_transform_pixels_and_sizes) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.005s
+
+OK

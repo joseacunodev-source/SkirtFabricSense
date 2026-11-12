@@ -1,0 +1,373 @@
+{
+  "started_at_utc": "2026-11-04T15:00:03.135513+00:00",
+  "status": "bounded_attempt_no_photos",
+  "images_acquired": 0,
+  "labels_added": 0,
+  "training_admissions": 0,
+  "project_splits_assigned": 0,
+  "outcomes": [
+    {
+      "source_page_id": 106578551,
+      "title": "File:11 suiteon7th.jpg",
+      "outcome": "excluded_or_failed",
+      "reason": "ValueError: Unexpected original URL or thumbnail substitution"
+    },
+    {
+      "source_page_id": 78867844,
+      "title": "File:1948 - C A Dorney Furniture - Allentown Fair Exhibit - Allentown PA.jpg",
+      "outcome": "excluded_or_failed",
+      "reason": "ValueError: Unexpected original URL or thumbnail substitution"
+    },
+    {
+      "source_page_id": 1860541,
+      "title": "File:1948DormRoom.jpg",
+      "outcome": "excluded_or_failed",
+      "reason": "ValueError: Unexpected original URL or thumbnail substitution"
+    },
+    {
+      "source_page_id": 189945284,
+      "title": "File:Newark Park Bedroom and upstairs sitting room Ozleworth Gloucestershire England.jpg",
+      "outcome": "excluded_or_failed",
+      "reason": "ValueError: Original photo outside 5MiB cap"
+    },
+    {
+      "source_page_id": 189945287,
+      "title": "File:Newark Park Bedroom Ozleworth Gloucestershire England.jpg",
+      "outcome": "excluded_or_failed",
+      "reason": "ValueError: Original photo outside 5MiB cap"
+    },
+    {
+      "source_page_id": 189945289,
+      "title": "File:Newark Park Bedroom with painted panel wall Ozleworth Gloucestershire England 01.jpg",
+      "outcome": "excluded_or_failed",
+      "reason": "ValueError: Original photo outside 5MiB cap"
+    },
+    {
+      "source_page_id": 189945296,
+      "title": "File:Newark Park Bedroom with painted panel wall Ozleworth Gloucestershire England 02.jpg",
+      "outcome": "excluded_or_failed",
+      "reason": "ValueError: HTTP 429"
+    },
+    {
+      "source_page_id": 189945295,
+      "title": "File:Newark Park Bedroom with painted panel wall Ozleworth Gloucestershire England 03.jpg",
+      "outcome": "excluded_or_failed",
+      "reason": "ValueError: HTTP 429"
+    },
+    {
+      "source_page_id": 27737160,
+      "title": "File:- Flickr - fabola (40).jpg",
+      "outcome": "excluded_or_failed",
+      "reason": "ValueError: HTTP 429"
+    },
+    {
+      "source_page_id": 31139362,
+      "title": "File:00-inlingua-wob-raum-1.JPG",
+      "outcome": "excluded_or_failed",
+      "reason": "ValueError: HTTP 429"
+    },
+    {
+      "source_page_id": 31139361,
+      "title": "File:00-inlingua-wob-raum-2.JPG",
+      "outcome": "excluded_or_failed",
+      "reason": "ValueError: HTTP 429"
+    },
+    {
+      "source_page_id": 15729163,
+      "title": "File:12 Aulas SJA.jpg",
+      "outcome": "excluded_or_failed",
+      "reason": "ValueError: HTTP 429"
+    },
+    {
+      "source_page_id": 38898416,
+      "title": "File:Miami University chemistry lecture room 1915 (3191691912).jpg",
+      "outcome": "excluded_or_failed",
+      "reason": "ValueError: HTTP 429"
+    },
+    {
+      "source_page_id": 38917249,
+      "title": "File:Physics demonstration work bench 1915 (3191489444).jpg",
+      "outcome": "excluded_or_failed",
+      "reason": "ValueError: HTTP 429"
+    },
+    {
+      "source_page_id": 15356317,
+      "title": "File:Salle-étude-lycée-Molière.jpg",
+      "outcome": "excluded_or_failed",
+      "reason": "ValueError: HTTP 429"
+    },
+    {
+      "source_page_id": 10937769,
+      "title": "File:Sofia folkskola 1912a.jpg",
+      "outcome": "excluded_or_failed",
+      "reason": "ValueError: HTTP 429"
+    },
+    {
+      "source_page_id": 24046851,
+      "title": "File:Interieur meidenkamer, overzicht houten wand - Groningen - 20366506 - RCE.jpg",
+      "outcome": "excluded_or_failed",
+      "reason": "ValueError: HTTP 429"
+    },
+    {
+      "source_page_id": 24116837,
+      "title": "File:Interieur verdieping, gedeelte van kamer met wastafel - Zutphen - 20411789 - RCE.jpg",
+      "outcome": "excluded_or_failed",
+      "reason": "ValueError: HTTP 429"
+    },
+    {
+      "source_page_id": 23519722,
+      "title": "File:Interieur voorkamer op de eerste verdieping - Geertruidenberg - 20076043 - RCE.jpg",
+      "outcome": "excluded_or_failed",
+      "reason": "ValueError: HTTP 429"
+    },
+    {
+      "source_page_id": 24115594,
+      "title": "File:Interieur, achterkamer met cassettenplafond en schouw op de tweede verdieping 20411189 RCE.jpg",
+      "outcome": "excluded_or_failed",
+      "reason": "ValueError: HTTP 429"
+    },
+    {
+      "source_page_id": 24115590,
+      "title": "File:Interieur, achterkamer met schouw en cassettenplafond op de tweede verdieping 20411187 RCE.jpg",
+      "outcome": "excluded_or_failed",
+      "reason": "ValueError: HTTP 429"
+    },
+    {
+      "source_page_id": 24115675,
+      "title": "File:Interieur, achterkamer met zicht in inbouwkast en houten deur op de eerste verdieping 20411229 RCE.jpg",
+      "outcome": "excluded_or_failed",
+      "reason": "ValueError: HTTP 429"
+    },
+    {
+      "source_page_id": 24124442,
+      "title": "File:Interieur, achterkamer op de verdieping met geopende deur naar de gang en inbouwkast, tijdens de verbouwing - Boxtel - 20415614 - RCE.jpg",
+      "outcome": "excluded_or_failed",
+      "reason": "ValueError: HTTP 429"
+    },
+    {
+      "source_page_id": 24115579,
+      "title": "File:Interieur, gedeelte van voorkamer met cassettenplafond en paneeldeuren op de tweede verdieping 20411181 RCE.jpg",
+      "outcome": "excluded_or_failed",
+      "reason": "ValueError: HTTP 429"
+    },
+    {
+      "source_page_id": 190236304,
+      "title": "File:Newark Park Buff Room Ozleworth Gloucestershire England.jpg",
+      "outcome": "excluded_or_failed",
+      "reason": "ValueError: HTTP 429"
+    },
+    {
+      "source_page_id": 190236306,
+      "title": "File:Newark Park Dining Room Ozleworth Gloucestershire England.jpg",
+      "outcome": "excluded_or_failed",
+      "reason": "ValueError: HTTP 429"
+    },
+    {
+      "source_page_id": 190236303,
+      "title": "File:Newark Park downstairs service room Ozleworth Gloucestershire England 01.jpg",
+      "outcome": "excluded_or_failed",
+      "reason": "ValueError: HTTP 429"
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "data/manifests/background-candidates-20261104.jsonl",
+      "size_bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "records/acquisitions/2026-11-04-backgrounds/106578551_metadata.json",
+      "size_bytes": 1770,
+      "sha256": "0a97d801f73c5b38e09d05c36fb2042c82c0ebe0bdcd8e336742d5c80fd3e049"
+    },
+    {
+      "path": "records/acquisitions/2026-11-04-backgrounds/10937769_metadata.json",
+      "size_bytes": 274,
+      "sha256": "d24745e42ecb9b2958d28aa2a9797e2d66d0c718f70bb55964896846c4a29eb5"
+    },
+    {
+      "path": "records/acquisitions/2026-11-04-backgrounds/15356317_metadata.json",
+      "size_bytes": 274,
+      "sha256": "088d537c5666960669f3418e4883796b0242f6b4f1ee9d56d1b38ee81c695d97"
+    },
+    {
+      "path": "records/acquisitions/2026-11-04-backgrounds/15729163_metadata.json",
+      "size_bytes": 274,
+      "sha256": "11dacca45d40fb2a5a1198fe6c9f83590be02da43579078f8dff4eb87bbd01e7"
+    },
+    {
+      "path": "records/acquisitions/2026-11-04-backgrounds/1860541_metadata.json",
+      "size_bytes": 1342,
+      "sha256": "e912564b5f8df3f94b2e6964bafccae9e6407f227733e79ee673f08ec90f80da"
+    },
+    {
+      "path": "records/acquisitions/2026-11-04-backgrounds/189945284_metadata.json",
+      "size_bytes": 2866,
+      "sha256": "c8b317fb5d7c9add03796572bba8e7e0a4624cf147841c6e25feebd902b18c35"
+    },
+    {
+      "path": "records/acquisitions/2026-11-04-backgrounds/189945287_metadata.json",
+      "size_bytes": 2778,
+      "sha256": "e7799e516bab74429112c552444981f88fbbffa053f5539a49f57ecc0ba17ebc"
+    },
+    {
+      "path": "records/acquisitions/2026-11-04-backgrounds/189945289_metadata.json",
+      "size_bytes": 2880,
+      "sha256": "b46e0b30a7935e4da6d5619366d0467d14b49d5132d6b50e065dfb6c88c56823"
+    },
+    {
+      "path": "records/acquisitions/2026-11-04-backgrounds/189945295_metadata.json",
+      "size_bytes": 274,
+      "sha256": "5b4c895acf3358bddf2569f199960934610ef50a3aa889f759c97f5b8d685ecb"
+    },
+    {
+      "path": "records/acquisitions/2026-11-04-backgrounds/189945296_metadata.json",
+      "size_bytes": 274,
+      "sha256": "2fffe9c70ab75664aa0f155790a4652602a668a95f61268475e3e6a854673c34"
+    },
+    {
+      "path": "records/acquisitions/2026-11-04-backgrounds/190236303_metadata.json",
+      "size_bytes": 274,
+      "sha256": "745f6dc91c51eb5f82a4f4fe5dd5881b147b95fd7a442ed9e778ad224ce43536"
+    },
+    {
+      "path": "records/acquisitions/2026-11-04-backgrounds/190236304_metadata.json",
+      "size_bytes": 274,
+      "sha256": "0eefa7ef9dc8140dc950a7d10956d8046ec25a104373bb31253f9442c87386dc"
+    },
+    {
+      "path": "records/acquisitions/2026-11-04-backgrounds/190236306_metadata.json",
+      "size_bytes": 274,
+      "sha256": "36709ee14dbda8ffaa26a53e836248cb465291ecd16b693efea6b839073f3c7f"
+    },
+    {
+      "path": "records/acquisitions/2026-11-04-backgrounds/23519722_metadata.json",
+      "size_bytes": 274,
+      "sha256": "78ff43625faf89e1ceed3f448f10a375428468ea9860c1b2a72df79e20ceb229"
+    },
+    {
+      "path": "records/acquisitions/2026-11-04-backgrounds/24046851_metadata.json",
+      "size_bytes": 274,
+      "sha256": "fa1333856a45fe712120c7ca039fc0ebd083446fb2e7c97e513b6ba053f18744"
+    },
+    {
+      "path": "records/acquisitions/2026-11-04-backgrounds/24115579_metadata.json",
+      "size_bytes": 274,
+      "sha256": "db8fa89cc4787ec312b78ebce78ab5f63ee35d94e31c77ba93a582a7062aea0c"
+    },
+    {
+      "path": "records/acquisitions/2026-11-04-backgrounds/24115590_metadata.json",
+      "size_bytes": 274,
+      "sha256": "940427b1708694ceb5596263f9fc43ce2c15ac35edb6e1b91c2d3e2ff5c991cd"
+    },
+    {
+      "path": "records/acquisitions/2026-11-04-backgrounds/24115594_metadata.json",
+      "size_bytes": 274,
+      "sha256": "cf8407ce652db3aeade68f3f7752843293856167f0b6eb71e5872995d1339293"
+    },
+    {
+      "path": "records/acquisitions/2026-11-04-backgrounds/24115675_metadata.json",
+      "size_bytes": 274,
+      "sha256": "2e9506191aadf9c2b1d53d7f8c08a66a3f90c266115cb5b9aa1d7a184ae9570d"
+    },
+    {
+      "path": "records/acquisitions/2026-11-04-backgrounds/24116837_metadata.json",
+      "size_bytes": 274,
+      "sha256": "bd0c22123f9a613d548807fb72542e6b1abe62487575e3cbc669fc1c6f05ab2c"
+    },
+    {
+      "path": "records/acquisitions/2026-11-04-backgrounds/24124442_metadata.json",
+      "size_bytes": 274,
+      "sha256": "368355de32af949c349b2fca4307d26f9e3c3f997e84424296206bccfa57743f"
+    },
+    {
+      "path": "records/acquisitions/2026-11-04-backgrounds/27737160_metadata.json",
+      "size_bytes": 274,
+      "sha256": "3bf1e4d16565d9a4266ee618ecd953697542c03db78632fd2f5097f93ce3b38a"
+    },
+    {
+      "path": "records/acquisitions/2026-11-04-backgrounds/31139361_metadata.json",
+      "size_bytes": 274,
+      "sha256": "c71424ddc1d7fd7f7a7a672167f20d521150b362c84091bfdca049dfd1eb963c"
+    },
+    {
+      "path": "records/acquisitions/2026-11-04-backgrounds/31139362_metadata.json",
+      "size_bytes": 274,
+      "sha256": "7c493a6316e38fe049b3ad3f4eb8fd159a2adddd4bd8c10c94cdad1fc3622e08"
+    },
+    {
+      "path": "records/acquisitions/2026-11-04-backgrounds/38898416_metadata.json",
+      "size_bytes": 274,
+      "sha256": "940a7c5562f4441dbe6ea56380c8679dc116a62d41cc8f893ad623e8e282874d"
+    },
+    {
+      "path": "records/acquisitions/2026-11-04-backgrounds/38917249_metadata.json",
+      "size_bytes": 274,
+      "sha256": "5b7311f283b0f9366bb95572f9bd0fb7148f8234103c1fdaeb8c419c193375c8"
+    },
+    {
+      "path": "records/acquisitions/2026-11-04-backgrounds/78867844_metadata.json",
+      "size_bytes": 1705,
+      "sha256": "176f6790ac582c5dec6595df462ada8015b05847909c15ef0102d4b4fa128042"
+    },
+    {
+      "path": "records/acquisitions/2026-11-04-backgrounds/acquire.py",
+      "size_bytes": 19095,
+      "sha256": "f0db5d3fef7b1b667310eae8f78e97c56662e4403526afd05297a151aeb8ec5a"
+    },
+    {
+      "path": "records/acquisitions/2026-11-04-backgrounds/candidate-selection.json",
+      "size_bytes": 4840,
+      "sha256": "92a790439615c4f5803bb2c1866a7a3e8a2f915487728ec568df3b185685fcec"
+    },
+    {
+      "path": "records/acquisitions/2026-11-04-backgrounds/category-1.json",
+      "size_bytes": 1072,
+      "sha256": "8eb1e805f10dc35ca0cbc02b46093a17bd8eaaed316322c1f3a30c4d6ad5bb41"
+    },
+    {
+      "path": "records/acquisitions/2026-11-04-backgrounds/category-2.json",
+      "size_bytes": 808,
+      "sha256": "8adaaf3c252287ba8f0f5720ad0cd0c5f7cc608e2334efc00cbe0ed16c8c0812"
+    },
+    {
+      "path": "records/acquisitions/2026-11-04-backgrounds/category-3.json",
+      "size_bytes": 1447,
+      "sha256": "618656568b3af96b987d23a08e1568cc4bd6720d88ab52a93c46ef3668abedeb"
+    },
+    {
+      "path": "records/acquisitions/2026-11-04-backgrounds/category-4.json",
+      "size_bytes": 1231,
+      "sha256": "86bb8033fb5f0aca782b9fc7d25d9edae8c7825cbc5249f299ed62e0a1e89c22"
+    },
+    {
+      "path": "records/acquisitions/2026-11-04-backgrounds/commons_reuse.html",
+      "size_bytes": 130544,
+      "sha256": "7a1c49cb6efaeb98820cef6936b0e22b1d3e5d87189dd76eb99e12e6e5b72cbb"
+    },
+    {
+      "path": "records/acquisitions/2026-11-04-backgrounds/executed_acquire_commons_backgrounds.py",
+      "size_bytes": 19095,
+      "sha256": "f0db5d3fef7b1b667310eae8f78e97c56662e4403526afd05297a151aeb8ec5a"
+    },
+    {
+      "path": "records/acquisitions/2026-11-04-backgrounds/plan.json",
+      "size_bytes": 1393,
+      "sha256": "95e84833f7032c0a1119ec31622431b034070a9c6aecdf1e08682a3218651569"
+    },
+    {
+      "path": "records/acquisitions/2026-11-04-backgrounds/requests.json",
+      "size_bytes": 42796,
+      "sha256": "163df11d60512af28628c95f8c38a3045cb8017699507b9e26ee054b38760940"
+    }
+  ],
+  "finished_at_utc": "2026-11-04T15:00:25.066425+00:00",
+  "requests_made": 32,
+  "consumed_network_body_bytes": 154197,
+  "no_installs": true,
+  "no_inference": true,
+  "independent_physical_scenes": null,
+  "protected_dataset_annotations_downloaded": 0,
+  "executed_source_sha256": "f0db5d3fef7b1b667310eae8f78e97c56662e4403526afd05297a151aeb8ec5a",
+  "fetcher_source": "Embedded in this tool; no mutable COCO-tool dependency"
+}

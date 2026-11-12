@@ -1,0 +1,5 @@
+# Actual documentation-tool dependency, Windows AMD64 / CPython 3.11.
+# This hash is for the wheel recorded in records/package-installs/2026-10-02-pyyaml.json.
+# Install in an isolated environment using pip --require-hashes --only-binary=:all:.
+# Not a training or Raspberry Pi runtime lock.
+PyYAML==6.0.3 --hash=sha256:9f3bfb4965eb874431221a3ff3fdcddc7e74e3b07799e0e84ca4a0f867d449bf

@@ -1,0 +1,14 @@
+test_corruption_detected (test_acquire_seed.AcquisitionIntegrityTests.test_corruption_detected) ... ok
+test_failed_replace_preserves_original (test_acquire_seed.AcquisitionIntegrityTests.test_failed_replace_preserves_original) ... ok
+test_path_escape_rejected (test_acquire_seed.AcquisitionIntegrityTests.test_path_escape_rejected) ... ok
+test_verify_only_never_networks_or_writes (test_acquire_seed.AcquisitionIntegrityTests.test_verify_only_never_networks_or_writes) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.025s
+
+OK
+{
+  "verified_artifacts": 0,
+  "images": 0,
+  "network_used": false
+}

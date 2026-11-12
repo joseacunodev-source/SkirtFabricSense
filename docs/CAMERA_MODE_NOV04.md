@@ -1,0 +1,11 @@
+# Camera resolution controls
+
+Station-v8/research-v13 adds an optional camera-mode selector to the camera interface. Automatic leaves resolution to the browser; 720p, 1080p and 4K ask for the listed dimensions as browser **ideal** constraints. The browser may return another size. The preview overlay reports decoded video dimensions as actual; it does not establish focus quality, source sensor resolution or frame rate.
+
+Changing mode while connecting or running stops the stream, clears previous results and requires the operator to select Start camera again. If a requested mode causes `OverconstrainedError`, the browser retries automatic mode with the same selected device, and the interface reports the fallback. It does not silently choose another camera. Resolution changes reported by the video element invalidate old predictions.
+
+Frames remain from the same full-skirt camera view. The interface rejects images above 20 megapixels and JSON requests above the server's 16 MiB cap before upload. It also checks freshness after synchronous JPEG encoding; a frame that took too long to encode is not sent. These limits are guards, not a guarantee that 4K capture will be fast enough or that every high-resolution frame is acceptable. Fabric remains a research-only source-appearance model and calibrated length remains unavailable.
+
+At the 800 × 480 display layout, the mode selector follows the presentation selector and can be reached by scrolling. The 52 mocked checks cover lifecycle, score, motion and seven mode/safety cases including actual-versus-requested size, fallback, late stream release, 4K request, oversize rejection and slow encoding. The [HTTP check](../records/validation/2026-11-04-capture-mode-http.json) ran 12 jobs using three saved development images; it did not connect a camera. No Pi, webcam, display, real 4K performance or physical garment was tested.
+
+The user reconfirmed no Raspberry Pi or webcam. After the devices arrive, record negotiated mode, focus behavior, capture latency, JPEG size, dropped/expired frames and camera framing at fixed full-skirt distance. Measure physical touch/readability and run ARM64 model parity and sustained-load checks before claiming compatibility or readiness.

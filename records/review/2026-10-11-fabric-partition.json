@@ -1,0 +1,94 @@
+{
+  "schema_version": 1,
+  "date_asia_manila": "2026-10-11",
+  "status": "official_partition_acquired_and_joined",
+  "partition_rows": 52712,
+  "partition_counts": {
+    "train": 25882,
+    "gallery": 12612,
+    "query": 14218
+  },
+  "candidate_skirt_rows": 848,
+  "candidate_counts_by_original_partition": {
+    "train": 367,
+    "query": 224,
+    "gallery": 257
+  },
+  "unmatched_filenames": [],
+  "filename_item_tokens": 288,
+  "official_item_ids": 288,
+  "train_item_ids_overlapping_query_or_gallery": [],
+  "query_gallery_shared_item_ids": 91,
+  "candidate_group_partition_combinations": {
+    "train": 131,
+    "gallery+query": 91,
+    "gallery": 44,
+    "query": 22
+  },
+  "filename_token_official_id_mismatches": 0,
+  "lower_fabric_source_code_counts_by_partition": {
+    "train": {
+      "1": 336,
+      "0": 20,
+      "2": 6,
+      "5": 5
+    },
+    "query": {
+      "1": 199,
+      "6": 2,
+      "0": 11,
+      "5": 6,
+      "4": 6
+    },
+    "gallery": {
+      "1": 238,
+      "6": 1,
+      "5": 5,
+      "0": 10,
+      "4": 3
+    }
+  },
+  "join_rule": "Remove literal img/ prefix from official image path, replace path separators with hyphens; require exact full filename match. No fuzzy or inferred membership.",
+  "labels_zip_sha256": "aa911ac1753f906df292a5a7a77aa32c029d3e5c09414772c64fff6a643d59b9",
+  "source_urls": [
+    "https://drive.google.com/uc?export=download&id=0B7EVK8r0v71pYVBqLXpRVjhHeWM&resourcekey=0-rxJ2QcImN-IRo_Bv9QSXmg",
+    "https://mmlab.ie.cuhk.edu.hk/projects/DeepFashion.html"
+  ],
+  "terms_summary": "Non-commercial research only. Further copying/publication/distribution restricted; internal single-site copies in same organization allowed. No images downloaded and no encrypted data accessed.",
+  "complete_new_images": 0,
+  "training_admission": false,
+  "project_splits_promoted": false,
+  "limitations": [
+    "Source item IDs are source grouping evidence, not verified physical specimens.",
+    "Query and gallery are original retrieval test partitions; shared test item IDs are expected and must remain together for project grouping.",
+    "Visual label/full-view suitability/duplicates and project fabric ontology remain unresolved.",
+    "No original source held-out images may be promoted to training."
+  ],
+  "artifacts": [
+    {
+      "path": "records/acquisitions/2026-10-11-fabric-partition/join_partition.py",
+      "bytes": 4173,
+      "sha256": "cfdb8315c000b2a4398c74ce1ffc081de3da0dd7289b3d646a8f43d6ee9df23a"
+    },
+    {
+      "path": "records/acquisitions/2026-10-11-fabric-partition/official-terms.html",
+      "bytes": 13114,
+      "sha256": "5084349c7eb1b5aabccd3877bac9cfa201683d0b92f75b9f74809d336551765b"
+    },
+    {
+      "path": "records/acquisitions/2026-10-11-fabric-partition/response.bin",
+      "bytes": 5007683,
+      "sha256": "cfada103c44df866db5e2ee9ecc2301ca691a4d0cdb3c875fe4051b62570894c"
+    },
+    {
+      "path": "records/acquisitions/2026-10-11-fabric-partition/retry.json",
+      "bytes": 403,
+      "sha256": "a32652abe9f1268a7a9429a9475f1e49994ce6dee043f1d729a789255f440b5e"
+    },
+    {
+      "path": "records/acquisitions/2026-10-11-fabric-partition/skirt-partition-join.jsonl",
+      "bytes": 262288,
+      "sha256": "2827f757ca8222b3aa4e62786aa9158b52ccd88d7ac6352df9a1749418582cb6"
+    }
+  ]
+}

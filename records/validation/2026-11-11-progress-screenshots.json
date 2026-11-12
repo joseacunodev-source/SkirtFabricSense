@@ -1,0 +1,116 @@
+{
+  "date": "2026-11-11",
+  "status": "captures_and_source_checks_passed_with_preexisting_record_errors",
+  "captures": [
+    {
+      "file": "01_current_camera_ui_desktop.png",
+      "pixels": [
+        1440,
+        1080
+      ],
+      "source_matches": true
+    },
+    {
+      "file": "02_current_camera_ui_800x480.png",
+      "pixels": [
+        800,
+        480
+      ],
+      "source_matches": true
+    },
+    {
+      "file": "03_code_training.png",
+      "pixels": [
+        1520,
+        918
+      ],
+      "source_matches": true
+    },
+    {
+      "file": "04_code_frame_freshness.png",
+      "pixels": [
+        1520,
+        971
+      ],
+      "source_matches": true
+    },
+    {
+      "file": "05_code_hemline_rules.png",
+      "pixels": [
+        1520,
+        944
+      ],
+      "source_matches": true
+    }
+  ],
+  "visual_review": "All five inspected; readable, no clipped code. Compact UI scroll limitation preserved.",
+  "selected_station_verified": true,
+  "temporary_server_stopped": true,
+  "camera_used": false,
+  "model_trained": false,
+  "installs": [],
+  "full_records_audit_passed": false,
+  "preexisting_invalid_metadata_files": 21,
+  "evidence": [
+    {
+      "path": "output/progress_report_2026-11-11/01_current_camera_ui_desktop.png",
+      "sha256": "d9e2393d6633f786f0c147c7fcd62776acebd4b5e4fa42d72f4d016eb01eb820"
+    },
+    {
+      "path": "output/progress_report_2026-11-11/02_current_camera_ui_800x480.png",
+      "sha256": "d04f8ac3f7a9c5ff9ddc41aeb2bdcb81a751d6709239f67d7a36e092e0cd9a7e"
+    },
+    {
+      "path": "output/progress_report_2026-11-11/03_code_training.html",
+      "sha256": "d4ec0a4d9aedc23fcf41f53815960db7a371b5f27e31de484c17904e3955ed7e"
+    },
+    {
+      "path": "output/progress_report_2026-11-11/03_code_training.png",
+      "sha256": "fa78753b1c26ca9798d0c37b65bd7bdde5d510eea58277fb2be95922f7c87024"
+    },
+    {
+      "path": "output/progress_report_2026-11-11/04_code_frame_freshness.html",
+      "sha256": "4b181879f82c0fa3b5ec80f5f9a062684dfa867a237e3fff6d4bcec281c0e6b7"
+    },
+    {
+      "path": "output/progress_report_2026-11-11/04_code_frame_freshness.png",
+      "sha256": "6ebc9292cbc6e8d21fdc37154312b9b6c411cb2bec565806d6406ce0b0b0ee12"
+    },
+    {
+      "path": "output/progress_report_2026-11-11/05_code_hemline_rules.html",
+      "sha256": "c06ca175861b3efd7076b914fd6efa1cd3ab9fc0a8868ed9038c8fab23b9f694"
+    },
+    {
+      "path": "output/progress_report_2026-11-11/05_code_hemline_rules.png",
+      "sha256": "66e0150f1736555bebb8268954b0a9e7a5f6b05a27538f17d6693c6fe21aaedb"
+    },
+    {
+      "path": "output/progress_report_2026-11-11/CAPTIONS_AND_PROGRESS.md",
+      "sha256": "e7cb32e1bd28da2fb0c08d9e8d86f084f4024853cff0b90da16fd89f30f13aa0"
+    },
+    {
+      "path": "output/progress_report_2026-11-11/capture-record.json",
+      "sha256": "35563a7e283931ce70125e4fa0f3752e2b087eb6ad2f13b6955e389ae8b44fc3"
+    },
+    {
+      "path": "output/progress_report_2026-11-11/finalize.cjs",
+      "sha256": "75d67d16cdd003afe56aea6a2fb5da663dfbcdbd198edd2bd4957f1d45fabf8a"
+    },
+    {
+      "path": "output/SkirtFabricSense_Progress_Screenshots_2026-11-11.zip",
+      "sha256": "2ef04b28b3766ed9e4a846dc77fb61acb5f6fb44d2b000a86e0bc40b51732fc3"
+    },
+    {
+      "path": "docs/PROGRESS_SCREENSHOTS_NOV11.md",
+      "sha256": "ffba0c6244c8eb96da3cae1bc5f5840483e3294790ccd9a85e7a27b571739895"
+    },
+    {
+      "path": "tools/capture_progress_screenshots.cjs",
+      "sha256": "a7402c4eb17cbe972584b3fbc312e3436314d3ed6486793ad8d77567b9055d21"
+    },
+    {
+      "path": "records/validation/2026-11-11-progress-screenshots-initial.json",
+      "sha256": "b5c29ede5d6766f7c90743be6dce3c513d241283236c0ae0122b60ec44132ac3"
+    }
+  ]
+}

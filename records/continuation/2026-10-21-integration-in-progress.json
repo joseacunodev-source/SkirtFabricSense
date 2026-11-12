@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "date_asia_manila": "2026-10-21",
+  "status": "integration_in_progress",
+  "project_complete": false,
+  "supervised_demo_accepted": false,
+  "last_hardware_confirmation": {
+    "date": "2026-10-20",
+    "skirts_available": false,
+    "raspberry_pi_available": false
+  },
+  "selected_research_station": "artifacts/stations/skirt-research-station-v1",
+  "prepared_candidate_station": "artifacts/stations/skirt-research-station-v2",
+  "pending_operations": [
+    "Independent category-model artifact audit; inspect records/validation/2026-10-21-category-presence-artifact-review.json when completed",
+    "Focused WSL tests running; inspect records/validation/2026-10-21-wsl-tests.log",
+    "Root registry/documentation/final checkpoint integration pending"
+  ],
+  "next_actions": [
+    "Finish pending review/tests before selecting station-v2 for research",
+    "Reconcile handoff, registry and task board; replace this interim checkpoint and verify records"
+  ],
+  "references": [
+    {
+      "path": "docs/AGENT_HANDOFF.md",
+      "sha256": "3980df851fa23224aa589cc8cbebeb331cc16d618b6c27388ae6098652397c80"
+    },
+    {
+      "path": "docs/TASK_BOARD.md",
+      "sha256": "3792fe1a10c92f036ba6cf4643c3d2e8ff86b1323613a2ee8b26b956440a0c38"
+    },
+    {
+      "path": "records/experiments/20261021-category-presence-v1/run.json",
+      "sha256": "94eb220727759eaf767062a962f2fc727d313b8a969d30d576c9a358884cb8d3"
+    },
+    {
+      "path": "records/validation/2026-10-21-category-presence-comparison.json",
+      "sha256": "f0ebd8a2fd04530559ff661c35beddc7100da8e1852fa46762f2d867666c0648"
+    },
+    {
+      "path": "records/validation/2026-10-21-station-v2-http.json",
+      "sha256": "4cdf6ad6a42f39b175b0604bd4d915bdf41a2102908bc9eea55e3de1aa2dd3e9"
+    }
+  ]
+}

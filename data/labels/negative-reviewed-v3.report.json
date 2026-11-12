@@ -1,0 +1,81 @@
+{
+  "date_asia_manila": "2026-10-18",
+  "status": "frozen_agent_reviewed_development_only",
+  "inputs": [
+    {
+      "path": "data/manifests/negative-candidates-v3.jsonl",
+      "sha256": "45c69c3db6697ca5b82eed9856d12c3cfde92ce85467f67be75c8e4f1f7209d7"
+    },
+    {
+      "path": "data/labels/negative-reviewed-v2.jsonl",
+      "sha256": "016e45e38d695b9bb62c480497c02af08845b83f4831d8ca91365e2eabc067b8"
+    },
+    {
+      "path": "records/validation/2026-10-17-expansion-v3-audit.json",
+      "sha256": "2e33a763425fd8110185aa28238d5a39951779e338f463b8bf4738cebbd1f060"
+    },
+    {
+      "path": "records/review/2026-10-17-negative-v3-a.json",
+      "sha256": "8d1ea33aae1687d7f18ca53756b9fa6ccbe86c012f8a01f2ebf45fb4a8947443"
+    },
+    {
+      "path": "records/review/2026-10-18-negative-v3-b.json",
+      "sha256": "d1f0b8139a540972dd5059600d484d9a62bfefb8cad8a50dc86ebd0d2d620843"
+    },
+    {
+      "path": "records/review/2026-10-18-negative-v3-c.json",
+      "sha256": "4519c32a566142c38bd3afc9306527afcdf5881cb6b6bb899eccff64fc9d9341"
+    },
+    {
+      "path": "records/review/2026-10-18-negative-v3-root-grouping.json",
+      "sha256": "36129ba02045e962000a6f31582e3a42f1a12a3869493e746153b3279e202602"
+    }
+  ],
+  "source_sha256": "591db5787f2f07b769eda76a6f9ec5cbcb535b83c15c5dbefcd69c62378db313",
+  "reused_preparation_source_sha256": "9e326c1e88d321e757284d2000078311c3b28d598c2df318e9f71137fc51bfcc",
+  "manifest_sha256": "82009d40445a9091f7998ab8479cec10b5086826001b7b9f513862bd11da52d1",
+  "prior_assignments_preserved": true,
+  "counts": {
+    "rows": 390,
+    "new_candidates": 180,
+    "admitted": 207,
+    "new_admitted": 132,
+    "by_split": {
+      "development_validation": 52,
+      "development_train": 155
+    }
+  },
+  "new_excluded_for_known_group_or_near_match": [
+    "fashionpedia-negative-v3-27221",
+    "fashionpedia-negative-v3-29629",
+    "fashionpedia-negative-v3-31704",
+    "fashionpedia-negative-v3-32525",
+    "fashionpedia-negative-v3-32614",
+    "fashionpedia-negative-v3-32930",
+    "fashionpedia-negative-v3-33346",
+    "fashionpedia-negative-v3-35818",
+    "fashionpedia-negative-v3-35976",
+    "fashionpedia-negative-v3-36304",
+    "fashionpedia-negative-v3-37053",
+    "fashionpedia-negative-v3-37813",
+    "fashionpedia-negative-v3-39080",
+    "fashionpedia-negative-v3-39401",
+    "fashionpedia-negative-v3-40887",
+    "fashionpedia-negative-v3-44686",
+    "fashionpedia-negative-v3-44943",
+    "fashionpedia-negative-v3-47369",
+    "fashionpedia-negative-v3-48057",
+    "fashionpedia-negative-v3-48416",
+    "fashionpedia-negative-v3-49075",
+    "fashionpedia-negative-v3-49313",
+    "fashionpedia-negative-v3-49692",
+    "fashionpedia-negative-v3-50081",
+    "fashionpedia-negative-v3-50412"
+  ],
+  "limitations": [
+    "Single-agent original-image review; independent human truth pending",
+    "Physical garment identity unknown; unresolved links excluded",
+    "No empty-scene or camera-domain evidence added",
+    "All previous assignments preserved; no protected data reassigned"
+  ]
+}

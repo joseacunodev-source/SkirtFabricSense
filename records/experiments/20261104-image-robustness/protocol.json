@@ -1,0 +1,30 @@
+{
+  "created_utc": "2026-11-03T22:32:45.773815+00:00",
+  "status": "frozen_before_inference",
+  "scope": "source-domain reused development only",
+  "input_sha256": "5fd31356dad9333efaa82cb0e2a312533fe695b5c565278cd00136c9e693a1f7",
+  "split_hash": "2da2070b87f9107d4431c32289d3cad242a2929c49185002c1b06971db3ad04f",
+  "reference_sha256": "f0ebd8a2fd04530559ff661c35beddc7100da8e1852fa46762f2d867666c0648",
+  "source_sha256": "dd8086055a4bd99d864ac5edd173deb2511f51423572d54ba2c83cc2a4b4e97b",
+  "selected_path": "presence category-v1 + localizer-v2 + pleating fine-v1",
+  "thresholds": {
+    "presence": 0.5,
+    "mask": 0.5
+  },
+  "conditions": {
+    "original": "RGB source as archived",
+    "brightness_0.8": "Pillow ImageEnhance.Brightness factor 0.8",
+    "gaussian_blur_radius_1": "Pillow GaussianBlur radius 1 source pixel"
+  },
+  "seed": null,
+  "validation_originals": 118,
+  "fit_or_tune": false,
+  "final_test_used": false,
+  "originals_count_as_new_data": false,
+  "limitations": [
+    "Transforming images is not a measured webcam condition",
+    "Development data was used in checkpoint selection",
+    "Physical specimen independence and independent human truth not established",
+    "Performance remains unapproved for live or Pi use"
+  ]
+}

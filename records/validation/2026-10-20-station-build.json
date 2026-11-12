@@ -1,0 +1,33 @@
+{
+  "status": "passed",
+  "payload_files": 28,
+  "application": {
+    "status": "passed",
+    "bundle_id": "skirt-finetune-v1",
+    "payload_files": 17,
+    "application_included": true,
+    "manifest_sha256": "98ada650d7dff4cb297377a8f2d3ccb2c102807c298247beb68ca3a47868d437",
+    "inventory_sha256": "0128196438e5b3fb61ba2bab224b351b3de9e9b1e6eb50a171711804bc231eb5",
+    "pi_verified": false,
+    "runtime_verified": false,
+    "publisher_authenticated": false
+  },
+  "models": {
+    "localizer": {
+      "directory": "models/localizer",
+      "sha256": "f2f5f73d34cd99c3fb46502cb806ddbc347c6664e8ce24b8fe06a548c70090de"
+    },
+    "presence": {
+      "directory": "models/presence",
+      "sha256": "7bf9df9b1bacc757956c069f688345ff154ee480a65198ee5948fbe80bbcdb87"
+    },
+    "fabric": {
+      "directory": "models/fabric",
+      "sha256": "81f144a1c7cd4910989374a1a86c85e955fb4f65cd81ef88c26e7cbcf1158bfd"
+    }
+  },
+  "pi_verified": false,
+  "dependencies_included": false,
+  "runtime_verified": false,
+  "calibrated_length": false
+}

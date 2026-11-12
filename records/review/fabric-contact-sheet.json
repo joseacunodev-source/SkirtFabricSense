@@ -1,0 +1,223 @@
+{
+  "manifest": "data\\manifests\\fabric_candidates.jsonl",
+  "seed": 42,
+  "use": "visual QA only; not training data or additional original-image count",
+  "samples": [
+    {
+      "position": 1,
+      "sample_id": "fabnet3k-acef2c335a69d49e035eb195",
+      "original_path": "data\\external\\fabric_expansion\\images\\polyester\\acef2c335a69d49e035eb195.jpg",
+      "source_labels": {
+        "publisher_folder": "Polyester",
+        "description": "Polyester Satin - Capri Turquoise - Reverie Collection-"
+      }
+    },
+    {
+      "position": 2,
+      "sample_id": "fabnet3k-1f66d5812504c82ec318b1d5",
+      "original_path": "data\\external\\fabric_expansion\\images\\polyester\\1f66d5812504c82ec318b1d5.jpg",
+      "source_labels": {
+        "publisher_folder": "Polyester",
+        "description": "Black Polyester Poplin-"
+      }
+    },
+    {
+      "position": 3,
+      "sample_id": "fabnet3k-07d2b4bef75549d995c6ef07",
+      "original_path": "data\\external\\fabric_expansion\\images\\polyester\\07d2b4bef75549d995c6ef07.jpg",
+      "source_labels": {
+        "publisher_folder": "Polyester",
+        "description": "Gems and Doves Jacquard Lining - Wine and Blue Bi-Color-"
+      }
+    },
+    {
+      "position": 4,
+      "sample_id": "fabnet3k-c87908bcec6b42bf095c7e21",
+      "original_path": "data\\external\\fabric_expansion\\images\\cotton\\c87908bcec6b42bf095c7e21.jpg",
+      "source_labels": {
+        "publisher_folder": "Cotton",
+        "description": "Ravello Navy Mercerized Organic Cotton Shirting-"
+      }
+    },
+    {
+      "position": 5,
+      "sample_id": "fabnet3k-4c8001d2e3cbc317c2e607ac",
+      "original_path": "data\\external\\fabric_expansion\\images\\polyester\\4c8001d2e3cbc317c2e607ac.jpg",
+      "source_labels": {
+        "publisher_folder": "Polyester",
+        "description": "Metallic Red and Black Floral Double-Layer Organza Brocade-"
+      }
+    },
+    {
+      "position": 6,
+      "sample_id": "fabnet3k-431786c790f7d914d8e61421",
+      "original_path": "data\\external\\fabric_expansion\\images\\cotton\\431786c790f7d914d8e61421.jpg",
+      "source_labels": {
+        "publisher_folder": "Cotton",
+        "description": "Liberty Fabrics Tana Lawn\u00ae - Sambourne Green - Dark Mint Gre"
+      }
+    },
+    {
+      "position": 7,
+      "sample_id": "fabnet3k-3dda582d74d7b63b3173b069",
+      "original_path": "data\\external\\fabric_expansion\\images\\cotton\\3dda582d74d7b63b3173b069.jpg",
+      "source_labels": {
+        "publisher_folder": "Cotton",
+        "description": "Cotton Twill Shirting - Country Blue and White Gingham Check"
+      }
+    },
+    {
+      "position": 8,
+      "sample_id": "fabnet3k-240c02bd02ea90377b75d676",
+      "original_path": "data\\external\\fabric_expansion\\images\\polyester\\240c02bd02ea90377b75d676.jpg",
+      "source_labels": {
+        "publisher_folder": "Polyester",
+        "description": "Crinkled Nylon Taffeta - Hummus Beige - Deadstock-"
+      }
+    },
+    {
+      "position": 9,
+      "sample_id": "fabnet3k-c72ec29e86a2b4a8409f822e",
+      "original_path": "data\\external\\fabric_expansion\\images\\polyester\\c72ec29e86a2b4a8409f822e.jpg",
+      "source_labels": {
+        "publisher_folder": "Polyester",
+        "description": "Metallic Rose Gold- Gold and Baby Pink Big Blooms and Leaves"
+      }
+    },
+    {
+      "position": 10,
+      "sample_id": "fabnet3k-1e4c9a694ea7a7a6e73e0ee9",
+      "original_path": "data\\external\\fabric_expansion\\images\\polyester\\1e4c9a694ea7a7a6e73e0ee9.jpg",
+      "source_labels": {
+        "publisher_folder": "Polyester",
+        "description": "Black- Pink and Lime Reversible Floral Brocade-"
+      }
+    },
+    {
+      "position": 11,
+      "sample_id": "fabnet3k-b8471a816aaa7254c5d3a8ae",
+      "original_path": "data\\external\\fabric_expansion\\images\\cotton\\b8471a816aaa7254c5d3a8ae.jpg",
+      "source_labels": {
+        "publisher_folder": "Cotton",
+        "description": "Mood Exclusive Blue Off the Grid Stretch Cotton Twill-"
+      }
+    },
+    {
+      "position": 12,
+      "sample_id": "fabnet3k-eb041569e501de368fbe9988",
+      "original_path": "data\\external\\fabric_expansion\\images\\cotton\\eb041569e501de368fbe9988.jpg",
+      "source_labels": {
+        "publisher_folder": "Cotton",
+        "description": "Chesterton Yellow Calendered Organic Cotton Oxford-"
+      }
+    },
+    {
+      "position": 13,
+      "sample_id": "fabnet3k-911ea4fc204a9b94eff2b022",
+      "original_path": "data\\external\\fabric_expansion\\images\\cotton\\911ea4fc204a9b94eff2b022.jpg",
+      "source_labels": {
+        "publisher_folder": "Cotton",
+        "description": "Italian Pink and Orange Metallic Plaid Cotton Voile-"
+      }
+    },
+    {
+      "position": 14,
+      "sample_id": "fabnet3k-1b03e82d47e75e6e62cb3fd1",
+      "original_path": "data\\external\\fabric_expansion\\images\\cotton\\1b03e82d47e75e6e62cb3fd1.jpg",
+      "source_labels": {
+        "publisher_folder": "Cotton",
+        "description": "Tartan Featherwale Cotton Corduroy-"
+      }
+    },
+    {
+      "position": 15,
+      "sample_id": "fabnet3k-9ff4cb897efc1a89f4f1b298",
+      "original_path": "data\\external\\fabric_expansion\\images\\cotton\\9ff4cb897efc1a89f4f1b298.jpg",
+      "source_labels": {
+        "publisher_folder": "Cotton",
+        "description": "Cotton Crepe - Dark Green- Pale Golden Yellow and Red Brown "
+      }
+    },
+    {
+      "position": 16,
+      "sample_id": "fabnet3k-729c69de74796d41e39d405f",
+      "original_path": "data\\external\\fabric_expansion\\images\\polyester\\729c69de74796d41e39d405f.jpg",
+      "source_labels": {
+        "publisher_folder": "Polyester",
+        "description": "Red and Midnight Blue Skull Brocade-"
+      }
+    },
+    {
+      "position": 17,
+      "sample_id": "fabnet3k-0a13b42749ab6b8d676b181e",
+      "original_path": "data\\external\\fabric_expansion\\images\\cotton\\0a13b42749ab6b8d676b181e.jpg",
+      "source_labels": {
+        "publisher_folder": "Cotton",
+        "description": "Chesterton Blue Calendered Organic Cotton Oxford-"
+      }
+    },
+    {
+      "position": 18,
+      "sample_id": "fabnet3k-096d853ee6ef0159e946633d",
+      "original_path": "data\\external\\fabric_expansion\\images\\polyester\\096d853ee6ef0159e946633d.jpg",
+      "source_labels": {
+        "publisher_folder": "Polyester",
+        "description": "Italian Army Green Heathered Stretch Suiting-"
+      }
+    },
+    {
+      "position": 19,
+      "sample_id": "fabnet3k-1c883bf15f10ccccbe82579f",
+      "original_path": "data\\external\\fabric_expansion\\images\\cotton\\1c883bf15f10ccccbe82579f.jpg",
+      "source_labels": {
+        "publisher_folder": "Cotton",
+        "description": "Mood Exclusive Black Poppy Hypnosis Cotton Voile-"
+      }
+    },
+    {
+      "position": 20,
+      "sample_id": "fabnet3k-3ae01cab0fc933fa61438c70",
+      "original_path": "data\\external\\fabric_expansion\\images\\cotton\\3ae01cab0fc933fa61438c70.jpg",
+      "source_labels": {
+        "publisher_folder": "Cotton",
+        "description": "Mood Exclusive Key Lime Divine Stretch Cotton Poplin-"
+      }
+    },
+    {
+      "position": 21,
+      "sample_id": "fabnet3k-3f476f14ad117d6495623d7f",
+      "original_path": "data\\external\\fabric_expansion\\images\\cotton\\3f476f14ad117d6495623d7f.jpg",
+      "source_labels": {
+        "publisher_folder": "Cotton",
+        "description": "Cotton Poplin - Blue- Sky and White Stripes - Deadstock-"
+      }
+    },
+    {
+      "position": 22,
+      "sample_id": "fabnet3k-85093b49db91562211e7a0bf",
+      "original_path": "data\\external\\fabric_expansion\\images\\polyester\\85093b49db91562211e7a0bf.jpg",
+      "source_labels": {
+        "publisher_folder": "Polyester",
+        "description": "Liquid Sheen Metallic Polyester Chiffon - Silver on White - "
+      }
+    },
+    {
+      "position": 23,
+      "sample_id": "fabnet3k-a4bb41e54b36f2107b2d2567",
+      "original_path": "data\\external\\fabric_expansion\\images\\cotton\\a4bb41e54b36f2107b2d2567.jpg",
+      "source_labels": {
+        "publisher_folder": "Cotton",
+        "description": "Talamanca Sangria Double Cotton Gauze-"
+      }
+    },
+    {
+      "position": 24,
+      "sample_id": "fabnet3k-08187c7da3ec0f7bac6bdf82",
+      "original_path": "data\\external\\fabric_expansion\\images\\cotton\\08187c7da3ec0f7bac6bdf82.jpg",
+      "source_labels": {
+        "publisher_folder": "Cotton",
+        "description": "Ralph Lauren American Made Red Cotton Knit Fleece-"
+      }
+    }
+  ]
+}

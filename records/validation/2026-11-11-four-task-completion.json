@@ -1,0 +1,380 @@
+{
+  "date": "2026-11-11",
+  "status": "all_four_requested_software_tasks_complete",
+  "tasks_completed": [
+    "R01",
+    "R02",
+    "R03",
+    "R04"
+  ],
+  "raw_response_bodies_verified": 21,
+  "historical_acquisition_artifacts_verified": 38,
+  "python_tests": {
+    "recovery_and_continuation": 17,
+    "fabric_reviewer_and_evidence": 41,
+    "geometry_editor": 14,
+    "package_and_release": 30,
+    "total": 102
+  },
+  "browser_checks": {
+    "mocked_camera_cases": 52,
+    "layout_scenarios": 6,
+    "fabric_browser_checks": 14,
+    "geometry_roundtrip": "passed"
+  },
+  "station_http_jobs": 12,
+  "selected_station": {
+    "directory": "artifacts/stations/skirt-research-station-v9",
+    "inventory": {
+      "path": "artifacts/stations/skirt-research-station-v9/station-inventory.json",
+      "sha256": "ae18db22793ff0aa576cec1130d9f8c06e3987dbdebe03528b7dd890f162998d"
+    },
+    "configuration": {
+      "path": "artifacts/stations/skirt-research-station-v9/station.json",
+      "sha256": "953d17494b579c751ba046c5e6c48e73975ea9b5d82b7e2f419bca35da833b22"
+    },
+    "payload_files": 28,
+    "selection": "selected_desktop_research",
+    "pi_verified": false,
+    "desktop_http_jobs": 12,
+    "evidence": {
+      "path": "records/validation/2026-11-11-station-v9-http.json",
+      "sha256": "daa51aff58095c88d6d19f72aafb362c5eb99e832ae49c7cbf37bca221256006"
+    }
+  },
+  "rollback": {
+    "directory": "artifacts/stations/skirt-research-station-v8",
+    "inventory": {
+      "path": "artifacts/stations/skirt-research-station-v8/station-inventory.json",
+      "sha256": "68215a3b974f2dc3034e59974acea7c29436c1efaa56cf3e14b3a43ac479f34d"
+    },
+    "configuration": {
+      "path": "artifacts/stations/skirt-research-station-v8/station.json",
+      "sha256": "953d17494b579c751ba046c5e6c48e73975ea9b5d82b7e2f419bca35da833b22"
+    },
+    "selection": "rollback",
+    "pi_verified": false
+  },
+  "evidence": [
+    {
+      "path": "CHANGELOG.md",
+      "sha256": "b0797194f13cd3c28203fd40414971384ea6ec4b94396853ff53b3985a1d8115"
+    },
+    {
+      "path": "HANDOFF.md",
+      "sha256": "8f03aafc3734b214a7de2779b7c86f6018c1fb3ddfed52a01afd8048d2594059"
+    },
+    {
+      "path": "README.md",
+      "sha256": "e4130924d77008446fc6bb482f4a49dd96903afc1055fdbb1399b813a82f2fa1"
+    },
+    {
+      "path": "app/static/index.html",
+      "sha256": "40618a91db6b19cd918d70ad10056cd79aaa9c0b44b869d60f2bc60c53c68f3f"
+    },
+    {
+      "path": "artifacts/releases/skirt-finetune-v1-desktop-research-v14/inventory.json",
+      "sha256": "81f03250450a6060e2e336c7a59742800450f43b95d6830b9537f325fb62bfd0"
+    },
+    {
+      "path": "data/registry.json",
+      "sha256": "d110326863486475770d678074d73bd4ff97477ca453469a7f748e4d0f33a2cb"
+    },
+    {
+      "path": "docs/ACQUISITION_RECOVERY_NOV11.md",
+      "sha256": "ca755a8f47a8deebfba3456c42fde677502d54ba97e14ba8d0980c34a117ac87"
+    },
+    {
+      "path": "docs/AGENT_HANDOFF.md",
+      "sha256": "fed92352c4e061acb6cdeb5841c5a9e2f9c478c68ff2e3b7ca5124aa3469f2d3"
+    },
+    {
+      "path": "docs/ARCHITECTURE.md",
+      "sha256": "2e284cadd4be793635489c987a41371fdfd641f803b4619f196e98eddd64ef1a"
+    },
+    {
+      "path": "docs/CAMERA_UI.md",
+      "sha256": "52cbf21d8a25b5ccb54d9cd62a8a59b9253a07616630a17ade3ee8afc6195076"
+    },
+    {
+      "path": "docs/COMPACT_LAYOUT_NOV11.md",
+      "sha256": "c295f8e0a882bd9cc20dad68a1b2ca4035fa442350f018944fe67818be498ae4"
+    },
+    {
+      "path": "docs/DATASETS.md",
+      "sha256": "49a42cfd66ee54c348e39d05896abd35bf944f955b626415f027152400b5eeb0"
+    },
+    {
+      "path": "docs/DECISIONS.md",
+      "sha256": "cc0e9fe81737040f5618809cd2d2bedac54cc9a1e25a1d5504425439f5f81e93"
+    },
+    {
+      "path": "docs/DOCUMENTATION_INDEX.md",
+      "sha256": "a2ddfc6da6a7e673e0cb2421f7f731cbcccbb5f48574fe4f8be6058af718561d"
+    },
+    {
+      "path": "docs/FABRIC_REVIEW_UI.md",
+      "sha256": "529131d6878ea12704c5e2c04a863720d34749575edac9382ada15f6a5d26520"
+    },
+    {
+      "path": "docs/GEOMETRY_ANNOTATION.md",
+      "sha256": "cea9a568954c2906bb6b900d188d353eac566879825fbd4d2d61b70eae254d8f"
+    },
+    {
+      "path": "docs/LCD_14447_LAYOUT.md",
+      "sha256": "4c7b915d46a97c6c670c213a42714f5e308c86f1bdc43c5a6cf2d4a5ac93d309"
+    },
+    {
+      "path": "docs/PROJECT_REFRESH_NOV11.md",
+      "sha256": "8b9b099f3bbb93f148990a835424429b3e1d7b88737180a30dafb7e669b4ff08"
+    },
+    {
+      "path": "docs/RASPBERRY_PI_DEPLOYMENT.md",
+      "sha256": "2b333b20be2489c85d089944b5de2c755bb0f8353abd3ae04e474f61b6b10ff4"
+    },
+    {
+      "path": "docs/RECOVERY_IMPLEMENTATION_NOV11.md",
+      "sha256": "2955b5c14ef6d8607adb766289bc3bfcf2e0e06da502e49587f0b285982a4e55"
+    },
+    {
+      "path": "docs/REQUIREMENTS.md",
+      "sha256": "a31c13d5afe57da417c8ed45cddb24fea1411a0b08f8c5489e3e6ffba63e24ad"
+    },
+    {
+      "path": "docs/STATION_PACKAGE.md",
+      "sha256": "d4364b4771d9c6b838e09ece91a50175f82a1ab529baaec6185b8bac277ea76c"
+    },
+    {
+      "path": "docs/TASK_BOARD.md",
+      "sha256": "18f82ff725a6db6be5af60884121b8286a89e83f36e85771ed9ad800bdf060fb"
+    },
+    {
+      "path": "output/geometry-review/12679.html",
+      "sha256": "3b8cc5edbb9d754a08babe22bca0ef65223382388794203e4dabd4797e9305a7"
+    },
+    {
+      "path": "records/recoveries/http-bodies-20261111/10937769_metadata.response.txt",
+      "sha256": "d24745e42ecb9b2958d28aa2a9797e2d66d0c718f70bb55964896846c4a29eb5"
+    },
+    {
+      "path": "records/recoveries/http-bodies-20261111/15356317_metadata.response.txt",
+      "sha256": "088d537c5666960669f3418e4883796b0242f6b4f1ee9d56d1b38ee81c695d97"
+    },
+    {
+      "path": "records/recoveries/http-bodies-20261111/15729163_metadata.response.txt",
+      "sha256": "11dacca45d40fb2a5a1198fe6c9f83590be02da43579078f8dff4eb87bbd01e7"
+    },
+    {
+      "path": "records/recoveries/http-bodies-20261111/189945295_metadata.response.txt",
+      "sha256": "5b4c895acf3358bddf2569f199960934610ef50a3aa889f759c97f5b8d685ecb"
+    },
+    {
+      "path": "records/recoveries/http-bodies-20261111/189945296_metadata.response.txt",
+      "sha256": "2fffe9c70ab75664aa0f155790a4652602a668a95f61268475e3e6a854673c34"
+    },
+    {
+      "path": "records/recoveries/http-bodies-20261111/190236303_metadata.response.txt",
+      "sha256": "745f6dc91c51eb5f82a4f4fe5dd5881b147b95fd7a442ed9e778ad224ce43536"
+    },
+    {
+      "path": "records/recoveries/http-bodies-20261111/190236304_metadata.response.txt",
+      "sha256": "0eefa7ef9dc8140dc950a7d10956d8046ec25a104373bb31253f9442c87386dc"
+    },
+    {
+      "path": "records/recoveries/http-bodies-20261111/190236306_metadata.response.txt",
+      "sha256": "36709ee14dbda8ffaa26a53e836248cb465291ecd16b693efea6b839073f3c7f"
+    },
+    {
+      "path": "records/recoveries/http-bodies-20261111/23519722_metadata.response.txt",
+      "sha256": "78ff43625faf89e1ceed3f448f10a375428468ea9860c1b2a72df79e20ceb229"
+    },
+    {
+      "path": "records/recoveries/http-bodies-20261111/24046851_metadata.response.txt",
+      "sha256": "fa1333856a45fe712120c7ca039fc0ebd083446fb2e7c97e513b6ba053f18744"
+    },
+    {
+      "path": "records/recoveries/http-bodies-20261111/24115579_metadata.response.txt",
+      "sha256": "db8fa89cc4787ec312b78ebce78ab5f63ee35d94e31c77ba93a582a7062aea0c"
+    },
+    {
+      "path": "records/recoveries/http-bodies-20261111/24115590_metadata.response.txt",
+      "sha256": "940427b1708694ceb5596263f9fc43ce2c15ac35edb6e1b91c2d3e2ff5c991cd"
+    },
+    {
+      "path": "records/recoveries/http-bodies-20261111/24115594_metadata.response.txt",
+      "sha256": "cf8407ce652db3aeade68f3f7752843293856167f0b6eb71e5872995d1339293"
+    },
+    {
+      "path": "records/recoveries/http-bodies-20261111/24115675_metadata.response.txt",
+      "sha256": "2e9506191aadf9c2b1d53d7f8c08a66a3f90c266115cb5b9aa1d7a184ae9570d"
+    },
+    {
+      "path": "records/recoveries/http-bodies-20261111/24116837_metadata.response.txt",
+      "sha256": "bd0c22123f9a613d548807fb72542e6b1abe62487575e3cbc669fc1c6f05ab2c"
+    },
+    {
+      "path": "records/recoveries/http-bodies-20261111/24124442_metadata.response.txt",
+      "sha256": "368355de32af949c349b2fca4307d26f9e3c3f997e84424296206bccfa57743f"
+    },
+    {
+      "path": "records/recoveries/http-bodies-20261111/27737160_metadata.response.txt",
+      "sha256": "3bf1e4d16565d9a4266ee618ecd953697542c03db78632fd2f5097f93ce3b38a"
+    },
+    {
+      "path": "records/recoveries/http-bodies-20261111/31139361_metadata.response.txt",
+      "sha256": "c71424ddc1d7fd7f7a7a672167f20d521150b362c84091bfdca049dfd1eb963c"
+    },
+    {
+      "path": "records/recoveries/http-bodies-20261111/31139362_metadata.response.txt",
+      "sha256": "7c493a6316e38fe049b3ad3f4eb8fd159a2adddd4bd8c10c94cdad1fc3622e08"
+    },
+    {
+      "path": "records/recoveries/http-bodies-20261111/38898416_metadata.response.txt",
+      "sha256": "940a7c5562f4441dbe6ea56380c8679dc116a62d41cc8f893ad623e8e282874d"
+    },
+    {
+      "path": "records/recoveries/http-bodies-20261111/38917249_metadata.response.txt",
+      "sha256": "5b7311f283b0f9366bb95572f9bd0fb7148f8234103c1fdaeb8c419c193375c8"
+    },
+    {
+      "path": "records/recoveries/raw-http-responses-v1.json",
+      "sha256": "31ed38fb0ffdc4d064ee3dc93a1791ca1cf16677b8a2b2e44064d367df2ae6eb"
+    },
+    {
+      "path": "records/validation/2026-11-11-compact-layout/independent-review/browser.json",
+      "sha256": "ae54e4939215691bbe5b2631c197c6bcc3e60e0e98c6e6b5149125bab701a97d"
+    },
+    {
+      "path": "records/validation/2026-11-11-compact-layout/independent-review/camera-off-800x480.png",
+      "sha256": "3fe758ca076572b70032c4f90a8500e5a40ead9fc38c19eb557e7e4c1ccc584c"
+    },
+    {
+      "path": "records/validation/2026-11-11-compact-layout/independent-review/camera-off-desktop.png",
+      "sha256": "c7f45a67571069cac0ba1d2b1bd02aae1a4f16aa96ccf741612708f51eba8f8c"
+    },
+    {
+      "path": "records/validation/2026-11-11-compact-layout/independent-review/review.json",
+      "sha256": "b6404695bb92c41a088d448a0b4b8fa3bb7edd2245b3d540d51a41579c36b011"
+    },
+    {
+      "path": "records/validation/2026-11-11-fabric-reviewer/verified-r02/browser-result.json",
+      "sha256": "4c8cafa9c22091ab87b2afb84a9d5ef64767b083f1f0024e97a2f4f617324522"
+    },
+    {
+      "path": "records/validation/2026-11-11-fabric-reviewer/verified-r02/browser-synthetic-review.png",
+      "sha256": "9af25cee02590d2752d367209b5df4f93a0d840e5ff98851f37cb3b18a0a7535"
+    },
+    {
+      "path": "records/validation/2026-11-11-fabric-reviewer/verified-r02/download.json",
+      "sha256": "ad4ae1f7f1c2ceae35e72d3d349192d1f6089b4013b85fa0b30da63feab04f82"
+    },
+    {
+      "path": "records/validation/2026-11-11-fabric-reviewer/verified-r02/finalize.py",
+      "sha256": "056912c2b5ea1a066620c2d3d03f646433bad156c1af5bf821e07753bcfa6e29"
+    },
+    {
+      "path": "records/validation/2026-11-11-fabric-reviewer/verified-r02/verification.json",
+      "sha256": "11d55ffa0cbc7e24ce184a623985ae21844d13423354c18076f7a95f6e817e62"
+    },
+    {
+      "path": "records/validation/2026-11-11-four-task-finalize.py",
+      "sha256": "be1878e8a77456574dd15a02fac324d2a2003dabbba2cf45012001f709faf3f9"
+    },
+    {
+      "path": "records/validation/2026-11-11-geometry-editor/final/browser.json",
+      "sha256": "5a62c4b5f4e41e7630dcccd97bb96d7c82af4b3060bec73c32e99b55f82f8382"
+    },
+    {
+      "path": "records/validation/2026-11-11-geometry-editor/final/synthetic-browser.png",
+      "sha256": "7ebe6d0fb4f17bab45d4d61cd1bcc9c50b2dd2259b532fa3a8bcfabc5e46ef1d"
+    },
+    {
+      "path": "records/validation/2026-11-11-geometry-editor/final/verification.json",
+      "sha256": "e54d10e4468663d7f40feccb0403302ea5f78d369b1cb665954b059a0e0c88d4"
+    },
+    {
+      "path": "records/validation/2026-11-11-raw-response-recovery-preintegration.json",
+      "sha256": "1ea5c042815f65e0d64f502982cf460a57e8588f012a26ae67ef9ebfc7cd84ef"
+    },
+    {
+      "path": "records/validation/2026-11-11-station-v9-http.execution.json",
+      "sha256": "3c4a998a163f2497c39ac551bce6fbb9d2e0127eee24c18c397a302d46de8741"
+    },
+    {
+      "path": "records/validation/2026-11-11-station-v9-http.json",
+      "sha256": "daa51aff58095c88d6d19f72aafb362c5eb99e832ae49c7cbf37bca221256006"
+    },
+    {
+      "path": "tests/compact_layout_browser.cjs",
+      "sha256": "650e8cb710133928648446b705e98e2e087c168b264eedbddfbedefcb010e70c"
+    },
+    {
+      "path": "tests/fabric_review_browser.cjs",
+      "sha256": "dd3923be93d3c697b3c3f288fceecbe8a70fc560fe98bd673666ec052e2e4811"
+    },
+    {
+      "path": "tests/geometry_annotation_browser.cjs",
+      "sha256": "e72596476f2246bc3632fd65f38d071f84f89118442f9d571b9baa60db65390f"
+    },
+    {
+      "path": "tests/test_fabric_review_ui.py",
+      "sha256": "9a9d7435a8852c873b908aa2af11992c8661614c1e41e6ea72b1587f86c7f533"
+    },
+    {
+      "path": "tests/test_geometry_annotation.py",
+      "sha256": "cd5751d6c3556d5985d5e9a0e4a5b99158fa6328054efbffaeffed185e7e4c14"
+    },
+    {
+      "path": "tests/test_raw_http_records.py",
+      "sha256": "662d0250d4ac1a6d7f46672696558cbec978e7ef0befb5595e503856dd7c20f8"
+    },
+    {
+      "path": "tools/geometry_annotation.py",
+      "sha256": "748d128e7caa974f8082e1f60c4f0611b199bec7707e9caaf92abb5c13b4d6b2"
+    },
+    {
+      "path": "tools/raw_http_records.py",
+      "sha256": "f6acef0ee6d32d0cf79669ad1470b69de44e69c3b2ffd69b3efb84aa79a8740e"
+    },
+    {
+      "path": "tools/serve_fabric_review.py",
+      "sha256": "843b60012d4cae6282706a1dcdebf925babd5ad57d95d06a3ed4164e17018c4e"
+    },
+    {
+      "path": "tools/static/fabric_review.html",
+      "sha256": "1de4c47f6b10aba7697e4c45fb860f34f15858653d1fd2475735d1cc27b62be7"
+    },
+    {
+      "path": "tools/static/geometry_annotation.html",
+      "sha256": "385144269e7f01f031bbf577302e24decdc3a8544e2bfa5ad812eff6b04398fc"
+    },
+    {
+      "path": "tools/validate_records.py",
+      "sha256": "d3bd422f8d3c727146bff8c8789e77c6aecb0b18706c7564e9da579ca7a1ad86"
+    }
+  ],
+  "process_observation": {
+    "command": [
+      "wsl",
+      "-d",
+      "Ubuntu-24.04",
+      "-u",
+      "skirttrain",
+      "--exec",
+      "/usr/bin/pgrep",
+      "-af",
+      "[a]pp.server|[s]tation_package.py launch|[t]rain_.*.py"
+    ],
+    "exit_code": 1,
+    "stdout": "",
+    "scope": "Scoped WSL training and station names"
+  },
+  "production_fabric_observations": 0,
+  "production_geometry_observations": 0,
+  "images_added": 0,
+  "models_or_thresholds_changed": false,
+  "dependencies_installed": [],
+  "pi_verified": false,
+  "physical_lcd_tested": false,
+  "owned_test_servers_stopped": true
+}

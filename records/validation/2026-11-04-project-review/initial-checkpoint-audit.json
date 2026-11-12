@@ -1,0 +1,10 @@
+{
+  "date": "2026-11-04",
+  "references_passed": 118,
+  "mismatches": [
+    "Evidence reference mismatch: HANDOFF.md",
+    "Evidence reference mismatch: docs/AGENT_HANDOFF.md",
+    "Evidence reference mismatch: docs/DOCUMENTATION_INDEX.md",
+    "Evidence reference mismatch: docs/TASK_BOARD.md"
+  ]
+}

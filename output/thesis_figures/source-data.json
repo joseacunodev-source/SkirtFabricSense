@@ -1,0 +1,91 @@
+{
+  "source_report": {
+    "path": "records/validation/2026-10-23-detection-uncertainty.json",
+    "sha256": "47ce44f87e4cbbad9734e22df675c7fe8511f03034c5690dd36870e93482a921"
+  },
+  "frozen_inputs": {
+    "path": "records/experiments/20261021-category-presence-v1/inputs.json",
+    "sha256": "5fd31356dad9333efaa82cb0e2a312533fe695b5c565278cd00136c9e693a1f7"
+  },
+  "counts": {
+    "comparison": {
+      "positive_count": 66,
+      "positive_accepted": 44,
+      "positive_unavailable": 22,
+      "correct_pleating": 38,
+      "negative_count": 52,
+      "negative_rejected": 42,
+      "negative_falsely_accepted": 10
+    },
+    "confusion_matrix": {
+      "pleated": {
+        "pleated": 10,
+        "non_pleated": 5,
+        "unavailable": 2
+      },
+      "non_pleated": {
+        "pleated": 1,
+        "non_pleated": 28,
+        "unavailable": 20
+      }
+    },
+    "inputs": {
+      "train": 420,
+      "validation": 118,
+      "train_skirt": 265,
+      "train_negative": 155,
+      "validation_skirt": 66,
+      "validation_negative": 52
+    }
+  },
+  "limitations": [
+    "Reused source-domain development groups motivated hypotheses and selected checkpoints; these intervals do not correct selection optimism.",
+    "Source groups are not independently verified physical garments; the observed group-size histogram is reported rather than assuming garment independence.",
+    "Agent-reviewed labels lack independent human confirmation. No locked test, camera-domain accuracy, score calibration, public-demo acceptance or Raspberry Pi evidence is produced.",
+    "Paired bootstrap conditions on these groups, their provisional labels and fixed saved predictions. Degenerate zero-delta intervals do not establish equivalence or a guaranteed absence of regression.",
+    "Presence-stratified resampling holds the observed positive/negative group counts fixed; it does not estimate deployment class prevalence.",
+    "Sparse per-class and negative-category slices are descriptive raw counts; their apparent rates are unstable."
+  ],
+  "source_code_sha256": "eeb9901b0f53a998967c61debaa17d09446ff3f1f70bf1a2b1156fe4289835a7",
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "reportlab_version": "4.4.9",
+  "recorded_utc": "2026-11-03T22:32:58.074912+00:00",
+  "no_training": true,
+  "no_new_inference": true,
+  "image_robustness": {
+    "source": {
+      "path": "records/experiments/20261104-image-robustness/results.json",
+      "sha256": "633b7636c975e14a74122013dd4b1533dd4555bb8161db352201d8edb97656ca"
+    },
+    "per_condition": {
+      "original": {
+        "positive_total": 66,
+        "positive_accepted": 44,
+        "correct_pleating": 38,
+        "negative_total": 52,
+        "negative_rejected": 42
+      },
+      "brightness_0.8": {
+        "positive_total": 66,
+        "positive_accepted": 41,
+        "correct_pleating": 36,
+        "negative_total": 52,
+        "negative_rejected": 41
+      },
+      "gaussian_blur_radius_1": {
+        "positive_total": 66,
+        "positive_accepted": 44,
+        "correct_pleating": 38,
+        "negative_total": 52,
+        "negative_rejected": 40
+      }
+    },
+    "same_parent_images": 118,
+    "synthetic_modifications": [
+      "brightness_0.8",
+      "gaussian_blur_radius_1"
+    ],
+    "figure_source_code_sha256": "3de5eb0a3dfb0e45799208bf90395f49c87c5e7295d4dcb46ed4e9c0eef7383b",
+    "new_training": false
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "date_asia_manila": "2026-10-17",
+  "publisher_url": "https://tfhub.dev/google/lite-model/movenet/singlepose/lightning/tflite/float16/4?lite-format=tflite",
+  "documentation": "https://www.tensorflow.org/hub/tutorials/movenet",
+  "status": "acquired",
+  "runtime_verified": false,
+  "pi_verified": false,
+  "bytes": 4758512,
+  "sha256": "0fac2226112d0371903ca86e3853cec24ef603a0b2f96f589b180f0ebdd135ab"
+}

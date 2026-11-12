@@ -1,0 +1,28 @@
+{
+  "recorded_at_utc": "2026-10-05T15:58:04.256155+00:00",
+  "status": "passed",
+  "tests": {
+    "command": "python -m unittest tests.test_server tests.test_async_server tests.test_pipeline -q",
+    "count": 24,
+    "final_outcome": "passed",
+    "initial_run": "One Windows ConnectionAbortedError in legacy cross-origin test; rerun passed. Imported fixture discovery also duplicated 11 tests in initial run; corrected discovery."
+  },
+  "javascript_syntax": "node --check tmp/analysis-ui-check.js passed",
+  "real_model_evidence": "records/validation/2026-10-05-async-http-inference.json",
+  "bundle": "artifacts/releases/skirt-finetune-v1-desktop-async-v2",
+  "payload_files_hash_verified": 9,
+  "source_hashes": {
+    "app/server.py": "f6e79af9a80dec4f46a26e743c8c6fdf719684a8895306fe3bb8861098651e6c",
+    "app/static/index.html": "430aadfcf32a4c6abd51088e4f2861275cdf0047ff29c1066335048db6b754ff",
+    "tests/test_async_server.py": "3be83e3c79affab40605321ceb3997dc18bec236173fb51fadca72404dff06fc",
+    "tools/check_application.py": "fb556b402e0fa0df3c949aae20262a1af3047a648716217a3d2b6c844d5bdc27"
+  },
+  "dependencies_installed": false,
+  "camera_opened": false,
+  "pi_verified": false,
+  "limitations": [
+    "Browser upload/ROI/cancellation interaction not directly exercised",
+    "File-image adapter only; no automatic quality or skirt localization",
+    "One shared local station; no multi-user job isolation"
+  ]
+}

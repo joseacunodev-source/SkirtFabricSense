@@ -1,0 +1,30 @@
+test_corruption_detected (test_acquire_seed.AcquisitionIntegrityTests.test_corruption_detected) ... ok
+test_failed_replace_preserves_original (test_acquire_seed.AcquisitionIntegrityTests.test_failed_replace_preserves_original) ... ok
+test_path_escape_rejected (test_acquire_seed.AcquisitionIntegrityTests.test_path_escape_rejected) ... ok
+test_verify_only_never_networks_or_writes (test_acquire_seed.AcquisitionIntegrityTests.test_verify_only_never_networks_or_writes) ... ok
+test_fabric_range_extract_and_identity_rejection (test_archive_intake.ArchiveIntakeTests.test_fabric_range_extract_and_identity_rejection) ... ok
+test_oversized_member_rejected_before_network (test_archive_intake.ArchiveIntakeTests.test_oversized_member_rejected_before_network) ... ok
+test_skirt_range_extract_and_crc_rejection (test_archive_intake.ArchiveIntakeTests.test_skirt_range_extract_and_crc_rejection) ... ok
+test_corruption_and_dimension_mismatch_rejected (test_dataset_pipeline.DatasetPipelineTests.test_corruption_and_dimension_mismatch_rejected) ... ok
+test_decode_rejects_valid_hash_of_nonimage (test_dataset_pipeline.DatasetPipelineTests.test_decode_rejects_valid_hash_of_nonimage) ... ok
+test_exact_duplicate_of_holdout_never_enters_training (test_dataset_pipeline.DatasetPipelineTests.test_exact_duplicate_of_holdout_never_enters_training) ... C:\Users\Administrator\OneDrive\Documents\ChatGPT\SkirtFabricSense\tools\datasets\audit_candidates.py:86: DeprecationWarning: Image.Image.getdata is deprecated and will be removed in Pillow 14 (2027-10-15). Use get_flattened_data instead.
+  pixels = list(tiny.getdata())
+ok
+test_missing_parent_fails_instead_of_leaking (test_dataset_pipeline.DatasetPipelineTests.test_missing_parent_fails_instead_of_leaking) ... ok
+test_near_duplicate_connected_to_holdout_is_excluded (test_dataset_pipeline.DatasetPipelineTests.test_near_duplicate_connected_to_holdout_is_excluded) ... ok
+test_parents_and_transitive_groups_stay_together (test_dataset_pipeline.DatasetPipelineTests.test_parents_and_transitive_groups_stay_together) ... ok
+test_path_escape_and_duplicate_ids_rejected (test_dataset_pipeline.DatasetPipelineTests.test_path_escape_and_duplicate_ids_rejected) ... ok
+test_report_does_not_overwrite_existing_evidence (test_dataset_pipeline.DatasetPipelineTests.test_report_does_not_overwrite_existing_evidence) ... ok
+test_source_labels_do_not_become_project_labels (test_dataset_pipeline.DatasetPipelineTests.test_source_labels_do_not_become_project_labels) ... ok
+test_task_approval_does_not_transfer_and_missing_terms_rejected (test_dataset_pipeline.DatasetPipelineTests.test_task_approval_does_not_transfer_and_missing_terms_rejected) ... ok
+test_unknown_partition_excluded_and_input_order_deterministic (test_dataset_pipeline.DatasetPipelineTests.test_unknown_partition_excluded_and_input_order_deterministic) ... ok
+
+----------------------------------------------------------------------
+Ran 18 tests in 0.819s
+
+OK
+{
+  "verified_artifacts": 0,
+  "images": 0,
+  "network_used": false
+}

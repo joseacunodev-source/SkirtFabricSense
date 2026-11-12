@@ -1,0 +1,98 @@
+{
+  "date": "2026-11-04",
+  "status": "review_completed_hardware_acceptance_open",
+  "focused_tests": {
+    "run": 73,
+    "passed": 73,
+    "failed": 0
+  },
+  "station_verified": true,
+  "new_images": 0,
+  "installs": 0,
+  "training_runs": 0,
+  "hardware_tested": false,
+  "data_originals": 1932,
+  "acquisition_recovery": "COCO zero-photo failures preserved; Commons source exists but no acquisition record; do not auto-resume downloads",
+  "evidence": [
+    {
+      "path": "docs/PURCHASE_REVIEW_NOV04.md",
+      "sha256": "88e9249f10352bfd175459c54ca5ea4a7d409f93941aafce88ec1e2c7555e07c"
+    },
+    {
+      "path": "docs/FABRIC_EVIDENCE_REVIEW.md",
+      "sha256": "6af7cb0edaa894aeb4eaf1560bebd633e421de5bd02859fcb16679ed3e2e45e5"
+    },
+    {
+      "path": "docs/DETECTION_UNCERTAINTY_OCT23.md",
+      "sha256": "589e82c2453807560c38e7d2919021c5ea4c5f3e946cc77dc896f04aa0bee8c8"
+    },
+    {
+      "path": "tools/datasets/fabric_evidence_review.py",
+      "sha256": "e9f0faec9272af02e98388b340b224e17b5e7f1c525ba8b94284a1d2530704fe"
+    },
+    {
+      "path": "tools/datasets/acquire_coco_backgrounds.py",
+      "sha256": "6def626878edf7d57f7843e245e59966079bd4ec8e9a63b37a9abeaf6fe3f91e"
+    },
+    {
+      "path": "tools/report_detection_uncertainty.py",
+      "sha256": "3a293a877f8919c286e402d5fd872ec36dea4cd97ee33ab6c05b52073cf98f26"
+    },
+    {
+      "path": "tests/test_fabric_evidence_review.py",
+      "sha256": "cc6d1615bd36f7b27675322b783b0f12d9d51888613930bd5319d60434c63757"
+    },
+    {
+      "path": "tests/test_coco_background_intake.py",
+      "sha256": "25919299f7f7b338ee604263f6cdfdac941e53ed14d5547937d82e5b64055b04"
+    },
+    {
+      "path": "tests/test_detection_uncertainty.py",
+      "sha256": "3f0ee6519dd878fc969993efa79ff867b041749447a8dd2701faeebe897c6c9f"
+    },
+    {
+      "path": "records/validation/2026-10-23-detection-uncertainty.json",
+      "sha256": "47ce44f87e4cbbad9734e22df675c7fe8511f03034c5690dd36870e93482a921"
+    },
+    {
+      "path": "records/review/2026-10-23-fabric-evidence-review/execution.json",
+      "sha256": "183b5d5b3b2492d736ee6a74f5b9fd49388ace15ca00f11ef6d2ee6de31a1397"
+    },
+    {
+      "path": "records/review/2026-10-23-fabric-evidence-review/verification-final.json",
+      "sha256": "82833bacc71ade77b72ca3877d92e02c669910e09dd69a8eff03ad2aa9621a02"
+    },
+    {
+      "path": "records/review/2026-10-23-fabric-evidence-review/events.jsonl",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "records/acquisitions/2026-10-23-coco-backgrounds/acquisition.json",
+      "sha256": "2ad2927e293f2e0df7bf70833f045dcf97ae86f79ee6d58b72954773e52e28d9"
+    },
+    {
+      "path": "records/acquisitions/2026-10-23-coco-backgrounds/retry-official-gcp/acquisition.json",
+      "sha256": "6ff4fd28143a37171dca2afc451f7b2261f5173b7ea0c308c41aba05a9ccba5d"
+    },
+    {
+      "path": "records/validation/2026-11-04-project-review/focused-tests.log",
+      "sha256": "a06540d079e8a5fb55978ac7c375431838eeb823c0351460b30b41e6d53d21cb"
+    },
+    {
+      "path": "records/validation/2026-11-04-project-review/initial-checkpoint-audit.json",
+      "sha256": "4277eefaba2cc46fe3478904d90e9283ad1b1a5394835f32b58e94603f166b83"
+    },
+    {
+      "path": "records/validation/2026-11-04-project-review/process-check.json",
+      "sha256": "e281fcc320b4a62434cb5768a0ba1bcc959f6e719947350b04df437533cd87cd"
+    },
+    {
+      "path": "records/validation/2026-11-04-project-review/finalize.py",
+      "sha256": "49035687b0de67f874242eaea3bcec48c2af74ef5a629ac83e3dccee05fdf096"
+    },
+    {
+      "path": "records/validation/2026-11-04-project-review/station-verification.json",
+      "sha256": "af60d4ffcb61ddd80422aefb1fad28867a6ff7014dd5c74a4ff9290ca42099e2"
+    }
+  ]
+}

@@ -1,0 +1,96 @@
+{
+  "date_asia_manila": "2026-10-10",
+  "scope": "Bounded public archive access and official partition discovery; no complete image acquisition",
+  "image_archive": {
+    "accessible": true,
+    "size_bytes": 6822188210,
+    "range_requests": 2,
+    "range_bytes_saved": 131072,
+    "zip64": true,
+    "complete_archive_downloaded": false,
+    "complete_images_decoded": 0,
+    "training_images_admitted": 0,
+    "confirmation": "Public download warning form followed without authentication; temporary confirmation and redirect URLs not persisted"
+  },
+  "original_partition": {
+    "source": "https://mmlab.ie.cuhk.edu.hk/projects/DeepFashion/InShopRetrieval.html",
+    "public_file_id": "0B7EVK8r0v71pYVBqLXpRVjhHeWM",
+    "name": "list_eval_partition.txt",
+    "download_outcome": "HTTP 200 HTML Quota exceeded",
+    "downloaded": false,
+    "join_performed": false
+  },
+  "next_work": [
+    "Retry official partition after hosting quota clears, preserving exact source group and train/query/gallery identities. No new project split yet.",
+    "Implement bounded ZIP64 central-directory retrieval with verified ranges, safe member names, decompression/CRC bounds and immutable image hashes; no need to fetch all 6.82 GB.",
+    "Join source fabric, full-body parsing/keypoints, original partition and identity before source-domain label review and frozen appearance pilot."
+  ],
+  "limitations": [
+    "848 skirt filename candidates and 288 item tokens are not verified complete skirts or independent specimens.",
+    "Class imbalance (773 cotton appearance versus 75 other candidates) remains unresolved.",
+    "No verified fabric composition or deployment-domain accuracy evidence."
+  ],
+  "installations": [],
+  "artifacts": [
+    {
+      "path": "records/acquisitions/2026-10-09-deepfashion-multimodal/image-access-followup.json",
+      "bytes": 593,
+      "sha256": "ebbfd986de0cfebef2011ab19baafbe630c4afe841e7aa092f20d566eda36db4"
+    },
+    {
+      "path": "records/acquisitions/2026-10-09-deepfashion-multimodal/image-archive-first-64k.bin",
+      "bytes": 65536,
+      "sha256": "1c30e92f682f2278ace4abf5227e56659a4c4dd479a9c80dfd654d892588cd17"
+    },
+    {
+      "path": "records/acquisitions/2026-10-09-deepfashion-multimodal/image-tail-probe.json",
+      "bytes": 678,
+      "sha256": "71375c8b73f15c45e7d8684b92886d669d98fc7355b414c5275472e2b68c06a3"
+    },
+    {
+      "path": "records/acquisitions/2026-10-09-deepfashion-multimodal/image-archive-last-64k.bin",
+      "bytes": 65536,
+      "sha256": "e894b818e9ec19ff16b584efd3e8cbb5814651e8c72c14094dbca69441b078cb"
+    },
+    {
+      "path": "records/acquisitions/2026-10-09-deepfashion-multimodal/inshop-official-page.html",
+      "bytes": 7722,
+      "sha256": "873b5854e19fa9b5ebd499738ea05d42b5e068df7d3b4bd0357e112a3faa4779"
+    },
+    {
+      "path": "records/acquisitions/2026-10-09-deepfashion-multimodal/inshop-folder-probe.json",
+      "bytes": 292,
+      "sha256": "8322d478a17e15f14389861bd595ccbf6260654505369f6a0c2929a11293d45f"
+    },
+    {
+      "path": "records/acquisitions/2026-10-09-deepfashion-multimodal/inshop-folder-listing.json",
+      "bytes": 586,
+      "sha256": "26b5a759e3322b41f115312770c4460eb121825b9201611eb60616c768cba84f"
+    },
+    {
+      "path": "records/acquisitions/2026-10-09-deepfashion-multimodal/inshop-eval-listing.json",
+      "bytes": 354,
+      "sha256": "09a0339c8df261e43b50fcd3c7c78d7594c002f25953c2b1eb935bb67d9830c5"
+    },
+    {
+      "path": "records/acquisitions/2026-10-09-deepfashion-multimodal/partition-access-probe.json",
+      "bytes": 483,
+      "sha256": "3b395b9a64fd1d211317d061fe23c9a65d3e9855eff268505e704c3d40dedfd2"
+    },
+    {
+      "path": "records/acquisitions/2026-10-09-deepfashion-multimodal/LICENSE",
+      "bytes": 475,
+      "sha256": "383efc1e19406703d591d32fa73b64f44914550456ecff4c0764b451e871b641"
+    },
+    {
+      "path": "records/acquisitions/2026-10-09-deepfashion-multimodal/README.md",
+      "bytes": 9590,
+      "sha256": "08bf449399e1b58507c5bb052954a2e31cbe105552523bec686d48cdabc1d51d"
+    }
+  ],
+  "terms": {
+    "source": "https://github.com/yumingj/DeepFashion-MultiModal/tree/4265495d8fc672af3a3c134d823b28b34eb5eb2d",
+    "scope": "Non-commercial research; internal copying at one organization site; dataset redistribution restricted",
+    "composition_evidence": false
+  }
+}

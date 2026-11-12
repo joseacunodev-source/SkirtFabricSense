@@ -1,0 +1,66 @@
+{
+  "archived_on": "2026-10-12",
+  "source_run": "/home/skirttrain/skirt-fabric-sense/runs/20261011-presence-v1",
+  "unchanged_executed_source": true,
+  "files": [
+    {
+      "path": "records/experiments/20261011-presence-v1/environment.json",
+      "bytes": 4079,
+      "sha256": "50af5376b3a6a54984cd1db59bdfdd40cf76f93463169fc927a28a89d2ec653e",
+      "matches_wsl_original": true
+    },
+    {
+      "path": "records/experiments/20261011-presence-v1/history.json",
+      "bytes": 1464,
+      "sha256": "d73eb6d865a0437573ecfff77d64cc712230122d7e563a5b21691586bd8c64d9",
+      "matches_wsl_original": true
+    },
+    {
+      "path": "records/experiments/20261011-presence-v1/inputs.json",
+      "bytes": 2527831,
+      "sha256": "537574c1172f1c655c8fc24d9894c97563380756507a60861bf5ccb0a24df313",
+      "matches_wsl_original": true
+    },
+    {
+      "path": "records/experiments/20261011-presence-v1/run.json",
+      "bytes": 2376,
+      "sha256": "85717d140b9cda7b4033ea766d650bf3ec663fd84389be52fe66bf7c8138d1ca",
+      "matches_wsl_original": true
+    },
+    {
+      "path": "records/experiments/20261011-presence-v1/training_source.py",
+      "bytes": 9016,
+      "sha256": "f090841bbb23cc568b4d96b332246a55144fd6f5df90cf5348bb621bc2c4f780",
+      "matches_wsl_original": true
+    },
+    {
+      "path": "records/experiments/20261011-presence-v1/validation-predictions.json",
+      "bytes": 13231,
+      "sha256": "47feb44ae5e3247b269812e135ec801383f15dd354dd9ca2ccf8a7e41f87a74d",
+      "matches_wsl_original": true
+    },
+    {
+      "path": "artifacts/models/skirt-presence-v1/model.keras",
+      "bytes": 10618527,
+      "sha256": "0f174903d02f2c6a27dd50a7e7f98d777b27e95024f2dc5ca5b67dac84996e2b",
+      "matches_wsl_original": true
+    },
+    {
+      "path": "artifacts/models/skirt-presence-v1/model.tflite",
+      "bytes": 9186664,
+      "sha256": "f2ce3e5e405bede28587166dce4d402e73c7d346bea0a4734429e836da4bb1c8",
+      "matches_wsl_original": true
+    },
+    {
+      "path": "artifacts/models/skirt-presence-v1/run.json",
+      "bytes": 2376,
+      "sha256": "85717d140b9cda7b4033ea766d650bf3ec663fd84389be52fe66bf7c8138d1ca",
+      "matches_wsl_original": true
+    }
+  ],
+  "intentionally_not_copied": [
+    "best.weights.h5",
+    "saved_model/"
+  ],
+  "reason": "Keras and TFLite models preserved; training checkpoints and SavedModel remain in WSL original run."
+}

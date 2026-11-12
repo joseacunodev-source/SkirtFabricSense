@@ -1,0 +1,22 @@
+{
+  "release_id": null,
+  "status": "not_exported",
+  "source_run_id": null,
+  "model_files_and_sha256": [],
+  "labels_in_output_order": null,
+  "input_output_tensor_contract": null,
+  "preprocessing_version": null,
+  "patch_strategy": null,
+  "quantization_parameters": null,
+  "calibration_dataset_hash": null,
+  "thresholds_and_temporal_settings": null,
+  "training_environment": null,
+  "conversion_environment": null,
+  "target_environment": null,
+  "pre_export_metrics": null,
+  "post_export_metrics": null,
+  "pi_validation_record": null,
+  "camera_calibration_id": null,
+  "known_limitations": [],
+  "rollback_release_id": null
+}

@@ -1,0 +1,71 @@
+{
+  "started_at_utc": "2026-10-23T11:13:51.840900+00:00",
+  "status": "bounded_failure",
+  "images_acquired": 0,
+  "training_admitted": 0,
+  "new_labels": 0,
+  "project_splits_assigned": 0,
+  "caption_triage_is_not_absence_truth": true,
+  "candidate_outcomes": [],
+  "artifacts": [
+    {
+      "path": "data/manifests/coco-background-candidates-v1.jsonl",
+      "size_bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "records/acquisitions/2026-10-23-coco-backgrounds/cc_by_2.html",
+      "size_bytes": 31822,
+      "sha256": "bbb0dcc37f02552e7270e6d2e06be02672ce29ada816107d6fa91e1e6809714b"
+    },
+    {
+      "path": "records/acquisitions/2026-10-23-coco-backgrounds/cc_by_sa_2.html",
+      "size_bytes": 35429,
+      "sha256": "6d15fd2f2ccc7258f39befc9f13f5154f9851e49a9e90ec43c7e22d660ae0e84"
+    },
+    {
+      "path": "records/acquisitions/2026-10-23-coco-backgrounds/coco_download.html",
+      "size_bytes": 13225,
+      "sha256": "62e500d3e7be567d97c295f5f56c95a416618d0770dd334a0ab943a4c1e6954b"
+    },
+    {
+      "path": "records/acquisitions/2026-10-23-coco-backgrounds/coco_terms.html",
+      "size_bytes": 2370,
+      "sha256": "bd019f88ee44c29b2f19c5b99888cf5bc2e7c16f57b6e52af8ed3a60462e8bdd"
+    },
+    {
+      "path": "records/acquisitions/2026-10-23-coco-backgrounds/executed_acquire_coco_backgrounds.py",
+      "size_bytes": 21734,
+      "sha256": "14f16f78d5042102bffb8f2785b08c8e18d720c724199c16c0961fe76ba3de54"
+    },
+    {
+      "path": "records/acquisitions/2026-10-23-coco-backgrounds/flickr_cc.html",
+      "size_bytes": 230526,
+      "sha256": "12fb058873581eb0a97d70f435c4ff68b4f8b0e986af9a4f7872e4d0ec6e6954"
+    },
+    {
+      "path": "records/acquisitions/2026-10-23-coco-backgrounds/plan.json",
+      "size_bytes": 1444,
+      "sha256": "172f4ee2af715aaf2935420fd5febce0a049863a4aa31aba94d9f9a63773d086"
+    },
+    {
+      "path": "records/acquisitions/2026-10-23-coco-backgrounds/requests.json",
+      "size_bytes": 4601,
+      "sha256": "a62006e4cac3e32e7d8fabed2b3e1afd3e483d15b8ba58c879d7793ffb3d111a"
+    }
+  ],
+  "error": "URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'images.cocodataset.org'. (_ssl.c:1010)>",
+  "finished_at_utc": "2026-10-23T11:13:56.496808+00:00",
+  "total_consumed_network_body_bytes": 313372,
+  "requests_made": 6,
+  "no_installs": true,
+  "no_training": true,
+  "executed_source": {
+    "path": "tools/datasets/acquire_coco_backgrounds.py",
+    "sha256": "14f16f78d5042102bffb8f2785b08c8e18d720c724199c16c0961fe76ba3de54"
+  },
+  "shared_zip_parser": {
+    "path": "tools/datasets/bounded_zip.py",
+    "sha256": "6ebfd5d101d713e4b3003986ff38eed6cf89be9a3613aa4481afaee9b2612feb"
+  }
+}

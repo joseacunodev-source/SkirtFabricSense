@@ -1,0 +1,50 @@
+{
+  "recorded_at": "2026-10-17T16:23:42.537949+08:00",
+  "observations": {
+    "system": "Windows",
+    "machine": "AMD64",
+    "pointer_bits": 64,
+    "python": "3.12.14",
+    "python_executable": "C:\\Users\\Administrator\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+    "libc": [
+      "",
+      ""
+    ],
+    "board_model": "",
+    "packages": {
+      "numpy": "2.3.5",
+      "Pillow": "12.3.0",
+      "ai-edge-litert": null,
+      "tflite-runtime": null,
+      "tensorflow": null
+    }
+  },
+  "platform_and_distribution_checks_passed": false,
+  "blockers": [
+    "Linux target OS required",
+    "64-bit ARM target environment required",
+    "Raspberry Pi board identity not observed",
+    "No candidate inference runtime distribution installed"
+  ],
+  "runtime_distributions": [],
+  "pi_verified": false,
+  "remaining_checks": [
+    "Import the chosen runtime API and invoke all required model operators",
+    "Compare permitted reference inputs with desktop outputs",
+    "Verify camera, calibration, display and browser behavior",
+    "Benchmark offline operation, load, temperature, reboot and recovery"
+  ],
+  "limitations": "Distribution presence does not establish ABI, import or operator compatibility.",
+  "bundle": {
+    "status": "passed",
+    "bundle_id": "skirt-finetune-v1",
+    "payload_files": 17,
+    "application_included": true,
+    "manifest_sha256": "98ada650d7dff4cb297377a8f2d3ccb2c102807c298247beb68ca3a47868d437",
+    "inventory_sha256": "0128196438e5b3fb61ba2bab224b351b3de9e9b1e6eb50a171711804bc231eb5",
+    "pi_verified": false,
+    "runtime_verified": false,
+    "publisher_authenticated": false
+  },
+  "status": "preflight_requirements_unmet"
+}

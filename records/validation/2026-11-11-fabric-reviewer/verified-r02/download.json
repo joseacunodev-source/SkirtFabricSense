@@ -1,0 +1,24 @@
+{
+  "review_id": "fabric-9a55b8b4c20cb3ac1411667f",
+  "queue_sha256": "8298d4711ab2d4413836c9d8c79ca66694c4aa764fc3944356c37834015ae3ce",
+  "image_sha256": "ff9b1f2ff66413b5068b81d698da0b731a08e15a10402e5fdefb7dd15b120088",
+  "reviewer": {
+    "display_name": "Synthetic browser actor",
+    "actor_kind": "agent"
+  },
+  "original_viewed": true,
+  "observations": {
+    "appearance_status": "unknown",
+    "appearance_descriptors": [],
+    "material_to_skirt_association": "uncertain",
+    "presentation": "unknown",
+    "full_skirt_visibility": "uncertain",
+    "texture_detail": "uncertain",
+    "notes": "Synthetic browser fixture observation. Unknown detail; no real garment reviewed."
+  },
+  "composition_evidence": {
+    "status": "not_observed",
+    "unverified_claim": null
+  },
+  "source_evidence_references": []
+}

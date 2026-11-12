@@ -1,0 +1,90 @@
+{
+  "version": "1",
+  "pip_version": "24.0",
+  "install": [
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/da/e3/ea007450a105ae919a72393cb06f122f288ef60bba2dc64b26e2646fa315/pyyaml-6.0.3-cp311-cp311-win_amd64.whl",
+        "archive_info": {
+          "hash": "sha256=9f3bfb4965eb874431221a3ff3fdcddc7e74e3b07799e0e84ca4a0f867d449bf",
+          "hashes": {
+            "sha256": "9f3bfb4965eb874431221a3ff3fdcddc7e74e3b07799e0e84ca4a0f867d449bf"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": true,
+      "metadata": {
+        "metadata_version": "2.4",
+        "name": "PyYAML",
+        "version": "6.0.3",
+        "dynamic": [
+          "author",
+          "author-email",
+          "classifier",
+          "description",
+          "download-url",
+          "home-page",
+          "license",
+          "license-file",
+          "platform",
+          "project-url",
+          "requires-python",
+          "summary"
+        ],
+        "platform": [
+          "Any"
+        ],
+        "summary": "YAML parser and emitter for Python",
+        "description": "YAML is a data serialization format designed for human readability\r\nand interaction with scripting languages.  PyYAML is a YAML parser\r\nand emitter for Python.\r\n\r\nPyYAML features a complete YAML 1.1 parser, Unicode support, pickle\r\nsupport, capable extension API, and sensible error messages.  PyYAML\r\nsupports standard YAML tags and provides Python-specific tags that\r\nallow to represent an arbitrary Python object.\r\n\r\nPyYAML is applicable for a broad range of tasks from complex\r\nconfiguration files to object serialization and persistence.\r\n",
+        "home_page": "https://pyyaml.org/",
+        "download_url": "https://pypi.org/project/PyYAML/",
+        "author": "Kirill Simonov",
+        "author_email": "xi@resolvent.net",
+        "license": "MIT",
+        "classifier": [
+          "Development Status :: 5 - Production/Stable",
+          "Intended Audience :: Developers",
+          "License :: OSI Approved :: MIT License",
+          "Operating System :: OS Independent",
+          "Programming Language :: Cython",
+          "Programming Language :: Python",
+          "Programming Language :: Python :: 3",
+          "Programming Language :: Python :: 3.8",
+          "Programming Language :: Python :: 3.9",
+          "Programming Language :: Python :: 3.10",
+          "Programming Language :: Python :: 3.11",
+          "Programming Language :: Python :: 3.12",
+          "Programming Language :: Python :: 3.13",
+          "Programming Language :: Python :: 3.14",
+          "Programming Language :: Python :: Implementation :: CPython",
+          "Programming Language :: Python :: Implementation :: PyPy",
+          "Topic :: Software Development :: Libraries :: Python Modules",
+          "Topic :: Text Processing :: Markup"
+        ],
+        "requires_python": ">=3.8",
+        "project_url": [
+          "Bug Tracker, https://github.com/yaml/pyyaml/issues",
+          "CI, https://github.com/yaml/pyyaml/actions",
+          "Documentation, https://pyyaml.org/wiki/PyYAMLDocumentation",
+          "Mailing lists, http://lists.sourceforge.net/lists/listinfo/yaml-core",
+          "Source Code, https://github.com/yaml/pyyaml"
+        ]
+      }
+    }
+  ],
+  "environment": {
+    "implementation_name": "cpython",
+    "implementation_version": "3.11.9",
+    "os_name": "nt",
+    "platform_machine": "AMD64",
+    "platform_release": "10",
+    "platform_system": "Windows",
+    "platform_version": "10.0.26200",
+    "python_full_version": "3.11.9",
+    "platform_python_implementation": "CPython",
+    "python_version": "3.11",
+    "sys_platform": "win32"
+  }
+}

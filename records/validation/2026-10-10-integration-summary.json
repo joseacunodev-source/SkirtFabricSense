@@ -1,0 +1,55 @@
+{
+  "date_asia_manila": "2026-10-10",
+  "python_tests_passed": 156,
+  "browser_mock_scenarios_passed": 14,
+  "human_review_events": 0,
+  "new_packages_installed": false,
+  "release": {
+    "status": "passed",
+    "bundle_id": "skirt-finetune-v1",
+    "payload_files": 12,
+    "application_included": true,
+    "manifest_sha256": "98ada650d7dff4cb297377a8f2d3ccb2c102807c298247beb68ca3a47868d437",
+    "inventory_sha256": "5560f23c878d3a98965423db6ba8795bf51917ea97fef0ff082b2654568ebc48",
+    "pi_verified": false,
+    "runtime_verified": false,
+    "publisher_authenticated": false
+  },
+  "fabric_followup_artifacts_verified": 11,
+  "source_files": [
+    {
+      "path": "app/hemline.py",
+      "sha256": "8c27a8b5b54ba1bebb0bfc8829e66e19351823d85b2cc24ef330990ec18a261c"
+    },
+    {
+      "path": "app/inference.py",
+      "sha256": "bad328a0e41c7a6244fdb1d587f00351d29846e6a88fcea7ca1674b51eb552ee"
+    },
+    {
+      "path": "app/live_state.py",
+      "sha256": "06003cf0f3c3d2f534a3c7a3080e665ce15491151e5c9f8c9bb61ba4e27e67ec"
+    },
+    {
+      "path": "app/localization.py",
+      "sha256": "d93dc5754a9990a9e772983e1e49b86fc0942d10f6a9ec605747a7ccca5fcd16"
+    },
+    {
+      "path": "app/pipeline.py",
+      "sha256": "98c98d50a2d4facf53087751ea0fe0ccdbb8778c44ff8fde401d610c36ee9af5"
+    },
+    {
+      "path": "app/review.py",
+      "sha256": "9b4775b47f8cd9645fe98ae64c76429443b20f865f4ab1ea0d793b97fba889b7"
+    },
+    {
+      "path": "app/server.py",
+      "sha256": "01d1d78a8c0fbad95cb42990e15871238aa98b3c9d2602576d6ac7c29d476e38"
+    }
+  ],
+  "webcam_evidence": "records/validation/2026-10-10-webcam-connection.json",
+  "live_http_evidence": "records/validation/2026-10-10-live-http-bundle.json",
+  "camera_left_running": false,
+  "server_left_running": "http://127.0.0.1:8766",
+  "hardware_acceptance_complete": false,
+  "all_project_tasks_complete": false
+}

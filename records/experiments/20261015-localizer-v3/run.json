@@ -1,0 +1,64 @@
+{
+  "status": "completed",
+  "started_at": "2026-10-15T04:21:40.338786+00:00",
+  "source_sha256": "e4f191dcd6d874bc530e7da6b23ad98e43cdcacc2a2687d8118d51d064976ba2",
+  "limitations": [
+    "Agent-reviewed development negatives; no independent final camera-domain test",
+    "Physical garment grouping and agent appearance confirmation unresolved",
+    "No camera, body landmarks, length, fabric or Pi verification",
+    "Localization candidate, not deployment-approved"
+  ],
+  "manifest_sha256": "9160998b5ab0f65251c53cefd783e1c6351887bec8c655074be64dd2717dc2eb",
+  "split_sha256": "df3b096e4d131db55852b20de075d811c95520d23766648928555d755fe8812c",
+  "annotations_sha256": "f6af94fb8712bd8170a49c857e842e1227e6806c4f33f32340db0c849133e006",
+  "negative_manifest": {
+    "path": "data/labels/negative-reviewed-v2.jsonl",
+    "sha256": "016e45e38d695b9bb62c480497c02af08845b83f4831d8ca91365e2eabc067b8"
+  },
+  "labelled_inputs_sha256": "018a03dd78549e8a54a18d00116722eb4ffcc5c6208f17ae967e3c6158bd8c0c",
+  "scene_balance": {
+    "enabled": true,
+    "weights": {
+      "positive": 0.5958904109589042,
+      "negative": 3.107142857142857
+    },
+    "basis": "training scene counts only; validation loss unchanged"
+  },
+  "architecture": "Frozen ImageNet MobileNetV2 block13 feature14 + Conv32 3x3 + bilinear4x + Conv1 sigmoid56",
+  "seed": 42,
+  "epochs": 10,
+  "batch_size": 8,
+  "optimizer": "Adam",
+  "learning_rate": 0.001,
+  "loss": "BCE with positive pixels weight5; negative weight1",
+  "preprocessing": "RGB full source resized bilinear224; source all-skirt polygon masks nearest56; model normalization inside",
+  "gpu": [
+    "PhysicalDevice(name='/physical_device:GPU:0', device_type='GPU')"
+  ],
+  "train_images": 348,
+  "validation_images": 99,
+  "selection": "Minimum equal-weight positive/negative validation weighted BCE; fixed mask threshold0.5",
+  "threshold": 0.5,
+  "versions": {
+    "tensorflow": "2.20.0",
+    "numpy": "2.5.3"
+  },
+  "initial_weights_provenance": "records/acquisitions/2026-10-04-mobilenetv2-weights.json",
+  "negative_train_images": 56,
+  "negative_validation_images": 19,
+  "selected_epoch": 9,
+  "metrics": {
+    "mean_mask_iou": 0.6427239012929464,
+    "median_mask_iou": 0.6855835240274599,
+    "mask_iou_at_least_point5": 0.8125
+  },
+  "export": {
+    "sha256": "ca2c135ede7ee760ac205db0e404fb7246739d1741f8fb43b6296ef3a5c7cc26",
+    "bytes": 3048752,
+    "maximum_absolute_error": 5.707144737243652e-06,
+    "tolerance": 0.001,
+    "pi_verified": false
+  },
+  "duration_seconds": 65.13494137600001,
+  "finished_at": "2026-10-15T04:23:08.277501+00:00"
+}

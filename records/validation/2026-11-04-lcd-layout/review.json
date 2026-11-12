@@ -1,0 +1,50 @@
+{
+  "date": "2026-11-04",
+  "status": "desktop_research_verified",
+  "selected_station": "artifacts/stations/skirt-research-station-v7",
+  "rollback": "artifacts/stations/skirt-research-station-v6",
+  "mock_cases": 45,
+  "http_jobs": 12,
+  "physical_screen_tested": false,
+  "pi_verified": false,
+  "camera_used": false,
+  "new_model_training": false,
+  "evidence": [
+    {
+      "path": "app/static/index.html",
+      "sha256": "d847b31b93d9c82f603ec4709e68273e245ca6b21e78da0da20f09540cf64ae9"
+    },
+    {
+      "path": "docs/LCD_14447_LAYOUT.md",
+      "sha256": "bb5110c391d41d77864ff61c2ac3c896cf185abd8261431dd0386488a60ee6c7"
+    },
+    {
+      "path": "records/validation/2026-11-04-lcd-layout/node.log",
+      "sha256": "fd56675530d02d344fa1ffa5da673fa49dad297c57c13589604bee907a5714b0"
+    },
+    {
+      "path": "records/validation/2026-11-04-lcd-layout/preview-800x480.png",
+      "sha256": "76a49ce12f8777b706df9dae984c2b8ac7c51d5c5e0ea06913fdd9402b930798"
+    },
+    {
+      "path": "records/validation/2026-11-04-lcd-station-http.json",
+      "sha256": "a428dc3169c460b68e56660ca5bac702c4ddcbfe360763da1b72236b8b0cf3ce"
+    },
+    {
+      "path": "records/validation/2026-11-04-lcd-station-http.execution.json",
+      "sha256": "12c8658817ab817c3303eda6edb857b9ba8f4317865c49ded8de270a3d042fcd"
+    },
+    {
+      "path": "artifacts/stations/skirt-research-station-v7/station-inventory.json",
+      "sha256": "9b587319932f8ad0d4d85383cfd73b6783d9e9b37c1e52fb1b35e0f2948280d6"
+    },
+    {
+      "path": "artifacts/stations/skirt-research-station-v7/station.json",
+      "sha256": "953d17494b579c751ba046c5e6c48e73975ea9b5d82b7e2f419bca35da833b22"
+    },
+    {
+      "path": "artifacts/releases/skirt-finetune-v1-desktop-research-v12/inventory.json",
+      "sha256": "63c781ee2a78c9895f398c3ba8108a43343ae8bede8ebff373e59e6e9897a2a8"
+    }
+  ]
+}

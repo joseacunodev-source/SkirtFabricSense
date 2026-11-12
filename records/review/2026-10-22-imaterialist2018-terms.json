@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "recorded_date_asia_manila": "2026-10-22",
+  "status": "public_rules_observed_acceptance_not_performed",
+  "source": "iMaterialist Challenge (Fashion) at FGVC5, 2018",
+  "url": "https://www.kaggle.com/competitions/imaterialist-challenge-fashion-2018/rules",
+  "method": "Read-only browser DOM inspection of the public Rules tab; search/open extraction had returned no readable lines",
+  "evidence_kind": "Agent observation and paraphrase, not a saved HTTP response or complete legal document",
+  "observed_page_title": "iMaterialist Challenge (Fashion) at FGVC5 | Kaggle",
+  "observed_sections": [
+    "A. SPECIFIC COMPETITION RULES / 1. WINNER LICENSE",
+    "7. COMPETITION DATA / A. Data Access and Use",
+    "7. COMPETITION DATA / B. Data Security",
+    "7. COMPETITION DATA / C. External Data"
+  ],
+  "short_quotes": [
+    "after your acceptance of these Rules",
+    "academic research and education, and other non-commercial purposes"
+  ],
+  "observations": {
+    "academic_noncommercial_use_listed": true,
+    "access_and_use_conditioned_on_rules_acceptance": true,
+    "security_and_redistribution_restrictions_present": true,
+    "specific_rules_section_observed": "Winner submission/code licence; no additional data-use override observed in that section",
+    "dataset_ownership_or_general_photo_licence_inferred": false,
+    "terms_accepted_in_this_project": false,
+    "prior_acceptance_evidence_found": false
+  },
+  "project_decision": "Do not acquire the official annotation manifests or Wish photographs through this source until the user has reviewed and accepted applicable rules or supplies another applicable permission basis. This is an acquisition gate, not a claim that the dataset is unusable.",
+  "remaining_data_gates": [
+    "Bind any actual official-train intake to its original source partition and immutable acquisition hash",
+    "Establish source/product grouping and near-duplicate relationships; image IDs are not physical garment identities",
+    "Inspect each original for a complete skirt and associate material evidence with that skirt rather than another garment in the outfit",
+    "Keep publisher material tags separate from exclusive appearance classes and verified fibre composition"
+  ],
+  "actions": {
+    "login_performed": false,
+    "rules_acceptance_performed": false,
+    "competition_entered": false,
+    "messages_sent": 0,
+    "annotation_manifests_downloaded": 0,
+    "garment_photographs_downloaded": 0,
+    "training_admissions": 0,
+    "packages_installed": 0
+  },
+  "limitations": "This observation establishes the displayed clause and an unfulfilled project acquisition gate. It does not establish current image availability, product grouping, source-photo attribution, independent label correctness or legal advice. The complete current source rules govern any future acceptance. Do not substitute rules from the 2019 or 2020 competitions."
+}

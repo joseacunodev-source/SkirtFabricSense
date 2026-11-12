@@ -1,0 +1,99 @@
+{
+  "schema_version": 1,
+  "review_date_asia_manila": "2026-10-09",
+  "review_type": "primary_source_review_and_bounded_annotation_metadata_acquisition",
+  "report": "docs/FABRIC_FEASIBILITY_UPDATE.md",
+  "project_fabric_labels_verified": 0,
+  "new_images_acquired": 0,
+  "new_samples_admitted": 0,
+  "dependency_changes": [],
+  "dataset_mutations": false,
+  "training_performed": false,
+  "sources": [
+    {
+      "source_id": "fabnet3k-1.0.0",
+      "url": "https://github.com/kolon3d-prog/FabNet-3k",
+      "checked_sections": [
+        "Dataset Structure",
+        "License"
+      ],
+      "admission": "retain_existing_candidate_quarantine",
+      "unresolved": [
+        "archive_partition_discrepancy",
+        "physical_specimen_groups",
+        "verified_label_evidence",
+        "full_skirt_domain"
+      ]
+    },
+    {
+      "source_id": "textilenet-reference",
+      "url": "https://github.com/hahashu/TextileNet",
+      "checked_sections": [
+        "Build the dataset",
+        "LICENCE"
+      ],
+      "admission": "not_admitted",
+      "unresolved": [
+        "image_terms",
+        "source_and_garment_groups",
+        "label_review",
+        "images_not_acquired"
+      ]
+    },
+    {
+      "source_id": "deepfashion-multimodal-candidate",
+      "url": "https://github.com/yumingj/DeepFashion-MultiModal",
+      "checked_sections": [
+        "Human Parsing Label",
+        "Fabric Annotations",
+        "Agreement"
+      ],
+      "admission": "annotation_metadata_acquired_images_not_acquired",
+      "intended_task": "source_domain_lower_garment_fabric_appearance",
+      "not_evidence_of": [
+        "fiber_composition",
+        "all_four_project_presentations",
+        "camera_accuracy"
+      ],
+      "unresolved": [
+        "actual_skirt_subset_size",
+        "physical_garment_groups",
+        "source_partition_mapping",
+        "project_label_mapping",
+        "images_not_acquired"
+      ]
+    },
+    {
+      "source_id": "deepfashion-candidate",
+      "url": "https://mmlab.ie.cuhk.edu.hk/projects/DeepFashion/AttributePrediction.html",
+      "terms_url": "https://mmlab.ie.cuhk.edu.hk/projects/DeepFashion.html",
+      "admission": "secondary_metadata_first_candidate",
+      "unresolved": [
+        "label_dictionary_mapping",
+        "garment_groups",
+        "skirt_subset",
+        "images_not_acquired"
+      ]
+    }
+  ],
+  "local_evidence": [
+    "data/registry.json",
+    "docs/FABRIC_ACQUISITION.md",
+    "docs/FABRIC_LABEL_REVIEW.md",
+    "records/review/fabric-label-review-2026-10-03.json"
+  ],
+  "limitations": [
+    "Official annotation ZIP was inspected; image archive and physical specimens were not audited.",
+    "A research-use statement is not blanket redistribution permission.",
+    "No model or representative full-skirt fabric evaluation was completed.",
+    "Source review identifies further no-hardware work, not completion of all training tasks."
+  ],
+  "metadata_acquisition": {
+    "path": "records/acquisitions/2026-10-09-deepfashion-multimodal/acquisition.json",
+    "sha256": "07e206bb3346c779ecb4333364f46fd9ae2ad8cc19cbed1250534843c4c271ab"
+  },
+  "annotation_inspection": {
+    "path": "records/acquisitions/2026-10-09-deepfashion-multimodal/annotation-inspection.json",
+    "sha256": "3ce741c3e79b7be6687155197ebc04697956298e28ff79c4edf81ae514e4e1b5"
+  }
+}

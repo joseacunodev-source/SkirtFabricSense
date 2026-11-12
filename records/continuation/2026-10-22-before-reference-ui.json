@@ -1,0 +1,502 @@
+{
+  "schema_version": 1,
+  "updated_at": "2026-10-22T13:10:05.143061+08:00",
+  "status": "stable_desktop_research_checkpoint",
+  "project_complete": false,
+  "supervised_demo_accepted": false,
+  "completion_percentage": null,
+  "entry_point": "HANDOFF.md",
+  "task_board": "docs/TASK_BOARD.md",
+  "selected_research_station": {
+    "directory": "artifacts/stations/skirt-research-station-v3",
+    "inventory": {
+      "path": "artifacts/stations/skirt-research-station-v3/station-inventory.json",
+      "sha256": "ec865f2c45a635f7e3abb9fe8bd17dbf0c5b389d47ae110182cf37bee90390f8"
+    },
+    "configuration": {
+      "path": "artifacts/stations/skirt-research-station-v3/station.json",
+      "sha256": "953d17494b579c751ba046c5e6c48e73975ea9b5d82b7e2f419bca35da833b22"
+    },
+    "payload_files": 28,
+    "desktop_http_jobs": 12,
+    "pi_verified": false
+  },
+  "rollback_station": {
+    "directory": "artifacts/stations/skirt-research-station-v2",
+    "inventory": {
+      "path": "artifacts/stations/skirt-research-station-v2/station-inventory.json",
+      "sha256": "19444a4ea1622a26822d795bfccb61c558a27383df3741ed84bbeea1544b38f4"
+    },
+    "configuration": {
+      "path": "artifacts/stations/skirt-research-station-v2/station.json",
+      "sha256": "953d17494b579c751ba046c5e6c48e73975ea9b5d82b7e2f419bca35da833b22"
+    },
+    "payload_files": 28,
+    "desktop_http_jobs": 12,
+    "pi_verified": false
+  },
+  "selected_presence_model": "artifacts/models/skirt-category-presence-v1",
+  "selected_research_metrics": {
+    "positive_count": 66,
+    "positive_accepted": 44,
+    "positive_coverage": 0.6666666666666666,
+    "correct_pleating": 38,
+    "accepted_pleating_accuracy": 0.8636363636363636,
+    "negative_count": 52,
+    "negative_rejected": 42,
+    "negative_rejection": 0.8076923076923077
+  },
+  "data": {
+    "original_images": 1932,
+    "verified_physical_garments": null,
+    "negative_development_admissions": 207,
+    "new_fabric_admissions": 0,
+    "verified_project_fabric_labels": 0,
+    "observed_geometry_examples": 0
+  },
+  "last_hardware_confirmation": {
+    "date": "2026-10-20",
+    "skirts_available": false,
+    "raspberry_pi_available": false
+  },
+  "acceptance": {
+    "fabric_model_accepted": false,
+    "calibrated_length_verified": false,
+    "unseen_garment_camera_test_passed": false,
+    "pi_verified": false,
+    "demo_rehearsed": false
+  },
+  "tests": {
+    "windows": {
+      "run": 464,
+      "passed": 461,
+      "skipped": 3,
+      "scope": "Earlier full suite before this later batch; retained evidence, not rerun"
+    },
+    "focused_wsl": {
+      "run": 20,
+      "passed": 20
+    },
+    "camera_source_focused": {
+      "python_tests": 37,
+      "python_passed": 37,
+      "packaged_ui_mock_scenarios": 17,
+      "station_v3_http_jobs": 12,
+      "scope": "30 package/release and7 metadata tests,17 mocked camera scenarios and12 saved-frame jobs; no new camera accuracy"
+    }
+  },
+  "pending_operations": [],
+  "active_operations": [],
+  "process_observation_scope": "Category fit and owned HTTP check ports18820..18825 only; no unrelated process terminated",
+  "process_observations": [
+    {
+      "pattern": "[t]rain_category_presence.py",
+      "returncode": 1,
+      "matching_processes": 0
+    },
+    {
+      "pattern": "[a]pp.server.*1882[0-5]",
+      "returncode": 1,
+      "matching_processes": 0
+    }
+  ],
+  "open_tasks": [
+    "S01",
+    "S02",
+    "S03",
+    "S04",
+    "S05",
+    "S06",
+    "S07",
+    "P01",
+    "P02",
+    "P03",
+    "P04",
+    "P05",
+    "P06",
+    "P07",
+    "M01"
+  ],
+  "next_actions": [
+    {
+      "task_id": "S04",
+      "action": "Satisfy the observed2018 source-rule acceptance gate or another applicable permission basis; resolve photo attribution and original source/product partitions, then plan bounded training-only skirt/material review. Do not run TextileNet upstream downloader or interpret155393 metadata rows as photos.",
+      "needs_hardware": false
+    },
+    {
+      "task_id": "S01",
+      "action": "Obtain independent human confirmation of flagged source/pleating labels; preserve historical freezes",
+      "needs_hardware": false
+    },
+    {
+      "task_id": "P01/P05",
+      "action": "Obtain actual development/held-out garments and Pi; then camera, geometry/calibration and ARM64 acceptance can begin",
+      "needs_hardware": true
+    }
+  ],
+  "do_not_repeat": [
+    "Completed 20261021-category-presence-v1 fit",
+    "Completed station-v1/v2 builds and HTTP checks",
+    "Do not train fabric from missing or wrongly mapped labels"
+  ],
+  "previous_checkpoint": {
+    "path": "records/continuation/2026-10-22-before-camera-source.json",
+    "sha256": "953f92279fb8f610d86aeaf9ff40bc9184bf5dcdac425ed85975683710835613"
+  },
+  "references": [
+    {
+      "path": "AGENTS.md",
+      "sha256": "5921d78e5b0e426ab739e752dea46bf6916c65fe82d97be7241c10e2255b4e93"
+    },
+    {
+      "path": "README.md",
+      "sha256": "923c8117f1dddb94e7c8dd1180e5ff5629bc4fccceab9d04e7f9a5bcf3b95274"
+    },
+    {
+      "path": "HANDOFF.md",
+      "sha256": "f539fe836dcc69691ba96d02b911b8787106fa4ee6740b8129432bfcd32cf96e"
+    },
+    {
+      "path": "docs/AGENT_HANDOFF.md",
+      "sha256": "93df8c52223f6841659c33f480f29fdbdf96546b82b040579f2ec04a367f599f"
+    },
+    {
+      "path": "docs/DOCUMENTATION_INDEX.md",
+      "sha256": "57e91bb6cfb42ba236d907282df94f0e43e00b99bfb3296924119e05912b0fe2"
+    },
+    {
+      "path": "docs/TASK_BOARD.md",
+      "sha256": "05fe28bc9dd1f817d159406dd6ba8ef4cd87b1d1a6fb1bde3dee5ea755f9c725"
+    },
+    {
+      "path": "docs/OCT22_INTEGRATION.md",
+      "sha256": "d69281235a2e6d94e811c224f45a8df06576387a15afc8715018cca9fd1e91c8"
+    },
+    {
+      "path": "docs/STATION_PACKAGE.md",
+      "sha256": "9d8281e14a856d6824a6496ee1fca224e0a7bbab5ebc1e6192bb009bcc97047d"
+    },
+    {
+      "path": "docs/CATEGORY_PRESENCE_RESULTS.md",
+      "sha256": "1acd5336cc9d7cca73ef88de4a18fa1c35d1781f0254317659b7aeedfdd6d083"
+    },
+    {
+      "path": "docs/FABRIC_SOURCE_SEARCH_OCT21.md",
+      "sha256": "0bb959a22fef88c42c3dba23126113ef251e2754266956e2a3270d0271ee3b30"
+    },
+    {
+      "path": "docs/WORN_GEOMETRY_EVALUATION.md",
+      "sha256": "d9997a5ebd8f6c9606754e5731e6b5977925f35e909ae4dba5ae4ad03309dfae"
+    },
+    {
+      "path": "data/registry.json",
+      "sha256": "2b317baefeb8af875994adc42dcc1e7fd623532bb4c4d1db974a81e303f233ac"
+    },
+    {
+      "path": "data/manifests/worn-pleating-development-v1.jsonl",
+      "sha256": "876bb315009592fdbcf0a646703b21d99801756f4e37b1807a66675bdbd98ec2"
+    },
+    {
+      "path": "data/labels/negative-reviewed-v3.jsonl",
+      "sha256": "82009d40445a9091f7998ab8479cec10b5086826001b7b9f513862bd11da52d1"
+    },
+    {
+      "path": "data/manifests/source-skirt-development-splits.json",
+      "sha256": "df3b096e4d131db55852b20de075d811c95520d23766648928555d755fe8812c"
+    },
+    {
+      "path": "artifacts/models/skirt-category-presence-v1/model.tflite",
+      "sha256": "f47ddf148102f905d0a81e6a1fe3001b8a4944fd86e0c1c2d635d975f8fdc34d"
+    },
+    {
+      "path": "artifacts/models/skirt-localizer-v2/model.tflite",
+      "sha256": "f2f5f73d34cd99c3fb46502cb806ddbc347c6664e8ce24b8fe06a548c70090de"
+    },
+    {
+      "path": "artifacts/models/fabric-smoke-v1/model.tflite",
+      "sha256": "81f144a1c7cd4910989374a1a86c85e955fb4f65cd81ef88c26e7cbcf1158bfd"
+    },
+    {
+      "path": "records/models/2026-10-21-skirt-category-presence-v1.json",
+      "sha256": "56e197d0af86f1802d892d3f52bf21d23256c21a14de8781b6b91e7e92d06184"
+    },
+    {
+      "path": "records/experiments/20261021-category-presence-v1/run.json",
+      "sha256": "94eb220727759eaf767062a962f2fc727d313b8a969d30d576c9a358884cb8d3"
+    },
+    {
+      "path": "records/experiments/20261021-category-presence-v1/inputs.json",
+      "sha256": "5fd31356dad9333efaa82cb0e2a312533fe695b5c565278cd00136c9e693a1f7"
+    },
+    {
+      "path": "records/experiments/20261021-category-presence-v1/source-category-targets.json",
+      "sha256": "8f520b63482cf802bb70f47c9db57e0d0ce746eadc0e58d9dc18c7707eda07f2"
+    },
+    {
+      "path": "records/validation/2026-10-21-category-presence-artifact-review.json",
+      "sha256": "7a29dc52aba2912834553f815bc0635623658256780c41ff9938daee9e158b8c"
+    },
+    {
+      "path": "records/validation/2026-10-21-category-presence-comparison.json",
+      "sha256": "f0ebd8a2fd04530559ff661c35beddc7100da8e1852fa46762f2d867666c0648"
+    },
+    {
+      "path": "records/validation/2026-10-21-station-http.json",
+      "sha256": "6b741ccaeb3fbf86daebc44b1667273ac02b77b059169d02f008ae2ea420f291"
+    },
+    {
+      "path": "records/validation/2026-10-21-station-v2-http.json",
+      "sha256": "4cdf6ad6a42f39b175b0604bd4d915bdf41a2102908bc9eea55e3de1aa2dd3e9"
+    },
+    {
+      "path": "records/validation/2026-10-21-geometry-readiness.json",
+      "sha256": "1835b0b6a41c511bad3fddd292ada1ae2403f70a6910909ad95b6c4f2ba64151"
+    },
+    {
+      "path": "records/geometry/2026-10-21-readiness/mapping.json",
+      "sha256": "4b80f7f376649e995a6352ab911ad243b6fe2593c3f61cdb5c6230469747ef15"
+    },
+    {
+      "path": "records/review/2026-10-20-fabric-source-attribute-audit.json",
+      "sha256": "398b0eaba6c35e9eb54698be1217aa13c78f6485eadf977e7f4a7bc1d44bfe2b"
+    },
+    {
+      "path": "records/review/2026-10-21-fabric-source-search.json",
+      "sha256": "3bd92799cd34a0e03830bace607a70a3add0fdec2095fce8a93af5ddfb1857b1"
+    },
+    {
+      "path": "records/validation/2026-10-22-tests.log",
+      "sha256": "2a8bf003ce6fd85117053174d0b78a76f7421c293768f2695cd37e1ea6884653"
+    },
+    {
+      "path": "records/validation/2026-10-21-wsl-tests.log",
+      "sha256": "79c0fe8db9968bad5d817c1c4043659b8beaaf56df93b04fcc50d2094dfd030e"
+    },
+    {
+      "path": "tools/validate_records.py",
+      "sha256": "571b42518d99ce40f53ed636567854cc122fbb255a4c29b99d5f50ca1ba8d058"
+    },
+    {
+      "path": "tools/station_package.py",
+      "sha256": "3ce5e6cc95e58736068ce32dc3acea3574fa4bb1bbd0e3a3dcd4c22afddd5b61"
+    },
+    {
+      "path": "tools/check_station_http.py",
+      "sha256": "2b4c4eed504c055f037dbd079690258f81ffd26a945fe34861bef21d7e6bdace"
+    },
+    {
+      "path": "tools/evaluate_worn_geometry.py",
+      "sha256": "8591af3978b8a9f45f31739fe2811c1fb270f62a9f954998de3e815bf91ec1cb"
+    },
+    {
+      "path": "tools/training/train_presence_finetune.py",
+      "sha256": "f9dfc44506d0656b7cafbee91d7a7cdbbd4ef81e99c28f76d2329f8de0d222e8"
+    },
+    {
+      "path": "tools/training/train_category_presence.py",
+      "sha256": "5802bbf758fb86aafca3aec55702a748e7d4f13905c03cdbfa36afd74a89ebd9"
+    },
+    {
+      "path": "records/acquisitions/2026-10-21-fabric-source-research/acquire_metadata.py",
+      "sha256": "89e2c249b787e0976a0658b7c14c37f260824fc5ec125f431f0b4e632253cf08"
+    },
+    {
+      "path": "records/acquisitions/2026-10-21-fabric-source-research/acquisition.json",
+      "sha256": "c1d9d91690fbd6f8d0e765e61bf41ae21a3e09da298bfe8c0f0fe9d13aa163d7"
+    },
+    {
+      "path": "records/acquisitions/2026-10-21-fabric-source-research/analyze_metadata.py",
+      "sha256": "7b104f6aa3a48314415119873f01cc8eb78ba08edb467167365d98f1481be5dd"
+    },
+    {
+      "path": "records/acquisitions/2026-10-21-fabric-source-research/execution.json",
+      "sha256": "1f6fb2377a174312efd5cf3c13dc50f33c2f62854374c2b2218e49b83646a483"
+    },
+    {
+      "path": "records/acquisitions/2026-10-21-fabric-source-research/fashiongen-homepage.html",
+      "sha256": "a24456cd92f1c058eb9e813000af140d6b963f04e57cfe0611a92eb2d325b0ed"
+    },
+    {
+      "path": "records/acquisitions/2026-10-21-fabric-source-research/fashiongen-paper.html",
+      "sha256": "38e0c6335648dc6b7b75ce120698b365819dd3ee66807228e6dc7734341c2e16"
+    },
+    {
+      "path": "records/acquisitions/2026-10-21-fabric-source-research/imaterialist2018-commit.json",
+      "sha256": "659e471c092828d936942665c79b02f8eacdd2307b6f6c218d83eb7968f77d53"
+    },
+    {
+      "path": "records/acquisitions/2026-10-21-fabric-source-research/imaterialist2018-label-map.csv",
+      "sha256": "75892e7708bb464be14a35fb141a0d0c8ef9b69d0b8d1127bedff0d35a8ae678"
+    },
+    {
+      "path": "records/acquisitions/2026-10-21-fabric-source-research/imaterialist2018-README.md",
+      "sha256": "5b47db9e1cc13f1f80026c6b2c4b5d7d099466674f4d6231b1d5a64b6569cc13"
+    },
+    {
+      "path": "records/acquisitions/2026-10-21-fabric-source-research/imaterialist2018-repo.json",
+      "sha256": "0ad39ffc03f379e3de712ad358a0532fb5ad4232e5d96cdc89535401e81d7657"
+    },
+    {
+      "path": "records/acquisitions/2026-10-21-fabric-source-research/imaterialist2020-commit.json",
+      "sha256": "268566096c6e117f61440dd2f6591b136ed8f0986f67cfaf2431862d4fc510c9"
+    },
+    {
+      "path": "records/acquisitions/2026-10-21-fabric-source-research/imaterialist2020-LICENSE.txt",
+      "sha256": "62dfb52303aaf78bd3cfd9ca829236766191b85e90c813c92cc1adcebb4f35a7"
+    },
+    {
+      "path": "records/acquisitions/2026-10-21-fabric-source-research/imaterialist2020-README.md",
+      "sha256": "e7800e00c56fa36b18493fe4163e7a68784340bb0fd1d6d0292435b7c6781b4e"
+    },
+    {
+      "path": "records/acquisitions/2026-10-21-fabric-source-research/imaterialist2020-repo.json",
+      "sha256": "d1a8b8c5ebb0bcc57b27d16776ca728003becade9e78d06b0f22c870cd2bd168"
+    },
+    {
+      "path": "records/acquisitions/2026-10-21-fabric-source-research/textilenet-commit.json",
+      "sha256": "561b811af800b1fe6d8a9024f324144f1704a27f16f47b97d5273f1b6d4e7120"
+    },
+    {
+      "path": "records/acquisitions/2026-10-21-fabric-source-research/textilenet-LICENSE.txt",
+      "sha256": "fc3169d9179c2995cf9b5f07e06f79235b1e2c969e9f0702bd3baf42d3db1e97"
+    },
+    {
+      "path": "records/acquisitions/2026-10-21-fabric-source-research/textilenet-paper.html",
+      "sha256": "1f97138e2b09affe50d654f7df5747c931d757ae4f8c320766e9d76c3657d9db"
+    },
+    {
+      "path": "records/acquisitions/2026-10-21-fabric-source-research/textilenet-README.md",
+      "sha256": "98f9eee8e0c743220740120442588b0697e3462fe517eb64dbcf19e1ce0b544a"
+    },
+    {
+      "path": "records/acquisitions/2026-10-21-fabric-source-research/textilenet-repo.json",
+      "sha256": "d628dc3f268cfd5b518dffec031ff9c10331887cee4cbfe0bc630ecc9389c620"
+    },
+    {
+      "path": "CHANGELOG.md",
+      "sha256": "0f1ce67c48c26ef4a66f8549792aabfacc4f016f2a5eb559f109f3eae4311921"
+    },
+    {
+      "path": "docs/REQUIREMENTS.md",
+      "sha256": "310d908a353aab1d26b9e559b581e5a5191443043e02c919242b0b9d98b29349"
+    },
+    {
+      "path": "docs/DECISIONS.md",
+      "sha256": "9381451f93ddd6a3fd943ed6ca6a437e0ec7b614197f104978f2a85b6a0e3501"
+    },
+    {
+      "path": "docs/ARCHITECTURE.md",
+      "sha256": "4250e8cb9307c8f9f6829771bee797f8ad1b87f870a5c0456f12e5e21f265aea"
+    },
+    {
+      "path": "docs/DATASETS.md",
+      "sha256": "c59ed9973fa56961ac5aaaf8a653c1a19632c7311a586fa756b8f4f870c549cd"
+    },
+    {
+      "path": "docs/CAMERA_UI.md",
+      "sha256": "12a0ba81ca9eea1871e2e161aee8b4b0149ec568f99d64da296dc984b6fd1fa6"
+    },
+    {
+      "path": "docs/PROJECT_PROGRESS.md",
+      "sha256": "fed57edcf9062e72d352e850ff301d6ba42ceb3903675e1609cc7062a7f48afe"
+    },
+    {
+      "path": "docs/FABRIC_NEXT_GATE.md",
+      "sha256": "294b658d8b806739ecb0ed6b824206ff6408966148d38e8ced0b88456101385c"
+    },
+    {
+      "path": "docs/CAMERA_SOURCE_UPDATE_OCT22.md",
+      "sha256": "b522bde9e2924250f69720e17d4594da41d8cf58a48a05edd633e2af615a0568"
+    },
+    {
+      "path": "docs/FABRIC_SOURCE_GATE_OCT22.md",
+      "sha256": "7e49463dc896c89bd758bcedbad73b0f4bca1e6a0584a069739e6a41f86c2422"
+    },
+    {
+      "path": "records/review/2026-10-22-imaterialist2018-terms.json",
+      "sha256": "df73ecfca07eda774bf2f75e7f7cd772c0ba4ba6d2c0980b1a5ea5ad71004595"
+    },
+    {
+      "path": "records/review/2026-10-22-textilenet-gate-agent.json",
+      "sha256": "d844e6adff0907f6ba9cedf19bb67f23da3b3d2c1c9a2a0bb115fb8cc8a64d35"
+    },
+    {
+      "path": "data/external/fabric_expansion/metadata/fabric_train.json",
+      "sha256": "46ebd83abc7bfbd319c4677a5fcd5693db6fed09a52859c95a5d3505fa94b73f"
+    },
+    {
+      "path": "tools/datasets/audit_textilenet_metadata.py",
+      "sha256": "d027ceb0f2f65ee4f4a7744dcef36b7b0d68593492e577735e576af03c2a1bd5"
+    },
+    {
+      "path": "tests/test_textilenet_metadata.py",
+      "sha256": "dedf6fcfc23891e03e3109bc94a5ecfe0f42f546a32c7d5e0a4e3c2549d9c001"
+    },
+    {
+      "path": "tests/test_station_package.py",
+      "sha256": "bb033aff39ea9ebf24891e9232654e6570cbcd4ecad4eb85d2ef63bde1bd7c42"
+    },
+    {
+      "path": "tests/camera_ui_lifecycle.cjs",
+      "sha256": "ecba356df34114d87467bfc92f52f35668ee9bb8477df0edefa310670966c902"
+    },
+    {
+      "path": "app/static/index.html",
+      "sha256": "62cbb74a71288838561e348084fe352ddac4f3847f693864f84cbfb0b9cd3f80"
+    },
+    {
+      "path": "artifacts/releases/skirt-finetune-v1-desktop-research-v8/inventory.json",
+      "sha256": "97bbfdfe2405528f6ea42eaa2f66ade161a83537feb9a85f1ef41d174cfe822f"
+    },
+    {
+      "path": "artifacts/stations/skirt-research-station-v3/station-inventory.json",
+      "sha256": "ec865f2c45a635f7e3abb9fe8bd17dbf0c5b389d47ae110182cf37bee90390f8"
+    },
+    {
+      "path": "artifacts/stations/skirt-research-station-v3/station.json",
+      "sha256": "953d17494b579c751ba046c5e6c48e73975ea9b5d82b7e2f419bca35da833b22"
+    },
+    {
+      "path": "records/validation/2026-10-22-station-v3-http.json",
+      "sha256": "19e4f8266802cc39841fbaf4532d881527427b0ac1ff85435ca2bfb4c5feab79"
+    },
+    {
+      "path": "records/validation/2026-10-22-station-v3-http.execution.json",
+      "sha256": "a926c6ff42bef428d47c26d70072978b379fe04e7e0e53af6f28827e6b3408f0"
+    },
+    {
+      "path": "records/validation/2026-10-22-station-v3-http.server.log",
+      "sha256": "e6544b21e3cb047bf8c5a14909f950c8811f7279e4661603872f1c101cdf4794"
+    },
+    {
+      "path": "records/validation/2026-10-22-camera-source-check.py",
+      "sha256": "b34e43b08d540340c34fc18b0c484253a427ad507bd36f9bd25b6bb8710f8994"
+    },
+    {
+      "path": "records/validation/2026-10-22-camera-source-check.json",
+      "sha256": "b9918ee1c6a207a9639d9d22354b33ce267e7fa483ebbce50529ff7573ef7d71"
+    },
+    {
+      "path": "records/validation/2026-10-22-camera-source-check-0.log",
+      "sha256": "772d7762a643e93ea8d56a6f4014404d3b9f770839dd431e69db5e53c1e6273e"
+    },
+    {
+      "path": "records/validation/2026-10-22-camera-source-check-1.log",
+      "sha256": "3265889d71767a9dabc70f2d2b2b08473cf6487f6e9dda29a0942ff696dae6ae"
+    },
+    {
+      "path": "records/validation/2026-10-22-camera-source-finalize.py",
+      "sha256": "571e396962923ad8034ee7195aef640fd9c12931e0511e6aa5c6a7aa97fc4f2c"
+    }
+  ],
+  "latest_batch": {
+    "path": "records/validation/2026-10-22-camera-source-check.json",
+    "sha256": "b9918ee1c6a207a9639d9d22354b33ce267e7fa483ebbce50529ff7573ef7d71"
+  },
+  "pending_inputs": [
+    "Applicable source terms/acceptance and attribution before new fabric intake",
+    "Independent human label confirmation",
+    "Observed wearer references and measured calibration",
+    "Actual garments and Raspberry Pi for physical acceptance"
+  ]
+}

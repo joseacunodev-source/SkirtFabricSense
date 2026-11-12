@@ -1,0 +1,28 @@
+{
+  "date": "2026-11-11",
+  "reviewer": "review_interrupted_ui",
+  "read_only": true,
+  "underlying_evidence_tests_passed": 30,
+  "ui_specific_test_module_present": false,
+  "production_review_events": 0,
+  "checks": {
+    "cli_help": "passed",
+    "queue_load": "17 items / 0 observations",
+    "page_queue_image_http": "200",
+    "private_bindings_http": "404",
+    "wrong_host_http": "403",
+    "save_download_browser_roundtrip": "not_tested"
+  },
+  "evidence_log_unchanged": true,
+  "owned_test_server_stopped": true,
+  "sources": [
+    {
+      "path": "tools/serve_fabric_review.py",
+      "sha256": "293e0b2eebba69169fd079534098005c6b4d656260f8174db6d6d137d3d61e9c"
+    },
+    {
+      "path": "tools/static/fabric_review.html",
+      "sha256": "bf23380ddc0c31ddfa41f2febbecb6cdf3e8aa89c4bf7b5fa0f702b7cf52c0ed"
+    }
+  ]
+}

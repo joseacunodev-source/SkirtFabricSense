@@ -1,0 +1,30 @@
+{
+  "reviewer": "codex_visual_agent_a",
+  "independent_human_review": false,
+  "status": "suspected_same_garment_visual_quarantine_candidates",
+  "review_artifact": "records/review/batch-a/group-review.jpg",
+  "groups": [
+    {
+      "sample_ids": [
+        "fashionpedia-train2020-1674",
+        "fashionpedia-train2020-20354",
+        "fashionpedia-train2020-10179"
+      ],
+      "evidence": "Same lime collared blouse, high dark waistband and glossy black flared skirt on same runway model; first two near-identical framing, third side angle."
+    },
+    {
+      "sample_ids": [
+        "fashionpedia-train2020-11864",
+        "fashionpedia-train2020-13801"
+      ],
+      "evidence": "Same runway model, multicolor striped top, black blazer and dark fitted skirt, same background walkers; alternate framing."
+    },
+    {
+      "sample_ids": [
+        "fashionpedia-train2020-2140",
+        "fashionpedia-train2020-22332"
+      ],
+      "evidence": "Same runway model, pale sleeveless vest/light blue long top and pale color-block mini skirt, same background model; alternate shot."
+    }
+  ]
+}

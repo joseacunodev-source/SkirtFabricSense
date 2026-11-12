@@ -1,0 +1,74 @@
+{
+  "status": "generated",
+  "figures": 5,
+  "formats": [
+    "vector PDF",
+    "300 dpi PNG"
+  ],
+  "artifacts": [
+    {
+      "path": "output/thesis_figures/01_system_architecture.pdf",
+      "sha256": "48c53804975d02f993d1fbc27ac7d67eb8c729ac61f14f2d8413a1adbe931bd7",
+      "bytes": 3176
+    },
+    {
+      "path": "output/thesis_figures/01_system_architecture.png",
+      "sha256": "5be478cb2381cd57b90b2fb0389d3ffba484e8bb2326b46e19b8953353cd7df8",
+      "bytes": 181724
+    },
+    {
+      "path": "output/thesis_figures/02_detection_results.pdf",
+      "sha256": "bef80ac1f0a0e816f8d08bffae25e8cbbc65f53170f3f960dcd8783e52f9f52d",
+      "bytes": 2117
+    },
+    {
+      "path": "output/thesis_figures/02_detection_results.png",
+      "sha256": "fb735a9a30d63137aa4e566d8b30dc9ff65acacee305e20815e249f829f0b63a",
+      "bytes": 121528
+    },
+    {
+      "path": "output/thesis_figures/03_pleating_outcomes.pdf",
+      "sha256": "e521dde6b6132c94cfe1d39601e91f4b93e62af3f338af7bcde321644836a665",
+      "bytes": 2128
+    },
+    {
+      "path": "output/thesis_figures/03_pleating_outcomes.png",
+      "sha256": "0a39f91b287926c205497edb90760121ff9de018e96c25a774c3505de4c2bdc6",
+      "bytes": 103429
+    },
+    {
+      "path": "output/thesis_figures/04_development_split.pdf",
+      "sha256": "5e5d16b460e76dd570c9758b3f8be58280c0ee1ebd1c796736512c5a60566eb3",
+      "bytes": 2768
+    },
+    {
+      "path": "output/thesis_figures/04_development_split.png",
+      "sha256": "9d1c01911f800d0231fb05c57fc053e84c664cb88eb36fb10a5f7a7be8570673",
+      "bytes": 171619
+    },
+    {
+      "path": "output/thesis_figures/05_image_robustness.pdf",
+      "sha256": "67a7407d483a1b0c1b029e12388d69f34d43f4caccc66ae109d84856b4a75996",
+      "bytes": 2197
+    },
+    {
+      "path": "output/thesis_figures/05_image_robustness.png",
+      "sha256": "ac49bf50109f8a013fd3a556aff98d26419477f5f8e989ee7536c3386422d556",
+      "bytes": 132100
+    },
+    {
+      "path": "output/thesis_figures/source-data.json",
+      "sha256": "bfce55fcfa0e6e9ffbb35e98db4bac38abdf2d9b9ff0675db72fc4c00af5e916",
+      "bytes": 3510
+    }
+  ],
+  "source": {
+    "path": "records/validation/2026-10-23-detection-uncertainty.json",
+    "sha256": "47ce44f87e4cbbad9734e22df675c7fe8511f03034c5690dd36870e93482a921"
+  },
+  "new_training": false,
+  "robustness_source": {
+    "path": "records/experiments/20261104-image-robustness/results.json",
+    "sha256": "633b7636c975e14a74122013dd4b1533dd4555bb8161db352201d8edb97656ca"
+  }
+}

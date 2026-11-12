@@ -1,0 +1,288 @@
+{
+  "schema_version": 1,
+  "data_kind": "preserved_failed_http_responses",
+  "acquisition": {
+    "path": "records/acquisitions/2026-11-04-backgrounds/acquisition.json",
+    "sha256": "0990fc89370ec7009dda92ff8f0ed0725c2a5bdfab27e93eaffb27c325310364"
+  },
+  "request_log": {
+    "path": "records/acquisitions/2026-11-04-backgrounds/requests.json",
+    "sha256": "163df11d60512af28628c95f8c38a3045cb8017699507b9e26ee054b38760940"
+  },
+  "entries": [
+    {
+      "body": {
+        "path": "records/acquisitions/2026-11-04-backgrounds/189945296_metadata.json",
+        "sha256": "2fffe9c70ab75664aa0f155790a4652602a668a95f61268475e3e6a854673c34"
+      },
+      "request_index": 11,
+      "http_status": 429,
+      "media_type": "text/plain",
+      "typed_copy": {
+        "path": "records/recoveries/http-bodies-20261111/189945296_metadata.response.txt",
+        "sha256": "2fffe9c70ab75664aa0f155790a4652602a668a95f61268475e3e6a854673c34"
+      }
+    },
+    {
+      "body": {
+        "path": "records/acquisitions/2026-11-04-backgrounds/189945295_metadata.json",
+        "sha256": "5b4c895acf3358bddf2569f199960934610ef50a3aa889f759c97f5b8d685ecb"
+      },
+      "request_index": 12,
+      "http_status": 429,
+      "media_type": "text/plain",
+      "typed_copy": {
+        "path": "records/recoveries/http-bodies-20261111/189945295_metadata.response.txt",
+        "sha256": "5b4c895acf3358bddf2569f199960934610ef50a3aa889f759c97f5b8d685ecb"
+      }
+    },
+    {
+      "body": {
+        "path": "records/acquisitions/2026-11-04-backgrounds/27737160_metadata.json",
+        "sha256": "3bf1e4d16565d9a4266ee618ecd953697542c03db78632fd2f5097f93ce3b38a"
+      },
+      "request_index": 13,
+      "http_status": 429,
+      "media_type": "text/plain",
+      "typed_copy": {
+        "path": "records/recoveries/http-bodies-20261111/27737160_metadata.response.txt",
+        "sha256": "3bf1e4d16565d9a4266ee618ecd953697542c03db78632fd2f5097f93ce3b38a"
+      }
+    },
+    {
+      "body": {
+        "path": "records/acquisitions/2026-11-04-backgrounds/31139362_metadata.json",
+        "sha256": "7c493a6316e38fe049b3ad3f4eb8fd159a2adddd4bd8c10c94cdad1fc3622e08"
+      },
+      "request_index": 14,
+      "http_status": 429,
+      "media_type": "text/plain",
+      "typed_copy": {
+        "path": "records/recoveries/http-bodies-20261111/31139362_metadata.response.txt",
+        "sha256": "7c493a6316e38fe049b3ad3f4eb8fd159a2adddd4bd8c10c94cdad1fc3622e08"
+      }
+    },
+    {
+      "body": {
+        "path": "records/acquisitions/2026-11-04-backgrounds/31139361_metadata.json",
+        "sha256": "c71424ddc1d7fd7f7a7a672167f20d521150b362c84091bfdca049dfd1eb963c"
+      },
+      "request_index": 15,
+      "http_status": 429,
+      "media_type": "text/plain",
+      "typed_copy": {
+        "path": "records/recoveries/http-bodies-20261111/31139361_metadata.response.txt",
+        "sha256": "c71424ddc1d7fd7f7a7a672167f20d521150b362c84091bfdca049dfd1eb963c"
+      }
+    },
+    {
+      "body": {
+        "path": "records/acquisitions/2026-11-04-backgrounds/15729163_metadata.json",
+        "sha256": "11dacca45d40fb2a5a1198fe6c9f83590be02da43579078f8dff4eb87bbd01e7"
+      },
+      "request_index": 16,
+      "http_status": 429,
+      "media_type": "text/plain",
+      "typed_copy": {
+        "path": "records/recoveries/http-bodies-20261111/15729163_metadata.response.txt",
+        "sha256": "11dacca45d40fb2a5a1198fe6c9f83590be02da43579078f8dff4eb87bbd01e7"
+      }
+    },
+    {
+      "body": {
+        "path": "records/acquisitions/2026-11-04-backgrounds/38898416_metadata.json",
+        "sha256": "940a7c5562f4441dbe6ea56380c8679dc116a62d41cc8f893ad623e8e282874d"
+      },
+      "request_index": 17,
+      "http_status": 429,
+      "media_type": "text/plain",
+      "typed_copy": {
+        "path": "records/recoveries/http-bodies-20261111/38898416_metadata.response.txt",
+        "sha256": "940a7c5562f4441dbe6ea56380c8679dc116a62d41cc8f893ad623e8e282874d"
+      }
+    },
+    {
+      "body": {
+        "path": "records/acquisitions/2026-11-04-backgrounds/38917249_metadata.json",
+        "sha256": "5b7311f283b0f9366bb95572f9bd0fb7148f8234103c1fdaeb8c419c193375c8"
+      },
+      "request_index": 18,
+      "http_status": 429,
+      "media_type": "text/plain",
+      "typed_copy": {
+        "path": "records/recoveries/http-bodies-20261111/38917249_metadata.response.txt",
+        "sha256": "5b7311f283b0f9366bb95572f9bd0fb7148f8234103c1fdaeb8c419c193375c8"
+      }
+    },
+    {
+      "body": {
+        "path": "records/acquisitions/2026-11-04-backgrounds/15356317_metadata.json",
+        "sha256": "088d537c5666960669f3418e4883796b0242f6b4f1ee9d56d1b38ee81c695d97"
+      },
+      "request_index": 19,
+      "http_status": 429,
+      "media_type": "text/plain",
+      "typed_copy": {
+        "path": "records/recoveries/http-bodies-20261111/15356317_metadata.response.txt",
+        "sha256": "088d537c5666960669f3418e4883796b0242f6b4f1ee9d56d1b38ee81c695d97"
+      }
+    },
+    {
+      "body": {
+        "path": "records/acquisitions/2026-11-04-backgrounds/10937769_metadata.json",
+        "sha256": "d24745e42ecb9b2958d28aa2a9797e2d66d0c718f70bb55964896846c4a29eb5"
+      },
+      "request_index": 20,
+      "http_status": 429,
+      "media_type": "text/plain",
+      "typed_copy": {
+        "path": "records/recoveries/http-bodies-20261111/10937769_metadata.response.txt",
+        "sha256": "d24745e42ecb9b2958d28aa2a9797e2d66d0c718f70bb55964896846c4a29eb5"
+      }
+    },
+    {
+      "body": {
+        "path": "records/acquisitions/2026-11-04-backgrounds/24046851_metadata.json",
+        "sha256": "fa1333856a45fe712120c7ca039fc0ebd083446fb2e7c97e513b6ba053f18744"
+      },
+      "request_index": 21,
+      "http_status": 429,
+      "media_type": "text/plain",
+      "typed_copy": {
+        "path": "records/recoveries/http-bodies-20261111/24046851_metadata.response.txt",
+        "sha256": "fa1333856a45fe712120c7ca039fc0ebd083446fb2e7c97e513b6ba053f18744"
+      }
+    },
+    {
+      "body": {
+        "path": "records/acquisitions/2026-11-04-backgrounds/24116837_metadata.json",
+        "sha256": "bd0c22123f9a613d548807fb72542e6b1abe62487575e3cbc669fc1c6f05ab2c"
+      },
+      "request_index": 22,
+      "http_status": 429,
+      "media_type": "text/plain",
+      "typed_copy": {
+        "path": "records/recoveries/http-bodies-20261111/24116837_metadata.response.txt",
+        "sha256": "bd0c22123f9a613d548807fb72542e6b1abe62487575e3cbc669fc1c6f05ab2c"
+      }
+    },
+    {
+      "body": {
+        "path": "records/acquisitions/2026-11-04-backgrounds/23519722_metadata.json",
+        "sha256": "78ff43625faf89e1ceed3f448f10a375428468ea9860c1b2a72df79e20ceb229"
+      },
+      "request_index": 23,
+      "http_status": 429,
+      "media_type": "text/plain",
+      "typed_copy": {
+        "path": "records/recoveries/http-bodies-20261111/23519722_metadata.response.txt",
+        "sha256": "78ff43625faf89e1ceed3f448f10a375428468ea9860c1b2a72df79e20ceb229"
+      }
+    },
+    {
+      "body": {
+        "path": "records/acquisitions/2026-11-04-backgrounds/24115594_metadata.json",
+        "sha256": "cf8407ce652db3aeade68f3f7752843293856167f0b6eb71e5872995d1339293"
+      },
+      "request_index": 24,
+      "http_status": 429,
+      "media_type": "text/plain",
+      "typed_copy": {
+        "path": "records/recoveries/http-bodies-20261111/24115594_metadata.response.txt",
+        "sha256": "cf8407ce652db3aeade68f3f7752843293856167f0b6eb71e5872995d1339293"
+      }
+    },
+    {
+      "body": {
+        "path": "records/acquisitions/2026-11-04-backgrounds/24115590_metadata.json",
+        "sha256": "940427b1708694ceb5596263f9fc43ce2c15ac35edb6e1b91c2d3e2ff5c991cd"
+      },
+      "request_index": 25,
+      "http_status": 429,
+      "media_type": "text/plain",
+      "typed_copy": {
+        "path": "records/recoveries/http-bodies-20261111/24115590_metadata.response.txt",
+        "sha256": "940427b1708694ceb5596263f9fc43ce2c15ac35edb6e1b91c2d3e2ff5c991cd"
+      }
+    },
+    {
+      "body": {
+        "path": "records/acquisitions/2026-11-04-backgrounds/24115675_metadata.json",
+        "sha256": "2e9506191aadf9c2b1d53d7f8c08a66a3f90c266115cb5b9aa1d7a184ae9570d"
+      },
+      "request_index": 26,
+      "http_status": 429,
+      "media_type": "text/plain",
+      "typed_copy": {
+        "path": "records/recoveries/http-bodies-20261111/24115675_metadata.response.txt",
+        "sha256": "2e9506191aadf9c2b1d53d7f8c08a66a3f90c266115cb5b9aa1d7a184ae9570d"
+      }
+    },
+    {
+      "body": {
+        "path": "records/acquisitions/2026-11-04-backgrounds/24124442_metadata.json",
+        "sha256": "368355de32af949c349b2fca4307d26f9e3c3f997e84424296206bccfa57743f"
+      },
+      "request_index": 27,
+      "http_status": 429,
+      "media_type": "text/plain",
+      "typed_copy": {
+        "path": "records/recoveries/http-bodies-20261111/24124442_metadata.response.txt",
+        "sha256": "368355de32af949c349b2fca4307d26f9e3c3f997e84424296206bccfa57743f"
+      }
+    },
+    {
+      "body": {
+        "path": "records/acquisitions/2026-11-04-backgrounds/24115579_metadata.json",
+        "sha256": "db8fa89cc4787ec312b78ebce78ab5f63ee35d94e31c77ba93a582a7062aea0c"
+      },
+      "request_index": 28,
+      "http_status": 429,
+      "media_type": "text/plain",
+      "typed_copy": {
+        "path": "records/recoveries/http-bodies-20261111/24115579_metadata.response.txt",
+        "sha256": "db8fa89cc4787ec312b78ebce78ab5f63ee35d94e31c77ba93a582a7062aea0c"
+      }
+    },
+    {
+      "body": {
+        "path": "records/acquisitions/2026-11-04-backgrounds/190236304_metadata.json",
+        "sha256": "0eefa7ef9dc8140dc950a7d10956d8046ec25a104373bb31253f9442c87386dc"
+      },
+      "request_index": 29,
+      "http_status": 429,
+      "media_type": "text/plain",
+      "typed_copy": {
+        "path": "records/recoveries/http-bodies-20261111/190236304_metadata.response.txt",
+        "sha256": "0eefa7ef9dc8140dc950a7d10956d8046ec25a104373bb31253f9442c87386dc"
+      }
+    },
+    {
+      "body": {
+        "path": "records/acquisitions/2026-11-04-backgrounds/190236306_metadata.json",
+        "sha256": "36709ee14dbda8ffaa26a53e836248cb465291ecd16b693efea6b839073f3c7f"
+      },
+      "request_index": 30,
+      "http_status": 429,
+      "media_type": "text/plain",
+      "typed_copy": {
+        "path": "records/recoveries/http-bodies-20261111/190236306_metadata.response.txt",
+        "sha256": "36709ee14dbda8ffaa26a53e836248cb465291ecd16b693efea6b839073f3c7f"
+      }
+    },
+    {
+      "body": {
+        "path": "records/acquisitions/2026-11-04-backgrounds/190236303_metadata.json",
+        "sha256": "745f6dc91c51eb5f82a4f4fe5dd5881b147b95fd7a442ed9e778ad224ce43536"
+      },
+      "request_index": 31,
+      "http_status": 429,
+      "media_type": "text/plain",
+      "typed_copy": {
+        "path": "records/recoveries/http-bodies-20261111/190236303_metadata.response.txt",
+        "sha256": "745f6dc91c51eb5f82a4f4fe5dd5881b147b95fd7a442ed9e778ad224ce43536"
+      }
+    }
+  ],
+  "meaning": "Raw failed response evidence, not parsed metadata or acquired photos. Original bytes and historical hashes remain intact."
+}

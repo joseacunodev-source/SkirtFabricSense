@@ -1,0 +1,70 @@
+{
+  "status": "completed",
+  "started_at": "2026-10-17T02:22:49.271706+00:00",
+  "source_sha256": "c4623ad184858584b10b126175547d89f144a72447edae154c6284efd618549e",
+  "limitations": [
+    "Small agent-reviewed development negative pool; not independent human truth",
+    "All negatives previously used in a development diagnostic, not untouched final testing",
+    "No camera/Pi verification; presence scores are uncalibrated",
+    "Presence gate does not improve mask geometry or prove full-skirt framing"
+  ],
+  "inputs": [
+    {
+      "path": "data/labels/skirt-baseline-v1.jsonl",
+      "sha256": "9160998b5ab0f65251c53cefd783e1c6351887bec8c655074be64dd2717dc2eb"
+    },
+    {
+      "path": "data/labels/negative-reviewed-v2.jsonl",
+      "sha256": "016e45e38d695b9bb62c480497c02af08845b83f4831d8ca91365e2eabc067b8"
+    }
+  ],
+  "class_counts_by_split": {
+    "development_train": {
+      "1": 292,
+      "0": 56
+    },
+    "development_validation": {
+      "1": 80,
+      "0": 19
+    }
+  },
+  "frozen_inputs_sha256": "8967e6aeb7f4f55ba2a31c7122ef0dddc3dd544245abdbdf3686b41b8ccca420",
+  "split_hash": "c75dc480ee2a12a8693115f4bce3a78ab2dadd33edcd64471bdd06b811589c00",
+  "seed": 42,
+  "epochs": 10,
+  "batch_size": 16,
+  "learning_rate": 0.001,
+  "optimizer": "Adam",
+  "architecture": "Frozen ImageNet MobileNetV2 avg + Dense64 ReLU + Dropout0.2 + sigmoid1",
+  "preprocessing": "Full RGB resize224 Pillow bilinear; float32 0..255; normalization inside model",
+  "class_weights": {
+    "0": 3.107142857142857,
+    "1": 0.5958904109589042
+  },
+  "threshold": 0.5,
+  "selection": "Minimum class-balanced development-validation BCE",
+  "initial_weights_provenance": "records/acquisitions/2026-10-04-mobilenetv2-weights.json",
+  "gpu": [
+    "PhysicalDevice(name='/physical_device:GPU:0', device_type='GPU')"
+  ],
+  "versions": {
+    "tensorflow": "2.20.0",
+    "numpy": "2.5.3"
+  },
+  "selected_epoch": 2,
+  "export": {
+    "sha256": "e027531ec7e0f92b1e0cc330b9410199386b4b5e6f63d58f082efccfcc9f960b",
+    "bytes": 9186664,
+    "maximum_absolute_error": 3.0994415283203125e-06,
+    "tolerance": 0.001,
+    "pi_verified": false
+  },
+  "metrics": {
+    "positive_validation": 80,
+    "negative_validation": 19,
+    "skirt_recall": 0.6,
+    "negative_rejection": 0.6842105263157895
+  },
+  "finished_at": "2026-10-17T02:25:35.933302+00:00",
+  "duration_seconds": 172.606582007
+}

@@ -1,0 +1,34 @@
+{
+  "status": "passed",
+  "checks": [
+    {
+      "sample_id": "fashionpedia-train2020-12679",
+      "accepted": true,
+      "desktop_match": true
+    },
+    {
+      "sample_id": "fashionpedia-train2020-16838",
+      "accepted": true,
+      "desktop_match": true
+    },
+    {
+      "sample_id": "fashionpedia-negative-candidate-21184",
+      "accepted": false,
+      "desktop_match": true
+    }
+  ],
+  "server_stopped": true,
+  "source_sha256": "ea3c56ca71bb503429a8cb54fb2ec074c6bfb11e66bab927f3e74710c089f4ba",
+  "comparison_sha256": "11bf2fac8f14d3c7b781745c209bac139b02374c0c354cf1a8123c11a48805ec",
+  "models": {
+    "masks": {
+      "v1": "630e5034359749aa63dd4d3b9d2e68c706451fb9ded3b57c6223984e162574c2",
+      "v2": "f2f5f73d34cd99c3fb46502cb806ddbc347c6664e8ce24b8fe06a548c70090de"
+    },
+    "presence": "7bf9df9b1bacc757956c069f688345ff154ee480a65198ee5948fbe80bbcdb87",
+    "pleating": "c1d8f49e221a2672c20adb87fe4ae5d2f6966f125ee99cb212ff2eb56fffdbf0"
+  },
+  "camera_used": false,
+  "pi_verified": false,
+  "limitations": "Three saved development frames; integration only, no new accuracy or physical evidence."
+}

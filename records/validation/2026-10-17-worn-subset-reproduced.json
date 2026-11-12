@@ -1,0 +1,44 @@
+{
+  "date_asia_manila": "2026-10-17",
+  "method": "Exact archived development subset join; no new inference",
+  "tool_sha256": "ded85d835668e413f2f2ac38c3f81bf8b0cb0fdd0f785c19d48dd35bd3af5a03",
+  "metrics": {
+    "v1": {
+      "worn_validation_images": 66,
+      "accepted": 41,
+      "correct_pleating": 33,
+      "coverage": 0.6212121212121212,
+      "accuracy_accepted": 0.8048780487804879
+    },
+    "v2": {
+      "worn_validation_images": 66,
+      "accepted": 50,
+      "correct_pleating": 44,
+      "coverage": 0.7575757575757576,
+      "accuracy_accepted": 0.88
+    },
+    "v3": {
+      "worn_validation_images": 66,
+      "accepted": 46,
+      "correct_pleating": 38,
+      "coverage": 0.696969696969697,
+      "accuracy_accepted": 0.8260869565217391
+    }
+  },
+  "sources": [
+    {
+      "path": "data/manifests/worn-pleating-development-v1.jsonl",
+      "sha256": "876bb315009592fdbcf0a646703b21d99801756f4e37b1807a66675bdbd98ec2"
+    },
+    {
+      "path": "records/validation/2026-10-15-localizer-threeway.json",
+      "sha256": "50792eaec38468516f08cb7a54b3294c949ae6259bb1a60d20b4a6fa16895eb6"
+    }
+  ],
+  "limitations": [
+    "Models selected on broader mixed-presentation development data",
+    "Single-agent presentation and pleating labels; not independent test truth",
+    "No worn-specific negative accuracy, camera or Pi measurements",
+    "No model promotion inferred"
+  ]
+}

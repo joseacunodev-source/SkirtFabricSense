@@ -1,0 +1,73 @@
+2026-10-03 16:23:33.551438: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2026-10-03 16:23:34.185384: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F AVX512_VNNI FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2026-10-03 16:23:38.745164: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1791015820.989944     300 gpu_device.cc:2020] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 3584 MB memory:  -> device: 0, name: NVIDIA GeForce RTX 3060 Laptop GPU, pci bus id: 0000:01:00.0, compute capability: 8.6
+2026-10-03 16:23:42.913750: I external/local_xla/xla/stream_executor/cuda/cuda_dnn.cc:473] Loaded cuDNN version 92700
+Saved artifact at '/home/skirttrain/skirt-fabric-sense/runs/gpu-smoke-002/saved_model'. The following endpoints are available:
+
+* Endpoint 'serve'
+  args_0 (POSITIONAL_ONLY): TensorSpec(shape=(1, 32, 32, 3), dtype=tf.float32, name=None)
+Output Type:
+  TensorSpec(shape=(1, 2), dtype=tf.float32, name=None)
+Captures:
+  129965273177872: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  129965273178256: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  129965273180176: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  129965273177296: TensorSpec(shape=(), dtype=tf.resource, name=None)
+W0000 00:00:1791015825.545415     300 tf_tfl_flatbuffer_helpers.cc:364] Ignored output_format.
+W0000 00:00:1791015825.545490     300 tf_tfl_flatbuffer_helpers.cc:367] Ignored drop_control_dependency.
+2026-10-03 16:23:45.546383: I tensorflow/cc/saved_model/reader.cc:83] Reading SavedModel from: /home/skirttrain/skirt-fabric-sense/runs/gpu-smoke-002/saved_model
+2026-10-03 16:23:45.550039: I tensorflow/cc/saved_model/reader.cc:52] Reading meta graph with tags { serve }
+2026-10-03 16:23:45.551685: I tensorflow/cc/saved_model/reader.cc:147] Reading SavedModel debug info (if present) from: /home/skirttrain/skirt-fabric-sense/runs/gpu-smoke-002/saved_model
+I0000 00:00:1791015825.562163     300 mlir_graph_optimization_pass.cc:437] MLIR V1 optimization pass is not enabled
+2026-10-03 16:23:45.563184: I tensorflow/cc/saved_model/loader.cc:236] Restoring SavedModel bundle.
+2026-10-03 16:23:45.621422: I tensorflow/cc/saved_model/loader.cc:220] Running initialization op on SavedModel bundle at path: /home/skirttrain/skirt-fabric-sense/runs/gpu-smoke-002/saved_model
+2026-10-03 16:23:45.632668: I tensorflow/cc/saved_model/loader.cc:471] SavedModel load for tags { serve }; Status: success: OK. Took 86293 microseconds.
+2026-10-03 16:23:45.658001: I tensorflow/compiler/mlir/tensorflow/utils/dump_mlir_util.cc:269] disabling MLIR crash reproducer, set env var `MLIR_CRASH_REPRODUCER_DIRECTORY` to enable.
+2026-10-03 16:23:45.730816: I tensorflow/compiler/mlir/lite/flatbuffer_export.cc:4150] Estimated count of arithmetic ops: 0.198 M  ops, equivalently 0.099 M  MACs
+/home/skirttrain/skirt-fabric-sense/.venv-training/lib/python3.12/site-packages/tensorflow/lite/python/interpreter.py:457: UserWarning:     Warning: tf.lite.Interpreter is deprecated and is scheduled for deletion in
+    TF 2.20. Please use the LiteRT interpreter from the ai_edge_litert package.
+    See the [migration guide](https://ai.google.dev/edge/litert/migration)
+    for details.
+    
+  warnings.warn(_INTERPRETER_DELETION_WARNING)
+INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+{
+  "status": "passed",
+  "seed": 42,
+  "data": "synthetic stateless normal, 4x32x32x3",
+  "dataset_manifest": null,
+  "split_hash": null,
+  "purpose": "infrastructure only; no project accuracy or Pi verification",
+  "python": "3.12.3",
+  "source_sha256": "6da21c68934a976873222b6a46c9e6d7ea6b598d6ac88a215017b405ba40dfb5",
+  "versions": {
+    "tensorflow": "2.20.0",
+    "numpy": "2.5.3"
+  },
+  "gpu_devices": [
+    "PhysicalDevice(name='/physical_device:GPU:0', device_type='GPU')"
+  ],
+  "loss": 0.8526039719581604,
+  "gradient_norm": 0.5379453897476196,
+  "elapsed_training_step_seconds": 0.5653379679999944,
+  "tensor_device": "/job:localhost/replica:0/task:0/device:GPU:0",
+  "prediction_device": "/job:localhost/replica:0/task:0/device:GPU:0",
+  "weights_changed": true,
+  "optimizer": {
+    "name": "SGD",
+    "learning_rate": 0.01,
+    "steps": 1
+  },
+  "export": {
+    "sha256": "987df5b43243cdca323887f2b588c32e1b9806edafa087953dfdbda89dd96610",
+    "bytes": 2356,
+    "finite_outputs": true,
+    "maximum_absolute_error": 2.3365020751953125e-05,
+    "atol": 1e-05,
+    "rtol": 0.0001,
+    "hardware": "desktop CPU, not Raspberry Pi"
+  }
+}

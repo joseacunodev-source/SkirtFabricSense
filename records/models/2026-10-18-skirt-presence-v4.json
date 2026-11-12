@@ -1,0 +1,150 @@
+{
+  "release_id": "skirt-presence-v4",
+  "status": "exported_development_candidate_not_deployment_approved",
+  "source_run_id": "20261018-presence-v4",
+  "model_files_and_sha256": [
+    {
+      "path": "artifacts/models/skirt-presence-v4/model.tflite",
+      "sha256": "7bf9df9b1bacc757956c069f688345ff154ee480a65198ee5948fbe80bbcdb87"
+    },
+    {
+      "path": "artifacts/models/skirt-presence-v4/model.keras",
+      "sha256": "124368b0dd22465df4d711c1dc982e1851828beba002c59df700aa26c2d1fd25"
+    }
+  ],
+  "labels_in_output_order": [
+    "skirt_presence_probability"
+  ],
+  "input_output_tensor_contract": {
+    "input": {
+      "shape": [
+        1,
+        224,
+        224,
+        3
+      ],
+      "dtype": "float32"
+    },
+    "output": {
+      "shape": [
+        1,
+        1
+      ],
+      "dtype": "float32"
+    }
+  },
+  "preprocessing_version": "Full RGB resize224 Pillow bilinear; float32 0..255; normalization inside model",
+  "patch_strategy": "Full source frame; no manual ROI",
+  "quantization_parameters": null,
+  "calibration_dataset_hash": null,
+  "thresholds_and_temporal_settings": {
+    "presence": 0.5,
+    "mask": 0.5,
+    "temporal_settings_changed": false
+  },
+  "training_environment": {
+    "path": "records/experiments/20261018-presence-v4/environment.json",
+    "sha256": "27b550783675624f53a4ae374c34d15d2fb22d02a3cfc45eec9e280a6ba32870"
+  },
+  "conversion_environment": {
+    "path": "records/experiments/20261018-presence-v4/environment.json",
+    "sha256": "27b550783675624f53a4ae374c34d15d2fb22d02a3cfc45eec9e280a6ba32870"
+  },
+  "target_environment": null,
+  "pre_export_metrics": {
+    "positive_validation": 66,
+    "negative_validation": 52,
+    "skirt_recall": 0.8787878787878788,
+    "negative_rejection": 0.6730769230769231
+  },
+  "post_export_metrics": {
+    "v1": {
+      "positive_count": 66,
+      "positive_accepted": 41,
+      "positive_coverage": 0.6212121212121212,
+      "correct_pleating": 33,
+      "accepted_pleating_accuracy": 0.8048780487804879,
+      "negative_count": 52,
+      "negative_rejected": 29,
+      "negative_rejection": 0.5576923076923077
+    },
+    "v2": {
+      "positive_count": 66,
+      "positive_accepted": 50,
+      "positive_coverage": 0.7575757575757576,
+      "correct_pleating": 44,
+      "accepted_pleating_accuracy": 0.88,
+      "negative_count": 52,
+      "negative_rejected": 21,
+      "negative_rejection": 0.40384615384615385
+    },
+    "v1_plus_presence": {
+      "positive_count": 66,
+      "positive_accepted": 37,
+      "positive_coverage": 0.5606060606060606,
+      "correct_pleating": 29,
+      "accepted_pleating_accuracy": 0.7837837837837838,
+      "negative_count": 52,
+      "negative_rejected": 41,
+      "negative_rejection": 0.7884615384615384
+    },
+    "v2_plus_presence": {
+      "positive_count": 66,
+      "positive_accepted": 44,
+      "positive_coverage": 0.6666666666666666,
+      "correct_pleating": 38,
+      "accepted_pleating_accuracy": 0.8636363636363636,
+      "negative_count": 52,
+      "negative_rejected": 39,
+      "negative_rejection": 0.75
+    }
+  },
+  "pi_validation_record": null,
+  "camera_calibration_id": null,
+  "known_limitations": [
+    "Joint worn-positive/negative-data and finetuning candidate; not a controlled single-change comparison",
+    "Agent-reviewed development data; independent human truth pending",
+    "No threshold tuning, untouched final-test evaluation, physical camera or Raspberry Pi verification",
+    "Frozen worn subset is reused explicitly for this research experiment; historical manifest remains immutable",
+    "Checkpoint selection explicitly reuses development chain outcomes; selection optimism requires independent testing",
+    "Agent-reviewed source-domain development only; no final test",
+    "Presence checkpoint selected on these validation groups",
+    "Joint data and optimization changes; no causal attribution to one change",
+    "Development comparison does not approve camera, public demonstration or Pi deployment"
+  ],
+  "rollback_release_id": "skirt-finetune-v1-desktop-research-v7",
+  "executed_run": {
+    "path": "records/experiments/20261018-presence-v4/run.json",
+    "sha256": "10def7351036cb5bfb860190ca05fd64d08c3abf82f17ea93fb9c17a72b29e20"
+  },
+  "input_manifest": {
+    "path": "records/experiments/20261018-presence-v4/inputs.json",
+    "sha256": "5fd31356dad9333efaa82cb0e2a312533fe695b5c565278cd00136c9e693a1f7"
+  },
+  "split_hash": "2da2070b87f9107d4431c32289d3cad242a2929c49185002c1b06971db3ad04f",
+  "selected_epoch": 5,
+  "selection": "Eligible v2 mask plus new presence gate before ineligible epochs; maximize rejected negatives, correct pleating, accepted skirts, then minimize balanced BCE; fallback minimum balanced BCE if no epoch is eligible",
+  "early_export": {
+    "sha256": "6c378913f41c91ce6fe376c5df42f434f506b54980fae061d3eb7df0cc2b6026",
+    "bytes": 9186664,
+    "maximum_absolute_error": 2.086162567138672e-06,
+    "tolerance": 0.001,
+    "validation_images": 118,
+    "pi_verified": false
+  },
+  "final_export": {
+    "sha256": "7bf9df9b1bacc757956c069f688345ff154ee480a65198ee5948fbe80bbcdb87",
+    "bytes": 9186664,
+    "maximum_absolute_error": 4.649162292480469e-06,
+    "tolerance": 0.001,
+    "validation_images": 118,
+    "pi_verified": false
+  },
+  "comparison": {
+    "path": "records/validation/2026-10-19-detection-v4-comparison.json",
+    "sha256": "11bf2fac8f14d3c7b781745c209bac139b02374c0c354cf1a8123c11a48805ec"
+  },
+  "development_criteria_passed": true,
+  "deployment_approved": false,
+  "pi_verified": false
+}

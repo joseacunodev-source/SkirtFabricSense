@@ -1,0 +1,10 @@
+{
+  "Path": null,
+  "Online": true,
+  "WinPath": null,
+  "SysDrivePath": null,
+  "RestartNeeded": true,
+  "LogPath": "C:\\WINDOWS\\Logs\\DISM\\dism.log",
+  "ScratchDirectory": null,
+  "LogLevel": 2
+}

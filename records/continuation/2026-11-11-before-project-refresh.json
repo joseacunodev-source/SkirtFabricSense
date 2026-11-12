@@ -1,0 +1,1122 @@
+{
+  "schema_version": 1,
+  "updated_at": "2026-11-11T13:01:55.294747+08:00",
+  "status": "stable_desktop_research_checkpoint",
+  "project_complete": false,
+  "supervised_demo_accepted": false,
+  "completion_percentage": null,
+  "entry_point": "HANDOFF.md",
+  "task_board": "docs/TASK_BOARD.md",
+  "selected_research_station": {
+    "directory": "artifacts/stations/skirt-research-station-v8",
+    "inventory": {
+      "path": "artifacts/stations/skirt-research-station-v8/station-inventory.json",
+      "sha256": "68215a3b974f2dc3034e59974acea7c29436c1efaa56cf3e14b3a43ac479f34d"
+    },
+    "configuration": {
+      "path": "artifacts/stations/skirt-research-station-v8/station.json",
+      "sha256": "953d17494b579c751ba046c5e6c48e73975ea9b5d82b7e2f419bca35da833b22"
+    },
+    "payload_files": 28,
+    "selection": "selected_desktop_research",
+    "pi_verified": false,
+    "desktop_http_jobs": 12,
+    "evidence": {
+      "path": "records/validation/2026-11-04-capture-mode-http.json",
+      "sha256": "896832b7e6289d258b8333475b27e06389b05bc9f0a098c4446a3ce8d877cd80"
+    }
+  },
+  "rollback_station": {
+    "directory": "artifacts/stations/skirt-research-station-v7",
+    "inventory": {
+      "path": "artifacts/stations/skirt-research-station-v7/station-inventory.json",
+      "sha256": "9b587319932f8ad0d4d85383cfd73b6783d9e9b37c1e52fb1b35e0f2948280d6"
+    },
+    "configuration": {
+      "path": "artifacts/stations/skirt-research-station-v7/station.json",
+      "sha256": "953d17494b579c751ba046c5e6c48e73975ea9b5d82b7e2f419bca35da833b22"
+    },
+    "selection": "rollback",
+    "pi_verified": false
+  },
+  "selected_presence_model": "artifacts/models/skirt-category-presence-v1",
+  "selected_research_metrics": {
+    "positive_count": 66,
+    "positive_accepted": 44,
+    "positive_coverage": 0.6666666666666666,
+    "correct_pleating": 38,
+    "accepted_pleating_accuracy": 0.8636363636363636,
+    "negative_count": 52,
+    "negative_rejected": 42,
+    "negative_rejection": 0.8076923076923077
+  },
+  "data": {
+    "original_images": 1932,
+    "verified_physical_garments": null,
+    "negative_development_admissions": 207,
+    "new_fabric_admissions": 0,
+    "verified_project_fabric_labels": 0,
+    "observed_geometry_examples": 0
+  },
+  "last_hardware_confirmation": {
+    "date": "2026-11-04",
+    "raspberry_pi_available": false,
+    "webcam_available": false,
+    "skirts_last_confirmed_unavailable": "2026-10-20"
+  },
+  "acceptance": {
+    "fabric_model_accepted": false,
+    "calibrated_length_verified": false,
+    "unseen_garment_camera_test_passed": false,
+    "pi_verified": false,
+    "demo_rehearsed": false
+  },
+  "tests": {
+    "windows": {
+      "run": 464,
+      "passed": 461,
+      "skipped": 3,
+      "scope": "Earlier full suite before this later batch; retained evidence, not rerun"
+    },
+    "focused_wsl": {
+      "run": 20,
+      "passed": 20
+    },
+    "camera_source_focused": {
+      "python_tests": 37,
+      "python_passed": 37,
+      "packaged_ui_mock_scenarios": 17,
+      "station_v3_http_jobs": 12,
+      "scope": "30 package/release and7 metadata tests,17 mocked camera scenarios and12 saved-frame jobs; no new camera accuracy"
+    },
+    "reference_ui": {
+      "lifecycle_scenarios": 18,
+      "score_cases": 21,
+      "http_jobs": 12,
+      "camera_off_browser_checks": true,
+      "source": {
+        "path": "records/validation/2026-10-22-reference-ui.json",
+        "sha256": "29aeb793d365ca919a6f859d96196b4c506598eb2693edfa2726e883d13ee71a"
+      }
+    },
+    "ui_motion": {
+      "lifecycle_scenarios": 18,
+      "score_cases": 21,
+      "motion_cases": 6,
+      "source": {
+        "path": "records/validation/2026-10-22-ui-motion.json",
+        "sha256": "03f9574805833b2060207bdd70bad02457da3ede253e835106cd27ecbb93b8c4"
+      }
+    },
+    "nov04_review": {
+      "run": 73,
+      "passed": 73,
+      "failed": 0
+    },
+    "dataset_partitions_nov04": {
+      "run": 19,
+      "passed": 19,
+      "actual_assignment_sets_checked": 5,
+      "source": {
+        "path": "records/validation/2026-11-04-dataset-diagrams/verification.json",
+        "sha256": "c7b3e5c978bae35a41825af360dd51ecfc361e447eadc0a5508916cfa580d09d"
+      }
+    }
+  },
+  "pending_operations": [],
+  "active_operations": [],
+  "process_observation_scope": "Scoped Windows/WSL training, robustness evaluation and station preview names; no processes stopped.",
+  "process_observations": {
+    "date": "2026-11-11",
+    "scope": "Owned station app server PID373 stopped with SIGINT; launcher exited0; follow-up scoped pgrep returned1",
+    "active_capture_server": false
+  },
+  "open_tasks": [
+    "S01",
+    "S02",
+    "S03",
+    "S04",
+    "S05",
+    "S06",
+    "S07",
+    "P01",
+    "P02",
+    "P03",
+    "P04",
+    "P05",
+    "P06",
+    "P07",
+    "M01"
+  ],
+  "next_actions": [
+    {
+      "task_id": "S01/S04",
+      "action": "Obtain independent label confirmation and credible rare-class fabric groups; no retrain from unsupported labels.",
+      "needs_hardware": false
+    },
+    {
+      "task_id": "S03",
+      "action": "Use robustness failures to inform a predeclared candidate only after suitable new data; preserve a genuinely independent garment test.",
+      "needs_hardware": false
+    },
+    {
+      "task_id": "P01-P07",
+      "action": "Obtain garments, webcam and Pi for measured calibration, unseen-camera evaluation and ARM64 acceptance.",
+      "needs_hardware": true
+    }
+  ],
+  "do_not_repeat": [
+    "Completed 20261021-category-presence-v1 fit",
+    "Completed station-v1/v2 builds and HTTP checks",
+    "Do not train fabric from missing or wrongly mapped labels",
+    "Completed 20261104-image-robustness diagnostic",
+    "Completed thesis figures and November 4 partition audits; preserve existing outputs"
+  ],
+  "previous_checkpoint": {
+    "path": "records/continuation/2026-11-11-before-progress-screenshots.json",
+    "sha256": "f0fb28f38d9a271b6b8434c1573fa52c05ffb8c9701f2c6fdbf6cfa3907853cc"
+  },
+  "references": [
+    {
+      "path": "AGENTS.md",
+      "sha256": "5921d78e5b0e426ab739e752dea46bf6916c65fe82d97be7241c10e2255b4e93"
+    },
+    {
+      "path": "README.md",
+      "sha256": "64a99a00db98a527a97a6aa7ac4b2d91a0f21d956d65c2324be4da60ff6160ab"
+    },
+    {
+      "path": "HANDOFF.md",
+      "sha256": "78cf47f3637e940875c37432dd85c359deade7fcaf17b2ffe4573009b4f1ba40"
+    },
+    {
+      "path": "docs/AGENT_HANDOFF.md",
+      "sha256": "18ee6035d976ec860cdf9e0c26b528c3444aa8a2253007d8378f5fd3d88a89c0"
+    },
+    {
+      "path": "docs/DOCUMENTATION_INDEX.md",
+      "sha256": "2a02af4852097a5591be72f8816dcd3564c795ec7d8a5f4b63a55a945d365eac"
+    },
+    {
+      "path": "docs/TASK_BOARD.md",
+      "sha256": "87a7e185b89b05bc05867c7fea52168d98de3027f8e5a50259ce75f2899e286c"
+    },
+    {
+      "path": "docs/OCT22_INTEGRATION.md",
+      "sha256": "d69281235a2e6d94e811c224f45a8df06576387a15afc8715018cca9fd1e91c8"
+    },
+    {
+      "path": "docs/STATION_PACKAGE.md",
+      "sha256": "73d8747da74109602abd981c711cd12188ddea47bfc0cc6ace4ade3396aa35a4"
+    },
+    {
+      "path": "docs/CATEGORY_PRESENCE_RESULTS.md",
+      "sha256": "1acd5336cc9d7cca73ef88de4a18fa1c35d1781f0254317659b7aeedfdd6d083"
+    },
+    {
+      "path": "docs/FABRIC_SOURCE_SEARCH_OCT21.md",
+      "sha256": "0bb959a22fef88c42c3dba23126113ef251e2754266956e2a3270d0271ee3b30"
+    },
+    {
+      "path": "docs/WORN_GEOMETRY_EVALUATION.md",
+      "sha256": "d9997a5ebd8f6c9606754e5731e6b5977925f35e909ae4dba5ae4ad03309dfae"
+    },
+    {
+      "path": "data/registry.json",
+      "sha256": "f5ee21b4fd5f97b8f68c87e917cbdcddb3225a3a6bc7b42c6f4613615f6b76ee"
+    },
+    {
+      "path": "data/manifests/worn-pleating-development-v1.jsonl",
+      "sha256": "876bb315009592fdbcf0a646703b21d99801756f4e37b1807a66675bdbd98ec2"
+    },
+    {
+      "path": "data/labels/negative-reviewed-v3.jsonl",
+      "sha256": "82009d40445a9091f7998ab8479cec10b5086826001b7b9f513862bd11da52d1"
+    },
+    {
+      "path": "data/manifests/source-skirt-development-splits.json",
+      "sha256": "df3b096e4d131db55852b20de075d811c95520d23766648928555d755fe8812c"
+    },
+    {
+      "path": "artifacts/models/skirt-category-presence-v1/model.tflite",
+      "sha256": "f47ddf148102f905d0a81e6a1fe3001b8a4944fd86e0c1c2d635d975f8fdc34d"
+    },
+    {
+      "path": "artifacts/models/skirt-localizer-v2/model.tflite",
+      "sha256": "f2f5f73d34cd99c3fb46502cb806ddbc347c6664e8ce24b8fe06a548c70090de"
+    },
+    {
+      "path": "artifacts/models/fabric-smoke-v1/model.tflite",
+      "sha256": "81f144a1c7cd4910989374a1a86c85e955fb4f65cd81ef88c26e7cbcf1158bfd"
+    },
+    {
+      "path": "records/models/2026-10-21-skirt-category-presence-v1.json",
+      "sha256": "56e197d0af86f1802d892d3f52bf21d23256c21a14de8781b6b91e7e92d06184"
+    },
+    {
+      "path": "records/experiments/20261021-category-presence-v1/run.json",
+      "sha256": "94eb220727759eaf767062a962f2fc727d313b8a969d30d576c9a358884cb8d3"
+    },
+    {
+      "path": "records/experiments/20261021-category-presence-v1/inputs.json",
+      "sha256": "5fd31356dad9333efaa82cb0e2a312533fe695b5c565278cd00136c9e693a1f7"
+    },
+    {
+      "path": "records/experiments/20261021-category-presence-v1/source-category-targets.json",
+      "sha256": "8f520b63482cf802bb70f47c9db57e0d0ce746eadc0e58d9dc18c7707eda07f2"
+    },
+    {
+      "path": "records/validation/2026-10-21-category-presence-artifact-review.json",
+      "sha256": "7a29dc52aba2912834553f815bc0635623658256780c41ff9938daee9e158b8c"
+    },
+    {
+      "path": "records/validation/2026-10-21-category-presence-comparison.json",
+      "sha256": "f0ebd8a2fd04530559ff661c35beddc7100da8e1852fa46762f2d867666c0648"
+    },
+    {
+      "path": "records/validation/2026-10-21-station-http.json",
+      "sha256": "6b741ccaeb3fbf86daebc44b1667273ac02b77b059169d02f008ae2ea420f291"
+    },
+    {
+      "path": "records/validation/2026-10-21-station-v2-http.json",
+      "sha256": "4cdf6ad6a42f39b175b0604bd4d915bdf41a2102908bc9eea55e3de1aa2dd3e9"
+    },
+    {
+      "path": "records/validation/2026-10-21-geometry-readiness.json",
+      "sha256": "1835b0b6a41c511bad3fddd292ada1ae2403f70a6910909ad95b6c4f2ba64151"
+    },
+    {
+      "path": "records/geometry/2026-10-21-readiness/mapping.json",
+      "sha256": "4b80f7f376649e995a6352ab911ad243b6fe2593c3f61cdb5c6230469747ef15"
+    },
+    {
+      "path": "records/review/2026-10-20-fabric-source-attribute-audit.json",
+      "sha256": "398b0eaba6c35e9eb54698be1217aa13c78f6485eadf977e7f4a7bc1d44bfe2b"
+    },
+    {
+      "path": "records/review/2026-10-21-fabric-source-search.json",
+      "sha256": "3bd92799cd34a0e03830bace607a70a3add0fdec2095fce8a93af5ddfb1857b1"
+    },
+    {
+      "path": "records/validation/2026-10-22-tests.log",
+      "sha256": "2a8bf003ce6fd85117053174d0b78a76f7421c293768f2695cd37e1ea6884653"
+    },
+    {
+      "path": "records/validation/2026-10-21-wsl-tests.log",
+      "sha256": "79c0fe8db9968bad5d817c1c4043659b8beaaf56df93b04fcc50d2094dfd030e"
+    },
+    {
+      "path": "tools/validate_records.py",
+      "sha256": "571b42518d99ce40f53ed636567854cc122fbb255a4c29b99d5f50ca1ba8d058"
+    },
+    {
+      "path": "tools/station_package.py",
+      "sha256": "3ce5e6cc95e58736068ce32dc3acea3574fa4bb1bbd0e3a3dcd4c22afddd5b61"
+    },
+    {
+      "path": "tools/check_station_http.py",
+      "sha256": "2b4c4eed504c055f037dbd079690258f81ffd26a945fe34861bef21d7e6bdace"
+    },
+    {
+      "path": "tools/evaluate_worn_geometry.py",
+      "sha256": "8591af3978b8a9f45f31739fe2811c1fb270f62a9f954998de3e815bf91ec1cb"
+    },
+    {
+      "path": "tools/training/train_presence_finetune.py",
+      "sha256": "f9dfc44506d0656b7cafbee91d7a7cdbbd4ef81e99c28f76d2329f8de0d222e8"
+    },
+    {
+      "path": "tools/training/train_category_presence.py",
+      "sha256": "5802bbf758fb86aafca3aec55702a748e7d4f13905c03cdbfa36afd74a89ebd9"
+    },
+    {
+      "path": "records/acquisitions/2026-10-21-fabric-source-research/acquire_metadata.py",
+      "sha256": "89e2c249b787e0976a0658b7c14c37f260824fc5ec125f431f0b4e632253cf08"
+    },
+    {
+      "path": "records/acquisitions/2026-10-21-fabric-source-research/acquisition.json",
+      "sha256": "c1d9d91690fbd6f8d0e765e61bf41ae21a3e09da298bfe8c0f0fe9d13aa163d7"
+    },
+    {
+      "path": "records/acquisitions/2026-10-21-fabric-source-research/analyze_metadata.py",
+      "sha256": "7b104f6aa3a48314415119873f01cc8eb78ba08edb467167365d98f1481be5dd"
+    },
+    {
+      "path": "records/acquisitions/2026-10-21-fabric-source-research/execution.json",
+      "sha256": "1f6fb2377a174312efd5cf3c13dc50f33c2f62854374c2b2218e49b83646a483"
+    },
+    {
+      "path": "records/acquisitions/2026-10-21-fabric-source-research/fashiongen-homepage.html",
+      "sha256": "a24456cd92f1c058eb9e813000af140d6b963f04e57cfe0611a92eb2d325b0ed"
+    },
+    {
+      "path": "records/acquisitions/2026-10-21-fabric-source-research/fashiongen-paper.html",
+      "sha256": "38e0c6335648dc6b7b75ce120698b365819dd3ee66807228e6dc7734341c2e16"
+    },
+    {
+      "path": "records/acquisitions/2026-10-21-fabric-source-research/imaterialist2018-commit.json",
+      "sha256": "659e471c092828d936942665c79b02f8eacdd2307b6f6c218d83eb7968f77d53"
+    },
+    {
+      "path": "records/acquisitions/2026-10-21-fabric-source-research/imaterialist2018-label-map.csv",
+      "sha256": "75892e7708bb464be14a35fb141a0d0c8ef9b69d0b8d1127bedff0d35a8ae678"
+    },
+    {
+      "path": "records/acquisitions/2026-10-21-fabric-source-research/imaterialist2018-README.md",
+      "sha256": "5b47db9e1cc13f1f80026c6b2c4b5d7d099466674f4d6231b1d5a64b6569cc13"
+    },
+    {
+      "path": "records/acquisitions/2026-10-21-fabric-source-research/imaterialist2018-repo.json",
+      "sha256": "0ad39ffc03f379e3de712ad358a0532fb5ad4232e5d96cdc89535401e81d7657"
+    },
+    {
+      "path": "records/acquisitions/2026-10-21-fabric-source-research/imaterialist2020-commit.json",
+      "sha256": "268566096c6e117f61440dd2f6591b136ed8f0986f67cfaf2431862d4fc510c9"
+    },
+    {
+      "path": "records/acquisitions/2026-10-21-fabric-source-research/imaterialist2020-LICENSE.txt",
+      "sha256": "62dfb52303aaf78bd3cfd9ca829236766191b85e90c813c92cc1adcebb4f35a7"
+    },
+    {
+      "path": "records/acquisitions/2026-10-21-fabric-source-research/imaterialist2020-README.md",
+      "sha256": "e7800e00c56fa36b18493fe4163e7a68784340bb0fd1d6d0292435b7c6781b4e"
+    },
+    {
+      "path": "records/acquisitions/2026-10-21-fabric-source-research/imaterialist2020-repo.json",
+      "sha256": "d1a8b8c5ebb0bcc57b27d16776ca728003becade9e78d06b0f22c870cd2bd168"
+    },
+    {
+      "path": "records/acquisitions/2026-10-21-fabric-source-research/textilenet-commit.json",
+      "sha256": "561b811af800b1fe6d8a9024f324144f1704a27f16f47b97d5273f1b6d4e7120"
+    },
+    {
+      "path": "records/acquisitions/2026-10-21-fabric-source-research/textilenet-LICENSE.txt",
+      "sha256": "fc3169d9179c2995cf9b5f07e06f79235b1e2c969e9f0702bd3baf42d3db1e97"
+    },
+    {
+      "path": "records/acquisitions/2026-10-21-fabric-source-research/textilenet-paper.html",
+      "sha256": "1f97138e2b09affe50d654f7df5747c931d757ae4f8c320766e9d76c3657d9db"
+    },
+    {
+      "path": "records/acquisitions/2026-10-21-fabric-source-research/textilenet-README.md",
+      "sha256": "98f9eee8e0c743220740120442588b0697e3462fe517eb64dbcf19e1ce0b544a"
+    },
+    {
+      "path": "records/acquisitions/2026-10-21-fabric-source-research/textilenet-repo.json",
+      "sha256": "d628dc3f268cfd5b518dffec031ff9c10331887cee4cbfe0bc630ecc9389c620"
+    },
+    {
+      "path": "CHANGELOG.md",
+      "sha256": "d84fe7b45bce6bd1cb0d38a5f3e801926f17274eced6e1072643e9378b561789"
+    },
+    {
+      "path": "docs/REQUIREMENTS.md",
+      "sha256": "7aca963ae180c5cef6b7744166ab8f45bfaf85bd16b79da486abedcf24ad6d7f"
+    },
+    {
+      "path": "docs/DECISIONS.md",
+      "sha256": "836f7aa978218c919e4d926981e9a7bedbf7671cdf34de0f66c41ac00d65ad46"
+    },
+    {
+      "path": "docs/ARCHITECTURE.md",
+      "sha256": "f999eccce59fb7910582c4178dc51d26bf513f9445562bfa35e1fb55670ad8dd"
+    },
+    {
+      "path": "docs/DATASETS.md",
+      "sha256": "329cbaf1cc44693438d1c117d68f44acb15584dc320c46a1879231517d12d9f7"
+    },
+    {
+      "path": "docs/CAMERA_UI.md",
+      "sha256": "e723185b45a8b04eb8b82a9a165beb88875f637c883ced9456417a72d87bb1c0"
+    },
+    {
+      "path": "docs/PROJECT_PROGRESS.md",
+      "sha256": "fed57edcf9062e72d352e850ff301d6ba42ceb3903675e1609cc7062a7f48afe"
+    },
+    {
+      "path": "docs/FABRIC_NEXT_GATE.md",
+      "sha256": "294b658d8b806739ecb0ed6b824206ff6408966148d38e8ced0b88456101385c"
+    },
+    {
+      "path": "docs/CAMERA_SOURCE_UPDATE_OCT22.md",
+      "sha256": "b522bde9e2924250f69720e17d4594da41d8cf58a48a05edd633e2af615a0568"
+    },
+    {
+      "path": "docs/FABRIC_SOURCE_GATE_OCT22.md",
+      "sha256": "7e49463dc896c89bd758bcedbad73b0f4bca1e6a0584a069739e6a41f86c2422"
+    },
+    {
+      "path": "records/review/2026-10-22-imaterialist2018-terms.json",
+      "sha256": "df73ecfca07eda774bf2f75e7f7cd772c0ba4ba6d2c0980b1a5ea5ad71004595"
+    },
+    {
+      "path": "records/review/2026-10-22-textilenet-gate-agent.json",
+      "sha256": "d844e6adff0907f6ba9cedf19bb67f23da3b3d2c1c9a2a0bb115fb8cc8a64d35"
+    },
+    {
+      "path": "data/external/fabric_expansion/metadata/fabric_train.json",
+      "sha256": "46ebd83abc7bfbd319c4677a5fcd5693db6fed09a52859c95a5d3505fa94b73f"
+    },
+    {
+      "path": "tools/datasets/audit_textilenet_metadata.py",
+      "sha256": "d027ceb0f2f65ee4f4a7744dcef36b7b0d68593492e577735e576af03c2a1bd5"
+    },
+    {
+      "path": "tests/test_textilenet_metadata.py",
+      "sha256": "dedf6fcfc23891e03e3109bc94a5ecfe0f42f546a32c7d5e0a4e3c2549d9c001"
+    },
+    {
+      "path": "tests/test_station_package.py",
+      "sha256": "bb033aff39ea9ebf24891e9232654e6570cbcd4ecad4eb85d2ef63bde1bd7c42"
+    },
+    {
+      "path": "tests/camera_ui_lifecycle.cjs",
+      "sha256": "7259bb796ac768015a994e9defc7f8c31a0732d8f41eb9edeab98b019a8dcf78"
+    },
+    {
+      "path": "app/static/index.html",
+      "sha256": "d8fc25f12072c82ecd2d4a64889522fd6c867d65c3167504d034bf73e58cd964"
+    },
+    {
+      "path": "artifacts/releases/skirt-finetune-v1-desktop-research-v8/inventory.json",
+      "sha256": "97bbfdfe2405528f6ea42eaa2f66ade161a83537feb9a85f1ef41d174cfe822f"
+    },
+    {
+      "path": "artifacts/stations/skirt-research-station-v3/station-inventory.json",
+      "sha256": "ec865f2c45a635f7e3abb9fe8bd17dbf0c5b389d47ae110182cf37bee90390f8"
+    },
+    {
+      "path": "artifacts/stations/skirt-research-station-v3/station.json",
+      "sha256": "953d17494b579c751ba046c5e6c48e73975ea9b5d82b7e2f419bca35da833b22"
+    },
+    {
+      "path": "records/validation/2026-10-22-station-v3-http.json",
+      "sha256": "19e4f8266802cc39841fbaf4532d881527427b0ac1ff85435ca2bfb4c5feab79"
+    },
+    {
+      "path": "records/validation/2026-10-22-station-v3-http.execution.json",
+      "sha256": "a926c6ff42bef428d47c26d70072978b379fe04e7e0e53af6f28827e6b3408f0"
+    },
+    {
+      "path": "records/validation/2026-10-22-station-v3-http.server.log",
+      "sha256": "e6544b21e3cb047bf8c5a14909f950c8811f7279e4661603872f1c101cdf4794"
+    },
+    {
+      "path": "records/validation/2026-10-22-camera-source-check.py",
+      "sha256": "b34e43b08d540340c34fc18b0c484253a427ad507bd36f9bd25b6bb8710f8994"
+    },
+    {
+      "path": "records/validation/2026-10-22-camera-source-check.json",
+      "sha256": "b9918ee1c6a207a9639d9d22354b33ce267e7fa483ebbce50529ff7573ef7d71"
+    },
+    {
+      "path": "records/validation/2026-10-22-camera-source-check-0.log",
+      "sha256": "772d7762a643e93ea8d56a6f4014404d3b9f770839dd431e69db5e53c1e6273e"
+    },
+    {
+      "path": "records/validation/2026-10-22-camera-source-check-1.log",
+      "sha256": "3265889d71767a9dabc70f2d2b2b08473cf6487f6e9dda29a0942ff696dae6ae"
+    },
+    {
+      "path": "records/validation/2026-10-22-camera-source-finalize.py",
+      "sha256": "571e396962923ad8034ee7195aef640fd9c12931e0511e6aa5c6a7aa97fc4f2c"
+    },
+    {
+      "path": "docs/REFERENCE_UI_OCT22.md",
+      "sha256": "6ad586da0e4a48023e88ba36cdf18e941401823c8194b1e8e8f4f22244c2e230"
+    },
+    {
+      "path": "records/validation/2026-10-22-reference-ui.json",
+      "sha256": "29aeb793d365ca919a6f859d96196b4c506598eb2693edfa2726e883d13ee71a"
+    },
+    {
+      "path": "records/validation/2026-10-22-reference-ui-finalize.py",
+      "sha256": "e81798483f8b35c3d2a9af50ef2029afd3449993bd79cce8cc4b5c9ddbc7c25b"
+    },
+    {
+      "path": "records/validation/2026-10-22-reference-ui/node.log",
+      "sha256": "90249dc40d7d3f843fc7d7a761372af7120fe2e121c409fd7622135078d05b89"
+    },
+    {
+      "path": "records/validation/2026-10-22-station-v5-http.json",
+      "sha256": "190f070a8627584b8479005f5f81b21a6c5d52d25755387f3145dde54135d902"
+    },
+    {
+      "path": "records/validation/2026-10-22-station-v5-http.execution.json",
+      "sha256": "b50bb7562cb0beca4e4b035c5320c4dc50831a0d6c73c9ccfac6f7c28aed82c1"
+    },
+    {
+      "path": "records/validation/2026-10-22-station-v5-http.server.log",
+      "sha256": "8e4929f5744b755fbde4601f95d14d91255232df4ffc10828baad420ac6acef9"
+    },
+    {
+      "path": "artifacts/releases/skirt-finetune-v1-desktop-research-v9/inventory.json",
+      "sha256": "9d9b3497b30d3b3f837633c3a9cffa43cffeb60ca852ad2c36bd4c90acbb11f5"
+    },
+    {
+      "path": "artifacts/releases/skirt-finetune-v1-desktop-research-v10/inventory.json",
+      "sha256": "64c91a57f24894b8d5cc406e5629b6359982a28b644755d272437e3f4e0dff7c"
+    },
+    {
+      "path": "records/validation/2026-10-22-reference-ui/user-reference.jpg",
+      "sha256": "483c1e59445a8b6941cd27adb0506ce7147202af2792cc2fec590af55d4f16df"
+    },
+    {
+      "path": "records/validation/2026-10-22-reference-ui/desktop.png",
+      "sha256": "2ef3ffcce88dd1a46f73ff8148a2ecb3186dd1e34a1ce372ad191cceae9c6cc7"
+    },
+    {
+      "path": "records/validation/2026-10-22-reference-ui/mobile.png",
+      "sha256": "d0896494652ea98501eb03204b95c6d14d4e661c177849832bf6b7a6c998abb6"
+    },
+    {
+      "path": "records/validation/2026-10-22-reference-ui/fabric-off-held.png",
+      "sha256": "cf0acafb3a56668d40d0869880d7e0042ae7ae4bc6314f04b7b008b6b0c894d8"
+    },
+    {
+      "path": "artifacts/stations/skirt-research-station-v4/station-inventory.json",
+      "sha256": "1935e3414adfb2fadd7e925255ac99c231436701e936020645a614c1c2543add"
+    },
+    {
+      "path": "artifacts/stations/skirt-research-station-v4/station.json",
+      "sha256": "953d17494b579c751ba046c5e6c48e73975ea9b5d82b7e2f419bca35da833b22"
+    },
+    {
+      "path": "artifacts/stations/skirt-research-station-v5/station-inventory.json",
+      "sha256": "4d7b14594fd7c85cc7a4e62bb008beb7c18019378bcce10d0e680495f98b0a7d"
+    },
+    {
+      "path": "artifacts/stations/skirt-research-station-v5/station.json",
+      "sha256": "953d17494b579c751ba046c5e6c48e73975ea9b5d82b7e2f419bca35da833b22"
+    },
+    {
+      "path": "docs/UI_MOTION_OCT22.md",
+      "sha256": "86cb84f912066170a0a344cda26afc40458318f9a445b32737cb460a4f04b0ef"
+    },
+    {
+      "path": "records/validation/2026-10-22-ui-motion.json",
+      "sha256": "03f9574805833b2060207bdd70bad02457da3ede253e835106cd27ecbb93b8c4"
+    },
+    {
+      "path": "records/validation/2026-10-22-ui-motion-finalize.py",
+      "sha256": "0e570e98c3a0a76bf5a86fcf355a094c646e3b969f3ecba1a5f809c386a7c40b"
+    },
+    {
+      "path": "records/validation/2026-10-22-ui-motion/node.log",
+      "sha256": "fd56675530d02d344fa1ffa5da673fa49dad297c57c13589604bee907a5714b0"
+    },
+    {
+      "path": "records/validation/2026-10-22-ui-motion/preview.png",
+      "sha256": "8bec7fe623b42eecc72819e4008b4848896aaf04da72ede6f60ed79f1ee141a4"
+    },
+    {
+      "path": "artifacts/stations/skirt-research-station-v6/station-inventory.json",
+      "sha256": "2089658f98e34db6d68d29f33f0b51a08cb3a6c8ad625e786aab497b4f0191da"
+    },
+    {
+      "path": "artifacts/stations/skirt-research-station-v6/station.json",
+      "sha256": "953d17494b579c751ba046c5e6c48e73975ea9b5d82b7e2f419bca35da833b22"
+    },
+    {
+      "path": "artifacts/releases/skirt-finetune-v1-desktop-research-v11/inventory.json",
+      "sha256": "9b1612a8ab751e761acb91667d6938a11fe0290928590ae59062cdbc3175d4c5"
+    },
+    {
+      "path": "docs/DETECTION_UNCERTAINTY_OCT23.md",
+      "sha256": "589e82c2453807560c38e7d2919021c5ea4c5f3e946cc77dc896f04aa0bee8c8"
+    },
+    {
+      "path": "docs/FABRIC_EVIDENCE_REVIEW.md",
+      "sha256": "6af7cb0edaa894aeb4eaf1560bebd633e421de5bd02859fcb16679ed3e2e45e5"
+    },
+    {
+      "path": "docs/HARDWARE.md",
+      "sha256": "631da7e0315e716c7221d47ba5510666540f17b0b42718ca9ee94ff6b14dfa65"
+    },
+    {
+      "path": "docs/PURCHASE_REVIEW_NOV04.md",
+      "sha256": "88e9249f10352bfd175459c54ca5ea4a7d409f93941aafce88ec1e2c7555e07c"
+    },
+    {
+      "path": "docs/RASPBERRY_PI_DEPLOYMENT.md",
+      "sha256": "4e9c10dfb17cd6a3c9e04957d9c3b0cbfe72b71a9a9ceadef206a61bf9f31f1f"
+    },
+    {
+      "path": "records/acquisitions/2026-10-23-coco-backgrounds/acquisition.json",
+      "sha256": "2ad2927e293f2e0df7bf70833f045dcf97ae86f79ee6d58b72954773e52e28d9"
+    },
+    {
+      "path": "records/acquisitions/2026-10-23-coco-backgrounds/retry-official-gcp/acquisition.json",
+      "sha256": "6ff4fd28143a37171dca2afc451f7b2261f5173b7ea0c308c41aba05a9ccba5d"
+    },
+    {
+      "path": "records/review/2026-10-23-fabric-evidence-review/events.jsonl",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "records/review/2026-10-23-fabric-evidence-review/execution.json",
+      "sha256": "183b5d5b3b2492d736ee6a74f5b9fd49388ace15ca00f11ef6d2ee6de31a1397"
+    },
+    {
+      "path": "records/review/2026-10-23-fabric-evidence-review/verification-final.json",
+      "sha256": "82833bacc71ade77b72ca3877d92e02c669910e09dd69a8eff03ad2aa9621a02"
+    },
+    {
+      "path": "records/validation/2026-10-23-detection-uncertainty.json",
+      "sha256": "47ce44f87e4cbbad9734e22df675c7fe8511f03034c5690dd36870e93482a921"
+    },
+    {
+      "path": "records/validation/2026-11-04-project-review/finalize.py",
+      "sha256": "49035687b0de67f874242eaea3bcec48c2af74ef5a629ac83e3dccee05fdf096"
+    },
+    {
+      "path": "records/validation/2026-11-04-project-review/focused-tests.log",
+      "sha256": "a06540d079e8a5fb55978ac7c375431838eeb823c0351460b30b41e6d53d21cb"
+    },
+    {
+      "path": "records/validation/2026-11-04-project-review/initial-checkpoint-audit.json",
+      "sha256": "4277eefaba2cc46fe3478904d90e9283ad1b1a5394835f32b58e94603f166b83"
+    },
+    {
+      "path": "records/validation/2026-11-04-project-review/process-check.json",
+      "sha256": "e281fcc320b4a62434cb5768a0ba1bcc959f6e719947350b04df437533cd87cd"
+    },
+    {
+      "path": "records/validation/2026-11-04-project-review/review.json",
+      "sha256": "9a430df36169c78f4c77508567c668a15bdd957f88db3b519063ca687db2f7e4"
+    },
+    {
+      "path": "records/validation/2026-11-04-project-review/station-verification.json",
+      "sha256": "af60d4ffcb61ddd80422aefb1fad28867a6ff7014dd5c74a4ff9290ca42099e2"
+    },
+    {
+      "path": "tests/test_coco_background_intake.py",
+      "sha256": "25919299f7f7b338ee604263f6cdfdac941e53ed14d5547937d82e5b64055b04"
+    },
+    {
+      "path": "tests/test_detection_uncertainty.py",
+      "sha256": "3f0ee6519dd878fc969993efa79ff867b041749447a8dd2701faeebe897c6c9f"
+    },
+    {
+      "path": "tests/test_fabric_evidence_review.py",
+      "sha256": "cc6d1615bd36f7b27675322b783b0f12d9d51888613930bd5319d60434c63757"
+    },
+    {
+      "path": "tools/datasets/acquire_coco_backgrounds.py",
+      "sha256": "6def626878edf7d57f7843e245e59966079bd4ec8e9a63b37a9abeaf6fe3f91e"
+    },
+    {
+      "path": "tools/datasets/fabric_evidence_review.py",
+      "sha256": "e9f0faec9272af02e98388b340b224e17b5e7f1c525ba8b94284a1d2530704fe"
+    },
+    {
+      "path": "tools/report_detection_uncertainty.py",
+      "sha256": "3a293a877f8919c286e402d5fd872ec36dea4cd97ee33ab6c05b52073cf98f26"
+    },
+    {
+      "path": "artifacts/releases/skirt-finetune-v1-desktop-research-v12/inventory.json",
+      "sha256": "63c781ee2a78c9895f398c3ba8108a43343ae8bede8ebff373e59e6e9897a2a8"
+    },
+    {
+      "path": "artifacts/stations/skirt-research-station-v7/station-inventory.json",
+      "sha256": "9b587319932f8ad0d4d85383cfd73b6783d9e9b37c1e52fb1b35e0f2948280d6"
+    },
+    {
+      "path": "artifacts/stations/skirt-research-station-v7/station.json",
+      "sha256": "953d17494b579c751ba046c5e6c48e73975ea9b5d82b7e2f419bca35da833b22"
+    },
+    {
+      "path": "docs/LCD_14447_LAYOUT.md",
+      "sha256": "a967cd16aac673f1d327b2ced279fb9ed379d07370d0f36063f997bca0e491ba"
+    },
+    {
+      "path": "records/validation/2026-11-04-lcd-layout/preview-800x480.png",
+      "sha256": "76a49ce12f8777b706df9dae984c2b8ac7c51d5c5e0ea06913fdd9402b930798"
+    },
+    {
+      "path": "records/validation/2026-11-04-lcd-layout/review.json",
+      "sha256": "a74aced7da97906af218066db720c3ebfcba9f11dc4a71968819c565249e6f6f"
+    },
+    {
+      "path": "records/validation/2026-11-04-lcd-station-http.json",
+      "sha256": "a428dc3169c460b68e56660ca5bac702c4ddcbfe360763da1b72236b8b0cf3ce"
+    },
+    {
+      "path": "artifacts/releases/skirt-finetune-v1-desktop-research-v13/inventory.json",
+      "sha256": "a5ccb1b0e5ecb0953249c67c6c977d791d81fd098ccbee39fc1c65e1ec9a99d0"
+    },
+    {
+      "path": "artifacts/stations/skirt-research-station-v8/station-inventory.json",
+      "sha256": "68215a3b974f2dc3034e59974acea7c29436c1efaa56cf3e14b3a43ac479f34d"
+    },
+    {
+      "path": "artifacts/stations/skirt-research-station-v8/station.json",
+      "sha256": "953d17494b579c751ba046c5e6c48e73975ea9b5d82b7e2f419bca35da833b22"
+    },
+    {
+      "path": "docs/CAMERA_MODE_NOV04.md",
+      "sha256": "29d1a62b170daeebd4982445e38571b5dbdd7244caa6ffcd1068cf111efe77e7"
+    },
+    {
+      "path": "records/validation/2026-11-04-capture-mode-http.execution.json",
+      "sha256": "c4223c63868f541d901aee0f90b99aeedb9fce4d0666e9ff580fc6a38c365bcc"
+    },
+    {
+      "path": "records/validation/2026-11-04-capture-mode-http.json",
+      "sha256": "896832b7e6289d258b8333475b27e06389b05bc9f0a098c4446a3ce8d877cd80"
+    },
+    {
+      "path": "records/validation/2026-11-04-capture-mode/node.log",
+      "sha256": "6d26d09344a971db654ebc1261ef1f9eb955c9e5426b900f356976ccbd9efb61"
+    },
+    {
+      "path": "records/validation/2026-11-04-capture-mode/review.json",
+      "sha256": "22742a61847e6d0ef229bd796ee7ce76c6687927d7bde48480002574a9f27bd1"
+    },
+    {
+      "path": "docs/EVALUATION.md",
+      "sha256": "da2959811ddd8738b2d3f9510241d4c2f0c1fd195b7eeba6fe3a323e1d2417d4"
+    },
+    {
+      "path": "docs/IMAGE_ROBUSTNESS_NOV04.md",
+      "sha256": "eed1893d590384e2a576a5fc5c7726ec576939bbf1a61368f9acba98fad29af5"
+    },
+    {
+      "path": "docs/THESIS_FIGURES.md",
+      "sha256": "d786dce133054a50c2f5da50791c9f4d5f04a2b3f40624dd0290f19b118f5cfd"
+    },
+    {
+      "path": "docs/TRAINING_PLAN.md",
+      "sha256": "24352ccb75399d9af35ce74c119fffb04fd7cfd533b88c2b99de83b3e43d3e2c"
+    },
+    {
+      "path": "output/thesis_figures/01_system_architecture.pdf",
+      "sha256": "48c53804975d02f993d1fbc27ac7d67eb8c729ac61f14f2d8413a1adbe931bd7"
+    },
+    {
+      "path": "output/thesis_figures/01_system_architecture.png",
+      "sha256": "5be478cb2381cd57b90b2fb0389d3ffba484e8bb2326b46e19b8953353cd7df8"
+    },
+    {
+      "path": "output/thesis_figures/02_detection_results.pdf",
+      "sha256": "bef80ac1f0a0e816f8d08bffae25e8cbbc65f53170f3f960dcd8783e52f9f52d"
+    },
+    {
+      "path": "output/thesis_figures/02_detection_results.png",
+      "sha256": "fb735a9a30d63137aa4e566d8b30dc9ff65acacee305e20815e249f829f0b63a"
+    },
+    {
+      "path": "output/thesis_figures/03_pleating_outcomes.pdf",
+      "sha256": "e521dde6b6132c94cfe1d39601e91f4b93e62af3f338af7bcde321644836a665"
+    },
+    {
+      "path": "output/thesis_figures/03_pleating_outcomes.png",
+      "sha256": "0a39f91b287926c205497edb90760121ff9de018e96c25a774c3505de4c2bdc6"
+    },
+    {
+      "path": "output/thesis_figures/04_development_split.pdf",
+      "sha256": "5e5d16b460e76dd570c9758b3f8be58280c0ee1ebd1c796736512c5a60566eb3"
+    },
+    {
+      "path": "output/thesis_figures/04_development_split.png",
+      "sha256": "9d1c01911f800d0231fb05c57fc053e84c664cb88eb36fb10a5f7a7be8570673"
+    },
+    {
+      "path": "output/thesis_figures/05_image_robustness.pdf",
+      "sha256": "67a7407d483a1b0c1b029e12388d69f34d43f4caccc66ae109d84856b4a75996"
+    },
+    {
+      "path": "output/thesis_figures/05_image_robustness.png",
+      "sha256": "ac49bf50109f8a013fd3a556aff98d26419477f5f8e989ee7536c3386422d556"
+    },
+    {
+      "path": "output/thesis_figures/source-data.json",
+      "sha256": "bfce55fcfa0e6e9ffbb35e98db4bac38abdf2d9b9ff0675db72fc4c00af5e916"
+    },
+    {
+      "path": "records/experiments/20261104-image-robustness/completion.json",
+      "sha256": "8f1525db9199915271ad679f91f18a942df7f3b67e987ba8248b1e3460d901f4"
+    },
+    {
+      "path": "records/experiments/20261104-image-robustness/executed_source.py",
+      "sha256": "dd8086055a4bd99d864ac5edd173deb2511f51423572d54ba2c83cc2a4b4e97b"
+    },
+    {
+      "path": "records/experiments/20261104-image-robustness/protocol.json",
+      "sha256": "045b6491ddc4479fb24bc00b36acfd001d2003ea785cc25c8279cf15331682c0"
+    },
+    {
+      "path": "records/experiments/20261104-image-robustness/results.json",
+      "sha256": "633b7636c975e14a74122013dd4b1533dd4555bb8161db352201d8edb97656ca"
+    },
+    {
+      "path": "records/validation/2026-11-04-figures-and-robustness.json",
+      "sha256": "f8d3fc5fcd4098156b4a43dd7b7d20546bc018503ba9c9552d7c73e21a750a56"
+    },
+    {
+      "path": "records/validation/2026-11-04-thesis-figures.json",
+      "sha256": "9a5a8928716f11a23f79050a34bc07b8306a67f5c4df62314b02e1b1c441184c"
+    },
+    {
+      "path": "tests/test_image_robustness.py",
+      "sha256": "c358b41de6b54b79445358fd471a79b84e4b6300a988a3b9a431424058fa6111"
+    },
+    {
+      "path": "tools/create_thesis_figures.py",
+      "sha256": "3de5eb0a3dfb0e45799208bf90395f49c87c5e7295d4dcb46ed4e9c0eef7383b"
+    },
+    {
+      "path": "tools/evaluate_image_robustness.py",
+      "sha256": "dd8086055a4bd99d864ac5edd173deb2511f51423572d54ba2c83cc2a4b4e97b"
+    },
+    {
+      "path": "docs/DATASET_PARTITION_EVIDENCE.md",
+      "sha256": "722da8d02b23e40f9d9c0a11911f7ca48ec4fd7dc5bd1229fcbac9cc44b75216"
+    },
+    {
+      "path": "docs/DATA_PARTITION_AUDIT.md",
+      "sha256": "c93839f679b6e7661741f6592acbdec245d1e133af3ad5c502ec1fd62ddee099"
+    },
+    {
+      "path": "docs/THESIS_DATASET_DIAGRAMS.md",
+      "sha256": "d3247595f4400133879cb7eb82377bd48793894656674ad6c971edd44e74133f"
+    },
+    {
+      "path": "output/thesis_dataset_diagrams/06_training_validation_test.pdf",
+      "sha256": "e7d42933b599f83009cceca6659285649b5937ed3ba0576f414c8da04b5ea018"
+    },
+    {
+      "path": "output/thesis_dataset_diagrams/06_training_validation_test.png",
+      "sha256": "40e35b92a6cee98fef6c3835c24ef49c4eec12d7bd731a5a526df1d510781829"
+    },
+    {
+      "path": "output/thesis_dataset_diagrams/07_datasets_by_model.pdf",
+      "sha256": "9232a9339e90e6a2591fe8da8db7abd4aa5a8fade74fb4fc767a91124c285b11"
+    },
+    {
+      "path": "output/thesis_dataset_diagrams/07_datasets_by_model.png",
+      "sha256": "a45c60f78836a84011b4e8f861c58d64a2d29e0276354fd73da6721b59abf77d"
+    },
+    {
+      "path": "output/thesis_dataset_diagrams/08_planned_train_validation_test_workflow.pdf",
+      "sha256": "6caa8dced16795064b73bd5a90c82f75a6141e9859a927cccb2bd1df6970f6ce"
+    },
+    {
+      "path": "output/thesis_dataset_diagrams/08_planned_train_validation_test_workflow.png",
+      "sha256": "e218d8339de52ac8c6ea2b98624e49820e858db9f2ca23914474d6db606117d5"
+    },
+    {
+      "path": "output/thesis_dataset_diagrams/09_grouping_prevents_data_leakage.pdf",
+      "sha256": "6d59f369fa18883db7fd004ab0d02a4317e454ea569212422f4973e0204f0c4c"
+    },
+    {
+      "path": "output/thesis_dataset_diagrams/09_grouping_prevents_data_leakage.png",
+      "sha256": "a536199b874ad11e5295a0fe924736925ed5e1123f4456b4f6478d28b93e0467"
+    },
+    {
+      "path": "output/thesis_dataset_diagrams/Training_Validation_Test_Diagrams.pdf",
+      "sha256": "65e4af0015ac017c5057860725afe1b78e03de0d1f17e2468950ade900565b8f"
+    },
+    {
+      "path": "output/thesis_dataset_diagrams/source-data.json",
+      "sha256": "feab9c111785f327645a15350825be30ebb8f6ed7997fe60f436ea7730f7bb64"
+    },
+    {
+      "path": "records/validation/2026-11-04-dataset-diagrams-initial-integrity.json",
+      "sha256": "bce4901d912c57916a45569aff4a5981ee16828dec9140d84cec1455ac9c42b1"
+    },
+    {
+      "path": "records/validation/2026-11-04-dataset-diagrams/category-partitions.json",
+      "sha256": "277c6974aadace74df18668bc9efc652a0545ef83c7121d48ac791d64d413fc0"
+    },
+    {
+      "path": "records/validation/2026-11-04-dataset-diagrams/category.log",
+      "sha256": "277c6974aadace74df18668bc9efc652a0545ef83c7121d48ac791d64d413fc0"
+    },
+    {
+      "path": "records/validation/2026-11-04-dataset-diagrams/fabric-partitions.json",
+      "sha256": "9a49e28330a75bed8850e035fe03ee761088281b0b605d277d2f65c0f32e4a0d"
+    },
+    {
+      "path": "records/validation/2026-11-04-dataset-diagrams/fabric.log",
+      "sha256": "9a49e28330a75bed8850e035fe03ee761088281b0b605d277d2f65c0f32e4a0d"
+    },
+    {
+      "path": "records/validation/2026-11-04-dataset-diagrams/finalize.py",
+      "sha256": "f2af08b3caa5166551de9326b2a11ecca7fc762ebc4ff349a95ed0476219735c"
+    },
+    {
+      "path": "records/validation/2026-11-04-dataset-diagrams/localizer-partitions.json",
+      "sha256": "23ff5659842fb6e3b78f27a685dcf87450e0fc8ec2a46cb5592ccad4fa6a53b1"
+    },
+    {
+      "path": "records/validation/2026-11-04-dataset-diagrams/localizer.log",
+      "sha256": "23ff5659842fb6e3b78f27a685dcf87450e0fc8ec2a46cb5592ccad4fa6a53b1"
+    },
+    {
+      "path": "records/validation/2026-11-04-dataset-diagrams/partition-tests.log",
+      "sha256": "d011ed02caaac98855c1edf57eb9ee9394e42110d87103685503e4a99c2a5fa2"
+    },
+    {
+      "path": "records/validation/2026-11-04-dataset-diagrams/pleating-partitions.json",
+      "sha256": "d04d7a9fcdbf672819b6654eaf7a3fd1da72856f060a221395ba67b40f5f12e6"
+    },
+    {
+      "path": "records/validation/2026-11-04-dataset-diagrams/pleating.log",
+      "sha256": "d04d7a9fcdbf672819b6654eaf7a3fd1da72856f060a221395ba67b40f5f12e6"
+    },
+    {
+      "path": "records/validation/2026-11-04-dataset-diagrams/review.json",
+      "sha256": "356c09301f0eeb67694154543409bbc27ddca7ed8ae30d3073555ee476d99f6c"
+    },
+    {
+      "path": "records/validation/2026-11-04-dataset-diagrams/verification.json",
+      "sha256": "c7b3e5c978bae35a41825af360dd51ecfc361e447eadc0a5508916cfa580d09d"
+    },
+    {
+      "path": "records/validation/2026-11-04-dataset-diagrams/verify.py",
+      "sha256": "1afc15398b200f61386fc9b22e9c75b1eb48e5496b7d78fcff0f23efe7d19dbd"
+    },
+    {
+      "path": "records/validation/2026-11-04-dataset-diagrams/worn-partitions.json",
+      "sha256": "c008322f954aba29cbbdeb6a45bc3ecf582f1b1abe0e2ad747af0fc0447596cb"
+    },
+    {
+      "path": "records/validation/2026-11-04-dataset-diagrams/worn.log",
+      "sha256": "c008322f954aba29cbbdeb6a45bc3ecf582f1b1abe0e2ad747af0fc0447596cb"
+    },
+    {
+      "path": "records/validation/2026-11-04-dataset-partitions-audit.json",
+      "sha256": "f1cd02cee2dab22070531d62e8401c74e9a0108003c296486759d8cf546e1833"
+    },
+    {
+      "path": "tests/test_dataset_partitions.py",
+      "sha256": "bf0877c3f0bc48ce7bb02ba9b8e65fdfd1cb04c7f9552161af02e9de38f25789"
+    },
+    {
+      "path": "tools/audit_dataset_partitions.py",
+      "sha256": "dcaa300b68818deb5ec04b5cb888ea0d2d2a7886f37b869ddfd575c0c221da4e"
+    },
+    {
+      "path": "tools/create_dataset_diagrams.py",
+      "sha256": "e01fa03ea421de97afb22b9f4ba8f4eb1a7101b1e2e3d2d9a03b679e013a7314"
+    },
+    {
+      "path": "docs/PROGRESS_SCREENSHOTS_NOV11.md",
+      "sha256": "ffba0c6244c8eb96da3cae1bc5f5840483e3294790ccd9a85e7a27b571739895"
+    },
+    {
+      "path": "output/SkirtFabricSense_Progress_Screenshots_2026-11-11.zip",
+      "sha256": "2ef04b28b3766ed9e4a846dc77fb61acb5f6fb44d2b000a86e0bc40b51732fc3"
+    },
+    {
+      "path": "output/progress_report_2026-11-11/01_current_camera_ui_desktop.png",
+      "sha256": "d9e2393d6633f786f0c147c7fcd62776acebd4b5e4fa42d72f4d016eb01eb820"
+    },
+    {
+      "path": "output/progress_report_2026-11-11/02_current_camera_ui_800x480.png",
+      "sha256": "d04f8ac3f7a9c5ff9ddc41aeb2bdcb81a751d6709239f67d7a36e092e0cd9a7e"
+    },
+    {
+      "path": "output/progress_report_2026-11-11/03_code_training.html",
+      "sha256": "d4ec0a4d9aedc23fcf41f53815960db7a371b5f27e31de484c17904e3955ed7e"
+    },
+    {
+      "path": "output/progress_report_2026-11-11/03_code_training.png",
+      "sha256": "fa78753b1c26ca9798d0c37b65bd7bdde5d510eea58277fb2be95922f7c87024"
+    },
+    {
+      "path": "output/progress_report_2026-11-11/04_code_frame_freshness.html",
+      "sha256": "4b181879f82c0fa3b5ec80f5f9a062684dfa867a237e3fff6d4bcec281c0e6b7"
+    },
+    {
+      "path": "output/progress_report_2026-11-11/04_code_frame_freshness.png",
+      "sha256": "6ebc9292cbc6e8d21fdc37154312b9b6c411cb2bec565806d6406ce0b0b0ee12"
+    },
+    {
+      "path": "output/progress_report_2026-11-11/05_code_hemline_rules.html",
+      "sha256": "c06ca175861b3efd7076b914fd6efa1cd3ab9fc0a8868ed9038c8fab23b9f694"
+    },
+    {
+      "path": "output/progress_report_2026-11-11/05_code_hemline_rules.png",
+      "sha256": "66e0150f1736555bebb8268954b0a9e7a5f6b05a27538f17d6693c6fe21aaedb"
+    },
+    {
+      "path": "output/progress_report_2026-11-11/CAPTIONS_AND_PROGRESS.md",
+      "sha256": "e7cb32e1bd28da2fb0c08d9e8d86f084f4024853cff0b90da16fd89f30f13aa0"
+    },
+    {
+      "path": "output/progress_report_2026-11-11/capture-record.json",
+      "sha256": "35563a7e283931ce70125e4fa0f3752e2b087eb6ad2f13b6955e389ae8b44fc3"
+    },
+    {
+      "path": "output/progress_report_2026-11-11/finalize.cjs",
+      "sha256": "75d67d16cdd003afe56aea6a2fb5da663dfbcdbd198edd2bd4957f1d45fabf8a"
+    },
+    {
+      "path": "records/validation/2026-11-11-progress-screenshots-initial.json",
+      "sha256": "b5c29ede5d6766f7c90743be6dce3c513d241283236c0ae0122b60ec44132ac3"
+    },
+    {
+      "path": "records/validation/2026-11-11-progress-screenshots.json",
+      "sha256": "3e3deb40dec06eb49144ee2e253320e419e3983aea1fa9f9e83826b8bbb5e32a"
+    },
+    {
+      "path": "tools/capture_progress_screenshots.cjs",
+      "sha256": "a7402c4eb17cbe972584b3fbc312e3436314d3ed6486793ad8d77567b9055d21"
+    }
+  ],
+  "latest_batch": {
+    "path": "records/validation/2026-11-11-progress-screenshots.json",
+    "sha256": "3e3deb40dec06eb49144ee2e253320e419e3983aea1fa9f9e83826b8bbb5e32a"
+  },
+  "pending_inputs": [
+    "Exact camera/Pi SKUs and purchase/arrival confirmation",
+    "Actual garments and label evidence",
+    "Independent wearer/hem observations and measured calibration",
+    "ARM64 runtime and complete live acceptance"
+  ],
+  "unselected_intermediate": {
+    "directory": "artifacts/stations/skirt-research-station-v4",
+    "inventory": {
+      "path": "artifacts/stations/skirt-research-station-v4/station-inventory.json",
+      "sha256": "1935e3414adfb2fadd7e925255ac99c231436701e936020645a614c1c2543add"
+    },
+    "configuration": {
+      "path": "artifacts/stations/skirt-research-station-v4/station.json",
+      "sha256": "953d17494b579c751ba046c5e6c48e73975ea9b5d82b7e2f419bca35da833b22"
+    },
+    "payload_files": 28,
+    "pi_verified": false,
+    "selection": "unselected_intermediate"
+  },
+  "display": {
+    "selection": "Waveshare 14447",
+    "resolution": "800x480",
+    "touch": "USB resistive",
+    "physical_tested": false
+  },
+  "dataset_diagrams": {
+    "guide": "docs/THESIS_DATASET_DIAGRAMS.md",
+    "new_figures": 4,
+    "final_project_test": "not_collected_or_frozen",
+    "source": {
+      "path": "records/validation/2026-11-04-dataset-partitions-audit.json",
+      "sha256": "f1cd02cee2dab22070531d62e8401c74e9a0108003c296486759d8cf546e1833"
+    }
+  },
+  "record_integrity_issue": {
+    "scope": "Interrupted November4 background intake metadata responses",
+    "invalid_json_files": 21,
+    "evidence": {
+      "path": "records/validation/2026-11-11-progress-screenshots-initial.json",
+      "sha256": "b5c29ede5d6766f7c90743be6dce3c513d241283236c0ae0122b60ec44132ac3"
+    },
+    "status": "requires_recovery_not_modified"
+  },
+  "reviewer_availability": {
+    "confirmed": "2026-11-04",
+    "human_or_groupmate_can_review_saved_images": true,
+    "does_not_establish_completed_reviews": true
+  }
+}

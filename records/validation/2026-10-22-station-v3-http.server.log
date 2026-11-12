@@ -1,0 +1,64 @@
+2026-10-22 13:06:04.059595: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2026-10-22 13:06:04.127806: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F AVX512_VNNI FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2026-10-22 13:06:05.574067: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+/home/skirttrain/skirt-fabric-sense/.venv-training/lib/python3.12/site-packages/tensorflow/lite/python/interpreter.py:457: UserWarning:     Warning: tf.lite.Interpreter is deprecated and is scheduled for deletion in
+    TF 2.20. Please use the LiteRT interpreter from the ai_edge_litert package.
+    See the [migration guide](https://ai.google.dev/edge/litert/migration)
+    for details.
+    
+  warnings.warn(_INTERPRETER_DELETION_WARNING)
+INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+SkirtFabricSense camera workspace: http://127.0.0.1:18824
+127.0.0.1 "GET /api/status HTTP/1.1" 200 -
+127.0.0.1 "GET / HTTP/1.1" 200 -
+127.0.0.1 "POST /api/live HTTP/1.1" 202 -
+127.0.0.1 "GET /api/jobs?id=452d50c7a884443590816e0639855f02 HTTP/1.1" 200 -
+127.0.0.1 "GET /api/jobs?id=452d50c7a884443590816e0639855f02 HTTP/1.1" 200 -
+127.0.0.1 "POST /api/live HTTP/1.1" 202 -
+127.0.0.1 "GET /api/jobs?id=81d0aea37fd549f6bd59beef9e7d1ded HTTP/1.1" 200 -
+127.0.0.1 "GET /api/jobs?id=81d0aea37fd549f6bd59beef9e7d1ded HTTP/1.1" 200 -
+127.0.0.1 "POST /api/live HTTP/1.1" 202 -
+127.0.0.1 "GET /api/jobs?id=6df6c8089f284aa7ad856289538b6264 HTTP/1.1" 200 -
+127.0.0.1 "GET /api/jobs?id=6df6c8089f284aa7ad856289538b6264 HTTP/1.1" 200 -
+127.0.0.1 "POST /api/live HTTP/1.1" 202 -
+127.0.0.1 "GET /api/jobs?id=8afb39daf265431f8869d3b562a69f58 HTTP/1.1" 200 -
+127.0.0.1 "GET /api/jobs?id=8afb39daf265431f8869d3b562a69f58 HTTP/1.1" 200 -
+127.0.0.1 "POST /api/live HTTP/1.1" 202 -
+127.0.0.1 "GET /api/jobs?id=18482ddc2c754ddaa92d5851535775cf HTTP/1.1" 200 -
+127.0.0.1 "GET /api/jobs?id=18482ddc2c754ddaa92d5851535775cf HTTP/1.1" 200 -
+127.0.0.1 "POST /api/live HTTP/1.1" 202 -
+127.0.0.1 "GET /api/jobs?id=fb0196a52a704a4eb18af7bdd1cba7d8 HTTP/1.1" 200 -
+127.0.0.1 "GET /api/jobs?id=fb0196a52a704a4eb18af7bdd1cba7d8 HTTP/1.1" 200 -
+2026-10-22 13:06:07.833064: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2026-10-22 13:06:07.890351: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F AVX512_VNNI FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2026-10-22 13:06:09.251314: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+/home/skirttrain/skirt-fabric-sense/.venv-training/lib/python3.12/site-packages/tensorflow/lite/python/interpreter.py:457: UserWarning:     Warning: tf.lite.Interpreter is deprecated and is scheduled for deletion in
+    TF 2.20. Please use the LiteRT interpreter from the ai_edge_litert package.
+    See the [migration guide](https://ai.google.dev/edge/litert/migration)
+    for details.
+    
+  warnings.warn(_INTERPRETER_DELETION_WARNING)
+INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+SkirtFabricSense camera workspace: http://127.0.0.1:18825
+127.0.0.1 "GET /api/status HTTP/1.1" 200 -
+127.0.0.1 "GET / HTTP/1.1" 200 -
+127.0.0.1 "POST /api/live HTTP/1.1" 202 -
+127.0.0.1 "GET /api/jobs?id=1b80db0f06af47b98729ccac74184926 HTTP/1.1" 200 -
+127.0.0.1 "GET /api/jobs?id=1b80db0f06af47b98729ccac74184926 HTTP/1.1" 200 -
+127.0.0.1 "POST /api/live HTTP/1.1" 202 -
+127.0.0.1 "GET /api/jobs?id=cd67a25381ad4247bbb298d1b8a26ea5 HTTP/1.1" 200 -
+127.0.0.1 "GET /api/jobs?id=cd67a25381ad4247bbb298d1b8a26ea5 HTTP/1.1" 200 -
+127.0.0.1 "POST /api/live HTTP/1.1" 202 -
+127.0.0.1 "GET /api/jobs?id=4722181c083a4f2985596c470ba13a69 HTTP/1.1" 200 -
+127.0.0.1 "GET /api/jobs?id=4722181c083a4f2985596c470ba13a69 HTTP/1.1" 200 -
+127.0.0.1 "POST /api/live HTTP/1.1" 202 -
+127.0.0.1 "GET /api/jobs?id=3baa11fdc389451ea46ef45f5771cac4 HTTP/1.1" 200 -
+127.0.0.1 "GET /api/jobs?id=3baa11fdc389451ea46ef45f5771cac4 HTTP/1.1" 200 -
+127.0.0.1 "POST /api/live HTTP/1.1" 202 -
+127.0.0.1 "GET /api/jobs?id=99f6162e4c724844ae1c2b756fad7cb4 HTTP/1.1" 200 -
+127.0.0.1 "GET /api/jobs?id=99f6162e4c724844ae1c2b756fad7cb4 HTTP/1.1" 200 -
+127.0.0.1 "POST /api/live HTTP/1.1" 202 -
+127.0.0.1 "GET /api/jobs?id=fe165dbb12d94773b21808d87611d103 HTTP/1.1" 200 -
+127.0.0.1 "GET /api/jobs?id=fe165dbb12d94773b21808d87611d103 HTTP/1.1" 200 -

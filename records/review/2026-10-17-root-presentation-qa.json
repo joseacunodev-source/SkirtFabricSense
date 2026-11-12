@@ -1,0 +1,11 @@
+{
+  "date_asia_manila": "2026-10-17",
+  "reviewer": "root",
+  "method": "contact_sheet_visual_inspection",
+  "sample_id": "fashionpedia-train2020-34099",
+  "image_sha256": "cf284d177bb2e8c988cbae2a5f0995c0284c9ea784bb5ee06b4d75f723d5318d",
+  "inspection_sheet": "records/review/2026-10-17-presentation-full/batch-2-sheet-05.jpg",
+  "sheet_sha256": "fba1eec48f1c008ceb0e6caa040d287598b81ff58df679d11d511e9f20e1c56b",
+  "observation": "Isolated garment has bifurcated leg openings suggesting shorts; flag original source/pleating admission for future independent review. No worn presentation is established.",
+  "action": "Already excluded from worn subset as unknown; original frozen labels and historical metrics preserved."
+}

@@ -1,0 +1,221 @@
+{
+  "schema_version": 1,
+  "date_asia_manila": "2026-10-18T21:30:34.922319+08:00",
+  "reviewer": "codex-agent-oct18_artifact_review",
+  "status": "passed_artifact_integrity_candidate_not_promoted",
+  "checks": {
+    "archived_source_train_skirt_baseline.py": true,
+    "archived_source_train_presence_finetune.py": true,
+    "archived_source_train_presence.py": true,
+    "executed_main_source": true,
+    "input_data/manifests/worn-pleating-development-v1.jsonl": true,
+    "input_data/labels/negative-reviewed-v3.jsonl": true,
+    "input_data/manifests/source-skirt-development-splits.json": true,
+    "frozen_inputs": true,
+    "split_hash": true,
+    "model_run_copy": true,
+    "model_export": true,
+    "early_export": true,
+    "archived_comparison_source": true,
+    "thresholds": true,
+    "minimum_bce_epoch7": true,
+    "phase_schedule": true,
+    "frozen_weight_invariants": true,
+    "batchnorm_recorded_frozen": true,
+    "counts": true,
+    "all538_images_rehashed": true,
+    "group_split_disjoint": true,
+    "prediction_membership": true,
+    "metrics_v1": true,
+    "metrics_v2": true,
+    "metrics_v1_plus_presence": true,
+    "metrics_v2_plus_presence": true,
+    "presence_threshold_decisions": true,
+    "composed_gate": true,
+    "loaded_bn_frozen": true,
+    "loaded_trainable_layers": true,
+    "tensor_contract": true,
+    "reopened_fashionpedia-train2020-12679": true,
+    "reopened_fashionpedia-negative-candidate-27765": true,
+    "reopened_fashionpedia-negative-v3-7610": true
+  },
+  "evidence": [
+    {
+      "path": "records/experiments/20261018-presence-v3/train_skirt_baseline.py",
+      "sha256": "9c00a33d4d7e7fb6fdf5d9b988395293d648d5c4e01a067e0ab4acc74bcfe8d6"
+    },
+    {
+      "path": "records/experiments/20261018-presence-v3/train_presence_finetune.py",
+      "sha256": "998c06dd9e401a8827525f5b8656212ba163597471966d560a7ac57109c60649"
+    },
+    {
+      "path": "records/experiments/20261018-presence-v3/train_presence.py",
+      "sha256": "c4623ad184858584b10b126175547d89f144a72447edae154c6284efd618549e"
+    },
+    {
+      "path": "data/manifests/worn-pleating-development-v1.jsonl",
+      "sha256": "876bb315009592fdbcf0a646703b21d99801756f4e37b1807a66675bdbd98ec2"
+    },
+    {
+      "path": "data/labels/negative-reviewed-v3.jsonl",
+      "sha256": "82009d40445a9091f7998ab8479cec10b5086826001b7b9f513862bd11da52d1"
+    },
+    {
+      "path": "data/manifests/source-skirt-development-splits.json",
+      "sha256": "df3b096e4d131db55852b20de075d811c95520d23766648928555d755fe8812c"
+    },
+    {
+      "path": "artifacts/models/skirt-presence-v3/model.keras",
+      "sha256": "f97a55015bd9160be5f0ad7e7ba965d1040e8fd88faa097fbf6ccb08df919f62",
+      "bytes": 23934446
+    },
+    {
+      "path": "artifacts/models/skirt-presence-v3/model.tflite",
+      "sha256": "f85607f2c01f83b95217c1a5fa3ec774fadc3c5d3e39bb869e91c13a7213a348",
+      "bytes": 9186664
+    },
+    {
+      "path": "artifacts/models/skirt-presence-v3/run.json",
+      "sha256": "83e1ae33515544e13069aac433fd0ca4faa328215b552a95f7f9648aeb3a3e53",
+      "bytes": 13428
+    },
+    {
+      "path": "records/experiments/20261018-presence-v3/early_export/model.tflite",
+      "sha256": "6c378913f41c91ce6fe376c5df42f434f506b54980fae061d3eb7df0cc2b6026",
+      "bytes": 9186664
+    },
+    {
+      "path": "records/experiments/20261018-presence-v3/run.json",
+      "sha256": "83e1ae33515544e13069aac433fd0ca4faa328215b552a95f7f9648aeb3a3e53",
+      "bytes": 13428
+    },
+    {
+      "path": "records/experiments/20261018-presence-v3/history.json",
+      "sha256": "b0b6c653e0da3a233bcd2200e07335761b4809331568b00f17e878090a521526",
+      "bytes": 1867
+    },
+    {
+      "path": "records/experiments/20261018-presence-v3/inputs.json",
+      "sha256": "5fd31356dad9333efaa82cb0e2a312533fe695b5c565278cd00136c9e693a1f7",
+      "bytes": 3493197
+    },
+    {
+      "path": "records/experiments/20261018-presence-v3/environment.json",
+      "sha256": "c8ddb9e91ec3f910447a3ac8d3dfa55830ee3da6dd40093c209200ce82b3e943",
+      "bytes": 4088
+    },
+    {
+      "path": "records/experiments/20261018-presence-v3/validation-predictions.json",
+      "sha256": "31d6035bb4ca0fee66ce9e3cfce2318587cbd0af11d2cb093992598e97a0a765",
+      "bytes": 33724
+    },
+    {
+      "path": "records/experiments/20261018-presence-v3/check_detection_candidate.py",
+      "sha256": "cbdcf7dbbc3756a079cc212f53538719d1eb0b49bc16173f7a2eb08dac8d0d9f",
+      "bytes": 5463
+    },
+    {
+      "path": "records/validation/2026-10-18-detection-candidate.json",
+      "sha256": "483d849ecdefa86b7701b6f2892f9b545f4214391055620f608ef176467917c1",
+      "bytes": 188931
+    }
+  ],
+  "runtime": {
+    "python": "3.12.3",
+    "tensorflow": "2.20.0",
+    "keras": "3.15.1",
+    "numpy": "2.5.3",
+    "device": "WSL CPU reopened inference"
+  },
+  "data_counts": {
+    "development_train": {
+      "1": 265,
+      "0": 155
+    },
+    "development_validation": {
+      "1": 66,
+      "0": 52
+    }
+  },
+  "recomputed_metrics": {
+    "v1": {
+      "positive_count": 66,
+      "positive_accepted": 41,
+      "correct_pleating": 33,
+      "negative_count": 52,
+      "negative_rejected": 29
+    },
+    "v2": {
+      "positive_count": 66,
+      "positive_accepted": 50,
+      "correct_pleating": 44,
+      "negative_count": 52,
+      "negative_rejected": 21
+    },
+    "v1_plus_presence": {
+      "positive_count": 66,
+      "positive_accepted": 32,
+      "correct_pleating": 24,
+      "negative_count": 52,
+      "negative_rejected": 44
+    },
+    "v2_plus_presence": {
+      "positive_count": 66,
+      "positive_accepted": 39,
+      "correct_pleating": 33,
+      "negative_count": 52,
+      "negative_rejected": 42
+    }
+  },
+  "reopened_examples": [
+    {
+      "sample_id": "fashionpedia-train2020-12679",
+      "image_sha256": "a2c1d0c8e7b2abe8f87d8142c7a93cf67e1ae7db39d29f77539c09722d3fa945",
+      "keras_probability": 0.7943272590637207,
+      "tflite_probability": 0.7943265438079834,
+      "archived_keras_probability": 0.7943262457847595,
+      "archived_tflite_probability": 0.7943265438079834,
+      "maximum_absolute_error": 1.0132789611816406e-06
+    },
+    {
+      "sample_id": "fashionpedia-negative-candidate-27765",
+      "image_sha256": "335b01d057ba1bbfa9c3c3f2b82628f517dcd5d2800a71d235b6f487a0483c63",
+      "keras_probability": 0.7423081994056702,
+      "tflite_probability": 0.7423069477081299,
+      "archived_keras_probability": 0.7423068881034851,
+      "archived_tflite_probability": 0.7423069477081299,
+      "maximum_absolute_error": 1.3113021850585938e-06
+    },
+    {
+      "sample_id": "fashionpedia-negative-v3-7610",
+      "image_sha256": "3ca549505366bd9971a386c0addd6756f346765dcb455101a6f10426d16bde62",
+      "keras_probability": 0.20120869576931,
+      "tflite_probability": 0.20120875537395477,
+      "archived_keras_probability": 0.20120881497859955,
+      "archived_tflite_probability": 0.20120875537395477,
+      "maximum_absolute_error": 1.1920928955078125e-07
+    }
+  ],
+  "reopen_tolerance": 0.001,
+  "selection": {
+    "selected_epoch": 7,
+    "selected_phase": "finetune",
+    "criterion": "Minimum class-balanced development-validation BCE across both phases",
+    "validation_selected_not_independent": true
+  },
+  "development_criteria": {
+    "accepted_skirts_preserved": false,
+    "correct_pleating_preserved": true,
+    "negative_rejection_improved": true
+  },
+  "development_criteria_passed": false,
+  "deployment_approved": false,
+  "admission_review_reference": "records/validation/2026-10-18-negative-v3-admission-audit.json",
+  "limitations": [
+    "Agent-reviewed source-domain development; independent human truth and physical specimen identity unresolved.",
+    "Checkpoint and candidates selected on these validation groups; not an independent test.",
+    "Reopened3 references only; full118 parity remains archived training evidence.",
+    "No camera, garments, calibration or Pi verification.",
+    "V3 loses accepted skirt coverage39 versus41; unpromoted."
+  ]
+}

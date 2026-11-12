@@ -1,0 +1,37 @@
+{
+  "status": "passed",
+  "seed": 42,
+  "data": "synthetic stateless normal, 4x32x32x3",
+  "dataset_manifest": null,
+  "split_hash": null,
+  "purpose": "infrastructure only; no project accuracy or Pi verification",
+  "python": "3.12.3",
+  "source_sha256": "6da21c68934a976873222b6a46c9e6d7ea6b598d6ac88a215017b405ba40dfb5",
+  "versions": {
+    "tensorflow": "2.20.0",
+    "numpy": "2.5.3"
+  },
+  "gpu_devices": [
+    "PhysicalDevice(name='/physical_device:GPU:0', device_type='GPU')"
+  ],
+  "loss": 0.8526039719581604,
+  "gradient_norm": 0.5379453897476196,
+  "elapsed_training_step_seconds": 0.5653379679999944,
+  "tensor_device": "/job:localhost/replica:0/task:0/device:GPU:0",
+  "prediction_device": "/job:localhost/replica:0/task:0/device:GPU:0",
+  "weights_changed": true,
+  "optimizer": {
+    "name": "SGD",
+    "learning_rate": 0.01,
+    "steps": 1
+  },
+  "export": {
+    "sha256": "987df5b43243cdca323887f2b588c32e1b9806edafa087953dfdbda89dd96610",
+    "bytes": 2356,
+    "finite_outputs": true,
+    "maximum_absolute_error": 2.3365020751953125e-05,
+    "atol": 1e-05,
+    "rtol": 0.0001,
+    "hardware": "desktop CPU, not Raspberry Pi"
+  }
+}

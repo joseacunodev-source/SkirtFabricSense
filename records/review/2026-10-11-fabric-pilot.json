@@ -1,0 +1,315 @@
+{
+  "source_sha256": "65653c0b1cdcb26a5be5eaec3f5c4414eda208ca18439858304261fec60c34aa",
+  "reviewer": "codex_fabric_pilot_agent",
+  "independent_human_review": false,
+  "originals_opened": 25,
+  "source_terms": "records/acquisitions/2026-10-09-deepfashion-multimodal/LICENSE",
+  "terms_sha256": "383efc1e19406703d591d32fa73b64f44914550456ecff4c0764b451e871b641",
+  "rights_scope": "Noncommercial research; internal copies only; not redistribution",
+  "classes": [
+    "source_cotton_appearance",
+    "source_denim_appearance",
+    "source_leather_appearance",
+    "source_chiffon_appearance"
+  ],
+  "review": [
+    {
+      "sample_id": "deepfashion-multimodal-WOMEN-Skirts-id_00000003-02_1_front",
+      "sha256": "69c8cdc9a4591ccf675ada6261c5450f2edf76f96eecb6941b4cbd7c4d89b7b6",
+      "original_opened": true,
+      "decision": "smoke_only",
+      "reason": "Waist-to-hem region visible; modest hand occlusions remain. Source appearance label preserved, not visually verified composition.",
+      "roi_xyxy": [
+        103,
+        568,
+        440,
+        908
+      ]
+    },
+    {
+      "sample_id": "deepfashion-multimodal-WOMEN-Skirts-id_00000111-02_1_front",
+      "sha256": "c842f7070b3225f8e4b25454c1e0915f01658340104502ae6b6c2447d110ead5",
+      "original_opened": true,
+      "decision": "smoke_only",
+      "reason": "Waist-to-hem region visible; modest hand occlusions remain. Source appearance label preserved, not visually verified composition.",
+      "roi_xyxy": [
+        197,
+        619,
+        578,
+        1037
+      ]
+    },
+    {
+      "sample_id": "deepfashion-multimodal-WOMEN-Skirts-id_00000200-02_1_front",
+      "sha256": "6856b4d4215b55c33000f0724720d728cdd5e71b903a9a9ec0302c6df5bf1ab8",
+      "original_opened": true,
+      "decision": "smoke_only",
+      "reason": "Waist-to-hem region visible; modest hand occlusions remain. Source appearance label preserved, not visually verified composition.",
+      "roi_xyxy": [
+        194,
+        407,
+        381,
+        784
+      ]
+    },
+    {
+      "sample_id": "deepfashion-multimodal-WOMEN-Skirts-id_00000328-03_1_front",
+      "sha256": "05a243a9b94c7d49d025d660ad46414f70f5a1540e1091f1a9ecd42edb3d9232",
+      "original_opened": true,
+      "decision": "excluded",
+      "reason": "Top hides waistband; retain outside full-skirt smoke pool.",
+      "roi_xyxy": null
+    },
+    {
+      "sample_id": "deepfashion-multimodal-WOMEN-Skirts-id_00000334-02_1_front",
+      "sha256": "4d5a0e59aae29c618fe7176f0547cd5fb89d6169a36436255acdc1aeb697d1f1",
+      "original_opened": true,
+      "decision": "smoke_only",
+      "reason": "Waist-to-hem region visible; modest hand occlusions remain. Source appearance label preserved, not visually verified composition.",
+      "roi_xyxy": [
+        290,
+        388,
+        466,
+        755
+      ]
+    },
+    {
+      "sample_id": "deepfashion-multimodal-WOMEN-Skirts-id_00000467-02_1_front",
+      "sha256": "4dd15a30579eda62c201f4beea5e3ecedea344c461041ef053c35d2c3ad66335",
+      "original_opened": true,
+      "decision": "smoke_only",
+      "reason": "Waist-to-hem region visible; modest hand occlusions remain. Source appearance label preserved, not visually verified composition.",
+      "roi_xyxy": [
+        257,
+        363,
+        462,
+        715
+      ]
+    },
+    {
+      "sample_id": "deepfashion-multimodal-WOMEN-Skirts-id_00000545-02_1_front",
+      "sha256": "97522e2cc852c34dc609911913025ec55c20eec1d4049522529ff19c12bc3c41",
+      "original_opened": true,
+      "decision": "smoke_only",
+      "reason": "Waist-to-hem region visible; modest hand occlusions remain. Source appearance label preserved, not visually verified composition.",
+      "roi_xyxy": [
+        183,
+        400,
+        352,
+        777
+      ]
+    },
+    {
+      "sample_id": "deepfashion-multimodal-WOMEN-Skirts-id_00000644-03_1_front",
+      "sha256": "0e9aeaf460e727f2ca5578b14edbec462a51b87dbee18629a20fb5038c0584de",
+      "original_opened": true,
+      "decision": "smoke_only",
+      "reason": "Waist-to-hem region visible; modest hand occlusions remain. Source appearance label preserved, not visually verified composition.",
+      "roi_xyxy": [
+        266,
+        578,
+        690,
+        983
+      ]
+    },
+    {
+      "sample_id": "deepfashion-multimodal-WOMEN-Skirts-id_00000670-01_1_front",
+      "sha256": "8d46c466e4d36d48cfac848f7540fba6da3806dcc81e0f8ea1aa7cd9ebeaa75c",
+      "original_opened": true,
+      "decision": "smoke_only",
+      "reason": "Waist-to-hem region visible; modest hand occlusions remain. Source appearance label preserved, not visually verified composition.",
+      "roi_xyxy": [
+        159,
+        613,
+        659,
+        1053
+      ]
+    },
+    {
+      "sample_id": "deepfashion-multimodal-WOMEN-Skirts-id_00000699-03_1_front",
+      "sha256": "68808c948951ea14ef088ee79661a00bb6e588b7bf09cc916d971aa4ae7a40a7",
+      "original_opened": true,
+      "decision": "smoke_only",
+      "reason": "Waist-to-hem region visible; modest hand occlusions remain. Source appearance label preserved, not visually verified composition.",
+      "roi_xyxy": [
+        151,
+        389,
+        467,
+        996
+      ]
+    },
+    {
+      "sample_id": "deepfashion-multimodal-WOMEN-Skirts-id_00000992-03_1_front",
+      "sha256": "89e0c2f943974baced9dcef4673f93caa7d69fbcf1735bff8ecbd25c306bff1c",
+      "original_opened": true,
+      "decision": "excluded",
+      "reason": "Blouse hides waistband.",
+      "roi_xyxy": null
+    },
+    {
+      "sample_id": "deepfashion-multimodal-WOMEN-Skirts-id_00002342-01_1_front",
+      "sha256": "1c6a0a417c325c89e06f8b101e921e58f65d8799d7dca58d70dc0ada84ffbf49",
+      "original_opened": true,
+      "decision": "excluded",
+      "reason": "Large handbag occludes substantial skirt surface.",
+      "roi_xyxy": null
+    },
+    {
+      "sample_id": "deepfashion-multimodal-WOMEN-Skirts-id_00002711-01_1_front",
+      "sha256": "7c74cd2a0911c4f4270b379a01065ecbaf36761a18188b520249945925fe1707",
+      "original_opened": true,
+      "decision": "smoke_only",
+      "reason": "Waist-to-hem region visible; modest hand occlusions remain. Source appearance label preserved, not visually verified composition.",
+      "roi_xyxy": [
+        253,
+        374,
+        571,
+        813
+      ]
+    },
+    {
+      "sample_id": "deepfashion-multimodal-WOMEN-Skirts-id_00003178-03_1_front",
+      "sha256": "427b6c1b1816cc100c6e1c9dd8378997eb9cdb173b05622c055803881d19beb6",
+      "original_opened": true,
+      "decision": "excluded",
+      "reason": "Top hides waistband and leaning pose distorts view.",
+      "roi_xyxy": null
+    },
+    {
+      "sample_id": "deepfashion-multimodal-WOMEN-Skirts-id_00003386-01_1_front",
+      "sha256": "b82c5ef9169e0dd24567c30b3b94cb0970a1eb639f944722afadfc471a24d0c3",
+      "original_opened": true,
+      "decision": "excluded",
+      "reason": "Seated; top hides waist; lace/net appearance makes source chiffon interpretation ambiguous.",
+      "roi_xyxy": null
+    },
+    {
+      "sample_id": "deepfashion-multimodal-WOMEN-Skirts-id_00003995-02_1_front",
+      "sha256": "df882d8228276dbd8ba417d8f202112cea6b0b846ce7bcbca72c5e51b574e561",
+      "original_opened": true,
+      "decision": "excluded",
+      "reason": "Shirt hides waistband.",
+      "roi_xyxy": null
+    },
+    {
+      "sample_id": "deepfashion-multimodal-WOMEN-Skirts-id_00004182-01_1_front",
+      "sha256": "19e680997f7812bff4cf830c5f227d8ea8ff60741af49eae65b1db44d1d515ed",
+      "original_opened": true,
+      "decision": "smoke_only",
+      "reason": "Waist-to-hem region visible; modest hand occlusions remain. Source appearance label preserved, not visually verified composition.",
+      "roi_xyxy": [
+        261,
+        383,
+        528,
+        920
+      ]
+    },
+    {
+      "sample_id": "deepfashion-multimodal-WOMEN-Skirts-id_00004335-02_1_front",
+      "sha256": "2e5839b42c65bf3b6011071976ecc7637cff7781ef2cecf05c8a20ed56d150e3",
+      "original_opened": true,
+      "decision": "smoke_only",
+      "reason": "Waist-to-hem region visible; modest hand occlusions remain. Source appearance label preserved, not visually verified composition.",
+      "roi_xyxy": [
+        282,
+        389,
+        523,
+        650
+      ]
+    },
+    {
+      "sample_id": "deepfashion-multimodal-WOMEN-Skirts-id_00004513-04_1_front",
+      "sha256": "ed8eae0b10a13d53fd77e0f3d9d241200115e8592e57d8c40ba3ae204511c16f",
+      "original_opened": true,
+      "decision": "smoke_only",
+      "reason": "Waist-to-hem region visible; modest hand occlusions remain. Source appearance label preserved, not visually verified composition.",
+      "roi_xyxy": [
+        193,
+        619,
+        515,
+        1013
+      ]
+    },
+    {
+      "sample_id": "deepfashion-multimodal-WOMEN-Skirts-id_00005441-01_1_front",
+      "sha256": "858343876d49ed6f62ad89b862cf45c082d89ee28ec8f348bb23de8812e73ffb",
+      "original_opened": true,
+      "decision": "excluded",
+      "reason": "Top hides waistband.",
+      "roi_xyxy": null
+    },
+    {
+      "sample_id": "deepfashion-multimodal-WOMEN-Skirts-id_00005519-03_1_front",
+      "sha256": "50e671a7b0ea24b767f785887b3c81280191b4e75f3c8545cef889c7656117b6",
+      "original_opened": true,
+      "decision": "smoke_only",
+      "reason": "Waist-to-hem region visible; modest hand occlusions remain. Source appearance label preserved, not visually verified composition.",
+      "roi_xyxy": [
+        199,
+        399,
+        482,
+        1057
+      ]
+    },
+    {
+      "sample_id": "deepfashion-multimodal-WOMEN-Skirts-id_00005894-03_1_front",
+      "sha256": "ff80637be92ab0973ee025a5a42e6b4abaa6ab7b78d099513c118afdb71924eb",
+      "original_opened": true,
+      "decision": "smoke_only",
+      "reason": "Waist-to-hem region visible; modest hand occlusions remain. Source appearance label preserved, not visually verified composition.",
+      "roi_xyxy": [
+        102,
+        582,
+        598,
+        1034
+      ]
+    },
+    {
+      "sample_id": "deepfashion-multimodal-WOMEN-Skirts-id_00006184-01_1_front",
+      "sha256": "65632e2fa9ada9069fe829673ea0ed05257305dd0cf9c83ffd42cbe2453b2ff9",
+      "original_opened": true,
+      "decision": "smoke_only",
+      "reason": "Waist-to-hem region visible; modest hand occlusions remain. Source appearance label preserved, not visually verified composition.",
+      "roi_xyxy": [
+        218,
+        611,
+        612,
+        1060
+      ]
+    },
+    {
+      "sample_id": "deepfashion-multimodal-WOMEN-Skirts-id_00006548-01_1_front",
+      "sha256": "3538f31dd55b41af2a74213a2bdf98f75e9b96cf61289c938d751328f2bcaec3",
+      "original_opened": true,
+      "decision": "excluded",
+      "reason": "Top hides part of waistband.",
+      "roi_xyxy": null
+    },
+    {
+      "sample_id": "deepfashion-multimodal-WOMEN-Skirts-id_00007127-02_1_front",
+      "sha256": "cb54c45699261baab89c17ce9bcef91c2b91e8c815d6987ac89ccf93c526b698",
+      "original_opened": true,
+      "decision": "smoke_only",
+      "reason": "Waist-to-hem region visible; modest hand occlusions remain. Source appearance label preserved, not visually verified composition.",
+      "roi_xyxy": [
+        173,
+        399,
+        418,
+        731
+      ]
+    }
+  ],
+  "counts": {
+    "source_cotton_appearance": 8,
+    "source_denim_appearance": 5,
+    "source_leather_appearance": 2,
+    "source_chiffon_appearance": 2
+  },
+  "limitations": [
+    "Source item groups are not verified physical specimens",
+    "No near-identical skirts apparent in original review; styling/model/background correlations remain",
+    "Cotton source category does not establish fiber composition",
+    "Only two groups each for leather and chiffon; metrics cannot establish feasibility",
+    "Original query/gallery excluded; no final test"
+  ]
+}
