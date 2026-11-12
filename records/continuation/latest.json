@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-12T11:19:37.535771+08:00",
+  "updated_at": "2026-11-12T11:21:44.492235+08:00",
   "status": "stable_desktop_research_checkpoint",
   "project_complete": false,
   "supervised_demo_accepted": false,
@@ -210,8 +210,8 @@
     "Completed thesis figures and November 4 partition audits; preserve existing outputs"
   ],
   "previous_checkpoint": {
-    "path": "records/continuation/2026-11-12-before-github-closeout.json",
-    "sha256": "5ebcd8ac4d4d07fe90f2fcdd742440541a5759e5577677cff5192bfe41423de6"
+    "path": "records/continuation/2026-11-12-before-retained-copy-note.json",
+    "sha256": "357bdcdd204af70ef2c099fdf9cb801ee17bfce6f9f5e0a2beb2dfb901f913c0"
   },
   "references": [
     {
@@ -1539,6 +1539,17 @@
       "path": "records/validation/2026-11-12-github-hosted-checks.json",
       "sha256": "a2bccfc7a579119a0050718e03c83a26a6b30d587c3e4e4a118e6f8b9ce702ac"
     },
-    "private_transfer_still_required_on_other_computers": true
+    "private_transfer_still_required_on_other_computers": true,
+    "retained_verification_copies": {
+      "status": "retained_after_automatic_approval_review_blocked_cleanup",
+      "paths": [
+        "tmp/github-setup/fresh-clone",
+        "Downloads/SkirtFabricSense-private-transfer/superseded/SkirtFabricSense-assets-v1.zip"
+      ],
+      "reason_reported": "blocked by policy",
+      "current_transfer_bundle_remains": "SkirtFabricSense-assets-v2.zip",
+      "does_not_prevent_using_repository": true,
+      "automatic_deletion_retried": false
+    }
   }
 }
