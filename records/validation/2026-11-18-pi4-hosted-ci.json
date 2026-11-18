@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "recorded_at": "2026-11-18T11:46:50.431396+08:00",
+  "kind": "pi4_preparation_hosted_ci_closeout",
+  "status": "passed",
+  "hosted_run": {
+    "url": "https://github.com/joseacunodev-source/SkirtFabricSense/actions/runs/44232591345",
+    "source_commit": "7736ec549ef954c8916f4091928f3dd127d3e17a",
+    "status": "completed",
+    "conclusion": "success"
+  },
+  "source_only_tests": {
+    "path": "records/validation/2026-11-18-pi4-source-only-tests.json",
+    "sha256": "f13e3fc49b2450b2420b2ad30959c1534e27a67db65131dce1d0392e5513bcb5"
+  },
+  "fixture_fix": {
+    "path": "records/validation/2026-11-18-pi4-ci-fixture-fix.json",
+    "sha256": "b5beed7329a3bb8f1539e370f52eca0f3ea3cd4e0adae54040717731e164d786"
+  },
+  "preparation": {
+    "path": "records/validation/2026-11-18-pi4-preparation.json",
+    "sha256": "b5ccece42016ed168d969ed759b718c22ddde6ee9f41c6e8a73647ab0e32fb25"
+  },
+  "private_kit_unchanged": true,
+  "pi_verified": false,
+  "full_live_acceptance": false,
+  "limits": "Hosted software contracts pass; physical ARM64 installation/runtime, camera/LCD, latency and full feature acceptance remain open."
+}
