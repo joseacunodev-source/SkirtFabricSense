@@ -1,0 +1,256 @@
+{
+  "status": "passed",
+  "command": [
+    "C:\\Users\\Administrator\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+    "-B",
+    "C:\\Users\\Administrator\\OneDrive\\Documents\\ChatGPT\\SkirtFabricSense\\artifacts\\pi-kits\\skirt-pi4-research-kit-v1\\tools\\pi_install.py",
+    "plan",
+    "--kit",
+    "C:\\Users\\Administrator\\OneDrive\\Documents\\ChatGPT\\SkirtFabricSense\\artifacts\\pi-kits\\skirt-pi4-research-kit-v1",
+    "--destination",
+    "C:\\Users\\Administrator\\SkirtFabricSense-pi4-install-guard-v1",
+    "--records",
+    "C:\\Users\\Administrator\\OneDrive\\Documents\\ChatGPT\\SkirtFabricSense\\tmp\\pi4-install-guard-records"
+  ],
+  "exit_code": 1,
+  "plan": {
+    "status": "blocked",
+    "pi_verified": false,
+    "full_live_acceptance": false,
+    "kit": "C:\\Users\\Administrator\\OneDrive\\Documents\\ChatGPT\\SkirtFabricSense\\artifacts\\pi-kits\\skirt-pi4-research-kit-v1",
+    "destination": "C:\\Users\\Administrator\\SkirtFabricSense-pi4-install-guard-v1",
+    "records": "C:\\Users\\Administrator\\OneDrive\\Documents\\ChatGPT\\SkirtFabricSense\\tmp\\pi4-install-guard-records",
+    "observation": {
+      "system": "Windows",
+      "machine": "AMD64",
+      "pointer_bits": 64,
+      "python": [
+        3,
+        12
+      ],
+      "libc": [
+        "",
+        ""
+      ],
+      "board": "",
+      "os_codename": null,
+      "effective_uid": null
+    },
+    "profile": {
+      "schema_version": 1,
+      "target": {
+        "board": "Raspberry Pi 4",
+        "system": "Linux",
+        "machine": "aarch64",
+        "python": "3.13",
+        "abi": "cp313",
+        "os_codename": "trixie",
+        "min_glibc": "2.28"
+      },
+      "runtime": {
+        "distribution": "ai-edge-litert",
+        "version": "2.3.0",
+        "module": "ai_edge_litert.interpreter"
+      },
+      "pi_verified": false,
+      "candidate_only": true,
+      "camera": "USB UVC via same-device Chromium getUserMedia; no server-side camera adapter",
+      "display": "Waveshare14447 HDMI800x480 plus USB resistive touch; physical test pending",
+      "desktop_research_station": "skirt-research-station-v9",
+      "sources": [
+        "https://www.raspberrypi.com/documentation/computers/os.html",
+        "https://pypi.org/pypi/ai-edge-litert/2.3.0/json"
+      ],
+      "limits": [
+        "No target ARM64 import or model operator execution observed",
+        "No Pi4 runtime, OS image, camera or LCD performance accepted",
+        "Do not replace OS Python or silently fall back to another inference package"
+      ]
+    },
+    "kit_verification": {
+      "status": "passed",
+      "kind": "pi4_research_preparation",
+      "payload_files": 50,
+      "payload_bytes": 66471041,
+      "station_inventory_sha256": "ae18db22793ff0aa576cec1130d9f8c06e3987dbdebe03528b7dd890f162998d",
+      "station": {
+        "status": "passed",
+        "payload_files": 28,
+        "application": {
+          "status": "passed",
+          "bundle_id": "skirt-finetune-v1",
+          "payload_files": 17,
+          "application_included": true,
+          "manifest_sha256": "98ada650d7dff4cb297377a8f2d3ccb2c102807c298247beb68ca3a47868d437",
+          "inventory_sha256": "81f03250450a6060e2e336c7a59742800450f43b95d6830b9537f325fb62bfd0",
+          "pi_verified": false,
+          "runtime_verified": false,
+          "publisher_authenticated": false
+        },
+        "models": {
+          "localizer": {
+            "directory": "models/localizer",
+            "sha256": "f2f5f73d34cd99c3fb46502cb806ddbc347c6664e8ce24b8fe06a548c70090de"
+          },
+          "presence": {
+            "directory": "models/presence",
+            "sha256": "f47ddf148102f905d0a81e6a1fe3001b8a4944fd86e0c1c2d635d975f8fdc34d"
+          },
+          "fabric": {
+            "directory": "models/fabric",
+            "sha256": "81f144a1c7cd4910989374a1a86c85e955fb4f65cd81ef88c26e7cbcf1158bfd"
+          }
+        },
+        "pi_verified": false,
+        "dependencies_included": false,
+        "runtime_verified": false,
+        "calibrated_length": false
+      },
+      "target": {
+        "board": "Raspberry Pi 4",
+        "system": "Linux",
+        "machine": "aarch64",
+        "python": "3.13",
+        "abi": "cp313",
+        "os_codename": "trixie",
+        "min_glibc": "2.28"
+      },
+      "wheel_packages": [
+        {
+          "name": "ai-edge-litert",
+          "version": "2.3.0",
+          "path": "wheels/ai_edge_litert-2.3.0-cp313-cp313-manylinux_2_27_aarch64.whl",
+          "sha256": "2ab71e4f5dfa65b3882634b42755f455f3e7415630d720200bd792733e15e257",
+          "bytes": 14380166,
+          "tags": [
+            "cp313-cp313-manylinux_2_27_aarch64"
+          ]
+        },
+        {
+          "name": "backports.strenum",
+          "version": "1.2.8",
+          "path": "wheels/backports_strenum-1.2.8-py3-none-any.whl",
+          "sha256": "fc297cb26971f7d5e15a478a06a78575197f81daea47975771b1aae996dcccf4",
+          "bytes": 7862,
+          "tags": [
+            "py3-none-any"
+          ]
+        },
+        {
+          "name": "colorama",
+          "version": "0.4.6",
+          "path": "wheels/colorama-0.4.6-py2.py3-none-any.whl",
+          "sha256": "4f1d9991f5acc0ca119f9d443620b77f9d6b33703e51011c16baf57afb285fc6",
+          "bytes": 25335,
+          "tags": [
+            "py2-none-any",
+            "py3-none-any"
+          ]
+        },
+        {
+          "name": "flatbuffers",
+          "version": "25.12.19",
+          "path": "wheels/flatbuffers-25.12.19-py2.py3-none-any.whl",
+          "sha256": "7634f50c427838bb021c2d66a3d1168e9d199b0607e6329399f04846d42e20b4",
+          "bytes": 26661,
+          "tags": [
+            "py2-none-any",
+            "py3-none-any"
+          ]
+        },
+        {
+          "name": "ml_dtypes",
+          "version": "0.7.0",
+          "path": "wheels/ml_dtypes-0.7.0-cp313-cp313-manylinux_2_27_aarch64.manylinux_2_28_aarch64.whl",
+          "sha256": "9e0f30247d011782286f9f5b8b0a3fad3f4f945d2a92cb9964c68d566ed17878",
+          "bytes": 436745,
+          "tags": [
+            "cp313-cp313-manylinux_2_27_aarch64",
+            "cp313-cp313-manylinux_2_28_aarch64"
+          ]
+        },
+        {
+          "name": "numpy",
+          "version": "2.3.5",
+          "path": "wheels/numpy-2.3.5-cp313-cp313-manylinux_2_27_aarch64.manylinux_2_28_aarch64.whl",
+          "sha256": "9c75442b2209b8470d6d5d8b1c25714270686f14c749028d2199c54e29f20b4d",
+          "bytes": 14248902,
+          "tags": [
+            "cp313-cp313-manylinux_2_27_aarch64",
+            "cp313-cp313-manylinux_2_28_aarch64"
+          ]
+        },
+        {
+          "name": "pillow",
+          "version": "13.0.0",
+          "path": "wheels/pillow-13.0.0-cp313-cp313-manylinux_2_27_aarch64.manylinux_2_28_aarch64.whl",
+          "sha256": "19b66ca0a4d25cc0200b381ce824c7ea090db61427315e73cfb05dbf1b35c369",
+          "bytes": 6515908,
+          "tags": [
+            "cp313-cp313-manylinux_2_27_aarch64",
+            "cp313-cp313-manylinux_2_28_aarch64"
+          ]
+        },
+        {
+          "name": "protobuf",
+          "version": "7.36.2",
+          "path": "wheels/protobuf-7.36.2-cp310-abi3-manylinux2014_aarch64.whl",
+          "sha256": "e11e1f0180583a2af89db6a2ecd9e8dc40aa6d2988ca175bfd0e6d12ea72d74e",
+          "bytes": 344219,
+          "tags": [
+            "cp310-abi3-manylinux2014_aarch64"
+          ]
+        },
+        {
+          "name": "tqdm",
+          "version": "4.70.1",
+          "path": "wheels/tqdm-4.70.1-py3-none-any.whl",
+          "sha256": "c293e525e6fef9c20e8728fd4612df02a0aa31bb5fe91ecd93e123b1b7bffa73",
+          "bytes": 80199,
+          "tags": [
+            "py3-none-any"
+          ]
+        },
+        {
+          "name": "typing_extensions",
+          "version": "4.16.0",
+          "path": "wheels/typing_extensions-4.16.0-py3-none-any.whl",
+          "sha256": "481caa481374e813c1b176ada14e97f1f67a4539ce9cfeb3f350d78d6370c2e8",
+          "bytes": 45571,
+          "tags": [
+            "py3-none-any"
+          ]
+        }
+      ],
+      "pi_verified": false,
+      "runtime_verified": false,
+      "full_live_acceptance": false,
+      "limits": "Hashes, wheel metadata and synthetic reference only; no ARM64 install or device execution verified."
+    },
+    "blockers": [
+      "Linux is required",
+      "64-bit ARM userspace is required",
+      "Raspberry Pi 4 Model B identity is required for this profile",
+      "System CPython 3.13 is required; do not replace OS Python",
+      "This candidate is restricted to the recorded Trixie OS profile",
+      "glibc 2.28 or newer is required"
+    ],
+    "fabric_research": false,
+    "operations": [
+      "Copy verified kit into new release",
+      "Create isolated venv",
+      "Install local hash-pinned wheels without network or source builds",
+      "Check dependencies and record installed versions/environment",
+      "Invoke all four models and compare with desktop synthetic reference",
+      "Generate inactive user service and desktop kiosk files"
+    ],
+    "not_automated": [
+      "OS image flashing, APT packages or system upgrades",
+      "Enabling services, desktop autologin or camera permissions",
+      "Camera/display/calibration/live performance acceptance"
+    ]
+  },
+  "destination_created": false,
+  "record_location_created": false,
+  "limits": "Copied installer correctly refuses the Windows laptop; this is not target installation."
+}

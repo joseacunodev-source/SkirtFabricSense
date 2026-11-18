@@ -1,0 +1,140 @@
+{
+  "schema_version": 1,
+  "recorded_at": "2026-11-18T11:36:11.599916+08:00",
+  "kind": "pi4_installation_preparation",
+  "status": "desktop_software_preparation_verified_target_installation_open",
+  "source_parent_revision": "c5d7603d5089965069bd34bcd9b1783f4bb85b3c",
+  "source_changes_bound_by_file_hashes": true,
+  "selected_board": "Raspberry Pi 4",
+  "hardware_available": false,
+  "pi_verified": false,
+  "full_live_acceptance": false,
+  "physical_pi_latency_ms": null,
+  "physical_temperature_celsius": null,
+  "focused_python_tests": 37,
+  "focused_python_passed": 37,
+  "new_data_or_training": false,
+  "local_packages_installed": false,
+  "candidate_wheels": 10,
+  "candidate_wheel_bytes": 36111568,
+  "kit_files_including_inventory": 51,
+  "kit_bytes": 66479739,
+  "archive_bytes": 63716791,
+  "four_model_desktop_reference_passed": true,
+  "copied_kit_desktop_parity_passed": true,
+  "fixture_seed": 42,
+  "fixture_input_sha256": "8191895d8f4d01fa398c76fd6f5e2b857272c03e41053ddeec982da609f86d91",
+  "physical_acceptance_remaining": [
+    "Actual ARM64 install/import/operators/parity and OS/package lock",
+    "Camera/full-skirt focus and Waveshare14447 video/resistive touch",
+    "Full capture-to-result freshness under1000ms and sustained resources/offline/reboot/recovery",
+    "Independent fabric truth and accepted model quality; wearer geometry and measured calibration",
+    "Unseen garment test and supervised demonstration acceptance"
+  ],
+  "evidence": [
+    {
+      "path": "config/pi4-runtime-candidate-v1.json",
+      "sha256": "cd79d7cea1a529b069b4a896c26e89a0b2d8ff127e94f40f2c32fe3011b4dd47"
+    },
+    {
+      "path": "requirements/pi4-cp313-candidate.in",
+      "sha256": "1110cb0fabb8791ae1df741f1ed7f1cf2db3745dfe0fb314a7084ce78a754b1d"
+    },
+    {
+      "path": "requirements/pi4-cp313-aarch64-candidate-v1.lock.txt",
+      "sha256": "721c3c3914aff7b3839dfabb372dccb16834052f06f8e060464549777a66243d"
+    },
+    {
+      "path": "tools/pi_install.py",
+      "sha256": "4d1fb7a0445657cae636bc0708295438fd74f2900daa7c4c9a4358eb9c92356c"
+    },
+    {
+      "path": "tools/pi_kit.py",
+      "sha256": "2b2c575e7deeafd09f100c44c3e027f4ee5d42789fb425ebe4af63a6383d112c"
+    },
+    {
+      "path": "tools/pi_probe.py",
+      "sha256": "58db841b74d36eb6953acfd38c72881feb369713a31fa303d09de387b1410cdf"
+    },
+    {
+      "path": "tests/test_pi_install.py",
+      "sha256": "1f22100ec1c68ee39d4f5378c00ee7731c4f2a0adda19a3a3bae4c5343791038"
+    },
+    {
+      "path": "tests/test_pi_kit.py",
+      "sha256": "b559790a129a98a6e113ae050853b908c8205935720096da92bf018b4d46accc"
+    },
+    {
+      "path": "tests/test_pi_probe.py",
+      "sha256": "5e4b9c8c43eb0c6c6f9f187734fe35a312e384b69035025f272daae8743b1ddc"
+    },
+    {
+      "path": "tests/test_edge_preflight.py",
+      "sha256": "3044844c6731c5b1567385b819c92cf2b75a3032dae1a8d8d4c36e206f5496f2"
+    },
+    {
+      "path": "tools/edge_preflight.py",
+      "sha256": "213345bbf32d623514205c6945f115be77b1f2a619058abf8c59117379460a6d"
+    },
+    {
+      "path": "docs/PI4_INSTALLATION_GUIDE.md",
+      "sha256": "a80f5d8e6b44b88299bbbf169072df85adbf0d904feded204292bc99c6b6c2ba"
+    },
+    {
+      "path": "docs/PI4_PREPARATION_NOV18.md",
+      "sha256": "1217e63c02ad2afa93de0942411bd3f4974525827d05b7f95ff9408e6e27a2ed"
+    },
+    {
+      "path": "records/validation/2026-11-18-pi4-runtime-research.json",
+      "sha256": "fc64ed2e8c5626a4245e4ee21ea9f5b48f9055addc6fd11a0175e33617903176"
+    },
+    {
+      "path": "records/validation/2026-11-18-pi4-kit-build.json",
+      "sha256": "d5d6ee983071086e4657bca8950c634140481c4b255dcf2bd79b9ece20570ccd"
+    },
+    {
+      "path": "records/validation/2026-11-18-pi4-kit-desktop-parity.json",
+      "sha256": "675ca283397563522c057490f882d20b16ec0b37df074e177770df03f03ea4f2"
+    },
+    {
+      "path": "records/validation/2026-11-18-pi-desktop-reference.json",
+      "sha256": "c4b5a7003867b1f37d1729c04efb3897c9c4c5b1a8c632a3c2f5e926af4a22cb"
+    },
+    {
+      "path": "records/validation/2026-11-18-pi4-non-target-guard.json",
+      "sha256": "084babd7278581d1763a53254fc1cc9704d75d95aa91da0c320b06db06183956"
+    },
+    {
+      "path": "records/validation/2026-11-18-pi4-preparation-tests.json",
+      "sha256": "e08bea00d817d037f3d86e848c53f2b25f1973b010fcf62fc6fcb712862b5dfb"
+    },
+    {
+      "path": "records/validation/2026-11-18-pi4-preparation-tests.log",
+      "sha256": "9a4fe8b948c77976c9bdd4968ea5b4e0f8156eb1e75f186752ba23d43a180778"
+    },
+    {
+      "path": "records/validation/2026-11-18-pi4-private-kit-archive.json",
+      "sha256": "29320e5943b0ee791f4f4898829e6f443863c84e7e7cd7d10d797c233ce73522"
+    },
+    {
+      "path": "records/validation/2026-11-18-pi4-wheel-download.log",
+      "sha256": "9c96e0f5de80df7d443445825aad0cb14749a687312434daeec25d76da79f5f4"
+    },
+    {
+      "path": "records/acquisitions/2026-11-18-pi4-runtime-wheels/acquisition.json",
+      "sha256": "112f3b2a93ced54e09c4d4f5b964f5f55bc9fc543ffc7e116087317953c8e9e7"
+    },
+    {
+      "path": "records/environments/20261118-pi4-reference-wsl.json",
+      "sha256": "2bd81fd099221cfd6a421f3f1dcbca65a67a54ac4f2dbb0174cdb2aa162a2827"
+    },
+    {
+      "path": "artifacts/pi-kits/skirt-pi4-research-kit-v1/inventory.json",
+      "sha256": "65ee2fb89daf2288804e0c594f0974e0acde66329ce285bf222c17d2f1efb896"
+    },
+    {
+      "path": "artifacts/pi-kits/skirt-pi4-research-kit-v1/kit.json",
+      "sha256": "4d80d925869cc591384536ebf54ae332277c868a4b735853eda3284622b88d71"
+    }
+  ]
+}

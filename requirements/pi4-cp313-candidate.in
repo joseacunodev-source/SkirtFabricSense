@@ -1,0 +1,7 @@
+# Candidate direct inputs, not a resolved or on-Pi-tested lock.
+# Raspberry Pi 4, Raspberry Pi OS 64-bit Trixie, system CPython 3.13.
+# Publisher metadata/ARM64 wheels checked 2026-11-18; target execution unverified.
+# Resolve binary transitive dependencies and freeze hashes before installation.
+ai-edge-litert==2.3.0
+numpy==2.3.5
+Pillow==13.0.0

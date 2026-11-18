@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "target": {
+    "board": "Raspberry Pi 4",
+    "system": "Linux",
+    "machine": "aarch64",
+    "python": "3.13",
+    "abi": "cp313",
+    "os_codename": "trixie",
+    "min_glibc": "2.28"
+  },
+  "runtime": {
+    "distribution": "ai-edge-litert",
+    "version": "2.3.0",
+    "module": "ai_edge_litert.interpreter"
+  },
+  "pi_verified": false,
+  "candidate_only": true,
+  "camera": "USB UVC via same-device Chromium getUserMedia; no server-side camera adapter",
+  "display": "Waveshare14447 HDMI800x480 plus USB resistive touch; physical test pending",
+  "desktop_research_station": "skirt-research-station-v9",
+  "sources": [
+    "https://www.raspberrypi.com/documentation/computers/os.html",
+    "https://pypi.org/pypi/ai-edge-litert/2.3.0/json"
+  ],
+  "limits": [
+    "No target ARM64 import or model operator execution observed",
+    "No Pi4 runtime, OS image, camera or LCD performance accepted",
+    "Do not replace OS Python or silently fall back to another inference package"
+  ]
+}

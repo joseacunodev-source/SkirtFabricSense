@@ -1,0 +1,14 @@
+{
+  "status": "packed_archive_verified",
+  "archive_filename": "SkirtFabricSense-pi4-kit-v1.zip",
+  "archive_bytes": 63716791,
+  "archive_sha256": "847ada9552925512d4ee3b6e318662f7aedf3529af109ebe32f5d720f8459d0c",
+  "archive_members": 51,
+  "uncompressed_bytes": 66479739,
+  "kit_inventory": {
+    "path": "artifacts/pi-kits/skirt-pi4-research-kit-v1/inventory.json",
+    "sha256": "65ee2fb89daf2288804e0c594f0974e0acde66329ce285bf222c17d2f1efb896"
+  },
+  "private_location": "Downloads/SkirtFabricSense-Pi4 on source computer; not uploaded to GitHub",
+  "pi_verified": false
+}

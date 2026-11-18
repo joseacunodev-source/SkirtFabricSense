@@ -1,5 +1,7 @@
 # Continue SkirtFabricSense
 
+November 18: the user selected **Raspberry Pi 4** and reconfirmed no Pi or webcam. [Pi 4 installation guide](docs/PI4_INSTALLATION_GUIDE.md) and a compact offline research kit now provide hash-verified candidate ARM64 wheels, a logged installer, four-model synthetic parity checks, and inactive user service/kiosk files. Desktop checks and packaging are verified; ARM64 execution, actual camera/LCD/touch, latency, fabric quality and calibrated length remain unaccepted. Earlier Pi 5 recommendations are historical.
+
 November 12: [GitHub setup and complete migration verification](docs/GITHUB_SETUP_NOV12.md) are finished. The public main branch contains code and progress records; private asset manifest v2 and its prepared ZIP restore all2,804 listed files. Fresh-clone145 tests, exact checkout bytes, restored-record integrity and hosted CI pass. Use the actual checkout root on another computer; recreate environments separately. Station-v9/research-v14 remains research-only; human review, geometry/calibration and physical/Pi acceptance remain open.
 
 November 11 repository preparation: [cross-computer GitHub workflow](docs/GITHUB_WORKFLOW.md) and [private asset transfer](docs/ASSET_TRANSFER.md) are prepared. Public Git carries source, manifests and progress evidence; acquired photos/models/source snapshots and environments stay excluded. Use the current asset manifest and restore privately before model/data checks. Publication status is recorded separately in the current checkpoint.

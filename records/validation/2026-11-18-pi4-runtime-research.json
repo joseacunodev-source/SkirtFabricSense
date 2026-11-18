@@ -1,0 +1,197 @@
+{
+  "schema_version": 1,
+  "reviewed_on": "2026-11-18",
+  "recorded_at": "2026-11-18T11:17:02.006750+08:00",
+  "status": "publisher_metadata_and_source_review_only",
+  "target": {
+    "board": "Raspberry Pi 4",
+    "cpu": "Cortex-A72",
+    "architecture": "ARMv8-A / aarch64",
+    "os_profile": "Raspberry Pi OS 64-bit Desktop, Debian Trixie base",
+    "python_profile": "system CPython 3.13",
+    "physical_board_or_camera_available": false,
+    "pi_verified": false
+  },
+  "candidate_dependencies": {
+    "ai-edge-litert": {
+      "version": "2.3.0",
+      "metadata_url": "https://pypi.org/pypi/ai-edge-litert/2.3.0/json",
+      "requires_python": null,
+      "requires_dist": [
+        "backports.strenum",
+        "flatbuffers",
+        "numpy>=1.23.2",
+        "tqdm",
+        "typing-extensions",
+        "protobuf",
+        "ml_dtypes",
+        "ai-edge-litert-sdk-intel-nightly; extra == \"npu-intel\"",
+        "ai-edge-litert-sdk-intel-nightly; extra == \"npu-sdk\"",
+        "ai-edge-litert-sdk-qualcomm~=0.2.0; extra == \"npu-sdk\"",
+        "ai-edge-litert-sdk-mediatek~=0.2.0; extra == \"npu-sdk\"",
+        "lark; extra == \"model-utils\"",
+        "xdsl==0.28.0; extra == \"model-utils\""
+      ],
+      "candidate_wheels": [
+        {
+          "filename": "ai_edge_litert-2.3.0-cp313-cp313-manylinux_2_27_aarch64.whl",
+          "url": "https://files.pythonhosted.org/packages/b2/ad/234674ab4781ff1822c26794488b5640512bc61011a6b3490bfecdc46aa1/ai_edge_litert-2.3.0-cp313-cp313-manylinux_2_27_aarch64.whl",
+          "sha256": "2ab71e4f5dfa65b3882634b42755f455f3e7415630d720200bd792733e15e257",
+          "bytes": 14380166,
+          "upload_time_iso_8601": "2026-10-06T22:53:24.940967Z",
+          "requires_python": null,
+          "yanked": false
+        }
+      ]
+    },
+    "numpy": {
+      "version": "2.3.5",
+      "metadata_url": "https://pypi.org/pypi/numpy/2.3.5/json",
+      "requires_python": ">=3.11",
+      "requires_dist": null,
+      "candidate_wheels": [
+        {
+          "filename": "numpy-2.3.5-cp313-cp313-manylinux_2_27_aarch64.manylinux_2_28_aarch64.whl",
+          "url": "https://files.pythonhosted.org/packages/95/03/dc0723a013c7d7c19de5ef29e932c3081df1c14ba582b8b86b5de9db7f0f/numpy-2.3.5-cp313-cp313-manylinux_2_27_aarch64.manylinux_2_28_aarch64.whl",
+          "sha256": "9c75442b2209b8470d6d5d8b1c25714270686f14c749028d2199c54e29f20b4d",
+          "bytes": 14248902,
+          "upload_time_iso_8601": "2025-11-16T22:50:28.861673Z",
+          "requires_python": ">=3.11",
+          "yanked": false
+        }
+      ]
+    },
+    "Pillow": {
+      "version": "13.0.0",
+      "metadata_url": "https://pypi.org/pypi/Pillow/13.0.0/json",
+      "requires_python": ">=3.11",
+      "requires_dist": [
+        "furo; extra == \"docs\"",
+        "olefile; extra == \"docs\"",
+        "sphinx>=8.2; extra == \"docs\"",
+        "sphinx-autobuild; extra == \"docs\"",
+        "sphinx-copybutton; extra == \"docs\"",
+        "sphinx-inline-tabs; extra == \"docs\"",
+        "sphinxext-opengraph; extra == \"docs\"",
+        "olefile; extra == \"fpx\"",
+        "olefile; extra == \"mic\"",
+        "arro3-compute; extra == \"test-arrow\"",
+        "arro3-core; extra == \"test-arrow\"",
+        "nanoarrow; extra == \"test-arrow\"",
+        "pyarrow; extra == \"test-arrow\"",
+        "coverage>=7.4.2; extra == \"tests\"",
+        "defusedxml; extra == \"tests\"",
+        "markdown2; extra == \"tests\"",
+        "olefile; extra == \"tests\"",
+        "packaging; extra == \"tests\"",
+        "psutil; (sys_platform == \"linux\" or sys_platform == \"darwin\") and extra == \"tests\"",
+        "pytest; extra == \"tests\"",
+        "pytest-cov; extra == \"tests\"",
+        "pytest-timeout; extra == \"tests\"",
+        "pytest-xdist; extra == \"tests\"",
+        "setuptools; extra == \"tests\"",
+        "trove-classifiers>=2024.10.12; extra == \"tests\"",
+        "defusedxml; extra == \"xmp\""
+      ],
+      "candidate_wheels": [
+        {
+          "filename": "pillow-13.0.0-cp313-cp313-manylinux_2_27_aarch64.manylinux_2_28_aarch64.whl",
+          "url": "https://files.pythonhosted.org/packages/fb/3c/cd0770e96d20bfd990db024bcbd43897ff3e88da1f4782cf90ea231b1d4f/pillow-13.0.0-cp313-cp313-manylinux_2_27_aarch64.manylinux_2_28_aarch64.whl",
+          "sha256": "19b66ca0a4d25cc0200b381ce824c7ea090db61427315e73cfb05dbf1b35c369",
+          "bytes": 6515908,
+          "upload_time_iso_8601": "2026-10-16T22:16:12.896503Z",
+          "requires_python": ">=3.11",
+          "yanked": false
+        }
+      ]
+    }
+  },
+  "runtime_api": {
+    "existing": "ai_edge_litert.interpreter.Interpreter",
+    "project_loader": "app/inference.py::_load_runtime",
+    "loader_support_already_exists": true,
+    "official_compatibility_source": "https://developers.google.com/edge/litert/overview",
+    "new_compiled_model_api_not_required_to_prepare_existing_application": true
+  },
+  "runtime_cpu_build_evidence": {
+    "source_url": "https://raw.githubusercontent.com/google-ai-edge/LiteRT/v2.3.0/.bazelrc",
+    "human_source_url": "https://github.com/google-ai-edge/LiteRT/blob/v2.3.0/.bazelrc",
+    "source_sha256": "d0328ee076d9309a9f25cd71d5d50f54381ff8d669b9f11fa13615e0b8a8a850",
+    "source_lines": [
+      {
+        "line": 324,
+        "text": "build:linux_arm64 --copt=\"-mtune=generic\" --copt=\"-march=armv8-a\" --copt=\"-O3\""
+      }
+    ],
+    "arm_cpu_source": "https://support.arm.com/compute-ip/cortex-a72",
+    "interpretation": "The release source includes a generic ARMv8-A build configuration consistent with Cortex-A72. This is not proof of exact released wheel build flags, CPU dispatch correctness, or execution on this Pi."
+  },
+  "os_python_sources": [
+    {
+      "url": "https://www.raspberrypi.com/documentation/computers/os.html",
+      "observation": "Official OS documentation identifies Debian Trixie as the current base and Python3 as preinstalled."
+    },
+    {
+      "url": "https://packages.debian.org/trixie/python/python3",
+      "observation": "Debian Trixie python3 default is 3.13.5-1. Actual Pi image and installed Python patch version must be observed on-device."
+    },
+    {
+      "url": "https://www.raspberrypi.com/software/operating-systems/",
+      "observation": "Official image source; exact downloaded image filename, date and SHA256 must be recorded during hardware preparation."
+    }
+  ],
+  "legacy_runtime": {
+    "package": "tflite-runtime",
+    "version": "2.14.0",
+    "metadata_url": "https://pypi.org/pypi/tflite-runtime/2.14.0/json",
+    "arm64_wheel_python_abis_observed": [
+      "cp38",
+      "cp39",
+      "cp310",
+      "cp311"
+    ],
+    "cp313_arm64_wheel_observed": false,
+    "not_selected": "Do not install it as an automatic fallback into the CPython3.13 profile. A separately tested older OS/Python/runtime/operator combination would need its own lock and model parity."
+  },
+  "pi4_failure_context": {
+    "source": "https://github.com/google-ai-edge/LiteRT/issues/6777",
+    "observed": "An upstream April2026 report concerned C++ SDK2.1.3/libLiteRt.so on Pi4 and SIGILL. Maintainers directed the reporter to clang+libc++ rather than GCC; the issue was closed. It does not establish failure of the ai-edge-litert2.3 Python wheel.",
+    "related_pr": "https://github.com/google-ai-edge/LiteRT/pull/6879",
+    "pr_merged_observed": false
+  },
+  "project_runtime_requirements": {
+    "direct_python_dependencies": [
+      "ai-edge-litert",
+      "numpy",
+      "Pillow"
+    ],
+    "backend_server": "Python standard-library HTTP server",
+    "camera_route": "Browser getUserMedia on the same Pi; USB webcam chosen before hardware verification",
+    "opencv_or_picamera2_required_for_current_route": false,
+    "display_browser": "A graphical Raspberry Pi OS session and Chromium, launched as the desktop user; system/display package versions need actual device records."
+  },
+  "specific_remaining_gates": [
+    "Observe Pi4 identity,64-bitOS,CPythonABI andglibc before install",
+    "Resolve and hash every transitive wheel; direct pins below are not a tested lock",
+    "Run runtime import and all selected model allocations/invocations in a subprocess, recording signals/nonzero exits",
+    "Compare fixed permitted golden inputs/outputs with desktop and run HTTP integration on Pi",
+    "Measure complete browser capture/decode/inference/display latency and memory/temperature on Pi4",
+    "Verify USB camera modes, Waveshare14447 physical800x480/resistive touch, reboot/offline/recovery behavior",
+    "Complete independent fabric truth, wearer geometry/calibration and actual garment acceptance before fullfeature/publicdemo claims"
+  ],
+  "freshness_risk": {
+    "path": "app/static/index.html",
+    "constant": "MAX_FRAME_AGE_MS",
+    "milliseconds": 1000,
+    "observation": "Browser rejects results aged1000ms or more since frame acquisition. A working runtime can still produce no displayable predictions on a slower Pi4 if the complete path exceeds this bound.",
+    "required_action": "Measure end-to-end on Pi4; do not silently relax freshness to report a successful installation."
+  },
+  "artifacts_not_performed": [
+    "No dependency installation",
+    "No runtime wheel download",
+    "No Pi execution or model parity",
+    "No measured latency/temperature",
+    "No changes to models,dataset memberships or labels"
+  ],
+  "candidate_input_file": "requirements/pi4-cp313-candidate.in"
+}

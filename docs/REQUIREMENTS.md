@@ -1,5 +1,7 @@
 # Requirements and acceptance register
 
+November 18: the user selected **Raspberry Pi 4** and reconfirmed no Pi or webcam. [Pi 4 installation guide](PI4_INSTALLATION_GUIDE.md) and a compact offline research kit now provide hash-verified candidate ARM64 wheels, a logged installer, four-model synthetic parity checks, and inactive user service/kiosk files. Desktop checks and packaging are verified; ARM64 execution, actual camera/LCD/touch, latency, fabric quality and calibrated length remain unaccepted. Earlier Pi 5 recommendations are historical.
+
 November 11 implementation: **R01–R04 software tasks are complete**. [Recovery and tool instructions](RECOVERY_IMPLEMENTATION_NOV11.md). Station-v9/research-v14 is selected, with v8 rollback. The 21 raw HTTP failures are preserved and verified as transport evidence; fabric/geometry reviewer tools are tested and documented; essential controls/results fit800 ×480. Human labels, automatic wearer geometry/calibration and physical camera/Pi acceptance remain open.
 
 November 4 dataset follow-up: R11/R12/R13 gain [partition evidence](DATASET_PARTITION_EVIDENCE.md), [diagrams](THESIS_DATASET_DIAGRAMS.md) and [semantic metadata checks](DATA_PARTITION_AUDIT.md). Nineteen tests and five actual assignment sets pass. Independent-label, unseen-camera, calibrated-length and Pi acceptance remain open.

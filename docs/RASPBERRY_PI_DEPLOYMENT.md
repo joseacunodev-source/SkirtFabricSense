@@ -1,5 +1,7 @@
 # Raspberry Pi deployment specification
 
+November 18: the user selected **Raspberry Pi 4** and reconfirmed no Pi or webcam. [Pi 4 installation guide](PI4_INSTALLATION_GUIDE.md) and a compact offline research kit now provide hash-verified candidate ARM64 wheels, a logged installer, four-model synthetic parity checks, and inactive user service/kiosk files. Desktop checks and packaging are verified; ARM64 execution, actual camera/LCD/touch, latency, fabric quality and calibrated length remain unaccepted. Earlier Pi 5 recommendations are historical.
+
 November 11 implementation: **R01–R04 software tasks are complete**. [Recovery and tool instructions](RECOVERY_IMPLEMENTATION_NOV11.md). Station-v9/research-v14 is selected, with v8 rollback. The 21 raw HTTP failures are preserved and verified as transport evidence; fabric/geometry reviewer tools are tested and documented; essential controls/results fit800 ×480. Human labels, automatic wearer geometry/calibration and physical camera/Pi acceptance remain open.
 
 November 11 review: station-v8/research-v13 is the selected desktop research payload; station-v7 is rollback. The user reconfirms no Pi, webcam or skirts. Start with the [November 4 purchase/project review](PURCHASE_REVIEW_NOV04.md). Existing Interpreter loaders, edge preflight and station verification are implemented; clean ARM64 installation, full live benchmarks, service integration and physical acceptance remain unverified. Earlier dated package/runtime notes below are historical candidates, not a current tested Pi lock.
@@ -12,7 +14,7 @@ Planning baseline: **1 October 2026, Asia/Manila**; reviewed **2 October 2026**.
 
 The target is a standalone, offline station using one full-skirt camera view. Its release contains the inference application, locally stored UI assets, exported models, preprocessing rules, label definitions, thresholds, camera configuration, calibration, and recovery instructions. The laptop retains training dependencies and original datasets; they are not copied indiscriminately to the Pi.
 
-Provisional hardware is Raspberry Pi 5 using its CPU for inference. Do not assume CUDA or desktop GPU delegates exist on this target. See [hardware plan](HARDWARE.md) and [dependency plan](../requirements/README.md).
+The selected target is Raspberry Pi 4 using its CPU for inference; exact RAM and board revision are not yet observed. Do not assume CUDA or desktop GPU delegates exist on this target. See [hardware plan](HARDWARE.md) and [dependency plan](../requirements/README.md).
 
 ## OS and runtime compatibility gate
 
@@ -75,7 +77,7 @@ source .venv/bin/activate
 rpicam-hello --list-cameras
 ```
 
-For a **USB UVC camera**, use the selected V4L2/OpenCV capture adapter instead. Record camera device identity and supported formats/controls; do not assume `/dev/video0` is stable or that autofocus can be controlled. Picamera2 is not required for that route. A future diagnostic script should enumerate devices with `v4l2-ctl` if installed. Camera access errors must be reported explicitly.
+For the current **USB UVC camera** route, Chromium captures frames through getUserMedia and submits them to the loopback Python application. OpenCV and Picamera2 are not backend dependencies for this implementation; V4L2 utilities provide optional device diagnostics. Record camera device identity and supported formats/controls; do not assume `/dev/video0` is stable or that autofocus can be controlled. Picamera2 is not required for that route. A future diagnostic script should enumerate devices with `v4l2-ctl` if installed. Camera access errors must be reported explicitly.
 
 Use one tested source of each binary library. In a system-site-packages environment, record both OS and Python packages and avoid accidentally shadowing the OS NumPy/OpenCV/camera dependencies with incompatible pip versions.
 
@@ -107,7 +109,7 @@ Preprocessing must be shared or covered by the same reference-input tests across
 - Bound log/image storage and handle full disk without freezing preview. Save original images only through the documented capture/logging policy.
 - Load fonts, scripts, styles, and model files locally. Verify functionality with internet access disabled.
 
-UI implementation remains a design choice: either a lightweight local browser interface or a native graphical application. Choose one after the Pi display/memory test, then record its complete runtime. A browser-based choice needs a local service and kiosk browser; a native choice needs its actual Qt/other toolkit and platform plugins. Do not add both by default.
+The implemented UI is a local browser interface served by the Python standard-library backend. Measure its actual Pi display/memory behavior and record the complete runtime. A browser-based choice needs a local service and kiosk browser; a native choice needs its actual Qt/other toolkit and platform plugins. Do not add both by default.
 
 ## Startup, recovery, and maintenance
 
@@ -115,7 +117,7 @@ Provide a tested startup entry appropriate to the selected desktop session. If a
 
 Handle camera disconnect, invalid model/configuration, storage failure, and inference exceptions with a visible state and diagnostic log. Restarting must clear old predictions. Keep the previous known-good release so an update can be rolled back; validate hashes before switching releases. Expose a deliberate exit/maintenance path and normal shutdown control for the device operator.
 
-The final installer, smoke-test utility, benchmark runner, startup files, export utility, and recovery instructions must be implemented and versioned. **They are currently planned, not runnable deliverables.**
+The [Pi 4 guide](PI4_INSTALLATION_GUIDE.md), kit builder, offline installer, isolated four-model parity/invocation probe and inactive startup files are now implemented. Complete live-workload benchmarking, physical recovery/reboot and target acceptance remain unverified; invocation-only timing is not camera or UI latency.
 
 ## Acceptance and evidence
 

@@ -1,5 +1,7 @@
 # Dependency and reproducibility plan
 
+November 18: [Pi 4 preparation](../docs/PI4_INSTALLATION_GUIDE.md) uses a separately [download-resolved ARM64 CPython 3.13 candidate lock](pi4-cp313-aarch64-candidate-v1.lock.txt), with every wheel hash checked against publisher metadata. It is not an installed or on-Pi-tested lock. The existing WSL training lock remains separate and unchanged; older planning paragraphs below are historical.
+
 Planning baseline: **1 October 2026, Asia/Manila**; reviewed **2 October 2026**. This directory currently contains a dependency plan, **not an installable or tested lockfile**. Software listed below is proposed unless the project installation ledger separately records successful installation and verification. Documentation tooling already available to Codex is not automatically a project dependency.
 
 ## Separate environments

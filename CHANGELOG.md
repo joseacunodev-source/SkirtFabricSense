@@ -1,5 +1,13 @@
 # Engineering changelog
 
+## 2026-11-18 - Prepare Raspberry Pi 4 research installation
+
+- Record the user-selected Pi 4 target and unavailable Pi/webcam; preserve all physical acceptance gates.
+- Add a compact 51-file offline kit with ten publisher-hash-verified ARM64 wheels, a candidate CPython 3.13 lock, logged installer, isolated four-model parity probe and inactive user service/kiosk files.
+- Pass 37 focused software tests, copied-kit desktop parity and the non-target installation guard. Existing station/model/data hashes are unchanged; no local packages installed or models trained.
+- Fix the preflight Python minimum and keep USB capture in Chromium; document manual camera permissions, rollback and still-required 1,000 ms full-path testing.
+- [Installation guide](docs/PI4_INSTALLATION_GUIDE.md), [preparation results](docs/PI4_PREPARATION_NOV18.md).
+
 ## 2026-11-12 - Publish and verify cross-computer workflow
 
 - Publish public main and configure repository description/topics, current README, contribution guidance, issue templates and hosted software checks.

@@ -1,0 +1,14 @@
+{
+  "status": "passed",
+  "tests_run": 37,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "modules": [
+    "tests.test_pi_probe",
+    "tests.test_pi_kit",
+    "tests.test_pi_install",
+    "tests.test_edge_preflight"
+  ],
+  "scope": "Synthetic kit/installer/subprocess/parity/preflight contracts; no package installation or physical device."
+}

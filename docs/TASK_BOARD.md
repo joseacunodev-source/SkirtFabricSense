@@ -1,5 +1,7 @@
 # Project task board
 
+November 18: the user selected **Raspberry Pi 4** and reconfirmed no Pi or webcam. [Pi 4 installation guide](PI4_INSTALLATION_GUIDE.md) and a compact offline research kit now provide hash-verified candidate ARM64 wheels, a logged installer, four-model synthetic parity checks, and inactive user service/kiosk files. Desktop checks and packaging are verified; ARM64 execution, actual camera/LCD/touch, latency, fabric quality and calibrated length remain unaccepted. Earlier Pi 5 recommendations are historical.
+
 November 12: [GitHub setup and complete migration verification](GITHUB_SETUP_NOV12.md) are finished. The public main branch contains code and progress records; private asset manifest v2 and its prepared ZIP restore all2,804 listed files. Fresh-clone145 tests, exact checkout bytes, restored-record integrity and hosted CI pass. Use the actual checkout root on another computer; recreate environments separately. Station-v9/research-v14 remains research-only; human review, geometry/calibration and physical/Pi acceptance remain open.
 
 November 11 repository preparation: [cross-computer GitHub workflow](GITHUB_WORKFLOW.md) and [private asset transfer](ASSET_TRANSFER.md) are prepared. Public Git carries source, manifests and progress evidence; acquired photos/models/source snapshots and environments stay excluded. Use the current asset manifest and restore privately before model/data checks. Publication status is recorded separately in the current checkpoint.
@@ -72,9 +74,16 @@ All four requested software items are complete. [Implementation evidence and nex
 
 Independent human confirmation is a required input to label acceptance; additional agent reviews alone do not close it. S06 software development can proceed now, but calibrated length acceptance also depends on P02 below.
 
+## Pi 4 software preparation completed November 18
+
+- [x] Confirm user-selected Pi 4 target; preserve still-unavailable hardware status.
+- [x] Prepare a compact offline kit with ten publisher-hash-verified candidate wheels, a complete candidate lock and immutable station-v9.
+- [x] Implement tested platform/path/install logging guards, synthetic four-model CPU reference/parity probing and inactive service/kiosk configuration.
+- [x] Write [the full installation guide](PI4_INSTALLATION_GUIDE.md); no target installation, physical calibration or accepted model-quality claim follows from it.
+
 ## Work requiring garments or hardware
 
-Latest availability: the user reconfirms no Raspberry Pi, webcam or actual skirts on November 11. Earlier webcam access does not establish current availability. Continue saved-image work without claiming physical acceptance.
+Latest availability: no Pi or webcam on November 18; actual skirts were last confirmed unavailable on November 11. Earlier webcam access does not establish current availability. Continue saved-image work without claiming physical acceptance.
 
 - [ ] **P01 — Obtain development and held-out garments.** Record garment identities, consent where applicable and credible fabric-label evidence; reserve separate test garments before examining predictions.
 - [ ] **P02 — Measure the camera/reference setup and calibrate hemline.** Collect reviewed nine-class development observations, rectify/validate geometry and build a hash-bound candidate. Test wearer proportions, borderline categories and camera movement. The builder is complete; physical calibration is not.

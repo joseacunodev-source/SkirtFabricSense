@@ -1,5 +1,7 @@
 # SkirtFabricSense
 
+November 18: **Raspberry Pi 4 is now the selected target.** The [installation guide](docs/PI4_INSTALLATION_GUIDE.md) and compact offline kit are prepared for first hardware bring-up. The kit includes the existing research station, candidate ARM64 wheels and model/parity/startup tools. Actual Pi, webcam, display/touch, fabric and calibrated-length acceptance remain open; this is not a finished Pi release.
+
 [![Software contracts](https://github.com/joseacunodev-source/SkirtFabricSense/actions/workflows/software-checks.yml/badge.svg)](https://github.com/joseacunodev-source/SkirtFabricSense/actions/workflows/software-checks.yml)
 
 A single-camera research project for automatically classifying **pleated / non-pleated skirts**, estimating **body-relative hemline categories**, and optionally recognizing **fabric appearance**. The intended deployment is an offline Raspberry Pi station with a Waveshare 14447 display (800 x 480).

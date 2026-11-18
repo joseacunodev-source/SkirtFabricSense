@@ -1,0 +1,48 @@
+Collecting ai-edge-litert==2.3.0 (from -r C:\Users\Administrator\OneDrive\Documents\ChatGPT\SkirtFabricSense\requirements\pi4-cp313-candidate.in (line 5))
+  Downloading ai_edge_litert-2.3.0-cp313-cp313-manylinux_2_27_aarch64.whl.metadata (2.2 kB)
+Collecting numpy==2.3.5 (from -r C:\Users\Administrator\OneDrive\Documents\ChatGPT\SkirtFabricSense\requirements\pi4-cp313-candidate.in (line 6))
+  Downloading numpy-2.3.5-cp313-cp313-manylinux_2_27_aarch64.manylinux_2_28_aarch64.whl.metadata (62 kB)
+Collecting Pillow==13.0.0 (from -r C:\Users\Administrator\OneDrive\Documents\ChatGPT\SkirtFabricSense\requirements\pi4-cp313-candidate.in (line 7))
+  Downloading pillow-13.0.0-cp313-cp313-manylinux_2_27_aarch64.manylinux_2_28_aarch64.whl.metadata (9.1 kB)
+Collecting backports.strenum (from ai-edge-litert==2.3.0->-r C:\Users\Administrator\OneDrive\Documents\ChatGPT\SkirtFabricSense\requirements\pi4-cp313-candidate.in (line 5))
+  Downloading backports_strenum-1.2.8-py3-none-any.whl.metadata (3.6 kB)
+Collecting flatbuffers (from ai-edge-litert==2.3.0->-r C:\Users\Administrator\OneDrive\Documents\ChatGPT\SkirtFabricSense\requirements\pi4-cp313-candidate.in (line 5))
+  Using cached flatbuffers-25.12.19-py2.py3-none-any.whl.metadata (1.0 kB)
+Collecting tqdm (from ai-edge-litert==2.3.0->-r C:\Users\Administrator\OneDrive\Documents\ChatGPT\SkirtFabricSense\requirements\pi4-cp313-candidate.in (line 5))
+  Downloading tqdm-4.70.1-py3-none-any.whl.metadata (57 kB)
+Collecting typing-extensions (from ai-edge-litert==2.3.0->-r C:\Users\Administrator\OneDrive\Documents\ChatGPT\SkirtFabricSense\requirements\pi4-cp313-candidate.in (line 5))
+  Using cached typing_extensions-4.16.0-py3-none-any.whl.metadata (3.3 kB)
+Collecting protobuf (from ai-edge-litert==2.3.0->-r C:\Users\Administrator\OneDrive\Documents\ChatGPT\SkirtFabricSense\requirements\pi4-cp313-candidate.in (line 5))
+  Downloading protobuf-7.36.2-cp310-abi3-manylinux2014_aarch64.whl.metadata (595 bytes)
+Collecting ml_dtypes (from ai-edge-litert==2.3.0->-r C:\Users\Administrator\OneDrive\Documents\ChatGPT\SkirtFabricSense\requirements\pi4-cp313-candidate.in (line 5))
+  Downloading ml_dtypes-0.7.0-cp313-cp313-manylinux_2_27_aarch64.manylinux_2_28_aarch64.whl.metadata (11 kB)
+Collecting colorama (from tqdm->ai-edge-litert==2.3.0->-r C:\Users\Administrator\OneDrive\Documents\ChatGPT\SkirtFabricSense\requirements\pi4-cp313-candidate.in (line 5))
+  Using cached colorama-0.4.6-py2.py3-none-any.whl.metadata (17 kB)
+Downloading ai_edge_litert-2.3.0-cp313-cp313-manylinux_2_27_aarch64.whl (14.4 MB)
+   ---------------------------------------- 14.4/14.4 MB 592.9 kB/s  0:00:24
+Downloading numpy-2.3.5-cp313-cp313-manylinux_2_27_aarch64.manylinux_2_28_aarch64.whl (14.2 MB)
+   ---------------------------------------- 14.2/14.2 MB 580.1 kB/s  0:00:24
+Downloading pillow-13.0.0-cp313-cp313-manylinux_2_27_aarch64.manylinux_2_28_aarch64.whl (6.5 MB)
+   ---------------------------------------- 6.5/6.5 MB 592.1 kB/s  0:00:11
+Downloading backports_strenum-1.2.8-py3-none-any.whl (7.9 kB)
+Using cached flatbuffers-25.12.19-py2.py3-none-any.whl (26 kB)
+Downloading ml_dtypes-0.7.0-cp313-cp313-manylinux_2_27_aarch64.manylinux_2_28_aarch64.whl (436 kB)
+Downloading protobuf-7.36.2-cp310-abi3-manylinux2014_aarch64.whl (344 kB)
+Downloading tqdm-4.70.1-py3-none-any.whl (80 kB)
+Using cached colorama-0.4.6-py2.py3-none-any.whl (25 kB)
+Using cached typing_extensions-4.16.0-py3-none-any.whl (45 kB)
+Saved .\artifacts\pi-preparation\20261118-cp313-aarch64\wheels\ai_edge_litert-2.3.0-cp313-cp313-manylinux_2_27_aarch64.whl
+Saved .\artifacts\pi-preparation\20261118-cp313-aarch64\wheels\numpy-2.3.5-cp313-cp313-manylinux_2_27_aarch64.manylinux_2_28_aarch64.whl
+Saved .\artifacts\pi-preparation\20261118-cp313-aarch64\wheels\pillow-13.0.0-cp313-cp313-manylinux_2_27_aarch64.manylinux_2_28_aarch64.whl
+Saved .\artifacts\pi-preparation\20261118-cp313-aarch64\wheels\backports_strenum-1.2.8-py3-none-any.whl
+Saved .\artifacts\pi-preparation\20261118-cp313-aarch64\wheels\flatbuffers-25.12.19-py2.py3-none-any.whl
+Saved .\artifacts\pi-preparation\20261118-cp313-aarch64\wheels\ml_dtypes-0.7.0-cp313-cp313-manylinux_2_27_aarch64.manylinux_2_28_aarch64.whl
+Saved .\artifacts\pi-preparation\20261118-cp313-aarch64\wheels\protobuf-7.36.2-cp310-abi3-manylinux2014_aarch64.whl
+Saved .\artifacts\pi-preparation\20261118-cp313-aarch64\wheels\tqdm-4.70.1-py3-none-any.whl
+Saved .\artifacts\pi-preparation\20261118-cp313-aarch64\wheels\colorama-0.4.6-py2.py3-none-any.whl
+Saved .\artifacts\pi-preparation\20261118-cp313-aarch64\wheels\typing_extensions-4.16.0-py3-none-any.whl
+Successfully downloaded ai-edge-litert numpy Pillow backports.strenum flatbuffers ml_dtypes protobuf tqdm colorama typing-extensions
+
+
+[notice] A new release of pip is available: 26.2.2 -> 26.3
+[notice] To update, run: C:\Users\Administrator\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\python.exe -m pip install --upgrade pip

@@ -1,5 +1,7 @@
 # Read-only edge preflight
 
+November 18: the user selected **Raspberry Pi 4** and reconfirmed no Pi or webcam. [Pi 4 installation guide](PI4_INSTALLATION_GUIDE.md) and a compact offline research kit now provide hash-verified candidate ARM64 wheels, a logged installer, four-model synthetic parity checks, and inactive user service/kiosk files. Desktop checks and packaging are verified; ARM64 execution, actual camera/LCD/touch, latency, fabric quality and calibrated length remain unaccepted. Earlier Pi 5 recommendations are historical.
+
 Implemented October17,2026. Run `python tools/edge_preflight.py --bundle PATH_TO_BUNDLE --output NEW_REPORT.json` with the interpreter intended for deployment. The tool installs nothing, activates no camera and preserves existing reports.
 
 It records OS, architecture, pointer width, Python, libc, board-model text and installed application/runtime distribution versions. It verifies the bundle inventory separately and reports missing prerequisites. A platform/distribution pass is preliminary: runtime imports, operator invocation, reference parity, camera/display/calibration and sustained offline operation remain required. `pi_verified` always remains false in this preflight.

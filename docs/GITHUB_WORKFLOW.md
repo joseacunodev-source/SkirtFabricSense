@@ -39,7 +39,7 @@ Example Windows setup on a new computer:
 py -3.12 -m venv .venv-checks
 .venv-checks/Scripts/python.exe -m pip install Pillow==13.0.0
 .venv-checks/Scripts/python.exe tools/collect_environment.py --role development-checks --output records/environments/new-computer-checks.json
-.venv-checks/Scripts/python.exe -m unittest tests.test_live_state tests.test_hemline tests.test_dataset_partitions tests.test_continuation_records tests.test_raw_http_records tests.test_fabric_evidence_review tests.test_geometry_annotation tests.test_training_contract tests.test_worn_geometry_evaluation tests.test_project_assets -v
+.venv-checks/Scripts/python.exe -m unittest tests.test_live_state tests.test_hemline tests.test_dataset_partitions tests.test_continuation_records tests.test_raw_http_records tests.test_fabric_evidence_review tests.test_geometry_annotation tests.test_training_contract tests.test_worn_geometry_evaluation tests.test_project_assets tests.test_pi_probe tests.test_pi_kit tests.test_pi_install tests.test_edge_preflight -v
 ```
 
 On Linux/macOS use `python3.12 -m venv .venv-checks` and `.venv-checks/bin/python` in place of the Windows interpreter path. Log actual installation commands, environment, resulting versions and verification in `records/installations.jsonl`; never record an example command as an executed installation. Give the environment snapshot a computer-specific filename rather than overwriting earlier evidence.
@@ -49,6 +49,8 @@ The selected tests cover stale-frame handling, hemline uncertainty, split auditi
 The hosted workflow uses `tools/record_ci_environment.py` to execute the pinned Pillow installation on its ephemeral runner, check the resulting version and a Pillow image operation, append the actual installation event to that runner's `records/installations.jsonl`, and invoke `tools/collect_environment.py` for a separate `development-ci-ephemeral` snapshot. The step prints the new event and full snapshot in the **CI installation event** and **CI environment snapshot** log groups. Installation, verification or snapshot failure fails the step. The helper refuses normal local execution; use the explicit local setup commands above for a reviewed local environment.
 
 These records describe the hosted CI environment only. They do not change the local training or Pi installation history, and the workflow does not commit its temporary ledger/snapshot back to Git. GitHub job logs expire according to repository retention; copy relevant log evidence into reviewed project records when permanent provenance is needed. Inspect the actual run and commit rather than assuming every future workflow run passed.
+
+November 18 Pi 4 preparation has its own compact private installation kit. Follow [the Pi 4 guide](PI4_INSTALLATION_GUIDE.md) and [preparation results](PI4_PREPARATION_NOV18.md) for that transfer; the November 12 asset manifest v2 does not include these later Pi-kit artifacts.
 
 ## Restore training and station assets
 

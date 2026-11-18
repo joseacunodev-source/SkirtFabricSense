@@ -21,6 +21,11 @@ def assess(observation):
         blockers.append('64-bit ARM target environment required')
     if not observation['board_model'].startswith('Raspberry Pi'):
         blockers.append('Raspberry Pi board identity not observed')
+    try:
+        version = tuple(map(int, observation.get('python', '').split('.')[:2]))
+        if len(version) != 2 or version < (3, 11): raise ValueError
+    except (TypeError, ValueError):
+        blockers.append('Python 3.11 or newer required by the package verifier')
     for package in ('numpy', 'Pillow'):
         if not observation['packages'].get(package):
             blockers.append('Missing application distribution: '+package)
@@ -62,11 +67,14 @@ def main():
     observation = collect()
     report = {'recorded_at': datetime.now(timezone(timedelta(hours=8))).isoformat(),
               'observations': observation, **assess(observation)}
-    try:
-        report['bundle'] = verify(a.bundle, require_app=True)
-    except (OSError, ValueError, TypeError, KeyError) as exc:
-        report['blockers'].append('Bundle verification failed: '+str(exc))
-        report['platform_and_distribution_checks_passed'] = False
+    if sys.version_info < (3, 11):
+        report['bundle'] = {'status':'not_checked_unsupported_python'}
+    else:
+        try:
+            report['bundle'] = verify(a.bundle, require_app=True)
+        except (OSError, ValueError, TypeError, KeyError) as exc:
+            report['blockers'].append('Bundle verification failed: '+str(exc))
+            report['platform_and_distribution_checks_passed'] = False
     report['status'] = 'preflight_checks_passed_more_verification_required' if not report['blockers'] else 'preflight_requirements_unmet'
     with a.output.open('x', encoding='utf-8') as f:
         json.dump(report, f, indent=2)

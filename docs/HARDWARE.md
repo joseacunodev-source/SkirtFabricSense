@@ -1,5 +1,7 @@
 # Hardware and capture plan
 
+November 18: the user selected **Raspberry Pi 4** and reconfirmed no Pi or webcam. [Pi 4 installation guide](PI4_INSTALLATION_GUIDE.md) and a compact offline research kit now provide hash-verified candidate ARM64 wheels, a logged installer, four-model synthetic parity checks, and inactive user service/kiosk files. Desktop checks and packaging are verified; ARM64 execution, actual camera/LCD/touch, latency, fabric quality and calibrated length remain unaccepted. Earlier Pi 5 recommendations are historical.
+
 November 4: user selected Waveshare 14447 (800 × 480, HDMI video and USB resistive touch). Station-v7/research-v12 contains the compact landscape UI, verified with 45 mocked cases and 12 saved-image HTTP jobs. Station-v6 is rollback. Physical screen, touch, camera and Pi performance remain unverified. [Waveshare 14447 layout](LCD_14447_LAYOUT.md).
 
 Current recommendation: **Pi 5 8GB, official 27W supply, compatible active cooling, 64GB microSD and one autofocus USB webcam**. C920s is the economical candidate; Brio 4K is the higher-detail comparison if affordable. See [November 4 purchase/project review](PURCHASE_REVIEW_NOV04.md) for sources, limits and setup order. Purchase is planned, not confirmed.

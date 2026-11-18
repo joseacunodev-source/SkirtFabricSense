@@ -1,5 +1,9 @@
 # Decision log
 
+## November 18 - Raspberry Pi 4 target and offline preparation
+
+The user explicitly selects Raspberry Pi 4, superseding the proposed Pi 5 target, and confirms neither Pi nor webcam is available. Use a candidate Pi OS 64-bit Desktop/Trixie, system CPython 3.13 and ai-edge-litert 2.3.0 profile; verify actual board, ABI, glibc, all operators and desktop-reference parity before using it. Preserve the existing browser USB-camera architecture, one full-skirt view, research-only fabric opt-in and unavailable calibrated length. Do not install TensorFlow training packages, OpenCV or Picamera2 for this route, replace system Python, bypass browser permissions or relax the 1,000 ms freshness rule. Keep the selected station-v9 immutable; its external kit includes separately hashed candidate wheels and logged installation tools. [Installation and acceptance gates](PI4_INSTALLATION_GUIDE.md), [publisher/source review](../records/validation/2026-11-18-pi4-runtime-research.json).
+
 ## November 11 - Public source repository and private asset portability
 
 The user selected https://github.com/joseacunodev-source/SkirtFabricSense and authorized upload and repository metadata setup. The existing repository is public. Keep code, own engineering records, provenance and grouped manifests in Git; transfer acquired images, model payloads and raw source snapshots privately with exact SHA-256 verification. Preserve bytes through `.gitattributes`; recreate platform-specific environments separately. No blanket source license, visibility change or new deployment claim is inferred. [Working instructions](GITHUB_WORKFLOW.md), [asset policy](ASSET_TRANSFER.md).

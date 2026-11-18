@@ -5,6 +5,7 @@ from tools.edge_preflight import assess
 class EdgePreflightTests(unittest.TestCase):
     def fixture(self):
         return {'system':'Linux', 'machine':'aarch64', 'pointer_bits':64,
+                'python':'3.13.1',
                 'board_model':'Raspberry Pi 5 Model B',
                 'packages':{'numpy':'synthetic', 'Pillow':'synthetic', 'ai-edge-litert':'synthetic'}}
 
@@ -26,6 +27,13 @@ class EdgePreflightTests(unittest.TestCase):
         result = assess(observation)
         self.assertEqual(len(result['blockers']), 3)
         self.assertEqual(result['runtime_distributions'], [])
+
+    def test_unsupported_or_unknown_python_is_a_blocker(self):
+        for version in ('3.10.9', '', 'unknown'):
+            with self.subTest(version=version):
+                result = assess(dict(self.fixture(), python=version))
+                self.assertFalse(result['platform_and_distribution_checks_passed'])
+                self.assertIn('Python 3.11', ' '.join(result['blockers']))
 
 
 if __name__ == '__main__':
