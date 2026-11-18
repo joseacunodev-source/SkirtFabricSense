@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-18T11:36:11.599916+08:00",
+  "updated_at": "2026-11-18T11:45:03.010019+08:00",
   "status": "stable_desktop_research_checkpoint",
   "project_complete": false,
   "supervised_demo_accepted": false,
@@ -158,6 +158,15 @@
         "path": "records/validation/2026-11-18-pi4-preparation-tests.json",
         "sha256": "e08bea00d817d037f3d86e848c53f2b25f1973b010fcf62fc6fcb712862b5dfb"
       }
+    },
+    "pi4_source_only": {
+      "run": 182,
+      "passed": 182,
+      "skipped": 0,
+      "source": {
+        "path": "records/validation/2026-11-18-pi4-source-only-tests.json",
+        "sha256": "f13e3fc49b2450b2420b2ad30959c1534e27a67db65131dce1d0392e5513bcb5"
+      }
     }
   },
   "pending_operations": [],
@@ -224,8 +233,8 @@
     "Completed thesis figures and November 4 partition audits; preserve existing outputs"
   ],
   "previous_checkpoint": {
-    "path": "records/continuation/2026-11-18-before-pi4-preparation.json",
-    "sha256": "a3a0611572cfc8ec3c52042650aa216ce3e21ee961e44cc0db8c3c27b01a1150"
+    "path": "records/continuation/2026-11-18-before-ci-fixture-fix.json",
+    "sha256": "d9af99d870a48a9003f78f5a6ddfdb707952b92a7a6530d507f63083b8946e32"
   },
   "references": [
     {
@@ -1498,7 +1507,7 @@
     },
     {
       "path": "tests/test_pi_kit.py",
-      "sha256": "b559790a129a98a6e113ae050853b908c8205935720096da92bf018b4d46accc"
+      "sha256": "504f14cc546201abd2f9574af707915010a6e216b4553e248cb398458f26feff"
     },
     {
       "path": "tests/test_pi_probe.py",
@@ -1518,7 +1527,7 @@
     },
     {
       "path": "docs/PI4_PREPARATION_NOV18.md",
-      "sha256": "1217e63c02ad2afa93de0942411bd3f4974525827d05b7f95ff9408e6e27a2ed"
+      "sha256": "26a4d03a6fcde7c3febaf200b92943bdd07de840f8ccaba01f8c8d4d75516434"
     },
     {
       "path": "records/validation/2026-11-18-pi4-runtime-research.json",
@@ -1575,11 +1584,27 @@
     {
       "path": "records/validation/2026-11-18-pi4-preparation.json",
       "sha256": "b5ccece42016ed168d969ed759b718c22ddde6ee9f41c6e8a73647ab0e32fb25"
+    },
+    {
+      "path": "records/validation/2026-11-18-pi4-ci-fixture-fix.json",
+      "sha256": "b5beed7329a3bb8f1539e370f52eca0f3ea3cd4e0adae54040717731e164d786"
+    },
+    {
+      "path": "records/validation/2026-11-18-pi4-source-only-tests.json",
+      "sha256": "f13e3fc49b2450b2420b2ad30959c1534e27a67db65131dce1d0392e5513bcb5"
+    },
+    {
+      "path": "records/validation/2026-11-18-pi4-source-only-tests.log",
+      "sha256": "1f01b659c3ce19d427ee26365a77f3047737391b4d491d8468b81e9294f716ee"
+    },
+    {
+      "path": "records/validation/2026-11-18-pi4-record-validation.json",
+      "sha256": "2be30f40327cff704910a4a03de9909934b0e25170a3ce0493c7e517fb65953a"
     }
   ],
   "latest_batch": {
-    "path": "records/validation/2026-11-18-pi4-preparation.json",
-    "sha256": "b5ccece42016ed168d969ed759b718c22ddde6ee9f41c6e8a73647ab0e32fb25"
+    "path": "records/validation/2026-11-18-pi4-ci-fixture-fix.json",
+    "sha256": "b5beed7329a3bb8f1539e370f52eca0f3ea3cd4e0adae54040717731e164d786"
   },
   "pending_inputs": [
     "Exact camera/Pi SKUs and purchase/arrival confirmation",
@@ -1708,6 +1733,10 @@
     },
     "pi_verified": false,
     "full_live_acceptance": false,
-    "does_not_complete_P05_P06_P07": true
+    "does_not_complete_P05_P06_P07": true,
+    "ci_fixture_fix": {
+      "path": "records/validation/2026-11-18-pi4-ci-fixture-fix.json",
+      "sha256": "b5beed7329a3bb8f1539e370f52eca0f3ea3cd4e0adae54040717731e164d786"
+    }
   }
 }

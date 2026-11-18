@@ -3,23 +3,55 @@ import copy
 import json
 from pathlib import Path
 import stat
+import tempfile
 import unittest
 import warnings
 import zipfile
 
 from tools import pi_kit as kit
+from tools.build_release import build as build_app, MODEL, CONTRACT, RECORD
+from tools.station_package import build as build_station
+from tools.verify_release import APP_REQUIRED
 
 
 class PiKitTests(unittest.TestCase):
     def setUp(self):
-        # Reuse the real station-format fixture without importing its TestCase into this module.
-        from tests.test_station_package import StationPackageTests
-        station_fixture = StationPackageTests('test_invalid_ports_rejected')
-        station_fixture.setUp()
-        self.addCleanup(station_fixture.doCleanups)
-        station_fixture.create()
-        self.root = station_fixture.root
-        self.station = station_fixture.output
+        temp = tempfile.TemporaryDirectory(prefix='pi-kit-fixture-')
+        self.addCleanup(temp.cleanup)
+        self.root = Path(temp.name)
+        # Build a structurally valid station entirely from synthetic bytes. No
+        # ignored contract, model, dataset or another TestCase fixture is read.
+        model = self.root / MODEL
+        model.parent.mkdir(parents=True)
+        model.write_bytes(b'synthetic pleating model; not executable')
+        contract = self.root / CONTRACT
+        self.write_json(contract, {
+            'input': {'shape': [1, 224, 224, 3], 'dtype': 'float32', 'color': 'RGB', 'range': [0, 255]},
+            'output': {'shape': [1, 2], 'dtype': 'float32', 'labels': ['non_pleated', 'pleated'],
+                       'semantics': 'uncalibrated softmax scores'},
+            'preprocessing': 'Source annotated bbox plus 5% each side; RGB Pillow bilinear '
+                             'letterbox224; padding128; model Rescaling(1/127.5,offset=-1) exactly once',
+            'normalization': 'Inside model only', 'pi_verified': False})
+        record = self.root / RECORD
+        record.parent.mkdir(parents=True)
+        self.write_json(record, {'release_id': 'skirt-finetune-v1',
+            'model_files_and_sha256': [{'path': MODEL, 'sha256': kit.digest(model)}],
+            'contract': {'path': CONTRACT, 'sha256': kit.digest(contract)}})
+        for relative in APP_REQUIRED:
+            path = self.root / relative
+            path.parent.mkdir(parents=True, exist_ok=True)
+            path.write_text('synthetic application fixture', encoding='utf-8')
+        application = self.root / 'artifacts/releases/synthetic-app'
+        build_app(self.root, application, include_app=True)
+        for name in ('skirt-localizer-v2', 'skirt-category-presence-v1', 'fabric-smoke-v1'):
+            directory = self.root / 'artifacts/models' / name
+            directory.mkdir(parents=True)
+            (directory / 'model.tflite').write_bytes(b'synthetic model: ' + name.encode())
+            self.write_json(directory / 'run.json', {'status': 'completed',
+                'export': {'sha256': kit.digest(directory / 'model.tflite')}})
+        self.station = self.root / 'station'
+        build_station(self.root, self.station,
+                      self.root / 'artifacts/models/skirt-category-presence-v1', application)
         self.inputs = self.root / 'inputs'
         self.inputs.mkdir()
         self.wheels = self.root / 'wheelhouse'

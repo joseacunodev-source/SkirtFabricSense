@@ -42,3 +42,7 @@ The generated service and kiosk files are inactive until deliberately enabled. T
 4. Complete independent fabric-label review, accepted model-quality evaluation, wearer geometry and measured hemline calibration, followed by unseen-garment tests and a supervised demonstration rehearsal.
 
 The installer and probe retain `pi_verified=false` and `full_live_acceptance=false`. Synthetic model invocation and invocation-only timings do not establish camera accuracy, fabric composition, physical length, live FPS or demonstration acceptance.
+
+## Source-only integration follow-up
+
+The first hosted run caught a test fixture reading ignored local model-contract metadata. The kit test now constructs that metadata synthetically. All **182 selected tests pass in a source-only clone**, without project model/data payloads. The production kit and models are unchanged. [Failure, fix and source identity](../records/validation/2026-11-18-pi4-ci-fixture-fix.json), [source-only results](../records/validation/2026-11-18-pi4-source-only-tests.json).

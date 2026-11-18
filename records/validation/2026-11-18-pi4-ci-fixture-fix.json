@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "recorded_at": "2026-11-18T11:45:03.010019+08:00",
+  "status": "source_only_tests_passed_hosted_rerun_pending",
+  "initial_hosted_run": {
+    "url": "https://github.com/joseacunodev-source/SkirtFabricSense/actions/runs/44231847766",
+    "source_commit": "b62f32283872885c6ec7bf173a81b1fe99683109",
+    "conclusion": "failure",
+    "failed_step": "Run contracts using synthetic fixtures"
+  },
+  "cause": "New kit test reused a fixture reading ignored local model contract metadata; fresh GitHub checkouts do not contain it.",
+  "fix": "Build a complete synthetic contract/station in the kit test temporary directory; no ignored project assets are read.",
+  "test_source": {
+    "path": "tests/test_pi_kit.py",
+    "sha256": "504f14cc546201abd2f9574af707915010a6e216b4553e248cb398458f26feff"
+  },
+  "source_only_verification": {
+    "path": "records/validation/2026-11-18-pi4-source-only-tests.json",
+    "sha256": "f13e3fc49b2450b2420b2ad30959c1534e27a67db65131dce1d0392e5513bcb5"
+  },
+  "source_only_tests_passed": 182,
+  "production_kit_or_models_changed": false,
+  "pi_verified": false,
+  "initial_preparation_record": {
+    "path": "records/validation/2026-11-18-pi4-preparation.json",
+    "sha256": "b5ccece42016ed168d969ed759b718c22ddde6ee9f41c6e8a73647ab0e32fb25"
+  },
+  "historical_preparation_source_commit": "b62f32283872885c6ec7bf173a81b1fe99683109"
+}
